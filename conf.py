@@ -16,7 +16,8 @@ import sys, os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(0, os.path.abspath('../modules'))
+
+from runestone import runestone_static_dirs, runestone_extensions
 
 # -- General configuration -----------------------------------------------------
 
@@ -25,7 +26,7 @@ sys.path.insert(0, os.path.abspath('../modules'))
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.mathjax','luther.sphinx.disqus','luther.sphinx.reveal','luther.sphinx.poll','luther.sphinx.video','luther.sphinx.codelens','luther.sphinx.activecode','luther.sphinx.tabbedStuff', 'luther.sphinx.assess', 'luther.sphinx.animation','luther.sphinx.meta', 'gatech.parsons', 'luther.sphinx.datafile']
+extensions = ['sphinx.ext.mathjax'] + runestone_extensions()
 
 # Make it use https version of mathjax
 mathjax_path = "https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
@@ -171,12 +172,7 @@ html_short_title = 'Programs, Information, and People'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
-module_paths = [x.replace('.','/') for x in extensions]
-module_static_js = ['../modules/%s/js' % x for x in module_paths if os.path.exists('../modules/%s/js' % x)]
-module_static_css = ['../modules/%s/css' % x for x in module_paths if os.path.exists('../modules/%s/css' % x)]
-
-html_static_path = ['./source/_static', '../common/js', '../common/css',
-                    '../common/bootstrap', '../common/images'] + module_static_js + module_static_css
+html_static_path = ['./source/_static']  + runestone_static_dirs()
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
