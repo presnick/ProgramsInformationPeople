@@ -94,7 +94,9 @@ Problem Set
    
    ====
    import test
-   print "\n\n---\n"
+   print "\n\n---tests---\n"
+   if type(tpa) != type(6):
+      print "tpa should be an integer; check it's type with print type(tpa)"
    test.testEqual(tpa, 6)
 
 
@@ -107,8 +109,13 @@ Problem Set
 
    ====
    import test
-   print "\n\n---\n"
-   test.testEqual(cw, yb)
+   print "\n\n---tests---\n"
+   try:
+      test.testEqual(cw, yb)
+   except:
+      print "yb may not be defined yet..."
+   print "Checking to make sure you didn't change cw"
+   test.testEqual(cw, "Hello")
 
 
 3. Write code to print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
@@ -139,7 +146,7 @@ Problem Set
     
     ====
     import test
-    print "\n\n---\n"
+    print "\n\n---tests---\n"
     try:
        test.testEqual(type(xyz), type(3))
        test.testEqual(xyz,25)
@@ -187,11 +194,6 @@ Problem Set
 
     print pear
 
-    .. tab:: Solution
-
-      .. activecode:: ps_1_6s
-        :include: addl_functions
-
 
 7. There are a couple more functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
 
@@ -219,6 +221,7 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
    ====
    import test
    print "\n\n---\n"
+   # wrap these in try/excepts if variables not defined #
    test.testEqual(type(func_var), type(greeting))
    test.testEqual(type(new_digit), type(1))
    test.testEqual(type(digit_func), type(random_digit))
