@@ -17,18 +17,20 @@ The following table provides a summary and more details can be found in the
 ==========  ==============      =======================================================
 Method      Parameters          Description
 ==========  ==============      =======================================================
-keys        none                Returns a view of the keys in the dictionary
-values      none                Returns a view of the values in the dictionary
-items       none                Returns a view of the key-value pairs in the dictionary
+keys        none                Returns a list of the keys in the dictionary
+values      none                Returns a list of the values in the dictionary
+items       none                Returns a list of the key-value pairs in the dictionary
 get         key                 Returns the value associated with key; None otherwise
 get         key,alt             Returns the value associated with key; alt otherwise
 ==========  ==============      =======================================================
 
-The ``keys`` method returns what Python 3 calls a **view** of its underlying keys.  
-We can iterate over the view or turn the view into a 
-list by using the ``list`` conversion function.  However, it is important to note that calling these 
-dictionary method requires the inclusion of a pair of parenthesis- ''()'' at the end of the call.
-The format would look something like this:
+As we saw earlier with strings and lists, dictionary methods use dot notation,
+which specifies the name of the method to the right of the dot and the name of
+the object on which to apply the method immediately to the left of the dot. The empty
+parentheses in the case of ``keys`` indicate that this method takes no parameters.
+If ``x'' is a variable whose value is a dictionary, ``x.keys'' is the method object, and ``x.keys()'' invokes the method, returning a value.
+
+The keys method returns a list of the keys, not necessarily in the same order they were added to the dictionary or any other particular order.
 
 .. activecode:: chp12_dict6
     
@@ -53,13 +55,7 @@ a dictionary implicitly iterates over its keys.
        print "Got key", k
 
  
-As we saw earlier with strings and lists, dictionary methods use dot notation,
-which specifies the name of the method to the right of the dot and the name of
-the object on which to apply the method immediately to the left of the dot. The empty
-parentheses in the case of ``keys`` indicate that this method takes no parameters.
-
-The ``values`` and ``items`` methods are similar to ``keys``. They return view objects which can be turned
-into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
+The ``values`` and ``items`` methods are similar to ``keys``. They return lists of objects which can be iterated over.  Note that the item objects are tuples containing the key and the associated value.
 
 .. activecode:: chp12_dict8
     
