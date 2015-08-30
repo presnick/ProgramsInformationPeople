@@ -7,6 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. _iter_list:
+
 Lists and ``for`` loops
 -----------------------
 
@@ -56,6 +58,5 @@ it works. In this case, since ``len(numbers)`` is 5, it's the same as saying ``r
 We are interested here in both the *value* (10, 20, 30, etc.) and its *index* within the
 list (0, 1, 2, etc.), so that we can assign a new value to the position in the list.
 
-
-    
+:ref:`Later in this chapter <list_accum>` you will see how to transform an existing list into a new list without mutating (modfiying) the existing list.
 
