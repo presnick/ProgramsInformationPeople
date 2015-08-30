@@ -141,6 +141,7 @@ Iteration
    Iteration/TraversalandtheforLoopByIndex.rst
    Iteration/Listsandforloops.rst
    Iteration/TheAccumulatorPattern.rst
+   Iteration/TheAccumulatorPatternwithLists.rst
    Iteration/TheAccumulatorPatternwithStrings.rst
    Iteration/Glossary.rst
    Iteration/Exercises.rst

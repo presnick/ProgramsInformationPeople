@@ -6,9 +6,12 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. _map_chap:
 
 Map
 ---
+
+You previously were introduced to :ref:`accumulating a list by transforming each of the elements <list_accum>`. Here we revisit that pattern.
 
 The following function produces a new list with each item in the original list doubled. It is an example of a mapping, from the original list to a new list of the same length, where each element is doubled.
 
