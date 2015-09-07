@@ -29,6 +29,7 @@ You have the following graded activities:
       * :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
       * :ref:`Understanding Code <understand_code_chap>`
 
+
 2. Reading responses
 
    * By Tuesday night: 
@@ -40,22 +41,6 @@ You have the following graded activities:
    * Do the Unix Problem part of the problem set: :ref:`Unix Problems (2) <unix_pset3>`
 
    * Save answers to the exercises in :ref:`Problem Set 3 <problem_set_3>` 
-
-
-.. _reading_response_4:
-
-Reading Response
-----------------
-
-If you had to give up either your left-brain functions or your right-brain functions, which would you give up? Is the one you wouldn't give up the "soul" of who you really are? 
-
-.. activecode:: rr_4_1
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-   """
-   print s
 
 
 
@@ -110,102 +95,6 @@ Problem Set
    security clearance). However, representing oneself as a "professional software engineer"
    without a license from an accredited institution is illegal in many parts of the world.
 
-
-3. Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
-
-.. activecode:: ps_3_3
-
-   several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
-   
-   ====
-   import test
-   print "\n\n---\n"
-   print "(There are no tests for this problem.)"
-
-
-
-4. See the comments for directions.
-
-.. activecode:: ps_3_4
-
-    sent = "The magical mystery tour is waiting to take you away."
-    
-    # Write a comment explaining how you would define what a word is for
-    # a computer.
-    
-    # Write code that assigns a variable word_list to hold a LIST of all the 
-    # WORDS in the string sent. It's fine if words include punctuation.
-    # Hint: remember how to split strings?
-    
-    ====
-    
-    import test
-    print "\n\n---\n"
-
-    try:
-        test.testEqual(word_list,sent.split())
-    except:
-        print "The variable word_list has not been defined"
-
-5. Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
-
-``hello``
-
-``goodbye``
-
-``wonderful``
-
-``I love Python``
-
-(Hint: remember string slicing?)
-
-
-.. activecode:: ps_3_5
-
-    excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
-   
-    # Now, write code that uses iteration to print out each element of the
-    # list stored in excited_words,
-    # BUT print out each element WITHOUT the ending punctuation.
-    # Hint: remember string slicing? 
-    
-    ====
-    
-    import test
-    print "\n\n---\n"
-    print "(There are no tests for this problem.)"
-
-
-6. See the comments for directions.
-
-.. activecode:: ps_3_6
-
-    rv = """Once upon a midnight dreary, while I pondered, weak and weary,  
-      Over many a quaint and curious volume of forgotten lore,  
-      While I nodded, nearly napping, suddenly there came a tapping,   
-      As of some one gently rapping, rapping at my chamber door.   
-      'Tis some visitor, I muttered, tapping at my chamber door;
-      Only this and nothing more."""
-    
-    # Write code to assign the number of characters in the string rv to
-    # the variable num_chars.
-    
-    # Write code to assign the number of words in the string rv to the
-    # variable num_words.
-    ## Hint: remember how to split strings?
-    
-    ====
-    
-    import test
-    print "\n\n---\n"
-    try:
-        test.testEqual(num_chars,len(rv))
-    except:
-        print "The variable num_chars has not been defined"
-    try:
-        test.testEqual(num_words,len(rv.split()))
-    except:
-        print "The variable num_words has not been defined"
 
 
 7. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print it out, line by line. (Don't worry about the blank lines that will appear.)

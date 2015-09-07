@@ -12,38 +12,46 @@
     :linenothreshold: 500
 
 
-Activities through 1/18
+Activities through 9/20
 =======================
 
-You have the following graded activities:
+* Before Thursday's discussion section, 9/10 (preferably before first lecture on Wednesday 9/9):
 
-1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
-   
-   * Before Wednesday's class, 1/7: 
-      * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so I can start to learn your names.`
-      * Sign up for the `Facebook group <https://www.facebook.com/groups/1196007610428928/>`_
-      * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
-   
-   * Before Monday's class, 1/12:
-      * :ref:`Simple Python Data <simple_python_data>`
+  * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so I can start to learn your names.`
+  * Sign up for the `Facebook group <https://www.facebook.com/groups/1683212485235313/>`_
+  * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
-   * Before Wednesday's class, 1/14:
-      * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
-      * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter 
- 
-2. Reading responses
+* Participation in Thursday discussion section, 9/10
 
-   * By Sunday night, 1/11,    
-      * read the intro and chapter 1 of "The Most Human Human".
-      * Answer :ref:`Reading Response 1 <reading_response_1>`.      
-      
-   * By Tuesday night, 1/13
-      * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://ctools.umich.edu/access/content/group/a98a2bac-51e6-472a-a68e-b43f85d1e8d1/SearleChineseRoom.pdf>`_, by Richard Searle. It's in the cTools Resources folder, if that link doesn't work. 
-      * Answer :ref:`Reading Response 2 <reading_response_2>`.
+* By Sunday night, 9/13,
 
+  * read the intro and chapter 1 of "The Most Human Human".
+  * Answer :ref:`Reading Response 1 <reading_response_1>`.
 
-3. Save answers to the exercises in Problem Set 1 (due Sunday 1/18 by 5PM):
-   :ref:`Problem Set 1 <problem_set_1>` 
+* Before Monday's class, 9/14:
+
+  * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
+
+* By Tuesday night, 9/15
+
+  * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://ctools.umich.edu/access/content/group/a98a2bac-51e6-472a-a68e-b43f85d1e8d1/SearleChineseRoom.pdf>`_, by Richard Searle. It's in the cTools Resources folder, if that link doesn't work.
+  * Answer :ref:`Reading Response 2 <reading_response_2>`.
+
+* Before Wednesday's class, 9/16:
+
+  * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
+  * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
+
+* Participation in Thursday discussion section, 9/17
+
+* By Sunday 9/20 at 5PM. Save answers to the exercises in Problem Set 1:
+
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`
+
+* By Sunday night, 9/20:
+
+  * Read chapter 2 of The Most Human Human.
+  * Answer :ref:`Reading Response 3 <reading_response_3>`.
 
 .. _reading_response_1:
 
@@ -57,6 +65,7 @@ If you had to convince someone you were human and not a bot, via text only, what
 
    # Fill in your answer on the lines between the triple quotes
    s = """
+
    """
    print s
 
@@ -74,15 +83,29 @@ Reading Response 2
 
    # Fill in your answer on the lines between the triple quotes
    s = """
+
    """
    print s
 
+.. _reading_response_3:
+
+Reading Response 3
+------------------
+
+If you had to convince someone you were *you*, not just any old human, via text only, what would you do? Relate your answer to something in Chapter 2 of The Most Human Human.
+
+.. activecode:: rr_3_1
+   :nocanvas:
+
+   # Fill in your answer on the lines between the triple quotes
+   s = """
+
+   """
 
 .. _problem_set_1:
 
 Problem Set
 -----------
-**Due:** **Sunday, January 18th by 5 pm**
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
@@ -137,9 +160,9 @@ Problem Set
 
 .. activecode:: ps_1_4
     :include: addl_functions
-   
+
     # Want to make sure there really is a function called square? Uncomment the following line and press run.
-   
+
     #print type(square)
    
     xyz = ""
@@ -159,7 +182,10 @@ Problem Set
 .. activecode:: ps_1_5
     :include: addl_functions
 
+    # write your code here
+
     ====
+    import test
     print "\n\n---\n"
     import test
     try:
@@ -246,7 +272,48 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
    another_variable = "?!"
    b = another_variable()
 
-   
+
+10. Here's another complicated expression, using the Turtle framework we talked about. Arrange these expressions in the order they are executed, like you did in an exercise in Chapter 2 of the textbook.
+
+.. sourcecode:: python
+
+   import turtle
+
+   ella = turtle.Turtle()
+   x = "hello class".find("o") - 1
+   ella.speed = 3
+
+
+   ella.move(square(x*ella.speed))
+
+.. parsonsprob:: ps_1_10
+
+   Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code, ``ella.move(square(x*ella.speed))`` (It may help to think about what specifically is happening in the first four lines of code as well.)
+   -----
+   Look up the variable ella and find that it is an instance of a Turtle object
+   =====
+   Look up the attribute move of the Turtle ella and find that it's a method object
+   =====
+   Look up the function square
+   =====
+   Look up the value of the variable x and find that it is an integer
+   =====
+   Look up the value of the attribute speed of the instance ella and find that it is an integer
+   =====
+   Evaluate the expression x * ella.speed to one integer
+   =====
+   Call the function square on an integer value
+   =====
+   Call the method .move of the Turtle ella on its input integer
+
+11. Write a program that uses the turtle module to draw something interesting. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to the Facebook group, or a short video of the drawing as it is created.)
+
+.. activecode:: ps_1_11
+
+   import turtle
+
+
+
 .. activecode:: addl_functions
    :nopre:
    :hidecode:
@@ -261,4 +328,4 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
    def random_digit():
      import random
      return random.choice([0,1,2,3,4,5,6,7,8,9])
-   
+

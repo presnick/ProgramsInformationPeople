@@ -12,48 +12,55 @@
     :linenothreshold: 500
 
 
-Activities through 1/25
+Activities through 9/27
 =======================
 
 You have the following graded activities:
 
-1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
-   
-   * No class Monday: MLK holiday
-   
-   * Before Wednesday's class:
-      * Read :ref:`Sequences <sequences_chap>`, and do the exercises in that chapter.
-      * If you have a Windows machine, install the git bash command line. :ref:`Installing Git <install_git_bash>`
-      * Read :ref:`Command Prompt <command_prompt_sect>` section of the Unix chapter.
-      * Read :ref:`Folders and Paths <folders_and_paths_sect>` section of the Unix chapter and do the exercises in it.
+* Before Monday's class, 9/21
+
+  * Read :ref:`Sequences <sequences_chap>`, and do the exercises in that chapter.
+  * If you have a Windows machine, install the git bash command line. :ref:`Installing Git <install_git_bash>`
+  * Read :ref:`Command Prompt <command_prompt_sect>` section of the Unix chapter.
+  * Read :ref:`Folders and Paths <folders_and_paths_sect>` section of the Unix chapter and do the exercises in it.
       
+* Before Wednesday's class, 9/23
 
-2. Reading responses
+  * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter
+  * Read :ref:`unix cat and less<less_chap>` section of the Unix chapter
 
-   * By Tuesday night, 1/20: 
-      * Read chapter 2 of The Most Human Human. 
-      * Answer :ref:`Reading Response 3 <reading_response_3>`. 
+* By Sunday 9/27 at 5PM. Save answers to the exercises in Problem Set 2:
 
-.. _reading_response_3:
+  * Do the Unix Problems part of the problem set: :ref:`Unix Problems (1) <unix_pset2>`
+  * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>`
 
-3. Problem set **Due:** **Sunday, January 25 at 5 pm**
- 
-   * Do the Unix Problems part of the problem set: :ref:`Unix Problems (1) <unix_pset2>`       
-   * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>` 
-   
-Reading Response 3
-------------------
+* By Sunday night, 9/27
 
-If you had to convince someone you were *you*, not just any old human, via text only, what would you do? Relate your answer to something in Chapter 2 of The Most Human Human.
+  * Read chapter 3 of The Most Human Human.
+  * Answer :ref:`Reading Response 4 <reading_response_4>`.
 
-.. activecode:: rr_3_1
+
+.. _reading_response_4:
+
+Reading Response
+----------------
+
+If you had to give up either your left-brain functions or your right-brain functions, which would you give up? Is the one you wouldn't give up the "soul" of who you really are?
+
+.. activecode:: rr_4_1
    :nocanvas:
 
    # Fill in your answer on the lines between the triple quotes
    s = """
+
    """
-   
+   print s
+
+
+
+
 .. _unix_pset2:
+
 
 Unix Problems
 -------------
@@ -255,44 +262,101 @@ Now, take a look at the following code and related questions, in this code windo
 
    print "\n\nThere are no tests for this problem"
  
-5. Here's another complicated expression, using the Turtle framework we talked about. Arrange these expressions in the order they are executed, like you did in an exercise in Chapter 2 of the textbook. 
+5. Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
 
-.. sourcecode:: python
-   
-   import turtle
+.. activecode:: ps_2_5
 
-   ella = turtle.Turtle()
-   x = "hello class".find("o") - 1
-   ella.speed = 3
+   several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
-  
-   ella.move(square(x*ella.speed))
+   ====
+   import test
+   print "\n\n---\n"
+   print "(There are no tests for this problem.)"
 
-.. parsonsprob:: ps_2_5
 
-   Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code, ``ella.move(square(x*ella.speed))`` (It may help to think about what specifically is happening in the first four lines of code as well.)
-   -----
-   Look up the variable ella and find that it is an instance of a Turtle object
-   =====
-   Look up the attribute move of the Turtle ella and find that it's a method object
-   =====
-   Look up the function square
-   =====
-   Look up the value of the variable x and find that it is an integer
-   =====
-   Look up the value of the attribute speed of the instance ella and find that it is an integer
-   =====
-   Evaluate the expression x * ella.speed to one integer
-   =====
-   Call the function square on an integer value
-   =====
-   Call the method .move of the Turtle ella on its input integer
-	 
-6. Write a program that uses the turtle module to draw something interesting. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to the Facebook group, or a short video of the drawing as it is created.)
+
+6. See the comments for directions.
 
 .. activecode:: ps_2_6
 
-   import turtle
+    sent = "The magical mystery tour is waiting to take you away."
+
+    # Write a comment explaining how you would define what a word is for
+    # a computer.
+
+    # Write code that assigns a variable word_list to hold a LIST of all the
+    # WORDS in the string sent. It's fine if words include punctuation.
+    # Hint: remember how to split strings?
+
+    ====
+
+    import test
+    print "\n\n---\n"
+
+    try:
+        test.testEqual(word_list,sent.split())
+    except:
+        print "The variable word_list has not been defined"
+
+7. Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+
+``hello``
+
+``goodbye``
+
+``wonderful``
+
+``I love Python``
+
+(Hint: remember string slicing?)
+
+
+.. activecode:: ps_2_7
+
+    excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
+
+    # Now, write code that uses iteration to print out each element of the
+    # list stored in excited_words,
+    # BUT print out each element WITHOUT the ending punctuation.
+    # Hint: remember string slicing?
+
+    ====
+
+    import test
+    print "\n\n---\n"
+    print "(There are no tests for this problem.)"
+
+
+8. See the comments for directions.
+
+.. activecode:: ps_2_8
+
+    rv = """Once upon a midnight dreary, while I pondered, weak and weary,
+      Over many a quaint and curious volume of forgotten lore,
+      While I nodded, nearly napping, suddenly there came a tapping,
+      As of some one gently rapping, rapping at my chamber door.
+      'Tis some visitor, I muttered, tapping at my chamber door;
+      Only this and nothing more."""
+
+    # Write code to assign the number of characters in the string rv to
+    # the variable num_chars.
+
+    # Write code to assign the number of words in the string rv to the
+    # variable num_words.
+    ## Hint: remember how to split strings?
+
+    ====
+
+    import test
+    print "\n\n---\n"
+    try:
+        test.testEqual(num_chars,len(rv))
+    except:
+        print "The variable num_chars has not been defined"
+    try:
+        test.testEqual(num_words,len(rv.split()))
+    except:
+        print "The variable num_words has not been defined"
 
 
 .. activecode:: addl_functions_2

@@ -11,7 +11,7 @@ Dictionary methods
 ------------------
 
 Dictionaries have a number of useful built-in methods.
-The following table provides a summary and more details can be found in the 
+The following table provides a summary and more details can be found in the
 `Python Documentation <http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict>`_.
 
 ==========  ==============      =======================================================
@@ -28,7 +28,7 @@ As we saw earlier with strings and lists, dictionary methods use dot notation,
 which specifies the name of the method to the right of the dot and the name of
 the object on which to apply the method immediately to the left of the dot. The empty
 parentheses in the case of ``keys`` indicate that this method takes no parameters.
-If ``x'' is a variable whose value is a dictionary, ``x.keys'' is the method object, and ``x.keys()'' invokes the method, returning a value.
+If ``x`` is a variable whose value is a dictionary, ``x.keys`` is the method object, and ``x.keys()`` invokes the method, returning a value.
 
 The keys method returns a list of the keys, not necessarily in the same order they were added to the dictionary or any other particular order.
 
