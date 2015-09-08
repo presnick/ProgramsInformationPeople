@@ -46,7 +46,7 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
    
    This may seem like a lot of typing but it is absolutely necessary.  You cannot take a shortcut.
    
-   Well, actually, you can take a shortcut but not that way. Remember the :ref:`in operator <sequences-in-operator>` for strings and sequences? You could write ``number in [5, 6, 7]``.
+   Well, actually, you can take a shortcut but not that way. In the next chapter you'll learn about the :ref:`in operator <sequences-in-operator>` for strings and sequences: you could write ``number in [5, 6, 7]``.
 
 
 **Check your understanding**

@@ -34,7 +34,7 @@ Activities through 9/20
 
 * By Tuesday night, 9/15
 
-  * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://ctools.umich.edu/access/content/group/a98a2bac-51e6-472a-a68e-b43f85d1e8d1/SearleChineseRoom.pdf>`_, by Richard Searle. It's in the cTools Resources folder, if that link doesn't work.
+  * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/files/321962/download?download_frd=1>`_, by Richard Searle. It's in the Canvas Files folder, if that link doesn't work.
   * Answer :ref:`Reading Response 2 <reading_response_2>`.
 
 * Before Wednesday's class, 9/16:
@@ -191,7 +191,7 @@ Problem Set
     try:
        test.testEqual(new_number, 9)
     except:
-       print "Failed test: the variable new_number does not exist yet"
+       print "Test failed: the variable new_number does not exist yet"
 
 
 6. Write in a comment what each line of this code does. 
@@ -248,9 +248,18 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
    import test
    print "\n\n---\n"
    # wrap these in try/excepts if variables not defined #
-   test.testEqual(type(func_var), type(greeting))
-   test.testEqual(type(new_digit), type(1))
-   test.testEqual(type(digit_func), type(random_digit))
+   try:
+      test.testEqual(type(func_var), type(greeting))
+   except:
+      print "Test failed: func_var is undefined"
+   try:
+      test.testEqual(type(new_digit), type(1))
+   except:
+      print "Test failed: new_digit is undefined"
+   try:
+      test.testEqual(type(digit_func), type(random_digit))
+   except:
+      print "Test failed: digit_func is undefined"
 
 
 
@@ -262,7 +271,10 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
    ====   
    import test
    print "\n\n---\n"
-   test.testEqual(newval, greeting("everyone in class"))
+   try:
+      test.testEqual(newval, greeting("everyone in class"))
+   except:
+      print "Test failed: newval is not defined"
     
 
 9. This code causes an error. Why? Write a comment explaining.
