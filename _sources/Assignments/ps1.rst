@@ -116,6 +116,7 @@ Problem Set
    tpa = 0
    
    ====
+
    import test
    print "\n\n---tests---\n"
    if type(tpa) != type(6):
@@ -131,6 +132,7 @@ Problem Set
    yb = 0
 
    ====
+
    import test
    print "\n\n---tests---\n"
    try:
@@ -153,6 +155,7 @@ Problem Set
    new_var = 824
 
    ====
+
    print "\n\n---\n(There are no tests for this problem.)"
 
 
@@ -168,6 +171,7 @@ Problem Set
     xyz = ""
     
     ====
+
     import test
     print "\n\n---tests---\n"
     try:
@@ -182,9 +186,10 @@ Problem Set
 .. activecode:: ps_1_5
     :include: addl_functions
 
-    # write your code here
+    # write your code here; include a blank line
 
     ====
+
     import test
     print "\n\n---\n"
     import test
@@ -245,6 +250,7 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
    # Write code that assigns the variables as mentioned in the instructions.
 
    ====
+
    import test
    print "\n\n---\n"
    # wrap these in try/excepts if variables not defined #
@@ -268,7 +274,8 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
 .. activecode:: ps_1_8
    :include: addl_functions
 
-   ====   
+   ====
+
    import test
    print "\n\n---\n"
    try:
