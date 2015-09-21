@@ -69,6 +69,6 @@ Exercises
    
          .. actex:: ex_3_3
 
-         w = [3, 6, 9]
+            w = [3, 6, 9]
             # add code that changes w
          
