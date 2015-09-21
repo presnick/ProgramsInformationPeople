@@ -67,8 +67,8 @@ Exercises
       
          Write code that transforms the list ``[3, 6, 9]`` into the list ``[3, 0, 9]`` and then prints it out
    
-      .. actex:: ex_3_3
+         .. actex:: ex_3_3
 
          w = [3, 6, 9]
-         # add code that changes w
+            # add code that changes w
          

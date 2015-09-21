@@ -76,13 +76,13 @@ It is just a string of length 1.
 
 .. mchoicemf:: test_question8_2_2
    :answer_a: tr
-   :answer_b: t0
+   :answer_b: to
    :answer_c: ps
    :answer_d: nn
    :answer_e: Error, you cannot use the [ ] operator with the + operator.
    :correct: b
-   :feedback_a: Yes, t is at postion 2, counting left to right starting from 0; and s at -4, counting right to left starting from -1.
-   :feedback_b: Almost. For -4 you count from right to left, starting with -1. 
+   :feedback_a: Almost, t is at postion 2, counting left to right starting from 0; but r is at -5, counting right to left starting from -1.
+   :feedback_b: For -4 you count from right to left, starting with -1.
    :feedback_c: p is at location 0, not 2.
    :feedback_d: n is at location 5, not 2.
    :feedback_e: [ ] operator returns a string that can be concatenated with another string.
