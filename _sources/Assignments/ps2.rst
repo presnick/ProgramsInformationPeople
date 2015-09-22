@@ -65,7 +65,7 @@ If you had to give up either your left-brain functions or your right-brain funct
 Unix Problems
 -------------
 
-The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **Unix Problems (PS2)** on our course CTools page. (CTools > SI 106 002 > Assignments > Unix Problems (PS2))
+The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **PS3 Unix Problems** on Canvas  > Assignments PS3 Unix Problems.
 
 To take a screenshot, 
 

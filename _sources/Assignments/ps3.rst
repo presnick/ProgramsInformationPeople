@@ -12,35 +12,55 @@
     :linenothreshold: 500
 
 
-Activities through 2/1
-======================
- 
+Activities through 10/4
+=======================
 
 You have the following graded activities:
 
-1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
-   
-   * Before Monday's class: 
-        * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter 
-        * Read :ref:`unix cat and less<less_chap>` section of the Unix chapter
-   
-   * Before Wednesday's class:
-      * :ref:`Conditionals <conditionals_chap>`
-      * :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
-      * :ref:`Understanding Code <understand_code_chap>`
+* Before Monday's class, 9/28:
 
+  * :ref:`Conditionals <conditionals_chap>`
+  * :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
+  * :ref:`Understanding Code <understand_code_chap>`
+  * Read `External tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_
 
-2. Reading responses
+    * Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
+    * Note: you might also like some of the other pages in the tutorial at that site.
 
-   * By Tuesday night: 
-      * Read chapter 3 of The Most Human Human. 
-      * Answer :ref:`Reading Response 4 <reading_response_4>`. 
+* Before Wednesday's class 9/30:
+  * Read :ref:`Dictionaries<dictionaries_chap>`, and do the exercises in that chapter
+  * Read `External tutorial on unix grep  <http://www.uccs.edu/~ahitchco/grep/>`_
 
-3. Problem set **Due:** **Sunday, February 1 at 5 pm**
+* By Sunday 10/4 at 5PM. Save answers to the exercises in :ref:`Problem Set 3 <problem_set_3>`. including :ref:`Unix Problems (2) <unix_pset3>`
 
-   * Do the Unix Problem part of the problem set: :ref:`Unix Problems (2) <unix_pset3>`
+* By Sunday midnight 10/4:
+  * Read *The Most Human Human*, Chapter 5, "Getting out of Book"
+  * Answer :ref:`Reading Response 5 <reading_response_5>`.
 
-   * Save answers to the exercises in :ref:`Problem Set 3 <problem_set_3>` 
+Reading Response
+----------------
+
+.. _reading_response_5:
+
+Give an example of when you were interacting with someone where you used "book" responses. What's an example of a time when you or the person you were talking to got "out of book" unusually fast?
+
+.. activecode:: rr_5_1
+   :nocanvas:
+
+   # Fill in your answer on the lines between the triple quotes
+   s = """
+   """
+   print s
+
+Quick check-in. How are things going for you in this class so far? Feeling overwhelmed? Inspired? Bored?
+
+.. activecode:: rr_5_2
+   :nocanvas:
+
+   # Fill in your answer on the lines between the triple quotes
+   s = """
+   """
+   print s
 
 
 
@@ -51,11 +71,11 @@ You have the following graded activities:
 Unix Problems
 -------------
 
-The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **Unix Problems (PS3)** on our course CTools page. (CTools > SI 106 002 > Assignments > Unix Problems (PS3))
+The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **PS3 Unix Problems** on Canvas  > Assignments PS3 Unix Problems.
 
-#. Create a folder ps4 in your 106 directory. Download the file ``sample.txt`` from the cTools Resources>Code directory and save it in your ps4 directory.
+1. Create a folder ps4 in your 106 directory. Download the file ``sample.txt`` from the cTools Resources>Code directory and save it in your ps4 directory.
 
-#. Connect to the ps4 directory. Run the command ``less sample.txt``. Take a screenshot to show that the command worked for displaying the contents. Upload it to cTools.
+2. Connect to the ps4 directory. Run the command ``less sample.txt``. Take a screenshot to show that the command worked for displaying the contents. Upload it to cTools.
 
 
 Problem Set
@@ -97,7 +117,7 @@ Problem Set
 
 
 
-7. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print it out, line by line. (Don't worry about the blank lines that will appear.)
+3. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print it out, line by line. (Don't worry about the blank lines that will appear.)
 
 The first two lines should look like this:
 
@@ -105,7 +125,7 @@ The first two lines should look like this:
   
    original formulation of a computing problem to executable programs. It involves
 
-.. activecode:: ps_3_7
+.. activecode:: ps_3_3
        :available_files: about_programming.txt
 
        # Write your code here.
@@ -119,9 +139,9 @@ The first two lines should look like this:
        print "There are no tests for this problem."
 
 
-8. Now write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
+4. Now write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
 
-.. activecode:: ps_3_8
+.. activecode:: ps_3_4
        :available_files: about_programming.txt
 
        # Write your code here.
@@ -136,15 +156,106 @@ The first two lines should look like this:
        except:
             print "The variable file_lines_num has not been defined"
 
-9. **Challenge problem (OPTIONAL, much harder):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
+5. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x; tests will run at the end of your code and you will get diagnostic error messages.
 
-.. activecode:: ps_3_9
-      :available_files: about_programming.txt
+.. activecode:: ps_3_5
 
-      # Write your code here.
+    #x = 25
+    #x = 15
+    #x = 5
+    #x = -10
 
-       ====
+    if x > 20:
+        y = "yes"
+    if x > 10:
+        y = "no"
+    if x < 0:
+        y = "maybe"
+    else:
+        y = "unknown"
 
-       import test
-       print "\n\n---\n"
-       print "There are no tests for this problem."
+    print "y is " + str(y)
+
+    ====
+
+    import test
+    print "\n---\n\n"
+    try:
+        if x == 25:
+            print "test when x is 25: y should be 'yes'"
+            test.testEqual(y, "yes")
+        elif x == 15:
+            print "test when x is 15: y should be 'no'"
+            test.testEqual(y, "no")
+        elif x == 5:
+            print "test when x is 5: y should be 'unknown'"
+            test.testEqual(y, "unknown")
+        elif x == -10:
+            print "test when x is -5; y should be 'maybe'"
+            test.testEqual(y, "maybe")
+        else:
+            print "No tests when value of x is %s" % (x)
+    except:
+        print "Failed test. Probably y is not bound to a value."
+
+
+6. See comments in code for instructions.
+
+.. activecode:: ps_3_6
+
+   lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
+
+   # How many characters are in each element of list lp?
+   # Write code to print the length (number of characters)
+   # of each element of the list on a separate line.
+   ## (Do not write 8+ lines of code to do this. Use a for loop.)
+
+   # The output you get should be:
+   # 5
+   # 13
+   # 11
+   # 12
+   # 3
+   # 12
+   # 11
+   # 6
+
+   # Now write code to print out each element of
+   # list lp IF the length of the element is
+   # an even number. Use iteration (a for loop!).
+
+   ====
+
+   print "\n---\n\n"
+   print "There are no tests for this problem."
+
+
+7. Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. HINT 1: Use the accumulation pattern! HINT 2: the ``in`` operator checks whether a letter or substring is present in a string.
+
+.. activecode:: ps_3_7
+
+   items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
+
+   ====
+
+   import test
+   print "\n---\n\n"
+   try:
+      test.testEqual(acc_num,3)
+   except:
+      print "The variable acc_num has not been defined yet"
+
+
+
+8. **Challenge problem (OPTIONAL, much harder):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
+
+.. activecode:: ps_3_8
+    :available_files: about_programming.txt
+
+    # Write your code here.
+
+    ====
+
+    import test
+    print "\n\n---\n"
+    print "There are no tests for this problem."
