@@ -67,6 +67,13 @@ release = '3.0'
 # Else, today_fmt is used as the format for a strftime call.
 #today_fmt = '%B %d, %Y'
 
+def setup(app):
+    # Need to set these locally for your installation; just stubs here
+    # URL used in sphinx build for connecting to runestone DB to add
+    app.add_config_value('dburl', '', 'env')
+    # should be something like pip2 or f15
+    app.add_config_value('course_id', '', 'env')
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = ['ActiveIndexFiles/*','OldIndexAndConfFiles/*','ExtraStuff/*',
