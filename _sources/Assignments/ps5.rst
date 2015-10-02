@@ -20,8 +20,7 @@ You have the following graded activities:
 1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
    
    * Before Monday's class: 
-      * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
-           
+
    
    * Before Wednesday's class:
        * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
@@ -31,8 +30,6 @@ You have the following graded activities:
 #. Reading responses
 
    * By Tuesday midnight: 
-      * Read *The Most Human Human*, Chapter 10, p.219-237 only (you'll read the rest of the chapter next week). Note: we are skipping some of the other chapters.
-      * Answer :ref:`Reading Response 6 <reading_response_6>`. 
 
 #. Problem set **Due:** **Sunday, February 15 at 5 pm**
 
@@ -41,22 +38,6 @@ You have the following graded activities:
    * Save answers to the exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>` 
 
 
-
-Reading Response
-----------------
-
-.. _reading_response_6:
-
-1. Compare a conversation that "stays in book" to one that doesn't. Which has more surprisal? Which would be easier to compress?
-2. Give an example of compression other than the ones Christian addresses. Explain. Why? In what situations does this occur?
-
-.. activecode:: rr_6_1
-
-   # Fill in your response in between the triple quotes
-   s = """
-
-   """
-   print s
 
 
 .. _unix_pset5:
@@ -98,23 +79,6 @@ Problem Set
 	(Wikipedia)
 
 
-3. Define a function called add_three, which takes one integer as input and returns that integer + 3.
-
-.. activecode:: ps_5_3
-
-    # Write your code here.
-    # (The tests for this problem are going to try to CALL the function that you write!)
-
-    ====
-
-    import test
-    try:
-      print "testing if add_three(2) equals 5"
-      test.testEqual(add_three(2),5)
-      print "testing if add_three(33) equals 36"
-      test.testEqual(add_three(33),36)
-    except:
-      print "The function add_three has not been defined yet, OR it hasn't been defined properly"
 
 
 4. Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
@@ -128,61 +92,6 @@ Problem Set
    print "There are no tests for this problem"
 
 
-5. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change it so it works!
-
-.. activecode:: ps_5_5
-
-   def subtract_five(inp)
-   	print inp - 5
-	return None
-    
-   y = subtract_five(9) - 6
-
-   ====
-
-   print "\n---\n\n"
-   import test
-   try:
-    print "testing if y is -2"
-    test.testEqual(y, -2)
-   except:
-    print "The variable y was deleted or is not defined"
-
-6. Here's another bit of code with a problem. Also, add comments about what's going on with the current code that causes a problem. Then, fix it so it calls change_amounts on some input and prints out the results.
-
-.. activecode:: ps_5_6
-
-    def change_amounts(yp):
-	n = yp - 4
-	return n * 7
-    
-    print yp
-    
-    ====
-    
-    print "\n---\n\n"
-    print "There are no tests for this problem"
-
-
-7. Define a function called change_amounts that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
-
-.. activecode:: ps_5_7
-
-    # We've started you off with the first line...
-    def change_amounts(num_here):
-       pass # delete this line and put in your own code for the body of the function.
-    
-    ====
-    
-    print "\n---\n\n"
-    import test
-    try:
-      print "testing if change_amounts(9) equals 11"
-      test.testEqual(change_amounts(9),11)
-      print "testing if change_amounts(12) equals 17"
-      test.testEqual(change_amounts(12),17)
-    except:
-      print "The function change_amounts has not been defined properly"
 
 8. Given the string in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionaries will be useful here.
 

@@ -20,40 +20,47 @@ You have the following graded activities:
 
 1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep. You can also view your current scores via the Progress page.
    
-   * Before Monday's class: 
+   * Before Monday's class:
+      * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
+      * Read :ref:`Strategy for building programs <build_program_chap>`
 
    * Before Wednesday's class:
-       * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
-      * Read :ref:`Strategy for building programs <build_program_chap>`
- 
-#. Reading responses
-
-   * By Tuesday night: 
-
-#. Problem set **Due:** **Sunday, February 8 at 5 pm**
-
-   * Do the Unix Problem part of the problem set: :ref:`Unix Problems (3) <unix_pset4>`
-   
-   * Save answers to the exercises in Problem Set 4: :ref:`Problem Set 4 <problem_set_4>` 
+      * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 
-Unix Problems
--------------
+* By Sunday 10/11 at 5PM. Save answers to the exercises in :ref:`Problem Set 4 <problem_set_4>`.
 
-.. _unix_pset4:
+* By Sunday midnight 10/4:
 
-Turn these in as screenshots via CTools in the Assignments tab!
-
-#. In the `tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_,  there are instructions for creating two files called  ``list1`` and ``list2``. Write a single unix command that displays all lines in either file that contain the letter ``p``.
-
-#. Save a file in the ``106`` folder you created a couple weeks ago called ``fun_with_unix.txt``. Now use ``ls``, ``|`` (pipe), and ``grep`` to find all filenames in your folder containing the string ``unix``. (For fun, try this with other substrings and other folders)
+  * Read *The Most Human Human*, Chapter 5, "Getting out of Book"
+      * Read *The Most Human Human*, Chapter 10, p.219-237 only (you'll read the rest of the chapter next week). Note: we are skipping some of the other chapters.
+      * Answer :ref:`Reading Response 6 <reading_response_6>`.
 
 
+Reading Response
+----------------
+
+.. _reading_response_6:
+
+1. Compare a conversation that "stays in book" to one that doesn't. Which has more surprisal? Which would be easier to compress?
+2. Give an example of compression other than the ones Christian addresses. Explain. Why? In what situations does this occur?
+
+.. activecode:: rr_6_1
+
+   # Fill in your response in between the triple quotes
+   s = """
+
+   """
+   print s
+
+
+
+.. _problem_set_4:
 
 Problem Set
 -----------
 
-.. _problem_set_4:
+
 
 .. datafile::  about_programming.txt
    :hide:
@@ -126,9 +133,9 @@ Problem Set
 
 
 
-4. Here's another dictionary. Write code to print out each key-value pair in it. Then follow the rest of the instructions in the comments.
+2. Here's another dictionary. Write code to print out each key-value pair in it. Then follow the rest of the instructions in the comments.
 
-.. activecode:: ps_4_4
+.. activecode:: ps_4_2
 
    nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
    
@@ -162,9 +169,9 @@ Problem Set
       print "nd doesn't exist or doesn't have the key '23'"
 
 
-5. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has a "program"-based word (any of the words ``program``, ``programs``, ``programming``, ``programmer``, or ``programmers``...) in it.
+3. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has a "program"-based word (any of the words ``program``, ``programs``, ``programming``, ``programmer``, or ``programmers``...) in it.
 
-.. activecode:: ps_4_5
+.. activecode:: ps_4_3
     :available_files: about_programming.txt
 
   	 # Write your code here!
@@ -174,3 +181,76 @@ Problem Set
     print "\n---\n\n"
     print "There are no tests for this problem"
 
+4. Define a function called add_three, which takes one integer as input and returns that integer + 3.
+
+.. activecode:: ps_4_4
+
+    # Write your code here.
+    # (The tests for this problem are going to try to CALL the function that you write!)
+
+    ====
+
+    import test
+    try:
+      print "testing if add_three(2) equals 5"
+      test.testEqual(add_three(2),5)
+      print "testing if add_three(33) equals 36"
+      test.testEqual(add_three(33),36)
+    except:
+      print "The function add_three has not been defined yet, OR it hasn't been defined properly"
+
+5. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change it so it works!
+
+.. activecode:: ps_4_5
+
+   def subtract_five(inp)
+   	print inp - 5
+	return None
+
+   y = subtract_five(9) - 6
+
+   ====
+
+   print "\n---\n\n"
+   import test
+   try:
+    print "testing if y is -2"
+    test.testEqual(y, -2)
+   except:
+    print "The variable y was deleted or is not defined"
+
+6. Here's another bit of code with a problem. Also, add comments about what's going on with the current code that causes a problem. Then, fix it so it calls change_amounts on some input and prints out the results.
+
+.. activecode:: ps_4_6
+
+    def change_amounts(yp):
+	n = yp - 4
+	return n * 7
+
+    print yp
+
+    ====
+
+    print "\n---\n\n"
+    print "There are no tests for this problem"
+
+
+7. Define a function called change_amounts that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+
+.. activecode:: ps_4_7
+
+    # We've started you off with the first line...
+    def change_amounts(num_here):
+       pass # delete this line and put in your own code for the body of the function.
+
+    ====
+
+    print "\n---\n\n"
+    import test
+    try:
+      print "testing if change_amounts(9) equals 11"
+      test.testEqual(change_amounts(9),11)
+      print "testing if change_amounts(12) equals 17"
+      test.testEqual(change_amounts(12),17)
+    except:
+      print "The function change_amounts has not been defined properly"
