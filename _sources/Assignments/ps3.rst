@@ -158,7 +158,7 @@ The first two lines should look like this:
        except:
             print "The variable file_lines_num has not been defined"
 
-5. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x; tests will run at the end of your code and you will get diagnostic error messages. Fix the code so that it passes the test for all the xs. (HINT: you don't have a big change.)
+5. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x; tests will run at the end of your code and you will get diagnostic error messages. Fix the code so that it passes the test for all the xs. (HINT: you don't have to make a big change.)
 
 .. activecode:: ps_3_5
 
