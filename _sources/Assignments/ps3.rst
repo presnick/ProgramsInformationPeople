@@ -28,12 +28,14 @@ You have the following graded activities:
     * Note: you might also like some of the other pages in the tutorial at that site.
 
 * Before Wednesday's class 9/30:
+
   * Read :ref:`Dictionaries<dictionaries_chap>`, and do the exercises in that chapter
   * Read `External tutorial on unix grep  <http://www.uccs.edu/~ahitchco/grep/>`_
 
 * By Sunday 10/4 at 5PM. Save answers to the exercises in :ref:`Problem Set 3 <problem_set_3>`. including :ref:`Unix Problems (2) <unix_pset3>`
 
 * By Sunday midnight 10/4:
+
   * Read *The Most Human Human*, Chapter 5, "Getting out of Book"
   * Answer :ref:`Reading Response 5 <reading_response_5>`.
 
@@ -73,9 +75,9 @@ Unix Problems
 
 The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **PS3 Unix Problems** on Canvas  > Assignments PS3 Unix Problems.
 
-1. Create a folder ps3 in your 106 directory. Download the file ``sample.txt`` from the cTools Resources>Code directory and save it in your ps3 directory.
+1. Create a folder ps3 in your 106 directory. Download the file ``sample.txt`` from the Canvas Code directory and save it in your ps3 directory.
 
-2. Connect to the ps4 directory. Run the command ``less sample.txt``. Take a screenshot to show that the command worked for displaying the contents. Upload it.
+2. Connect to the ps3 directory. Run the command ``less sample.txt``. Take a screenshot to show that the command worked for displaying the contents. Upload it.
 
 
 Problem Set
@@ -156,7 +158,7 @@ The first two lines should look like this:
        except:
             print "The variable file_lines_num has not been defined"
 
-5. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x; tests will run at the end of your code and you will get diagnostic error messages.
+5. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x; tests will run at the end of your code and you will get diagnostic error messages. Fix the code so that it passes the test for all the xs. (HINT: you don't have a big change.)
 
 .. activecode:: ps_3_5
 
@@ -191,7 +193,7 @@ The first two lines should look like this:
             print "test when x is 5: y should be 'unknown'"
             test.testEqual(y, "unknown")
         elif x == -10:
-            print "test when x is -5; y should be 'maybe'"
+            print "test when x is -10; y should be 'maybe'"
             test.testEqual(y, "maybe")
         else:
             print "No tests when value of x is %s" % (x)
