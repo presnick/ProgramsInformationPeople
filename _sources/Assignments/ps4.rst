@@ -30,7 +30,7 @@ You have the following graded activities:
 
 * By Sunday 10/11 at 5PM. Save answers to the exercises in :ref:`Problem Set 4 <problem_set_4>`.
 
-* By Sunday midnight 10/4:
+* By Sunday midnight 10/11:
 
   * Read *The Most Human Human*, Chapter 5, "Getting out of Book"
       * Read *The Most Human Human*, Chapter 10, p.219-237 only (you'll read the rest of the chapter next week). Note: we are skipping some of the other chapters.

@@ -79,7 +79,6 @@ The following problems include instructions for you to follow in your Terminal a
 
 2. Connect to the ps3 directory. Run the command ``less sample.txt``. Take a screenshot to show that the command worked for displaying the contents. Upload it.
 
-
 Problem Set
 -----------
 

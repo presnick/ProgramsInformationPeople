@@ -21,9 +21,9 @@ other years. The format of the data file is as follows
 
     First Name, Last Name, Position, Team, Completions, Attempts, Yards, TDs Ints, Comp%, Rating
 
-.. raw:: html
 
-    <pre id="qbdata.txt">
+.. datafile:: qbdata.txt
+
     Colt McCoy QB CLE  135 222 1576    6   9   60.8%   74.5
     Josh Freeman QB TB 291 474 3451    25  6   61.4%   95.9
     Michael Vick QB PHI    233 372 3018    21  6   62.6%   100.2
@@ -58,8 +58,6 @@ other years. The format of the data file is as follows
     Aaron Rodgers QB GB    312 475 3922    28  11  65.7%   101.2
     Sam Bradford QB STL    354 590 3512    18  15  60.0%   76.5
     Shaun Hill QB DET  257 416 2686    16  12  61.8%   81.3
-    </pre>
-
 
 To open this file, we would call the ``open`` function. The variable,
 ``fileref``, now holds a reference to the file object returned by
