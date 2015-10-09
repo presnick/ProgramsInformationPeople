@@ -18,23 +18,21 @@ Activities through 10/11
 
 You have the following graded activities:
 
-1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep. You can also view your current scores via the Progress page.
-   
-   * Before Monday's class:
-      * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
-      * Read :ref:`Strategy for building programs <build_program_chap>`
 
-   * Before Wednesday's class:
-      * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+* Before Monday's class:
+    * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
+    * Read :ref:`Strategy for building programs <build_program_chap>`
+
+* Before Wednesday's class:
+    * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 
-* By Sunday 10/11 at 5PM. Save answers to the exercises in :ref:`Problem Set 4 <problem_set_4>`.
+* By Sunday 10/11 at 5PM.
+    * Save answers to the exercises in :ref:`Problem Set 4 <problem_set_4>`.
 
 * By Sunday midnight 10/11:
-
-  * Read *The Most Human Human*, Chapter 5, "Getting out of Book"
-      * Read *The Most Human Human*, Chapter 10, p.219-237 only (you'll read the rest of the chapter next week). Note: we are skipping some of the other chapters.
-      * Answer :ref:`Reading Response 6 <reading_response_6>`.
+    * Read *The Most Human Human*, Chapter 10, p.219-237 only (you'll read the rest of the chapter next week). Note: we are skipping some of the other chapters.
+    * Answer :ref:`Reading Response 6 <reading_response_6>`.
 
 
 Reading Response

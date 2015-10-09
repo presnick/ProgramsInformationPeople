@@ -14,7 +14,7 @@ Assignments
    Assignments/ps2.rst
    Assignments/ps3.rst
    Assignments/ps4.rst
-
+   Assignments/ps5.rst
 
 General Introduction
 ::::::::::::::::::::

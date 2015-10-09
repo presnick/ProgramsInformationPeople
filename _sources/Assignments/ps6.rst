@@ -28,34 +28,37 @@ You have the following graded activities:
  
 2. Reading responses
 
-   * By Tuesday midnight: 
-      * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below).
-      * Read *The Most Human Human*, Chapter 10, p.237-259.
-      * Answer :ref:`Reading Response 7 <reading_response_7>`. 
 
 3. Problem set **Due:** **Sunday, February 22**
+   * Do the :ref:`Native Python Interpreter and Text Editor part of Problem Set 5. <unix_pset6>`
 
    * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>` 
 
 
 
-Reading Response
-----------------
+.. _unix_pset6:
 
-.. _reading_response_7:
+Native Python Interpreter and Text Editor
+-----------------------------------------
 
-1. Suppose you write and edit a long text file over the course of several days, saving a new version every 15 minutes or so (``myfile1.txt``, ``myfile2.txt``, ``myfile3.txt``,...). Eventually, you have 100 different versions of the file. Now consider the whole directory containing all 100 versions of the file. Would it have a lot of redundancy? As a compression technique, how might you take advantage of the unix diff command in order to reduce the total amount of space required to store all 100 versions of the file?
+Turn these in as screenshots via CTools in the Assignments tab!
 
-2. Think about assigning entropy scores to people instead of documents. If you were to compute information entropy scores for all the students you've met since enrolling at the University of Michigan, which of them has the highest entropy and why? 
+#. Make a new file in your text editor, and save it as ``new_program.py``. (This is a Python program!)
 
-.. activecode:: rr_7_1
+#. In your ``new_program.py`` file, write the following code (copy it from here).
 
-   # Fill in your response in between the triple quotes
-   s = """
+.. activecode:: example_code_ps6
 
-   """
-   print s
+   def cool_machine(x):
+   	y = x**2 +7
+   	print y
 
+   z = 65.3
+   print z + cool_machine(8)
+
+Then, run the Python program in your native Python interpreter. You should get an error. Take a screenshot of this and upload it to CTools.
+
+In a text editor, make edits to this code so it will work (the only output should be 136.3), saving it with a different name (``fixed_program.py``). Take a screenshot of the text editor with the correct coce, and upload it to CTools.
 
 Problem Set
 -----------
@@ -66,44 +69,6 @@ Problem Set
 
    This is a transition week, as we start to move toward writing complete programs in text files and running them from the command prompt, rather than working on several stand-alone problems in a browser. Starting with the next problem set, you won't be able to write and run code in the browser. This week, to help you see how the two ways of running code are related, you will write the code you have done it for previous problem sets, and then also copy your answers into a code file and make the code file run from the command line. Read to the bottom to see the instructions for what to submit via cTools, in addition to saving your code in the usual way in the browser. 
 
-
-1. Write three function calls to the function ``give_greeting``: 
-
-   * one that will return the string ``Hello, SI106!!!``
-   * one that will return the string ``Hello, world!!!``
-   * and one that will return the string ``Hey, everybody!`` 
-
-You may print the return values of those function calls, but you do not have to.
-
-You can see the function definition in the code below, but that's only so you can understand exactly what the code is doing so you can choose how to call this function. Feel free to make comments to help yourself understand, but otherwise DO NOT change the function definition code! HINT: calling the function in different ways and printing the results, to see what happens, may be helpful!
-
-.. activecode:: ps_6_1
-   
-   def give_greeting(greet_word="Hello",name="SI106",num_exclam=3):
-      final_string = greet_word + ", " + name + "!"*num_exclam
-      return final_string
-
-   #### DO NOT change the function definition above this line (OK to add comments)
-
-   # Write your three function calls below
-
-
-2. Define a function called mult_both whose input is two integers, whose default parameter values are the integers 3 and 4, and whose return value is the two input integers multiplied together.
-
-.. activecode:: ps_6_2
-
-   # Write your code here
-
-   ====
-
-   import test
-   print "\n---\n\n"
-   print "Testing whether your function works as expected (calling the function mult_both)"
-   try:
-      test.testEqual(mult_both(), 12)
-      test.testEqual(mult_both(5,10), 50)
-   except:
-      print "mult_both not defined or yields an error when invoked"
 
 
 3. Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
@@ -196,42 +161,6 @@ Follow the directions in the comments!
          print "first_message not defined, or fb_data was changed"
 
 
-
-5. Here's a warm up exercise on defining and calling a function:
-
-.. activecode:: ps_6_5
-
-      # Define a function is_prefix that takes two strings and returns 
-      # True if the first one is a prefix of the second one, 
-      # False otherwise.
-
-
-
-      # Here's a couple example function calls, printing the return value 
-      # to show you what it is.
-      print is_prefix("He","Hello") # should print True
-      print is_prefix("Hi","Hello") # should print False
-      print is_prefix("lo","Hello") # should print False
-      
-      ====
-      
-      import test
-      try:
-        print 'testing whether "Big" is a prefix of "Bigger"'
-        test.testEqual(is_prefix("Big", "Bigger"), True)
-        print 'testing whether "Bigger" is a prefix of "Big"'
-        test.testEqual(is_prefix("Bigger", "Big"), False)
-        print 'testing whether "ge" is a prefix of "Bigger"'
-        test.testEqual(is_prefix("ge","Bigger"), False)
-      except:
-        print "Looks like the function is_prefix has not been defined or has an error"
-
-
-6. Write code that repeatedly asks the user to input numbers. Keep going until the sum of the numbers is 21 or more. Print out the total. 
-
-.. activecode:: ps_6_6
-
-    # Write your code here!
 
 
 7. Now, in the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
