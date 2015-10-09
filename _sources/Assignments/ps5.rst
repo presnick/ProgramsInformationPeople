@@ -26,6 +26,9 @@ You have the following graded activities:
     * Read *The Most Human Human*, Chapter 10, p.237-259.
     * Answer :ref:`Reading Response 7 <reading_response_7>`.
 
+* Before Wednesday's class:
+    * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and do the exercises in that chapter
+
 * By Sunday midnight 10/18:
    * Save answers to the exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>`
 
