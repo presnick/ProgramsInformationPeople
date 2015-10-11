@@ -20,19 +20,19 @@ You have the following graded activities:
 1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
    
    * Before Monday's class: 
-      * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and do the exercises in that chapter
-   
+
    * Before Wednesday's class:
+        * Read :ref:`Installing a Native Python Interpreter and Text Editor <next_steps>` and follow the instructions to set up for running python on your computer
        * Read :ref:`Tuples<tuples_chap>`, and do the exercises in that chapter
        * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and do the exercises in that chapter
  
-2. Reading responses
-
 
 3. Problem set **Due:** **Sunday, February 22**
    * Do the :ref:`Native Python Interpreter and Text Editor part of Problem Set 5. <unix_pset6>`
 
    * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>` 
+
+
 
 
 
@@ -46,6 +46,10 @@ Turn these in as screenshots via CTools in the Assignments tab!
 #. Make a new file in your text editor, and save it as ``new_program.py``. (This is a Python program!)
 
 #. In your ``new_program.py`` file, write the following code (copy it from here).
+
+
+
+
 
 .. activecode:: example_code_ps6
 

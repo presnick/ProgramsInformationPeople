@@ -19,7 +19,6 @@ You have the following graded activities:
 
 * Before Monday's class:
     * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
-    * Read :ref:`Installing a Native Python Interpreter and Text Editor <next_steps>` and follow the instructions to set up for running python on your computer
 
 * By Tuesday midnight:
     * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below).
