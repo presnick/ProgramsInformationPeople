@@ -44,6 +44,7 @@ If it is not, you should make some configuration changes in Sublime Text to make
 Go to the menu at the top, to **Preferences > Settings - User**. Enter the following between the curly brackets: 
 
 // The number of spaces a tab is considered equal to
+
 "tab_size": 4
 
 Then go to File > Save.
@@ -92,6 +93,7 @@ If it is not, you should make some configuration changes in Sublime Text to make
 Go to the menu at the top, to **Sublime Text 2 > Preferences > Settings - User**. Enter the following between the curly brackets: 
 
 // The number of spaces a tab is considered equal to
+
 "tab_size": 4
 
 Then go to File > Save.
