@@ -23,9 +23,23 @@ You have the following graded activities:
     * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
     * Read :ref:`Strategy for building programs <build_program_chap>`
 
+.. usageassignment:: prep_8
+    :chapters: DictionaryAccumulation
+    :subchapters: BuildingAProgram/TheStrategy.rst
+    :assignment_name: Prep 8
+    :deadline: 2015-10-05 21:30:00
+    :pct_required: 80
+    :points: 50
+
 * Before Wednesday's class:
     * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
+.. usageassignment:: prep_9
+    :chapters: Functions
+    :assignment_name: Prep 9
+    :deadline: 2015-10-07 21:30:00
+    :pct_required: 80
+    :points: 50
 
 * By Sunday 10/11 at 5PM.
     * Save answers to the exercises in :ref:`Problem Set 4 <problem_set_4>`.

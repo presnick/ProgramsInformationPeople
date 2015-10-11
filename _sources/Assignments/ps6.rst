@@ -47,7 +47,12 @@ Turn these in as screenshots via CTools in the Assignments tab!
 
 #. In your ``new_program.py`` file, write the following code (copy it from here).
 
-
+.. usageassignment:: prep_12
+    :chapters: Tuples, NestedData
+    :assignment_name: Prep a12
+    :deadline: 2015-10-15 21:30:00
+    :pct_required: 80
+    :points: 50
 
 
 

@@ -20,6 +20,13 @@ You have the following graded activities:
 * Before Monday's class:
     * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
 
+.. usageassignment:: prep_10
+    :chapters: IndefiniteIteration
+    :assignment_name: Prep a10
+    :deadline: 2015-10-12 21:30:00
+    :pct_required: 80
+    :points: 50
+
 * By Tuesday midnight:
     * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below).
     * Read *The Most Human Human*, Chapter 10, p.237-259.
@@ -27,6 +34,13 @@ You have the following graded activities:
 
 * Before Wednesday's class:
     * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and do the exercises in that chapter
+
+.. usageassignment:: prep_11
+    :chapters: OptionalAndKeywordParameters
+    :assignment_name: Prep a11
+    :deadline: 2015-10-14 21:30:00
+    :pct_required: 80
+    :points: 50
 
 * By Sunday 10/18 at 5PM:
    * Save answers to the exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>`
