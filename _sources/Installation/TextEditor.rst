@@ -25,38 +25,44 @@ Definitely **do not** use MS Word. Word will not save files in the right format,
 Windows Instructions
 ====================
 
-The editor that we will help you to use is called **NotePad++**. Please download it from
-`this site <http://notepad-plus-plus.org/download/>`_. Download it and then run the installer to install NotePad++, like you would most programs you download.
+The editor that we will help you to use is called **Sublime Text**. Please download it from
+`this site <http://www.sublimetext.com/2>`_. Download it and then run the installer to install Sublime Text, like you would most programs you download. Specifically,
+1. Click the Windows link.
+2. By default, ‘Sublime Text 2.0.2 Setup.exe’ should save to your Downloads folder.
+3. Find and double click it.
+4. Security Warning windows may appear, click ‘Run’ and then ‘Yes’.
+5. Follow the Setup Wizard steps.
 
-.. note::
+Sublime Text may be downloaded and evaluated for free, and there is currently no enforced time limit for the evaluation. However, after evaluation, a license must be purchased for continued use.
 
-   Important! Before you create your first program, you need to make one small change in the Preferences for NotePad++. This will save you lots of "Python indent errors" anguish later. 
-   Under *Settings -> Preferences -> Language Menu/Tab Settings*, tick the check box for "Expand Tabs", leaving the value at "4", and 
-   press the "Close" button.
-   
-   .. image:: Figures/tabs.JPG
+Once installation is complete, go to your start menu, select ‘All Programs,’ and find and open Sublime Text 2. The default tab size should be set to 4.
 
-
-Follow the instructions below. It should be 
-quite intuitive. The one thing to keep in mind is that NotePad++ is an environment
-for *creating* python programs. It doesn't run them!  You'll have to install a little
-more stuff to run your programs, as described in later sections.
-(If you'd like to see a demonstration of NotePad++, Dr. Chuck has a screen cast for the use of NotePad++. 
-You can either view this `on YouTube <http://www.youtube.com/watch?v=o0X-VHX6ls0>`_ or you can download the high-quality `QuickTime version <http://www-personal.umich.edu/~csev/courses/shared/podcasts/windows-python-notepad-plus.mov>`_ 
-of the screen cast. You will need Apple QuickTime installed to view this video. )
-
-Start NotePad++ from either a Desktop icon or from the Start Programs menu and enter your first Python program into NotePad++:
-
-   .. image:: Figures/helloworld.JPG
+   .. image:: Figures/Sublime_Win1.png
       :width: 300px
     
-Save your program as ``firstprog.py``. You can save it anywhere. In a little while we'll
-create a code folder in a convenient place on your machine and you can resave the file then. 
-You will notice that after you save the file, NotePad++ will color your code based on the Python syntax rules. 
-Syntax coloring is a very helpful feature as it gives you visual feedback about your program and can help you track down syntax errors more easily. 
-NotePad++ only knows that your file is a Python file after you save it with a ``.py`` suffix, also known as file extension. It's like the ``.txt`` file extension we've seen that means a file is a plain text file, except this ``.py`` extension means that this file is a Python program.
+If it is not, you should make some configuration changes in Sublime Text to make sure that your spaces will be consistent. (Indenting matters in Python, as you know, and it also matters whether your indentations are spaces or tabs – these are different, even when they look the same to us humans.) To make sure this will not cause you problems, do the following:
+Go to the menu at the top, to **Preferences > Settings - User**. Enter the following between the curly brackets: 
 
-   .. image:: Figures/firstprog.JPG
+// The number of spaces a tab is considered equal to
+
+"tab_size": 4
+
+Then go to File > Save.
+
+It should look like this:
+
+   .. image:: Figures/Sublime_Win2.png
+      :width: 300px
+
+Follow the instructions below. It should be quite intuitive. The one thing to keep in mind is that Sublime Text is an environment for creating python programs. It doesn’t run them! You’ll have to install a little more stuff to run your programs, as described in later sections.
+Start Sublime Text from either a Desktop icon or from the Start Programs menu and enter your first Python program:
+
+   .. image:: Figures/Sublime_Win3.png
+      :width: 300px
+
+Save your program as ``firstprog.py`` in your 106 folder. You will notice that after you save the file, Sublime Text will color your code based on the Python syntax rules. Syntax coloring is a very helpful feature as it gives you visual feedback about your program and can help you track down syntax errors more easily. Sublime Text only knows that your file is a Python file after you save it with a ``.py`` suffix, also known as file extension. It's like the ``.txt`` file extension we've seen that means a file is a plain text file, except this ``.py`` extension means that this file is a Python program.
+
+   .. image:: Figures/Sublime_Win4.png
       :width: 300px
 
 
@@ -65,38 +71,50 @@ NotePad++ only knows that your file is a Python file after you save it with a ``
 Mac Instructions
 ================
 
-The editor that we will help you to use is called **TextWrangler**. (TextWrangler and Notepad++ are very similar, but one runs on Macs and one runs on Windows.) Please download it from
-`the TextWrangler site <http://www.barebones.com/products/TextWrangler/download.html>`_. Download it and then run the installer to install TextWrangler, like you would most programs you download.
+The editor that we will help you to use is called **Sublime Text**. Please download it from
+`this site <http://www.sublimetext.com/2>`_. Download it and then run the installer to install Sublime Text, like you would most programs you download. Specifically,
+1. Click the OS X link (make sure that your operating system is OS X 10.6 or later).
+2. Save the .dmg file somewhere you can easily find it (e.g., desktop).
+3. Double click this file.
+4. This will open the window below. Drag the Sublime Text 2 icon into the Applications folder.
 
-TextWrangler may ask you to register for something, or to install other programs. You can hit Cancel -- you do not need to register for anything to use TextWrangler, you do not need any other programs, and it will not expire.
-
-Follow the instructions that follow. It should be 
-quite intuitive. Keep in mind the concepts from earlier -- TextWrangler is an environment (a piece of software)
-for _creating_ python programs. It's not intended (in this course) for running them!
-
-Start TextWrangler from a Dock shortcut icon, finding it in your Applications folder, or startinit from Spotlight. 
-
-You should make some configuration changes in TextWrangler to make sure that your spaces will be consistent. (Indenting matters in Python, as you know, and it also matters whether your indentations are spaces or tabs -- these are different, even when they look the same to us humans.) To make sure this will not cause you problems, do the following:
-
-Go to the menu at the top, to **TextWrangler > Preferences**. Click the **Auto-expand tabs** box, and make sure the **Tab width** text box has **4** in it. It should look like this:
-
-   .. image:: Figures/textwranglerprefs.png
+   .. image:: Figures/Sublime_Mac1.png
       :width: 300px
 
-Then, if you have opened any documents in TextWrangler already, go to **Edit > Normalize options** and click **Normalize**. This will set the spacing settings on all of your current documents to be the new default (4 spaces of indentation when you indent on a new line, et cetera).
+Sublime Text may be downloaded and evaluated for free, and there is currently no enforced time limit for the evaluation. However, after evaluation, a license must be purchased for continued use.
 
-If you run into any indentation problems while using TextWrangler when you do not expect to, you should check all your code carefully, then repeat that process, or ask the Instructional Team/your classmates to help you debug the problem!
+Follow the instructions. It should be quite intuitive. Keep in mind the concepts from earlier – Sublime Text is an environment (a piece of software) for creating python programs. It’s not intended (in this course) for running them!
+Start Sublime Text from a Dock shortcut icon, finding it in your Applications folder, or startinit from Spotlight. The default tab size should be set to 4.
 
-Now, enter your first Python program into TextWrangler:
+   .. image:: Figures/Sublime_Mac2.png
+      :width: 300px
 
-   .. image:: Figures/helloworldmac.png
+If it is not, you should make some configuration changes in Sublime Text to make sure that your spaces will be consistent. (Indenting matters in Python, as you know, and it also matters whether your indentations are spaces or tabs – these are different, even when they look the same to us humans.) To make sure this will not cause you problems, do the following:
+Go to the menu at the top, to **Sublime Text 2 > Preferences > Settings - User**. Enter the following between the curly brackets: 
+
+// The number of spaces a tab is considered equal to
+
+"tab_size": 4
+
+Then go to File > Save.
+
+It should look like this:
+
+   .. image:: Figures/Sublime_Mac3.png
+      :width: 300px
+
+If you run into any indentation problems while using Sublime Text when you do not expect to, you should check all your code carefully, then repeat that process, or ask the Instructional Team/your classmates to help you debug the problem!
+
+Now, enter your first Python program into Sublime Text:
+
+   .. image:: Figures/Sublime_Mac4.png
       :width: 300px
     
-Save your program as ``firstprog.py``, in your 106 folder. You will notice that after you save the file, TextWrangler will color your code based on the Python syntax rules. That's because you saved it with the ``.py`` file extension, which tells the computer this file is a Python program.
+Save your program as ``firstprog.py``, in your 106 folder. You will notice that after you save the file, Sublime Text will color your code based on the Python syntax rules. That's because you saved it with the ``.py`` file extension, which tells the computer this file is a Python program.
 
 Syntax coloring is a very helpful feature, as it gives you visual feedback about your program and can help you track down syntax errors more easily. 
-TextWrangler only knows that your file is a Python file after you save it with a ``.py`` suffix, also known as file extension. It's like the ``.txt`` file extension we've seen that means a file is a plain text file, except this ``.py`` extension means that this file is a Python program.
+Sublime Text only knows that your file is a Python file after you save it with a ``.py`` suffix, also known as file extension. It's like the ``.txt`` file extension we've seen that means a file is a plain text file, except this ``.py`` extension means that this file is a Python program.
 
-   .. image:: Figures/firstprogram_tw.png
+   .. image:: Figures/Sublime_Mac5.png
       :width: 300px
 
