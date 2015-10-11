@@ -27,11 +27,11 @@ Windows Instructions
 
 The editor that we will help you to use is called **Sublime Text**. Please download it from
 `this site <http://www.sublimetext.com/2>`_. Download it and then run the installer to install Sublime Text, like you would most programs you download. Specifically,
-#. Click the Windows link.
-#. By default, ‘Sublime Text 2.0.2 Setup.exe’ should save to your Downloads folder.
-#. Find and double click it.
-#. Security Warning windows may appear, click ‘Run’ and then ‘Yes’.
-#. Follow the Setup Wizard steps.
+1. Click the Windows link.
+2. By default, ‘Sublime Text 2.0.2 Setup.exe’ should save to your Downloads folder.
+3. Find and double click it.
+4. Security Warning windows may appear, click ‘Run’ and then ‘Yes’.
+5. Follow the Setup Wizard steps.
 
 Sublime Text may be downloaded and evaluated for free, and there is currently no enforced time limit for the evaluation. However, after evaluation, a license must be purchased for continued use.
 
@@ -42,9 +42,12 @@ Once installation is complete, go to your start menu, select ‘All Programs,’
     
 If it is not, you should make some configuration changes in Sublime Text to make sure that your spaces will be consistent. (Indenting matters in Python, as you know, and it also matters whether your indentations are spaces or tabs – these are different, even when they look the same to us humans.) To make sure this will not cause you problems, do the following:
 Go to the menu at the top, to **Preferences > Settings - User**. Enter the following between the curly brackets: 
+
 // The number of spaces a tab is considered equal to
 "tab_size": 4
+
 Then go to File > Save.
+
 It should look like this:
 
    .. image:: Figures/Sublime_Win2.PNG
@@ -69,10 +72,10 @@ Mac Instructions
 
 The editor that we will help you to use is called **Sublime Text**. Please download it from
 `this site <http://www.sublimetext.com/2>`_. Download it and then run the installer to install Sublime Text, like you would most programs you download. Specifically,
-#. Click the OS X link (make sure that your operating system is OS X 10.6 or later).
-#. Save the .dmg file somewhere you can easily find it (e.g., desktop).
-#. Double click this file.
-#. This will open the window below. Drag the Sublime Text 2 icon into the Applications folder.
+1. Click the OS X link (make sure that your operating system is OS X 10.6 or later).
+2. Save the .dmg file somewhere you can easily find it (e.g., desktop).
+3. Double click this file.
+4. This will open the window below. Drag the Sublime Text 2 icon into the Applications folder.
 
    .. image:: Figures/Sublime_Mac1.PNG
       :width: 300px
@@ -87,9 +90,12 @@ Start Sublime Text from a Dock shortcut icon, finding it in your Applications fo
 
 If it is not, you should make some configuration changes in Sublime Text to make sure that your spaces will be consistent. (Indenting matters in Python, as you know, and it also matters whether your indentations are spaces or tabs – these are different, even when they look the same to us humans.) To make sure this will not cause you problems, do the following:
 Go to the menu at the top, to **Sublime Text 2 > Preferences > Settings - User**. Enter the following between the curly brackets: 
+
 // The number of spaces a tab is considered equal to
 "tab_size": 4
+
 Then go to File > Save.
+
 It should look like this:
 
    .. image:: Figures/Sublime_Mac3.PNG
