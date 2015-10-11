@@ -37,7 +37,7 @@ Sublime Text may be downloaded and evaluated for free, and there is currently no
 
 Once installation is complete, go to your start menu, select ‘All Programs,’ and find and open Sublime Text 2. The default tab size should be set to 4.
 
-   .. image:: Figures/Sublime_Win1.PNG
+   .. image:: Figures/Sublime_Win1.png
       :width: 300px
     
 If it is not, you should make some configuration changes in Sublime Text to make sure that your spaces will be consistent. (Indenting matters in Python, as you know, and it also matters whether your indentations are spaces or tabs – these are different, even when they look the same to us humans.) To make sure this will not cause you problems, do the following:
@@ -51,18 +51,18 @@ Then go to File > Save.
 
 It should look like this:
 
-   .. image:: Figures/Sublime_Win2.PNG
+   .. image:: Figures/Sublime_Win2.png
       :width: 300px
 
 Follow the instructions below. It should be quite intuitive. The one thing to keep in mind is that Sublime Text is an environment for creating python programs. It doesn’t run them! You’ll have to install a little more stuff to run your programs, as described in later sections.
 Start Sublime Text from either a Desktop icon or from the Start Programs menu and enter your first Python program:
 
-   .. image:: Figures/Sublime_Win3.PNG
+   .. image:: Figures/Sublime_Win3.png
       :width: 300px
 
 Save your program as ``firstprog.py`` in your 106 folder. You will notice that after you save the file, Sublime Text will color your code based on the Python syntax rules. Syntax coloring is a very helpful feature as it gives you visual feedback about your program and can help you track down syntax errors more easily. Sublime Text only knows that your file is a Python file after you save it with a ``.py`` suffix, also known as file extension. It's like the ``.txt`` file extension we've seen that means a file is a plain text file, except this ``.py`` extension means that this file is a Python program.
 
-   .. image:: Figures/Sublime_Win4.PNG
+   .. image:: Figures/Sublime_Win4.png
       :width: 300px
 
 
@@ -78,7 +78,7 @@ The editor that we will help you to use is called **Sublime Text**. Please downl
 3. Double click this file.
 4. This will open the window below. Drag the Sublime Text 2 icon into the Applications folder.
 
-   .. image:: Figures/Sublime_Mac1.PNG
+   .. image:: Figures/Sublime_Mac1.png
       :width: 300px
 
 Sublime Text may be downloaded and evaluated for free, and there is currently no enforced time limit for the evaluation. However, after evaluation, a license must be purchased for continued use.
@@ -86,7 +86,7 @@ Sublime Text may be downloaded and evaluated for free, and there is currently no
 Follow the instructions. It should be quite intuitive. Keep in mind the concepts from earlier – Sublime Text is an environment (a piece of software) for creating python programs. It’s not intended (in this course) for running them!
 Start Sublime Text from a Dock shortcut icon, finding it in your Applications folder, or startinit from Spotlight. The default tab size should be set to 4.
 
-   .. image:: Figures/Sublime_Mac2.PNG
+   .. image:: Figures/Sublime_Mac2.png
       :width: 300px
 
 If it is not, you should make some configuration changes in Sublime Text to make sure that your spaces will be consistent. (Indenting matters in Python, as you know, and it also matters whether your indentations are spaces or tabs – these are different, even when they look the same to us humans.) To make sure this will not cause you problems, do the following:
@@ -100,14 +100,14 @@ Then go to File > Save.
 
 It should look like this:
 
-   .. image:: Figures/Sublime_Mac3.PNG
+   .. image:: Figures/Sublime_Mac3.png
       :width: 300px
 
 If you run into any indentation problems while using Sublime Text when you do not expect to, you should check all your code carefully, then repeat that process, or ask the Instructional Team/your classmates to help you debug the problem!
 
 Now, enter your first Python program into Sublime Text:
 
-   .. image:: Figures/Sublime_Mac4.PNG
+   .. image:: Figures/Sublime_Mac4.png
       :width: 300px
     
 Save your program as ``firstprog.py``, in your 106 folder. You will notice that after you save the file, Sublime Text will color your code based on the Python syntax rules. That's because you saved it with the ``.py`` file extension, which tells the computer this file is a Python program.
@@ -115,6 +115,6 @@ Save your program as ``firstprog.py``, in your 106 folder. You will notice that 
 Syntax coloring is a very helpful feature, as it gives you visual feedback about your program and can help you track down syntax errors more easily. 
 Sublime Text only knows that your file is a Python file after you save it with a ``.py`` suffix, also known as file extension. It's like the ``.txt`` file extension we've seen that means a file is a plain text file, except this ``.py`` extension means that this file is a Python program.
 
-   .. image:: Figures/Sublime_Mac5.PNG
+   .. image:: Figures/Sublime_Mac5.png
       :width: 300px
 
