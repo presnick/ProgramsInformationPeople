@@ -42,7 +42,7 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-* By Sunday 10/18 at 5PM:
+* By Tuesday 10/20 at 5PM:
    * Save answers to the exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>`
 
 
