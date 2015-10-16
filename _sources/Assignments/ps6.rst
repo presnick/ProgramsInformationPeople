@@ -12,51 +12,51 @@
     :linenothreshold: 500
 
 
-Activities through 2/22
-=======================
+Activities through 10/25
+========================
 
 You have the following graded activities:
 
-1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
-   
-   * Before Monday's class: 
+* Before Wednesday's class:
+    * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and do the exercises in that chapter
 
-   * Before Wednesday's class:
-        * Read :ref:`Installing a Native Python Interpreter and Text Editor <next_steps>` and follow the instructions to set up for running python on your computer
-       * Read :ref:`Tuples<tuples_chap>`, and do the exercises in that chapter
-       * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and do the exercises in that chapter
- 
-
-3. Problem set **Due:** **Sunday, February 22**
-   * Do the :ref:`Native Python Interpreter and Text Editor part of Problem Set 5. <unix_pset6>`
-
-   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>` 
+.. usageassignment:: prep_12
+    :chapters: Tuples, NestedData
+    :assignment_name: Prep a12
+    :deadline: 2015-10-22 21:30:00
+    :pct_required: 80
+    :points: 50
 
 
+* By Sunday 10/25 at 5PM:
+   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`, including :ref:`Unix problems <unix_pset6>`
 
+* By Monday 10/26 at 2:30PM:
+   * Be ready for the midterm exam, during regular class time
 
+   * In Canvas you will find a practice midterm exam and a solution set.
+
+   * Suggested practice for making best use of the problem sets for review
+      * Go through all the problem sets, looking at your answers and fixing them if they weren't correct.
+      * Then make another pass through the problem sets. This time, don't look at your past answer or the solution set. Write new answers from scratch. See how quickly you can solve them. Make a note of any problems that take you a long time to solve.
+      * Repeat as necessary. On later iterations of this process, only redo the problems that you did not solve immediately on the previous iteration.
+
+   * We have also included a bunch of practice problems below, at the bottom of this page. None of these are graded. Some have solutions.
 
 .. _unix_pset6:
 
 Native Python Interpreter and Text Editor
 -----------------------------------------
 
-Turn these in as screenshots via CTools in the Assignments tab!
+Turn these in as screenshots via Canvas in the Assignments tab!
 
 #. Make a new file in your text editor, and save it as ``new_program.py``. (This is a Python program!)
 
 #. In your ``new_program.py`` file, write the following code (copy it from here).
 
-.. usageassignment:: prep_12
-    :chapters: Tuples, NestedData
-    :assignment_name: Prep a12
-    :deadline: 2015-10-15 21:30:00
-    :pct_required: 80
-    :points: 50
 
 
-
-.. activecode:: example_code_ps6
+.. code:: python
 
    def cool_machine(x):
    	y = x**2 +7
@@ -65,36 +65,31 @@ Turn these in as screenshots via CTools in the Assignments tab!
    z = 65.3
    print z + cool_machine(8)
 
-Then, run the Python program in your native Python interpreter. You should get an error. Take a screenshot of this and upload it to CTools.
+Then, run the Python program in your native Python interpreter. You should get an error. Take a screenshot of this and upload it to Canvas.
 
-In a text editor, make edits to this code so it will work (the only output should be 136.3), saving it with a different name (``fixed_program.py``). Take a screenshot of the text editor with the correct coce, and upload it to CTools.
+In a text editor (Sublime Text), make edits to this code so it will work (the only output should be 136.3), saving it with a different name (``fixed_program.py``). Take a screenshot of the text editor with the correct coce, and upload it to Canvas.
 
 Problem Set
 -----------
 
 .. _problem_set_6:
 
-.. note::
 
-   This is a transition week, as we start to move toward writing complete programs in text files and running them from the command prompt, rather than working on several stand-alone problems in a browser. Starting with the next problem set, you won't be able to write and run code in the browser. This week, to help you see how the two ways of running code are related, you will write the code you have done it for previous problem sets, and then also copy your answers into a code file and make the code file run from the command line. Read to the bottom to see the instructions for what to submit via cTools, in addition to saving your code in the usual way in the browser. 
+1. Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
 
-
-
-3. Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
-
-.. activecode:: ps_6_3
+.. activecode:: ps_6_1
 
       new_tuple_list = [(1,2),(4, "umbrella"),("chair","hello"),("soda",56.2)]
 
 
 
-4. You can get data from Facebook that has nested structures which represent posts, or users, or various other types of things on Facebook. We won't put any of our actual Facebook group data on this textbook, because it's publicly available on the internet, but here's a structure that is almost exactly the same as the real thing, with fake data. 
+2. You can get data from Facebook that has nested structures which represent posts, or users, or various other types of things on Facebook. We won't put any of our actual Facebook group data on this textbook, because it's publicly available on the internet, but here's a structure that is almost exactly the same as the real thing, with fake data.
 
 Notice that the stuff in the variable ``fb_data`` is basically a big nested dictionary, with dictionaries and lists, strings and integers, inside it as keys and values. (Later in the course we'll learn how to get this kind of thing directly FROM facebook, and then it will be a bit more complicated and have real information from our Facebook group.)
 
 Follow the directions in the comments!
 
-.. activecode:: ps_6_4
+.. activecode:: ps_6_2
 
       # first, look through the data structure saved in the variable fb_data to get a sense for it.
 
@@ -141,10 +136,11 @@ Follow the directions in the comments!
           }]
          }
 
-      # Here are some questions to help you. You don't need to 
-      # comment answers to these (we won't grade your answers)
-      # but we suggest doing so! They 
-      # may help you think through this big nested data structure.
+      # Here are some questions to help you. We won't grade your
+      # answers to these questions, but we suggest that you write
+      # them in the code as comments. They may help you think through
+      # this big nested data structure. Test your answers using
+      # print statements.
       
       # What type is the structure saved in the variable fb_data?
       # What type does the expression fb_data["data"] evaluate to?
@@ -153,7 +149,7 @@ Follow the directions in the comments!
       # What about fb_data["data"][0]["id"]?
 
       # Now write a line of code to assign the value of the first 
-      # message ("This problem might...")  in the big fb_data data 
+      # message ("This problem might...") from the big fb_data data
       # structure to a variable called first_message. Do not hard code your answer! 
       # (That is, write it in terms of fb_data, so that it would work
       # with any content stored in the variable fb_data that has
@@ -172,7 +168,7 @@ Follow the directions in the comments!
 
 
 
-7. Now, in the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
+3. Now, in the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
 
 .. image:: Figures/HangmanSample.JPG
 
@@ -184,7 +180,7 @@ Your first task is just to understand the logic of the program, by matching up e
 
 (Note: you may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have. Those are the improvements you'll make in later problems.)
 
-.. activecode:: ps_6_7
+.. activecode:: ps_6_3
 
   def blanked(word, guesses):
       return "blanked word"
@@ -268,14 +264,16 @@ Your first task is just to understand the logic of the program, by matching up e
   # What line(s) of code do what's mentioned in box 11?
 
          
-8. The next task you have is to create a correct version of the blanked function:
+4. The next task you have is to create a correct version of the blanked function:
 
-.. activecode:: ps_6_8
+.. activecode:: ps_6_4
 
     # define the function blanked(). 
     # It takes a word and a string of letters that have been revealed.
     # It should return a string with the same number of characters as
-    # the original word, but with the unrevealed characters replaced by _ 
+    # the original word, but with the unrevealed characters replaced by _
+    # HINT: iterate through the letters in the word, accumulating letters or
+    # underscores as you go. If you try to iterate through the guesses, it's harder.
          
     # a sample call to this function:
     print(blanked("hello", "elj"))
@@ -295,9 +293,9 @@ Your first task is just to understand the logic of the program, by matching up e
         print "The function blanked has not been defined yet or has an error."
 
 
-9. Now you have to create a good version of the health_prompt() function.
+5. Now you have to create a good version of the health_prompt() function.
 
-.. activecode:: ps_6_9
+.. activecode:: ps_6_5
 
     # Define the function health_prompt(). The first parameter should be the current
     # health and the second should be the the maximum health you can have. It should return a string 
@@ -326,9 +324,9 @@ Your first task is just to understand the logic of the program, by matching up e
         print "The function health_prompt is not defined or has an error"
 
    
-10. Now you have a fully functioning hangman program! Copy your two function definitions for the last two problems at the top of this code box and try playing the game with your friends. ** There is no solution for this problem, because if you paste in the correct functions, it will work correctly! This one's for fun -- nothing to be graded here.**
+6. Now you have a fully functioning hangman program! Copy your two function definitions for the last two problems at the top of this code box. Then, make a change so that you initially start with 7 health instead of 3. Try playing the game with your friends! Don't forget to save your code.
 
-.. activecode:: ps_6_10
+.. activecode:: ps_6_6
    
     def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
         res = "\n" + txt + "\n"
@@ -384,16 +382,338 @@ Your first task is just to understand the logic of the program, by matching up e
     main()
 
 
-11. Now you have to copy all your answers into a single file and run that file from the command prompt. 
 
-   * From cTools, look in the Assignments tab, at PS 6. 
-      * download ps6.py into whatever directory on your local machine that you used last week for saving and running python files
-      * download test106.py into that same directory (very important!)
-      
-   * Follow the instructions in ps6.py, which repeat the instructions for the problems above. Feel free to copy your code from the browser.
+Practice Problems: Material Prior to Functions
+----------------------------------------------
 
-   * Run your program from the command prompt and make sure all the tests pass. Then uncomment the last line and take a screenshot showing that the hangman game is playing correctly.
+1. See comments in code for instructions.
 
-   * Submit your .py file and the screenshot via cTools.
-   
-All done!
+.. actex:: rv_1_1
+
+   s = "supercalifragilisticexpialidocious"
+   # How many characters are in string s? Write code to print the answer.
+
+   lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
+   # How many characters are in each element of list lp?
+   # Write code to print the length (number of characters) of each element of the list on a separate line.
+   ## Do NOT write 8+ lines of code to do this.
+
+   # The output you get should be:
+   # 5
+   # 13
+   # 11
+   # 12
+   # 3
+   # 12
+   # 11
+   # 6
+
+2. See comments in code for instructions.
+
+.. actex:: rv_1_2
+
+   ic = 93252759253293024
+   # What is the value if you add 5 to the integer in ic?
+
+   dcm = [9, 4, 67, 89, 98324, 23, 34, 67, 89, 34, 56, 67, 90, 3242, 9893, 5]
+   # add 14 to each element of the list dcm and print the result
+
+   # The output you get should be:
+   # 23
+   # 18
+   # 81
+   # 103
+   # 98338
+   # 37
+   # 48
+   # 81
+   # 103
+   # 48
+   # 70
+   # 81
+   # 104
+   # 3256
+   # 9907
+   # 19
+
+3. See comments in code for instructions.
+
+.. actex:: rv_1_3
+
+   pl = "keyboard smashing: sdgahgkslghgisaoghdwkltewighigohdjdslkfjisdoghkshdlfkdjgdshglsdkfdsgkldhfkdlsfhdsklghdskgdlhgsdklghdsgkdslghdskglsdgkhdskfls"
+   # What is the last character of the string value in the variable pl? Find it and print it.
+
+   plts = ["sdsagdsal","sdadfsfsk","dsgsafsal","tomorrow","cooperative","sdgadtx","289,670,452","!)?+)_="]
+   # What is the last character of each element in the list plts?
+   # Print the last character of each element in the list on a separate line.
+   # HINT: You should NOT have to count the length of any of these strings manually/by yourself.
+
+   # Your output should be:
+   # l
+   # k
+   # l
+   # w
+   # e
+   # x
+   # 2
+   # =
+
+
+4. See comments in code for instructions.
+
+.. actex:: rv_1_4
+
+   bz = "elementary, my dear watson"
+   # Write code to print the fifth character of string bz.
+   # Your output should be:
+   # e
+
+   # Write code to print the seventh character of string bz.
+   # Your output should be:
+   # t
+
+5. See comments in code for instructions.
+
+.. actex:: rv_1_5
+
+   nm = "Irene"
+   # write code to print out the string "Why hello, Irene" using the variable nm.
+
+
+   hlt = ['mycroft','Lestrade','gregson','sherlock','Joan','john','holmes','mrs hudson']
+   # Write code to print "Nice to meet you," in front of each element in list hlt on a separate line.
+
+   # Your output should look like:
+   # Nice to meet you, mycroft
+   # Nice to meet you, Lestrade
+   # Nice to meet you, gregson
+   # Nice to meet you, sherlock
+   # Nice to meet you, Joan
+   # Nice to meet you, john
+   # Nice to meet you, holmes
+   # Nice to meet you, mrs hudson
+
+
+6. See comments in code for instructions.
+
+.. actex:: rv_1_6
+
+   z = True
+   # Write code to print the type of the value in the variable z.
+
+   ab = 45.6
+   # Write code to print the type of the value in the variable ab.
+
+
+7. See comments in code for instructions.
+
+.. actex:: rv_1_7
+
+   fancy_tomatoes = ["hello", 6, 4.24, 8, 20, "newspaper", True, "goodbye", "False", False, 5967834, "6578.31"]
+
+   # Write code to print the length of the list fancy_tomatoes.
+
+
+   # Write code to print out each element of the list fancy_tomatoes on a separate line.
+   # (You can do this in just 2 lines of code!)
+
+   # Your output should look like:
+   # hello
+   # 6
+   # 4.24
+   # 8
+   # 20
+   # newspaper
+   # True
+   # goodbye
+   # False
+   # False
+   # 5967834
+   # 6578.31
+
+
+   # Now write code to print out the type of each element of the list fancy_tomatoes on a separate line.
+
+   # Your output should look like:
+   # <type 'str'>
+   # <type 'int'>
+   # <type 'float'>
+   # <type 'int'>
+   # <type 'int'>
+   # <type 'str'>
+   # <type 'bool'>
+   # <type 'str'>
+   # <type 'str'>
+   # <type 'bool'>
+   # <type 'int'>
+   # <type 'str'>
+
+
+Functions Practice Problems
+---------------------------
+
+We strongly suggest that you try to do the problems yourself before looking at the solutions (which are heavily commented)
+
+1. Define (and call) a function called `` get_vowels `` which takes an **input** of a string and **returns the total number of vowels in the string**.
+
+.. tabbed:: func_review_1
+
+  .. tab:: Problem
+
+      .. actex:: fr_1
+
+          # Write your code here!
+
+
+          # Here's a sample function call.
+          print get_vowels("Hello all") # This should print: 3
+
+  .. tab:: Solution
+
+      .. actex:: fr_1a
+
+          def get_vowels(s):
+              vowels = "aeiou"
+              total = 0
+              for v in vowels:
+                  total += s.count(v)
+              return total
+
+          print get_vowels("Hello all")
+
+2. Define (and call) a function called `` sum_a_list `` which **takes any list of integers** and **returns the sum of all integers in the list**.
+
+.. tabbed:: func_review_2
+
+  .. tab:: Problem
+
+      .. actex:: fr_2
+
+          # Write your code here!
+
+
+          # Here's a sample function call.
+          print sum_a_list([1,4,7,5]) # this should print: 17
+
+          # Extra practice:
+          # how would you change this function just a LITTLE
+          # so that the function could also take a string of digits
+          # and return the sum of all those digits.
+          # (Hint: to do this, you only have to type 5 more characters.)
+
+  .. tab:: Solution
+
+      .. actex:: fr_2a
+
+          def sum_a_list(lt):
+              tot = 0
+              for i in lt:
+                  tot = tot + i
+              return tot
+
+          print sum_a_list([1,4,7,5])
+
+          # Here's the version of the function that will work
+          #   for EITHER a list of integers or a string of digits
+          def sum_a_list_or_digitstring(lt):
+              tot = 0
+              for i in lt:
+                  tot = tot + int(i)
+              return tot
+
+          print sum_a_list_or_digitstring("1475")
+
+
+3. Define (and call!) a function called ``common_word`` that **takes a string** and **prints a tuple** of **the most commonly used word in the string** and **the number of times that word is used**. (If there's more than one word that's used most frequently, the function should **print** all of those words.)
+
+.. tabbed:: func_review_3
+
+  .. tab:: Problem
+
+      .. actex:: fr_3
+
+          # Write your code here!
+
+
+          # Here's a sample function call.
+          common_word("hello hello hello is what they said to the class!") # should print: hello
+
+
+          # For extra practice: you've done something like this before --
+          # how would you change this function to print the LONGEST word in the string?
+
+
+
+  .. tab:: Solution
+
+      .. actex:: fr_3a
+
+          def common_word(s):
+              d = {}
+              sp = s.split() # split my string by whitespace, so into 'words'
+              for w in sp:
+                  if w in d:
+                      d[w] = d[w] + 1
+                  else:
+                      d[w] = 1
+              kys = d.keys() # get all the keys from the dict you built, in a list
+              most_common = kys[0] # start at the beginning of the list -- this is the most common so far!
+              for k in d: # go through the keys in the dictionary
+                  if d[k] > d[most_common]: # if the value of the key is bigger than the value of the most common key SO FAR, then you have a new most common key so far
+                      most_common = k # so reassign the most_common key
+              for ky in d: # now that we know the value of the most common key, go through the keys of the dictionary again
+                  if d[ky] == d[most_common]: # for every key that has the same value as the most common one
+                      print ky, d[ky] # print the key and its value
+                      # note that we do NOT return anything here!
+                      # because we asked to print stuff out
+
+          common_word("hello hello hello is what they said to the class!") # should print: hello
+
+          # Think further: what would happen if you put a return statement where that print statement is? why wouldn't that work?
+
+
+4. Define (and call!) a function called ``smallest_value_name`` that **takes a dictionary** with key-value pairs of names and integer values, like this: ``{"Nick": 56, "Paul":73, "Jackie":42}``, and **returns the name associated with the *lowest integer value**. (So in the case of that example dictionary, the function should return ``Jackie``.)
+
+.. tabbed:: func_review_4
+
+  .. tab:: Problem
+
+      .. actex:: fr_4
+
+          # Write your code here!
+
+          # Here's a sample call
+          df = {"Nick": 56, "Paul":73, "Jackie":42}
+          print smallest_value_name(df) # should print: Jackie
+
+  .. tab:: Solution
+
+      .. actex:: fr_4a
+
+          # Here's one solution
+          def smallest_value_name(d):
+              kys = d.keys() # returns a list of the keys in the dictionary d
+              m = kys[0]
+              for k in kys:
+                  if d[k] < d[m]:
+                      m = k
+              return m
+
+          # Here's another solution
+          def smallest_val_name_diff(d):
+              its = d.items() # returns a list of tuples (key, value) in dictionary d and stores it in its
+              tn = its[0]
+              for t in its:
+                  if t[1] < tn[1]:
+                      tn = t
+              return tn[0]
+
+          # Sample calls of these solution functions
+          d_new = {"Nick": 56, "Paul":73, "Jackie":42}
+          print smallest_value_name(d_new)
+
+          print smallest_val_name_diff(d_new)
+          # both these calls above print "Ellie"!
+
+
+
