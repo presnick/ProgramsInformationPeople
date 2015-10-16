@@ -24,15 +24,14 @@ Install and configure python for Windows
 
 Please download and install Python 2.7 from:
 
-https://www.python.org/downloads/release/python-278/
+https://www.python.org/downloads/release
 
-Download and install the file Windows x86 MSI Installer (2.7.8) - when the install process asks you which directory to use - make sure to keep the default directory of C:\Python27\. If you are not sure if your Windows is 64-bit - install the 32-bit version of Python, the
-one that just says, "Windows x86 MSI Installer (2.7.8)". If you know that you have 64-bit Windows, you can download the X86-64 MSI Installer.
+Download and install the file Windows x86 MSI Installer (2.7.10 as of Fall 2015) - when the install process asks you which directory to use - make sure to keep the default directory of C:\Python27\.
 
 .. note::
 
    Make sure that you install the latest version of Python 2.x - do not install Python 3.x. 
-   There are signficant differences between Python 2 and Python 3 and this book/site is based on Python 2.
+   There are significant differences between Python 2 and Python 3 and this book/site is based on Python 2.
 
 With just this installation, you can get an interactive python interpreter where
 you can type code one line at a time and have it executed. You may find some options
@@ -49,7 +48,7 @@ You have one configuration to do, to tell Git Bash where in the file system to f
 
 #. At the command prompt, paste this command ``export PATH="$PATH:/c/Python27"``. That will tell Windows where to find Python. (This assumes that you installed it in C:\\Python27, as we told you to above.)
 
-#. Check to make sure that this worked correctly by entering the command ``python --version``.  It should say Python 2.7.8 (or 2.7.something), as shown in the figure below.
+#. Check to make sure that this worked correctly by entering the command ``python --version``.  It should say Python 2.7.10 (or 2.7.something), as shown in the figure below.
 
 #. Assuming that worked correctly, you will want to set up git bash so that it always knows where to find python. To do that, enter the following command: ``echo 'export PATH="$PATH:/c/Python27"' > .bashrc``. That will save the command into a file called .bashrc. .bashrc is executed every time git bash launches, so you won't have to manually tell the shell where to find python again.
 
