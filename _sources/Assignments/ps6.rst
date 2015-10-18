@@ -18,7 +18,8 @@ Activities through 10/25
 You have the following graded activities:
 
 * Before Wednesday's class:
-    * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and do the exercises in that chapter
+   * Read :ref:`Tuples<tuples_chap>`, and do the exercises in that chapter
+   * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and do the exercises in that chapter
 
 .. usageassignment:: prep_12
     :chapters: Tuples, NestedData
