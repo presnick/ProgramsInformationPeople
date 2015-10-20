@@ -8,6 +8,7 @@
     License".
 
 
+.. _install_python:
 
 Install and configure Python
 ============================

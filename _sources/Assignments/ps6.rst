@@ -20,6 +20,7 @@ You have the following graded activities:
 * Before Wednesday's class:
    * Read :ref:`Tuples<tuples_chap>`, and do the exercises in that chapter
    * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and do the exercises in that chapter
+   * Red :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python.
 
 .. usageassignment:: prep_12
     :chapters: Tuples, NestedData
