@@ -25,7 +25,7 @@ You have the following graded activities:
 .. usageassignment:: prep_12
     :chapters: Tuples, NestedData
     :assignment_name: Prep a12
-    :deadline: 2015-10-22 21:30:00
+    :deadline: 2015-10-20 21:30:00
     :pct_required: 80
     :points: 50
 

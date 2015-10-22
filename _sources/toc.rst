@@ -16,6 +16,7 @@ Assignments
    Assignments/ps4.rst
    Assignments/ps5.rst
    Assignments/ps6.rst
+   Assignments/ps7.rst
 
 General Introduction
 ::::::::::::::::::::
