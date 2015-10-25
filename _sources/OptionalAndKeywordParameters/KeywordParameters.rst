@@ -64,7 +64,7 @@ As you step through it, each time the function is invoked, make a prediction abo
    :feedback_a: 2 is bound to x, not z
    :feedback_b: 3 is the default value for y, not z
    :feedback_c: 5 is bound to y, not z
-   :feedback_d: 2 is bound x, 3 to y, and z gets its default value
+   :feedback_d: 2 is bound x, 5 to y, and z gets its default value, 7
    :feedback_e: z has a default value in the function definition, so it's optional to pass a value for it.
 
    What value will be printed for z?
