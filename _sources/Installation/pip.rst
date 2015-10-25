@@ -23,7 +23,7 @@ Installing pip
 
 pip is python's package installer. Once you've installed it, installing most other modules will be easy. Installing pip itself may be a little tricky.
 
-The official instructions are at `<http://pip.readthedocs.org/en/latest/installing.html>`_. Here are a few pointers that may help you.
+The official instructions are at `<http://pip.readthedocs.org/en/stable/installing/>`_. Here are a few pointers that may help you.
 
 * When the instructions say to securely download the file get-pip.py, the easiest way to do that is probably to right-click on the link and "save as".
 
