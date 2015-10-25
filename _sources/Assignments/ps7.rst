@@ -24,7 +24,7 @@ You have the following graded activities:
 .. usageassignment:: prep_12
     :chapters: Sort, PythonModules
     :assignment_name: Prep a13
-    :deadline: 2015-10-27 21:30:00
+    :deadline: 2015-10-28 21:30:00
     :pct_required: 80
     :points: 50
 
