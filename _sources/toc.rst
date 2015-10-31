@@ -17,6 +17,8 @@ Assignments
    Assignments/ps5.rst
    Assignments/ps6.rst
    Assignments/ps7.rst
+   Assignments/week8.rst
+
 
 General Introduction
 ::::::::::::::::::::
@@ -312,7 +314,25 @@ Prediction and Classification
    Prediction/training.rst
    Prediction/evaluation.rst
    Prediction/Glossary.rst
-   
+
+
+Classes
+:::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Classes/intro-ClassesandObjectstheBasics.rst
+   Classes/ObjectsRevisited.rst
+   Classes/UserDefinedClasses.rst
+   Classes/ImprovingourConstructor.rst
+   Classes/AddingOtherMethodstoourClass.rst
+   Classes/ObjectsasArgumentsandParameters.rst                                                                             Classes/ConvertinganObjecttoaString.rst
+   Classes/InstancesasReturnValues.rst
+   Classes/sorting_instances.rst
+   Classes/Glossary.rst
+   Classes/Exercises.rst
+
 
 Python Modules
 ::::::::::::::
@@ -372,23 +392,6 @@ REST APIs
    RESTAPIs/unicode.rst
    RESTAPIs/flickr.rst
 
-Classes
-:::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Classes/intro-ClassesandObjectstheBasics.rst
-   Classes/ObjectsRevisited.rst
-   Classes/UserDefinedClasses.rst
-   Classes/ImprovingourConstructor.rst
-   Classes/AddingOtherMethodstoourClass.rst
-   Classes/ObjectsasArgumentsandParameters.rst                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-   Classes/ConvertinganObjecttoaString.rst
-   Classes/InstancesasReturnValues.rst
-   Classes/sorting_instances.rst
-   Classes/Glossary.rst
-   Classes/Exercises.rst
 
 The FaceBook Graph API
 ::::::::::::::::::::::

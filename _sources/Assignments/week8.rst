@@ -12,32 +12,98 @@
     :linenothreshold: 500
 
 
-Activities through 3/15
+Activities through 11/8
 =======================
 
 You have the following graded activities:
 
-1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
-   
-   * Before Monday's class: 
-       * Read :ref:`Prediction and Classification<prediction_chap>`
-       * Read :ref:`Importing modules<modules_chap>`
-    
-   * Before Wednesday's class:
-       * Read :ref:`try/except <exceptions_chap>`
-       * Read :ref:`pip module installer <pip_chap>`
-       * Read :ref:`Fetching data <requests_chap>`
- 
-2. Reading responses
+* Before Monday's class:
+    * Read :ref:`Prediction and Classification<prediction_chap>`
 
-   * By Tuesday midnight: 
+* Before Wednesday's class:
+       * NOTE: I will be making edits to the chapter you are reading for Wednesday. You can take a look at it, but there will be two major additions that you'll need to come back to if you read it before I release the update:
+            * Class variables
+            * A Tamagotchi game
+       * Read :ref:`Defining classes<classes_chap>`
+
+* By Sunday 11/8 at 5PM:
+    * Complete Problem Set 8, via Canvas
+
+* By Sunday night midnight:
       * Read *The Success of Open Source*, Preface and Chapter 1
       * :ref:`Reading response 8 <reading_response_8>`
 
-3. Problem set **Due:** **Sunday, March 15**
+.. usageassignment:: prep_14
+    :chapters: Prediction
+    :assignment_name: Prep a14
+    :deadline: 2015-11-02 21:30:00
+    :pct_required: 80
+    :points: 50
 
-   * Starting this week, the main problem set is distributed via cTools. There is a file called ps7.py. You should download a copy of it. You will edit it on your laptop or workstation and test it by running it using your native Python interpreter. You will also need to download a file called 106test.py. It contains the testEqual function that gives you feedback on whether you have correctly implemented various things in the problem set.
-   
+.. usageassignment:: prep_15
+    :chapters: Classes
+    :assignment_name: Prep a15
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_16
+    :chapters: Classes
+    :assignment_name: Prep a16
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_17
+    :chapters: Classes
+    :assignment_name: Prep a17
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_18
+    :chapters: Classes
+    :assignment_name: Prep a18
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_19
+    :chapters: Classes
+    :assignment_name: Prep a19
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_20
+    :chapters: Classes
+    :assignment_name: Prep a20
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_21
+    :chapters: Classes
+    :assignment_name: Prep a21
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_22
+    :chapters: Classes
+    :assignment_name: Prep a22
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_23
+    :chapters: Classes
+    :assignment_name: Prep a23
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+
 Reading Response
 ----------------
 
@@ -59,7 +125,3 @@ Answer the following questions.
    """
    print s
    
-
-
-
-       

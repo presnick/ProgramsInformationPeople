@@ -26,7 +26,12 @@ You have the following graded activities:
     
    * Before Wednesday's class:
        * Read :ref:`REST APIs<rest_apis_chap>`
- 
+
+
+        * Read :ref:`try/except <exceptions_chap>`
+       * Read :ref:`pip module installer <pip_chap>`
+       * Read :ref:`Fetching data <requests_chap>`
+
 2. Reading responses
 
    * By Tuesday midnight: 
