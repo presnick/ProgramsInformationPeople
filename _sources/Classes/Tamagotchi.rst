@@ -127,16 +127,18 @@ No matter what the user does, with each command entered, the clock ticks for all
         animals = []
 
         option = ""
-        while True:
-            action = raw_input("""
+        base_prompt = """
             Quit
             Adopt <petname_with_no_spaces_please>
             Greet <petname>
             Teach <petname> <word>
             Feed <petname>
 
-            Choice: """)
-
+            Choice: """
+        feedback = ""
+        while True:
+            action = raw_input(feedback + "\n" + base_prompt)
+            feedback = ""
             words = action.split()
             if len(words) > 0:
                 command = words[0]
@@ -147,32 +149,35 @@ No matter what the user does, with each command entered, the clock ticks for all
                 return
             elif command == "Adopt" and len(words) > 1:
                 if whichone(animals, words[1]):
-                    print "You already have a pet with that name"
+                    feedback += "You already have a pet with that name\n"
                 else:
                     animals.append(Pet(words[1]))
             elif command == "Greet" and len(words) > 1:
                 pet = whichone(animals, words[1])
                 if not pet:
-                    print "I didn't recognize that pet name. Please try again."
+                    feedback += "I didn't recognize that pet name. Please try again.\n"
+                    print
                 else:
                     pet.hi()
             elif command == "Teach" and len(words) > 2:
                 pet = whichone(animals, words[1])
                 if not pet:
-                    print "I didn't recognize that pet name. Please try again."
+                    feedback += "I didn't recognize that pet name. Please try again."
                 else:
                     pet.teach(words[2])
             elif command == "Feed" and len(words) > 1:
                 pet = whichone(animals, words[1])
                 if not pet:
-                    print "I didn't recognize that pet name. Please try again."
+                    feedback += "I didn't recognize that pet name. Please try again."
                 else:
                     pet.feed()
             else:
-                print "I didn't understand that. Please try again."
+                feedback+= "I didn't understand that. Please try again."
 
             for pet in animals:
                 pet.clock_tick()
-                print pet
+                feedback += "\n" + pet.__str__()
+
+
 
     play()
