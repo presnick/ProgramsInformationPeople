@@ -21,10 +21,7 @@ You have the following graded activities:
     * Read :ref:`Prediction and Classification<prediction_chap>`
 
 * Before Wednesday's class:
-       * NOTE: I will be making edits to the chapter you are reading for Wednesday. You can take a look at it, but there will be two major additions that you'll need to come back to if you read it before I release the update:
-            * Class variables
-            * A Tamagotchi game
-       * Read :ref:`Defining classes<classes_chap>`
+    * Read :ref:`Defining classes<classes_chap>`
 
 * By Sunday 11/8 at 5PM:
     * Complete Problem Set 8, via Canvas
