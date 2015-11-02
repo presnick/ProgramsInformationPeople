@@ -7,7 +7,7 @@
     License".
 
 
-Tomagotchi Revisited
+Tamagotchi Revisited
 ====================
 
 A complete version with Pet, Cat, Dog, Poodle, Lab
