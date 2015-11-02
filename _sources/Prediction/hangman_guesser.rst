@@ -8,6 +8,6 @@ Suppose that you have access to a complete list of all the words that first play
 
 But you can do even better. Perhaps when you have played hangman you guessed 'u' when you had already guessed other vowels and they weren't in the word, but didn't bother with 'u' if there were enough vowels revealed already. 
 
-In a computer program, we can be even more systematic. Each guess that you make narrows down the possibilities. If you guess 'e' and are informed that 'e' is in the word, you can remove from consideration all the words in the list that don't contain 'e'. On the other hand, if you are informed that 'e' is in the word, you can remove from consideration all the words in the list that *do* contain 'e'. At any point in the game, a good choice is the letter that appears most frequently in the list of possible words that have not been eliminated yet.
+In a computer program, we can be even more systematic. Each guess that you make narrows down the possibilities. If you guess 'e' and are informed that 'e' is in the word, you can remove from consideration all the words in the list that don't contain 'e'. On the other hand, if you are informed that 'e' is *not* in the word, you can remove from consideration all the words in the list that *do* contain 'e'. At any point in the game, a good choice is the letter that appears most frequently in the list of possible words that have not been eliminated yet.
 
 In a problem set, you will work through a set of exercises that have you build a Hangman guesser following that strategy.
