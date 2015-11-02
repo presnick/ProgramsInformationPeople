@@ -327,9 +327,12 @@ Classes
    Classes/UserDefinedClasses.rst
    Classes/ImprovingourConstructor.rst
    Classes/AddingOtherMethodstoourClass.rst
-   Classes/ObjectsasArgumentsandParameters.rst                                                                             Classes/ConvertinganObjecttoaString.rst
+   Classes/ObjectsasArgumentsandParameters.rst
+   Classes/ConvertinganObjecttoaString.rst
    Classes/InstancesasReturnValues.rst
    Classes/sorting_instances.rst
+   Classes/ClassVariablesInstanceVariables.rst
+   Classes/Tamagotchi.rst
    Classes/Glossary.rst
    Classes/Exercises.rst
 
