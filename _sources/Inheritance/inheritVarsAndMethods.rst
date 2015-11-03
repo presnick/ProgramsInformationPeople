@@ -24,3 +24,57 @@ How interpreter looks up attributes:
 * if not there, look in it's parent, etc.
 * if not found anywhere, signal an error
 
+.. index:: Mechanics of defining a subclass
+
+Mechanics of Defining a Subclass
+--------------------------------
+
+We said that inheritance provides us a more elegant way of, for example, creating  `` Dog `` and `` Cat `` types, rather than making a very complex `` Pet `` class. In the abstract, this is pretty intuitive: all pets have certain things, but dogs are different from cats, which are different from birds. Going a step further, a Collie dog is different from a Labrador dog, for example. Inheritance provides us with an easy and elegant way to represent these differences.
+
+Basically, it works by defining a new class, and using a special syntax to show what the new class _inherits from._ So if you wanted to define a `` Dog `` class as a special kind of `` Pet ``, you would say that the `` Dog `` type inherits from the `` Pet `` type. In the definition of the inherited class, you only need to specify the methods and instance variables that are different from the parent class (the class that is _inherited from_ -- in our example, `` Pet``).
+
+Here is an example.
+
+Say we want to define a class `` Cat `` that inherits from `` Pet ``. Assume we have the `` Pet `` class that we defined earlier.
+
+We want the `` Cat `` type to be exactly the same as `` Pet ``, _except_ we want the sound cats start out with to be "meow", not "mrrp", and we want the `` Cat `` class to have its own special method called `` chasing_rats ``, which only `` Cat ``s have, not just any pet.
+
+.. activecode:: inheritance_cat_example
+    :nocanvas:
+    :include: tamagotchi_1
+
+    class Cat(Pet): # the class name that the new class inherits from goes in the parentheses, like so.
+    	sounds = ['Meow!']
+
+    	def chasing_rats(self):
+    		return "What are you doing, Pinky? Taking over the world?!"
+
+That's all we need! The elegance of inheritance allows us to specify just the differences in the new, inherited class. In that code, we make sure the `` Cat `` class inherits from the `` Pet `` class, and in the new definition, we only need to define the things that are different from the ones in the `` Pet `` class.
+
+In this case, the only difference is that the class variable `` sounds `` starts out with the string `` "Meow" `` instead of the string `` "mrrp" ``. 
+
+In the original Tamagotchi game in the last chapter, you saw code that created instances of the `` Pet `` class. Now let's write a little bit of code that uses instances of the `` Pet `` class AND instances of the `` Cat `` class.
+
+.. activecode:: tamagotchi_2
+    :nocanvas:
+    :include: tamagotchi_1
+    :include: inheritance_cat_example
+
+    p1 = Pet("Fido")
+    print p1 # we've seen this stuff before!
+
+    p1.feed()
+    p1.hi()
+
+    cat1 = Cat("Fluffy")
+    print cat1 # this uses the same __str__ method as the Pets do
+
+    cat1.feed() # Totally fine, because the cat class inherits from the Pet class!
+    cat1.hi()
+
+    cat1.chasing_rats() 
+
+    #p1.chasing_rats() # This line will give us an error. The Pet class doesn't have this method!
+
+
+Inheritance also allows us to easily make small differences to methods in the parent class, which we'll see more about shortly.

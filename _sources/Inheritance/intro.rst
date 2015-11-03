@@ -17,7 +17,7 @@ Consider our Tamagotchi game. Suppose we wanted to make some different kinds of 
 
 Could implement this by making instance variable for the pet type and dispatching on that instance variable in various methods.
 
-.. activecode:: tamagotchi_1
+.. activecode:: pet_example_2
     :nocanvas:
 
     from random import randrange
