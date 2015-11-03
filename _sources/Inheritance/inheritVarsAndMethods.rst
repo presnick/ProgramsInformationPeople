@@ -51,11 +51,12 @@ That's all we need! The elegance of inheritance allows us to specify just the di
 
 In this case, the only difference is that the class variable `` sounds `` starts out with the string `` "Meow" `` instead of the string `` "mrrp" ``. 
 
+We can still use all the `` Pet `` methods in the `` Cat `` class. You can call the `` __str__ `` method on an instance of `` Cat `` the same way you could call it on an instance of `` Pet ``, or the `` hi `` method. 
+
 In the original Tamagotchi game in the last chapter, you saw code that created instances of the `` Pet `` class. Now let's write a little bit of code that uses instances of the `` Pet `` class AND instances of the `` Cat `` class.
 
 .. activecode:: tamagotchi_2
     :nocanvas:
-    :include: tamagotchi_1
     :include: inheritance_cat_example
 
     p1 = Pet("Fido")
@@ -76,5 +77,29 @@ In the original Tamagotchi game in the last chapter, you saw code that created i
 
     #print p1.chasing_rats() # This line will give us an error. The Pet class doesn't have this method!
 
+And you can continue the inheritance tree. We inherited `` Cat `` from `` Pet ``. Now say we want a subclass of `` Cat `` called `` Cheshire ``. A Cheshire should inherit everything from `` Cat ``, which means it inherits everything that Cat inherits from `` Pet ``, too. But the `` Cheshire `` class has its own special method, `` smile ``.
 
-Inheritance also allows us to easily make small differences to methods in the parent class, which we'll see more about shortly.
+.. activecode:: inheritance_bobtail_example
+	:nocanvas:
+    :include: inheritance_cat_example
+
+    class Bobtail(Cat): # this inherits from Cat, which inherits from Pet
+
+    	def smile(self): # this method is specific to instances of Bobcat
+    		print ":D :D :D"
+
+    # Let's try it with instances.
+    cat1 = Cat("Fluffy")
+    cat1.feed() # Totally fine, because the cat class inherits from the Pet class!
+    cat1.hi()
+    print cat1
+
+    print cat1.chasing_rats() 
+
+    new_cat = Cheshire("Pumpkin") # create a Cheshire cat instance with name "Pumpkin"
+    new_cat.hi() # same as Pet and Cat!
+    new_cat.chasing_rats() # OK, because Bobtail inherits from Cat
+    new_cat.smile() # Special for Bobtail instances
+
+    # cat1.smile() # This line would give you an error, because the Cat class does not have this method!
+
