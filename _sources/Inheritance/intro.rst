@@ -15,7 +15,7 @@ Classes can "inherit" methods and class variables from other classes. We'll see 
 
 Consider our Tamagotchi game. Suppose we wanted to make some different kinds of pets that have the same structure as other pets, but have some different attributes or behave a little differently. For example, suppose that dog pets should show their emotional state a little differently than cats or act differently when they are hungry or when they are asked to fetch something.
 
-Could implement this by making instance variable for the pet type and dispatching on that instance variable in various methods.
+You could implement this by making instance variable for the pet type and dispatching on that instance variable in various methods. For instance, like below.
 
 .. activecode:: pet_example_2
     :nocanvas:
@@ -41,19 +41,19 @@ Could implement this by making instance variable for the pet type and dispatchin
 
         def mood(self):
             if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
-            	if self.pet_type == "dog": # if the pet is a dog, it will express its mood in different ways from a cat or any other type of animal
-                	return "happy"
+                if self.pet_type == "dog": # if the pet is a dog, it will express its mood in different ways from a cat or any other type of animal
+                    return "happy"
                 elif self.pet_type == "cat":
-                	return "happy, probably"
+                    return "happy, probably"
                 else:
-                	return "HAPPY"
+                    return "HAPPY"
             elif self.hunger > self.hunger_threshold:
-            	if self.pet_type == "dog": # same for hunger -- dogs and cats will express their hunger a little bit differently in this version of the class definition
-  	             	return "hungry, arf"
-  	            elif self.pet_type == "cat":
-  	            	return "hungry, meeeeow"
-  	            else:
-  	            	return "hungry"
+                if self.pet_type == "dog": # same for hunger -- dogs and cats will express their hunger a little bit differently in this version of the class definition
+                    return "hungry, arf"
+                elif self.pet_type == "cat":
+                    return "hungry, meeeeow"
+                else:
+                    return "hungry"
             else:
                 return "bored"
 
@@ -80,8 +80,8 @@ Could implement this by making instance variable for the pet type and dispatchin
             self.boredom = max(0, self.boredom - self.boredom_decrement)
 
 
-That code is exactly the same as the code defining the `` Pet `` class that you saw in the ` Tamagotchi <tamagotchi> ` section, except that we've added a few things. New input to the constructor -- the `` pet_type `` input parameter, which defaults to `` "dog" ``, and the `` self.pet_type `` instance variable. We've also added some control statements in the `` self.mood() `` method, such that different types of pets (a dog, a cat, or any other type of animal) express their moods and their hunger in slightly different ways.
+That code is exactly the same as the code defining the ``Pet`` class that you saw in the ` Tamagotchi <tamagotchi> ` section, except that we've added a few things. New input to the constructor -- the ``pet_type`` input parameter, which defaults to ``"dog"``, and the ``self.pet_type`` instance variable. We've also added some control statements in the ``self.mood()`` method, such that different types of pets (a dog, a cat, or any other type of animal) express their moods and their hunger in slightly different ways.
 
 But that's not an elegant way to do it. It obscures the parts of being a pet that are common to all pets and it distributes all the unique stuff about being a dog or a cat into different methods. What if you also wanted a dog to reduce boredom at a different rate than a cat, and you wanted a bird pet to be different still... Here, we've only implemented **dogs**, **cats**, and **other** -- but you can imagine the possibilities.
 
-If there were lots of different types of pets, those methods would start to have long and complex if..elif..elif code clauses, which can be confusing. Class inheritance will give us a more elegant way to do it.
+If there were lots of different types of pets, those methods would start to have long and complex **if..elif..elif** code clauses, which can be confusing. Class inheritance will give us a more elegant way to do it.

@@ -13,7 +13,7 @@ Tamagotchi Revisited
 Using what we know about class inheritance, we can make a new version of the Tamagotchi game, where you can adopt different types of pets that are slightly different from one another.
 
 .. activecode:: tamagotchi_revisited
-	:nocanvas:
+    :nocanvas:
 
     from random import randrange
 
@@ -65,8 +65,8 @@ Using what we know about class inheritance, we can make a new version of the Tam
             self.boredom = max(0, self.boredom - self.boredom_decrement)
 
     class Dog(Pet):
-    	# in the Dog class, Dog pets should express their hunger and boredom differently than generic Pets
-    	def mood(self):
+        # in the Dog class, Dog pets should express their hunger and boredom differently than generic Pets
+        def mood(self):
             if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
                 return "happy, arf! Happy"
             elif self.hunger > self.hunger_threshold:
@@ -75,18 +75,18 @@ Using what we know about class inheritance, we can make a new version of the Tam
                 return "bored, so you should play with me"
 
     class Cat(Pet):
-    	# in the Cat class, cats express their hunger and boredom a little differently, too. They also have an extra instance, variable meow_count.
-    	def __init__(self, name="Fluffy",meow_count=3):
-    		super(Cat,self,name).__init__()
-    		self.meow_count = meow_count
+        # in the Cat class, cats express their hunger and boredom a little differently, too. They also have an extra instance, variable meow_count.
+        def __init__(self, name="Fluffy",meow_count=3):
+            super(Cat,self,name).__init__()
+            self.meow_count = meow_count
 
-    	def hi(self):
-    		for i in range(self.meow_count):
-    			print self.sounds[randrange(len(self.sounds))]
+        def hi(self):
+            for i in range(self.meow_count):
+                print self.sounds[randrange(len(self.sounds))]
             self.reduce_boredom()
 
         def mood(self):
-        	if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
+            if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
                 return "happy, I suppose"
             elif self.hunger > self.hunger_threshold:
                 return "mmmm...hungry"
@@ -94,28 +94,28 @@ Using what we know about class inheritance, we can make a new version of the Tam
                 return "a bit bored"
 
     class Lab(Dog):
-    	def fetch(self):
-    		return "I found the tennis ball!"
+        def fetch(self):
+            return "I found the tennis ball!"
 
-    	def hi(self):
-    		print self.sounds[randrange(len(self.sounds))] + self.fetch()
+        def hi(self):
+            print self.sounds[randrange(len(self.sounds))] + self.fetch()
 
     class Poodle(Dog):
-    	def dance(self):
-    		return "Dancin' in circles like poodles do."
+        def dance(self):
+            return "Dancin' in circles like poodles do."
 
-    	def hi(self):
-    		print self.dance()
-    		super(Poodle,self).hi()
+        def hi(self):
+            print self.dance()
+            super(Poodle,self).hi()
 
 
-And now we can play the Tamagotchi game with some small changes, so we can adopt different types of pets.
+And now we can play the Tamagotchi game with some small changes, such that we can adopt different types of pets.
 
 ..activecode:: tamagotchi_4
-	:nocanvas:
-	:include: tamagotchi_revisited
+    :nocanvas:
+    :include: tamagotchi_revisited
 
-	import sys
+    import sys
     sys.setExecutionLimit(60000)
 
     def whichone(petlist, name):
@@ -125,16 +125,16 @@ And now we can play the Tamagotchi game with some small changes, so we can adopt
         return None # no pet matched
 
     def whichtype(adopt_type="general pet", name):
-    	if adopt_type.lower() == "dog":
-    		return Dog(name)
-    	elif adopt_type.lower() == "lab":
-    		return Lab(name)
-    	elif adopt_type.lower() == "poodle":
-    		return Poodle(name)
-    	elif adopt_type.lower() == "cat":
-    		return Poodle(name)
-    	else:
-    		return Pet(name)
+        if adopt_type.lower() == "dog":
+            return Dog(name)
+        elif adopt_type.lower() == "lab":
+            return Lab(name)
+        elif adopt_type.lower() == "poodle":
+            return Poodle(name)
+        elif adopt_type.lower() == "cat":
+            return Poodle(name)
+        else:
+            return Pet(name)
 
     def play():
         animals = []
@@ -164,10 +164,10 @@ And now we can play the Tamagotchi game with some small changes, so we can adopt
                 if whichone(animals, words[1]):
                     feedback += "You already have a pet with that name\n"
                 else:
-                	if len(words) > 2:
-	                    animals.append(whichtype(words[2],words[1]))
-	                else:
-	                	animals.append(whichtype(words[1]))
+                    if len(words) > 2:
+                        animals.append(whichtype(words[2],words[1]))
+                    else:
+                        animals.append(whichtype(words[1]))
             elif command == "Greet" and len(words) > 1:
                 pet = whichone(animals, words[1])
                 if not pet:

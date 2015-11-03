@@ -10,15 +10,11 @@
 Overriding Methods
 ==================
 
-If a method is defined for a class, and also defined for its parent class, the subclass' method is called and not the parent's. This follows from the rules for looking up attributes.
+If a method is defined for a class, and also defined for its parent class, the subclass' method is called and not the parent's. This follows from the rules for looking up attributes that you saw in the previousu section.
 
-If you assign `` x = 5 `` and later in the same program, assign `` x = 12 ``, as we've seen many times now, the variable `` x `` will hold the value `` 12 `` at the end of the program, assuming nothing else has changed it.
+We can use the same idea to understand overriding methods. We've seen how to invoke superclass methods, methods that belong to a parent class, inside a method of the same name in the inherited class. But what if you wanted a method on the ``Bird`` class to do a very different thing from what it does on the original ``Pet`` class? 
 
-Similarly (we'll see more about this later in the textbook), if you define a variable in a program `` str = "hello" `` for example, that's just fine, _except_ it could cause you a problem: now, you can't use the built-in Python `` str() `` function to turn things into type String, because the name `` str `` is now bound to the string `` "hello" `` instead of to the function that makes things the `` String `` type.
-
-Now that we are looking at class inheritance, we can use the same idea to understand overriding methods. We've seen how to invoke superclass methods, methods that belong to a parent class, inside a method of the same name in the inherited class. But what if you wanted a method on the `` Bird `` class to do a very different thing from what it does on the original `` Pet `` class? 
-
-To follow along with our example, let's take the `` Bird `` class we just defined, which has a new, extra parameter called `` chirp_number ``, and a new instance variable, `` self.chirp_number ``. For the `` Bird `` method `` hi ``, we want the sound a bird makes to appear `` self.chirp_number `` times.
+To follow along with our example, let's take the ``Bird`` class we just defined, which has a new, extra parameter called ``chirp_number``, and a new instance variable, ``self.chirp_number``. For the ``Bird`` method ``hi``, we want the sound a bird makes to appear ``self.chirp_number`` times. However many times THAT instance of ``Bird`` likes to say hello.
 
 .. activecode:: override_methods_1
     :nocanvas:
