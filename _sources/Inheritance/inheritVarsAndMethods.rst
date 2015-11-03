@@ -31,11 +31,9 @@ Mechanics of Defining a Subclass
 
 We said that inheritance provides us a more elegant way of, for example, creating  `` Dog `` and `` Cat `` types, rather than making a very complex `` Pet `` class. In the abstract, this is pretty intuitive: all pets have certain things, but dogs are different from cats, which are different from birds. Going a step further, a Collie dog is different from a Labrador dog, for example. Inheritance provides us with an easy and elegant way to represent these differences.
 
-Basically, it works by defining a new class, and using a special syntax to show what the new class _inherits from._ So if you wanted to define a `` Dog `` class as a special kind of `` Pet ``, you would say that the `` Dog `` type inherits from the `` Pet `` type. In the definition of the inherited class, you only need to specify the methods and instance variables that are different from the parent class (the class that is _inherited from_ -- in our example, `` Pet``).
+Basically, it works by defining a new class, and using a special syntax to show what the new class _inherits from._ So if you wanted to define a `` Dog `` class as a special kind of `` Pet ``, you would say that the `` Dog `` type inherits from the `` Pet `` type. In the definition of the inherited class, you only need to specify the methods and instance variables that are different from the parent class (the **parent class**, or the **superclass**,  is what we may call the class that is _inherited from_. In the example we're discussing, `` Pet`` would be the superclass of `` Dog `` or `` Cat ``).
 
-Here is an example.
-
-Say we want to define a class `` Cat `` that inherits from `` Pet ``. Assume we have the `` Pet `` class that we defined earlier.
+Here is an example. Say we want to define a class `` Cat `` that inherits from `` Pet ``. Assume we have the `` Pet `` class that we defined earlier.
 
 We want the `` Cat `` type to be exactly the same as `` Pet ``, _except_ we want the sound cats start out with to be "meow", not "mrrp", and we want the `` Cat `` class to have its own special method called `` chasing_rats ``, which only `` Cat ``s have, not just any pet.
 
@@ -65,16 +63,18 @@ In the original Tamagotchi game in the last chapter, you saw code that created i
 
     p1.feed()
     p1.hi()
+    print p1
 
     cat1 = Cat("Fluffy")
     print cat1 # this uses the same __str__ method as the Pets do
 
     cat1.feed() # Totally fine, because the cat class inherits from the Pet class!
     cat1.hi()
+    print cat1
 
-    cat1.chasing_rats() 
+    print cat1.chasing_rats() 
 
-    #p1.chasing_rats() # This line will give us an error. The Pet class doesn't have this method!
+    #print p1.chasing_rats() # This line will give us an error. The Pet class doesn't have this method!
 
 
 Inheritance also allows us to easily make small differences to methods in the parent class, which we'll see more about shortly.
