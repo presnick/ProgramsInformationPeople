@@ -299,6 +299,19 @@ Sorting
    Sort/SortingaDictionary.rst
    Sort/Glossary.rst
    Sort/Exercises.rst
+
+Inheritance
+:::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Inheritance/intro.rst
+   Inheritance/inheritVarsAndMethods.rst
+   Inheritance/InvokingSuperMethods.rst
+   Inheritance/OverrideMethods.rst
+   Inheritance/TomagotchiRevisited.rst
+   Inheritance/Exercises.rst
    
 
 Prediction and Classification

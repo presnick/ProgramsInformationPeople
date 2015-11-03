@@ -10,4 +10,4 @@
 Exercises
 =========
 
-Some tasks of expanding the Tamagotchi game
+Some tasks of expanding the Tamagotchi game. Coming soon.
