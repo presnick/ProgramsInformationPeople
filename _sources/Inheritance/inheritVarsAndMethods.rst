@@ -1,4 +1,4 @@
-intro.rst..  Copyright (C)  Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C)  Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -17,16 +17,76 @@ Mechanics of Defining a Subclass
 
 We said that inheritance provides us a more elegant way of, for example, creating  ``Dog`` and ``Cat`` types, rather than making a very complex ``Pet`` class. In the abstract, this is pretty intuitive: all pets have certain things, but dogs are different from cats, which are different from birds. Going a step further, a Collie dog is different from a Labrador dog, for example. Inheritance provides us with an easy and elegant way to represent these differences.
 
-Basically, it works by defining a new class, and using a special syntax to show what the new class _inherits from._ So if you wanted to define a ``Dog`` class as a special kind of ``Pet``, you would say that the ``Dog`` type inherits from the ``Pet`` type. In the definition of the inherited class, you only need to specify the methods and instance variables that are different from the parent class (the **parent class**, or the **superclass**,  is what we may call the class that is _inherited from_. In the example we're discussing, `` Pet`` would be the superclass of ``Dog`` or ``Cat``).
+Basically, it works by defining a new class, and using a special syntax to show what the new class *inherits from*. So if you wanted to define a ``Dog`` class as a special kind of ``Pet``, you would say that the ``Dog`` type inherits from the ``Pet`` type. In the definition of the inherited class, you only need to specify the methods and instance variables that are different from the parent class (the **parent class**, or the **superclass**,  is what we may call the class that is *inherited from*. In the example we're discussing, `` Pet`` would be the superclass of ``Dog`` or ``Cat``).
 
 Here is an example. Say we want to define a class ``Cat`` that inherits from ``Pet``. Assume we have the ``Pet`` class that we defined earlier.
 
-We want the ``Cat`` type to be exactly the same as ``Pet``, _except_ we want the sound cats start out with to be "meow", not "mrrp", and we want the ``Cat`` class to have its own special method called ``chasing_rats``, which only ``Cat``s have, not just any pet.
+We want the ``Cat`` type to be exactly the same as ``Pet``, *except* we want the sound cats start out with to be "meow", not "mrrp", and we want the ``Cat`` class to have its own special method called ``chasing_rats``, which only ``Cat`` s have, not just any pet.
 
 .. activecode:: inheritance_cat_example
     :nocanvas:
-    :include: tamagotchi_1
+    
+    from random import randrange
 
+    # Here's the Pet class definition we've seen before, for comparison.
+    class Pet():
+        boredom_decrement = 4
+        hunger_decrement = 6
+        boredom_threshold = 5
+        hunger_threshold = 10
+        sounds = ['Mrrp']
+        def __init__(self, name = "Kitty", pet_type="dog"):
+            self.name = name
+            self.hunger = randrange(self.hunger_threshold)
+            self.boredom = randrange(self.boredom_threshold)
+            self.sounds = self.sounds[:]  # copy the class attribute, so that when we make changes to it, we won't affect the other Pets in the class
+            self.pet_type = pet_type
+
+        def clock_tick(self):
+            self.boredom += 1
+            self.hunger += 1
+
+        def mood(self):
+            if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
+                if self.pet_type == "dog": # if the pet is a dog, it will express its mood in different ways from a cat or any other type of animal
+                    return "happy"
+                elif self.pet_type == "cat":
+                    return "happy, probably"
+                else:
+                    return "HAPPY"
+            elif self.hunger > self.hunger_threshold:
+                if self.pet_type == "dog": # same for hunger -- dogs and cats will express their hunger a little bit differently in this version of the class definition
+                    return "hungry, arf"
+                elif self.pet_type == "cat":
+                    return "hungry, meeeeow"
+                else:
+                    return "hungry"
+            else:
+                return "bored"
+
+        def __str__(self):
+            state = "     I'm " + self.name + ". "
+            state += " I feel " + self.mood() + ". "
+            return state
+
+        def hi(self):
+            print self.sounds[randrange(len(self.sounds))]
+            self.reduce_boredom()
+
+        def teach(self, word):
+            self.sounds.append(word)
+            self.reduce_boredom()
+
+        def feed(self):
+            self.reduce_hunger()
+
+        def reduce_hunger(self):
+            self.hunger = max(0, self.hunger - self.hunger_decrement)
+
+        def reduce_boredom(self):
+            self.boredom = max(0, self.boredom - self.boredom_decrement)
+
+    # And here's the new definition of class Cat, a subclass of Pet.
     class Cat(Pet): # the class name that the new class inherits from goes in the parentheses, like so.
         sounds = ['Meow!']
 
@@ -35,7 +95,7 @@ We want the ``Cat`` type to be exactly the same as ``Pet``, _except_ we want the
 
 That's all we need! The elegance of inheritance allows us to specify just the differences in the new, inherited class. In that code, we make sure the ``Cat`` class inherits from the ``Pet`` class, and in the new definition, we only need to define the things that are different from the ones in the ``Pet`` class.
 
-In this case, the only difference is that the class variable `` sounds `` starts out with the string ``"Meow"`` instead of the string ``"mrrp"``. 
+In this case, the only difference is that the class variable ``sounds`` starts out with the string ``"Meow"`` instead of the string ``"mrrp"``. 
 
 We can still use all the ``Pet`` methods in the ``Cat`` class, this way. You can call the ``__str__`` method on an instance of ``Cat`` to ``print`` an instance of ``Cat``, the same way you could call it on an instance of ``Pet``, and the same is true for the ``hi`` method -- it's the same for instances of ``Cat`` and ``Pet``. But the ``chasing_rats`` method is special: it's only usable on ``Cat`` instances, because ``Cat`` is a subclass of ``Pet`` which has that additional method.
 
@@ -43,6 +103,7 @@ In the original Tamagotchi game in the last chapter, you saw code that created i
 
 .. activecode:: tamagotchi_2
     :nocanvas:
+    :include: pet_example_2
     :include: inheritance_cat_example
 
     p1 = Pet("Fido")
@@ -77,13 +138,13 @@ And you can continue the inheritance tree. We inherited ``Cat`` from ``Pet``. No
     # Let's try it with instances.
     cat1 = Cat("Fluffy")
     cat1.feed() # Totally fine, because the cat class inherits from the Pet class!
-    cat1.hi()
+    cat1.hi() # Uses the special Cat hello.
     print cat1
 
     print cat1.chasing_rats() 
 
     new_cat = Cheshire("Pumpkin") # create a Cheshire cat instance with name "Pumpkin"
-    new_cat.hi() # same as Pet and Cat!
+    new_cat.hi() # same as Cat!
     new_cat.chasing_rats() # OK, because Cheshire inherits from Cat
     new_cat.smile() # Only for Cheshire instances (and any classes that you make inherit from Cheshire)
 
@@ -91,7 +152,7 @@ And you can continue the inheritance tree. We inherited ``Cat`` from ``Pet``. No
 
     # None of the subclass methods can be used on the parent class, though.
     p1 = Pet("Teddy")
-    p1.hi() # same as all the others
+    p1.hi() # just the regular Pet hello
     #p1.chasing_rats() # This will give you an error -- this method doesn't exist on instances of the Pet class.
     #p1.smile() # This will give you an error, too. This method does not exist on instances of the Pet class.
 
@@ -115,15 +176,17 @@ Let's look at this with respect to some code.
 
 Say you write the lines: 
 
-``new_cat = Cheshire("Pumpkin")
-  print new_cat.name``
+    ``new_cat = Cheshire("Pumpkin")``
+
+    ``print new_cat.name``
 
 In the second line, after the instance is created, Python looks for the instance variable ``name`` in the ``new_cat`` instance.  In this case, it exists. The name on this instance of ``Cheshire`` is ``Pumpkin``. There you go!
 
 When the following lines of code are written and executed:
 
-``cat1 = Cat("Sepia")
-  cat1.hi()``
+    ``cat1 = Cat("Sepia")``
+
+    ``cat1.hi()``
 
 Python looks for ``hi`` on the instance of ``Cat``. It does not find it -- the ``Cat`` class does not have a specific ``hi`` instance variable or method. 
 
@@ -132,9 +195,10 @@ Python looks for ``hi`` on the instance of ``Cat``. It does not find it -- the `
 Next, it looks for an instance variable ``hi`` on the parent class of ``Cat``, ``Pet``. It finds that -- there's an **instance method** called ``hi`` on the class ``Pet``. It is being called, with ``()``, and it is a method, so it can be called. All is well.
 
 However, for Python lines like
-
-``p1 = Pet("Teddy")
-  p1.chasing_rats()``
+    
+    ``p1 = Pet("Teddy")``
+    
+    ``p1.chasing_rats()``
 
 That won't go so well. Python looks for an instance variable or method called ``chasing_rats`` on the ``Pet`` class. It doesn't exist. ``Pet`` has no parent classes, so Python signals an error.
 

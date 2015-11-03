@@ -12,6 +12,8 @@ Tamagotchi Revisited
 
 Using what we know about class inheritance, we can make a new version of the Tamagotchi game, where you can adopt different types of pets that are slightly different from one another.
 
+And now we can play the Tamagotchi game with some small changes, such that we can adopt different types of pets.
+
 .. activecode:: tamagotchi_revisited
     :nocanvas:
 
@@ -109,12 +111,6 @@ Using what we know about class inheritance, we can make a new version of the Tam
             super(Poodle,self).hi()
 
 
-And now we can play the Tamagotchi game with some small changes, such that we can adopt different types of pets.
-
-..activecode:: tamagotchi_4
-    :nocanvas:
-    :include: tamagotchi_revisited
-
     import sys
     sys.setExecutionLimit(60000)
 
@@ -124,7 +120,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
                 return pet
         return None # no pet matched
 
-    def whichtype(adopt_type="general pet", name):
+    def whichtype(name,adopt_type="general pet"):
         if adopt_type.lower() == "dog":
             return Dog(name)
         elif adopt_type.lower() == "lab":
@@ -132,7 +128,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
         elif adopt_type.lower() == "poodle":
             return Poodle(name)
         elif adopt_type.lower() == "cat":
-            return Poodle(name)
+            return Cat(name)
         else:
             return Pet(name)
 
@@ -165,7 +161,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
                     feedback += "You already have a pet with that name\n"
                 else:
                     if len(words) > 2:
-                        animals.append(whichtype(words[2],words[1]))
+                        animals.append(whichtype(words[1],words[2]))
                     else:
                         animals.append(whichtype(words[1]))
             elif command == "Greet" and len(words) > 1:
