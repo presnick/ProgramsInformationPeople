@@ -10,37 +10,103 @@
 Overriding Methods
 ==================
 
-If a method is defined for a class, and also defined for its parent class, the subclass' method is called and not the parent's. This follows from the rules for looking up attributes that you saw in the previousu section.
+If a method is defined for a class, and also defined for its parent class, the subclass' method is called and not the parent's. This follows from the rules for looking up attributes that you saw in the previous section.
 
-We can use the same idea to understand overriding methods. We've seen how to invoke superclass methods, methods that belong to a parent class, inside a method of the same name in the inherited class. But what if you wanted a method on the ``Bird`` class to do a very different thing from what it does on the original ``Pet`` class? 
+We can use the same idea to understand overriding methods.
 
-To follow along with our example, let's take the ``Bird`` class we just defined, which has a new, extra parameter called ``chirp_number``, and a new instance variable, ``self.chirp_number``. For the ``Bird`` method ``hi``, we want the sound a bird makes to appear ``self.chirp_number`` times. However many times THAT instance of ``Bird`` likes to say hello.
+Let's return to our idea of making Cats, Dogs, and other pets generate a string for their "mood" differently.
 
-.. activecode:: override_methods_1
+Here's the original Pet class again.
+
+.. activecode:: inheritance_pet_class
     :nocanvas:
 
     from random import randrange
 
-    class Bird(Pet):
-    	def __init__(self,name="Kitty",chirp_number=1):
-    		super(Bird,self,name).__init__() # call the parent class's constructor
-    		# basically, call the SUPER -- the parent version -- of the constructor, with all the parameters that it needs.
-    		self.chirp_number = 1 # now, also assign the new instance variable
+    # Here's the original Pet class
+    class Pet():
+        boredom_decrement = 4
+        hunger_decrement = 6
+        boredom_threshold = 5
+        hunger_threshold = 10
+        sounds = ['Mrrp']
+        def __init__(self, name = "Kitty"):
+            self.name = name
+            self.hunger = randrange(self.hunger_threshold)
+            self.boredom = randrange(self.boredom_threshold)
+            self.sounds = self.sounds[:]  # copy the class attribute, so that when we make changes to it, we won't affect the other Pets in the class
 
-    	# Now let's define the new hi method for Bird.
-    	def hi(self):
-    		for i in range(self.chirp_number):
-    			print self.sounds[randrange(len(self.sounds))]
+        def clock_tick(self):
+            self.boredom += 1
+            self.hunger += 1
 
-    # Now let's try it with some class instances and see 
+        def mood(self):
+            if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
+                return "happy"
+            elif self.hunger > self.hunger_threshold:
+                return "hungry"
+            else:
+                return "bored"
 
-    p1 = Pet("Spark") # create an instance of Pet with the name Spark
-    print p1 # print the string representation of the pet
-    p1.hi() # call the hi method on the pet
+        def __str__(self):
+            state = "     I'm " + self.name + ". "
+            state += " I feel " + self.mood() + ". "
+            # state += "Hunger %d Boredom %d Words %s" % (self.hunger, self.boredom, self.sounds)
+            return state
 
-    b1 = Bird("Sylvester",4) # create a Bird instance with the name Sylvester and the chirp_number 4
-    print b1 # print the string representation of the bird, which is just like the pet representation
-    b1.hi() # call the hi method on the bird -- see that it does something different! 
-    # The Bird hi method was called, not the Pet hi method, because this is a Bird instance.
+        def hi(self):
+            print self.sounds[randrange(len(self.sounds))]
+            self.reduce_boredom()
 
-Knowing all this, we can make a more complex version of the Tamagotchi game, with different types of pets, avoiding complex and confusing if/elif/else statements.
+        def teach(self, word):
+            self.sounds.append(word)
+            self.reduce_boredom()
+
+        def feed(self):
+            self.reduce_hunger()
+
+        def reduce_hunger(self):
+            self.hunger = max(0, self.hunger - self.hunger_decrement)
+
+        def reduce_boredom(self):
+            self.boredom = max(0, self.boredom - self.boredom_decrement)
+
+Now let's make two subclasses, Dog and Cat. Dogs are always happy unless they are bored *and* hungry. Cats, on the other hand, are happy only if they are fed and if their boredom level is in a narrow range and, even then, only with probability 1/2.
+
+.. activecode:: inheritance_override
+    :nocanvas:
+    :include: inheritance_pet_class
+
+    class Cat(Pet):
+        sounds = ['Meow']
+
+        def mood(self):
+            if self.hunger > self.hunger_threshold:
+                return "hungry"
+            if self.boredom <2:
+                return "grumpy; leave me alone"
+            elif self.boredom > self.boredom_threshold:
+                return "bored"
+            elif randrange(2) == 0:
+                return "randomly annoyed"
+            else:
+                return "happy"
+
+    class Dog(Pet):
+        sounds = ['Woof', 'Ruff']
+
+        def mood(self):
+            if (self.hunger > self.hunger_threshold) and (self.boredom > self.boredom_threshold):
+                return "bored and hungry"
+            else:
+                return "happy"
+
+    c1 = Cat("Fluffy")
+    d1 = Dog("Astro")
+
+    c1.boredom = 1
+    print c1.mood()
+    c1.boredom = 3
+    for i in range(10):
+        print c1.mood()
+    print d1.mood()

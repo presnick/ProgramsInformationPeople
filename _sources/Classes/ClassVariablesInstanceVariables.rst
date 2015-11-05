@@ -6,6 +6,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. _class_and_instance_vars:
+
 Class Variables and Instance Variables
 --------------------------------------
 

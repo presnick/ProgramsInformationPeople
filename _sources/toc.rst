@@ -300,19 +300,6 @@ Sorting
    Sort/Glossary.rst
    Sort/Exercises.rst
 
-Inheritance
-:::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Inheritance/intro.rst
-   Inheritance/inheritVarsAndMethods.rst
-   Inheritance/InvokingSuperMethods.rst
-   Inheritance/OverrideMethods.rst
-   Inheritance/TomagotchiRevisited.rst
-   Inheritance/Exercises.rst
-   
 
 Prediction and Classification
 :::::::::::::::::::::::::::::
@@ -349,6 +336,19 @@ Classes
    Classes/Glossary.rst
    Classes/Exercises.rst
 
+Inheritance
+:::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Inheritance/intro.rst
+   Inheritance/inheritVarsAndMethods.rst
+   Inheritance/OverrideMethods.rst
+   Inheritance/InvokingSuperMethods.rst
+   Inheritance/TamagotchiRevisited.rst
+   Inheritance/Exercises.rst
+
 
 Python Modules
 ::::::::::::::
@@ -360,6 +360,14 @@ Python Modules
    PythonModules/Therandommodule.rst
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
+
+Pyglet
+::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Pyglet/Pyglet.rst
 
 Exceptions
 ::::::::::

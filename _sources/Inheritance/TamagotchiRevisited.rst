@@ -17,9 +17,11 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
 .. activecode:: tamagotchi_revisited
     :nocanvas:
 
+    import sys
+    sys.setExecutionLimit(60000)
     from random import randrange
 
-    class Pet():
+    class Pet(object):
         boredom_decrement = 4
         hunger_decrement = 6
         boredom_threshold = 5
@@ -51,56 +53,68 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
 
         def hi(self):
             print self.sounds[randrange(len(self.sounds))]
-            self.reduce_boredom()
+            self.update_boredom()
 
         def teach(self, word):
             self.sounds.append(word)
-            self.reduce_boredom()
+            self.update_boredom()
 
         def feed(self):
-            self.reduce_hunger()
+            self.update_hunger()
 
-        def reduce_hunger(self):
+        def update_hunger(self):
             self.hunger = max(0, self.hunger - self.hunger_decrement)
 
-        def reduce_boredom(self):
+        def update_boredom(self):
             self.boredom = max(0, self.boredom - self.boredom_decrement)
 
-    class Dog(Pet):
-        # in the Dog class, Dog pets should express their hunger and boredom differently than generic Pets
-        def mood(self):
-            if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
-                return "happy, arf! Happy"
-            elif self.hunger > self.hunger_threshold:
-                return "hungry already, arrrf"
-            else:
-                return "bored, so you should play with me"
-
     class Cat(Pet):
-        # in the Cat class, cats express their hunger and boredom a little differently, too. They also have an extra instance, variable meow_count.
-        def __init__(self, name="Fluffy",meow_count=3):
-            super(Cat,self,name).__init__()
-            self.meow_count = meow_count
+        sounds = ['Meow']
+
+        def mood(self):
+            if self.hunger > self.hunger_threshold:
+                return "hungry"
+            if self.boredom <2:
+                return "grumpy; leave me alone"
+            elif self.boredom > self.boredom_threshold:
+                return "bored"
+            elif randrange(2) == 0:
+                return "randomly annoyed"
+            else:
+                return "happy"
+
+    class Dog(Pet):
+        sounds = ['Woof', 'Ruff']
+
+        def mood(self):
+            if (self.hunger > self.hunger_threshold) and (self.boredom > self.boredom_threshold):
+                return "bored and hungry"
+            else:
+                return "happy"
+
+        def feed(self):
+            Pet.feed(self)
+            print "Arf! Thanks!"
+
+    class Bird(Pet):
+        sounds = ["chirp"]
+        def __init__(self, name="Kitty", chirp_number=2):
+            Pet.__init__(self, name) # call the parent class's constructor
+            # basically, call the SUPER -- the parent version -- of the constructor, with all the parameters that it needs.
+            self.chirp_number = chirp_number # now, also assign the new instance variable
 
         def hi(self):
-            for i in range(self.meow_count):
+            for i in range(self.chirp_number):
                 print self.sounds[randrange(len(self.sounds))]
-            self.reduce_boredom()
-
-        def mood(self):
-            if self.hunger <= self.hunger_threshold and self.boredom <= self.boredom_threshold:
-                return "happy, I suppose"
-            elif self.hunger > self.hunger_threshold:
-                return "mmmm...hungry"
-            else:
-                return "a bit bored"
+            self.update_boredom()
 
     class Lab(Dog):
         def fetch(self):
             return "I found the tennis ball!"
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))] + self.fetch()
+            print self.fetch()
+            print self.sounds[randrange(len(self.sounds))]
 
     class Poodle(Dog):
         def dance(self):
@@ -108,11 +122,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
 
         def hi(self):
             print self.dance()
-            super(Poodle,self).hi()
-
-
-    import sys
-    sys.setExecutionLimit(60000)
+            Dog.hi(self)
 
     def whichone(petlist, name):
         for pet in petlist:
@@ -120,17 +130,9 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
                 return pet
         return None # no pet matched
 
-    def whichtype(name,adopt_type="general pet"):
-        if adopt_type.lower() == "dog":
-            return Dog(name)
-        elif adopt_type.lower() == "lab":
-            return Lab(name)
-        elif adopt_type.lower() == "poodle":
-            return Poodle(name)
-        elif adopt_type.lower() == "cat":
-            return Cat(name)
-        else:
-            return Pet(name)
+    pet_types = {'dog': Dog, 'lab': Lab, 'poodle': Poodle, 'cat': Cat, 'bird': Bird}
+    def whichtype(adopt_type="general pet"):
+        return pet_types.get(adopt_type.lower(), Pet)
 
     def play():
         animals = []
@@ -138,7 +140,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
         option = ""
         base_prompt = """
             Quit
-            Adopt <petname_with_no_spaces> <adopt_type - choose dog, cat, lab, poodle, or another unknown pet type>
+            Adopt <petname_with_no_spaces> <pet_type - choose dog, cat, lab, poodle, bird, or another unknown pet type>
             Greet <petname>
             Teach <petname> <word>
             Feed <petname>
@@ -160,10 +162,13 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
                 if whichone(animals, words[1]):
                     feedback += "You already have a pet with that name\n"
                 else:
+                    # figure out which class it should be
                     if len(words) > 2:
-                        animals.append(whichtype(words[1],words[2]))
+                        Cl = whichtype(words[2])
                     else:
-                        animals.append(whichtype(words[1]))
+                        Cl = Pet
+                    # Make an instance of that class and append it
+                    animals.append(Cl(words[1]))
             elif command == "Greet" and len(words) > 1:
                 pet = whichone(animals, words[1])
                 if not pet:
