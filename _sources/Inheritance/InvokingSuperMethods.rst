@@ -117,29 +117,29 @@ Let's say we want to create a subclass of ``Pet``, called ``Bird``, and we want 
 
 **Check your understanding**
 
-.. mchoicemf:: question21_4_1
+.. mchoice:: question_inheritance_4
    :answer_a: 5
-   :answer_b: [‘Mrrp’]
-   :answer_c: [‘chirp’]
+   :answer_b: ["Mrrp"]
+   :answer_c: ["chirp"]
    :answer_d: Error
    :correct: c
    :feedback_a: This would print if the code was print b1.chirp_number. 
-   :feedback_b: We invoke the subclass constructor, passing all the regular parameters for the parent class, which calls the superclass constructor. However, remember that the Python interpreter checks for the class variable first and, if it is not found, will then look for a class variable in the parent class. It finds the class variable in the class (so doesn’t have to look at the parent class).
-   :feedback_c: We invoke the subclass constructor, passing all the regular parameters for the parent class, which calls the superclass constructor. The sounds instance variable is assigned to the subclass variable, because the Python interpreter checks for the class variable first and, if it is not found, will then look for a class variable in the parent class. It finds the class variable in the class (so doesn’t have to look at the parent class).
-   :feedback_d: We invoke the subclass constructor, passing all the regular parameters for the parent class, which calls the superclass constructor. The sounds instance variable is assigned to the subclass variable, because the Python interpreter checks for the class variable first and, if it is not found, will then look for a class variable in the parent class. It finds the class variable in the class (so doesn’t have to look at the parent class).
-   
-   What will print when, print b1.sounds, is run?
+   :feedback_b: We set b1 to be Bird('tweety', 5) above.  Bird is a subclass of Pet, which has ["Mrrp"] for sounds, but Bird has a different value for that class variable. The interpreter looks in the subclass first.
+   :feedback_c: The interpeter finds the value in the class variable for the class Bird.
+   :feedback_d: We ran set b1 to be Bird('tweety', 5) above.  Bird has a value set for the attribute sounds.
 
-.. mchoicemf:: question21_4_2
+   What will print when ``print b1.sounds`` is run?
+
+.. mchoice:: question_inheritance_5
    :answer_a: Error when invoked
-   :answer_b: The parent class feed method will override the class method.
-   :answer_c: The class feed method would override the parent class method.
-   :answer_d: Nothing. It is the same as the current code.
+   :answer_b: The string would not print out but d1 would have its hunger reduced.
+   :answer_c: The string would print but d1 would not have its hunger reduced.
+   :answer_d: Nothing would be different. It is the same as the current code.
    :correct: c
    :feedback_a: Since we are no longer calling the parent method in the subclass method definition, the actions defined in the parent method feed will not happen, and only Arf! Thanks! will be printed.
-   :feedback_b: Remember that the Python interpreter checks for a matching class variable first and, if it is not found, will then look for a variable in the parent class. If we do not refer to the parent class feed method within the class function definition, the class method will override the parent method.
-   :feedback_c: Since we are no longer calling the parent method in the subclass method definition, the class definition will override the parent method.
-   :feedback_d: If we do not refer to the parent class feed method within the class function definition, the class method will override the parent method.
+   :feedback_b: Remember that the Python interpreter checks for the existence of feed in the Dog class and looks for feed in Pet only if it isn't found in Dog.
+   :feedback_c: Since we are no longer calling the parent Pet class's method in the Dog subclass's method definition, the class definition will override the parent method.
+   :feedback_d: Remember that the Python interpreter checks for the existence of feed in the Dog class and looks for feed in Pet only if it isn't found in Dog.
    
-   For the Dog class defined in the above activecode window, what would happen when d1.feed() is run if the Pet.feed(self) line was deleted?
+   For the Dog class defined in the earlier activecode window, what would happen when d1.feed() is run if the Pet.feed(self) line was deleted?
 

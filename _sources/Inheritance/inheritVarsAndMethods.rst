@@ -198,29 +198,29 @@ The Python interpreter looks for an instance variable or method called ``chasing
 
 **Check your understanding**
 
-.. mchoicemf:: question21_2_1
+.. mchoice:: question_inheritance_1
    :answer_a: 1
    :answer_b: 2
    :answer_c: 3
    :answer_d: 4
    :correct: d
-   :feedback_a: Check the “grandparent” class for the instance variable form (see previous chapter on classes). Remember that classes inherit from parent and grandparent classes. 
-   :feedback_b: Check the “grandparent” class for the instance variable form (see previous chapter on classes). Remember that classes inherit from parent and grandparent classes.
-   :feedback_c: Check the “grandparent” class for the instance variable form (see previous chapter on classes). Remember that classes inherit from parent and grandparent classes.
-   :feedback_d: The constructor variable creates the instance variables name, hunger, boredom, sounds.
+   :feedback_a: Neither Cheshire nor Cat defines an __init__ constructor method, so the grandaprent class, Pet, will have it's __init__ method called. Check how many instance variables it sets.
+   :feedback_b: Neither Cheshire nor Cat defines an __init__ constructor method, so the grandaprent class, Pet, will have it's __init__ method called. Check how many instance variables it sets.
+   :feedback_c: Neither Cheshire nor Cat defines an __init__ constructor method, so the grandaprent class, Pet, will have it's __init__ method called. Check how many instance variables it sets.
+   :feedback_d: Neither Cheshire nor Cat defines an __init__ constructor method, so the grandaprent class, Pet, will have it's __init__ method called. That constructor method sets the instance variables name, hunger, boredom, and sounds.
    
-   When you run the code, new_cat = Cheshire("Pumpkin”), how many instance variables exist for the new_cat instance of Cheshire?
+   After you run the code, ``new_cat = Cheshire("Pumpkin")``, how many instance variables exist for the new_cat instance of Cheshire?
 
-.. mchoicemf:: question21_2_2
+.. mchoice:: question_inheritance_2
    :answer_a: We are Siamese if you please. We are Siamese if you don’t please.
    :answer_b: Error
    :answer_c: Pumpkin
    :answer_d: Nothing. There’s no print statement.
    :correct: b
-   :feedback_a: Siamese is a subclass of Cat, as is Cheshire. As such, both will inherit from Cat; however, you cannot invoke methods defined only in one subclass (and not in the superclass) on another subclass.
-   :feedback_b: You cannot invoke methods defined only in one subclass (and not in the superclass) on another subclass.
+   :feedback_a: another_cat is an instance of Siamese, so its song() method is invoked.
+   :feedback_b: another_cat is an instance of Siamese, so its song() method is invoked.
    :feedback_c: This would print if the statement was print new_cat.name.
-   :feedback_d: There is a print statement in the method definition. More importantly, however, you cannot invoke methods defined only in one subclass (and not in the superclass) on another subclass.
+   :feedback_d: There is a print statement in the method definition.
 
    What would print after running the following code:
 
@@ -229,10 +229,31 @@ The Python interpreter looks for an instance variable or method called ``chasing
      new_cat = Cheshire("Pumpkin”)
      class Siamese(Cat):
        def song(self):
-         print “We are Siamese if you please. We are Siamese if you don’t please.”
-     another_cat = Siamese(“Lady”)
+         print "We are Siamese if you please. We are Siamese if you don’t please."
+     another_cat = Siamese("Lady")
+     another_cat.song()
+
+
+ .. mchoice:: question_inheritance_3
+   :answer_a: We are Siamese if you please. We are Siamese if you don’t please.
+   :answer_b: Error
+   :answer_c: Pumpkin
+   :answer_d: Nothing. There’s no print statement.
+   :correct: b
+   :feedback_a: You cannot invoke methods defined in the Siamese class on an instance of the Cheshire class. Both are subclasses of Cat, but Cheshire is not a subclass of Siamese, so it doesn't inherit its methods.
+   :feedback_b: You cannot invoke methods defined in the Siamese class on an instance of the Cheshire class. Both are subclasses of Cat, but Cheshire is not a subclass of Siamese, so it doesn't inherit its methods.
+   :feedback_c: This would print if the statement was print new_cat.name.
+   :feedback_d: There is a print statement in the method definition for Siamese.
+
+   What would print after running the following code:
+
+   .. code-block:: python
+
+     new_cat = Cheshire("Pumpkin”)
+     class Siamese(Cat):
+       def song(self):
+         print "We are Siamese if you please. We are Siamese if you don’t please."
+     another_cat = Siamese("Lady")
      new_cat.song()
 
 
-.. index:: keyword, underscore character
- 
