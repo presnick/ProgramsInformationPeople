@@ -114,3 +114,32 @@ Let's say we want to create a subclass of ``Pet``, called ``Bird``, and we want 
     b1 = Bird('tweety', 5)
     b1.teach("Polly wanna cracker")
     b1.hi()
+
+**Check your understanding**
+
+.. mchoicemf:: question21_4_1
+   :answer_a: 5
+   :answer_b: [‘Mrrp’]
+   :answer_c: [‘chirp’]
+   :answer_d: Error
+   :correct: c
+   :feedback_a: This would print if the code was print b1.chirp_number. 
+   :feedback_b: We invoke the subclass constructor, passing all the regular parameters for the parent class, which calls the superclass constructor. However, remember that the Python interpreter checks for the class variable first and, if it is not found, will then look for a class variable in the parent class. It finds the class variable in the class (so doesn’t have to look at the parent class).
+   :feedback_c: We invoke the subclass constructor, passing all the regular parameters for the parent class, which calls the superclass constructor. The sounds instance variable is assigned to the subclass variable, because the Python interpreter checks for the class variable first and, if it is not found, will then look for a class variable in the parent class. It finds the class variable in the class (so doesn’t have to look at the parent class).
+   :feedback_d: We invoke the subclass constructor, passing all the regular parameters for the parent class, which calls the superclass constructor. The sounds instance variable is assigned to the subclass variable, because the Python interpreter checks for the class variable first and, if it is not found, will then look for a class variable in the parent class. It finds the class variable in the class (so doesn’t have to look at the parent class).
+   
+   What will print when, print b1.sounds, is run?
+
+.. mchoicemf:: question21_4_2
+   :answer_a: Error when invoked
+   :answer_b: The parent class feed method will override the class method.
+   :answer_c: The class feed method would override the parent class method.
+   :answer_d: Nothing. It is the same as the current code.
+   :correct: c
+   :feedback_a: Since we are no longer calling the parent method in the subclass method definition, the actions defined in the parent method feed will not happen, and only Arf! Thanks! will be printed.
+   :feedback_b: Remember that the Python interpreter checks for a matching class variable first and, if it is not found, will then look for a variable in the parent class. If we do not refer to the parent class feed method within the class function definition, the class method will override the parent method.
+   :feedback_c: Since we are no longer calling the parent method in the subclass method definition, the class definition will override the parent method.
+   :feedback_d: If we do not refer to the parent class feed method within the class function definition, the class method will override the parent method.
+   
+   For the Dog class defined in the above activecode window, what would happen when d1.feed() is run if the Pet.feed(self) line was deleted?
+
