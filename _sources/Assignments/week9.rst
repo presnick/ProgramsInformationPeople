@@ -11,38 +11,83 @@
 .. highlight:: python
     :linenothreshold: 500
 
-
-Activities through 3/22
-=======================
+Activities through 11/15
+========================
 
 You have the following graded activities:
 
-1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
-   
-   * Before Monday's class: 
-       * Read `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
-       * Read :ref:`String Formatting<formatting_chap>`
-       * Read :ref:`Writing CSV files<csv_chap>`
-    
-   * Before Wednesday's class:
-       * Read :ref:`REST APIs<rest_apis_chap>`
+* Before Monday's class:
+    * Read :ref:`Class Inheritance <inheritance_chap>`
+
+* By Tuesday midnight
+    * Read *The Success of Open Source*, Chapter 2
+    * :ref:`Reading response 9 <reading_response_9>`
+
+* Before Wednesday's class:
+    * :ref:`Python Modules <modules_chap>`
+    * :ref:`Installing modules with pip <pip_chap>`
+    * There will be a chapter on the Pyglet module, which we'll use to create a game with graphics. It's not ready yet.
+
+* By Sunday 11/15 at 5PM:
+    * Complete Problem Set 9, via Canvas. (Note: we are still working on creating this problem set. It should be available soon.)
+
+.. usageassignment:: prep_16
+    :chapters: Classes
+    :assignment_name: Prep a16
+    :deadline: 2015-11-09 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_17
+    :chapters: Classes
+    :assignment_name: Prep a17
+    :deadline: 2015-11-11 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_18
+    :chapters: Classes
+    :assignment_name: Prep a18
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_19
+    :chapters: Classes
+    :assignment_name: Prep a19
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_20
+    :chapters: Classes
+    :assignment_name: Prep a20
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_21
+    :chapters: Classes
+    :assignment_name: Prep a21
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_22
+    :chapters: Classes
+    :assignment_name: Prep a22
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. usageassignment:: prep_23
+    :chapters: Classes
+    :assignment_name: Prep a23
+    :deadline: 2015-11-04 21:30:00
+    :pct_required: 80
+    :points: 50
 
 
-        * Read :ref:`try/except <exceptions_chap>`
-       * Read :ref:`pip module installer <pip_chap>`
-       * Read :ref:`Fetching data <requests_chap>`
-
-2. Reading responses
-
-   * By Tuesday midnight: 
-      * Read *The Success of Open Source*, Chapter 2
-      * :ref:`Reading response 9 <reading_response_9>`
-
-3. Problem set: **Due:** **Sunday, March 22**
-
-   * This week, there will be a file called ps8.py. You should download a copy of it. You will edit it on your laptop or workstation and test it by running it using your native Python interpreter.
-   * If you put ps8.py in a different directory than ps7.py, you will also need to download a copy of test106.py into the directory where you put ps8.py.
-   
 Reading Response
 ----------------
 
@@ -63,10 +108,3 @@ Answer the following questions.
 
    """
    print s
-
-
-
-
-
-   
-       

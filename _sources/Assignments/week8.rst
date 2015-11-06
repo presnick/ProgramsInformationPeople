@@ -33,7 +33,7 @@ You have the following graded activities:
 .. usageassignment:: prep_14
     :chapters: Prediction
     :assignment_name: Prep a14
-    :deadline: 2015-11-02 21:30:00
+    :deadline: 2015-11-04 21:30:00
     :pct_required: 80
     :points: 50
 
@@ -44,61 +44,6 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-.. usageassignment:: prep_16
-    :chapters: Classes
-    :assignment_name: Prep a16
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_17
-    :chapters: Classes
-    :assignment_name: Prep a17
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_18
-    :chapters: Classes
-    :assignment_name: Prep a18
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_19
-    :chapters: Classes
-    :assignment_name: Prep a19
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_20
-    :chapters: Classes
-    :assignment_name: Prep a20
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_21
-    :chapters: Classes
-    :assignment_name: Prep a21
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_22
-    :chapters: Classes
-    :assignment_name: Prep a22
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_23
-    :chapters: Classes
-    :assignment_name: Prep a23
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
 
 
 Reading Response

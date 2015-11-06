@@ -18,7 +18,7 @@ Assignments
    Assignments/ps6.rst
    Assignments/ps7.rst
    Assignments/week8.rst
-
+   Assignments/week9.rst
 
 General Introduction
 ::::::::::::::::::::

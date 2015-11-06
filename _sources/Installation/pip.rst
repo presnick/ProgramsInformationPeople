@@ -11,12 +11,12 @@
 Installing Modules
 ==================
 
-Eventually, you will want to install additional python modules (sometimes called libraries) that are not pre-packaged with your python installation. 
+Eventually, you will want to install additional python modules (sometimes called libraries) that are not pre-packaged with your python installation. There are lots of great modules out there. In fact, there so many that you'll feel like you're flying.
 
-.. figure:: Figures/xkcdmodule.png
+.. image:: http://imgs.xkcd.com/comics/python.png
+    :alt: xkcd comic about python modules
 
-   There are lots of great modules out there. In fact, there so many that you'll feel like you're flying.
-   
+
 
 Installing pip
 --------------

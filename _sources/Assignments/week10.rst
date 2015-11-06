@@ -17,6 +17,21 @@ Activities through 3/29
 
 You have the following graded activities:
 
+   * Before Monday's class:
+       * Read `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
+       * Read :ref:`String Formatting<formatting_chap>`
+       * Read :ref:`Writing CSV files<csv_chap>`
+
+   * Before Wednesday's class:
+       * Read :ref:`REST APIs<rest_apis_chap>`
+
+
+        * Read :ref:`try/except <exceptions_chap>`
+       * Read :ref:`pip module installer <pip_chap>`
+       * Read :ref:`Fetching data <requests_chap>`
+
+
+
 1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
    
    * Before Monday's class: 
@@ -36,6 +51,8 @@ You have the following graded activities:
    * By Tuesday midnight: 
       * Read *The Success of Open Source*, Chapter 3
       * :ref:`Reading response 10 <reading_response_10>`
+
+
 
 3. Problem set **Due:** **Sunday, March 29**
 
