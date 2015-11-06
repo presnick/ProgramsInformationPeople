@@ -17,7 +17,7 @@ Mechanics of Defining a Subclass
 
 We said that inheritance provides us a more elegant way of, for example, creating  ``Dog`` and ``Cat`` types, rather than making a very complex ``Pet`` class. In the abstract, this is pretty intuitive: all pets have certain things, but dogs are different from cats, which are different from birds. Going a step further, a Collie dog is different from a Labrador dog, for example. Inheritance provides us with an easy and elegant way to represent these differences.
 
-Basically, it works by defining a new class, and using a special syntax to show what the new sub-class *inherits from* a super-class. So if you wanted to define a ``Dog`` class as a special kind of ``Pet``, you would say that the ``Dog`` type inherits from the ``Pet`` type. In the definition of the inherited class, you only need to specify the methods and instance variables that are different from the parent class (the **parent class**, or the **superclass**,  is what we may call the class that is *inherited from*. In the example we're discussing, `` Pet`` would be the superclass of ``Dog`` or ``Cat``).
+Basically, it works by defining a new class, and using a special syntax to show what the new sub-class *inherits from* a super-class. So if you wanted to define a ``Dog`` class as a special kind of ``Pet``, you would say that the ``Dog`` type inherits from the ``Pet`` type. In the definition of the inherited class, you only need to specify the methods and instance variables that are different from the parent class (the **parent class**, or the **superclass**,  is what we may call the class that is *inherited from*. In the example we're discussing, ``Pet`` would be the superclass of ``Dog`` or ``Cat``).
 
 Here is an example. Say we want to define a class ``Cat`` that inherits from ``Pet``. Assume we have the ``Pet`` class that we defined earlier.
 
@@ -195,3 +195,44 @@ However, for the following, it won't go so well
     p1.chasing_rats()
 
 The Python interpreter looks for an instance variable or method called ``chasing_rats`` on the ``Pet`` class. It doesn't exist. ``Pet`` has no parent classes, so Python signals an error.
+
+**Check your understanding**
+
+.. mchoicemf:: question21_2_1
+   :answer_a: 1
+   :answer_b: 2
+   :answer_c: 3
+   :answer_d: 4
+   :correct: d
+   :feedback_a: Check the “grandparent” class for the instance variable form (see previous chapter on classes). Remember that classes inherit from parent and grandparent classes. 
+   :feedback_b: Check the “grandparent” class for the instance variable form (see previous chapter on classes). Remember that classes inherit from parent and grandparent classes.
+   :feedback_c: Check the “grandparent” class for the instance variable form (see previous chapter on classes). Remember that classes inherit from parent and grandparent classes.
+   :feedback_d: The constructor variable creates the instance variables name, hunger, boredom, sounds.
+   
+   When you run the code, new_cat = Cheshire("Pumpkin”), how many instance variables exist for the new_cat instance of Cheshire?
+
+.. mchoicemf:: question21_2_2
+   :answer_a: We are Siamese if you please. We are Siamese if you don’t please.
+   :answer_b: Error
+   :answer_c: Pumpkin
+   :answer_d: Nothing. There’s no print statement.
+   :correct: b
+   :feedback_a: Siamese is a subclass of Cat, as is Cheshire. As such, both will inherit from Cat; however, you cannot invoke methods defined only in one subclass (and not in the superclass) on another subclass.
+   :feedback_b: You cannot invoke methods defined only in one subclass (and not in the superclass) on another subclass.
+   :feedback_c: This would print if the statement was print new_cat.name.
+   :feedback_d: There is a print statement in the method definition. More importantly, however, you cannot invoke methods defined only in one subclass (and not in the superclass) on another subclass.
+
+   What would print after running the following code:
+
+   .. code-block:: python
+
+     new_cat = Cheshire("Pumpkin”)
+     class Siamese(Cat):
+       def song(self):
+         print “We are Siamese if you please. We are Siamese if you don’t please.”
+     another_cat = Siamese(“Lady”)
+     new_cat.song()
+
+
+.. index:: keyword, underscore character
+ 
