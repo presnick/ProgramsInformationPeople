@@ -358,9 +358,19 @@ Running this code gives the following:
 
 .. image:: Images/image_window.png
 
-Here is a white square you can download if you don't feel up to making one of your own:
+It's worth a little more discussion of the Sprite class, since if you build a visual application such as a game, you are most likely going to be creating and manipulating a lot of Sprites. So: a Sprite represents a persistent game object. The class has a number of instance variables and methods associated with it. Here are a few important ones:
 
-.. image:: Images/white_square.png
+- x and y: these instance variables represent the lower left corner of the Sprite
+
+- set_position(x,y): this method moves the Sprite to a new position. If you want to move a game object in-game, you should use this method.
+
+- width and height: these variables represent the width and height of the Sprite. They are calculated automatically from the image that the Sprite is based on. 
+
+- draw(): This method draws the Sprite within its containing window. If you want to have a game object move, one way of doing so is to change its position with set_position(), clear the window using the Window.clear() method, and then draw the Sprite again using this method. 
+
+- delete(): This method deletes the Sprite. 
+
+The full documentation for the class is available here: http://pyglet.readthedocs.org/en/latest/api/pyglet/sprite/pyglet.sprite.Sprite.html
 
 Displaying Geometric Primitives
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -450,7 +460,7 @@ Here is some code that demonstrates this:
             pyglet.options['audio'] = ('openal', 'silent')
 
             #Load a sound file into a Pyglet object
-            self.source = pyglet.media.load('bicycle_bell.wav')
+            self.source = pyglet.media.load('bicycle_bell.wav', streaming=False)
 
 
         def on_draw(self):
@@ -468,7 +478,9 @@ Here is some code that demonstrates this:
     sound_window = SoundWindow()
     pyglet.app.run()
 
-We won't show a screenshot of the result as they are not visual, but trust us--it works. 
+We won't show a screenshot of the result as they are not visual, but trust us--it works. Note that we set the keyword argument ``streaming=False`` in our invocation of ``pyglet.media.load``. This allows us to play the sound multiple times, which in most cases we will want to do. However, if you only wanted to play a sound once, you could omit this parameter. 
+
+If you want to run this code for yourself, you will have to download a .wav file and put it in the same directory as this script. The one used in the example can be found here: http://www.wavsource.com/snds_2015-11-01_1874590815319647/sfx/bicycle_bell.wav
 
 The full documentation on making sounds (and video) in Pyglet can be found here: https://pyglet.readthedocs.org/en/pyglet-1.2-maintenance/programming_guide/media.html
 
@@ -495,8 +507,8 @@ Here we give one example, a simple little game that lets the player move a white
             self.image_sprite = pyglet.sprite.Sprite(image,
                       x=self.width//2, y=self.height//2)
 
-            pyglet.options['audio'] = ('openal', 'silent')
-            self.source = pyglet.media.load('bicycle_bell.wav')
+        pyglet.options['audio'] = ('openal', 'silent')
+        self.source = pyglet.media.load('bicycle_bell.wav',streaming=False)
 
 
         def on_key_press(self, symbol, modifiers):
@@ -542,12 +554,89 @@ Here we give one example, a simple little game that lets the player move a white
 You can see that most of the "game logic", such as it is, takes place in the ``on_key_press()`` method. In this method, the game interprets the key being pressed, and makes a decision about what to do based on what key was pressed. The ``on_draw()`` method updates the window to accommodate the new situation, such as the changing position of the image sprite. 
 
 Most games, at least most simple games, are going to look like this: a few visual elements that move around and change based on user input, as interpreted through event-handling functions such as ``on_key_press()`` or ``on_mouse_click()``.
- 
+
+Other important stuff
+---------------------
+
+An important pair of methods to know are ``pyglet.clock.schedule_interval()`` and ``pyglet.clock.unschedule()``
+
+``pyglet.clock.schedule_interval(function,interval)`` takes two arguments, ``function`` and ``interval``. ``function`` should be a function name, while ``interval`` is a float representing some number of seconds. ``schedule_interval`` causes the Pyglet event loop to "schedule" the function to run on the given interval. 
+
+``pyglet.clock.unschedule(function)`` tells Pyglet to pull the given function off the scheduler. Below is an example of the two functions being used in conjunction with one another:
+
+.. code:: python
+
+	import pyglet
+
+	print_count = 0
+
+	def print_1(interval):
+		global print_count
+		print_count += 1
+
+		if print_count <= 5:
+			print 'First printing function. Count: ' + str(print_count)
+			print '\tIt has been ' + str(interval) +' seconds since the last time this function was called.'
+
+		else:
+			print 'Unscheduling first printing function and scheduling second printing function'
+			pyglet.clock.unschedule(print_1)
+			pyglet.clock.schedule_interval(print_2,1.0)
+
+
+	def print_2(interval):
+		global print_count
+		print_count += 1
+		if print_count <= 10:
+			print 'Second printing function. Count: ' + str(print_count)
+			print '\tIt has been ' + str(interval) +' seconds since the last time this function was called.'
+
+		else:
+			print 'Exiting Pyglet event loop'
+			pyglet.app.exit()
+
+	print 'Scheduling first printing function'
+	pyglet.clock.schedule_interval(print_1,1.0)
+	print 'Starting up game loop'
+	pyglet.app.run()
+		
+If you were to run this code, you'd see some output, printed at a 1-second interval:
+
+.. code::
+
+	Scheduling first printing function
+	Starting up game loop
+	First printing function. Count: 1
+		It has been 1.00017619269 seconds.
+	First printing function. Count: 2
+		It has been 1.00004148226 seconds.
+	First printing function. Count: 3
+		It has been 1.00059999598 seconds.
+	First printing function. Count: 4
+		It has been 1.00077661632 seconds.
+	First printing function. Count: 5
+		It has been 1.00115594379 seconds.
+	Unscheduling first printing function and scheduling second printing function
+	Second printing function. Count: 7
+		It has been 1.00012017026 seconds.
+	Second printing function. Count: 8
+		It has been 1.00039814416 seconds.
+	Second printing function. Count: 9
+		It has been 1.00042337564 seconds.
+	Second printing function. Count: 10
+		It has been 1.00041952677 seconds.
+	Exiting Pyglet event loop
+
+What happened here was that initially we scheduled ``print_1()`` to run on a once-per-second interval. But, when print_count exceeded 5, ``print_1()`` unscheduled itself and scheduled ``print_2()`` to run on the same interval. When print_count exceeded 10, ``print_2()`` exited the game using the ``pyglet.game.exit()`` function. 
+
+Note that both of my scheduled functions had an argument called ``interval``. The Pyglet scheduler passes the actual interval that has passed, as an argument to the scheduled function whenever it runs. This is usually very close to the planned interval, but slightly different due to CPU latency and stuff like that. 
+
+
 
 Additional Notes
 ----------------
 
-The Pyglet definition available at https://pyglet.readthedocs.org/en/pyglet-1.2-maintenance/index.html goes into much more detail than this introduction. 
+The Pyglet documentation available at https://pyglet.readthedocs.org/en/pyglet-1.2-maintenance/index.html goes into much more detail than this introduction. 
 
 However, this documentation, rather than using subclassing, uses something called **function decorators**, to achieve the function overwrites that it needs to produce real results. This approach produces identical results to subclassing, but is slightly more compact (though also, in our opinion, harder to understand).
 
