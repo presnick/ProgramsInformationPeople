@@ -216,7 +216,7 @@ The Python interpreter looks for an instance variable or method called ``chasing
    :answer_b: Error
    :answer_c: Pumpkin
    :answer_d: Nothing. There’s no print statement.
-   :correct: b
+   :correct: a
    :feedback_a: another_cat is an instance of Siamese, so its song() method is invoked.
    :feedback_b: another_cat is an instance of Siamese, so its song() method is invoked.
    :feedback_c: This would print if the statement was print new_cat.name.
@@ -234,7 +234,7 @@ The Python interpreter looks for an instance variable or method called ``chasing
      another_cat.song()
 
 
- .. mchoice:: question_inheritance_3
+.. mchoice:: question_inheritance_3
    :answer_a: We are Siamese if you please. We are Siamese if you don’t please.
    :answer_b: Error
    :answer_c: Pumpkin
