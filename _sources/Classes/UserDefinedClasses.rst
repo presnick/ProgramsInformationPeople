@@ -9,6 +9,8 @@
 
 .. index:: compound data type
 
+.. _chap_constructor:
+
 User Defined Classes
 --------------------
 

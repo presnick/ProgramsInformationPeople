@@ -1,5 +1,4 @@
-..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
-    Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
+..  Copyright (C)  Sam Carton and Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -7,7 +6,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: compound data type
+.. _pyglet_chap:
 
 Pyglet
 ======
@@ -18,17 +17,16 @@ This chapter will give a brief introduction to installing Pyglet and making (ver
 
 As a note, Pyglet is not considered the best Python game library as of November 2015, as it hasn't been maintained consistently in recent years. PyGame (http://www.pygame.org/hifi.html) probably holds that distinction for now (though these things change quickly). 
 
-However, Pyglet is simpler, more "Pythonic", and doesn't depend on anything. That makes it a better learning tool, and if you can understand Pyglet you can understand virtually any visual application library. 
+However, Pyglet is simpler, more "Pythonic", and doesn't depend on any other modules. That makes it a better learning tool. If you can understand Pyglet, you will be well positioned to understand other graphics and visual application modules.
 
 The official Pyglet documentation is located here: https://bitbucket.org/pyglet/pyglet/wiki/Documentation
 
-The Pyglet docs will go into much more detail about concepts that are only briefly discussed in this chapter. 
-
+The Pyglet docs will go into much more detail about concepts that are only briefly discussed in this chapter. Be warned, however, that they are sometimes incomplete.
 
 Installation
 ------------
 
-Pyglet is an official Python package, meaning that it can be installed by simply running the following in the terminal:
+Pyglet is an official Python package, meaning that it can be installed by simply running the following **in the terminal**:
 
 .. code::
 
@@ -76,38 +74,45 @@ We'll talk about these in that order. Below is just about the most simple Pyglet
     window = pyglet.window.Window()
     pyglet.app.run()
 
+.. note::
 
-If you were to run this little program from the console, you'd see something like the following:
+    Throughout this chapter, we will be providing code snippets. They are not provided as ActiveCode windows because the Pyglet module will not run in the browser environment. We strongly encourage you to copy these text snippets into code files on your local machine and run those code files from a terminal window, as you have been doing with recent problem sets.
+
+If you were to run this little program from the console (terminal window), you'd see something like the following:
 
 .. image:: Images/basic_pyglet.png
 
 Application Elements
 ~~~~~~~~~~~~~~~~~~~~
 
-So let's break this baby down line-by-line: 
+So let's break this down line-by-line:
 
 .. code:: python
 
     import pyglet
 
 
-This line imports the pyglet package that we installed earlier. It gives our program full access to all the functionality contained in the package. 
-
+This line imports the pyglet package that we installed earlier. It gives our program full access to all the functionality contained in the package. Basically that module is a directory named `pyglet` that consists of a set of .py files (or possibly subdirectories that also contain .py files). The python interpreter executes the code in all those .py files. In particular there is a file called ``window.py``. In window.py there is a definition of a class called ``Window``.
 
 .. code:: python
 
     window = pyglet.window.Window()
 
-This line creates the window that showed up in the screen shot. But, and this is important, **it does not draw the window.** For that, you need the next line:
+This line creates the window that showed up in the screen shot. But, and this is important, **it does not draw the window.** For that, you need the next line.
 
+But first let's pull apart ``pyglet.window.Window()``, to understand how it works to use imported modules and to reinforce how classes work.
+    * The python interpreter looks up the word ``pyglet`` and finds that it is bound to a *module* object that was created by the previous ``import pyglet`` line. Think of the module object as being an instance of a class called Module.
+    * ``.pyglet`` says to look up the attribute named pyglet in the module instance. That turns out to also be a module object, a submodule of pyglet.
+    * ``.Window`` says to look up the Window attribute in that submodule. It's value is the Window class object.
+    * ``()`` says to treat the previous object as an executable. If it were a function, it would call the function. Since it's a class, it creates an instance of the class and invokes the constructor on it. It returns the new instance of the Window class. If that doesn't sound familiar, recheck the textbook section on :ref:`Classes and Constructors <chap_constructor>`.
 
 .. code:: python
 
     pyglet.app.run()
 
-**This is our get-the-ball rolling line.** It tells Pyglet to look for every object of a type it knows about (such as windows), and draw them on the screen. It also starts up what is called the **"Pyglet event loop"**, which is essentially a loop that runs over and over again, continuously waiting for user interaction, drawing stuff, making things happen, etc. All the stuff that constitutes a visual application, in fact.
+**This is our get-the-ball rolling line.** It tells Pyglet to look for every object of a type it knows about (such as windows), and draw them on the screen. It also starts up what is called the **Pyglet event loop**, which is essentially a loop that runs over and over again, continuously waiting for user interaction, drawing stuff, making things happen, etc. All the stuff that constitutes a visual application, in fact.
 
-Doesn't make sense? That's okay. The loopiness of the loop will become a little more clear in a bit. Til then, just remember that the second line creates the window, but the third line draws it and keeps it alive til you close it.
+Doesn't make sense? That's okay. The loopiness of the event loop will become a little clearer in a bit. Til then, just remember that the second line creates the window, but the third line draws it and keeps it alive until you close it.
 
 By default, the loop ends when all windows are closed. What that means is that we are stuck on that third line until all windows get closed. So if you add a print statement to the previous code:
 
@@ -181,31 +186,34 @@ If you run this code, you'll get a window which is still empty, but which prints
 
 Try not to worry too much about the ``sys.stdout.flush()`` business. That is just a bit of finagling to make sure that the print statements work correctly. 
 
-So, to recap: we **subclassed** the ``pyglet.window.Window`` class, and overwrote the ``on_key_press()`` method in order to change how our subclass responded to key presses.
+Behind the scenes, the Pyglet event loop is monitoring (listening) for key presses, mouse clicks, and some other things. When one of those events occurs, it figures out which Window is active and calls the corresponding method, such as ``on_key_press()`` for a key press. The built-in method of the Window class doesn't do anything. But we made a subclass where that method does something, printing out information about the key that was pressed.
+
+So, to recap: we **subclassed** the ``pyglet.window.Window`` class, and wrote the ``on_key_press()`` method, overwriting the on_key_press method in Pyglet's Window class. That changed how our subclass responded to key presses.
+
 
 Other Kinds of Events
 ~~~~~~~~~~~~~~~~~~~~~
 
 A good question at this point would be: **"What are the major event listener methods you can overwrite, and how do they work?"**
+Because we are working with an existing framework, Pyglet, we need to understand what special method names it knows about, so we know which ones are good ones for use to override in the subclass that we define.
 
 The answer can, again, be found in `the official documentation <https://pyglet.readthedocs.org/en/pyglet-1.2-maintenance/api/pyglet/window/pyglet.window.Window.html#pyglet.window.Window.on_activate>`_, but I'll list the important ones here:
 
 
 Window.on_key_press(symbol,modifiers)
-    This gets called whenever a key is pressed. ``symbol`` is a numeric code for the key that was pressed (e.g. 97 for 'A'), and ``modifiers`` is a number representing any other keys that are being held down at the same time (for if you wanted to differentiate shift+A from just A, for instance.)
+    This gets called whenever a key is pressed. ``symbol`` is a numeric code for the key that was pressed (e.g. 97 for 'A'), and ``modifiers`` is a number representing any other keys that are being held down at the same time (useful if you wanted to differentiate shift+A from just A, for instance.)
 
 Window.on_key_release(symbol, modifiers)
-    This is very similar to ``on_key_press()``, only it gets called when a key is released.
-
+    This is very similar to ``on_key_press()``, only it gets called when a key is released (i.e., when the user takes their finger off the key).
 
 Window.on_mouse_press(x, y, button, modifiers)
     This method gets called whenever the mouse is clicked inside the window. ``x`` and ``y`` represent the coordinates inside the window where the press happened, and ``button`` represents which mouse button was clicked (e.g. 1 for the left mouse button). ``modifiers`` again represents any other keys currently being pressed, to differentiate between, say, shift-clicking and normal clicking.
 
 Window.on_mouse_drag(x, y, dx,dy, button, modifiers)
-    This method gets called whenever the mouse dragged from one point in the window to a different point. ``x`` and ``y`` represent the coordinates of the initial point, and ``dx`` and ``dy`` represent how far in the x and y direction the mouse was dragged.
+    This method gets called whenever the mouse is dragged from one point in the window to a different point while a button is clicked. ``x`` and ``y`` represent the coordinates of the initial point, and ``dx`` and ``dy`` represent how far in the x and y direction the mouse was dragged from its original spot when the button was clicked. This may seem a little surprising, since mouse dragging is a continuous operation, not a one-time thing like pressing down a key. Remember, though, that computers are super fast! What happens is that when you move the mouse across the screen, ``on_mouse_drag()`` will get called many times, each with a new dx and dy.
 
 Window.on_draw()
-    This method is an important one. It gets called when the window is first drawn, and every time it is redrawn after that. If there is something that you always want to be in the window no matter what, then you should put it inside this method.
+    This method is an important one. It gets called automatically when the window is first drawn, and after lots of other events, like keypresses. If there is something that you always want to be in the window no matter what, then you should put it inside this method, so that it will be redrawn every time.
 
 Window.on_text(text)
     This method is sort of an alternative to on_key_press() for when you just want to interpret user input as text. ``text`` is the text that was entered. This will get called once for each individual key that is pressed.
@@ -252,7 +260,7 @@ Below is a version of the ResponsiveWindow class which has an overwritten method
 
         def on_text(self,text):
             print 'You entered some text!'
-            print '\tThe text you ented was: "'+text+'"'
+            print '\tThe text you entered was: "'+text+'"'
 
 
 
@@ -272,9 +280,9 @@ As a final note on event listeners, this is what we meant by the "Pyglet event l
 Drawing things and making sounds
 --------------------------------
 
-Okay! At this point, you are probably wondering why we haven't shown you how to do anything other than create boring, empty windows. The truth is that you can draw all sorts of cool stuff inside a window, but it has to be in the context of an event handling function, even if it is just the on_draw() event that gets called any time anything changes. 
+Okay! At this point, you are probably wondering why we haven't shown you how to do anything other than create boring, empty windows. The truth is that you can draw all sorts of cool stuff inside a window, but it has to be in the context of an event handling function, even if it is just the on_draw() event that gets called after any key press is handled.
 
-So you had to understand event handling before trying to draw anything was not going to be confusing. 
+So you had to understand event handling before trying to draw anything.
 
 Displaying text
 ~~~~~~~~~~~~~~~
@@ -290,7 +298,7 @@ That said, here is some code that will draw some text in a (non-responsive) wind
     class TextWindow(pyglet.window.Window):
 
         def __init__(self,*args,**kwargs):
-            super(TextWindow,self).__init__(*args,**kwargs)
+            pyglet.window.Window.__init__(self, *args,**kwargs)
 
             self.label = pyglet.text.Label('Hello, world',
                               font_name='Times New Roman',
@@ -310,9 +318,11 @@ That said, here is some code that will draw some text in a (non-responsive) wind
     text_window = TextWindow()
     pyglet.app.run()
 
-We did a couple new things here. First, we overwrote not just the ``on_draw()`` method of ``pyglet.window.Window``, but also its constructor. Our version of the constructor doesn't do all that much--it just passes its input arguments on to the base constructor for ``pyglet.window.Window``. 
+We did a couple new things here. First, we overwrote not just the ``on_draw()`` method of ``pyglet.window.Window``, but also its constructor. Our version of the constructor doesn't do all that much. Mostly, it just passes its input arguments on to the base constructor for ``pyglet.window.Window``. However, it does one crucial extra thing: it creates a ``pyglet.text.Label`` object called ``label`` and saves it as an instance variable.
 
-However, it does one crucial thing: it creates a ``pyglet.text.Label`` object called ``label``. And then in the ``on_draw()`` method, it calles the ``draw()`` method of this object, which tells it to draw itself in its containing window. 
+The x and y values passed into the constructor for the Label class specify a location within the window where the text label should be drawn. The lower left corner of the window is (0, 0) and the unit of measurement is one pixel. Here, we are setting the location to be in the middle of the window, with x set to half the window's width and y set to half its height.
+
+Then, in the ``on_draw()`` method, it looks up that Label instance, as ``self.label``, and calls the ``draw()`` method of this object, which tells the label to draw itself (in its containing window).
 
 And so, voila! We've succeeded in drawing something in our window:
 
@@ -327,7 +337,7 @@ Displaying an image is similar to displaying a label. You'll have to create an o
 
 With images, there is an extra step involved: loading the image from the file system. To do this, we'll use the ``pyglet.image.load()`` function.
 
-Here's some code that shows how these elements work together to display an image. It depends on a file named 'white_square.png' existing in the same directory as the .py file, so if you want to try it out you will have to supply your own image:
+Here's some code that shows how these elements work together to display an image. It depends on a file named 'white_square.png' existing in the same directory as the .py file, so if you want to try it out you will have to supply your own image (available on Canvas for 106 students):
 
 .. code:: python
 
@@ -337,7 +347,7 @@ Here's some code that shows how these elements work together to display an image
     class ImageWindow(pyglet.window.Window):
 
         def __init__(self,*args,**kwargs):
-            super(ImageWindow,self).__init__(*args,**kwargs)
+            pyglet.window.Window.__init__(self, *args,**kwargs)
 
             image = pyglet.image.load('white_square.png')
             self.image_sprite = pyglet.sprite.Sprite(image,
@@ -454,7 +464,7 @@ Here is some code that demonstrates this:
     class SoundWindow(pyglet.window.Window):
 
         def __init__(self,*args,**kwargs):
-            super(SoundWindow,self).__init__(*args,**kwargs)
+            pyglet.window.Window.__init__(self, *args,**kwargs)
 
             #Tell pyglet what driver to use
             pyglet.options['audio'] = ('openal', 'silent')
@@ -501,7 +511,7 @@ Here we give one example, a simple little game that lets the player move a white
         square_speed = 6
 
         def __init__(self,*args,**kwargs):
-            super(GameWindow,self).__init__(*args,**kwargs)
+            pyglet.window.Window.__init__(*args,**kwargs)
 
             image = pyglet.image.load('white_square.png')
             self.image_sprite = pyglet.sprite.Sprite(image,
@@ -560,77 +570,76 @@ Other important stuff
 
 An important pair of methods to know are ``pyglet.clock.schedule_interval()`` and ``pyglet.clock.unschedule()``
 
-``pyglet.clock.schedule_interval(function,interval)`` takes two arguments, ``function`` and ``interval``. ``function`` should be a function name, while ``interval`` is a float representing some number of seconds. ``schedule_interval`` causes the Pyglet event loop to "schedule" the function to run on the given interval. 
+``pyglet.clock.schedule_interval(function,interval)`` takes two arguments, ``function`` and ``interval``. The ``interval`` is a float representing some number of seconds. ``schedule_interval`` causes the Pyglet event loop to "schedule" the function to run on the given interval.
 
 ``pyglet.clock.unschedule(function)`` tells Pyglet to pull the given function off the scheduler. Below is an example of the two functions being used in conjunction with one another:
 
 .. code:: python
 
-	import pyglet
+    import pyglet
 
-	print_count = 0
+    print_count = 0
 
-	def print_1(interval):
-		global print_count
-		print_count += 1
+    def print_1(interval):
+        global print_count
+        print_count += 1
 
-		if print_count <= 5:
-			print 'First printing function. Count: ' + str(print_count)
-			print '\tIt has been ' + str(interval) +' seconds since the last time this function was called.'
+        if print_count <= 5:
+            print 'First printing function. Count: ' + str(print_count)
+            print '\tIt has been ' + str(interval) +' seconds since the last time this function was called.'
 
-		else:
-			print 'Unscheduling first printing function and scheduling second printing function'
-			pyglet.clock.unschedule(print_1)
-			pyglet.clock.schedule_interval(print_2,1.0)
+        else:
+            print 'Unscheduling first printing function and scheduling second printing function'
+            pyglet.clock.unschedule(print_1)
+            pyglet.clock.schedule_interval(print_2,1.0)
 
 
-	def print_2(interval):
-		global print_count
-		print_count += 1
-		if print_count <= 10:
-			print 'Second printing function. Count: ' + str(print_count)
-			print '\tIt has been ' + str(interval) +' seconds since the last time this function was called.'
+    def print_2(interval):
+        global print_count
+        print_count += 1
+        if print_count <= 10:
+            print 'Second printing function. Count: ' + str(print_count)
+            print '\tIt has been ' + str(interval) +' seconds since the last time this function was called.'
 
-		else:
-			print 'Exiting Pyglet event loop'
-			pyglet.app.exit()
+        else:
+            print 'Exiting Pyglet event loop'
+            pyglet.app.exit()
 
-	print 'Scheduling first printing function'
-	pyglet.clock.schedule_interval(print_1,1.0)
-	print 'Starting up game loop'
-	pyglet.app.run()
-		
+    print 'Scheduling first printing function'
+    pyglet.clock.schedule_interval(print_1,1.0)
+    print 'Starting up game loop'
+    pyglet.app.run()
+
 If you were to run this code, you'd see some output, printed at a 1-second interval:
 
 .. code::
 
-	Scheduling first printing function
-	Starting up game loop
-	First printing function. Count: 1
-		It has been 1.00017619269 seconds.
-	First printing function. Count: 2
-		It has been 1.00004148226 seconds.
-	First printing function. Count: 3
-		It has been 1.00059999598 seconds.
-	First printing function. Count: 4
-		It has been 1.00077661632 seconds.
-	First printing function. Count: 5
-		It has been 1.00115594379 seconds.
-	Unscheduling first printing function and scheduling second printing function
-	Second printing function. Count: 7
-		It has been 1.00012017026 seconds.
-	Second printing function. Count: 8
-		It has been 1.00039814416 seconds.
-	Second printing function. Count: 9
-		It has been 1.00042337564 seconds.
-	Second printing function. Count: 10
-		It has been 1.00041952677 seconds.
-	Exiting Pyglet event loop
+    Scheduling first printing function
+    Starting up game loop
+    First printing function. Count: 1
+        It has been 1.00017619269 seconds.
+    First printing function. Count: 2
+        It has been 1.00004148226 seconds.
+    First printing function. Count: 3
+        It has been 1.00059999598 seconds.
+    First printing function. Count: 4
+        It has been 1.00077661632 seconds.
+    First printing function. Count: 5
+        It has been 1.00115594379 seconds.
+    Unscheduling first printing function and scheduling second printing function
+    Second printing function. Count: 7
+        It has been 1.00012017026 seconds.
+    Second printing function. Count: 8
+        It has been 1.00039814416 seconds.
+    Second printing function. Count: 9
+        It has been 1.00042337564 seconds.
+    Second printing function. Count: 10
+        It has been 1.00041952677 seconds.
+    Exiting Pyglet event loop
 
 What happened here was that initially we scheduled ``print_1()`` to run on a once-per-second interval. But, when print_count exceeded 5, ``print_1()`` unscheduled itself and scheduled ``print_2()`` to run on the same interval. When print_count exceeded 10, ``print_2()`` exited the game using the ``pyglet.game.exit()`` function. 
 
-Note that both of my scheduled functions had an argument called ``interval``. The Pyglet scheduler passes the actual interval that has passed, as an argument to the scheduled function whenever it runs. This is usually very close to the planned interval, but slightly different due to CPU latency and stuff like that. 
-
+Note that both of my scheduled functions had an argument called ``interval``. The Pyglet scheduler passes the actual time elapsed as an argument to the scheduled function whenever it runs. This is usually very close to the planned interval, but slightly different due to CPU latency and stuff like that. In this case, we see that on each call it has been *slightly* more than 1 second since the last call.
 
 
 Additional Notes

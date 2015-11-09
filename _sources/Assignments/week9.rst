@@ -26,7 +26,7 @@ You have the following graded activities:
 * Before Wednesday's class:
     * :ref:`Python Modules <modules_chap>`
     * :ref:`Installing modules with pip <pip_chap>`
-    * There will be a chapter on the Pyglet module, which we'll use to create a game with graphics. It's not ready yet.
+    * :ref:`Pyglet Module <pyglet_chap>`
 
 * By Sunday 11/15 at 5PM:
     * Complete Problem Set 9, via Canvas. (Note: we are still working on creating this problem set. It should be available soon.)

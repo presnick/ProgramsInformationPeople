@@ -368,6 +368,7 @@ Pyglet
    :maxdepth: 2
 
    Pyglet/Pyglet.rst
+   Pyglet/Pong.rst
 
 Exceptions
 ::::::::::
