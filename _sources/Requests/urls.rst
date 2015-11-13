@@ -13,7 +13,7 @@ Anatomy of URLs
 
 A URL is used by a browser or other program to specify what server to connect to and what page to ask for. Like other things that will be interpreted by computer programs, URLs have a very specific formal structure. If you put a colon in the wrong place, the URL won't work correctly. The overall structure of a URL is:
 
-.. sourcecode:: python
+.. code::
 
    <scheme>://<host>:<port>/<path>
 

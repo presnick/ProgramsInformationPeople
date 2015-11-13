@@ -12,6 +12,20 @@
     :linenothreshold: 500
 
 
+1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
+
+   * Before Monday's class:
+       * Read :ref:`Defining classes<classes_chap>`
+       * Read the tutorial on GitHub. You will not need to create or use a github repository for this course, but this will help prepare you for the reading and reading response for Wednesday and some later chapters in the Weber book.
+
+         * `Part I <http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1>`_
+         * `Part II <http://readwrite.com/2013/10/02/github-for-beginners-part-2>`_
+
+   * Before Wednesday's class:
+       * View slides ``FB Graph API`` in cTools resources/Slides
+       * Use pip to install the facebook-sdk module
+       * Do the :ref:`FaceBook API exercises <fb_api_exercises>`.
+
 Activities through 4/5
 ======================
 
@@ -48,6 +62,9 @@ Reading Response
 .. _reading_response_11:
 
 Answer the following questions. 
+
+1. The linux project uses git to organize the work of all the contributors. Take a look at the `linux project on github <https://github.com/torvalds/linux>`_. Take a look at the recent commits. Click around to see how many people have made contributions recently. Also check out the github page for `Runestone <https://github.com/bnmnetp/runestone>`_ and for `my fork of it <https://github.com/presnick/runestone>`_ to make this online textbook. Report on something interesting you found from exploring these public git repositories.
+
 
 1. The chapter describes forking as something that could fragment developer efforts and thus slow down progress of a project. If you tried to make a "fork" of Linux today, would it be technically feasible to do so? What do you think would happen?
 

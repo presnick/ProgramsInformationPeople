@@ -25,13 +25,13 @@ At the git bash prompt, you can invoke the unix curl command
 
 .. sourcecode:: python
 
-   curl https://github.com/presnick/runestone
+   curl https://github.com/presnick/ProgramsInformationPeople
 
 Assuming you have a network connection, it will soon print out a whole lot of text. That's the same text that your browser gets and that was shown when you did ``View source``. If you want to see it a little more slowly try using the less command. 
 
 .. sourcecode:: python
 
-   curl https://github.com/presnick/runestone > less
+   curl https://github.com/presnick/ProgramsInformationPeople | less
 
 Fetching in python with requests.get
 ------------------------------------

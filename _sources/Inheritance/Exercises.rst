@@ -79,7 +79,7 @@ Here's *all* the code we just saw for our new and improved game, with a few addi
     class Cat(Pet):
         # in the Cat class, cats express their hunger and boredom a little differently, too. They also have an extra instance, variable meow_count.
         def __init__(self, name="Fluffy", meow_count=3):
-            Pet.__init__(self)
+            Pet.__init__(self, name)
             self.meow_count = meow_count
 
         def hi(self):

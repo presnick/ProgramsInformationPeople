@@ -103,9 +103,9 @@ For example, in the following, the base url is https://google.com/search. A dict
     
     url = baseurl + "?" + urllib.urlencode(params)
 
-Now you try it. Use the pattern above to create the following url
+Now you try it. Use the pattern above to fetch the page at the following url, and print the .url attribute to make sure that's really the page you're getting.
 ``http://bar.com/goodstuff?q=chocolate&frosted=no``
 
-We don't have the urllib module in the browser environment, so you'll have to try this on your local computer, by creating a file and then executing it with your native python interpreter.
+We don't have the requests module in the browser environment, so you'll have to try this on your local computer, by creating a file and then executing it with your native python interpreter.
 
 

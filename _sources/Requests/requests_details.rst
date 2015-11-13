@@ -11,7 +11,7 @@
 More Details of the Requests Module
 ===================================
 
-One we run requests.get, we get a response object. Previously, we saw that the response object has an attribute text, which contains that body of the contents, after any HTTP headers. The response objects have some other useful attributes and methods that we can access. A few are used and explained below. Others will be introduced in later chapters.
+One we run requests.get, we get a response object. It's an instance of a class defined in the requests module. Previously, we saw that the response object has an attribute (instance variable) text, which contains the body of the contents, after any HTTP headers. The response objects have some other useful attributes and methods that we can access. A few are used and explained below. Others will be introduced in later chapters.
 
 .. sourcecode:: python
 

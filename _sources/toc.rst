@@ -19,6 +19,7 @@ Assignments
    Assignments/ps7.rst
    Assignments/week8.rst
    Assignments/week9.rst
+   Assignments/week10.rst
 
 General Introduction
 ::::::::::::::::::::
@@ -370,15 +371,6 @@ Pyglet
    Pyglet/Pyglet.rst
    Pyglet/Pong.rst
 
-Exceptions
-::::::::::
-
-.. toctree::
-   :maxdepth: 2
-   
-   Exceptions/intro-exceptions.rst
-   Exceptions/using-exceptions.rst
-
 Requests
 ::::::::
 
@@ -392,17 +384,14 @@ Requests
    Requests/http.rst
    Requests/requests_details.rst
 
-
-String Formatting
-:::::::::::::::::
+Exceptions
+::::::::::
 
 .. toctree::
    :maxdepth: 2
 
-   StringFormatting/intro-PrintinginPython2.7.rst
-   StringFormatting/Interpolation.rst
-   StringFormatting/CSV.rst
-   StringFormatting/Exercises.rst
+   Exceptions/intro-exceptions.rst
+   Exceptions/using-exceptions.rst
 
 
 REST APIs
@@ -416,6 +405,19 @@ REST APIs
    RESTAPIs/jsonlib.rst
    RESTAPIs/unicode.rst
    RESTAPIs/flickr.rst
+
+
+String Formatting
+:::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   StringFormatting/intro-PrintinginPython2.7.rst
+   StringFormatting/Interpolation.rst
+   StringFormatting/CSV.rst
+   StringFormatting/Exercises.rst
+
 
 
 The FaceBook Graph API

@@ -29,64 +29,21 @@ You have the following graded activities:
     * :ref:`Pyglet Module <pyglet_chap>`
 
 * By Sunday 11/15 at 5PM:
-    * Complete Problem Set 9, via Canvas. (Note: we are still working on creating this problem set. It should be available soon.)
+    * Complete Problem Set 9, via Canvas.
 
 .. usageassignment:: prep_16
-    :chapters: Classes
+    :chapters: Inheritance
     :assignment_name: Prep a16
     :deadline: 2015-11-09 21:30:00
     :pct_required: 80
     :points: 50
 
 .. usageassignment:: prep_17
-    :chapters: Classes
+    :chapters: Pyglet
     :assignment_name: Prep a17
     :deadline: 2015-11-11 21:30:00
     :pct_required: 80
     :points: 50
-
-.. usageassignment:: prep_18
-    :chapters: Classes
-    :assignment_name: Prep a18
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_19
-    :chapters: Classes
-    :assignment_name: Prep a19
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_20
-    :chapters: Classes
-    :assignment_name: Prep a20
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_21
-    :chapters: Classes
-    :assignment_name: Prep a21
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_22
-    :chapters: Classes
-    :assignment_name: Prep a22
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_23
-    :chapters: Classes
-    :assignment_name: Prep a23
-    :deadline: 2015-11-04 21:30:00
-    :pct_required: 80
-    :points: 50
-
 
 Reading Response
 ----------------
