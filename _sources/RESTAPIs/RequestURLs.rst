@@ -90,18 +90,7 @@ For example, in the following, the base url is https://google.com/search. A dict
    :feedback_d: The ? and & are added automatically, and the space in hi there is automatically encoded as %3A.
 
    How would you request the URL ``http://bar.com/goodstuff?greet=hi%3Athere&frosted=no`` using the requests module?
-   
 
-.. sourcecode:: python
-
-    baseurl = 'http://api.flickr.com/services/rest/'
-    
-    params={},
-    params['method'] = 'flickr.photos.search'
-    params['api_key'] = 'string with your api_key in it'
-    params['format'] = 'json'
-    
-    url = baseurl + "?" + urllib.urlencode(params)
 
 Now you try it. Use the pattern above to fetch the page at the following url, and print the .url attribute to make sure that's really the page you're getting.
 ``http://bar.com/goodstuff?q=chocolate&frosted=no``

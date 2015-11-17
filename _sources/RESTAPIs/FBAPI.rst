@@ -29,7 +29,7 @@ Download the code file fbapi.py from cTools. It contains the following code.
     def pretty(obj):
         return json.dumps(obj, sort_keys=True, indent=2)
     
-    fb_class_id = '1196007610428928'
+    fb_class_id = '1683212485235313'
         
     r = requests.get("https://graph.facebook.com/?%s" % (fb_class_id))
     print r.status_code
@@ -66,7 +66,7 @@ Download the code file fbapi.py from cTools. It contains the following code.
    :feedback_c:
    :feedback_d:
    
-   Use the `Facebook Graph explorer <https://developers.facebook.com/tools/explorer>`_ and run a GET request on /me. In the results, what is the value associated with the "locale" key?
+   Use the `Facebook Graph explorer <https://developers.facebook.com/tools/explorer>`_ and run a GET request on me?fields=locale. In the results, what is the value associated with the "locale" key?
   
 .. mchoicemf:: fb_api_3
    :answer_a: The Facebook server is temporarily not working

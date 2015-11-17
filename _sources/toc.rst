@@ -384,15 +384,6 @@ Requests
    Requests/http.rst
    Requests/requests_details.rst
 
-Exceptions
-::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Exceptions/intro-exceptions.rst
-   Exceptions/using-exceptions.rst
-
 
 REST APIs
 :::::::::
@@ -405,6 +396,15 @@ REST APIs
    RESTAPIs/jsonlib.rst
    RESTAPIs/unicode.rst
    RESTAPIs/flickr.rst
+
+Exceptions
+::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Exceptions/intro-exceptions.rst
+   Exceptions/using-exceptions.rst
 
 
 String Formatting

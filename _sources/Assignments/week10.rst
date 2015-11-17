@@ -24,8 +24,8 @@ You have the following graded activities:
    * Read :ref:`REST APIs<rest_apis_chap>`
 
 * By Tuesday midnight:
-  * Read *The Success of Open Source*, Chapter 3
-  * :ref:`Reading response 10 <reading_response_10>`
+   * Read *The Success of Open Source*, Chapter 3
+   * :ref:`Reading response 10 <reading_response_10>`
 
 * Before Wednesdays's class:
    * Read :ref:`try/except <exceptions_chap>`
@@ -39,42 +39,42 @@ You have the following graded activities:
 .. usageassignment:: prep_18
     :chapters: Requests, RESTAPIs
     :assignment_name: Prep a18
-    :deadline: 2015-11-04 21:30:00
+    :deadline: 2015-11-16 21:30:00
     :pct_required: 80
     :points: 50
 
 .. usageassignment:: prep_19
     :chapters: Exceptions, StringFormatting
     :assignment_name: Prep a19
-    :deadline: 2015-11-04 21:30:00
+    :deadline: 2015-11-18 21:30:00
     :pct_required: 80
     :points: 50
 
 .. usageassignment:: prep_20
     :chapters: Classes
     :assignment_name: Prep a20
-    :deadline: 2015-11-04 21:30:00
+    :deadline: 2015-12-24 21:30:00
     :pct_required: 80
     :points: 50
 
 .. usageassignment:: prep_21
     :chapters: Classes
     :assignment_name: Prep a21
-    :deadline: 2015-11-04 21:30:00
+    :deadline: 2015-12-24 21:30:00
     :pct_required: 80
     :points: 50
 
 .. usageassignment:: prep_22
     :chapters: Classes
     :assignment_name: Prep a22
-    :deadline: 2015-11-04 21:30:00
+    :deadline: 2015-12-24 21:30:00
     :pct_required: 80
     :points: 50
 
 .. usageassignment:: prep_23
     :chapters: Classes
     :assignment_name: Prep a23
-    :deadline: 2015-11-04 21:30:00
+    :deadline: 2015-12-24 21:30:00
     :pct_required: 80
     :points: 50
 
