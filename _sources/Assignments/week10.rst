@@ -50,33 +50,6 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-.. usageassignment:: prep_20
-    :chapters: Classes
-    :assignment_name: Prep a20
-    :deadline: 2015-12-24 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_21
-    :chapters: Classes
-    :assignment_name: Prep a21
-    :deadline: 2015-12-24 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_22
-    :chapters: Classes
-    :assignment_name: Prep a22
-    :deadline: 2015-12-24 21:30:00
-    :pct_required: 80
-    :points: 50
-
-.. usageassignment:: prep_23
-    :chapters: Classes
-    :assignment_name: Prep a23
-    :deadline: 2015-12-24 21:30:00
-    :pct_required: 80
-    :points: 50
 
 
 Reading Response

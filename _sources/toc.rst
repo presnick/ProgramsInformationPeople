@@ -20,6 +20,7 @@ Assignments
    Assignments/week8.rst
    Assignments/week9.rst
    Assignments/week10.rst
+   Assignments/week11.rst
 
 General Introduction
 ::::::::::::::::::::
@@ -441,7 +442,22 @@ More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
    AdvancedAccumulation/reduce.rst
    AdvancedAccumulation/zip.rst
    AdvancedAccumulation/exercises.rst
-   
+
+Recursion
+:::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Recursion/WhatIsRecursion.rst
+   Recursion/CalculatingtheSumofaListofNumbers.rst
+   Recursion/TheThreeLawsofRecursion.rst
+   Recursion/ConvertinganIntegertoaStringinAnyBase.rst
+   Recursion/intro-VisualizingRecursion.rst
+   Recursion/SierpinskiTriangle.rst
+   Recursion/Glossary.rst
+   Recursion/ProgrammingExercises.rst
+
 Test Cases
 ::::::::::
 

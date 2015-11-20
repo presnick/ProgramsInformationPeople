@@ -12,6 +12,22 @@
     :linenothreshold: 500
 
 
+* Before Wednesday's class:
+   * Download the code file from cTools, oauth_with_twitter.py
+   * install the requests_oauthlib python module (using pip, the same
+   * Follow the instructions in it to create an app for yourself on dev.twitter.com
+   * Understand and run the code
+   * Answer the question :ref:`below <twitter_oauth_checkin>`
+
+
+
+* Before Wednesday's class:
+   * View slides ``FB Graph API`` in cTools resources/Slides
+   * Use pip to install the facebook-sdk module
+   * Do the :ref:`FaceBook API exercises <fb_api_exercises>`.
+
+
+
 Activities through 4/12
 =======================
 
@@ -61,4 +77,24 @@ Answer the following questions.
 
    """
    print s
+
+
+
+.. _twitter_oauth_checkin:
+
+Session Prep Question
+---------------------
+
+What is the value associated with the "language" attribute in the dictionary that is returned when you run oauth_with_twitter.py after pasting in your keys?
+
+.. activecode:: twitter_oauth_1
+
+   # Fill in your response in between the triple quotes
+   s = """
+
+   """
+   print s
+
+
+
 
