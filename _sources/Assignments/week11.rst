@@ -25,7 +25,7 @@ You have the following graded activities:
       * In class, we'll do a few of the exercises.
    * NOTE: Recursion is really cool, but it won't be on the final exam or problem sets. So come to class on Wednesday and get exposed to an idea that will change how you think about the world, but without too much stress because you don't have to master it this semester. I'll also show you some more tricks for extracting data from nested structures that might help you with PS11.
 
-* By Sunday 11/15 at 5PM:
+* By Sunday 11/29 at 5PM:
    * Complete Problem Set 11, via Canvas.
 
 * By Sunday midnight:
