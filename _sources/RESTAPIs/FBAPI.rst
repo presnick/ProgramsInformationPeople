@@ -45,7 +45,9 @@ Download the code file fbapi.py from cTools. It contains the following code.
     # create an instance of the class GraphAPI, which saves our access_token
     graph = facebook.GraphAPI(access_token)
     # access_token is automatically passed to FB, in the format FB wants it (not in the URL, unfortunately)
-    feed = graph.get_object("%s/feed" % (fb_class_id))
+    # Then we'll need to tell the graph object that we want the feed with certain fields:
+    # The message of each post, each post's comments, and each post's likes.
+    feed = graph.get_object("%s/feed?fields=message,from,comments,likes" % (fb_class_id))
     
     print type(feed)
     print feed.keys()
@@ -54,7 +56,10 @@ Download the code file fbapi.py from cTools. It contains the following code.
     print pretty(feed['data'][2])
     print feed['data'][2]["message"]
 
-  
+
+ To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``. We're going to largely focus on the individual and group feeds, and the posts, who each post is from, each post's comments, and each post's likes. You can see that this already gives you a very complicated structure of data! But you can use the Graph API explorer to give you an idea of what different information you can get from the Facebook Graph API and how it might be useful for you.
+
+
 .. mchoicemf:: fb_api_1
    :answer_a: EDT
    :answer_b: GMT
