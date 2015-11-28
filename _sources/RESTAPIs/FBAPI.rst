@@ -57,7 +57,7 @@ Download the code file fbapi.py from cTools. It contains the following code.
     print feed['data'][2]["message"]
 
 
- To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``. We're going to focus on the individual and group feeds, and the posts, who each post is from, each post's comments, and each post's likes. You can see that this already gives you a very complicated structure of data!
+ To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``. We're going to largely focus on the individual and group feeds, and the posts, who each post is from, each post's comments, and each post's likes. You can see that this already gives you a very complicated structure of data! But you can use the Graph API explorer to give you an idea of what different information you can get from the Facebook Graph API and how it might be useful for you.
 
 
 .. mchoicemf:: fb_api_1
