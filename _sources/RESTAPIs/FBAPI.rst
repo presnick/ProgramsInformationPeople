@@ -56,7 +56,10 @@ Download the code file fbapi.py from cTools. It contains the following code.
     print pretty(feed['data'][2])
     print feed['data'][2]["message"]
 
-  
+
+ To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``. We're going to focus on the individual and group feeds, and the posts, who each post is from, each post's comments, and each post's likes. You can see that this already gives you a very complicated structure of data!
+
+
 .. mchoicemf:: fb_api_1
    :answer_a: EDT
    :answer_b: GMT
@@ -69,8 +72,6 @@ Download the code file fbapi.py from cTools. It contains the following code.
    :feedback_d:
    
    Use the `Facebook Graph explorer <https://developers.facebook.com/tools/explorer>`_ and run a GET request on me?fields=locale. In the results, what is the value associated with the "locale" key?
-
-   To see more about the Facebook Graph API and other options it allows, you can look at the URL: https://developers.facebook.com/docs/graph-api/reference. We're going to focus on the individual and group feeds, and the posts, who each post is from, each post's comments, and each post's likes. You can see that this already gives you a very complicated structure of data!
   
 .. mchoicemf:: fb_api_3
    :answer_a: The Facebook server is temporarily not working
