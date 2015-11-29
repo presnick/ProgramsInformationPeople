@@ -25,7 +25,7 @@ You have the following graded activities:
 
 .. usageassignment:: prep_8
     :chapters: DictionaryAccumulation
-    :subchapters: BuildingAProgram/TheStrategy.rst
+    :subchapters: BuildingAProgram/TheStrategy
     :assignment_name: Prep 8
     :deadline: 2015-10-05 21:30:00
     :pct_required: 80

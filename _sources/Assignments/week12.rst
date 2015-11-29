@@ -44,7 +44,7 @@ Activities through 12/6
     * :ref:`Reading response 12 <reading_response_12>`
 
 .. usageassignment:: prep_22
-    :sub_chapter: RESTAPIs/FBAPI, NestedData/DebuggingNestedData
+    :subchapters: RESTAPIs/FBAPI, NestedData/DebuggingNestedData
     :assignment_name: Prep a22
     :deadline: 2015-12-01 21:30:00
     :pct_required: 80
