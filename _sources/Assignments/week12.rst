@@ -11,58 +11,72 @@
 .. highlight:: python
     :linenothreshold: 500
 
-
-* Before Wednesday's class:
-   * Download the code file from cTools, oauth_with_twitter.py
-   * install the requests_oauthlib python module (using pip, the same
-   * Follow the instructions in it to create an app for yourself on dev.twitter.com
-   * Understand and run the code
-   * Answer the question :ref:`below <twitter_oauth_checkin>`
-
-
-
-* Before Wednesday's class:
-   * View slides ``FB Graph API`` in cTools resources/Slides
-   * Use pip to install the facebook-sdk module
-   * Do the :ref:`FaceBook API exercises <fb_api_exercises>`.
-
-
-
-Activities through 4/12
+Activities through 12/6
 =======================
 
-You have the following graded activities:
+* Before Monday's class:
+   * View slides ``FB Graph API`` in Canvas
+   * Use pip to install the facebook-sdk module (not the "facebook" module, which works a little differently)
+   * Do the :ref:`FaceBook API exercises <fb_api_exercises>`.
+   * Review the section on :ref:`Debugging nested data <debug_nested_chap>`
 
-1. Class prep. Don't forget: always access the textbook by clicking on the Textbook link from cTools, so that you'll be logged in and get credit for doing the prep.
-   
-   * Before Monday's class: 
-       * Read :ref:`Test cases<test_cases_chap>` and do the exercises in the chapter
-   
-   * Before Wednesday's class:
-      * Review the new section on :ref:`Debugging nested data <debug_nested_chap>`   
-      * Review the two sections on debugging that deal with
-         * :ref:`Strategy for writing a program <build_program_chap>`
-         * :ref:`Understanding code <understand_code_chap>`
-      * Do the bonus Problem Set 12.
-        
-2. Reading responses
+* By Tuesday midnight (if you didn't do these things already):
+    * Read *The Success of Open Source*, Chapter 4
+    * Read about the `Drupal open source community <https://medium.com/@heyrocker/this-article-was-originally-a-keynote-presentation-at-the-pacific-northwest-drupal-summit-in-5e7c7f93131b>`_. Drupal is a "Content Management System" that makes it relatively easy to develop websites that have dynamic content and interactive features like commenting and tagging. Note: it may be helpful in reading the article to know that "Dries" is `Dries Buytaert <http://buytaert.net/>`_, the person who started Drupal and "webchick" is the username chosen by `Angie Byron <http://www.webchick.net/about>`_, a prominent member of the community.
+    * :ref:`Reading response 11 <reading_response_11>`
 
-   * By Tuesday midnight: 
-      * Read *The Success of Open Source*, Chapter 5
-      * :ref:`Reading response 12 <reading_response_12>`
+* Before Wednesday's class:
+   * Download the code file from Canvas, oauth_with_twitter.py
+   * install the requests_oauthlib python module (using pip)
+   * Follow the instructions in it to create an app for yourself on dev.twitter.com
+   * Read about `Paging in Twitter API requests <https://dev.twitter.com/rest/public/timelines>`_ Paging is necessary when the site only gives you one *page* of results at a time, and you have to make another request to get more.
+   * Try to understand the code in oauth_with_twitter.py, including the paging code. We will go over it in class.
+   * Answer the question :ref:`below <twitter_oauth_checkin>`
 
-3. Problem set **Due:** **Sunday, April 12**
+* Before Thursday's section meeting:
+   * Complete the project plan. Download the file project_plan.py from Canvas. You should modify it and upload it to Canvas.
 
-   * This week, there will be a file called ps11.py. You should download a copy of it. You will edit it on your laptop or workstation and test it by running it using your native Python interpreter.
-   * If you put ps11.py in a different directory than ps7.py, you will also need to download a copy of test106.py into the directory where you put ps10.py.
-   
-   * There is also a bonus problem set, PS12, which I encourage you to do, especially if you want to check your understanding of the test cases material, or if you want to replace one of your lower problem set scores (remember that your 10 best problem set scores are the ones that will be counted toward your final grade.) It is due on Wednesday, 4/8.  
+* By Sunday 12/6 at 5PM:
+   * Complete Problem Set 12, via Canvas.
 
+* By Sunday midnight:
+    * Read *The Success of Open Source*, Chapter 5
+    * :ref:`Reading response 12 <reading_response_12>`
 
-Reading Response
-----------------
+.. usageassignment:: prep_22
+    :sub_chapter: RESTAPIs/FBAPI, NestedData/DebuggingNestedData
+    :assignment_name: Prep a22
+    :deadline: 2015-12-01 21:30:00
+    :pct_required: 80
+    :points: 50
+
+.. _reading_response_11:
+
+Reading Response (Tuesday night)
+--------------------------------
+
+Answer the following questions.
+    1. The linux project uses git to organize the work of all the contributors. Take a look at the `linux project on github <https://github.com/torvalds/linux>`_. Take a look at the recent commits. Click around to see how many people have made contributions recently. Also check out the github page for `Runestone <https://github.com/bnmnetp/runestone>`_ and for `this textbook, which is built on Runestone <https://github.com/presnick/ProgramsInformationPeople>`_. Report on something interesting you found from exploring these public git repositories.
+
+    2. The chapter describes forking as something that could fragment developer efforts and thus slow down progress of a project. If you tried to make a "fork" of Linux today, would it be technically feasible to do so? What do you think would happen?
+
+    3. Pages 116-119 describes the genesis of "Bitkeeper", which later was replaced by git. Why would the promise of switching to use something like git have helped to defuse a potential forking of the Linux project?
+
+    4. What seems similar and what seems different between the Linux project's developer community and the Drupal project's developer community?
+
+.. activecode:: rr_11_1
+
+   # Fill in your response in between the triple quotes
+   s = """
+
+   """
+   print s
 
 .. _reading_response_12:
+
+Reading Response (Sunday night)
+--------------------------------
+
 
 Answer the following questions. 
 
@@ -82,8 +96,8 @@ Answer the following questions.
 
 .. _twitter_oauth_checkin:
 
-Session Prep Question
----------------------
+Wednesday Prep Question
+-----------------------
 
 What is the value associated with the "language" attribute in the dictionary that is returned when you run oauth_with_twitter.py after pasting in your keys?
 

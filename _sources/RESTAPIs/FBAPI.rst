@@ -17,7 +17,7 @@
 Facebook API Exercises
 ----------------------
 
-Download the code file fbapi.py from cTools. It contains the following code.
+Download the code file fbapi.py from Canvas. It contains the following code.
 
 .. sourcecode:: python
 
@@ -44,10 +44,13 @@ Download the code file fbapi.py from cTools. It contains the following code.
     
     # create an instance of the class GraphAPI, which saves our access_token
     graph = facebook.GraphAPI(access_token)
-    # access_token is automatically passed to FB, in the format FB wants it (not in the URL, unfortunately)
-    # Then we'll need to tell the graph object that we want the feed with certain fields:
-    # The message of each post, each post's comments, and each post's likes.
+    # When you the GraphAPI instance, access_token will be automatically passed to FB, in the format FB wants it
+    # (not in the URL, unfortunately)
+    # We want to tell Facebook that we want the feed with certain fields:
+    # the message of each post; each post's comments; and each post's likes.
     feed = graph.get_object("%s/feed?fields=message,from,comments,likes" % (fb_class_id))
+    # graph.get_object returns passes the results through a json decoder,
+    # so it produces a dictionary, not a Response object like we received from requests.get
     
     print type(feed)
     print feed.keys()

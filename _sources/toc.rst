@@ -21,6 +21,8 @@ Assignments
    Assignments/week9.rst
    Assignments/week10.rst
    Assignments/week11.rst
+   Assignments/week12.rst
+   Assignments/week13.rst
 
 General Introduction
 ::::::::::::::::::::
