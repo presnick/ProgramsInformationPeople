@@ -12,13 +12,13 @@
     :linenothreshold: 500
 
 
-Activities through 9/20
+Activities through 1/17
 =======================
 
 * Before Thursday's discussion section, 1/7 (preferably before first lecture on Wednesday 1/6):
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
-  * Sign up for the `Facebook group <https://www.facebook.com/groups/1752935254934382/>`_
+  * Sign up for/join the `Facebook group <https://www.facebook.com/groups/1752935254934382/>`_
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
 * Participation in Thursday discussion section, 1/7
@@ -41,12 +41,16 @@ Activities through 9/20
 
   * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
   * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
+  * If you have a Windows machine, install the git bash command line. :ref:`Installing Git <install_git_bash>`
+  * Read :ref:`Command Prompt <command_prompt_sect>` section of the Unix chapter.
+  * Read :ref:`Folders and Paths <folders_and_paths_sect>` section of the Unix chapter and do the exercises in it.
 
 * Participation in Thursday discussion section, 1/14
 
 * By Sunday 1/17 at 5PM: 
 
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`
+  * Submit screenshots to Canvas for **Unix Problems 1**, following the instructions in :ref: `Unix Problems 1 <unix_problems_1>`
   * Submit your **Demonstrate Understanding exercise** to your section site on Canvas. Instructions can be found `here <https://umich.instructure.com/courses/48961/assignments/57690>`_ . This should demonstrate your understanding of some of the material in this course up to this point.
 
 * By Sunday night, 1/17:
@@ -54,6 +58,27 @@ Activities through 9/20
   * Read chapter 2 of The Most Human Human.
   * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
 
+
+.. _unix_problems_1:
+
+Unix Problems
+-------------
+
+The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **Unix Problems 1** on Canvas  > Assignments > Unix Problems.
+
+To take a screenshot, 
+
+**Mac:** Press ``Control`` + ``Shift`` + ``4`` and drag to create a screenshot of the part of your screen you drag the window over. It will be saved to your Desktop.
+
+**Windows:** Launch the program ``Snipping tools`` and use it to take a screen shot of all or part of the screen. **Please save it as a .JPG or .PNG file!**
+
+In the Mac Finder or Windows Explorer, create a folder called ``106``. You may create this folder on the Desktop, or anywhere in your directory system that you would like, following your usual way of organizing folders on your computer. Inside the 106 folder, create a subfolder called ``ps1``. Use a text editor to create a file called ``test.txt`` or ``text.rtf``. It doesn't matter what text you put in the file.
+
+#. Use the Finder or Windows Explorer to figure out what the full path is for the ``106/ps1`` folder. In a Terminal window (Mac) or git bash command window (Windows), use the ``cd`` command to go to your ``106/ps1`` folder. Then use the ``ls`` command to list all of the files in this directory, presumably just test.txt, unless you also added some other file. Then use the ``cd ..`` command to connect to the parent directory, ``106``, and use ``ls`` again to show what's in that directory. Finally, use ``cd ps1`` to go back to the ps3 directory. Take a screenshot of the window, showing a transcript of everything you typed and the responses, save it as ``unix_1.png`` or ``unix_1.jpg``, and upload it to Canvas.
+
+#. Use the Unix commands you've learned in this chapter to go to your ``Desktop`` directory. Take a screenshot of the result that shows you've gotten to ``Desktop``, save it as ``unix_2.png`` or ``unix_2.jpg``, and upload it it to Canvas.
+
+(Remember that you can find a lot of familiar things in your home directory... that's where Desktop directories are usually found, in most people's file systems!)
 
 .. _problem_set_1:
 
