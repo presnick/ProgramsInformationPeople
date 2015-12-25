@@ -74,11 +74,11 @@ To take a screenshot,
 
 In the Mac Finder or Windows Explorer, create a folder called ``106``. You may create this folder on the Desktop, or anywhere in your directory system that you would like, following your usual way of organizing folders on your computer. Inside the 106 folder, create a subfolder called ``ps1``. Use a text editor to create a file called ``test.txt`` or ``text.rtf``. It doesn't matter what text you put in the file.
 
-#. Use the Finder or Windows Explorer to figure out what the full path is for the ``106/ps1`` folder. In a Terminal window (Mac) or git bash command window (Windows), use the ``cd`` command to go to your ``106/ps1`` folder. Then use the ``ls`` command to list all of the files in this directory, presumably just test.txt, unless you also added some other file. Then use the ``cd ..`` command to connect to the parent directory, ``106``, and use ``ls`` again to show what's in that directory. Finally, use ``cd ps1`` to go back to the ps3 directory. Take a screenshot of the window, showing a transcript of everything you typed and the responses, save it as ``unix_1.png`` or ``unix_1.jpg``, and upload it to Canvas.
+#. Use the Finder or Windows Explorer to figure out what the full path is for the ``106/ps1`` folder. In a Terminal window (Mac) or git bash command window (Windows), use the ``cd`` command to go to your ``106/ps1`` folder. Next, use the ``pwd`` command to show the path of the location you have accessed. Then use the ``ls`` command to list all of the files in this directory, presumably just test.txt, unless you also added some other file. Next, use the ``cd ..`` command to connect to the parent directory, ``106``, use the ``pwd`` command to show the path of your current location in your file system, and use ``ls`` again to show what's in that directory. Finally, use ``cd ps1`` to go back to the ps1 directory. Take a screenshot of the window, showing a transcript of everything you typed and the responses, save it as ``unix_1.png`` or ``unix_1.jpg``, and upload it to Canvas.
 
 #. Use the Unix commands you've learned in this chapter to go to your ``Desktop`` directory. Take a screenshot of the result that shows you've gotten to ``Desktop``, save it as ``unix_2.png`` or ``unix_2.jpg``, and upload it it to Canvas.
 
-(Remember that you can find a lot of familiar things in your home directory... that's where Desktop directories are usually found, in most people's file systems!)
+(Remember that you can find a lot of other familiar things in your home directory... which is where Desktop directories are usually found, in most people's file systems!)
 
 .. _problem_set_1:
 
