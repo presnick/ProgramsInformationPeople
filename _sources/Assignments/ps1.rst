@@ -15,92 +15,45 @@
 Activities through 9/20
 =======================
 
-* Before Thursday's discussion section, 9/10 (preferably before first lecture on Wednesday 9/9):
+* Before Thursday's discussion section, 1/7 (preferably before first lecture on Wednesday 1/6):
 
-  * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so I can start to learn your names.`
-  * Sign up for the `Facebook group <https://www.facebook.com/groups/1683212485235313/>`_
+  * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
+  * Sign up for the `Facebook group <https://www.facebook.com/groups/1752935254934382/>`_
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
-* Participation in Thursday discussion section, 9/10
+* Participation in Thursday discussion section, 1/7
 
-* By Sunday night, 9/13,
+* By Sunday night, 1/10,
 
-  * read the intro and chapter 1 of "The Most Human Human".
-  * Answer :ref:`Reading Response 1 <reading_response_1>`.
+  * read the intro and chapter 1 of The Most Human Human book.
+  * Answer `Reading Response 1 <https://umich.instructure.com/courses/48961/assignments/57676>`_ .
 
-* Before Monday's class, 9/14:
+* Before Monday's class, 1/11:
 
   * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
 
-* By Tuesday night, 9/15
+* By Tuesday night, 1/12:
 
   * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/files/321962/download?download_frd=1>`_, by Richard Searle. It's in the Canvas Files folder, if that link doesn't work.
-  * Answer :ref:`Reading Response 2 <reading_response_2>`.
+  * Answer `Reading Response 2 <https://umich.instructure.com/courses/48961/assignments/57677>`_ .
 
-* Before Wednesday's class, 9/16:
+* Before Wednesday's class, 1/13:
 
   * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
   * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
 
-* Participation in Thursday discussion section, 9/17
+* Participation in Thursday discussion section, 1/14
 
-* By Sunday 9/20 at 5PM. Save answers to the exercises in Problem Set 1:
+* By Sunday 1/17 at 5PM: 
 
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`
+  * Submit your **Demonstrate Understanding exercise** to your section site on Canvas. Instructions can be found `here <https://umich.instructure.com/courses/48961/assignments/57690>`_ . This should demonstrate your understanding of some of the material in this course up to this point.
 
-* By Sunday night, 9/20:
+* By Sunday night, 1/17:
 
   * Read chapter 2 of The Most Human Human.
-  * Answer :ref:`Reading Response 3 <reading_response_3>`.
+  * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
 
-.. _reading_response_1:
-
-Reading Response 1
-------------------
-
-If you had to convince someone you were human and not a bot, via text only, what would you do?
-
-.. activecode:: rr_1_1
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-
-   """
-   print s
-
-
-.. _reading_response_2:
-
-Reading Response 2
-------------------
-
-1. What is the connection between the Turing Test and Searle's Chinese Room example?
-2. What do you think of the "systems reply"? Does the room with you in it understand Chinese?
-
-.. activecode:: rr_2_1
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-
-   """
-   print s
-
-.. _reading_response_3:
-
-Reading Response 3
-------------------
-
-If you had to convince someone you were *you*, not just any old human, via text only, what would you do? Relate your answer to something in Chapter 2 of The Most Human Human.
-
-.. activecode:: rr_3_1
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-
-   """
 
 .. _problem_set_1:
 
