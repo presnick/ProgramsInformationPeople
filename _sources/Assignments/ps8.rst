@@ -12,7 +12,7 @@
     :linenothreshold: 500
 
 
-Activities through 4/17
+Activities through 3/13
 =======================
 
 You have the following graded activities:

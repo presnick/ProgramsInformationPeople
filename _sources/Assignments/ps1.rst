@@ -12,95 +12,73 @@
     :linenothreshold: 500
 
 
-Activities through 9/20
+Activities through 1/17
 =======================
 
-* Before Thursday's discussion section, 9/10 (preferably before first lecture on Wednesday 9/9):
+* Before Thursday's discussion section, 1/7 (preferably before first lecture on Wednesday 1/6):
 
-  * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so I can start to learn your names.`
-  * Sign up for the `Facebook group <https://www.facebook.com/groups/1683212485235313/>`_
+  * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
+  * Sign up for/join the `Facebook group <https://www.facebook.com/groups/1752935254934382/>`_
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
-* Participation in Thursday discussion section, 9/10
+* Participation in Thursday discussion section, 1/7
 
-* By Sunday night, 9/13,
+* By Sunday night, 1/10,
 
-  * read the intro and chapter 1 of "The Most Human Human".
-  * Answer :ref:`Reading Response 1 <reading_response_1>`.
+  * read the intro and chapter 1 of The Most Human Human book.
+  * Answer `Reading Response 1 <https://umich.instructure.com/courses/48961/assignments/57676>`_ .
 
-* Before Monday's class, 9/14:
+* Before Monday's class, 1/11:
 
   * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
 
-* By Tuesday night, 9/15
+* By Tuesday night, 1/12:
 
   * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/files/321962/download?download_frd=1>`_, by Richard Searle. It's in the Canvas Files folder, if that link doesn't work.
-  * Answer :ref:`Reading Response 2 <reading_response_2>`.
+  * Answer `Reading Response 2 <https://umich.instructure.com/courses/48961/assignments/57677>`_ .
 
-* Before Wednesday's class, 9/16:
+* Before Wednesday's class, 1/13:
 
   * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
   * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
+  * If you have a Windows machine, install the git bash command line. :ref:`Installing Git <install_git_bash>`
+  * Read :ref:`Command Prompt <command_prompt_sect>` section of the Unix chapter.
+  * Read :ref:`Folders and Paths <folders_and_paths_sect>` section of the Unix chapter and do the exercises in it.
 
-* Participation in Thursday discussion section, 9/17
+* Participation in Thursday discussion section, 1/14
 
-* By Sunday 9/20 at 5PM. Save answers to the exercises in Problem Set 1:
+* By Sunday 1/17 at 5PM: 
 
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`
+  * Submit screenshots to Canvas for **Unix Problems 1**, following the instructions in :ref: `Unix Problems 1 <unix_problems_1>`
+  * Submit your **Demonstrate Understanding exercise** to your section site on Canvas. Instructions can be found `here <https://umich.instructure.com/courses/48961/assignments/57690>`_ . This should demonstrate your understanding of some of the material in this course up to this point.
 
-* By Sunday night, 9/20:
+* By Sunday night, 1/17:
 
   * Read chapter 2 of The Most Human Human.
-  * Answer :ref:`Reading Response 3 <reading_response_3>`.
-
-.. _reading_response_1:
-
-Reading Response 1
-------------------
-
-If you had to convince someone you were human and not a bot, via text only, what would you do?
-
-.. activecode:: rr_1_1
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-
-   """
-   print s
+  * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
 
 
-.. _reading_response_2:
+.. _unix_problems_1:
 
-Reading Response 2
-------------------
+Unix Problems
+-------------
 
-1. What is the connection between the Turing Test and Searle's Chinese Room example?
-2. What do you think of the "systems reply"? Does the room with you in it understand Chinese?
+The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **Unix Problems 1** on Canvas  > Assignments > Unix Problems.
 
-.. activecode:: rr_2_1
-   :nocanvas:
+To take a screenshot, 
 
-   # Fill in your answer on the lines between the triple quotes
-   s = """
+**Mac:** Press ``Control`` + ``Shift`` + ``4`` and drag to create a screenshot of the part of your screen you drag the window over. It will be saved to your Desktop.
 
-   """
-   print s
+**Windows:** Launch the program ``Snipping tools`` and use it to take a screen shot of all or part of the screen. **Please save it as a .JPG or .PNG file!**
 
-.. _reading_response_3:
+In the Mac Finder or Windows Explorer, create a folder called ``106``. You may create this folder on the Desktop, or anywhere in your directory system that you would like, following your usual way of organizing folders on your computer. Inside the 106 folder, create a subfolder called ``ps1``. Use a text editor to create a file called ``test.txt`` or ``text.rtf``. It doesn't matter what text you put in the file.
 
-Reading Response 3
-------------------
+#. Use the Finder or Windows Explorer to figure out what the full path is for the ``106/ps1`` folder. In a Terminal window (Mac) or git bash command window (Windows), use the ``cd`` command to go to your ``106/ps1`` folder. Next, use the ``pwd`` command to show the path of the location you have accessed. Then use the ``ls`` command to list all of the files in this directory, presumably just test.txt, unless you also added some other file. Next, use the ``cd ..`` command to connect to the parent directory, ``106``, use the ``pwd`` command to show the path of your current location in your file system, and use ``ls`` again to show what's in that directory. Finally, use ``cd ps1`` to go back to the ps1 directory. Take a screenshot of the window, showing a transcript of everything you typed and the responses, save it as ``unix_1.png`` or ``unix_1.jpg``, and upload it to Canvas.
 
-If you had to convince someone you were *you*, not just any old human, via text only, what would you do? Relate your answer to something in Chapter 2 of The Most Human Human.
+#. Use the Unix commands you've learned in this chapter to go to your ``Desktop`` directory. Take a screenshot of the result that shows you've gotten to ``Desktop``, save it as ``unix_2.png`` or ``unix_2.jpg``, and upload it it to Canvas.
 
-.. activecode:: rr_3_1
-   :nocanvas:
-
-   # Fill in your answer on the lines between the triple quotes
-   s = """
-
-   """
+(Remember that you can find a lot of other familiar things in your home directory... which is where Desktop directories are usually found, in most people's file systems!)
 
 .. _problem_set_1:
 

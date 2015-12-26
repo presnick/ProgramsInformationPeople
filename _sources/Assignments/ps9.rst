@@ -11,8 +11,7 @@
 .. highlight:: python
     :linenothreshold: 500
 
-
-Activities through 4/17
+Activities through 3/20
 =======================
 
 You have the following graded activities:
