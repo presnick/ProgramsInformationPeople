@@ -13,7 +13,7 @@
 
 
 Activities through 3/6 (through break)
-=====================================
+======================================
 
 You have the following graded activities:
 

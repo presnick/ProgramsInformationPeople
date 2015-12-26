@@ -50,7 +50,7 @@ Activities through 1/17
 * By Sunday 1/17 at 5PM: 
 
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`
-  * Submit screenshots to Canvas for **Unix Problems 1**, following the instructions in :ref: `Unix Problems 1 <unix_problems_1>`
+  * Submit screenshots to Canvas for **Unix Problems 1**, following the instructions in :ref:`Unix Problems 1 <unix_problems_1>`
   * Submit your **Demonstrate Understanding exercise** to your section site on Canvas. Instructions can be found `here <https://umich.instructure.com/courses/48961/assignments/57690>`_ . This should demonstrate your understanding of some of the material in this course up to this point.
 
 * By Sunday night, 1/17:

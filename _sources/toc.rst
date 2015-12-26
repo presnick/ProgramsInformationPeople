@@ -17,12 +17,13 @@ Assignments
    Assignments/ps5.rst
    Assignments/ps6.rst
    Assignments/ps7.rst
-   Assignments/week8.rst
-   Assignments/week9.rst
-   Assignments/week10.rst
-   Assignments/week11.rst
-   Assignments/week12.rst
-   Assignments/week13.rst
+   Assignments/ps8.rst
+   Assignments/ps9.rst
+   Assignments/ps10.rst
+   Assignments/ps11.rst
+   Assignments/ps12.rst
+   Assignments/ps13.rst
+   Assignments/ps14.rst
 
 General Introduction
 ::::::::::::::::::::
@@ -305,55 +306,6 @@ Sorting
    Sort/Exercises.rst
 
 
-Prediction and Classification
-:::::::::::::::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Prediction/intro-prediction.rst
-   Prediction/hangman_guesser.rst
-   Prediction/rule-based.rst
-   Prediction/shannon_guesser.rst
-   Prediction/training.rst
-   Prediction/evaluation.rst
-   Prediction/Glossary.rst
-
-
-Classes
-:::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Classes/intro-ClassesandObjectstheBasics.rst
-   Classes/ObjectsRevisited.rst
-   Classes/UserDefinedClasses.rst
-   Classes/ImprovingourConstructor.rst
-   Classes/AddingOtherMethodstoourClass.rst
-   Classes/ObjectsasArgumentsandParameters.rst
-   Classes/ConvertinganObjecttoaString.rst
-   Classes/InstancesasReturnValues.rst
-   Classes/sorting_instances.rst
-   Classes/ClassVariablesInstanceVariables.rst
-   Classes/Tamagotchi.rst
-   Classes/Glossary.rst
-   Classes/Exercises.rst
-
-Inheritance
-:::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Inheritance/intro.rst
-   Inheritance/inheritVarsAndMethods.rst
-   Inheritance/OverrideMethods.rst
-   Inheritance/InvokingSuperMethods.rst
-   Inheritance/TamagotchiRevisited.rst
-   Inheritance/Exercises.rst
-
-
 Python Modules
 ::::::::::::::
 
@@ -365,21 +317,12 @@ Python Modules
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
 
-Pyglet
-::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Pyglet/Pyglet.rst
-   Pyglet/Pong.rst
-
 Requests
 ::::::::
 
 .. toctree::
    :maxdepth: 2
-   
+
    Requests/intro.rst
    Requests/fetching_a_page.rst
    Requests/how_the_Internet_works.rst
@@ -422,14 +365,72 @@ String Formatting
    StringFormatting/Exercises.rst
 
 
+Classes
+:::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Classes/intro-ClassesandObjectstheBasics.rst
+   Classes/ObjectsRevisited.rst
+   Classes/UserDefinedClasses.rst
+   Classes/ImprovingourConstructor.rst
+   Classes/AddingOtherMethodstoourClass.rst
+   Classes/ObjectsasArgumentsandParameters.rst
+   Classes/ConvertinganObjecttoaString.rst
+   Classes/InstancesasReturnValues.rst
+   Classes/sorting_instances.rst
+   Classes/ClassVariablesInstanceVariables.rst
+   Classes/Tamagotchi.rst
+   Classes/Glossary.rst
+   Classes/Exercises.rst
+
+Inheritance
+:::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Inheritance/intro.rst
+   Inheritance/inheritVarsAndMethods.rst
+   Inheritance/OverrideMethods.rst
+   Inheritance/InvokingSuperMethods.rst
+   Inheritance/TamagotchiRevisited.rst
+   Inheritance/Exercises.rst
+
 
 The FaceBook Graph API
 ::::::::::::::::::::::
 
 .. toctree::
     :maxdepth: 2
-    
+
     RESTAPIs/FBAPI.rst
+
+
+
+Pyglet
+::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Pyglet/Pyglet.rst
+   Pyglet/Pong.rst
+
+
+Test Cases
+::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Testing/intro-TestCases.rst
+   Testing/TestCasesRevisited.rst
+   Testing/Testingfunctions.rst
+   Testing/Testingclasses.rst
+   Testing/Glossary.rst
+
 
 More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -445,6 +446,21 @@ More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
    AdvancedAccumulation/zip.rst
    AdvancedAccumulation/exercises.rst
 
+Prediction and Classification
+:::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   Prediction/intro-prediction.rst
+   Prediction/hangman_guesser.rst
+   Prediction/rule-based.rst
+   Prediction/shannon_guesser.rst
+   Prediction/training.rst
+   Prediction/evaluation.rst
+   Prediction/Glossary.rst
+
+
 Recursion
 :::::::::
 
@@ -459,21 +475,6 @@ Recursion
    Recursion/SierpinskiTriangle.rst
    Recursion/Glossary.rst
    Recursion/ProgrammingExercises.rst
-
-Test Cases
-::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   Testing/intro-TestCases.rst
-   Testing/TestCasesRevisited.rst
-   Testing/Testingfunctions.rst
-   Testing/Testingclasses.rst
-   Testing/Glossary.rst
-
-
-
 
 
 Installation
@@ -499,10 +500,7 @@ Unix
    Unix/CommandPrompt.rst
    Unix/FoldersAndPaths.rst
    Unix/lessCommand.rst
-   
 
-More chapters will be coming soon. I am making some revisions to the version of the textbook I created for the winter 2014 offering of the course, based on experience with students using it.
-   
 Indices and tables
 ::::::::::::::::::
 
