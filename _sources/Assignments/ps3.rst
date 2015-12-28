@@ -20,17 +20,20 @@ You have the following graded activities:
 * **Before Monday's class, 1/25:**
 
   * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter
+  * Read :ref:`Folders and copying <mkdir_and_cp>` about the Unix commands ``mkdir`` and ``cp`` **<Material coming soon>**
 
 * **Before Wednesday's class, 1/27:**
   
-  * Read :ref:`Conditionals <conditionals_chap>` 
+  * Read :ref:`Conditionals <conditionals_chap>` and do exercises
   * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
-  * Read :ref:`Understanding Code <understand_code_chap>`
-  * And do the exercises in each chapter as you read them!
+  * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
+
+  * Read Chapter 3 of the Most Human Human
+  * Answer `Reading Response 4 <https://umich.instructure.com/courses/48961/assignments/57679>`_ on Canvas.
 
 * Before Sunday evening, 1/31:
 
-  * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>` by **5PM**
+  * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>` and the exercises in :ref:`Unix Problems 3 <unix_pset3>` to Canvas by **5PM**
   * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
 
 * Before Sunday night, 1/31:
@@ -39,6 +42,17 @@ You have the following graded activities:
   * Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
 
     * Note: you might also like some of the other pages in the tutorial at that site.
+
+.. _unix_pset3:
+
+Unix Problems
+-------------
+
+1. Use the ``mkdir`` command and other Unix commands you've learned to create a folder called ``ps3`` inside your ``106`` folder. Use the ``cp`` command and other Unix commands you've learned as needed to copy ``sample.txt`` from the ``ps2`` folder into the ``ps3`` folder. Then use the ``mkdir`` command to make a sub-directory inside the ``ps3`` folder called ``inside_ps3``. Take a screenshot showing that you typed these commands and that they worked properly (you could use ``ls`` or ``pwd`` to show that they worked!), and upload it to **Unix problems 3** on Canvas.
+
+2. Use the ``cp`` command to copy all of the individual files inside ``106/ps1`` to your ``106/ps3`` directory. (You can't copy sub-directories without a special flag, but you can copy files! See the chapter you read.) 
+
+After this, if you type ``ls`` in the ``ps3`` folder, you should see ``test.txt`` and ``sample.txt`` and the ``inside_ps3`` folder (unless you previously added more files to the ``ps1`` directory, in which case you should see those, too). Take a screenshot to show that you typed these commands and that they were successful. Upload it to **Unix problems 3** on Canvas.
 
 
 .. _problem_set_3:
@@ -183,7 +197,7 @@ The result should look like this:
             print "The variable file_lines_num has not been defined"
 
 
-6. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x -- tests will run at the end of your code and you will get diagnostic error messages. 
+6. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
 Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
 (HINT: you don't have to make a big change.)
