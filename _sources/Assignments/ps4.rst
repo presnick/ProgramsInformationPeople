@@ -21,8 +21,40 @@ You have the following graded activities:
   * Read `External tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ and `External tutorial on unix grep  <http://www.uccs.edu/~ahitchco/grep/>`_ in preparation for next week's Unix problems.
   	* Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
     * Note: you might also like some of the other pages in the tutorial at that site.
+  * Read :ref:`Dictionaries<dictionaries_chap>`, and do the exercises in that chapter
 
+* **By Tuesday night, 2/2:**
+	* Read chapter 5 of The Most Human Human
+	* Answer `Reading Response 5 <>`_ on Canvas.
 
+* ** Before Wednesday's class, 2/3:**
+
+  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
+  * Read :ref:`Strategy for building programs <build_program_chap>`
+
+.. usageassignment:: prep_8
+    :chapters: DictionaryAccumulation
+    :subchapters: BuildingAProgram/TheStrategy
+    :assignment_name: Prep 8
+    :deadline: 2016-02-03 21:30:00
+    :pct_required: 80
+    :points: 50
+
+* **By Sunday evening, 2/7:**
+	
+	* Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>` and the exercises in :ref:`Unix Problems 4 <unix_pset4>` to Canvas by **5PM**
+	* Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
+
+Unix Problems
+-------------
+
+.. _unix_pset4:
+
+Turn these in as screenshots showing you've done these things via Canvas > Assignments > Unix problems 4.
+
+1. In the `tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_,  there are instructions for creating two files called  ``list1`` and ``list2``. Write a single unix command that displays all lines in either file that contain the letter ``p``.
+
+2. Save a file in the ``106`` folder you created a couple weeks ago called ``fun_with_unix.txt``. Now use ``ls``, ``|`` (pipe), and ``grep`` to find all filenames in your folder containing the string ``unix``. (For fun, try this with other substrings and other folders.)
 
 .. _problem_set_4:
 
@@ -140,7 +172,7 @@ Problem Set
       print "nd doesn't exist or doesn't have the key '23'"
 
 
-3. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code that accumulates a list of the lines in the file that include the string ``program``. Save the list in a variable ``program_lines``.
+3. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
 
 .. activecode:: ps_4_3
     :available_files: about_programming.txt
