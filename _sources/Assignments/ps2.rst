@@ -17,8 +17,22 @@ Activities through 1/24
 
 You have the following graded activities:
 
-**TBA**
+* **Before Wednesday's class 1/20** (no class Monday for MLK Day):
 
+  * Read :ref:`Sequences <sequences_chap>`, and do the exercises in that chapter.
+  * Read :ref:`unix cat and less<less_chap>` section of the Unix chapter
+
+* By **Sunday 1/24 at 5PM**, save answers to the exercises in **Problem Set 2**:
+
+  * Do the Unix Problems part of the problem set: :ref:`Unix Problems (2) <unix_pset2>`
+  * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>`
+
+* By **Sunday 1/24 at 6PM**, save your **Demonstrate Understanding** assignment for this week in Canvas.
+
+* **By Sunday night, 9/27:**
+
+  * Read chapter 3 of The Most Human Human.
+  * Answer :ref:`Reading Response 4 <reading_response_4>`.
 
 .. _unix_pset3:
 
