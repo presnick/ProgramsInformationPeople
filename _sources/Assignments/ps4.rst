@@ -171,19 +171,19 @@ Problem Set
 
 .. activecode:: ps_4_3
 
-  	# Write your code here!
+   # Write your code here!
 
-    ====
+   ====
 
-    print "\n---\n\n"
-    tmp = []
-    for l in open("about_programming.txt").readlines():
-    	if "program" in l:
-    		tmp.append(l)
-    try:
-    	test.testEqual(program_lines,tmp)
-    except:
-    	print "program_lines has not been defined, or you have another error"
+   print "\n---\n\n"
+   tmp = []
+   for l in open("about_programming.txt").readlines():
+	   if "program" in l:
+		   tmp.append(l)
+   try:
+	   test.testEqual(program_lines,tmp)
+   except:
+	   print "program_lines has not been defined, or you have another error"
 
 
 4. Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
