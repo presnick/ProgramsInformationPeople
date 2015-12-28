@@ -22,19 +22,18 @@ You have the following graded activities:
   * Read :ref:`Sequences <sequences_chap>`, and do the exercises in that chapter.
   * Read :ref:`unix cat and less<less_chap>` section of the Unix chapter
 
+  * Read chapter 2 of The Most Human Human.
+  * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
+
 * By **Sunday 1/24 at 5PM**, save answers to the exercises in **Problem Set 2**:
 
-  * Do the Unix Problems part of the problem set: :ref:`Unix Problems (2) <unix_pset2>`
+  * Do the Unix Problems part of the problem set: :ref:`Unix Problems (2) <unix_pset2>` and upload the screenshots in Canvas, Assignments > Unix problems 2.
   * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>`
 
 * By **Sunday 1/24 at 6PM**, save your **Demonstrate Understanding** assignment for this week in Canvas.
 
-* **By Sunday night, 9/27:**
 
-  * Read chapter 3 of The Most Human Human.
-  * Answer :ref:`Reading Response 4 <reading_response_4>`.
-
-.. _unix_pset3:
+.. _unix_pset2:
 
 Unix Problems
 -------------
@@ -50,11 +49,11 @@ The following problems include instructions for you to follow in your Terminal a
 
 Problem Set
 -----------
-**Due:** **Sunday, Jnauary 25 at 5 pm**
+**Due:** **Sunday, January 24 at 5 pm**
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
-1. Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``.
+1. Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
 
 .. activecode:: ps_2_1
  
@@ -99,10 +98,10 @@ Problem Set
    # Write code to assign the length of that string to a variable called short_len.
 
 
-   # Print out the value of short_len (and len_of_sent, if you want!) so you can see it. 
+   # Write code to print out the value of short_len (and the value of len_of_sent, if you want!) so you can see it. 
 
 
-   # Write a comment below this line to explain why these values are larger than you might expect. Why is the length of short_sent longer than 15 characters?
+   # Consider (ungraded but important): Why is the length of short_sent longer than 15 characters?
 
 
    # Assign the index of the first 'v' in the value of the variable sent TO a variable called index_of_v. (Hint: we saw a method of the string class that can help with this)

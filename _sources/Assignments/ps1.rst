@@ -53,11 +53,6 @@ Activities through 1/17
   * Submit screenshots to Canvas for **Unix Problems 1**, following the instructions in :ref:`Unix Problems 1 <unix_problems_1>`
   * Submit your **Demonstrate Understanding exercise** to your section site on Canvas. Instructions can be found `here <https://umich.instructure.com/courses/48961/assignments/57690>`_ . This should demonstrate your understanding of some of the material in this course up to this point.
 
-* By Sunday night, 1/17:
-
-  * Read chapter 2 of The Most Human Human.
-  * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
-
 
 .. _unix_problems_1:
 
