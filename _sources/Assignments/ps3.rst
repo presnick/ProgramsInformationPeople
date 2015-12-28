@@ -33,7 +33,7 @@ You have the following graded activities:
 
 * Before Sunday evening, 1/31:
 
-  * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>` and the exercises in :ref:`Unix Problems 3 <unix_pset3>` to Canvas by **5PM**
+  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and the exercises in :ref:`Unix Problems 3 <unix_pset3>` to Canvas by **5PM**
   * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
 
 
