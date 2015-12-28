@@ -39,7 +39,7 @@ You have the following graded activities:
   * Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
 
     * Note: you might also like some of the other pages in the tutorial at that site.
-    
+
 
 .. _problem_set_3:
 
@@ -82,7 +82,7 @@ Problem Set
 
 1. Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
 
-.. activecode:: ps_2_5
+.. activecode:: ps_3_1
 
    several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
@@ -93,7 +93,7 @@ Problem Set
 
 2. See the comments for directions.
 
-.. activecode:: ps_2_6
+.. activecode:: ps_3_2
 
     sent = "The magical mystery tour is waiting to take you away."
 
@@ -130,7 +130,7 @@ Problem Set
 
 (Hint: remember string slicing?)
 
-.. activecode:: ps_2_7
+.. activecode:: ps_3_3
 
     excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
 
@@ -151,7 +151,7 @@ The result should look like this:
   
    original formulation of a computing problem to executable programs. It involves
 
-.. activecode:: ps_3_3
+.. activecode:: ps_3_4
        :available_files: about_programming.txt
 
        # Write your code here.
@@ -167,7 +167,7 @@ The result should look like this:
 
 5. Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
 
-.. activecode:: ps_3_4
+.. activecode:: ps_3_5
        :available_files: about_programming.txt
 
        # Write your code here.
@@ -182,12 +182,13 @@ The result should look like this:
        except:
             print "The variable file_lines_num has not been defined"
 
+
 6. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x -- tests will run at the end of your code and you will get diagnostic error messages. 
 
 Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
 (HINT: you don't have to make a big change.)
 
-.. activecode:: ps_3_5
+.. activecode:: ps_3_6
 
     #x = 25
     #x = 15
@@ -230,7 +231,7 @@ Fix the code so that it passes the test for each different value of x. So when t
 
 7. See comments in code for instructions.
 
-.. activecode:: ps_3_6
+.. activecode:: ps_3_7
 
    lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
 
@@ -261,7 +262,7 @@ Fix the code so that it passes the test for each different value of x. So when t
 
 8. Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. HINT 1: Use the accumulation pattern! HINT 2: the ``in`` operator checks whether a letter or substring is present in a string.
 
-.. activecode:: ps_3_7
+.. activecode:: ps_3_8
 
    items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
 
@@ -278,7 +279,7 @@ Fix the code so that it passes the test for each different value of x. So when t
 
 9. **Challenge problem (OPTIONAL, much harder):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
 
-.. activecode:: ps_3_8
+.. activecode:: ps_3_9
     :available_files: about_programming.txt
 
     # Write your code here.
