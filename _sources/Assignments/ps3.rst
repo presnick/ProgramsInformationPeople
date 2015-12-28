@@ -31,7 +31,7 @@ You have the following graded activities:
   * Read Chapter 3 of the Most Human Human
   * Answer `Reading Response 4 <https://umich.instructure.com/courses/48961/assignments/57679>`_ on Canvas.
 
-* Before Sunday evening, 1/31:
+* **Before Sunday evening, 1/31:**
 
   * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and the exercises in :ref:`Unix Problems 3 <unix_pset3>` to Canvas by **5PM**
   * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**

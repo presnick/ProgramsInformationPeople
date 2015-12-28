@@ -18,32 +18,27 @@ You have the following graded activities:
 
 * **Before Monday's class, 2/1:**
 
-  * Read `External tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ and `External tutorial on unix grep  <http://www.uccs.edu/~ahitchco/grep/>`_ in preparation for next week's Unix problems.
-  	* Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
+  * Read `External tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ and `External tutorial on unix grep  <http://www.uccs.edu/~ahitchco/grep/>`_.
+  * Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
+    
     * Note: you might also like some of the other pages in the tutorial at that site.
+
   * Read :ref:`Dictionaries<dictionaries_chap>`, and do the exercises in that chapter
+
 
 * **By Tuesday night, 2/2:**
 	* Read chapter 5 of The Most Human Human
-	* Answer `Reading Response 5 <>`_ on Canvas.
+	* Answer `Reading Response 5 <https://umich.instructure.com/courses/48961/assignments/57680>`_ on Canvas.
 
-* ** Before Wednesday's class, 2/3:**
+* **Before Wednesday's class, 2/3:**
 
   * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
   * Read :ref:`Strategy for building programs <build_program_chap>`
 
-.. usageassignment:: prep_8
-    :chapters: DictionaryAccumulation
-    :subchapters: BuildingAProgram/TheStrategy
-    :assignment_name: Prep 8
-    :deadline: 2016-02-03 21:30:00
-    :pct_required: 80
-    :points: 50
-
 * **By Sunday evening, 2/7:**
 	
-	* Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>` and the exercises in :ref:`Unix Problems 4 <unix_pset4>` to Canvas by **5PM**
-	* Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
+  * Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>` and the exercises in :ref:`Unix Problems 4 <unix_pset4>` to Canvas by **5PM**
+  * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
 
 Unix Problems
 -------------
@@ -175,9 +170,8 @@ Problem Set
 3. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
 
 .. activecode:: ps_4_3
-    :available_files: about_programming.txt
 
-  	 # Write your code here!
+  	# Write your code here!
 
     ====
 
@@ -208,7 +202,7 @@ Problem Set
 		test.testEqual(type(nums["seventeen"],type(3)))
 		test.testEqual(nums,{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0})
 	except:
-		print "You've created an error somewhere. Time to debug!"
+		print "You've created an error somewhere or have not completed this problem."
 
 5. Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
 
