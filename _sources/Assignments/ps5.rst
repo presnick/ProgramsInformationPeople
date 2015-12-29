@@ -33,6 +33,43 @@ Problem Set
 	In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
 	(Wikipedia)
 
+1. Define a function called add_three, which takes one integer as input and returns that integer + 3.
+
+.. activecode:: ps_4_4
+
+    # Write your code here.
+    # (The tests for this problem are going to try to CALL the function that you write!)
+
+    ====
+
+    import test
+    try:
+      print "testing if add_three(2) equals 5"
+      test.testEqual(add_three(2),5)
+      print "testing if add_three(33) equals 36"
+      test.testEqual(add_three(33),36)
+    except:
+      print "The function add_three has not been defined yet, OR it hasn't been defined properly"
+
+2. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+
+.. activecode:: ps_5_2
+
+   def subtract_five(inp)
+   	print inp - 5
+	return None
+
+   y = subtract_five(9) - 6
+
+   ====
+
+   print "\n---\n\n"
+   import test
+   try:
+    print "testing if y is -2"
+    test.testEqual(y, -2)
+   except:
+    print "The variable y was deleted or is not defined"
 
 3. Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
@@ -45,23 +82,25 @@ Problem Set
    print "There are no tests for this problem"
 
 
-
-4. Given the string in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionaries will be useful here.
+4. Define a function called change_amounts that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
 
 .. activecode:: ps_5_4
 
-   s = "Will there really be such a thing as morning in the morning"
-   # Write your code here...
-    
-   ====
-    
-   print "\n---\n\n"
-   import test
-   print "testing whether abc is set correctly"
-   try:
-     test.testEqual(abc, 'morning')
-   except:
-     print "The variable abc has not been defined"
+    # We've started you off with the first line...
+    def change_amounts(num_here):
+       pass # delete this line and put in your own code for the body of the function.
+
+    ====
+
+    print "\n---\n\n"
+    import test
+    try:
+      print "testing if change_amounts(9) equals 11"
+      test.testEqual(change_amounts(9),11)
+      print "testing if change_amounts(12) equals 17"
+      test.testEqual(change_amounts(12),17)
+    except:
+      print "The function change_amounts has not been defined properly"
 
 
 5. We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
@@ -80,17 +119,29 @@ Problem Set
    except:
      print "The variable abc has not been defined"
 
-6. 
 
+6. Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Write a comment explaining why an error occurs. Then fix the 4th line of code so that it does not generate an error.
 
-8. An exercising on defining and calling a function. See comments for instructions.
+.. activecode:: ps_5_6
+
+    def change_amounts(yp):
+	   n = yp - 4
+	   return n * 7
+
+    print yp
+
+    ====
+
+    print "\n---\n\n"
+    print "There are no tests for this problem"
+
+7. Here will be a question about returning in the middle of a function -- maybe a two-part question? This pset is getting real important.
+
+8. Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns ``False`` otherwise.
 
 .. activecode:: ps_5_8
 
-      # Define a function is_prefix that takes two strings and returns
-      # True if the first one is a prefix of the second one, but returns
-      # False otherwise.
-
+      # Define your function here.
 
 
       # Here's a couple example function calls, printing the return value
@@ -113,13 +164,12 @@ Problem Set
         print 'testing whether "Bigge" is a prefix of "Bigger"'
         test.testEqual(is_prefix("Bigge","Bigger"),True)
       except:
-        print "Looks like the function is_prefix has not been defined or has an error"
+        print "Looks like the function is_prefix has not been defined or has another error"
 
 
-9. Define a python function ``grep`` that works just like the unix command. It takes two inputs, a string and a filename. It should return a list of all and only the lines in the file that contain the string.
+9. Define a python function ``grep`` that works just like the unix command ``grep``. Your function should take two inputs, a string and a filename. It should return a list of all the lines in the file that contain the string, and only the lines in the file that contain the string.
 
 .. activecode:: ps_5_9
-   :available_files: timely_file.txt
 
    # Write code here!
 
@@ -141,7 +191,6 @@ Problem Set
      test.testEqual(grep('fool', 'timely_file.txt'), solgrep('fool', 'timely_file.txt'))
    except:
      print "The function grep has not been defined yet"
-
 
 
 10. Write code that repeatedly asks the user to input numbers. Keep going until the sum of the numbers is 21 or more. Print out the total.
