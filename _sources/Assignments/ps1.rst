@@ -23,7 +23,7 @@ Activities through 1/17
 
 * Participation in Thursday discussion section, 1/7
 
-* By Sunday night, 1/10,
+* **By Sunday night, 1/10:**
 
   * read the intro and chapter 1 of The Most Human Human book.
   * Answer `Reading Response 1 <https://umich.instructure.com/courses/48961/assignments/57676>`_ .
@@ -54,7 +54,7 @@ Activities through 1/17
 
 * ** By Sunday 1/17 at 6PM:**
 
-  * Submit your **Demonstrate Understanding exercise** to your section site on Canvas. Instructions can be found `here <https://umich.instructure.com/courses/48961/assignments/57690>`_ . This should demonstrate your understanding of some of the material in this course up to this point.
+  * Submit your **Demonstrate Understanding exercise** to Canvas. Instructions can be found `here <https://umich.instructure.com/courses/48961/assignments/57690>`_ (TBReleased). This should demonstrate your understanding of some of the material in this course up to this point.
 
 
 .. _unix_problems_1:
