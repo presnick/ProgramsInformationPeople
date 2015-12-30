@@ -16,8 +16,45 @@ Activities through 2/14
 
 You have the following graded activities:
 
+* Before Monday's class:
+	* Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+
+* By Tuesday midnight:
+    * Read *The Most Human Human*, Chapter 10, p.219-237.
+    * Answer `Reading Response 6 <https://umich.instructure.com/courses/48961/assignments/57682>`_ on Canvas.
+
+* Before Wednesday's class:
+    * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
+    * Read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python. Do the exercises and installations.
+
+* By Sunday 2/14 evening:
+   * Save answers to the exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>` by **5PM**
+   * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
 
 
+.. _unix_pset5:
+
+Unix Problems - Native Python Interpreter and Text Editor
+---------------------------------------------------------
+
+Turn these in as screenshots via Canvas > Assignments > Unix Problems 5. **These Unix problems are especially important for the rest of the semester. If this does not work for you or you have any questions, contact the instructional team/come to office hours.**
+
+#. Make a new file in your text editor (Sublime Text), and save it as ``new_program.py``. (This is a Python program!)
+
+#. In your ``new_program.py`` file, write the following code (copy it from here).
+
+.. code:: python
+
+   def cool_machine(x):
+   	y = x**2 +7
+   	print y
+
+   z = 65.3
+   print z + cool_machine(8)
+
+Then, run the Python program in your native Python interpreter. You should get an error. Take a screenshot of this and upload it to Canvas.
+
+In a text editor (Sublime Text), make edits to this code so it will work (the only output should be 136.3), saving it with a different name (``fixed_program.py``). Try running it and see that it prints out a result, without an error. Take a screenshot that shows the text editor with the correct code and the successfully run program in your command prompt, and upload it to Canvas.
 
 
 .. _problem_set_5:
@@ -33,29 +70,11 @@ Problem Set
 	In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
 	(Wikipedia)
 
-1. Define a function called add_three, which takes one integer as input and returns that integer + 3.
+1. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
 
-.. activecode:: ps_4_4
+.. activecode:: ps_5_1
 
-    # Write your code here.
-    # (The tests for this problem are going to try to CALL the function that you write!)
-
-    ====
-
-    import test
-    try:
-      print "testing if add_three(2) equals 5"
-      test.testEqual(add_three(2),5)
-      print "testing if add_three(33) equals 36"
-      test.testEqual(add_three(33),36)
-    except:
-      print "The function add_three has not been defined yet, OR it hasn't been defined properly"
-
-2. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
-
-.. activecode:: ps_5_2
-
-   def subtract_five(inp)
+   def subtract_five(inp):
    	print inp - 5
 	return None
 
@@ -71,9 +90,9 @@ Problem Set
    except:
     print "The variable y was deleted or is not defined"
 
-3. Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
+2. Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
-.. activecode:: ps_5_3
+.. activecode:: ps_5_2
 
    # Write code here
 
@@ -82,9 +101,9 @@ Problem Set
    print "There are no tests for this problem"
 
 
-4. Define a function called change_amounts that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+3. Define a function called change_amounts that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
 
-.. activecode:: ps_5_4
+.. activecode:: ps_5_3
 
     # We've started you off with the first line...
     def change_amounts(num_here):
@@ -103,9 +122,9 @@ Problem Set
       print "The function change_amounts has not been defined properly"
 
 
-5. We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
+4. We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
 
-.. activecode:: ps_5_5
+.. activecode:: ps_5_4
 
    # Write code here!
     
@@ -120,9 +139,9 @@ Problem Set
      print "The variable abc has not been defined"
 
 
-6. Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Write a comment explaining why an error occurs. Then fix the 4th line of code so that it does not generate an error.
+5. Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Write a comment explaining why an error occurs. Then fix line 5 so that it does not generate an error.
 
-.. activecode:: ps_5_6
+.. activecode:: ps_5_5
 
     def change_amounts(yp):
 	   n = yp - 4
@@ -135,7 +154,27 @@ Problem Set
     print "\n---\n\n"
     print "There are no tests for this problem"
 
-7. Here will be a question about returning in the middle of a function -- maybe a two-part question? This pset is getting real important.
+7. See comments and code below for instructions.
+
+.. activecode:: ps_5_7
+
+	# Here is a function definition. DO NOT change it!
+	def list_end_with_string(new_list):
+		if type(new_list[-1]) == type("hello"):
+			return new_list
+		new_list.append("the last element is a string no matter what now!")
+		return new_list
+
+	# Play around with this function with the following function calls.
+	l = [3,46,6]
+	b = [4,"hi",10,"12",12,123,"whoa!"]
+	print list_end_with_string([1,2])
+	print list_end_with_string(l)
+	print list_end_with_string(b)
+
+	# Now write a couple invocations of this function yourself below this line.
+
+	# Finally, write a few sentences in comments that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like l gets input into this function AND what happens if a list like b gets input into it.
 
 8. Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns ``False`` otherwise.
 
@@ -150,9 +189,11 @@ Problem Set
       print is_prefix("Hi","Hello") # should print False
       print is_prefix("lo","Hello") # should print False
       print is_prefix("Hel","Hello") # should print True
+      # Remember, these won't work at all until you have defined a function called is_prefix
 
       ====
 
+      print "\n---\n\n"
       import test
       try:
         print 'testing whether "Big" is a prefix of "Bigger"'
@@ -200,4 +241,6 @@ Problem Set
     # Write your code here!
 
 
-
+    ====
+    print "\n---\n\n" 
+    print "There are no tests for this problem."
