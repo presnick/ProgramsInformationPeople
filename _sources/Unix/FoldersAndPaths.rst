@@ -25,8 +25,8 @@ When you are in a command prompt window, you are always connected to some partic
 
 The stuff before the $ indicates that you are connected to the ~/Desktop directory. After the $ is a blinking cursor, indicating that you are free to type in a new command there.
 
-Unix Commands: cd and ls
-------------------------
+Unix Commands: cd, ls, and pwd
+------------------------------
 
 From there, you can use commands to move to other directories. The ``cd`` command stands for "change directory." After the letters cd and a space, you will type a path string that specifies the directory to connect to.
 
@@ -57,6 +57,13 @@ Here's the view of the same directory in Windows Explorer:
 Of course, the visual display is easier for people to read. But later in the course you will need to navigate through your directories using the command prompt, and it will be helpful for you to see contents of directories in the command prompt as well.
 
 You can provide a path string after the ls command. That will show the contents of the specified directory, *without changing the directory that you're currently connected to*. For example, ``ls ~/Desktop`` will show the contents of the Desktop directory, without connecting to it.
+
+Another useful command is ``pwd``, which comes from the words *print working directory*. If you type ``pwd`` at the command prompt, you will see the full path of the location you have navigated to in the command prompt. For example,
+
+.. image:: Figures/ pwdinMac.PNG
+
+This is useful for several reasons, including checking where you've navigated to when you were ``cd``-ing to different locations; perhaps you want to ensure that you are where you think you are. (And then, you can use ``ls`` to see whether the files and directories you believe are in that place are really there.) It's a helpful visual check -- you might know from the command prompt that you are in a folder called ``106``, but what if you have one folder called ``106`` at ``~/Desktop/106`` and one at ``~/Desktop/Classes/106``? It can mess you up to forget which one you're using at a given time. (Of course, it's a good idea not to repeat folder names, but ``pwd`` is a useful tool to check on your mistakes.)
+
 
 **Check your understanding**
 
