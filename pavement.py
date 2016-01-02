@@ -26,7 +26,7 @@ options(
         template_args = {
             'course_id':project_name,
             'dburl':db_url,
-            'login_required':'false',
+            'login_required':'true',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
