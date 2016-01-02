@@ -17,7 +17,7 @@ Activities through 2/14
 You have the following graded activities:
 
 * Before Monday's class:
-	* Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+    * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 * By Tuesday midnight:
     * Read *The Most Human Human*, Chapter 10, p.219-237.
@@ -46,16 +46,19 @@ Turn these in as screenshots via Canvas > Assignments > Unix Problems 5. **These
 .. code:: python
 
    def cool_machine(x):
-   	y = x**2 +7
-   	print y
+       y = x**2 +7
+       print y
 
    z = 65.3
    print z + cool_machine(8)
 
-Then, run the Python program in your native Python interpreter. You should get an error. Take a screenshot of this and upload it to Canvas.
+Then, run the Python program in your native Python interpreter, by executing the unix command ``python new_program.py`` (Note: you will have to be connected to the right directory!). You should get an error. Take a screenshot of this and upload it to Canvas.
 
 In a text editor (Sublime Text), make edits to this code so it will work (the only output should be 136.3), saving it with a different name (``fixed_program.py``). Try running it and see that it prints out a result, without an error. Take a screenshot that shows the text editor with the correct code and the successfully run program in your command prompt, and upload it to Canvas.
 
+.. note::
+
+    You may discover another way to run your python program directly from Sublime Text. We have found that this will not work for everything you need to do throughout the semester. Therefore, it's very important that you learn how to run your python programs from the unix command prompt, including figuring out how to connect to the right directory with the unix ``cd`` command. You will only get credit for these unix problems if your screenshots show that you ran the programs from the unix command prompt.
 
 .. _problem_set_5:
 
@@ -63,20 +66,20 @@ Problem Set
 -----------
 
 .. datafile:: timely_file.txt
-	:hide:
+    :hide:
 
-	Autumn is interchangeably known as fall in the US and Canada, and is one of the four temperate seasons. Autumn marks the transition from summer into winter.
-	Some cultures regard the autumn equinox as mid autumn while others, with a longer temperature lag, treat it as the start of autumn then. 
-	In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
-	(Wikipedia)
+    Autumn is interchangeably known as fall in the US and Canada, and is one of the four temperate seasons. Autumn marks the transition from summer into winter.
+    Some cultures regard the autumn equinox as mid autumn while others, with a longer temperature lag, treat it as the start of autumn then. 
+    In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
+    (Wikipedia)
 
 1. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
 
 .. activecode:: ps_5_1
 
    def subtract_five(inp):
-   	print inp - 5
-	return None
+       print inp - 5
+       return None
 
    y = subtract_five(9) - 6
 
@@ -85,10 +88,10 @@ Problem Set
    print "\n---\n\n"
    import test
    try:
-    print "testing if y is -2"
-    test.testEqual(y, -2)
+       print "testing if y is -2"
+       test.testEqual(y, -2)
    except:
-    print "The variable y was deleted or is not defined"
+       print "The variable y was deleted or is not defined"
 
 2. Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
@@ -97,6 +100,7 @@ Problem Set
    # Write code here
 
    ====
+
    print "\n---\n\n"
    print "There are no tests for this problem"
 
@@ -144,8 +148,8 @@ Problem Set
 .. activecode:: ps_5_5
 
     def change_amounts(yp):
-	   n = yp - 4
-	   return n * 7
+       n = yp - 4
+       return n * 7
 
     print yp
 
@@ -158,23 +162,23 @@ Problem Set
 
 .. activecode:: ps_5_7
 
-	# Here is a function definition. DO NOT change it!
-	def list_end_with_string(new_list):
-		if type(new_list[-1]) == type("hello"):
-			return new_list
-		new_list.append("the last element is a string no matter what now!")
-		return new_list
+    # Here is a function definition. DO NOT change it!
+    def list_end_with_string(new_list):
+        if type(new_list[-1]) == type("hello"):
+            return new_list
+        new_list.append("the last element is a string no matter what now!")
+        return new_list
 
-	# Play around with this function with the following function calls.
-	l = [3,46,6]
-	b = [4,"hi",10,"12",12,123,"whoa!"]
-	print list_end_with_string([1,2])
-	print list_end_with_string(l)
-	print list_end_with_string(b)
+    # Play around with this function with the following function calls.
+    l = [3,46,6]
+    b = [4,"hi",10,"12",12,123,"whoa!"]
+    print list_end_with_string([1,2])
+    print list_end_with_string(l)
+    print list_end_with_string(b)
 
-	# Now write a couple invocations of this function yourself below this line.
+    # Now write a couple invocations of this function yourself below this line.
 
-	# Finally, write a few sentences in comments that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like l gets input into this function AND what happens if a list like b gets input into it.
+    # Finally, write a few sentences in comments that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like l gets input into this function AND what happens if a list like b gets input into it.
 
 8. Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns ``False`` otherwise.
 
@@ -186,6 +190,7 @@ Problem Set
       # Here's a couple example function calls, printing the return value
       # to show you what it is.
       print is_prefix("He","Hello") # should print True
+      print is_prefix("Hello","He") # should print False
       print is_prefix("Hi","Hello") # should print False
       print is_prefix("lo","Hello") # should print False
       print is_prefix("Hel","Hello") # should print True
