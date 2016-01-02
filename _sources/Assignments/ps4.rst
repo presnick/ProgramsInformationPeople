@@ -27,8 +27,8 @@ You have the following graded activities:
 
 
 * **By Tuesday night, 2/2:**
-	* Read chapter 5 of The Most Human Human
-	* Answer `Reading Response 5 <https://umich.instructure.com/courses/48961/assignments/57680>`_ on Canvas.
+  * Read chapter 5 of The Most Human Human
+  * Answer `Reading Response 5 <https://umich.instructure.com/courses/48961/assignments/57680>`_ on Canvas.
 
 * **Before Wednesday's class, 2/3:**
 
@@ -36,7 +36,7 @@ You have the following graded activities:
   * Read :ref:`Strategy for building programs <build_program_chap>`
 
 * **By Sunday evening, 2/7:**
-	
+  
   * Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>` and the exercises in :ref:`Unix Problems 4 <unix_pset4>` to Canvas by **5PM**
   * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
 
@@ -178,31 +178,31 @@ Problem Set
    print "\n---\n\n"
    tmp = []
    for l in open("about_programming.txt").readlines():
-	   if "program" in l:
-		   tmp.append(l)
+     if "program" in l:
+       tmp.append(l)
    try:
-	   test.testEqual(program_lines,tmp)
+     test.testEqual(program_lines,tmp)
    except:
-	   print "program_lines has not been defined, or you have another error"
+     print "program_lines has not been defined, or you have another error"
 
 
 4. Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
 
 .. activecode:: ps_4_4
 
-	nums = {}
-	num_words = ["two","three","four","seventeen","eight","not_a_number"]
-	# Write your code here.
+  nums = {}
+  num_words = ["two","three","four","seventeen","eight","not_a_number"]
+  # Write your code here.
 
-	====
+  ====
 
-	import test
-	try:
-		test.testEqual(nums["two"],0)
-		test.testEqual(type(nums["seventeen"],type(3)))
-		test.testEqual(nums,{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0})
-	except:
-		print "You've created an error somewhere or have not completed this problem."
+  import test
+  try:
+    test.testEqual(nums["two"],0)
+    test.testEqual(type(nums["seventeen"],type(3)))
+    test.testEqual(nums,{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0})
+  except:
+    print "You've created an error somewhere or have not completed this problem."
 
 5. Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
 
