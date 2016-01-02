@@ -102,7 +102,7 @@ Problem Set
    test.testEqual(tpa, 6)
 
 
-2. Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``), but write code that would work no matter what the current value of ``cw`` is.
+2. Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
 
 .. activecode:: ps_1_2
 
@@ -121,7 +121,7 @@ Problem Set
    test.testEqual(cw, "Hello")
 
 
-3. Write code to print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
+3. Write code to print out the *type* of the variable ``apples_and_oranges``, the *type* of the variable ``abc``, and the *type* of the variable ``new_var``.
 
 .. activecode:: ps_1_3
    
