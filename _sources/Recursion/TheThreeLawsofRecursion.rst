@@ -22,7 +22,7 @@ important laws:
 #. A recursive algorithm must call itself, recursively.
 
 Let’s look at each one of these laws in more detail and see how it was
-used in the ``listsum`` algorithm. First, a base case is the condition
+used in :ref:`Summing a list <list_sum>`. First, a base case is the condition
 that allows the algorithm to stop recursing. A base case is typically a
 problem that is small enough to solve directly. In the ``listsum``
 algorithm the base case is a list of length 1.
