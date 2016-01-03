@@ -20,7 +20,7 @@ You have the following graded activities:
 * **Before Monday's class, 1/25:**
 
   * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter
-  * Read :ref:`Folders and copying <mkdir_and_cp>` about the Unix commands ``mkdir`` and ``cp`` **<Material coming soon>**
+  * Read :ref:`Folders and copying <mkdir_and_cp>` about the Unix commands ``mkdir`` and ``cp`` :ref:`Making Directories and Copying Files <mkdir_and_cp_sect>`
 
 * **Before Wednesday's class, 1/27:**
   

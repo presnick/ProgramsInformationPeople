@@ -37,9 +37,19 @@ The cp command
 
 The ``cp`` command is a useful way to copy files from one place to another in your computer, and a command that is particularly useful for programming, once you begin using multiple files. Just like using *Edit > Copy* and *Edit > Paste* clicks, it doesn't change anything about your original file -- it just copies it to another place as well, with one quick command. And just like using the edit menu to copy and paste, you still have to be careful about which copy you start working on!
 
-The syntax goes like this: ``cp`` **<path of the file you want to copy>** **<path of the location you want that file copied to>**, at your Unix command prompt.
+The syntax goes like this: ``cp`` **<path of the file you want to copy>** **<path of the location you want that file copied to>**, with a space in between each, at your Unix command prompt.
 
+Say you want to copy the file ``test.txt`` from your ``106/ps1`` folder to your ``Desktop`` (so it will exist in the ``ps1`` folder, and there will *also* be a copy on your ``Desktop``): ``cp ~/Desktop/106/ps1/test.txt ~/Desktop``. 
 
+There are a couple Unix tricks that are especially useful when you are using the ``cp`` command. First, the use of ``.`` and ``..``. If you want to copy a file to the place you are currently navigated to in your command prompt, you can type ``cp <whatever file path you want to copy>> .`` That means, "copy <that file path> to here."
+
+You can do the same using the ``..`` that you learned about for the ``cd`` command. ``.`` means **the current directory**, but ``..`` means **the directory one level up from here**.
+
+The other useful thing to know for ``cp`` (and other Unix commands) is that the asterisk, ``*``, means "all". So, for example, if you want to copy ALL of the files from your desktop to your ``ps2`` folder, you could type: ``cp ~/Desktop/* ~/Desktop/106/ps2``. (I wouldn't recommend doing this, though. That's probably a lot of files you don't need in your 106 folder.)
+
+You cannot copy **directories** this way, though -- only plain files. You can use the ``cp`` command to copy directories, but it requires using an addition to the command called a **flag** that we haven't learned about yet.
+
+You can imagine how you can combine use of the commands you already know with the ``cp`` and the ``mkdir`` commands to do useful things. You now know enough Unix commands to make new directories and copy whole sets of files from one folder to another with just a keyboard and your command prompt. Or you can make a new folder, copy files into that new folder, and list the file names to check that the files you expect to be there are indeed there.
 
 
 
