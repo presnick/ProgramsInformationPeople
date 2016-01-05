@@ -21,6 +21,13 @@ Activities through 1/17
   * Sign up for/join the `Facebook group <https://www.facebook.com/groups/1752935254934382/>`_
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
+.. usageassignment:: prep_01
+    :chapters: GeneralIntro
+    :assignment_name: Prep 01
+    :deadline: 2016-01-08 02:30:01
+    :pct_required: 80
+    :points: 50
+
 * Participation in Thursday discussion section, 1/7
 
 * **By Sunday night, 1/10:**
@@ -31,6 +38,14 @@ Activities through 1/17
 * **Before Monday's class, 1/11:**
 
   * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
+
+
+.. usageassignment:: prep_02
+    :chapters: SimplePythonData
+    :assignment_name: Prep 02
+    :deadline: 2016-01-11 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **By Tuesday night, 1/12:**
 
@@ -45,6 +60,14 @@ Activities through 1/17
   * Read :ref:`Command Prompt <command_prompt_sect>` section of the Unix chapter.
   * Read :ref:`Folders and Paths <folders_and_paths_sect>` section of the Unix chapter and do the exercises in it.
 
+.. usageassignment:: prep_03
+    :chapters: Debugging, PythonTurtle
+    :subchapters: Installation/FirstSteps, Unix/CommandPrompt, Unix/FoldersAndPaths
+    :assignment_name: Prep 03
+    :deadline: 2016-01-13 19:40:00
+    :pct_required: 80
+    :points: 50
+
 * Participation in Thursday discussion section, 1/14
 
 * **By Sunday 1/17 at 5PM:** 
@@ -52,7 +75,7 @@ Activities through 1/17
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`
   * Submit screenshots to Canvas for **Unix Problems 1**, following the instructions in :ref:`Unix Problems 1 <unix_problems_1>`
 
-* ** By Sunday 1/17 at 6PM:**
+* **By Sunday 1/17 at 6PM:**
 
   * Submit your **Demonstrate Understanding exercise** to Canvas. Instructions can be found `here <https://umich.instructure.com/courses/48961/assignments/57690>`_ (TBReleased). This should demonstrate your understanding of some of the material in this course up to this point.
 
