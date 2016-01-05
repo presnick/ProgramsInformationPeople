@@ -19,6 +19,14 @@ You have the following graded activities:
 * Before Monday's class:
     * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
+
+.. usageassignment:: prep_09
+    :chapters: Functions
+    :assignment_name: Prep 09
+    :deadline: 2016-02-08 19:40:00
+    :pct_required: 80
+    :points: 50
+
 * By Tuesday midnight:
     * Read *The Most Human Human*, Chapter 10, p.219-237.
     * Answer `Reading Response 6 <https://umich.instructure.com/courses/48961/assignments/57682>`_ on Canvas.
@@ -26,6 +34,15 @@ You have the following graded activities:
 * Before Wednesday's class:
     * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
     * Read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python. Do the exercises and installations.
+
+
+.. usageassignment:: prep_10
+    :chapters: IndefiniteIteration
+    :subchapters: Installation/TextEditor
+    :assignment_name: Prep 10
+    :deadline: 2016-02-10 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * By Sunday 2/14 evening:
    * Save answers to the exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>` by **5PM**

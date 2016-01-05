@@ -25,6 +25,15 @@ You have the following graded activities:
   * Read chapter 2 of The Most Human Human.
   * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
 
+
+.. usageassignment:: prep_04
+    :chapters: Sequences
+    :subchapters: Unix/lessCommand
+    :assignment_name: Prep 04
+    :deadline: 2016-01-20 19:40:00
+    :pct_required: 80
+    :points: 50
+
 * By **Sunday 1/24 at 5PM**, save answers to the exercises in **Problem Set 2**:
 
   * Do the Unix Problems part of the problem set: :ref:`Unix Problems (2) <unix_pset2>` and upload the screenshots in Canvas, Assignments > Unix problems 2.

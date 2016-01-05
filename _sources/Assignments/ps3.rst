@@ -20,7 +20,16 @@ You have the following graded activities:
 * **Before Monday's class, 1/25:**
 
   * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter
-  * Read :ref:`Folders and copying <mkdir_and_cp>` about the Unix commands ``mkdir`` and ``cp`` :ref:`Making Directories and Copying Files <mkdir_and_cp_sect>`
+  * Read :ref:`Folders and copying <mkdir_and_cp_sect>` about the Unix commands ``mkdir`` and ``cp``
+
+.. usageassignment:: prep_05
+    :chapters: Iteration
+    :subchapters: Unix/DirectoriesAndCopying
+    :assignment_name: Prep 05
+    :deadline: 2016-01-25 19:40:00
+    :pct_required: 80
+    :points: 50
+
 
 * **Before Wednesday's class, 1/27:**
   
@@ -30,6 +39,14 @@ You have the following graded activities:
 
   * Read Chapter 3 of the Most Human Human
   * Answer `Reading Response 4 <https://umich.instructure.com/courses/48961/assignments/57679>`_ on Canvas.
+
+.. usageassignment:: prep_06
+    :chapters: Selection, Files
+    :subchapters: BuildingAProgram/UnderstandingCode
+    :assignment_name: Prep 06
+    :deadline: 2016-01-27 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **Before Sunday evening, 1/31:**
 

@@ -499,6 +499,7 @@ Unix
 
    Unix/CommandPrompt.rst
    Unix/FoldersAndPaths.rst
+   Unix/DirectoriesAndCopying
    Unix/lessCommand.rst
 
 Indices and tables

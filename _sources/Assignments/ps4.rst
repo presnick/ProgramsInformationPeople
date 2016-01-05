@@ -25,6 +25,13 @@ You have the following graded activities:
 
   * Read :ref:`Dictionaries<dictionaries_chap>`, and do the exercises in that chapter
 
+.. usageassignment:: prep_07
+    :chapters: Dictionaries
+    :assignment_name: Prep 07
+    :deadline: 2016-02-01 19:40:00
+    :pct_required: 80
+    :points: 50
+
 
 * **By Tuesday night, 2/2:**
   * Read chapter 5 of The Most Human Human
@@ -34,6 +41,14 @@ You have the following graded activities:
 
   * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
   * Read :ref:`Strategy for building programs <build_program_chap>`
+
+.. usageassignment:: prep_08
+    :chapters: Dictionaries
+    :subchapters: BuildingAProgram/TheStrategy
+    :assignment_name: Prep 08
+    :deadline: 2016-02-03 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **By Sunday evening, 2/7:**
   
