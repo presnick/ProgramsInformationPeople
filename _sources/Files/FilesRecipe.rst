@@ -15,13 +15,12 @@ Here's a foolproof recipe for processing the contents of a text file. If you've 
 
 #2. Use ``.readlines()`` to get a list of the lines of text in the file.
 
-#3. Use a ``for`` loop to iterate through the strings in the list, each being one line from the file.
-
-    * On each iteration, process that line of text
+#3. Use a ``for`` loop to iterate through the strings in the list, each being one line from the file. On each iteration, process that line of text
 
 #4. Close the file with ``.close()``
 
 ::
+
    fname = "yourfile.txt"
    fileref = open(fname,"r")   # step 1
    lines = fileref.readlines() # step 2
