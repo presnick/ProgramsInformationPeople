@@ -63,6 +63,7 @@ instructions that all turtles know how to respond to.
     Modify the program by adding the commands necessary to have *alex* complete the
     rectangle.
 
+
 **Check your understanding**
 
 .. mchoicemf:: test_question3_1_0

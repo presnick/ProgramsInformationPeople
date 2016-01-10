@@ -37,17 +37,10 @@ Method      Parameters          Description
 ==========  ==============      ==================================================================
 upper       none                Returns a string in all uppercase
 lower       none                Returns a string in all lowercase
-capitalize  none                Returns a string with first character capitalized, the rest lower
 
 strip       none                Returns a string with the leading and trailing whitespace removed
-lstrip      none                Returns a string with the leading whitespace removed
-rstrip      none                Returns a string with the trailing whitespace removed
 count       item                Returns the number of occurrences of item
 replace     old, new            Replaces all occurrences of old substring with new
-
-center      width               Returns a string centered in a field of width spaces
-ljust       width               Returns a string left justified in a field of width spaces
-rjust       width               Returns a string right justified in a field of width spaces
 
 find        item                Returns the leftmost index where the substring item is found
 rfind       item                Returns the rightmost index where the substring item is found
@@ -68,8 +61,6 @@ change the original.  You can also consult the `Python documentation for strings
     print els
 
     print "***"+ss.strip()+"***"
-    print "***"+ss.lstrip()+"***"
-    print "***"+ss.rstrip()+"***"
 
     news = ss.replace("o", "***")
     print news
@@ -79,11 +70,7 @@ change the original.  You can also consult the `Python documentation for strings
 
 
     food = "banana bread"
-    print food.capitalize()
-
-    print "*"+food.center(25)+"*"
-    print "*"+food.ljust(25)+"*"     #stars added to show bounds
-    print "*" +food.rjust(25)+"*"
+    print food.upper()
 
     print food.find("e")
     print food.find("na")
