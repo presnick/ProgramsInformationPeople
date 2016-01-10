@@ -173,7 +173,7 @@ Files
    Files/ReadingaFile.rst
    Files/AlternativeFileReadingMethods.rst
    Files/Iteratingoverlinesinafile.rst
-   Files/FilesCookbook.rst
+   Files/FilesRecipe.rst
    Files/WritingTextFiles.rst
    Files/Glossary.rst
    Files/Exercises.rst
