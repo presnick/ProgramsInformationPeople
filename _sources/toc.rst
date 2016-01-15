@@ -501,7 +501,7 @@ Unix
 
    Unix/CommandPrompt.rst
    Unix/FoldersAndPaths.rst
-   Unix/DirectoriesAndCopying
+   Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
 Indices and tables
