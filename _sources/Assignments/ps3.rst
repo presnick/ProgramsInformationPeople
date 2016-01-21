@@ -30,15 +30,16 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
+* **Before Tuesday 1/26 at midnight:**
+
+  * Read Chapter 3 of the Most Human Human
+  * Answer `Reading Response 4 <https://umich.instructure.com/courses/48961/assignments/57679>`_ on Canvas.
 
 * **Before Wednesday's class, 1/27:**
   
   * Read :ref:`Conditionals <conditionals_chap>` and do exercises
   * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
   * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
-
-  * Read Chapter 3 of the Most Human Human
-  * Answer `Reading Response 4 <https://umich.instructure.com/courses/48961/assignments/57679>`_ on Canvas.
 
 .. usageassignment:: prep_06
     :chapters: Selection, Files
