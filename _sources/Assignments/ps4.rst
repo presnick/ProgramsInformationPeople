@@ -34,6 +34,7 @@ You have the following graded activities:
 
 
 * **By Tuesday midnight, 2/2:**
+
   * Read chapter 5 of The Most Human Human
   * Answer `Reading Response 5 <https://umich.instructure.com/courses/48961/assignments/57680>`_ on Canvas.
 

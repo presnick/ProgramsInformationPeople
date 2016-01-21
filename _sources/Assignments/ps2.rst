@@ -17,8 +17,8 @@ Activities through 1/24
 
 You have the following graded activities:
 
-* **Before Tuesday 1/19 at midnight:** 
-  (Changed for clarity in retrospect: amnesty granted for W16 until 1/21 midnight)
+* **Before Tuesday 1/19 at midnight:** (Changed for clarity in retrospect: amnesty granted for W16 until 1/21 midnight)
+
   * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
 
 * **Before Wednesday's class 1/20** (no class Monday for MLK Day):
