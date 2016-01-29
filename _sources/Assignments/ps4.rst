@@ -132,12 +132,12 @@ Problem Set
    try: 
       test.testEqual(num_chickens, animals['chickens'])
    except:
-      print "either num_chickens or animal['chickens'] is undefined"
+      print "Something is is undefined so this test cannot run. Read the directions again!\n"
 
    try:
       test.testEqual(animals['yak'], 3)
    except:
-      print "key 'yak' is not set in dictionary num_chickens"
+      print "key 'yak' is not yet set in dictionary num_chickens"
       
    test.testEqual(animals['dogs'], 2)
 
