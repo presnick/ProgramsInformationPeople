@@ -303,4 +303,27 @@ interpreter does these steps:
            
        print square(g(2))
 
+.. mchoicemf:: test_questionfunctions_2_7
+   :answer_a: 3
+   :answer_b: 2
+   :answer_c: None
+   :correct: b
+   :feedback_a: The function gets to a return statement after 2 lines are printed, so the third print statement will not run.
+   :feedback_b: Yes! Two printed lines, and then the function body execution reaches a return statement.
+   :feedback_c: No, the function does return an integer value. This code does not print out the result of the function invocation, so you can't see it (print is for people).
+   
+   
+   How many lines will the following code print?
+   
+   .. code-block:: python
 
+       def show_me_numbers(list_of_ints):
+           print 10
+           print "Next we'll accumulate the sum"
+           accum = 0
+           for num in list_of_ints:
+               accum = accum + num
+           return accum
+           print "All done with accumulation!"
+
+       show_me_numbers([4,2,3])
