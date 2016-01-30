@@ -126,10 +126,10 @@ In this case, you'll be using conditional statements in the code that exists in 
 
 First, an English plan for this new function to define called ``longer_than_five``:
 
-- You'll want to pass in a list of strings (representing people's first names) to the function.
-- You'll want to iterate over all the items in the list, each of the strings.
-- As soon as you get to one name that is longer than five letters, you know the function should return ``True`` -- yes, there is at least one name longer than five letters! 
-- And if you go through the whole list and there was no name longer than five letters, then the function should return ``False``.
+* You'll want to pass in a list of strings (representing people's first names) to the function.
+* You'll want to iterate over all the items in the list, each of the strings.
+* As soon as you get to one name that is longer than five letters, you know the function should return ``True`` -- yes, there is at least one name longer than five letters! 
+* And if you go through the whole list and there was no name longer than five letters, then the function should return ``False``.
 
 Now, the code:
 
@@ -140,12 +140,15 @@ Now, the code:
           if len(name) > 5: # as soon as you see a name longer than 5 letters,
               return True # then return True!
               # If Python executes that return statement, the function is over and the rest of the code will not run -- you already have your answer!
-      return False # You will only get to this line if you iterated over the whole list and did not get a name where the if expression evaluated to True, so at this point, it's correct to return False!
+      return False # You will only get to this line if you
+      # iterated over the whole list and did not get a name where 
+      # the if expression evaluated to True, so at this point, 
+      # it's correct to return False!
 
    # Here are a couple sample calls to the function with different lists of names. Try running this code in Codelens a few times and make sure you understand exactly what is happening.
 
    list1 = ["Sam","Tera","Sal","Paul"]
-   list2 = ["Jack","Ayo","Chanda","Natalie"]
+   list2 = ["Rey","Ayo","Lauren","Natalie"]
 
    print longer_than_five(list1)
    print longer_than_five(list2)
@@ -310,7 +313,7 @@ interpreter does these steps:
    :correct: b
    :feedback_a: The function gets to a return statement after 2 lines are printed, so the third print statement will not run.
    :feedback_b: Yes! Two printed lines, and then the function body execution reaches a return statement.
-   :feedback_c: No, the function does return an integer value. This code does not print out the result of the function invocation, so you can't see it (print is for people).
+   :feedback_c: The function does return an integer value! However, this code does not print out the result of the function invocation, so you can't see it (print is for people).
    
    
    How many lines will the following code print?
