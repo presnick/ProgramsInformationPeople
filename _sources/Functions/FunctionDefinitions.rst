@@ -75,10 +75,10 @@ Here's the definition of a simple function, hello.
 
 .. activecode:: functions_1
 
-   def hello():
-      """This function says hello and greets you"""
-      print "Hello"
-      print "Glad to meet you"
+    def hello():
+        """This function says hello and greets you"""
+        print "Hello"
+        print "Glad to meet you"
 
 .. admonition::  docstrings
 
