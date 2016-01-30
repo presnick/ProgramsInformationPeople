@@ -108,9 +108,9 @@ it to make sure you understand why "there" and 10 never print out.
 
   def weird():
       print "here"
-      return(5)
+      return 5
       print "there"
-      return(10)
+      return 10
       
   x = weird()
   print x
@@ -312,7 +312,7 @@ interpreter does these steps:
    :correct: b
    :feedback_a: The function gets to a return statement after 2 lines are printed, so the third print statement will not run.
    :feedback_b: Yes! Two printed lines, and then the function body execution reaches a return statement.
-   :feedback_c: The function does return an integer value! However, this code does not print out the result of the function invocation, so you can't see it (print is for people).
+   :feedback_c: The function returns an integer value! However, this code does not print out the result of the function invocation, so you can't see it (print is for people). The only lines you see printed are the ones that occur in the print statements before the return statement.
    
    
    How many lines will the following code print?
