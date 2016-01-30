@@ -112,8 +112,8 @@ it to make sure you understand why "there" and 10 never print out.
       print "there"
       return(10)
       
-   x= weird()
-   print x
+  x = weird()
+  print x
 
 
 The fact that a return statement immediately ends execution of the code block inside a function is important to understand for writing complex programs, and it can also be very useful. The following example is a situation where you can use this to your advantage -- and understanding this will help you understand other people's code better, and be able to walk through code more confidently.
@@ -135,7 +135,7 @@ Now, the code:
 
 .. activecode:: functions_5b
 
-   def longer_than_five(list_of_names):
+  def longer_than_five(list_of_names):
       for name in list_of_names: # iterate over the list to look at each name
           if len(name) > 5: # as soon as you see a name longer than 5 letters,
               return True # then return True!
@@ -144,13 +144,13 @@ Now, the code:
       # iterated over the whole list and did not get a name where 
       # the if expression evaluated to True, so at this point, it's correct to return False!
 
-   # Here are a couple sample calls to the function with different lists of names. Try running this code in Codelens a few times and make sure you understand exactly what is happening.
+  # Here are a couple sample calls to the function with different lists of names. Try running this code in Codelens a few times and make sure you understand exactly what is happening.
 
-   list1 = ["Sam","Tera","Sal","Paul"]
-   list2 = ["Rey","Ayo","Lauren","Natalie"]
+  list1 = ["Sam","Tera","Sal","Paul"]
+  list2 = ["Rey","Ayo","Lauren","Natalie"]
 
-   print longer_than_five(list1)
-   print longer_than_five(list2)
+  print longer_than_five(list1)
+  print longer_than_five(list2)
 
 
 So far, we have just seen return values being assigned to variables. For example, 
