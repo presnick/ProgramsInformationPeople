@@ -106,7 +106,7 @@ it to make sure you understand why "there" and 10 never print out.
 
 .. activecode:: functions_5a
 
-   def weird():
+  def weird():
       print "here"
       return(5)
       print "there"
@@ -142,8 +142,7 @@ Now, the code:
               # If Python executes that return statement, the function is over and the rest of the code will not run -- you already have your answer!
       return False # You will only get to this line if you
       # iterated over the whole list and did not get a name where 
-      # the if expression evaluated to True, so at this point, 
-      # it's correct to return False!
+      # the if expression evaluated to True, so at this point, it's correct to return False!
 
    # Here are a couple sample calls to the function with different lists of names. Try running this code in Codelens a few times and make sure you understand exactly what is happening.
 
