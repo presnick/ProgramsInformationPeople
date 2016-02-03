@@ -137,7 +137,7 @@ Problem Set
    try:
       test.testEqual(animals['yak'], 3)
    except:
-      print "key 'yak' is not yet set in dictionary num_chickens"
+      print "key 'yak' is not yet set in dictionary animals"
       
    test.testEqual(animals['dogs'], 2)
 
