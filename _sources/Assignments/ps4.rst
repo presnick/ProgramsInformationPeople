@@ -44,7 +44,7 @@ You have the following graded activities:
   * Read :ref:`Strategy for building programs <build_program_chap>`
 
 .. usageassignment:: prep_08
-    :chapters: Dictionaries
+    :chapters: DictionaryAccumulation
     :subchapters: BuildingAProgram/TheStrategy
     :assignment_name: Prep 08
     :deadline: 2016-02-03 19:40:00

@@ -74,19 +74,19 @@ function are in separate boxes.
 
 
 There is one more aspect of function return values that should be noted.  
-All Python functions return the value ``None`` unless there is an explicit return statement with
+All Python functions return the special value ``None`` unless there is an explicit return statement with
 a value other than ``None.``
 Consider the following common mistake made by beginning Python
 programmers.  As you step through this example, pay very close attention to the return
 value in the local variables listing.  Then look at what is printed when the
-function returns.
+function is over.
 
 
 .. codelens:: ch04_clsquare_bad
 
     def square(x):
         y = x * x
-        print y   # Bad! should use return instead!
+        print y   # Bad! This is confusing! Should use return instead!
 
     toSquare = 10
     squareResult = square(toSquare)
@@ -106,21 +106,59 @@ it to make sure you understand why "there" and 10 never print out.
 
 .. activecode:: functions_5a
 
-   def weird():
+  def weird():
       print "here"
-      return(5)
+      return 5
       print "there"
-      return(10)
+      return 10
       
-   x= weird()
-   print x
+  x = weird()
+  print x
+
+
+The fact that a return statement immediately ends execution of the code block inside a function is important to understand for writing complex programs, and it can also be very useful. The following example is a situation where you can use this to your advantage -- and understanding this will help you understand other people's code better, and be able to walk through code more confidently.
+
+Consider a situation where you want to write a function to find out, from a class attendance list, whether anyone's first name is longer than five letters, called ``longer_than_five``. If there is anyone in class whose first name is longer than 5 letters, the function should return ``True``. Otherwise, it should return ``False``. 
+
+In this case, you'll be using conditional statements in the code that exists in the **function body**, the code block indented underneath the function definition statement (just like the code that starts with the line ``print "here"`` in the example above -- that's the body of the function ``weird``, above).
+
+**Bonus challenge for studying:** After you look at the explanation below, stop looking at the code -- just the description of the function above it, and try to write the code yourself! Then test it on different lists and make sure that it works. But read the explanation first, so you can be sure you have a solid grasp on these function mechanics.
+
+First, an English plan for this new function to define called ``longer_than_five``:
+
+* You'll want to pass in a list of strings (representing people's first names) to the function.
+* You'll want to iterate over all the items in the list, each of the strings.
+* As soon as you get to one name that is longer than five letters, you know the function should return ``True`` -- yes, there is at least one name longer than five letters! 
+* And if you go through the whole list and there was no name longer than five letters, then the function should return ``False``.
+
+Now, the code:
+
+.. activecode:: functions_5b
+
+  def longer_than_five(list_of_names):
+      for name in list_of_names: # iterate over the list to look at each name
+          if len(name) > 5: # as soon as you see a name longer than 5 letters,
+              return True # then return True!
+              # If Python executes that return statement, the function is over and the rest of the code will not run -- you already have your answer!
+      return False # You will only get to this line if you
+      # iterated over the whole list and did not get a name where 
+      # the if expression evaluated to True, so at this point, it's correct to return False!
+
+  # Here are a couple sample calls to the function with different lists of names. Try running this code in Codelens a few times and make sure you understand exactly what is happening.
+
+  list1 = ["Sam","Tera","Sal","Paul"]
+  list2 = ["Rey","Ayo","Lauren","Natalie"]
+
+  print longer_than_five(list1)
+  print longer_than_five(list2)
+
 
 So far, we have just seen return values being assigned to variables. For example, 
 we had the line ``squareResult = square(toSquare)``. As with all assignment statements,
-the right hand side is executed first. It invokes the square function, passing in a
-parameter value 10 (the current value of toSquare). That returns a value 100, which
+the right hand side is executed first. It invokes the ``square`` function, passing in a
+parameter value 10 (the current value of ``toSquare``). That returns a value 100, which
 completes the evaluation of the right-hand side of the assignment. 100 is then assigned
-to the variable squareResult. In this case, the function invocation was the entire expression
+to the variable ``squareResult``. In this case, the function invocation was the entire expression
 that was evaluated.
 
 Function invocations, however, can also be used as part of more complicated expressions. 
@@ -267,4 +305,27 @@ interpreter does these steps:
            
        print square(g(2))
 
+.. mchoicemf:: test_questionfunctions_2_7
+   :answer_a: 3
+   :answer_b: 2
+   :answer_c: None
+   :correct: b
+   :feedback_a: The function gets to a return statement after 2 lines are printed, so the third print statement will not run.
+   :feedback_b: Yes! Two printed lines, and then the function body execution reaches a return statement.
+   :feedback_c: The function returns an integer value! However, this code does not print out the result of the function invocation, so you can't see it (print is for people). The only lines you see printed are the ones that occur in the print statements before the return statement.
+   
+   
+   How many lines will the following code print?
+   
+   .. code-block:: python
 
+       def show_me_numbers(list_of_ints):
+           print 10
+           print "Next we'll accumulate the sum"
+           accum = 0
+           for num in list_of_ints:
+               accum = accum + num
+           return accum
+           print "All done with accumulation!"
+
+       show_me_numbers([4,2,3])

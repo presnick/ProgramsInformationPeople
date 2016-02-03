@@ -24,23 +24,26 @@ and makes it visible to the land of the human observer.
 
    **Print is for people**. Remember that slogan. Printing has no effect on the ongoing execution of a program. It doesn't assign a value to a variable. It doesn't return a value from a function call.
 
-If you're confused, chances are it not's really about the print statement but
-about returned values and the evaluation of complex expressions. A function that
+If you're confused, chances are the source of your confusion is really about returned values and the evaluation of complex expressions. A function that
 returns a value is producing a value for use *by the program*, in particular for
 use in the part of the code where the function was invoked. Remember that when a function
-is invoked, control passes to the function, meaning that the function's code block
-is executed. But when the function returns, control goes back to the calling location,
+is invoked, the function's code block
+is executed -- all that code indented under the ``def`` statement gets executed, following the rules of the Python formal language for what should and should not execute as it goes. But when the function returns, control goes back to the calling location,
 and a return value may come back with it.
 
-If a returned value is for use *by the program*, what is it used for? There are
+You've already seen some function calls in Chapter 1. When we told you about the function ``square`` that we defined, you saw that the expression ``square(2)`` evaluated to the integer value ``4``. 
+
+That's because the ``square`` function *returns* a value: the square of whatever input is passed into it. 
+
+If a returned value is for use *by the program*, why did you make that function invocation to return a value? What do you use the result of the function call for? There are
 three possibilities.
 
 #. Save it for later. 
     The returned value may be:
     
-    * Assigned to a variable. For example, `w = square(3)`
-    * Put in a list. For example, `L.append(square(3))`
-    * Put in a dictionary. For example, `d[3] = square(3)`
+    * Assigned to a variable. For example, ``w = square(3)``
+    * Put in a list. For example, ``L.append(square(3))``
+    * Put in a dictionary. For example, ``d[3] = square(3)``
 
 #. Use it in a more complex expression. 
     In that case, think of the return value as 
