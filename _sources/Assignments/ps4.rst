@@ -191,6 +191,7 @@ Problem Set
 
    ====
 
+   import test
    print "\n---\n\n"
    tmp = []
    for l in open("about_programming.txt").readlines():
@@ -215,7 +216,7 @@ Problem Set
   import test
   try:
     test.testEqual(nums["two"],0)
-    test.testEqual(type(nums["seventeen"],type(3)))
+    test.testEqual(type(nums["seventeen"]),type(3))
     test.testEqual(nums,{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0})
   except:
     print "You've created an error somewhere or have not completed this problem."
