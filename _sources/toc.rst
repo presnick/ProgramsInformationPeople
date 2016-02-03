@@ -504,6 +504,14 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
+In Class Code Samples
+:::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   InClass/DictionaryAccum.rst
+
 Indices and tables
 ::::::::::::::::::
 
