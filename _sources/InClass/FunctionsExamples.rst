@@ -9,7 +9,113 @@
 Dictionary Accumulation In Class Code Samples
 =============================================
 
+This first code box is provided for your convenience: you can put any code in here and try things out.
+
+.. activecode:: session9_free
+
+    # You can put any code here.
+
+
+For each of the following code samples, answer these questions:
+* How many inputs (arguments) does this function take?
+* What type of inputs (arguments) does this function take?
+* What does this function return?
+
+And once you have the answers to those, consider this:
+* Why would a programmer define this function? 
+* If you had this function available to you, this function make code you wrote earlier in this semester easier?
+
 .. activecode:: session9_0
 
-    mystr = 'By a route obscure and lonely, haunted by ill angels only'
+
+    def get_last_letter(s):
+        return s[-1]
+
+    # example invocations of get_last_letter function
+
+    # here are some values stored in variables 
+    # which you could use as input to the function
+    original_str = "the quick brown rhino jumped over the extremely lazy fox"
+    another_str = "by a route obscure and lonely, haunted by ill angels only"
+
+    get_last_letter(original_str)
+    # in a print statement
+    print get_last_letter(original_str)
+    # in an assignment statement
+    lett = get_last_letter(another_str)
+    print lett
+
+
+.. activecode:: session9_1
     
+    def show_key_val_pairs(diction):
+        for key in diction:
+            print key, diction[key]
+        return None
+    
+    # example invocation of the show_key_val_pairs function
+    animals = {'cows': 2, 'chickens': 8, 'pigs': 4, 'mice': 72, 'cats': 9,'dogs': 1}
+    new_diction = {"autumn":"spring", "well":"spring", "4":"seasons","23":345} 
+
+    # predict what will print out here before you try it!
+    show_key_val_pairs(animals)
+    print show_key_val_pairs(animals)
+
+    show_key_val_pairs(new_diction)
+    res = show_key_val_pairs(new_diction)
+    print res
+
+
+.. activecode:: session9_2
+
+    def find_list_element(inp_lst, num):
+        return inp_lst[num]
+
+    # example invocations of find_list_element
+    l = [2,"hello",4,7,False,9.6,5]
+    new_l = ["106","206","330","334","110"]
+
+    n = find_list_element(l,3)
+    print n
+
+    b = find_list_element(l,-2)
+    print b
+
+    print find_list_element(new_l,1)
+
+    print "I am in the class with the number", find_list_element(new_l,0)
+
+
+.. activecode:: session9_3
+
+    def get_acronym(list_of_strs):
+        accum_str = ""
+        for s in list_of_strs:
+            accum_str = accum_str + s[0]
+        return accum_str
+
+    # example invocations
+    words = ["PRAY", "YOU", "TOOK", "HER", "ONLY", "NEEDLE"]
+    print get_acronym(words)
+ 
+    print get_acronym(["YO","IS","KRAZY-GLUE","EVEN","SURPRISING"])
+
+
+.. activecode:: session9_4
+
+    def get_list_of_even_nums(list_of_ints):
+        accum_lst = []
+        for num in list_of_ints:
+            if num % 2 == 0:
+                accum_lst.append(num)
+        return accum_lst
+
+    # example invocations
+    li = [2,5,7,4,10,12,3]
+
+    print get_list_of_even_nums(li)
+
+    print get_list_of_even_nums([3,3,7])
+
+
+
