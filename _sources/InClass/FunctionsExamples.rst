@@ -118,4 +118,55 @@ And once you have the answers to those, consider this:
     print get_list_of_even_nums([3,3,7])
 
 
+Multiple function calls in the same expression!
+
+.. activecode:: session9_5
+
+    x = 4 
+    z = 17 
+
+    def prof_resnick_function(x):
+        return x*x
+    def jackie_function(y):
+        return y +3  
+    def student_function(z):
+        return z * 2
+
+    print prof_resnick_function(jackie_function(student_function(2))
+
+
+Local and global scope: BE CAREFUL.
+
+.. activecode:: session9_6
+
+    # BAD - Don't do stuff like this with function definitions
+    person_accum = 0
+
+    def how_many_letter(letter,sentence):
+        for ch in sentence:
+            if ch == letter:
+                person_accum = person_accum + 1
+        return person_accum
+
+
+    # GOOD
+    jackie_accum = 0
+
+    def how_many_letter(letter,sentence):
+        person_accum = 0
+        for ch in sentence:
+            if ch == letter:
+                person_accum = person_accum + 1
+        return person_accum
+
+    # try invoking this function
+
+    # sample sentences to use
+    s1 = "by a route obscure and lonely, haunted by ill angels only"
+    s2 = "when you come to a fork in the road, take it"
+    s3 = "small example"
+
+
+
+
 
