@@ -186,7 +186,8 @@ Problem Set
 3. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
 
 .. activecode:: ps_4_3
-
+   :available_files: about_programming.txt
+  
    # Write your code here!
 
    ====
