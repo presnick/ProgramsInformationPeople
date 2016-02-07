@@ -132,7 +132,7 @@ Multiple function calls in the same expression!
     def student_function(z):
         return z * 2
 
-    print prof_resnick_function(jackie_function(student_function(2))
+    print prof_resnick_function(jackie_function(student_function(2)))
 
 
 Local and global scope: BE CAREFUL.
