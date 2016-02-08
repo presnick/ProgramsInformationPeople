@@ -6,8 +6,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Dictionary Accumulation In Class Code Samples
-=============================================
+Functions In Class Code Samples
+===============================
 
 This first code box is provided for your convenience: you can put any code in here and try things out.
 
@@ -17,13 +17,11 @@ This first code box is provided for your convenience: you can put any code in he
 
 
 For each of the following code samples, answer these questions:
-* How many inputs (arguments) does this function take?
-* What type of inputs (arguments) does this function take?
-* What does this function return?
 
-And once you have the answers to those, consider this:
-* Why would a programmer define this function? 
-* If you had this function available to you, this function make code you wrote earlier in this semester easier?
+* How many inputs (arguments) does this function take?
+* What type of inputs (arguments) does this function expect?
+* What does this function return?
+* What will print out?
 
 .. activecode:: session9_0
 
@@ -72,18 +70,18 @@ And once you have the answers to those, consider this:
         return inp_lst[num]
 
     # example invocations of find_list_element
-    l = [2,"hello",4,7,False,9.6,5]
-    new_l = ["106","206","330","334","110"]
+    L = [2,"hello",4,7,False,9.6,5]
+    new_L = ["106","206","330","334","110"]
 
-    n = find_list_element(l,3)
+    n = find_list_element(L,3)
     print n
 
-    b = find_list_element(l,-2)
+    b = find_list_element(L,-2)
     print b
 
-    print find_list_element(new_l,1)
+    print find_list_element(new_L,1)
 
-    print "I am in the class with the number", find_list_element(new_l,0)
+    print "I am in the class with the number", find_list_element(new_L,0)
 
 
 .. activecode:: session9_3
@@ -122,8 +120,6 @@ Multiple function calls in the same expression!
 
 .. activecode:: session9_5
 
-    x = 4 
-    z = 17 
 
     def prof_resnick_function(x):
         return x*x
@@ -139,25 +135,39 @@ Local and global scope: BE CAREFUL.
 
 .. activecode:: session9_6
 
+    x = 4
+    z = 17
+
+    def prof_resnick_function(x):
+        return x*x
+    def jackie_function(x):
+        return x + 3
+    def student_function(x):
+        return x * 2
+
+    print prof_resnick_function(jackie_function(student_function(2)))
+
+
+
+.. activecode:: session9_7
+
     # BAD - Don't do stuff like this with function definitions
-    person_accum = 0
+    accum = 0
 
     def how_many_letter(letter,sentence):
         for ch in sentence:
             if ch == letter:
-                person_accum = person_accum + 1
-        return person_accum
-
+                accum += 1
+        return accum
 
     # GOOD
-    jackie_accum = 0
 
-    def how_many_letter(letter,sentence):
-        person_accum = 0
+    def better(letter,sentence):
+        accum = 0
         for ch in sentence:
             if ch == letter:
-                person_accum = person_accum + 1
-        return person_accum
+                accum += 1
+        return accum
 
     # try invoking this function
 
@@ -166,7 +176,57 @@ Local and global scope: BE CAREFUL.
     s2 = "when you come to a fork in the road, take it"
     s3 = "small example"
 
+    print how_many_letter('a', s1)
+    print how_many_letter('x', s3)
+
+    print better('a', s1)
+    print better('x', s3)
 
 
+``return`` ends the execution, even if there's more code
+
+.. activecode:: session9_8
+
+    def f(nums):
+        accum = 0
+        for num in nums:
+            accum += num
+            return accum
+        print "all done"
+
+    print f([2, 4, 6, 8])
+
+Without a ``return`` statement, the function returns None, when it runs out of code to execute (at the bottom of the function).
+
+.. activecode:: session9_9
+
+    def f(nums):
+        accum = 0
+        for num in nums:
+            accum += num
+        print "all done"
+
+    print f([2, 4, 6, 8])
+
+You have to do something with returned values, else they get discarded
+
+.. activecode:: session9_10
+
+    def f(nums):
+        accum = 0
+        for num in nums:
+            accum += num
+        return accum
+
+    f([2, 4, 6, 8])
+
+Write a function definition that takes three numbers as inputs and returns the sum of all three
+
+.. activecode:: session9_11
+
+    # define your function here
+
+
+    # invoke your function here and print out the results
 
 

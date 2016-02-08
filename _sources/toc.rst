@@ -511,6 +511,7 @@ In Class Code Samples
    :maxdepth: 2
 
    InClass/DictionaryAccum.rst
+   InClass/FunctionsExamples.rst
 
 Indices and tables
 ::::::::::::::::::
