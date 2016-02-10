@@ -93,21 +93,18 @@ Control flow structures with while loops
 
 .. activecode:: session10_5
 
-	fl = True
+	# Code to accumulate a list of odd numbers that the user enters
+	# And stop when the user types 0
 
-	special_letters = "aeiouy"
-
-	while fl:
-		entered = raw_input("Enter a single letter: ")
-		if entered not in special_letters:
+	n = 2
+	odd_nums_lst = []
+	while n != 0:
+		n = int(raw_input("Enter a number. Enter 0 to quit:"))
+		if n % 2 == 0:
 			continue
+		odd_nums_lst.append(n)
 
-		if entered in special_letters:
-			fl = False
-			print "You guessed one of the special letters. You guessed:", entered
-			print "The special letters were: "
-			for ch in special_letters:
-				print ch
+	print "List of odd numbers you entered:", odd_nums_lst
 
 
 .. activecode:: session10_6
@@ -119,14 +116,12 @@ Control flow structures with while loops
 	while fl:
 		entered = raw_input("Enter a single letter: ")
 
-		if len(entered) > 1:
-			print "You broke the rules! Game over."
+		if entered == "quit":
 			break
-
-		if entered not in special_letters:
+		elif len(entered) > 1:
+			print "You broke the rules! Try again."
 			continue
-
-		if entered in special_letters:
+		elif entered in special_letters:
 			fl = False
 			print "You guessed one of the special letters. You guessed:", entered
 			print "The special letters were:"
