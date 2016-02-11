@@ -21,9 +21,9 @@ You have the following graded activities:
     * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and do the exercises in that chapter
 
 * **By Tuesday 2/16 midnight:**
-    * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below).
+    * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below)
     * Read *The Most Human Human*, Chapter 10, p.237-259.
-    * Answer Reading Response 7 in the textbook.
+    * Answer `Reading Response 7 <https://umich.instructure.com/courses/48961/assignments/57683>`_ on Canvas.
 
 .. usageassignment:: prep_11
     :chapters: OptionalAndKeywordParameters
@@ -44,24 +44,23 @@ You have the following graded activities:
     :points: 50
 
 * By Sunday 02/21 at 5PM:
-   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`, including :ref:`Unix problems <unix_pset6>` (The Unix problems depend on doing the Problem Set first this time)
+   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`. 
 
 * By Monday 10/23 at 7PM:
-   * Be ready for the midterm exam (7 pm), see syllabus
+   * Be ready for the midterm exam (7 pm), see syllabus.
 
    * Updated study materials will be announced via Canvas.
 
    * Suggested practice for making best use of the problem sets for review
       * Go through all the problem sets, looking at your answers and fixing them if they weren't correct.
-      * Then make another pass through the problem sets. This time, don't look at your past answer or the solution set. Write new answers from scratch. See how quickly you can solve them. Make a note of any problems that take you a long time to solve.
+      * Then make another pass through the problem sets. This time, don't look at your past answer or any solution set. Write new answers from scratch. See how quickly you can solve them. Make a note of any problems that take you a long time to solve.
       * Repeat as necessary. On later iterations of this process, only redo the problems that you did not solve immediately on the previous iteration.
 
    * We have also included a bunch of practice problems below, at the bottom of this page. None of these are graded. Some have solutions.
 
 .. _unix_pset6:
 
-TBA Unix Problems
----   
+No Unix Problems this week. The last problem on the Problem Set involves using the native Python interpreter. This is your last problem set in the textbook environment, so make sure you have your Python interpreter installed and the process of running programs via the command line is working. You'll need to do so below!
 
 Problem Set
 -----------
@@ -75,9 +74,53 @@ Problem Set
 
       new_tuple_list = [(1,2),(4, "umbrella"),("chair","hello"),("soda",56.2)]
 
+2. Write three print statements with function calls to the function ``give_greeting``:
+
+   * one that will return the string ``Hello, SI106!!!``
+   * one that will return the string ``Hello, world!!!``
+   * and one that will return the string ``Hey, everybody!``
+
+You must write only the ``print`` command and function invocations of ``give_greeting`` to earn full credit on this problem.
+
+You can see the function definition in the code below, but that's only so you can understand exactly what the code is doing, so you can choose how to invoke this function. Feel free to make comments to help yourself understand, but otherwise DO NOT change the function definition code! **HINT:** calling the function with different inputs and printing the results, to see what happens, may be helpful! Make sure your final answer prints out all three of the strings listed above.
+
+.. activecode:: ps_5_6
+
+   def give_greeting(greet_word="Hello",name="SI106",num_exclam=3):
+      final_string = greet_word + ", " + name + "!"*num_exclam
+      return final_string
+
+   #### DO NOT change the function definition above this line (OK to add comments)
+
+   # Write your three function calls below
+
+   ====
+
+   import test
+   print "\n---\n\n"
+   print "There are no tests for this problem -- check your output."
 
 
-2. You can get data from Facebook that has nested structures which represent posts, or users, or various other types of things on Facebook. We won't put any of our actual Facebook group data on this textbook, because it's publicly available on the internet, but here's a structure that is almost exactly the same as the real thing, with fake data.
+3. Define a function called ``mult_both`` whose input is two integers, whose default parameter values are the integers 3 and 4. The function's return value should be the two input integers multiplied together.
+
+.. activecode:: ps_5_7
+
+   # Write your code here
+
+   ====
+
+   import test
+   print "\n---\n\n"
+   print "Testing whether your function works as expected (calling the function mult_both)"
+   try:
+      test.testEqual(mult_both(), 12)
+      test.testEqual(mult_both(5,10), 50)
+   except:
+      print "mult_both not defined or yields an error when invoked"
+
+
+
+4. You can get data from Facebook that has nested structures which represent posts, or users, or various other types of things on Facebook. We won't put any of our actual Facebook group data on this textbook, because the textbook is publicly available on the internet, but here's a structure that is almost exactly the same as the real thing, with fake data.
 
 Notice that the stuff in the variable ``fb_data`` is basically a big nested dictionary, with dictionaries and lists, strings and integers, inside it as keys and values. (Later in the course we'll learn how to get this kind of thing directly FROM facebook, and then it will be a bit more complicated and have real information from our Facebook group.)
 
@@ -85,7 +128,7 @@ Follow the directions in the comments!
 
 .. activecode:: ps_6_2
 
-      # first, look through the data structure saved in the variable fb_data to get a sense for it.
+      # First, look through the data structure saved in the variable fb_data to get a sense for it.
 
       fb_data = {
          "data": [
@@ -145,24 +188,25 @@ Follow the directions in the comments!
       # Now write a line of code to assign the value of the first 
       # message ("This problem might...") from the big fb_data data
       # structure to a variable called first_message. Do not hard code your answer! 
-      # (That is, write it in terms of fb_data, so that it would work
-      # with any content stored in the variable fb_data that has
+      # (That means, write it in terms of fb_data, so that it would work
+      # with any content stored in the variable fb_data which has
       # the same structure as that of the fb_data we gave you.)
+
+      # Write a second line of code to assign the value of the name of the second person who posted ("John Smythe") to a variable called second_name. Do not hard code your answer!
 
 
       ====
 
       import test
-      print "testing whether variable first_message was set correctly"
+      print "testing whether variables first_message and second_name were set correctly"
       try:
          test.testEqual(first_message,fb_data["data"][0]["message"])
+         test.testEqual(second_name,fb_data["data"][1]["from"]["name"])
       except:
          print "first_message not defined, or fb_data was changed"
 
 
-
-
-3. Now, in the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
+5. In the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
 
 .. image:: Figures/HangmanSample.JPG
 
@@ -172,7 +216,7 @@ See the flow chart below for a better understanding of what's happening in the c
 
 Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with elements of the code below. In later problems, you'll fill in a few details that aren't fully implemented here.  For this question, write which lines of code go with which lines of the flow chart box, by answering the questions in comments at the bottom of this activecode box. 
 
-(Note: you may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have. Those are the improvements you'll make in later problems.)
+(Note: you may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have. Allowing the game to do those things is what you'll do in later problems.)
 
 .. activecode:: ps_6_3
 
@@ -258,20 +302,18 @@ Your first task is just to understand the logic of the program, by matching up e
   # What line(s) of code do what's mentioned in box 11?
 
          
-4. The next task you have is to create a correct version of the blanked function:
+6. The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. It should return a string with the same number of characters as the word, but with the UNrevelaed characters replaced by a ``_``. **HINT:** Iterate through the letters in the word, accumulating characters as you go. If you try to iterate through the guesses, it's harder.
 
 .. activecode:: ps_6_4
 
-    # define the function blanked(). 
-    # It takes a word and a string of letters that have been revealed.
-    # It should return a string with the same number of characters as
-    # the original word, but with the unrevealed characters replaced by _
-    # HINT: iterate through the letters in the word, accumulating letters or
-    # underscores as you go. If you try to iterate through the guesses, it's harder.
          
-    # a sample call to this function:
-    print(blanked("hello", "elj"))
+    # Sample calls to this function
+    # (Remember, these won't work until you define the function blanked)
+    print blanked("hello", "elj")
     #should output _ell_
+    print blanked("almost","amsvr")
+    # should output a_m_s_ 
+
 
     ====
 
@@ -283,20 +325,22 @@ Your first task is just to understand the logic of the program, by matching up e
         test.testEqual(blanked("hello", ""), "_____")
         print "testing blanking of ground when r and n have been guessed"
         test.testEqual(blanked("ground", "rn"), "_r__n_")
+        print "testing blanking of almost when all the letters have been guessed"
+        test.testEqual(blanked("almost","vrnalmqpost"),"blanked")
     except:
         print "The function blanked has not been defined yet or has an error."
 
 
-5. Now you have to create a good version of the health_prompt() function.
+7. Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with + signs for the current health, and - signs for the health that has been lost so far.
 
 .. activecode:: ps_6_5
 
-    # Define the function health_prompt(). The first parameter should be the current
-    # health and the second should be the the maximum health you can have. It should return a string 
-    # with + signs for the current health, and - signs for the health that has been lost.
+    # Define your function here.
 
 
 
+
+    # Sample invocations of the function.
 
     print health_prompt(3, 7)
     #this statement should produce the output
@@ -314,11 +358,20 @@ Your first task is just to understand the logic of the program, by matching up e
         test.testEqual(health_prompt(3,7), "+++----")
         print "testing health_prompt(0, 4)"
         test.testEqual(health_prompt(0, 4), "----")
+        print "testing health_prompt(5,5)"
+        test.testEqual(health_prompt(5,5) "+++++")
     except:
         print "The function health_prompt is not defined or has an error"
 
    
-6. Now you have a fully functioning hangman program! Copy your two function definitions for the last two problems at the top of this code box. Then, make a change so that you initially start with 7 health instead of 3. Try playing the game with your friends! Don't forget to save your code.
+8. You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
+
+	Below is all of the code for the hangman program, *except* for the two functions you just defined in problems 6 and 7. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided for you to copy.)
+
+	Copy your two function definitions, from the last two problems, into a Python file, and save it as ``hangman.py`` in your ``106`` folder (anywhere in it you want). Then copy the code in the box below into that file, beneath the function definitions you just copied in.
+
+	Finally, make one more change to the program: add a little bit of code so that after a user types in a secret word to guess, 27 blank lines are printed. (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
+
 
 .. activecode:: ps_6_6
    
@@ -371,14 +424,13 @@ Your first task is just to understand the logic of the program, by matching up e
         print(feedback)
         print("The word was..." + secret_word)
 
-    import sys #don't worry about this line; you'll understand it next week
-    sys.setExecutionLimit(60000)     # let the game take up to a minute, 60 * 1000 milliseconds
     main()
 
 
 
-Practice Problems: Material Prior to Functions
-----------------------------------------------
+
+Practice Problems: Earlier Semester Material
+--------------------------------------------
 
 1. See comments in code for instructions.
 
@@ -386,6 +438,10 @@ Practice Problems: Material Prior to Functions
 
    s = "supercalifragilisticexpialidocious"
    # How many characters are in string s? Write code to print the answer.
+
+
+   # How many vowels are in string s? Write code to print the answer.
+
 
    lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
    # How many characters are in each element of list lp?
@@ -410,7 +466,7 @@ Practice Problems: Material Prior to Functions
    # What is the value if you add 5 to the integer in ic?
 
    dcm = [9, 4, 67, 89, 98324, 23, 34, 67, 89, 34, 56, 67, 90, 3242, 9893, 5]
-   # add 14 to each element of the list dcm and print the result
+   # add 14 to each element of the list dcm and print out the result from each computation
 
    # The output you get should be:
    # 23
@@ -435,7 +491,7 @@ Practice Problems: Material Prior to Functions
 .. actex:: rv_1_3
 
    pl = "keyboard smashing: sdgahgkslghgisaoghdwkltewighigohdjdslkfjisdoghkshdlfkdjgdshglsdkfdsgkldhfkdlsfhdsklghdskgdlhgsdklghdsgkdslghdskglsdgkhdskfls"
-   # What is the last character of the string value in the variable pl? Find it and print it.
+   # What is the last character of the string value in the variable pl? Find it and print it. Do not hard code (this should work no matter what string value pl has).
 
    plts = ["sdsagdsal","sdadfsfsk","dsgsafsal","tomorrow","cooperative","sdgadtx","289,670,452","!)?+)_="]
    # What is the last character of each element in the list plts?
@@ -708,6 +764,3 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
           print smallest_val_name_diff(d_new)
           # both these calls above print "Ellie"!
-
-
-
