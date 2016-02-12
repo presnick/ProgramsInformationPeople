@@ -60,7 +60,7 @@ You have the following graded activities:
 
 .. _unix_pset6:
 
-No Unix Problems this week. The last problem on the Problem Set involves using the native Python interpreter. This is your last problem set in the textbook environment, so make sure you have your Python interpreter installed and the process of running programs via the command line is working. You'll need to do so below!
+The last problem on the Problem Set involves using the native Python interpreter, and you will submit files to **Unix Problems 6** on Canvas following the directions in that problem. This is your last problem set in the textbook environment, so make sure you have your Python interpreter installed and the process of running programs via the command line is working.
 
 Problem Set
 -----------
@@ -92,7 +92,7 @@ You can see the function definition in the code below, but that's only so you ca
 
    #### DO NOT change the function definition above this line (OK to add comments)
 
-   # Write your three function calls below
+   # Write your three print statements with function calls below
 
    ====
 
@@ -203,7 +203,7 @@ Follow the directions in the comments!
          test.testEqual(first_message,fb_data["data"][0]["message"])
          test.testEqual(second_name,fb_data["data"][1]["from"]["name"])
       except:
-         print "first_message not defined, or fb_data was changed"
+         print "variable(s) not defined, fb_data was changed, or other error occurred"
 
 
 5. In the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
@@ -214,9 +214,11 @@ See the flow chart below for a better understanding of what's happening in the c
 
 .. image:: Figures/HangmanFlowchart.jpg
 
-Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with elements of the code below. In later problems, you'll fill in a few details that aren't fully implemented here.  For this question, write which lines of code go with which lines of the flow chart box, by answering the questions in comments at the bottom of this activecode box. 
+Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with elements of the code below. In later problems, you'll fill in a few details that aren't fully implemented here.  
 
-(Note: you may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have. Allowing the game to do those things is what you'll do in later problems.)
+For this question, write which lines of code go with which lines of the flow chart box, by answering the questions in comments at the bottom of this activecode box. 
+
+(Note: you may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have, and it won't stop if you guess all the letters, so you can't *really* play with this version of the code. Allowing the game to do those things is what you'll do in later problems!)
 
 .. activecode:: ps_6_3
 
@@ -302,7 +304,7 @@ Your first task is just to understand the logic of the program, by matching up e
   # What line(s) of code do what's mentioned in box 11?
 
          
-6. The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. It should return a string with the same number of characters as the word, but with the UNrevelaed characters replaced by a ``_``. **HINT:** Iterate through the letters in the word, accumulating characters as you go. If you try to iterate through the guesses, it's harder.
+6. The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). **HINT:** Iterate through the letters in the word, accumulating characters as you go. If you try to iterate through the guesses, it's harder.
 
 .. activecode:: ps_6_4
 
@@ -326,7 +328,7 @@ Your first task is just to understand the logic of the program, by matching up e
         print "testing blanking of ground when r and n have been guessed"
         test.testEqual(blanked("ground", "rn"), "_r__n_")
         print "testing blanking of almost when all the letters have been guessed"
-        test.testEqual(blanked("almost","vrnalmqpost"),"blanked")
+        test.testEqual(blanked("almost","vrnalmqpost"),"almost")
     except:
         print "The function blanked has not been defined yet or has an error."
 
@@ -359,18 +361,22 @@ Your first task is just to understand the logic of the program, by matching up e
         print "testing health_prompt(0, 4)"
         test.testEqual(health_prompt(0, 4), "----")
         print "testing health_prompt(5,5)"
-        test.testEqual(health_prompt(5,5) "+++++")
+        test.testEqual(health_prompt(5,5), "+++++")
     except:
         print "The function health_prompt is not defined or has an error"
 
    
-8. You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
+8. You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman. Directions follow.
 
 	Below is all of the code for the hangman program, *except* for the two functions you just defined in problems 6 and 7. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided for you to copy.)
 
 	Copy your two function definitions, from the last two problems, into a Python file, and save it as ``hangman.py`` in your ``106`` folder (anywhere in it you want). Then copy the code in the box below into that file, beneath the function definitions you just copied in.
 
 	Finally, make one more change to the program: add a little bit of code so that after a user types in a secret word to guess, 27 blank lines are printed. (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
+
+	Save this Python program, and run it with the command line: ``cd`` to the correct directory, and then type ``python hangman.py``, as you learned last week.
+
+	**Submit your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to Unix Problems 6 on Canvas.**
 
 
 .. activecode:: ps_6_6
@@ -434,7 +440,7 @@ Practice Problems: Earlier Semester Material
 
 1. See comments in code for instructions.
 
-.. actex:: rv_1_1
+.. activecode:: rv_1_1
 
    s = "supercalifragilisticexpialidocious"
    # How many characters are in string s? Write code to print the answer.
@@ -600,13 +606,15 @@ Practice Problems: Earlier Semester Material
 
 8. The following code runs, but not the way we expect it to. **You want to print out the first character of each string in the list of strings.** So the following output should print out:
 
-``
-h
-g
-l
-4
-6
-``
+``h``
+
+``g``
+
+``l``
+
+``4``
+
+``6``
 
 Instead, you'll see something different when you run the code. Go through it carefully, understand what is happening, and then fix the code so that the output above appears. Good practice: explain to someone else (or yourself) why exactly it is working incorrectly (semantic errors!) and what is happening on each line, and then fix it.
 
@@ -624,13 +632,13 @@ Functions Practice Problems
 
 We strongly suggest that you try to do the problems yourself before looking at the solutions (which are heavily commented)
 
-1. Define (and call) a function called `` get_vowels `` which takes an **input** of a string and **returns the total number of vowels in the string**.
+1. Define (and write an invocation of) a function called ``get_vowels`` which takes an **input** of a string and **returns the total number of vowels in the string**.
 
 .. tabbed:: func_review_1
 
   .. tab:: Problem
 
-      .. actex:: fr_1
+      .. activecode:: fr_1
 
           # Write your code here!
 
@@ -640,7 +648,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
   .. tab:: Solution
 
-      .. actex:: fr_1a
+      .. activecode:: fr_1a
 
           def get_vowels(s):
               vowels = "aeiou"
@@ -651,13 +659,13 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
           print get_vowels("Hello all")
 
-2. Define (and call) a function called `` sum_a_list `` which **takes any list of integers** and **returns the sum of all integers in the list**.
+2. Define (and call) a function called ``sum_a_list`` which **takes any list of integers** and **returns the sum of all integers in the list**.
 
 .. tabbed:: func_review_2
 
   .. tab:: Problem
 
-      .. actex:: fr_2
+      .. activecode:: fr_2
 
           # Write your code here!
 
@@ -673,7 +681,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
   .. tab:: Solution
 
-      .. actex:: fr_2a
+      .. activecode:: fr_2a
 
           def sum_a_list(lt): # function definition statement with one parameter
               tot = 0 # intiialize accumulator to 0
@@ -700,7 +708,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
   .. tab:: Problem
 
-      .. actex:: fr_3
+      .. activecode:: fr_3
 
           # Write your code here!
 
@@ -716,7 +724,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
   .. tab:: Solution
 
-      .. actex:: fr_3a
+      .. activecode:: fr_3a
 
           def common_word(s):
               d = {}
@@ -748,7 +756,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
   .. tab:: Problem
 
-      .. actex:: fr_4
+      .. activecode:: fr_4
 
           # Write your code here!
 
@@ -758,7 +766,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
   .. tab:: Solution
 
-      .. actex:: fr_4a
+      .. activecode:: fr_4a
 
           # Here's one solution
           def smallest_value_name(d):
