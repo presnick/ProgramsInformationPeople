@@ -460,7 +460,7 @@ Practice Problems: Earlier Semester Material
 
 2. See comments in code for instructions.
 
-.. actex:: rv_1_2
+.. activecode:: rv_1_2
 
    ic = 93252759253293024
    # What is the value if you add 5 to the integer in ic?
@@ -488,7 +488,7 @@ Practice Problems: Earlier Semester Material
 
 3. See comments in code for instructions.
 
-.. actex:: rv_1_3
+.. activecode:: rv_1_3
 
    pl = "keyboard smashing: sdgahgkslghgisaoghdwkltewighigohdjdslkfjisdoghkshdlfkdjgdshglsdkfdsgkldhfkdlsfhdsklghdskgdlhgsdklghdsgkdslghdskglsdgkhdskfls"
    # What is the last character of the string value in the variable pl? Find it and print it. Do not hard code (this should work no matter what string value pl has).
@@ -511,7 +511,7 @@ Practice Problems: Earlier Semester Material
 
 4. See comments in code for instructions.
 
-.. actex:: rv_1_4
+.. activecode:: rv_1_4
 
    bz = "elementary, my dear watson"
    # Write code to print the fifth character of string bz.
@@ -524,7 +524,7 @@ Practice Problems: Earlier Semester Material
 
 5. See comments in code for instructions.
 
-.. actex:: rv_1_5
+.. activecode:: rv_1_5
 
    nm = "Irene"
    # write code to print out the string "Why hello, Irene" using the variable nm.
@@ -546,7 +546,7 @@ Practice Problems: Earlier Semester Material
 
 6. See comments in code for instructions.
 
-.. actex:: rv_1_6
+.. activecode:: rv_1_6
 
    z = True
    # Write code to print the type of the value in the variable z.
@@ -557,7 +557,7 @@ Practice Problems: Earlier Semester Material
 
 7. See comments in code for instructions.
 
-.. actex:: rv_1_7
+.. activecode:: rv_1_7
 
    fancy_tomatoes = ["hello", 6, 4.24, 8, 20, "newspaper", True, "goodbye", "False", False, 5967834, "6578.31"]
 
@@ -597,6 +597,26 @@ Practice Problems: Earlier Semester Material
    # <type 'bool'>
    # <type 'int'>
    # <type 'str'>
+
+8. The following code runs, but not the way we expect it to. **You want to print out the first character of each string in the list of strings.** So the following output should print out:
+
+``
+h
+g
+l
+4
+6
+``
+
+Instead, you'll see something different when you run the code. Go through it carefully, understand what is happening, and then fix the code so that the output above appears. Good practice: explain to someone else (or yourself) why exactly it is working incorrectly (semantic errors!) and what is happening on each line, and then fix it.
+
+.. activecode:: rv_1_8
+
+   list_of_strings = ["hello","goodbye","lampshade","45","63"]
+   for i in list_of_strings:
+       if i in list_of_strings:
+           print list_of_strings[0]
+
 
 
 Functions Practice Problems
@@ -655,13 +675,13 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
       .. actex:: fr_2a
 
-          def sum_a_list(lt):
-              tot = 0
-              for i in lt:
-                  tot = tot + i
-              return tot
+          def sum_a_list(lt): # function definition statement with one parameter
+              tot = 0 # intiialize accumulator to 0
+              for i in lt: # iterate over the list that is passed in to the function
+                  tot = tot + i # each time you get to a new integer in the list, add that integer to the accumulator
+              return tot # the for loop is over, so outdent and return the accumulator from the function
 
-          print sum_a_list([1,4,7,5])
+          print sum_a_list([1,4,7,5]) # call the function, and print out the result with a print statement
 
           # Here's the version of the function that will work
           #   for EITHER a list of integers or a string of digits
@@ -743,11 +763,11 @@ We strongly suggest that you try to do the problems yourself before looking at t
           # Here's one solution
           def smallest_value_name(d):
               kys = d.keys() # returns a list of the keys in the dictionary d
-              m = kys[0]
-              for k in kys:
-                  if d[k] < d[m]:
-                      m = k
-              return m
+              m = kys[0] # start off examining the first key in the list
+              for k in kys: # for each key in the list of keys
+                  if d[k] < d[m]: # if the value associated with that key is smaller than the value associated with the key saved in the variable m (the smallest so far)
+                      m = k # then reassign m so it has the same value as this new key, k
+              return m # when the loop is over, m contains the key that has the smallest value, so return that from the function!
 
           # Here's another solution
           def smallest_val_name_diff(d):
@@ -759,8 +779,8 @@ We strongly suggest that you try to do the problems yourself before looking at t
               return tn[0]
 
           # Sample calls of these solution functions
-          d_new = {"Nick": 56, "Paul":73, "Jackie":42}
-          print smallest_value_name(d_new)
+          d_new = {"Nick": 42, "Paul":73, "Jackie":57}
+          print smallest_value_name(d_new) # should print Nick
 
           print smallest_val_name_diff(d_new)
-          # both these calls above print "Ellie"!
+          # both these calls above print Nick
