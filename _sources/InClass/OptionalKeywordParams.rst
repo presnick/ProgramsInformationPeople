@@ -7,16 +7,12 @@
     License".
 
 
-Review: Functions, Problem Solving
-==================================
-
-**PS 5, is_prefix**
-
-A few ways to do this problem
+Optional/Keyword Parameters Examples
+====================================
 
 
-Session 12 In Class Code Samples
-================================
+Session 12 In Class Code Samples: PS 5 Q 8
+------------------------------------------
 
 .. activecode:: session12_free
 	
@@ -24,70 +20,72 @@ Session 12 In Class Code Samples
 
 .. activecode:: session12_ps5_8_0
 
-	def is_prefix(s1, s2):
-    	return s1 == s2[0:len(s1)] 
-    
-	print is_prefix("he", "hello")
+  def is_prefix(s1, s2):
+	return s1 == s2[0:len(s1)] 
+
+  print is_prefix("he", "hello")
 
 .. activecode:: session12_ps5_8_1
 
-	def is_prefix(s1,s2):
-	    if s2.find(s1) == 0: #searches for s1 in s2, where s1 starts at index 0
-	       return True
-	    else:
-	       return False
+  def is_prefix(s1,s2):
+	if s2.find(s1) == 0: #searches for s1 in s2, where s1 starts at index 0
+	  return True
+	else:
+	  return False
 
-	print is_prefix("hel","hello")
+  print is_prefix("hel","hello")
 
 .. activecode:: session12_ps5_8_2
 
-	def is_prefix(s1, s2):
-    	return s1 == s2[0:len(s1)] 
+  def is_prefix(s1, s2):
+  	return s1 == s2[0:len(s1)] 
     
-	print is_prefix("he", "hello") 
+  print is_prefix("he", "hello") 
+
 
 .. activecode:: session12_ps5_8_ex
 
-	def is_prefix(s1,s2):
-    	return s2.find(s1) == 0
+  def is_prefix(s1,s2):
+  	return s2.find(s1) == 0
 
-    # To illustrate what we're doing with the boolean statement
-    if x > 0:
-    	print True
- 	else:
-    	print False
+  # To illustrate what we're doing with the boolean statement
+  if x > 0:
+  	print True
+  else:
+  	print False
 	
-	#That code does exactly the same thing as the following line of code    
- 	print x > 0
+  #That code does exactly the same thing as the following line of code    
+  print x > 0
+
 
 .. activecode:: session12_ps5_8_3
 
-	def is_prefix(s1, s2):# not quite right; why not?
-    	return s1 in s2  
+  def is_prefix(s1, s2):# not quite right; why not?
+  	return s1 in s2  
  
- 	print is_prefix("ell", "hello") 
- 	# will get True if the function just uses the in operator, and that's not a prefix
+  print is_prefix("ell", "hello") 
+  # will get True if the function just uses the in operator, and that's not a prefix
 
- 	# Rephrase this problem in English
- 	# and then translate to code (look stuff up!) 
+  # Rephrase this problem in English
+  # and then translate to code (look stuff up!) 
 
 .. activecode:: session12_ps5_8_4
 
-	# Example using the flag pattern you learned last week
-	# Can be used in any kind of iteration, not just indefinite iteration
+  # Example using the flag pattern you learned last week
+  # Can be used in any kind of iteration, not just indefinite iteration
 
-	def is_prefix(s1, s2):
-		is_it_good = True  # This is called a Boolean "flag"
-		for i in range(len(s1)):  # [0, 1]
-	    	if s1[i] != s2[i]:
-	        	is_it_good = False
-		return is_it_good
+  def is_prefix(s1, s2):
+  	is_it_good = True  # This is called a Boolean "flag"
+	for i in range(len(s1)):  # [0, 1]
+	if s1[i] != s2[i]:
+		is_it_good = False
+	return is_it_good
      
-  	print is_prefix("hel", "hello")
+  print is_prefix("hel", "hello")
 
 
 Review: Rephrasing problems in English
-======================================
+--------------------------------------
 
 .. activecode:: session12_free_grep
 
@@ -95,41 +93,42 @@ Review: Rephrasing problems in English
 
 
 Optional/Keyword Parameters Examples
-====================================
+------------------------------------
 
 .. activecode:: session12_01
 
-	# what should the parameter list for f be?
-	def f(): # Fill in the parameter list
-	    print z, x, y
+  # what should the parameter list for f be?
+  def f(): # Fill in the parameter list
+  	print z, x, y
 	    
-	f(1)  # should print 30 1 20    
-	f(2, 3) # should print 30 2 3    
-	f(3, 4, 5) # should print 5 3 4
+  f(1)  # should print 30 1 20    
+  f(2, 3) # should print 30 2 3    
+  f(3, 4, 5) # should print 5 3 4
 
-	# Next,
+  # Next,
 
-	f(2, 6) # what will it print? prints 30 2 6
-	f(2, z=6) # what will it print?
-	f(2, x=6) # what will it print?
+  f(2, 6) # what will it print? prints 30 2 6
+  f(2, z=6) # what will it print?
+  f(2, x=6) # what will it print?
 
-	# Also consider: what does the function f return?
+  # Also consider: what does the function f return?
 
 
- Here's a function count_vowels that takes a string and counts how many vowels are in it.
+Here's a function count_vowels that takes a string and counts how many vowels are in it.
 
 .. activecode:: session12_02
 
-	# here is a function count_vowels
-	def count_vowels(s):
-	    vowels = ['a', 'e', 'i', 'o', 'u'] 
-	    ct=0 
-	    for ch in s:
-	        if ch in vowels:
-	            ct = ct + 1
-	    return ct
+  # here is a function count_vowels
+  def count_vowels(s):
+  	vowels = ['a', 'e', 'i', 'o', 'u'] 
+	ct=0 
+	for ch in s:
+		if ch in vowels:
+			ct = ct + 1
+	return ct
 
-	# Example invocation and print statement
+  # Example invocation and print statement
+  print count_vowels("supercalifragilisticexpialidocious")
 
 
 Now using that as a basis, fill in the parameter list and the body of function count_lets, where the inputs to the function are a string and a list of letters, and the return value of the function is the number of letters in the string that are in the list of letters -- no matter what letters are in the list.
@@ -138,12 +137,12 @@ In other words, you should generalise the count_vowels function, to count the oc
 
 .. activecode:: session12_03
 
-	# fill in the parameter list and function body
+  # fill in the parameter list and function body
 
-	def count_lets():
-    	# fill this in
+  def count_lets():
+  	# fill this in
 
 
-    # example invocations with print statements
-	print count_lets("Once upon a midnight dreary", ['a', 'e', 'i', 'o', 'u']) 
-	print count_lets("Once upon a midnight dreary", ['l', 'm', 'm', 'o'])
+  # example invocations with print statements
+  print count_lets("Once upon a midnight dreary", ['a', 'e', 'i', 'o', 'u']) 
+  print count_lets("Once upon a midnight dreary", ['l', 'm', 'm', 'o'])
