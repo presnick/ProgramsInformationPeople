@@ -513,6 +513,7 @@ In Class Code Samples
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
+   InCalss/OptionalKeywordParams.rst
 
 Indices and tables
 ::::::::::::::::::
