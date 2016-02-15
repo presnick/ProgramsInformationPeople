@@ -84,7 +84,7 @@ You must write only the ``print`` command and function invocations of ``give_gre
 
 You can see the function definition in the code below, but that's only so you can understand exactly what the code is doing, so you can choose how to invoke this function. Feel free to make comments to help yourself understand, but otherwise DO NOT change the function definition code! **HINT:** calling the function with different inputs and printing the results, to see what happens, may be helpful! Make sure your final answer prints out all three of the strings listed above.
 
-.. activecode:: ps_5_6
+.. activecode:: ps_6_2
 
    def give_greeting(greet_word="Hello",name="SI106",num_exclam=3):
       final_string = greet_word + ", " + name + "!"*num_exclam
@@ -103,7 +103,7 @@ You can see the function definition in the code below, but that's only so you ca
 
 3. Define a function called ``mult_both`` whose input is two integers, whose default parameter values are the integers 3 and 4. The function's return value should be the two input integers multiplied together.
 
-.. activecode:: ps_5_7
+.. activecode:: ps_6_3
 
    # Write your code here
 
@@ -126,7 +126,7 @@ Notice that the stuff in the variable ``fb_data`` is basically a big nested dict
 
 Follow the directions in the comments!
 
-.. activecode:: ps_6_2
+.. activecode:: ps_6_4
 
       # First, look through the data structure saved in the variable fb_data to get a sense for it.
 
@@ -220,7 +220,7 @@ For this question, write which lines of code go with which lines of the flow cha
 
 (Note: you may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have, and it won't stop if you guess all the letters, so you can't *really* play with this version of the code. Allowing the game to do those things is what you'll do in later problems!)
 
-.. activecode:: ps_6_3
+.. activecode:: ps_6_5
 
   def blanked(word, guesses):
       return "blanked word"
@@ -306,7 +306,7 @@ For this question, write which lines of code go with which lines of the flow cha
          
 6. The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). **HINT:** Iterate through the letters in the word, accumulating characters as you go. If you try to iterate through the guesses, it's harder.
 
-.. activecode:: ps_6_4
+.. activecode:: ps_6_6
 
          
     # Sample calls to this function
@@ -335,7 +335,7 @@ For this question, write which lines of code go with which lines of the flow cha
 
 7. Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with + signs for the current health, and - signs for the health that has been lost so far.
 
-.. activecode:: ps_6_5
+.. activecode:: ps_6_7
 
     # Define your function here.
 
@@ -379,7 +379,7 @@ For this question, write which lines of code go with which lines of the flow cha
 	**Submit your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to Unix Problems 6 on Canvas.**
 
 
-.. activecode:: ps_6_6
+.. activecode:: ps_6_8
    
     def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
         res = "\n" + txt + "\n"
