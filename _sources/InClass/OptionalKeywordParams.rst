@@ -15,26 +15,6 @@ Review: Functions, Problem Solving
 A few ways to do this problem
 
 
-
-
-To illustrate why returning the boolean statement works:
-
-
-It gets evaluated! True, or False.
-
-
-
-This doesn't work: why not?
-
-
-Review: Rephrasing problems in English
-======================================
-
-.. activecode:: session12_free_1
-
-	# This is provided for your convenience. You can write any code here.
-
-
 Session 12 In Class Code Samples
 ================================
 
@@ -104,6 +84,14 @@ Session 12 In Class Code Samples
 		return is_it_good
      
   	print is_prefix("hel", "hello")
+
+
+Review: Rephrasing problems in English
+======================================
+
+.. activecode:: session12_free_grep
+
+	# Space provided for demonstration -- you can write any code here yourself.
 
 
 Optional/Keyword Parameters Examples
