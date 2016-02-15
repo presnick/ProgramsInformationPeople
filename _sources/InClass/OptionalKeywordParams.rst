@@ -134,9 +134,7 @@ Here's a function count_vowels that takes a string and counts how many vowels ar
   print count_vowels("supercalifragilisticexpialidocious")
 
 
-Now using that as a basis, fill in the parameter list and the body of function count_lets, where the inputs to the function are a string and a list of letters, and the return value of the function is the number of letters in the string that are in the list of letters -- no matter what letters are in the list.
-
-In other words, you should generalise the count_vowels function, to count the occurrences of any subset of letters, not just vowels, but treat vowels as the default if not otherwise specified. Fill in the parameter list and the code.
+Now using that as a basis, you should generalise the count_vowels function, to count the occurrences of any subset of letters, not just vowels, but treat vowels as the default if not otherwise specified. Fill in the parameter list and the code.
 
 .. activecode:: session12_03
 
