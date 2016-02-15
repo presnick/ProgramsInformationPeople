@@ -48,6 +48,9 @@ Session 12 In Class Code Samples: PS 5 Q 8
   def is_prefix(s1,s2):
     return s2.find(s1) == 0
 
+  #x = 5
+  x = -2
+
   # To illustrate what we're doing with the boolean statement
   if x > 0:
     print True
@@ -77,8 +80,8 @@ Session 12 In Class Code Samples: PS 5 Q 8
   def is_prefix(s1, s2):
     is_it_good = True  # This is called a Boolean "flag"
     for i in range(len(s1)):  # [0, 1]
-    if s1[i] != s2[i]:
-        is_it_good = False
+        if s1[i] != s2[i]:
+            is_it_good = False
     return is_it_good
      
   print is_prefix("hel", "hello")
