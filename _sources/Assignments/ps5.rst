@@ -146,6 +146,7 @@ Problem Set
 4. We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
 
 .. activecode:: ps_5_4
+   :available_files: timely_file.txt
 
    # Write code here!
     
@@ -233,6 +234,7 @@ Problem Set
 9. Define a python function ``grep`` that works just like the unix command ``grep``. Your function should take two inputs, a string and a filename. It should return a list of all the lines in the file that contain the string, and only the lines in the file that contain the string.
 
 .. activecode:: ps_5_9
+   :available_files: timely_file.txt
 
    # Write code here!
 
