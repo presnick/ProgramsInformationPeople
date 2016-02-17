@@ -514,6 +514,7 @@ In Class Code Samples
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
    InClass/OptionalKeywordParams.rst
+   InClass/TuplesAndNestedData.rst
 
 Indices and tables
 ::::::::::::::::::
