@@ -75,7 +75,9 @@ Tuples
     # using tuple packing
     # print out only the years people were born
     years = julia[2],claude[2],alan[2]
-    print years # prints a tuple, with parentheses, not a pretty print
+    print years 
+
+    print "-----"
 
     # want to just print each year on its own
     for p in people:
@@ -83,6 +85,9 @@ Tuples
 
     # unpacking -- save a bunch of values into different variables on one line
     julia_year, claude_year, alan_year = years
+
+    # then can do stuff with one at a time really easily
+    print "Claude Shannon was born in", claude_year
 
 
 .. activecode:: session13_2
@@ -123,8 +128,9 @@ Tuples
     sd = {"Nick":12,"Ayo":15,"Lauren":21}
     sd2 = {"Natalie":62,"Jackie":35,"Jaime":44}
 
-    print highest_scoring(sd) # should print: Lauren, 21
-    print highest_scoring(sd2) # should print: Natalie, 62
+    print highest_scoring(sd) # should print: Lauren 21
+    print highest_scoring(sd2) # should print: Natalie 62
+    # Like strings, tuples print a little different than they're represented in code
 
 
 .. activecode:: session13_4
@@ -133,13 +139,13 @@ Tuples
     # What does this code do?
 
     def user_type_numbers(limit_number):
-        sum = 0
+        tot = 0
         list_of_nums = []
-        while sum < limit_number:
+        while tot < limit_number:
             num = int(raw_input("Enter a number:"))
-            sum = sum + num
+            tot = tot + num
             list_of_nums.append(num)
-        return limit_number, sum, len(list_of_nums)
+        return limit_number, tot, len(list_of_nums)
 
     # example invocations
     returned_info = user_type_numbers(11)
@@ -149,7 +155,7 @@ Tuples
     # You can use that one tuple, stored in a variable, to print something like this
     # Got here with just one function invocation!
 
-    print "We asked the user to input numbers until the sum of the numbers was more than", returned_info[0], "and they entered", returned_info[1], "numbers, and got a sum of", returned_info[2]
+    print "We asked the user to input numbers until the sum of the numbers was more than", returned_info[0], "and they entered", returned_info[2], "numbers, and got a sum of", returned_info[1]
 
 
 Nested Data
@@ -176,18 +182,19 @@ Nested Data
 
     #OR printing pieces of nested data with iteration
 
-    for lst in x:
-        print lst[0]
+    #for lst in x:
+    #    print lst[0]
 
-    for lst in x:
-        for item in lst:
-            print item
+    #for lst in x:
+    #    for item in lst:
+    #        print item
 
-    print x[1]
-    print type(x[1])
+    #print x 
+    #print x[1]
+    #print type(x[1])
 
-    for item in x[1]:
-        print item
+    #for item in x[1]:
+    #    print item
 
 
 
