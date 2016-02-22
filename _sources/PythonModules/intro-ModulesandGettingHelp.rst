@@ -39,6 +39,42 @@ If you have not done so already, take a look at the Global Module Index.  Here
 you will see an alphabetical listing of all the modules that are available as
 part of the standard library.  Find the turtle module.
 
+Importing Modules
+-----------------
+
+In order to use Python modules, you have to **import** them into a Python program. That happens with what's called an ``import`` statement: the word ``import``, and then the *name* of the module. The name is specific and case-sensitive. If you need to import a module, you will either be told the specific name of it (or if you are using a new one, you may have to do a Google search to figure out what the correct name is to import it with).
+
+Usually, any ``import`` command occurs at the very beginning of a Python program. Roughly translated to English, this is like saying "here's this other code another programmer wrote, and I want to be able to use its functionality -- its functions and objects -- anywhere I want in this new program I'm writing." 
+
+It's possible to write an import statement anywhere in your code, so there are some situations where you might put an import statement only right before you are about to use the functionality from the new module. However, this can be confusing -- what if you rewrite your code and try to use the module's functionality above where you import it? Then it won't work, because at that point in the program running, your Python does not know about the external module. For that reason, we recommend always putting import statments at the beginning of your program files.
+
+Modules might be available via the **standard library**, and they might be available online to install into your native Python and ``import`` into a program you are writing, as you'll learn about.
+
+You can also use another code file that you have on your own computer as an external module. 
+
+Roughly translated to English, that's like saying, "I wrote this Python program, and I want to be able to use its functions and objects in this new Python program I'm writing." 
+
+When you import a module that is another file on your computer, its name for importing (``import <name of module>``) is the filename you saved the program as -- but *without* the ``.py`` extension. For example, if you saved a program called ``number_functions.py`` and you wanted to import those functions to use in another program, you would write ``import number_functions`` at the top of your new program file.
+
+It is important that you save that file in the *same directory* as your program file. Python has to be able to 'find' the file to import, so the best way to ensure that will work is to save any file that you plan to import in the *same directory* as you save the program where you want to import it!
+
+<TBA image>
+
+Syntax for Importing Modules and Functionality
+----------------------------------------------
+
+When you see imported modules in a Python program, you see them in a couple common ways.
+
+The most common is, at the top of a program, ``import <module-name>``. That imports everything in that module to your new program.
+
+You'll also see, for example, ``import <module-name> as <otherPhraseWithNoSpaces>``. (In the real syntax, there are no ``<`` or ``>``, those are only here to indicate that you can fill in anything that is appropriate in your real code.) With this syntax, you can refer to the module as your new name, ``otherPhraseWithNoSpaces``. Programmers often do this to make code easier to type, for example, ``import test106 as test``. ``test`` is a little easier and faster to type than ``test106`` -- may as well make it harder for humans to make human mistakes!
+
+A third possibility for importing syntax occurs when you only want to import SOME of the functionality from a module. You might do this for many reasons -- maybe it's a lot of data in the module and you're worried about space or speed. Maybe you know that you only want to use one specific function, and you don't want to worry about *namespaces*. 
+
+In that case, you use this syntax: ``from <module-name> import <function-or-object-name-you-want-to-use>``. 
+
+When you do that, you can then use the function or object that you specifically *imported* in your program, but other functions and objects that exist in the external module are not available to you -- because you specifically imported that one thing!
+
 
 .. admonition:: Note: Python modules and limitations with activecode
 
