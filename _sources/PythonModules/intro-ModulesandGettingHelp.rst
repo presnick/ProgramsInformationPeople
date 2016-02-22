@@ -42,38 +42,41 @@ part of the standard library.  Find the turtle module.
 Importing Modules
 -----------------
 
-In order to use Python modules, you have to **import** them into a Python program. That happens with what's called an ``import`` statement: the word ``import``, and then the *name* of the module. The name is specific and case-sensitive. If you need to import a module, you will either be told the specific name of it (or if you are using a new one, you may have to do a Google search to figure out what the correct name is to import it with).
+In order to use Python modules, you have to **import** them into a Python program. That happens with an import statement: the word ``import``, and then the *name* of the module. The name is case-sensitive. Roughly translated to English, an import statement says "there's some code in another file; please make its functions and variables available in this file." More technically, an import statement causes all the code in another file to be executed. Any variables that are bound during that execution (including functions that are defined) may then be referred in some way (to be discussed) in the current file.
 
-Usually, any ``import`` command occurs at the very beginning of a Python program. Roughly translated to English, this is like saying "here's this other code another programmer wrote, and I want to be able to use its functionality -- its functions and objects -- anywhere I want in this new program I'm writing." 
+By convention, all ``import`` commands are put at the very top of your file. They can be put elsewhere, but that can lead to some confusions, so it's best to follow the convention.
 
-It's possible to write an import statement anywhere in your code, so there are some situations where you might put an import statement only right before you are about to use the functionality from the new module. However, this can be confusing -- what if you rewrite your code and try to use the module's functionality above where you import it? Then it won't work, because at that point in the program running, your Python does not know about the external module. For that reason, we recommend always putting import statments at the beginning of your program files.
+Where do these other files that you can import come from? It could be a code file that you wrote yourself, or it could be code that someone else wrote and you copied on to your computer.
 
-Modules might be available via the **standard library**, and they might be available online to install into your native Python and ``import`` into a program you are writing, as you'll learn about.
+For example, if you have a file ``myprog.py`` in directory ``~\Desktop\mycode\``, and myprog.py contains a line of code ``import morecode``, then the python interpreter will look for a file called ``morecode.py``, excecute its code, and make its object bindings available for reference in the rest of the code in myprog.py. Note that it is ``import morecode``, not ``import morecode.py``, but the other file has to be called ``morecode.py``.
 
-You can also use another code file that you have on your own computer as an external module. 
+The python interpreter will look for ``morecode.py`` in the following places, in this order.
 
-Roughly translated to English, that's like saying, "I wrote this Python program, and I want to be able to use its functions and objects in this new Python program I'm writing." 
+1. The directory where the current file lives (``~\Desktop\mycode\`` in the example). If it finds ``morecode.py`` there, it uses it. If not, it goes on to step 2.
 
-When you import a module that is another file on your computer, its name for importing (``import <name of module>``) is the filename you saved the program as -- but *without* the ``.py`` extension. For example, if you saved a program called ``number_functions.py`` and you wanted to import those functions to use in another program, you would write ``import number_functions`` at the top of your new program file.
+2. Other directories that are on the PYTHONPATH. PYTHONPATH is a list of directories on your computer that is automatically configured for you when you install python on your computer. It can be changed if you know what you're doing, but you probably shouldn't mess with it. Indeed, for the duration of this class, you should never need to know what your PYTHONPATH is set to. You will use an installer called pip to download new modules from the Internet; it will automatically figure out what your PYTHONPATH is and copy the files in those modules to directories that are on the PYTHONPATH. If the interpreter fails to find ``morecode.py`` on the PYTHONPATH, it goes on to step 3.
 
-It is important that you save that file in the *same directory* as your program file. Python has to be able to 'find' the file to import, so the best way to ensure that will work is to save any file that you plan to import in the *same directory* as you save the program where you want to import it!
+3. The directory for modules that are built into the python **standard library**. The code files for those libraries are automatically copied into a folder on your computer when you install python. You don't need to worry about where they are installed. In this course, you will use some modules that are part of the python standard library (e.g., the ``random`` module for generating random numbers.) The interpreter will fail to find ``morecode.py`` in the standard library and will then yield an error message of the form ``ImportError: No module named morecode``.
 
-<TBA image>
+.. note::
+
+    Bottom line: make sure you put ``morecode.py`` in the same directory as ``myprog.py``
+
+.. admonition:: Don't overwrite standard library modules!
+
+    Given the order of search described above, it's possible to overwrite a standard library. For example, if you create a file ``random.py`` in the directory where ``myprog.py`` lives, and then myprog.py invokes ``import random``, it will import your file rather than the standard library module. That's not usually what you want, so be careful about how you name your python files!
+
 
 Syntax for Importing Modules and Functionality
 ----------------------------------------------
 
-When you see imported modules in a Python program, you see them in a couple common ways.
+When you see imported modules in a Python program, there are a few variations that have slightly different consequences.
 
-The most common is, at the top of a program, ``import <module-name>``. That imports everything in that module to your new program.
+1. The most common is  ``import morecode``. That imports everything in morecode.py. To invoke a function f1 that is defined in morecode.py, you would write ``morecode.f1()``. Note that you have to explicitly mention morecode again, to specify that you want the f1 function from morecode namespace. If you just write ``f1()``, python will look for an f1 that was defined in the current file, rather than in morecode.py.
 
-You'll also see, for example, ``import <module-name> as <otherPhraseWithNoSpaces>``. (In the real syntax, there are no ``<`` or ``>``, those are only here to indicate that you can fill in anything that is appropriate in your real code.) With this syntax, you can refer to the module as your new name, ``otherPhraseWithNoSpaces``. Programmers often do this to make code easier to type, for example, ``import test106 as test``. ``test`` is a little easier and faster to type than ``test106`` -- may as well make it harder for humans to make human mistakes!
+2. You can also give the imported module an alias. For example, after executing ``import morecode as mc``, you would invoke f1 as ``mc.f1()``. Programmers often do this to make code easier to type. In this course, we will be distributing a file called test106.py. In your code files for the rest of the semester, you will need to include the following line, ``import test106 as test``. Then you will be able to have code that invokes a function called testEqual, from test106.py, like so: ``test.testEqual(x, y)``. That will test whether x and y have the same value. testEqual is the function that we've been using already this semester, behind the scenes, to give you automated feedback about whether your problem set answers were correct.
 
-A third possibility for importing syntax occurs when you only want to import SOME of the functionality from a module. You might do this for many reasons -- maybe it's a lot of data in the module and you're worried about space or speed. Maybe you know that you only want to use one specific function, and you don't want to worry about *namespaces*. 
-
-In that case, you use this syntax: ``from <module-name> import <function-or-object-name-you-want-to-use>``. 
-
-When you do that, you can then use the function or object that you specifically *imported* in your program, but other functions and objects that exist in the external module are not available to you -- because you specifically imported that one thing!
+3. A third possibility for importing occurs when you only want to import SOME of the functionality from a module, and you want to make those objects be part of the current module's namespace. For example, you could write ``from morecode import f1``. Then you could invoke f1 without referencing morecode again: ``f1()``.
 
 
 .. admonition:: Note: Python modules and limitations with activecode
@@ -86,7 +89,7 @@ When you do that, you can then use the function or object that you specifically 
    To that end, it is necessary to mention that many of the  modules available in standard Python
    will **not** work in the activecode environment.  In fact, only turtle, math, random, and a couple others have been
    ported at this point.  If you wish to explore any
-   additional modules, you will need to also explore using a more robust development environment.
+   additional modules, you will need to run from the native python interpreter on your computer.
 
 **Check your understanding**
 
@@ -106,7 +109,7 @@ When you do that, you can then use the function or object that you specifically 
 .. mchoicemf:: question4_1_2
    :answer_a: Go to the Python Documentation site.
    :answer_b: Look at the import statements of the program you are working with or writing.
-   :answer_c: Ask the professor
+   :answer_c: Ask the professor.
    :answer_d: Look in this textbook.
    :correct: a
    :feedback_a: The site contains a listing of all the standard modules that are available with Python.

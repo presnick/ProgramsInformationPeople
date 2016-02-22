@@ -316,6 +316,7 @@ Python Modules
 
    PythonModules/intro-ModulesandGettingHelp.rst
    PythonModules/Therandommodule.rst
+   Installation/pip.rst
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
 
@@ -490,8 +491,8 @@ Installation
    Installation/TextEditor.rst
    Installation/pythonInstall.rst
    Installation/runpythonprograms.rst
-   Installation/pip.rst
-   
+
+
 
 Unix
 ::::
