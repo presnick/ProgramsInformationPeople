@@ -45,7 +45,7 @@ The first, and most common, way, is to insert ``{}`` curly braces into strings a
 
 It is important to pass arguments to the ``format`` method in the correct order, because they are matched *positionally* into the ``{}`` places for interpolation where there is more than one.
 
-It is also important that you give ``format`` the same amount of arguments as there are ``{}`` waiting for interpolation in the string, or else you will get an error!
+It is also important that you give ``format`` the same amount of arguments as there are ``{}`` waiting for interpolation in the string. If you have ``{}`` in a string that you do not pass arguments for, you may not get an error, but you will see a weird ``undefined`` value you probably did not intend suddenly inserted into your string. You can see an example below.
 
 For example,
 
@@ -53,12 +53,13 @@ For example,
  
    name = "Sally"
    greeting = "Nice to meet you"
+   s = "Hello, {}. {}."
+
    print s.format(name,greeting) # will print Hello, Sally. Nice to meet you.
 
    print s.format(greeting,name) # will print Hello, Nice to meet you. Sally. 
 
-   #print s.format(name) 
-   # will result in an error -- 2 {}s, only one interpolation item!
+   print s.format(name) # 2 {}s, only one interpolation item! Not ideal.
 
 
 Another option is to specifically refer to keywords (think back to keyword arguments for functions!) for interpolation values, like below.
@@ -70,7 +71,7 @@ Another option is to specifically refer to keywords (think back to keyword argum
      print "The scores {nm} got were: {s1},{s2},{s3}.".format(nm=name,s1=scores[0],s2=scores[1],s3=scores[2])
 
 
-Sometimes, you may want to use the ``.format`` method to insert the same value into a string multiple times. You can do this by simply passing the same string into the format method, assuming you have included ``{}``s in the string everywhere you want to interpolate them. But you can also use positional passing references to do this! The order in which you pass arguments into the ``format`` method matters: the first one is argument ``0``, the second is argument ``1``, and so on.
+Sometimes, you may want to use the ``.format`` method to insert the same value into a string multiple times. You can do this by simply passing the same string into the format method, assuming you have included ``{}`` s in the string everywhere you want to interpolate them. But you can also use positional passing references to do this! The order in which you pass arguments into the ``format`` method matters: the first one is argument ``0``, the second is argument ``1``, and so on.
 
 For example,
 
@@ -79,14 +80,14 @@ For example,
    # this works
    names = ["Jack","Jill","Mary"]
    for n in names:
-      print "'{}!' she yelled. '{}! {}, {}!'".format(n,n,n,"say hello!")
+      print "'{}!' she yelled. '{}! {}, {}!'".format(n,n,n,"say hello")
 
    # but this also works!
    names = ["Jack","Jill","Mary"]
    for n in names:
-      print "'{0}!' she yelled. '{0}! {0}, {1}!'".format(n,"say hello!")
+      print "'{0}!' she yelled. '{0}! {0}, {1}!'".format(n,"say hello")
 
 
-You can imagine some ways in which this method for string interpolation is very useful for complex programs and programs where you want to compile data together and print it out, or write it to a file. A set of strings might all be the same except for one varying piece of data, so you can use an example like the first one in this section to generate all of those strings with one for loop that's neat and easy to read! 
+You can imagine some ways in which this method for string interpolation is very useful for complex programs and programs where you want to compile data together and print it out, or write it to a file. A set of strings might all be the same except for one varying piece of data, so for instance, you can use code like some you see in this section to generate all of those strings with one for loop that's neat and easy to read! 
 
-Using ``.format`` for string interpolation is much neater and easier to edit later on than just using string concatenation.
+Overall, using ``.format`` for string interpolation is much neater and easier to edit later on than just using string concatenation.
