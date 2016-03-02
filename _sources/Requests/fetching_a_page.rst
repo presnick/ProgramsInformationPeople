@@ -23,22 +23,22 @@ Fetching with UNIX curl
 
 At the git bash prompt, you can invoke the unix curl command
 
-.. sourcecode:: python
-
-   curl https://github.com/presnick/ProgramsInformationPeople
+``curl https://github.com/presnick/ProgramsInformationPeople``
 
 Assuming you have a network connection, it will soon print out a whole lot of text. That's the same text that your browser gets and that was shown when you did ``View source``. If you want to see it a little more slowly try using the less command. 
 
-.. sourcecode:: python
-
-   curl https://github.com/presnick/ProgramsInformationPeople | less
+``curl https://github.com/presnick/ProgramsInformationPeople | less``
 
 Fetching in python with requests.get
 ------------------------------------
 
-In python, there's a module available, called requests. If you haven't already, install pip and use it to install the requests module. Information on how to do that is in the :ref:`pip chapter <pip_chap>`.
+In python, there's a module available, called ``requests``. If you haven't already, install ``pip`` and use it to install the ``requests`` module. Information on how to do that is in the :ref:`pip chapter <pip_chap>`.
 
-Then, you can use the get function in the requests module to fetch the contents of a page. Here, the code is only printing the first 1000 characters. It turns out that somewhere later on the page there is an ellipsis character (a single character representing an ellipsis ...). If we try to print out the whole contents, we get an error. You'll learn a little bit more about handling unicode characters in a later chapter. For now, if you try the code, just extract the first 1000 characters when printing it out.
+Then, you can use the get function in the ``requests`` module to fetch the contents of a page. 
+
+Here, the code is only printing the first 1000 characters. It turns out that somewhere later on the page there is an ellipsis character (a single character representing an ellipsis ``...``). If we try to print out the whole contents, we get an error. (You'll learn a little bit more about handling unicode characters in another chapter.) For now, if you try this code, just extract the first 1000 characters when printing it out.
+
+Note that you must save this code in a program file of your own and run it on your own machine, because it relies on the ``requests`` external Python module being installed!
 
 .. sourcecode:: python
 

@@ -34,50 +34,60 @@ In this section, you will learn to write that in a more readable way:
  
    scores = [("Rodney Dangerfield", -1), ("Marlon Brando", 1), ("You", 100)]
    for (name, score) in scores:
-      print "Hello %s. Your score is % d" % (name, score)
-      
-   # or some might find this even more readable
-   for (name, score) in scores:
-      print "Hello %(nm)s. Your score is %(sc) d" % {"nm":name, "sc":score}
-
-``%`` is the interpolation operator. It takes a format string on the left, and a tuple of values on the right. Together, the whole expression produces a single string. 
-
-You now know enough python that you can start to learn directly from the python documentation. The python documentation on string interpolation is readable, with some effort, and a few explanations below. `String interpolation documentation <http://docs.python.org/2/library/stdtypes.html#string-formatting-operations>`_   
-
-* **Unicode** is a special kind of character string that allows the use of non-English characters
-
-* What the documentation refers to as ``format`` is a string with some % signs embedded in it. These will be substituted for in the final string. When the documentation says "If *format* requires a single argument, it means there's just one % within the format string, indicating one element to be substituted for.
-
-* The minimum field width and precision are useful for formatting numbers.
-
-* The length modifier is not used, so don't worry about it.
-
-Let's use the vocabulary of the documentation to parse the line of code ``"Hello %s. Your score is % 2d" % (name, score)``:
-
-* The ``format string`` is "Hello %s. Your score is % d".
-
-   * The first conversion specifier is ``%s``, which calls for a string value to be substituted.
-   
-   * The second conversion specifier is ``% d``, which calls for an integer. The space before the d is a flag, indicating that if the number is positive, it should generate a string without a + sign in it.
-   
-* The values are specified in the tuple ``(name, score)``. Note that neither name nor score are in quotes, so both are variables whose values are looked up. 
-
-.. note::
-
-   The ``%`` operator produces a string. It does not print anything, and it does not return anything. If you want a person to see the string, print it. If you want to save it for later, assign it to a variable or put it in a list. If you want a function to return the string, make an explicit return statement.
-
-Try to predict what each of these lines will produce as you step through the code.
-
-.. codelens:: interpolation_4
-
-   x = 3.75
-   print x
-   print "You have $%0.2f in your pocket" % (x)
-   print "You have $%f in your pocket" % (x)
-   print "You have $%10.1f in your pocket" % (x)
-   print "You have $%0.0f in your pocket" % (x)
-   print "You have $%d in your pocket" % (x)
-   print "You have $%02d in your pocket" % (x)
-   print "You have $%0.2f. If you spend $1.25, you will have $%0.2f left" % (x, x-1.25)
+      print "Hello {}. Your score is {}.".format(name, score)
 
 
+``.format()`` is a special string method that allows you to *interpolate* values into strings -- basically, insert values into strings and automatically make them work, as you see above.
+
+There are a few ways to use the ``.format`` method.
+
+The first, and most common, way, is to insert ``{}`` curly braces into strings at the location where you want to interpolate (stick in) values into the string. Then call the ``.format`` method on the string, and pass to the ``format`` method the items you want to put into the string, separated by commas. 
+
+It is important to pass arguments to the ``format`` method in the correct order, because they are matched *positionally* into the ``{}`` places for interpolation where there is more than one.
+
+It is also important that you give ``format`` the same amount of arguments as there are ``{}`` waiting for interpolation in the string. If you have ``{}`` in a string that you do not pass arguments for, you may not get an error, but you will see a weird ``undefined`` value you probably did not intend suddenly inserted into your string. You can see an example below.
+
+For example,
+
+.. activecode:: interpolation_4
+ 
+   name = "Sally"
+   greeting = "Nice to meet you"
+   s = "Hello, {}. {}."
+
+   print s.format(name,greeting) # will print Hello, Sally. Nice to meet you.
+
+   print s.format(greeting,name) # will print Hello, Nice to meet you. Sally. 
+
+   print s.format(name) # 2 {}s, only one interpolation item! Not ideal.
+
+
+Another option is to specifically refer to keywords (think back to keyword arguments for functions!) for interpolation values, like below.
+
+.. activecode:: interpolation_4
+ 
+   names_scores = [("Jack",[67,89,91]),("Emily",[72,95,42]),("Taylor",[83,92,86])]
+   for name, scores in names_scores:
+     print "The scores {nm} got were: {s1},{s2},{s3}.".format(nm=name,s1=scores[0],s2=scores[1],s3=scores[2])
+
+
+Sometimes, you may want to use the ``.format`` method to insert the same value into a string multiple times. You can do this by simply passing the same string into the format method, assuming you have included ``{}`` s in the string everywhere you want to interpolate them. But you can also use positional passing references to do this! The order in which you pass arguments into the ``format`` method matters: the first one is argument ``0``, the second is argument ``1``, and so on.
+
+For example,
+
+.. activecode:: interpolation_5
+ 
+   # this works
+   names = ["Jack","Jill","Mary"]
+   for n in names:
+      print "'{}!' she yelled. '{}! {}, {}!'".format(n,n,n,"say hello")
+
+   # but this also works!
+   names = ["Jack","Jill","Mary"]
+   for n in names:
+      print "'{0}!' she yelled. '{0}! {0}, {1}!'".format(n,"say hello")
+
+
+You can imagine some ways in which this method for string interpolation is very useful for complex programs and programs where you want to compile data together and print it out, or write it to a file. A set of strings might all be the same except for one varying piece of data, so for instance, you can use code like some you see in this section to generate all of those strings with one for loop that's neat and easy to read! 
+
+Overall, using ``.format`` for string interpolation is much neater and easier to edit later on than just using string concatenation.
