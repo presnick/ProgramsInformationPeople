@@ -36,7 +36,7 @@ If, for some reason, you get json-formatted text that is utf-encoded but the req
 
 Assuming you get data in JSON format and decode it using ``json.loads()``, you will always be working with unicode strings when you get data from the internet.
 
-Everything will work fine until you try to print or write the contents to a file. If you print, and your terminal window is not set up to display that language, you may bet a strange output. 
+Everything will work fine until you try to print or write the contents to a file. If you print, and your terminal window is not set up to display that language, you may get a strange output. 
 
 If you try to write to a file with unicode strings, you may get an error. When you write a unicode string to a file, python tries to encode it in ASCII. If there is a non-ASCII character, the execution fails and raises an error that looks like this: ``UnicodeEncodeError: 'ascii' codec can't encode character u'\xea' in position 1: ordinal not in range(128)``. 
 
