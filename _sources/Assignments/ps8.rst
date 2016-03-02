@@ -33,7 +33,7 @@ You have the following graded activities:
    * Read *The Success of Open Source* Preface and Chapter 1
    * Complete `Reading Response 8 <https://umich.instructure.com/courses/48961/assignments/57684>`_ on Canvas.
 
-* **Before Wednesday's class:(())
+* **Before Wednesday's class:**
    * Read :ref:`try/except <exceptions_chap>`
    * Read :ref:`String Formatting<formatting_chap>`
    * Read `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
