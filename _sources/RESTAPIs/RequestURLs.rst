@@ -29,7 +29,7 @@ Let's pull apart that URL. In this case, the FAA uses a slight variation on the 
    
 All those parts are concatenated together to form the full URL. If you substitute LGA for DTW, you will get the current conditions at New York's LaGuardia airport instead.
 
-Consider another service, the image sharing site flickr. People interact with the site using a web browser. An API is available to make it easier for application programs to fetch data from the site and post data to the site. That allows third parties to make applications that integrate elements of flick. Flickr provides the API as a way to increase the value of its service, and thus attract more customers. You can explore the `official documentation about the site <https://www.flickr.com/services/api/>`_.
+Consider another service, the image sharing site flickr. People interact with the site using a web browser. An API is available to make it easier for application programs to fetch data from the site and post data to the site. That allows third parties to make applications that integrate elements of flickr. Flickr provides the API as a way to increase the value of its service, and thus attract more customers. You can explore the `official documentation about the site <https://www.flickr.com/services/api/>`_.
 
 Here we will explore some aspects of one endpoint that flickr provides for searching for photos matching certain criteria. Check out the `full documentation <https://www.flickr.com/services/api/flickr.photos.search.html>`_ for details.
 
@@ -64,7 +64,7 @@ Fortunately, when you want to pass information as a URL parameter value, you don
 
 The get function in the requests module takes an optional parameter called ``params``. If a value is specified for that parameter, it should be a dictionary. The keys and values in that dictionary are used to append something to the URL that is requested from the remote site. 
 
-For example, in the following, the base url is https://google.com/search. A dictionary with two parameters is passed. Thus, the whole url is that base url, plus a question "?", plus a "q=..." and a "tbm=..." separated by an "&". In other words, the final url that is visited is ``https://www.google.com/search?q=%22violins+and+guitars%22&tbm=isch``. Actually, because dictionary keys are unordered in python, the final url might sometimes have the encoded key-value pairs in the other order: ``https://www.google.com/search?tbm=isch&q=%22violins+and+guitars%22``. Fortunately, most websites that accept URL parameters in this form will accept the key-value pairs in any order.
+For example, in the following, the base url is https://google.com/search. A dictionary with two parameters is passed. Thus, the whole url is that base url, plus a question mark, "?", plus a "q=..." and a "tbm=..." separated by an "&". In other words, the final url that is visited is ``https://www.google.com/search?q=%22violins+and+guitars%22&tbm=isch``. Actually, because dictionary keys are unordered in python, the final url might sometimes have the encoded key-value pairs in the other order: ``https://www.google.com/search?tbm=isch&q=%22violins+and+guitars%22``. Fortunately, most websites that accept URL parameters in this form will accept the key-value pairs in any order.
 
 .. sourcecode:: python
 

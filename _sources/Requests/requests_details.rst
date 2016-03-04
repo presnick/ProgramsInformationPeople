@@ -6,12 +6,14 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-
+.. _requests_details_chap:
 
 More Details of the Requests Module
 ===================================
 
-One we run requests.get, we get a response object. It's an instance of a class defined in the requests module. Previously, we saw that the response object has an attribute (instance variable) text, which contains the body of the contents, after any HTTP headers. The response objects have some other useful attributes and methods that we can access. A few are used and explained below. Others will be introduced in later chapters.
+Once we run requests.get, we get a response object. It's an instance of a class called Response that is defined in the requests module. We won't look at it's definition. Indeed, we haven't even learned how to define our own classes at this point in the course. Think of it as analogous to the Turtle class. Each instance of the class has some attributes; different instances have different values for the same attribute. All instances can also invoke certain methods that are defined for the class.
+
+Previously, we saw that a response object has an attribute (instance variable) *.text*, which contains the contents of the page, the stuff after all the HTTP headers. Response objects have some other useful attributes and methods that we can access. A few are used and explained below. Others will be introduced in later chapters.
 
 .. sourcecode:: python
 
@@ -33,7 +35,7 @@ One we run requests.get, we get a response object. It's an instance of a class d
            for h in p.history:
                print "  ", h.url, h.status_code
                
-Here's the ouput that is produced when I run that code.
+Here's the output that is produced when I run that code.
 
 .. sourcecode:: python
 
@@ -55,7 +57,7 @@ Here's the ouput that is produced when I run that code.
    redirection history
       http://github.com/presnick/runestone 301
       
-First, consider the *.url* attribute. It is the URL that was actually accessed. We will see next week that requests.get lets us pass additional parameters that are used to construct the full URL, so this will be useful for seeing the full URL.
+First, consider the *.url* attribute. It is the URL that was actually accessed. We will see in a later chapter that requests.get lets us pass additional parameters that are used to construct the full URL, so this will be useful for seeing the full URL.
 
 Next, consider the *.status_code* attribute. 
 
@@ -63,11 +65,18 @@ Next, consider the *.status_code* attribute.
 
 * When the requested page doesn't exist, it sends back code 404, which is sometimes described as "File Not Found". In the above example, that's what happened for page2, https://github.com/presnick/nonsense
 
-* When the page has moved to a different location, it sends back code 301 and a different URL where the client is supposed to retrieve from. The request.get function is so smart that when it gets a 301, it looks at the new url and fetches it. For example, github redirects all requests using http to the corresponding page using https (the secure http protocol). Thus, when we asked for page3, http://github.com/presnick/runestone, github sent back a 301 code and the url https://github.com/presnick/runestone. The requests.get function then fetched the other url. It reports a status of 200 and the updated url. We have to do further inquiry to find out that a redirection occurred (see below).
+* When the page has moved to a different location, it sends back code 301 and a different URL where the client is supposed to retrieve from. The request.get method is so smart that when it gets a 301, it looks at the new url and fetches it. For example, github redirects all requests using http to the corresponding page using https (the secure http protocol). Thus, when we asked for page3, http://github.com/presnick/runestone, github sent back a 301 code and the url https://github.com/presnick/runestone. The requests.get function then fetched the other url. It reports a status of 200 and the updated url. We have to do further inquiry to find out that a redirection occurred (see below).
 
-The *.headers* attribute is a dictionary consisting of keys and values. To find out all the headers, you can run the code and add a statement ``print p.headers.keys()``. One of the headers is 'Content-type'. For pages 1 and 3 its value is ``text/html; charset-utf-8``. For page2, where we got an error, the contents are of type ``application/json; charset=utf-8``.
+The *.headers* attribute has as its value a dictionary consisting of keys and values. To find out all the headers, you can run the code and add a statement ``print p.headers.keys()``. One of the headers is 'Content-type'. For pages 1 and 3 its value is ``text/html; charset-utf-8``. For page2, where we got an error, the contents are of type ``application/json; charset=utf-8``.
 
 The *.text* attribute we have seen before. It contains the contents of the file (or sometimes the error message).
 
 The *.history* attribute contains a list of previous responses, if there were redirects. That list is empty, except for page3. For page3, we are able to see what happened in the original request: what the url was and the response code of 301.
 
+To summarize, a Request object has the following useful attributes that can be accessed in your program:
+
+    * .text
+    * .url
+    * .status_code
+    * .headers
+    * .history

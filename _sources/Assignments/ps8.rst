@@ -23,7 +23,8 @@ You have the following graded activities:
    * Read :ref:`REST APIs<rest_apis_chap>`
 
    .. usageassignment:: prep_14
-    :chapters: Requests, RestAPIs, pip
+    :chapters: Requests, RESTAPIs
+    :subchapters: Installation/pip
     :assignment_name: Prep a14
     :deadline: 2016-03-07 19:40:00
     :pct_required: 80
@@ -38,9 +39,10 @@ You have the following graded activities:
    * Read :ref:`String Formatting<formatting_chap>`
    * Read `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
    * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
+   * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
 
    .. usageassignment:: prep_15
-    :chapters: TryExcept, Formatting
+    :chapters: Exceptions, StringFormatting, UsingRESTAPIs
     :subchapters: Files/WritingTextFiles
     :assignment_name: Prep a15
     :deadline: 2016-03-09 19:40:00

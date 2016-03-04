@@ -344,7 +344,7 @@ REST APIs
    RESTAPIs/RequestURLs.rst
    RESTAPIs/jsonlib.rst
    RESTAPIs/unicode.rst
-   RESTAPIs/flickr.rst
+
 
 Exceptions
 ::::::::::
@@ -367,6 +367,18 @@ String Formatting
    StringFormatting/CSV.rst
    StringFormatting/Exercises.rst
 
+Using RESTAPIs
+::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   UsingRESTAPIs/requestsCookbook.rst
+   UsingRESTAPIs/callingGet.rst
+   UsingRESTAPIs/extract.rst
+   UsingRESTAPIs/process.rst
+   UsingRESTAPIs/cachingResponses.rst
+   UsingRESTAPIs/flickr.rst
 
 Classes
 :::::::
