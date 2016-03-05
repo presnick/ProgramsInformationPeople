@@ -46,7 +46,7 @@ If you try to do anything on your computer that requires administrative permissi
 
 .. image:: Figures/permissiondenied.png
 
-In that case you need to preface the whole command with ``sudo``, if you are on a mac. (You're unlikely to run into this problem for the same reasons if you use Windows.) That ``sudo`` command, which we've referenced elsewhere too, stands for **super user do**. For example, running the program ``get-pip.py`` *installs* something on your computer, so you'll probably eed to do ``sudo python get-pip.py``. "I'm the super user, and I say it's okay, do the thing where you run this program with the Python interpreter and install something."
+In that case you need to preface the whole command with ``sudo``, if you are on a mac. (You're unlikely to run into this problem for the same reasons if you use Windows.) That ``sudo`` command, which we've referenced elsewhere too, stands for **super user do**. For example, running the program ``get-pip.py`` *installs* something on your computer, so you'll probably need to do ``sudo python get-pip.py``. "I'm the super user, and I say it's okay, do the thing where you run this program with the Python interpreter and install something."
 
 .. admonition:: Warning. 
 
