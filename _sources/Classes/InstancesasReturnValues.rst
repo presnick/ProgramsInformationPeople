@@ -49,6 +49,9 @@ the target point it accepts as input.
     p = Point(3,4)
     q = Point(5,12)
     mid = p.halfway(q)
+    # note that you would have exactly the same result if you instead wrote
+    # mid = q.halfway(p)
+    # because they are both Point objects, and the middle is the same no matter what
 
     print mid
     print mid.getX()
