@@ -28,9 +28,9 @@ This can be frustrating, but it definitely means that you have not saved a Pytho
 
 Related to the wrong-directory-problem is the common problem of executing a file and not seeing the result of the new print statement you put in, for example. When you run a file successfully but you don't see what you expect to see, there are three things to check:
 
-* Have you saved another copy of the program file by a different name or in a different location? This can get very confusing -- we recommend you do not save more than one copy of the same program to avoid this confusion! ``~/Desktop/106/code/psfile.py`` is NOT the same as ``~/Desktop/106/psfile.py``, for example.
-* Have you definitely saved the program since you made the change?
-* Are you correctly predicting what your code will do?
+* Have you saved another copy of the program file by a different name or in a different location? This can get very confusing -- we recommend you never save more than one copy of the same program to avoid this confusion! Just make edits and save, and comment out code you're not using at the moment. ``~/Desktop/106/code/psfile.py`` is NOT the same as ``~/Desktop/106/psfile.py``, for example.
+* Have you definitely saved the program since you made the change? Have you saved the right version, in the right place? Do you have the version you *think* you're working on open in your text editor?
+* And finally, are you correctly predicting what your code will do?
 
 .. admonition:: Warning. 
 
@@ -52,7 +52,10 @@ In that case you need to preface the whole command with ``sudo``, if you are on 
 
    Depending on your computer's setup, it's possible you will use **sudo** as directed, but still get an error that reads like this:
 
-   ``'<your full path>' or its parent directory is not owned by the current user and the debug log has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want the -H flag.``
+   **'<your full path>' or its parent directory is not owned by the 
+   current user and the debug log has been disabled. 
+   Please check the permissions and owner of that directory. 
+   If executing pip with sudo, you may want the -H flag.**
 
    If that happens, run the same command, but with the ``-H`` flag. The H stands for ``HOME``, which basically makes the command you're running (probably the ``pip`` installer) apply to the correct directories in your computer. 
 
@@ -67,7 +70,9 @@ You may run into an error that looks like the following (especially, in this cur
 
 This probably means that you don't have the right version of Python installed. For many things we do in this course, it won't be a problem. If you see an Insecure Platform Warning error and you *also* run into a surprising error in your code, like this:
 
+
 .. image:: Figures/ipwarning_error2.png
+
 
 then, you'll need to upgrade your Python version to at least ``2.7.10``, which you can do `here <https://www.python.org/downloads/release/python-2710/>`_ .
 
