@@ -368,6 +368,15 @@ String Formatting
    StringFormatting/Exercises.rst
 
 
+Native Interpreter Gotchas
+::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   NativeInterpreterGotchas/FixCommonProblems.rst
+
+
 Classes
 :::::::
 
