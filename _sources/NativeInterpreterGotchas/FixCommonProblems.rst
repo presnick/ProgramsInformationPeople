@@ -18,11 +18,11 @@ with your native Python interpreter (all systems)
 
 **Wrong directory problems**
 
-It's almost certain that at some point, you'll try to run a program, e.g. ``python <saved-program-name>.py``, in your native interpreter via the Command Line, and will see an error like this:
+It's almost certain that at some point, you'll try to run a program, e.g. ``python <saved-program-name>.py``, in your native interpreter via the Command Line, and will see an error like this (it may look slightly different in Git Bash, but it's exactly the same problem):
 
-.. image:: Figures/wrongdirectory.png
+.. image:: Figures/nosuchfiledir.png
 
-This can frustrating, but it definitely means that you have not saved a Python program file in the location where you have navigated in the command prompt (or that you've made a typo when typing the command to execute your program). Use the Unix commands you've learned, like ``pwd`` and ``ls``, to figure out what exact location you have navigated to, and what files and directories are accessible. If you are indeed in the wrong place, of course, use ``cd`` to navigate to the correct place -- but maybe use the Finder/My Computer tool or other Unix commands to figure out where exactly you are.
+This can be frustrating, but it definitely means that you have not saved a Python program file in the location where you have navigated in the command prompt (or that you've made a typo when typing the command to execute your program). Use the Unix commands you've learned, like ``pwd`` and ``ls``, to figure out what exact location you have navigated to, and what files and directories are accessible. If you are indeed in the wrong place, of course, use ``cd`` to navigate to the correct place -- but maybe use the Finder/My Computer tool or other Unix commands to figure out where exactly you are.
 
 **"Why isn't this happening?" problems**
 
@@ -50,7 +50,7 @@ In that case you need to preface the whole command with ``sudo``, if you are on 
 
 .. admonition:: Warning. 
 
-   Depending on your computer's setup, it's possible you will use **sudo** as directed, but still get an error that looks like this:
+   Depending on your computer's setup, it's possible you will use **sudo** as directed, but still get an error that reads like this:
 
    ``'<your full path>' or its parent directory is not owned by the current user and the debug log has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want the -H flag.``
 
@@ -75,9 +75,16 @@ then, you'll need to upgrade your Python version to at least ``2.7.10``, which y
 with your native Python interpreter (WINDOWS)
 ---------------------------------------------
 
--u and explanation
+**buffering output problems**
 
-full PATH
+If you run an interactive program (where you get input from a user) and notice that you see no output, but once the program is finished running, all the output suddenly gets output all at once, like this in a hangman game (imagine that all the guesses you're making happen before you see that output at the end):
 
+.. image:: Figures/bufferproblem.png
+
+This is because the output is being **buffered**, and only getting shown when the program is finished running. To stop this from happening, for example so you can play a game interactively, run interactive programs like this:
+
+``python -u hangman.py`` 
+
+instead of ``python hangman.py``.
 
 
