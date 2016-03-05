@@ -16,9 +16,9 @@ the constructor and then return it as the value of the method.
 
     
 Suppose you have a point object
-and wish to find the midpoint halfway between it and some other target point.  We would like to write a method, call
-it ``halfway`` that takes another ``Point`` as a parameter and returns the ``Point`` that is halfway between the point and
-the target.
+and wish to find the midpoint halfway between it and some other target point.  We would like to write a method, let's call
+it ``halfway``, which takes another ``Point`` as a parameter and returns the ``Point`` that is halfway between the point and
+the target point it accepts as input.
 
 .. activecode:: chp13_classesmid1
 
