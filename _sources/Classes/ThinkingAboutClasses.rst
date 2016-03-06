@@ -19,11 +19,13 @@ Before you decide to define a new class, there are a few things to keep in mind,
 
 * **What is the data that you want to deal with?** (Data about a bunch of songs from iTunes? Data about a bunch of tweets from Twitter? Data about a bunch of hashtag searches on Twitter? Two numbers that represent coordinates of a point on a 2-dimensional plane?)
 
-* **What will one instance of your class represent?** In other words, which sort of new *thing* in your program should have fancy functionality? One song? One hashtag? One tweet? One point?
+* **What will one instance of your class represent?** In other words, which sort of new *thing* in your program should have fancy functionality? One song? One hashtag? One tweet? One point? The answer to this question should help you decide what to call the class you define.
 
 * **What information should each instance have as instance variables?** This is related to what an instance represents. See if you can make it into a sentence. *"Each instance represents one < song > and each < song > has an < artist > and a < title > as instance variables."* Or, *"Each instance represents a < Tweet > and each < Tweet > has a < user (who posted it) > and < a message content string > as instance variables."*
 
 * **What instance methods should each instance have?** What should each instance be able to *do*? To continue using the same examples: Maybe each song has a method that uses a lyrics API to get a long string of its lyrics. Maybe each song has a method that returns a string of its artist's name. Or for a tweet, maybe each tweet has a method that returns the length of the tweet's message. (Go wild!)
+
+* **What should the printed version of an instance look like?** (This question will help you determine how to write the ``__str__`` method.) Maybe, "Each song printed out will show the song title and the artist's name." or "Each Tweet printed out will show the username of the person who posted it and the message content of the tweet."
 
 After considering those questions and making decisions about how you're going to get start with a class definition, you can begin to define your class.
 
