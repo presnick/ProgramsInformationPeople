@@ -13,16 +13,16 @@
 A Tamagotchi Game
 -----------------
 
-Let's pull all these mechanics together in a slightly interesting way than we get with the Point class. Remember `Tamagotchi's <https://en.wikipedia.org/wiki/Tamagotchi>`_, the little electronic pets? As time passed, they would get hungry or bored. You had to clean up after them or they would get sick. And you did it all with a few buttons on the device.
+There are also a lot of interesting ways to put user-defined classes to use that don't involve data from the internet. Let's pull all these mechanics together in a slightly more interesting way than we got with the Point class. Remember `Tamagotchis <https://en.wikipedia.org/wiki/Tamagotchi>`_, the little electronic pets? As time passed, they would get hungry or bored. You had to clean up after them or they would get sick. And you did it all with a few buttons on the device.
 
-We are going to make a simplified, text-based version of it. In your problem set and in the chapter on `Inheritance <chap_inheritance>` we will extend this further.
+We are going to make a simplified, text-based version of that. In your problem set and in the chapter on `Inheritance <chap_inheritance>` we will extend this further.
 
-First, let's start with a class Pet. Each instance of the class will be one electronic pet for the user to take care of. Each instance will have a current state, consisting of three instance variables:
+First, let's start with a class ``Pet``. Each instance of the class will be one electronic pet for the user to take care of. Each instance will have a current state, consisting of three instance variables:
     * hunger, an integer
     * boredom, an integer
     * sounds, a list of strings, each a word that the pet has been taught to say
 
-In the __init__ method, hunger and boredom are initialized to random values between 0 and the threshold for being hungry or bored. The sounds instance variable is initialized to be a copy of the class variable with the same name. The reason we make a copy of the list is that we will perform destructive operations (appending new sounds to the list). If we didn't make a copy, then those destructive operations would affect the list that the class variable points to, and thus teaching a sound to any of the pets would teach it to all instances of the class!
+In the ``__init__`` method, hunger and boredom are initialized to random values between 0 and the threshold for being hungry or bored. The ``sounds`` instance variable is initialized to be a copy of the class variable with the same name. The reason we make a copy of the list is that we will perform destructive operations (appending new sounds to the list). If we didn't make a copy, then those destructive operations would affect the list that the class variable points to, and thus teaching a sound to any of the pets would teach it to all instances of the class!
 
 There is a ``clock_tick`` method which just increments the boredom and hunger instance variables, simulating the idea that as time passes, the pet gets more bored and hungry.
 
