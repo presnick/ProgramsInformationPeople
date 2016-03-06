@@ -396,6 +396,8 @@ Classes
    Classes/InstancesasReturnValues.rst
    Classes/sorting_instances.rst
    Classes/ClassVariablesInstanceVariables.rst
+   Classes/ThinkingAboutClasses.rst
+   Classes/ClassesHoldingData.rst
    Classes/Tamagotchi.rst
    Classes/Glossary.rst
    Classes/Exercises.rst
