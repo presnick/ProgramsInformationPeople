@@ -420,7 +420,7 @@ The FaceBook Graph API
 .. toctree::
     :maxdepth: 2
 
-    RESTAPIs/FBAPI.rst
+    FacebookAPI/FBAPI.rst
 
 
 
