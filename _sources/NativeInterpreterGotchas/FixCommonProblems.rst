@@ -37,6 +37,11 @@ Related to the wrong-directory-problem is the common problem of executing a file
    This textbook deals with Python version **2.7**. Any version of 2.7 is OK for *most* code in this textbook, although some requires that it be later than 2.7.9 (more about this below). Python 2.6 and earlier acts a little bit differently in some cases, and Python 3.0 and later versions are quite different. You can read about Python 3.0 -- it has many syntactic differences that also affect some things about how the Python 3.0+ interpreters work.
 
 
+.. admonition:: Careful!
+
+   When you install external modules with the ``pip`` installer, whether you are on Mac or Windows, you have to be very careful about what name you use to install in your ``pip install <module name>`` command (perhaps prefaced by ``sudo`` or a full PATH, if you are on Mac or Windows, respectively). It's odd, but sometimes programmers save a Python module by a special name in the library from which ``pip`` downloads the modules. If you don't have the exact name, case-sensitive, it won't install correctly. One example that you may run into later in this course: we'll be using a module called ``facebook-sdk`` in ``pip``. If you "pip install facebook", you won't get the right module (in fact, because of namespaces, it can cause you problems! You'll have something called ``facebook``, and it won't be what you want). But if you ``pip install facebook-sdk``, it will be fine. Watch when you're installing modules that you read directions carefully. Sometimes you may need to google about pip installing to find the correct module name for installation.
+
+
 with your native Python interpreter (MAC)
 ------------------------------------------
 
