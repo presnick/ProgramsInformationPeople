@@ -23,42 +23,9 @@ It turns out that if you make a request like this:
 
 ``resp = requests.get("",params={"term":"beatles","entity":"song"}).json()``
 
-you get data back that *includes* a big list of dicitionaries that represent songs. You have to parse through the nested data a little bit to save that list in a variable (remember the :ref:`Nested Data Structures<nested_chap>` chapter!), but once you're there, you can play around with it and look at the information it contains. Here's an example of part of that list.
+you get data back that *includes* a big list of dicitionaries that represent songs. You have to parse through the nested data a little bit to save that list in a variable (remember the :ref:`Nested Data Structures<nested_chap>` chapter), but once you're there, you can play around with it and look at the information it contains. 
 
-``
-[{u'artistId': 136975,
-  u'artistName': u'The Beatles',
-  u'artistViewUrl': u'https://itunes.apple.com/us/artist/the-beatles/id136975?uo=4',
-  u'artworkUrl100': u'http://is3.mzstatic.com/image/thumb/Music/v4/40/d0/29/40d029b5-4c32-53d2-69d1-ea04a513c345/source/100x100bb.jpg',
-  u'artworkUrl30': u'http://is3.mzstatic.com/image/thumb/Music/v4/40/d0/29/40d029b5-4c32-53d2-69d1-ea04a513c345/source/30x30bb.jpg',
-  u'artworkUrl60': u'http://is3.mzstatic.com/image/thumb/Music/v4/40/d0/29/40d029b5-4c32-53d2-69d1-ea04a513c345/source/60x60bb.jpg',
-  u'collectionCensoredName': u'Abbey Road',
-  u'collectionExplicitness': u'notExplicit',
-  u'collectionId': 401186200,
-  u'collectionName': u'Abbey Road',
-  u'collectionPrice': 12.99,
-  u'collectionViewUrl': u'https://itunes.apple.com/us/album/here-comes-the-sun/id401186200?i=401187150&uo=4',
-  u'country': u'USA',
-  u'currency': u'USD',
-  u'discCount': 1,
-  u'discNumber': 1,
-  u'isStreamable': True,
-  u'kind': u'song',
-  u'previewUrl': u'http://a184.phobos.apple.com/us/r1000/017/Music6/v4/e7/78/b5/e778b5ed-87d7-d81c-ef4e-ce2065ac8b55/mzaf_7495287073647867305.plus.aac.p.m4a',
-  u'primaryGenreName': u'Rock',
-  u'releaseDate': u'1969-09-26T07:00:00Z',
-  u'trackCensoredName': u'Here Comes the Sun',
-  u'trackCount': 17,
-  u'trackExplicitness': u'notExplicit',
-  u'trackId': 401187150,
-  u'trackName': u'Here Comes the Sun',
-  u'trackNumber': 7,
-  u'trackPrice': 1.29,
-  u'trackTimeMillis': 185733,
-  u'trackViewUrl': u'https://itunes.apple.com/us/album/here-comes-the-sun/id401186200?i=401187150&uo=4',
-  u'wrapperType': u'track'}]``
-
-This is a little difficult to parse (look back at the NESTED DATA CHAPTER), but we can skip ahead to the class definition (try using the API yourself!).
+It's a little difficult to parse (try using the API yourself, and look back at the Nested Data chapter!), but for the purposes of this chapter, we can skip ahead to the class definition.
 
 You know that once you've made a request to this API and gotten some data, you'll be able to access a bunch of dictionaries, and each dictionary holds a bunch of information about a song. 
 
@@ -78,9 +45,9 @@ Finally, you should ask yourself: what information gets passed into the construc
 
 In this case, you have a bunch of dictionaries available in the data you got back from the API request above. And each dictionary represents a song. So you can pass in a song dictionary to the constructor!
 
-Below is an example of the class definition we just described.
+Below is an example of the class definition we just described. (You can't run this code and create instances here with live data because we can't use the ``requests`` module in the textbook environment, but you can copy this into a program file of your own and play with it!)
 
-.. activecode:: classdata_1
+.. activecode:: classdata_2
 
     class Song:
         """ A class to represent one song, from data received from the iTunes API. """
@@ -91,17 +58,17 @@ Below is an example of the class definition we just described.
             self.artist = song_dictionary[u"artistName"]
 
         def get_song_artist(self):
-        	return self.artist
+            return self.artist
 
         def title_number_vowels(self):
-        	vowels = "aeiou"
-        	tot = 0
-        	for ch in self.title:
-        		if ch in vowels:
-        			tot = tot + 1
-        	return tot
+            vowels = "aeiou"
+            tot = 0
+            for ch in self.title:
+                if ch in vowels:
+                    tot = tot + 1
+            return tot
 
         def __str__(self):
-        	return "Title: {}\nArtist: {}".format(self.title,self.artist)
+            return "Title: {}\nArtist: {}".format(self.title,self.artist)
 
 
