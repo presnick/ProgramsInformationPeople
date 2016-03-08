@@ -25,7 +25,7 @@ Exercises
 .. activecode:: interpolation_8
 
    vals =                            
-   templ = "{}, {} are the %d items in the list"
+   templ = "{}, {} are the {} items in the list"
    print templ.format(vals[0], vals[1], len(vals))
 
 
@@ -34,4 +34,5 @@ Exercises
 .. activecode:: interpolation_9
 
    val = 
-   temp = "Hey, {}, {} there!".format(val)
+   temp = "Hey, {0}, {0} there!".format(val)
+   print temp

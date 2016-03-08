@@ -40,9 +40,10 @@ You have the following graded activities:
    * Read `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
    * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
    * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
+   * Read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`
 
    .. usageassignment:: prep_15
-    :chapters: Exceptions, StringFormatting, UsingRESTAPIs
+    :chapters: Exceptions, StringFormatting, UsingRESTAPIs, NativeInterpreterGotchas
     :subchapters: Files/WritingTextFiles
     :assignment_name: Prep a15
     :deadline: 2016-03-09 19:40:00
