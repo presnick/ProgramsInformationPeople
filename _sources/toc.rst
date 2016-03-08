@@ -380,6 +380,15 @@ Using RESTAPIs
    UsingRESTAPIs/cachingResponses.rst
    UsingRESTAPIs/flickr.rst
 
+Native Interpreter Gotchas
+::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   NativeInterpreterGotchas/FixCommonProblems.rst
+
+
 Classes
 :::::::
 
