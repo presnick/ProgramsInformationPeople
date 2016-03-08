@@ -39,6 +39,6 @@ Most other modules that you might want to use can be installed using pip.
 
 For example, we will be using the requests module. That can be installed by typing ``pip install requests``. There are a couple of potential gotchas.
 
-* If you get an authorization error when it tries to write some files, that means you need to run the command with sudo: ``sudo install requests``
+* If you get an authorization error or Permission Denied error when the installer tries to write some files, that means you need to run the command with sudo: ``sudo pip install requests``.
 
-* Especially on Windows machines, your installation may not be set up to automatically look in the Scripts folder for pip. In that case, you will need to give it a full path to the pip command. If your installation is that same as mine, meaning that python was installed in c:\\Python27, at the bash shell you would give a command like ``/c/Python27/Scripts/pip install requests``.
+* Especially on Windows machines, your installation may not be set up to automatically look in the Scripts folder for pip. In that case, you will need to give it a full path to the pip command. If your installation is that same as mine, meaning that python was installed in c:\\Python27, at the bash shell you should give a command like ``/c/Python27/Scripts/pip install requests``.
