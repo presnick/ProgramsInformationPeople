@@ -10,30 +10,28 @@
 Exercises
 ---------
   
-1. Fill in the variables t and v so that it it prints out: ``You have $4.99 in your pocket``
+1. Fill in the variable t so that it it prints out: ``You have $4.99 in your pocket``
 
-.. actex:: interpolation_6
-
-   pocketmoney = 4.99
-   t =
-   v =
-   newstring = t % v
-   print newstring
-   
-2. Fill in the variables t and v so that it it prints out: ``You have $5 in your pocket``
-
-.. actex:: interpolation_7
+.. activecode:: interpolation_6
 
    pocketmoney = 4.99
    t =
-   v =
-   newstring = t % v
+   newstring = t.format(pocketmoney)
    print newstring
    
-3. Fill in the missing code after the vals = on the first line, so that it prints out: ``v1, v2 are the 2 items in the list``
+   
+2. Fill in the missing code after the vals = on the first line, so that it prints out: ``v1, v2 are the 2 items in the list``
 
-.. actex:: interpolation_8
+.. activecode:: interpolation_8
 
    vals =                            
-   templ = "%s, %s are the %d items in the list"
-   print templ % (vals[0], vals[1], len(vals))
+   templ = "{}, {} are the %d items in the list"
+   print templ.format(vals[0], vals[1], len(vals))
+
+
+3. Fill in the missing code after the ``val =`` on the first line, so that it prints out: ``Hey, you, you there!``
+
+.. activecode:: interpolation_9
+
+   val = 
+   temp = "Hey, {}, {} there!".format(val)
