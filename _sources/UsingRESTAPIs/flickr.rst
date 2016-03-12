@@ -91,7 +91,7 @@ Below is some code that queries the flickr API for images that have a particular
         for photo in photo_ds:
             owner = photo['owner']
             pid = photo['id']
-            url = 'https://www.flickr.com/photos/%s/%s' % (owner, pid)
+            url = 'https://www.flickr.com/photos/{}/{}'.format(owner, pid)
             webbrowser.open(url)
 
     try:
