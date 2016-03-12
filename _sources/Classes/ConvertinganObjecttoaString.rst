@@ -48,6 +48,10 @@ The ``__str__`` method is responsible for returning a string representation as d
 have decided that the string representation will include the values of x and y as well as some identifying text.  It
 is required that the ``__str__`` method create and *return* a string.
 
+Whatever string the ``__str__`` method for a class returns, that is the string that will print when you put any instance of that class in a print statement. For that reason, the string that a class's ``__str__`` method returns should usually include values of instance variables. If a point has ``x`` value 3 and ``y`` value 4, but another point has ``x`` value 5 and ``y`` value 9, those two Point objects should probably look different when you print them, right? 
+
+Take a look at the code below.
+
 .. activecode:: chp13_classesstr2
 
     class Point:
