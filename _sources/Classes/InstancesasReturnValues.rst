@@ -39,7 +39,7 @@ the target point it accepts as input.
             return ((self.x ** 2) + (self.y ** 2)) ** 0.5
           
         def __str__(self):
-            return "x=" + str(self.x) + ", y=" + str(self.y)
+            return "x = {}, y = {}".format(self.x, self.y)
 
         def halfway(self, target): 
              mx = (self.x + target.x)/2

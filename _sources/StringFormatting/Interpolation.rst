@@ -64,7 +64,7 @@ For example,
 
 Another option is to specifically refer to keywords (think back to keyword arguments for functions!) for interpolation values, like below.
 
-.. activecode:: interpolation_4
+.. activecode:: interpolation_4a
  
    names_scores = [("Jack",[67,89,91]),("Emily",[72,95,42]),("Taylor",[83,92,86])]
    for name, scores in names_scores:

@@ -64,7 +64,7 @@ To relieve hunger, we call the feed() method.
         def __str__(self):
             state = "     I'm " + self.name + ". "
             state += " I feel " + self.mood() + ". "
-            # state += "Hunger %d Boredom %d Words %s" % (self.hunger, self.boredom, self.sounds)
+            # state += "Hunger {} Boredom {} Words {}".format(self.hunger, self.boredom, self.sounds)
             return state
 
         def hi(self):

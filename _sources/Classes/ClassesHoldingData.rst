@@ -6,7 +6,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. _thinking_about_classes:
 
 Defining Classes with Data from the Internet
 --------------------------------------------
@@ -21,7 +20,7 @@ You can read the documentation and make a few requests to the API to see what th
 
 It turns out that if you make a request like this:
 
-``resp = requests.get("",params={"term":"beatles","entity":"song"}).json()``
+``resp = requests.get("https://itunes.apple.com/search",params={"term":"beatles","entity":"song"}).json()``
 
 you get data back that *includes* a big list of dicitionaries that represent songs. You have to parse through the nested data a little bit to save that list in a variable (remember the :ref:`Nested Data Structures<nested_chap>` chapter), but once you're there, you can play around with it and look at the information it contains. 
 
