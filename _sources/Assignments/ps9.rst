@@ -19,6 +19,13 @@ You have the following graded activities:
 * **Before Monday's class:**
    * Read :ref:`Defining classes<classes_chap>` and do the exercises in the chapter.
 
+.. usageassignment:: prep_16
+    :chapters: Classes
+    :assignment_name: Prep a15
+    :deadline: 2016-03-14 21:30:00
+    :pct_required: 80
+    :points: 50
+
 * **Before Tuesday at midnight:**
 	* Read *The Success of Open Source*, Chapter 2
    	* Complete `Reading Response 9 <https://umich.instructure.com/courses/48961/assignments/57685>`_ on Canvas.
@@ -30,13 +37,6 @@ You have the following graded activities:
 	* Complete `Problem Set 9 <https://umich.instructure.com/courses/48961/assignments/55803>`_ on Canvas.
 	* **Before 6 pm:** Complete `Demonstrate Understanding 9 <https://umich.instructure.com/courses/48961/assignments/57698>`_ on Canvas.
 
-
-.. usageassignment:: prep_16
-    :chapters: Classes
-    :assignment_name: Prep a15
-    :deadline: 2016-03-14 21:30:00
-    :pct_required: 80
-    :points: 50
 
 .. usageassignment:: prep_16
     :chapters: Inheritance
