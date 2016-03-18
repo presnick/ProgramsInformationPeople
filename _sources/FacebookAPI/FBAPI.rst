@@ -17,21 +17,22 @@
 Facebook API Exercises
 ----------------------
 
-Download the code file fbapi.py from Canvas. It contains the following code.
+Download the code file ``fbapi.py`` from Canvas. It contains the following code. 
+
+(In order to run it, you will need to have ``pip install``ed the following libraries: ``requests`` and ``facebook-sdk``, which must be referred to in the import statement as **facebook**.)
 
 .. sourcecode:: python
 
     import facebook
     import json
-    import test
     import requests
     
     def pretty(obj):
         return json.dumps(obj, sort_keys=True, indent=2)
     
-    fb_class_id = '1683212485235313'
+    fb_class_id = '1752935254934382'
         
-    r = requests.get("https://graph.facebook.com/?%s" % (fb_class_id))
+    r = requests.get("https://graph.facebook.com/?{}".format(fb_class_id))
     print r.status_code
     print r.text
     
@@ -45,12 +46,13 @@ Download the code file fbapi.py from Canvas. It contains the following code.
     # create an instance of the class GraphAPI, which saves our access_token
     graph = facebook.GraphAPI(access_token)
     # When you the GraphAPI instance, access_token will be automatically passed to FB, in the format FB wants it
-    # (not in the URL, unfortunately)
+    # (not in the URL, unfortunately).
     # We want to tell Facebook that we want the feed with certain fields:
     # the message of each post; each post's comments; and each post's likes.
-    feed = graph.get_object("%s/feed?fields=message,from,comments,likes" % (fb_class_id))
+    feed = graph.get_object("{}/feed?fields=message,from,comments,likes".format(fb_class_id))
     # graph.get_object returns passes the results through a json decoder,
-    # so it produces a dictionary, not a Response object like we received from requests.get
+    # so it produces a Python dictionary, not a Response 
+    # object like we received from calls to requests.get.
     
     print type(feed)
     print feed.keys()
@@ -60,7 +62,9 @@ Download the code file fbapi.py from Canvas. It contains the following code.
     print feed['data'][2]["message"]
 
 
- To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``. We're going to largely focus on the individual and group feeds, and the posts, who each post is from, each post's comments, and each post's likes. You can see that this already gives you a very complicated structure of data! But you can use the Graph API explorer to give you an idea of what different information you can get from the Facebook Graph API and how it might be useful for you.
+ To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``, and to try out API requests, you can play with the `Graph API Explorer <https://developers.facebook.com/tools/explorer>`_. We're going to largely focus on the individual and group feeds, and the posts: who each post is from, each post's comments, and each post's likes. (As we write this, Facebook Reactions were recently rolled out -- but the API allows us to get data just about *likes*, which we'll do for this course.) 
+
+ You can see that this already gives you a very complicated structure of data! But you can use the Graph API explorer to give you an idea of what different information you can get from the Facebook Graph API and how it might be useful for you.
 
 
 .. mchoicemf:: fb_api_1
