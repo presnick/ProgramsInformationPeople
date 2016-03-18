@@ -424,6 +424,19 @@ Inheritance
    Inheritance/TamagotchiRevisited.rst
    Inheritance/Exercises.rst
 
+More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   AdvancedAccumulation/intro.rst
+   AdvancedAccumulation/map.rst
+   AdvancedAccumulation/filter.rst
+   AdvancedAccumulation/listcomp.rst
+   AdvancedAccumulation/reduce.rst
+   AdvancedAccumulation/zip.rst
+   AdvancedAccumulation/exercises.rst
 
 The FaceBook Graph API
 ::::::::::::::::::::::
@@ -432,8 +445,6 @@ The FaceBook Graph API
     :maxdepth: 2
 
     FacebookAPI/FBAPI.rst
-
-
 
 Pyglet
 ::::::
@@ -458,19 +469,6 @@ Test Cases
    Testing/Glossary.rst
 
 
-More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   AdvancedAccumulation/intro.rst
-   AdvancedAccumulation/map.rst
-   AdvancedAccumulation/filter.rst
-   AdvancedAccumulation/listcomp.rst
-   AdvancedAccumulation/reduce.rst
-   AdvancedAccumulation/zip.rst
-   AdvancedAccumulation/exercises.rst
 
 Prediction and Classification
 :::::::::::::::::::::::::::::
