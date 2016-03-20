@@ -67,7 +67,13 @@ Now define lengths using a list comprehension instead.
 .. activecode:: filter_exercise_2
 
    things = [3, 5, -4, 7]
-   # write code to produce a list of only the positive things, [3, 5, 7], via manual accumulation
+   # write code to produce a list of only the positive things, [3, 5, 7], using the filter function
+
+
+.. activecode:: filter_exercise_2a
+
+   things = [3, 5, -4, 7]
+   # write code to produce a list of only the positive things, [3, 5, 7], using a list comprehension
 
 # define longwords using manual accumulation
 
