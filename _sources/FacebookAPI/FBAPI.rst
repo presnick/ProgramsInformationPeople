@@ -21,6 +21,10 @@ Download the code file ``fbapi.py`` from Canvas. It contains the following code.
 
 (In order to run it, you will need to have ``pip install``ed the following libraries: ``requests`` and ``facebook-sdk``, which must be referred to in the import statement as **facebook**.)
 
+The ``facebook-sdk`` module installation, and then the ``import facebook`` you see in the code below, allow you to use an external module to handle the special authentication the Facebook API requires, after you get your Facebook Authentication token at ``https://developers.facebook.com/tools/explorer`` (you'll need to sign in with your Facebook account). You can also see results from sample requests to the Facebook API on that page, and choose different authentication permissions -- in other words, choosing what rights you have to see different data on Facebook.
+
+We won't cover all the details of this in this course, but try running the following code -- and play around with it to see if you can print out different post messages from our course Facebook group.
+
 .. sourcecode:: python
 
     import facebook
