@@ -17,53 +17,37 @@
 Facebook API Exercises
 ----------------------
 
-Download the code file ``fbapi.py`` from Canvas. It contains the following code. 
+Download the code file ``fbapi.py`` from Canvas. It contains code to get data from the Facebook API. 
 
-(In order to run it, you will need to have ``pip install``ed the following libraries: ``requests`` and ``facebook-sdk``, which must be referred to in the import statement as **facebook**.)
+(In order to run it, you will need to have ``pip install``ed the ``requests`` library, discussed when you learned about using APIs.)
 
-The ``facebook-sdk`` module installation, and then the ``import facebook`` you see in the code below, allow you to use an external module to handle the special authentication the Facebook API requires, after you get your Facebook Authentication token at ``https://developers.facebook.com/tools/explorer`` (you'll need to sign in with your Facebook account). You can also see results from sample requests to the Facebook API on that page, and choose different authentication permissions -- in other words, choosing what rights you have to see different data on Facebook.
+You will also need to get your own Facebook Authentication token at ``https://developers.facebook.com/tools/explorer`` (you'll need to sign in with your Facebook account, click ``Get Token``, and copy that long string of characters that appears). You can also see results from sample requests to the Facebook API on that page, and choose different authentication permissions -- in other words, choosing what rights you have to see different data on Facebook.
 
 We won't cover all the details of this in this course, but try running the following code -- and play around with it to see if you can print out different post messages from our course Facebook group.
 
+The reason you need this special authentication token from Facebook, which you'll need to regenerate on that same page every couple of hours in order to run your code, is because the Facebook API requires a type of authorization that the FAA API and the Flickr API did not. 
+
+This is pretty intuitive -- Facebook is likely to have a lot of personal data accessible when you log in! Providing your access token, and associating certain permissions with it, as seen in class, and inputting that access token as a query parameter, allows you to make a request to the Facebook API that gets you data *you* can access (data for a closed group you are part of, or data from your own Facebook feed, for example).
+
 .. sourcecode:: python
 
-    import facebook
-    import json
     import requests
-    
-    def pretty(obj):
-        return json.dumps(obj, sort_keys=True, indent=2)
-    
-    fb_class_id = '1752935254934382'
-        
-    r = requests.get("https://graph.facebook.com/?{}".format(fb_class_id))
-    print r.status_code
-    print r.text
-    
-    # get access token from 
-    # https://developers.facebook.com/tools/explorer"
+    import json
+
     access_token = None
-    
-    if access_token == None:
+    group_id = None
+    if access_token is None:
         access_token = raw_input("\nCopy and paste token from https://developers.facebook.com/tools/explorer\n>  ")
-    
-    # create an instance of the class GraphAPI, which saves our access_token
-    graph = facebook.GraphAPI(access_token)
-    # When you the GraphAPI instance, access_token will be automatically passed to FB, in the format FB wants it
-    # (not in the URL, unfortunately).
-    # We want to tell Facebook that we want the feed with certain fields:
-    # the message of each post; each post's comments; and each post's likes.
-    feed = graph.get_object("{}/feed?fields=message,from,comments,likes".format(fb_class_id))
-    # graph.get_object returns passes the results through a json decoder,
-    # so it produces a Python dictionary, not a Response 
-    # object like we received from calls to requests.get.
-    
-    print type(feed)
-    print feed.keys()
-    print type(feed['data'])
-    print len(feed['data'])
-    print pretty(feed['data'][2])
-    print feed['data'][2]["message"]
+    if group_id is None:
+        group_id = raw_input("\nCopy and paste your userid or FB group id: ")
+    url_params = {}
+    url_params["access_token"] = access_token
+    url_params["fields"] = "message,comments,likes"
+    baseurl = "https://graph.facebook.com/{}/feed".format(group_id)
+    r = requests.get(baseurl ,params=url_params)
+    print r.url
+    d = json.loads(r.text)
+    print d.keys()
 
 
  To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``, and to try out API requests, you can play with the `Graph API Explorer <https://developers.facebook.com/tools/explorer>`_. We're going to largely focus on the individual and group feeds, and the posts: who each post is from, each post's comments, and each post's likes. (As we write this, Facebook Reactions were recently rolled out -- but the API allows us to get data just about *likes*, which we'll do for this course.) 
@@ -82,21 +66,8 @@ We won't cover all the details of this in this course, but try running the follo
    :feedback_c:
    :feedback_d:
    
-   Use the `Facebook Graph explorer <https://developers.facebook.com/tools/explorer>`_ and run a GET request on me?fields=locale. In the results, what is the value associated with the "locale" key?
-  
-.. mchoicemf:: fb_api_3
-   :answer_a: The Facebook server is temporarily not working
-   :answer_b: Facebook only accepts REST API calls accompanied by an authorization key
-   :answer_c: The ? is in the wrong place
-   :answer_d: 269032479960344 is not an id that FB recognizes
-   :correct: b
-   :feedback_a: Even when the server is working, it won't provide data in response to a request unless it is accompanied by an authorization key
-   :feedback_b: The authorization key is normally acquired through the oauth protocol, which we aren't using. We will work around that by copying and pasting it from the FB Graph Explorer https://developers.facebook.com/tools/explorer
-   :feedback_c: The ? is in the right place, according to the FB Graph API documentation https://developers.facebook.com/docs/graph-api/using-graph-api
-   :feedback_d: That's actually the id for the FB group for our class.
-   
-   Last week, you learned how to call REST APIs using requests.get. What happens when you try to invoke the FB API using requests.get? Try executing line 9-13 from fbapi.py. Also try visiting the URL https://graph.facebook.com/?269032479960344 in your browser. What do you think is going on?
-   
+   Use the same setup to run a GET request on me?fields=locale. In the results, what is the value associated with the "locale" key?
+     
    
 .. mchoicema:: fb_api_4
    :answer_a: You would like your code to be compressed so that it uses less space on your file system
