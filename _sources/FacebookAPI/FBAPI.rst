@@ -19,7 +19,7 @@ Facebook API Exercises
 
 Download the code file ``fbapi.py`` from Canvas. It contains code to get data from the Facebook API. 
 
-(In order to run it, you will need to have ``pip install``ed the ``requests`` library, discussed when you learned about using APIs.)
+(In order to run it, you will need to have ``pip install`` ed the ``requests`` library, discussed when you learned about using APIs.)
 
 You will also need to get your own Facebook Authentication token at ``https://developers.facebook.com/tools/explorer`` (you'll need to sign in with your Facebook account, click ``Get Token``, and copy that long string of characters that appears). You can also see results from sample requests to the Facebook API on that page, and choose different authentication permissions -- in other words, choosing what rights you have to see different data on Facebook.
 
@@ -50,9 +50,9 @@ This is pretty intuitive -- Facebook is likely to have a lot of personal data ac
     print d.keys()
 
 
- To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``, and to try out API requests, you can play with the `Graph API Explorer <https://developers.facebook.com/tools/explorer>`_. We're going to largely focus on the individual and group feeds, and the posts: who each post is from, each post's comments, and each post's likes. (As we write this, Facebook Reactions were recently rolled out -- but the API allows us to get data just about *likes*, which we'll do for this course.) 
+To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``, and to try out API requests, you can play with the `Graph API Explorer <https://developers.facebook.com/tools/explorer>`_. We're going to largely focus on the individual and group feeds, and the posts: who each post is from, each post's comments, and each post's likes. (As we write this, Facebook Reactions were recently rolled out -- but the API allows us to get data just about *likes*, which we'll do for this course.)
 
- You can see that this already gives you a very complicated structure of data! But you can use the Graph API explorer to give you an idea of what different information you can get from the Facebook Graph API and how it might be useful for you.
+You can see that this already gives you a very complicated structure of data! But you can use the Graph API explorer to give you an idea of what different information you can get from the Facebook Graph API and how it might be useful for you. You might also find it helpful to use `jsoneditoronline.org <http://www.jsoneditoronline.org/>`_ to help make sense of the results that come back, and figure out how to extract data from the nested dictionary.
 
 
 .. mchoicemf:: fb_api_1
