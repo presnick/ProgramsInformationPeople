@@ -22,7 +22,7 @@ Activities through 4/3
        * Try installing the ``pyglet`` library with ``pip``, and run some of the provided code in your native Python interpreter.
 
 .. usageassignment:: prep_20
-    :subchapters: Pyglet/Pyglet, Pyglet/pygletWindowt, Pyglet/eventListener,Pyglet/windowContents, Pyglet/sounds, Pyglet/jinglingSquare, Pyglet/schedulingEvents
+    :subchapters: Pyglet/Pyglet, Pyglet/pygletWindow, Pyglet/eventListener, Pyglet/windowContents, Pyglet/sounds, Pyglet/jinglingSquare, Pyglet/schedulingEvents
     :assignment_name: Prep a20
     :deadline: 2016-03-27 21:30:00
     :pct_required: 80
