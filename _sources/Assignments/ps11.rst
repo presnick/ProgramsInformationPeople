@@ -15,6 +15,33 @@
 Activities through 4/3
 =======================
 
-You have the following graded activities:
+* **Before Monday's class:**
+       * Read :ref:`Pyglet<list_comp_chap>` up to the **Pong** subchapter. Try installing the ``pyglet`` library with ``pip``, and run some of the provided code in your native Python interpreter.
+       * Read these carefully. We will provide introductions to this material in lecture, and walk you through all of the code. **We strongly recommend you attend lecture this week, even if you do not usually. It will make it much easier to learn the material!**
 
-**TBA**
+.. usageassignment:: prep_20
+    :chapters: Pyglet
+    :assignment_name: Prep a17
+    :deadline: 2016-03-27 21:30:00
+    :pct_required: 60
+    :points: 50
+
+* **Before Tuesday at midnight:**
+
+    * Read *The Success of Open Source*, Chapter 4
+    * Complete `Reading Response 11 <https://umich.instructure.com/courses/48961/assignments/57687>`_ on Canvas.
+
+* **Before Wednesday's class:**
+       * Read the Pong subchapter of the :ref:`Pyglet<list_comp_chap>` chapter in the textbook, and review the earlier sections of the :ref:`Pyglet<list_comp_chap>` chapter.
+       * Review the code from lecture on Monday. 
+
+.. usageassignment:: prep_21
+    :subchapters: Pong
+    :assignment_name: Prep a18
+    :deadline: 2016-03-30 21:30:00
+    :pct_required: 80
+    :points: 50
+
+* **Before Sunday 3/27 at 5 pm:**
+	* Complete `Problem Set 11 <https://umich.instructure.com/courses/48961/assignments/55805>`_ on Canvas.
+	* **Before 6 pm:** Complete `Demonstrate Understanding 11 <https://umich.instructure.com/courses/48961/assignments/57701>`_ on Canvas.
