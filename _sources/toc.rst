@@ -450,10 +450,16 @@ Pyglet
 ::::::
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   Pyglet/Pyglet.rst
-   Pyglet/Pong.rst
+    Pyglet/Pyglet.rst
+    Pyglet/pygletWindow.rst
+    Pyglet/eventListener.rst
+    Pyglet/windowContents.rst
+    Pyglet/sounds.rst
+    Pyglet/jinglingSquare.rst
+    Pyglet/schedulingEvents.rst
+    Pyglet/Pong.rst
 
 
 Test Cases

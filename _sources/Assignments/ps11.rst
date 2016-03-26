@@ -15,15 +15,17 @@
 Activities through 4/3
 =======================
 
+**We strongly recommend you attend lecture this week, even if you do not usually. It will make it much easier to learn the material and do the problem set this week!**
+
 * **Before Monday's class:**
-       * Read :ref:`Pyglet<list_comp_chap>` up to the **Pong** subchapter. Try installing the ``pyglet`` library with ``pip``, and run some of the provided code in your native Python interpreter.
-       * Read these carefully. We will provide introductions to this material in lecture, and walk you through all of the code. **We strongly recommend you attend lecture this week, even if you do not usually. It will make it much easier to learn the material!**
+       * Read :ref:`Pyglet<pyglet_chap>` exceot for the last page, on the **Pong** game, which we'll look at on Wednesday.
+       * Try installing the ``pyglet`` library with ``pip``, and run some of the provided code in your native Python interpreter.
 
 .. usageassignment:: prep_20
-    :chapters: Pyglet
+    :subchapters: Pyglet/Pyglet, Pyglet/pygletWindowt, Pyglet/eventListener,Pyglet/windowContents, Pyglet/sounds, Pyglet/jinglingSquare, Pyglet/schedulingEvents
     :assignment_name: Prep a20
     :deadline: 2016-03-27 21:30:00
-    :pct_required: 60
+    :pct_required: 80
     :points: 50
 
 * **Before Tuesday at midnight:**
@@ -32,11 +34,12 @@ Activities through 4/3
     * Complete `Reading Response 11 <https://umich.instructure.com/courses/48961/assignments/57687>`_ on Canvas.
 
 * **Before Wednesday's class:**
-       * Read the Pong subchapter of the :ref:`Pyglet<list_comp_chap>` chapter in the textbook, and review the earlier sections of the :ref:`Pyglet<list_comp_chap>` chapter.
-       * Review the code from lecture on Monday. 
+       * Read the Pong subchapter of the :ref:`Pyglet<pyglet_chap>` chapter in the textbook, and review the earlier sections as necessary.
+       * From Canvas, download the code file basepong.py and print out the PDFs basepong.pdf and LecturePongQuestions.pdf
+       * Write down your answers to Questions 1-11 from LecturePongQuestions.pdf before class and bring them with you to class. We will go over answers to those questions and then you will work with others in class to try to answer the rest of them.
 
 .. usageassignment:: prep_21
-    :subchapters: Pong
+    :subchapters: Pyglet/Pong
     :assignment_name: Prep a21
     :deadline: 2016-03-30 21:30:00
     :pct_required: 80

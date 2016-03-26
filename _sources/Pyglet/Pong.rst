@@ -6,10 +6,9 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. index:: compound data type
 
 Pong
-======
+=====
 
 To illustrate the power of the Pyglet framework and subclassing, we provide a simple implementation of Pong, the original Atari arcade game.
 
