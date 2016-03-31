@@ -30,7 +30,9 @@ Activities through 4/3
 
 * **Before Tuesday at midnight:**
     * Read *The Success of Open Source*, Chapter 4
+    * Read about the `Drupal open source community <https://medium.com/@heyrocker/this-article-was-originally-a-keynote-presentation-at-the-pacific-northwest-drupal-summit-in-5e7c7f93131b>`_. Drupal is a "Content Management System" that makes it relatively easy to develop websites that have dynamic content and interactive features like commenting and tagging. (Note: it may be helpful in reading the article to know that "Dries" is `Dries Buytaert <http://buytaert.net/>`_, the person who started Drupal and "webchick" is the username chosen by `Angie Byron <http://www.webchick.net/about>`_, a prominent member of the community.)
     * Complete `Reading Response 11 <https://umich.instructure.com/courses/48961/assignments/57687>`_ on Canvas.
+
 
 * **Before Wednesday's class:**
        * Read the Pong subchapter of the :ref:`Pyglet<pyglet_chap>` chapter in the textbook, and review the earlier sections as necessary.
