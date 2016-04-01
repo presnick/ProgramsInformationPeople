@@ -446,6 +446,18 @@ The FaceBook Graph API
 
     FacebookAPI/FBAPI.rst
 
+
+APIs Using OAuth
+::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   APIsWithOAuth/RequestsOAuthLib.rst
+   APIsWithOAuth/TwitterAPI.rst
+   APIsWithOAuth/Paging.rst
+
+
 Pyglet
 ::::::
 
