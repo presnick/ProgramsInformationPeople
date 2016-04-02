@@ -18,7 +18,7 @@ Activities through 4/3
 **We strongly recommend you attend lecture this week, even if you do not usually. It will make it much easier to learn the material and do the problem set this week!**
 
 * **Before Monday's class:**
-       * Read :ref:`Pyglet<pyglet_chap>` exceot for the last page, on the **Pong** game, which we'll look at on Wednesday.
+       * Read :ref:`Pyglet<pyglet_chap>` except for the last page, on the **Pong** game, which we'll look at on Wednesday.
        * Try installing the ``pyglet`` library with ``pip``, and run some of the provided code in your native Python interpreter.
 
 .. usageassignment:: prep_20

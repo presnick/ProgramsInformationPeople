@@ -11,10 +11,38 @@
 .. highlight:: python
     :linenothreshold: 500
 
-
 Activities through 4/10
 =======================
 
-You have the following graded activities:
+* **Before Monday's class:**
+       * Read about :ref:`Test Cases<test_cases_chap>`.
+* **Before Monday's class:**
+       * Read :ref:`APIs with OAuth <requests_oauthlib>`.
+       * Install ``requests_oauthlib`` with ``pip``.
+       * Download the ``oauth_with_twitter.py`` code from Canvas in **Files > Code** and look through it, try running it and understanding what it does.
 
-**TBA**
+.. usageassignment:: prep_22
+    :chapters: APIsWithOAuth
+    :assignment_name: Prep a22
+    :deadline: 2016-04-4 21:30:00
+    :pct_required: 80
+    :points: 50
+
+* **Before Tuesday at midnight:**
+    * Read *The Success of Open Source*, Chapter 4
+    * Complete `Reading Response 12 <https://umich.instructure.com/courses/48961/assignments/57688>`_ on Canvas.
+
+* **Before Wednesday's class:**
+    * (Re)read :ref:`Debugging nested data <debug_nested_chap>`
+    * Read :ref:`Test suites <test_cases_chap>`
+
+.. usageassignment:: prep_23
+    :chapters: Testing
+    :assignment_name: Prep a23
+    :deadline: 2016-04-06 21:30:00
+    :pct_required: 80
+    :points: 50
+
+* **Before Sunday 4/10 at 5 pm:**
+	* Complete `Problem Set 12 <https://umich.instructure.com/courses/48961/assignments/55806>`_ on Canvas.
+	* **Before 6 pm:** Complete `Demonstrate Understanding 12 <https://umich.instructure.com/courses/48961/assignments/57702>`_ on Canvas.

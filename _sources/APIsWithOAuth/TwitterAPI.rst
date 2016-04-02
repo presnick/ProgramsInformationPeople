@@ -9,14 +9,14 @@
     License".
 
 .. highlight:: python
-:linenothreshold: 500
+    :linenothreshold: 500
 
 .. _twitter_api:
 
 The Twitter API
----------------
+===============
 
-The Twitter API is one that works like this. You can see the full documentation for it HERE.
+The Twitter API is one that works like this. You can see the full documentation for it `online <https://dev.twitter.com/rest/public>`_.
 
 We've provided some code in a file called ``oauth_with_twitter.py`` on Canvas, **Files > Code**. This code automates some of that process you just read about. It's heavily commented so you can go through it and understand how it can help you. It can also be adapted for similar APIs. Its contents are below.
 
@@ -39,7 +39,7 @@ Once you're done setting up your application, you should see something like this
 
 .. img::Figures/finishedtwitterapp.png
 
-The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier to open the file yourself on Canvas and examine it in Sublime Text.
+The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier to open the file yourself on Canvas and examine it in a code editor.
 
 .. sourcecode:: python
 
@@ -52,7 +52,7 @@ The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier t
         
     # Get these from the Twitter website, by going to
     # https://apps.twitter.com/ and creating an "app"
-    # Don't fill in a callback_url and put in a placeholder for the website
+    # Don't fill in a callback_url; instead, put in a placeholder for the website
     # Visit the Keys and Access Tokens tab for your app and grab the following two values
 
     client_key = None # what Twitter calls Consumer Key -- fill in a string here
