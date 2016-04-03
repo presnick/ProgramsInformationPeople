@@ -35,10 +35,6 @@ The beginning of the ``oauth_with_twitter`` code has a link to ``https://apps.tw
 
 * You will need to add a mobile phone number to your Twitter account in order to register an application (this is a new requirement). If you don't feel comfortable doing this, you can get a Google Voice number at this url: ``https://support.google.com/voice/answer/115061?hl=en`` -- you will have to authorize your phone number by typing in a text message code that you receive in order to register a Twitter application.
 
-Once you're done setting up your application, you should see something like this:
-
-.. img::Figures/finishedtwitterapp.png
-
 The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier to open the file yourself on Canvas and examine it in a code editor.
 
 .. sourcecode:: python
@@ -190,10 +186,8 @@ The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier t
     # print json.dumps(r.json(), indent=2)
     res = r.json()
     print res.keys()
-    import pprint # this is a special module that has uses like our pretty function
-    pp = pprint.PrettyPrinter(indent=2)
-    pp.pprint(res)
+    # print pretty(res)
+    # cache data
     f = open('nested.txt', 'w')
-    f.write(pp.pformat(res))
+    f.write(json.dumps(res))
     f.close()
-    print pp.pformat(res)
