@@ -21,7 +21,7 @@ You have the following graded activities:
 
 .. usageassignment:: prep_16
     :chapters: Classes
-    :assignment_name: Prep a15
+    :assignment_name: Prep a16
     :deadline: 2016-03-14 21:30:00
     :pct_required: 80
     :points: 50
@@ -38,9 +38,9 @@ You have the following graded activities:
 	* **Before 6 pm:** Complete `Demonstrate Understanding 9 <https://umich.instructure.com/courses/48961/assignments/57698>`_ on Canvas.
 
 
-.. usageassignment:: prep_16
+.. usageassignment:: prep_17
     :chapters: Inheritance
-    :assignment_name: Prep a16
+    :assignment_name: Prep a17
     :deadline: 2016-03-16 21:30:00
     :pct_required: 80
     :points: 50

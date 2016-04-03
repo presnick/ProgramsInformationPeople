@@ -19,9 +19,9 @@ Activities through 3/27
        * Read :ref:`List comprehensions<list_comp_chap>`
        * Try the exercises at the end of the chapter. We will work on them together in lecture on Monday, but see if you can at least get the first four done in advance.
 
-.. usageassignment:: prep_17
+.. usageassignment:: prep_18
     :chapters: AdvancedAccumulation
-    :assignment_name: Prep a17
+    :assignment_name: Prep a18
     :deadline: 2016-03-21 21:30:00
     :pct_required: 80
     :points: 50
@@ -39,9 +39,9 @@ Activities through 3/27
        * Use pip to install the requests module and facebook-sdk module (instructions in the slides)
        * Read about the :ref:`FB Graph API<fb_api_exercises>` and do the exercises.
 
-.. usageassignment:: prep_18
+.. usageassignment:: prep_19
     :chapters: FacebookAPI
-    :assignment_name: Prep a18
+    :assignment_name: Prep a19
     :deadline: 2016-03-23 21:30:00
     :pct_required: 80
     :points: 50
