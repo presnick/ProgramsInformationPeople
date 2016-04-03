@@ -15,8 +15,6 @@ Activities through 4/10
 =======================
 
 * **Before Monday's class:**
-       * Read about :ref:`Test Cases<test_cases_chap>`.
-* **Before Monday's class:**
        * Read :ref:`APIs with OAuth <requests_oauthlib>`.
        * Install ``requests_oauthlib`` with ``pip``.
        * Download the ``oauth_with_twitter.py`` code from Canvas in **Files > Code** and look through it, try running it and understanding what it does.

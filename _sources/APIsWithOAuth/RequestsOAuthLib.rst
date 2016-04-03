@@ -18,7 +18,7 @@ Requests OAuthLib Library
 
 You've already seen one way of using the OAuth Protocol in programs that run on your own computer (not online/in a web application), when we learned about the Facebook API. Facebook provided an website where you could generate an access token for a particular user, with specific privileges. You pasted into your code. That access token was used as one of the parameters in calls to ``requests.get``, from the ``requests`` library.
 
-However, for some other sites that don't provide such a tool, you may need to have your code act out one of the parts in the oauth protocol in order to get an authorization token. For that, we will use a module that helps shield you from some of the complexities of the oauth protocol. It's called called ``requests_oauthlib``.
+However, for some other sites that don't provide such a tool, you may need to have your code act out one of the parts in the oauth protocol in order to get an authorization token. For that, we will use a module that helps shield you from some of the complexities of the oauth protocol. It's called ``requests_oauthlib``.
 
 In order to use it, you'll need to ``pip install requests_oauthlib`` (using whatever method of ``pip`` installation works for you -- the full path, for Windows users, or ``sudo``, for Mac users).
 
