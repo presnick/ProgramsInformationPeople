@@ -15,6 +15,19 @@
 Activities through 4/17
 =======================
 
-You have the following graded activities:
+* **Monday's class:**
+       * Monday's class will be all project coding time with instructional staff. 
+       * We have a new system for queuing and asking questions to make the distribution of help as fair (and as helpful to you all) as we can. You can see it on Canvas, **Pages > Help request procedures**. **Please do not put yourself in the queue outside of class or office hours sessions** (we will clear the queue in our spreadsheet before each one), but you are always welcome to post on the Facebook group!
 
-**TBA**
+* **Before Tuesday at midnight:**
+    * Read *The Success of Open Source*, Chapter 6
+    * Complete `Reading Response 13 <https://umich.instructure.com/courses/48961/assignments/57689>`_ on Canvas.
+
+* **Wednesday's class:**
+       * Wednesday will also include project coding time with instructional staff. See above.
+
+* **Upcoming (more later):**
+       * Project Hackathon, April 17, 1-8 pm.
+       * Projects due April 18, 2 pm.
+       * Final Exam Review, April 19, time/location TBA.
+   
