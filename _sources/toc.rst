@@ -73,7 +73,7 @@ Object Instances
    PythonTurtle/OurFirstTurtleProgram.rst
    PythonTurtle/InstancesAHerdofTurtles.rst
    PythonTurtle/ObjectInstances.rst
-   PythonTurtle/SummaryofTurtleMethods.rst
+   PythonTurtle/SummaryOfTurtleMethods.rst
 
 Sequences
 :::::::::
