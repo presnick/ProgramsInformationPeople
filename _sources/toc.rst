@@ -3,10 +3,6 @@
 Table of Contents
 :::::::::::::::::
 
-Assignments
-:::::::::::
-
-
 General Introduction
 ::::::::::::::::::::
 
