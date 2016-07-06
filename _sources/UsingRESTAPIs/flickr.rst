@@ -13,7 +13,7 @@ Searching for tags on flickr
 
 Let's put this all together to make a little retrieval tool for flickr images containing particular tags. Of course, in a browser, you can just use flickr's search tool. But doing this through the API opens up other possibilities that you can explore for features not provided on the regular flickr website.
 
-Below is some code that queries the flickr API for images that have a particular tag (I have found that searching for "mountains" usually produces beautiful images that are "safe for work", so the example below does that search.) 
+Below is some code that queries the flickr API for images that have a particular tag (I have found that searching for "mountains" usually produces beautiful images that are "safe for work", so the example below does that search.)
 
 .. note:
 
@@ -24,83 +24,67 @@ Below is some code that queries the flickr API for images that have a particular
     import requests
     import json
     import webbrowser
+    import pickle
 
-    def pretty(obj):
-        return json.dumps(obj, sort_keys=True, indent=2)
+    cache_fname = "some_file.txt"
+    try:
+        fobj = open(cache_fname, 'r')
+        saved_cache = pickle.load(fobj)
+        fobj.close()
+    except:
+        saved_cache = {}
+
+    def requestURL(baseurl, params = {}):
+        req = requests.Request(method = 'GET', url = baseurl, params = params)
+        prepped = req.prepare()
+        return prepped.url
+
+    def get_with_caching(base_url, params_diction, cache_diction, cache_fname):
+        full_url = requestURL(base_url, params_diction)
+        # step 1
+        if full_url in cache_diction:
+            # step 2
+            logging.info("retrieving cached result for " + full_url)
+            return cache_diction[full_url]
+        else:
+            # step 3
+            response = requests.get(base_url, params=params_diction)
+            logging.info("adding cached result for " + full_url)
+            # add to the cache and save it permanently
+            cache_diction[full_url] = response.text
+            fobj = open(cache_fname, "w")
+            pickle.dump(cache_diction, fobj)
+            fobj.close()
+            return response.text
 
     # apply for a flickr authentication key at http://www.flickr.com/services/apps/create/apply/?
     # paste the key (not the secret) as the value of the variable flickr_key
     flickr_key = 'yourkeyhere'
 
-    cache_fname = "cached_flickr.txt"
-
-
-    def flickrREST(baseurl = 'https://api.flickr.com/services/rest/',
-        method = 'flickr.photos.search',
-        api_key = flickr_key,
-        format = 'json',
-        extra_params={}):
-        d = {}
-        d['method'] = method
-        d['api_key'] = api_key
-        d['format'] = format
-        for k in extra_params:
-            d[k] = extra_params[k]
-        resp = requests.get(baseurl, params = d)
-        # print resp.url
-        # cache the contents in a file
-        print "caching data"
-        f = open(cache_fname, 'w')
-        f.write(resp.text)
-        f.close()
-        # return the contents as text in this case
-        return resp.text
-
-
-    def extract_ids(resp_txt):
-        # try:
-            # d = result.json()
-        # except:
-            # print "can't interpret result as json; first 60 characters shown below"
-            # print result.text[0:60]
-            # print
-
-        d = json.loads(resp_txt[14:-1])
-        # print pretty(d)
-        # print d.keys()
-        # print d['photos'].keys()
-        photo_ds = d['photos']['photo']
-        # print photo_ids
-        return photo_ds
-
     def flickrdemo():
-        try:
-            f = open(cache_fname, 'r')
-            txt = f.read()
-            f.close()
-            print "succeeded at using cached data"
-        except:
-            txt = flickrREST(extra_params = {'tags':'mountains, Switzerland, cows', 'tag_mode':'all', 'per_page':5})
+        params_d = {}
+        params_d['method'] = 'flickr.photos.search'
+        params_d['api_key'] = flickr_key
+        params_d['format'] = 'json'
+        params_d['tags'] = ['mountains, Switzerland, cows']
+        params_d['tag_mode'] = 'all'
+        params_d['per_page'] = 5
 
+        print requestURL('https://api.flickr.com/services/rest/', params_d)
+        resp_text = get_with_caching('https://api.flickr.com/services/rest/', params=params_d, cache_diction = saved_cache, cache_fname = fname)
+        parsed_response = json.loads(resp_text[14:-1])
 
-        photo_ds = extract_ids(txt)
-
-        # print len(photo_ds)
-        # for k in photo_ds[0]:
-            # print k
+        photo_ds = parsed_response['photos']['photo'])
         for photo in photo_ds:
             owner = photo['owner']
             pid = photo['id']
             url = 'https://www.flickr.com/photos/{}/{}'.format(owner, pid)
             webbrowser.open(url)
 
-    try:
-       flickrdemo()
-    except:
-       print "Error in flickrdemo()"
+    flickrdemo()
 
 
-flickrREST takes various parameter values defining what to ask for from flickr. It then calls requests.get and returns whatever it returns.
+For documentation on how to do a flickr search for a particular tag, see the official documentation at https://www.flickr.com/services/api/flickr.photos.search.html. Based on that documentation, we set the parameters method, api_key, format, tags, tag_mode, and per_page. Note that in the code below, we have printed out the full url that is generated by requests.get. Try pasting it into a browser window and then editing the URL manually to try to change the search.
 
 Flickr does something a little weird with its result string. Instead of just sending back a JSON-formatted dictionary, it sends back a string that begins with 14 extra characters-- "jsonFlickrApi("-- and ends with an extra close parentheses character at the end. So we use the slice operator to strip out those extra characters. That is loaded into a python dictionary using json.loads().
 
@@ -108,4 +92,4 @@ Finally, we loop through the list of photo dictionaries that were returned, extr
 
 .. note:
 
-    If any of that code is puzzling, try uncommenting some of the print statements that are also included.
+    If any of that code is puzzling, try adding some print statements or breaking down the complex expressions into a series of shorter statements.
