@@ -19,6 +19,7 @@ Assignments
 :::::::::::
 
 .. toctree::
+   :maxdepth: 1
 
    assignments.rst
 

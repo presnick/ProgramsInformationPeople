@@ -2,14 +2,22 @@ Class Assignments
 -----------------
 
 
-This file allows you to create custom assignments for your class.  You write this file
-using any valid restructuredText, including the directives that are used in the book.
-For example if you want to have a homework problem where the students do some coding
-you can do this:
+.. toctree::
+   :maxdepth: 1
 
-Write a program that counts from 1 to 10
 
-.. actex:: unique_id_1
-
-   # your code here
+   Assignments/ps1.rst
+   Assignments/ps2.rst
+   Assignments/ps3.rst
+   Assignments/ps4.rst
+   Assignments/ps5.rst
+   Assignments/ps6.rst
+   Assignments/ps7.rst
+   Assignments/ps8.rst
+   Assignments/ps9.rst
+   Assignments/ps10.rst
+   Assignments/ps11.rst
+   Assignments/ps12.rst
+   Assignments/ps13.rst
+   Assignments/ps14.rst
 
