@@ -90,7 +90,7 @@ Glossary
         computations to be performed.
 
     programming language
-		A formal notation for representing solutions.
+        A formal notation for representing solutions.
 
     Python shell
         An interactive user interface to the Python interpreter. The user of a

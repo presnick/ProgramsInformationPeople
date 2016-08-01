@@ -105,7 +105,7 @@ Now sort the keys (numbers) based on their frequencies. Review
 
             s = sorted(d, key = lambda x: d[x], reverse=True)
             
-            print s[:5]
+            print(s[:5])
             
 
 Finally, generalize what you've done. Write a function that takes a string instead of a list as a parameter and returns a list of the five
@@ -133,6 +133,14 @@ most frequent characters in the string.
             
                 return s[:5]
                 
-            import test
-            test.testEqual(five_most_frequent("aaaaaabbbbbccccdefggghijkk"), ['a', 'b', 'c', 'g', 'k'])                
+            =====
+
+            from unittest.gui import TestCaseGui
+
+            class myTests(TestCaseGui):
+
+               def testOne(self):
+                  self.assertEqual(five_most_frequent("aaaaaabbbbbccccdefggghijkk"), ['a', 'b', 'c', 'g', 'k'], "Checking the value returned from using five_most_frequent.")
+
+            myTests().main()            
     

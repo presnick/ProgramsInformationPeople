@@ -53,9 +53,9 @@ the target point it accepts as input.
     # mid = q.halfway(p)
     # because they are both Point objects, and the middle is the same no matter what
 
-    print mid
-    print mid.getX()
-    print mid.getY()
+    print(mid)
+    print(mid.getX())
+    print(mid.getY())
        
 
 The resulting Point, ``mid``, has an x value of 4 and a y value of 8.  We can also use any other methods on ``mid`` since it is a

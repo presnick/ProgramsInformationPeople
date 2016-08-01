@@ -21,7 +21,7 @@ Many problems in your program will lead to an error message.  For example as I w
    wait_time_int = int(wait_time_int)
 
    final_time_int = current_time_int + wait_time_int
-   print final_time_int
+   print(final_time_int)
 
 Can you see what is wrong, just by looking at the code?  Maybe, maybe not.  Our brains tend to see what we think is there, so sometimes it is very hard to find the problem just by looking at the code.  Especially when it is our own code and we are sure that we have done everything right!
 
@@ -36,19 +36,19 @@ Let's try the program again, but this time in an activecode window:
    wait_time_int = int(wait_time_int)
 
    final_time_int = current_time_int + wait_time_int
-   print final_time_int
+   print(final_time_int)
 
 
 Aha!  Now we have an error message that might be useful.  The name error tells us that  ``wait_time_int`` is not defined.  It also tells us that the error is on line 5.  That's **really** useful information.  Now look at line five and you will see that ``wait_time_int`` is used on both the left and the right hand side of the assignment statement. 
 
-.. mchoicemf:: db_qex32
+.. mchoice:: db_qex32
    :answer_a: You cannot use a variable on both the left and right hand sides of an assignment statement.
    :answer_b: wait_time_int does not have a value so it cannot be used on the right hand side.
    :answer_c: This is not really an error, Python is broken.
-   :correct: b
    :feedback_a: No, You can, as long as all the variables on the right hand side already have values.
    :feedback_b: Yes.  Variables must already have values in order to be used on the right hand side.
    :feedback_c: No, No, No!
+   :correct: b
 
    Which of the following explains why ``wait_time_int = int(wait_time_int)`` is an error.
 
@@ -103,7 +103,7 @@ Here are a couple examples of Parse errors in the example program we have been u
            wait_time_int = int(wait_time_str)
 
            final_time_int = current_time_int + wait_time_int
-           print final_time_int
+           print(final_time_int)
 
     .. tab:: Answer
 
@@ -116,7 +116,7 @@ Here are a couple examples of Parse errors in the example program we have been u
            wait_time_int = int(wait_time_str)
 
            final_time_int = current_time_int + wait_time_int
-           print final_time_int
+           print(final_time_int)
 
         Since the error message points us to line 4 this might be a bit confusing.  If you look at line four carefully you will see that there is no problem with the syntax.  So, in this case the next step should be to back up and look at the previous line.  In this case if you look at line 2 carefully you will see that there is a missing right parenthesis at the end of the line.  Remember that parenthses must be balanced.  Since Python allows statements to continue over multiple lines inside parentheses python will continue to scan subsequent lines looking for the balancing right parenthesis.  However in this case it finds the name ``current_time_int`` and it will want to interpret that as another parameter to the input function.  But, there is not a comma to separate the previous string from the variable so as far as Python is concerned the error here is a missing comma.  From your perspective its a missing parenthesis.
 
@@ -139,7 +139,7 @@ Here are a couple examples of Parse errors in the example program we have been u
            wait_time_int = int(wait_time_str)
 
            final_time_int = current_time_int + wait_time_int
-           print final_time_int
+           print(final_time_int)
 
     .. tab:: Answer
 
@@ -152,7 +152,7 @@ Here are a couple examples of Parse errors in the example program we have been u
            wait_time_int = int(wait_time_str)
 
            final_time_int = current_time_int + wait_time_int
-           print final_time_int
+           print(final_time_int)
 
         The error message points you to line 1 and in this case that is exactly where the error occurs. In this case your biggest clue is to notice the difference in  highlighting on the line.  Notice that the words "current time" are a different color than those around them.  Why is this?  Because "current time" is in double quotes inside another pair of double quotes Python things that you are finishing off one string, then you have some other names and findally another string.  But you haven't separated these names or strings by commas, and you haven't added them together with the concatenation operator (+).  So, there are several corrections you could make.  First you could make the argument to input be as follows:  ``"what is the 'current time' (in hours 0-23)"``  Notice that here we have correctly used single quotes inside double quotes.   Another option is to simply remove the extra double quotes.  Why were you quoting "current time" anyway?  ``"what is the current time (in hours 0-23)"``
 
@@ -166,14 +166,14 @@ your clue that it thinks the string ends after the word the (because there's a c
 when you put your cursor to left of a ``)``, it changes the color of that parenthesis and its matching ``(``. And similarly if
 you put the cursor to the left of ``(``. But check what happens if the ``(`` has no matching ``)``.
 
-.. mchoicemf:: db_qex33
+.. mchoice:: db_qex33
    :answer_a: Nothing. The program has a syntax error and can't run.
    :answer_b: The left parenthesis turns green.
    :answer_c: The left parenthesis turns red.
-   :correct: c
-   :feedback_a: You may be reading too fast and not trying to test your understanding using an ActiveCode window
+   :feedback_a: You may be reading too fast and not trying to test your understanding using an ActiveCode window.
    :feedback_b: Sounds like you tried it on a left paren that did have a matching right paren.
-   :feedback_c: This color coding is your friend and can help you notice and fix parenthesis errors
+   :feedback_c: This color coding is your friend and can help you notice and fix parenthesis errors.
+   :correct: c
 
    In an ActiveCode window, what happens when you put the cursor left of a left parenthesis ``(`` that has no matching right parenthesis ``)``?
 
@@ -193,9 +193,9 @@ Here's an example of a type error created by a Polish learner.  See if you can f
     int(a)
     h = x // 24
     s = x % 24
-    print (h, s)
+    print((h, s))
     a = a + s
-    print ('godzina teraz %s' %a) 
+    print(('godzina teraz %s' %a))
 
 
 
@@ -232,7 +232,7 @@ Name errors almost always mean that you have used a variable before it has a val
     wai_time=int(str_wait_time)
 
     time_when_alarm_go_off=time+wait_time
-    print time_when_alarm_go_off
+    print(time_when_alarm_go_off)
 
 .. reveal:: db_ex39_reveal
     :showtitle: Show me the Solution
@@ -257,7 +257,7 @@ Here is another one for you to try:
     m = input("How many hours do you want to wait?")
     m = int(m)
     q = m % 12
-    print "The time is now", q
+    print("The time is now", q)
 
 
 .. reveal:: db_ex310_reveal
@@ -276,7 +276,7 @@ And one last bit of code to fix.
     set_alarm = input("set the hours for alarm:")
     int (present_time,set_time,alarm_time)
     alarm_time = present_time + set_alarm
-    print (alarm_time)
+    print(alarm_time)
 
 .. reveal:: db_ex311_reveal
     :showtitle: Show me the Solution
@@ -318,7 +318,7 @@ Value errors occur when you pass a parameter to a function and the function is e
    wait_time_int = int(wait_time_int)
 
    final_time_int = current_time_int + wait_time_int
-   print final_time_int
+   print(final_time_int)
 
 
 Run the program but instead of typing in anything to the dialog box just click OK.  You should see the following error message:  ``ValueError: invalid literal for int() with base 10: '' on line: 2``   This error is not because you have made a mistake in your program.  Although usually we do want to check the user input to make sure its valid, we don't have all the tools we need for that yet at this point in the course.  The error happens because the user did not give us something we can convert to an integer, instead we gave it an empty value.  Try running the program again.  Now this time enter "ten" instead of the number 10.  You will get a similar error message.

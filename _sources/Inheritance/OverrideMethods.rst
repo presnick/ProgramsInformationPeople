@@ -55,7 +55,7 @@ Here's the original Pet class again.
             return state
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))]
+            print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
         def teach(self, word):
@@ -105,8 +105,8 @@ Now let's make two subclasses, Dog and Cat. Dogs are always happy unless they ar
     d1 = Dog("Astro")
 
     c1.boredom = 1
-    print c1.mood()
+    print(c1.mood())
     c1.boredom = 3
     for i in range(10):
-        print c1.mood()
-    print d1.mood()
+        print(c1.mood())
+    print(d1.mood())

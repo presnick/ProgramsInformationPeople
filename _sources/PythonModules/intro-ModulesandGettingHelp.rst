@@ -23,15 +23,15 @@ A **module** is a file containing Python definitions and statements intended for
 use in other Python programs. There are many Python modules that come with
 Python as part of the **standard library**. 
 
-The  `Python Documentation <http://docs.python.org/2/>`_ site for Python version
-2.7 is an extremely useful reference for all aspects of Python. The site
+The  `Python Documentation <https://docs.python.org/3.4/>`_ site for Python version
+3.4 is an extremely useful reference for all aspects of Python. The site
 contains a listing of all the standard modules that are available with Python
-(see `Global Module Index <http://docs.python.org/2/py-modindex.html>`_). You
+(see `Global Module Index <https://docs.python.org/3.4/py-modindex.html>`_). You
 will also see that there is a
-`Standard Library Reference <http://docs.python.org/2/library/index.html>`_
+`Standard Library Reference <https://docs.python.org/3.4/library/index.html>`_
 (Next week, there will be a chapter explaining how to read the language
 reference documentation) and a
-`Tutorial <http://docs.python.org/2/tutorial/index.html>`_, as well as
+`Tutorial <https://docs.python.org/3.4/tutorial/index.html>`_, as well as
 installation instructions, how-tos, and frequently asked questions.  We
 encourage you to become familiar with this site and to use it often.
 
@@ -72,9 +72,9 @@ Syntax for Importing Modules and Functionality
 
 When you see imported modules in a Python program, there are a few variations that have slightly different consequences.
 
-1. The most common is  ``import morecode``. That imports everything in morecode.py. To invoke a function f1 that is defined in morecode.py, you would write ``morecode.f1()``. Note that you have to explicitly mention morecode again, to specify that you want the f1 function from morecode namespace. If you just write ``f1()``, python will look for an f1 that was defined in the current file, rather than in morecode.py.
+1. The most common is ``import morecode``. That imports everything in morecode.py. To invoke a function f1 that is defined in morecode.py, you would write ``morecode.f1()``. Note that you have to explicitly mention morecode again, to specify that you want the f1 function from morecode namespace. If you just write ``f1()``, python will look for an f1 that was defined in the current file, rather than in morecode.py.
 
-2. You can also give the imported module an alias. For example, after executing ``import morecode as mc``, you would invoke f1 as ``mc.f1()``. Programmers often do this to make code easier to type. In this course, we will be distributing a file called test106.py. In your code files for the rest of the semester, you will need to include the following line, ``import test106 as test``. Then you will be able to have code that invokes a function called testEqual, from test106.py, like so: ``test.testEqual(x, y)``. That will test whether x and y have the same value. testEqual is the function that we've been using already this semester, behind the scenes, to give you automated feedback about whether your problem set answers were correct.
+2. You can also give the imported module an alias. For example, after executing ``import morecode as mc``, you would invoke f1 as ``mc.f1()``. Programmers often do this to make code easier to type. 
 
 3. A third possibility for importing occurs when you only want to import SOME of the functionality from a module, and you want to make those objects be part of the current module's namespace. For example, you could write ``from morecode import f1``. Then you could invoke f1 without referencing morecode again: ``f1()``.
 
@@ -93,41 +93,41 @@ When you see imported modules in a Python program, there are a few variations th
 
 **Check your understanding**
 
-.. mchoicemf:: question4_1_1
+.. mchoice:: question4_1_1
    :answer_a: A file containing Python definitions and statements intended for use in other Python programs.
    :answer_b: A separate block of code within a program.
    :answer_c: One line of code in a program.
    :answer_d: A file that contains documentation about functions in Python.
-   :correct: a
    :feedback_a: A module can be reused in different programs.
    :feedback_b: While a module is separate block of code, it is separate from a program.
-   :feedback_c: The call to a feature within a module may be one line of code, but modules are usually multiple lines of code separate from the program
+   :feedback_c: The call to a feature within a module may be one line of code, but modules are usually multiple lines of code separate from the program.
    :feedback_d: Each module has its own documentation, but the module itself is more than just documentation.
+   :correct: a
 
    In Python a module is:
 
-.. mchoicemf:: question4_1_2
+.. mchoice:: question4_1_2
    :answer_a: Go to the Python Documentation site.
    :answer_b: Look at the import statements of the program you are working with or writing.
    :answer_c: Ask the professor.
    :answer_d: Look in this textbook.
-   :correct: a
    :feedback_a: The site contains a listing of all the standard modules that are available with Python.
    :feedback_b: The import statements only tell you what modules are currently being used in the program, not how to use them or what they contain.
    :feedback_c: While the professor knows a subset of the modules available in Python, chances are the professor will have to look up the available modules just like you would.
    :feedback_d: This book only explains a portion of the modules available.  For a full listing you should look elsewhere.
+   :correct: a
 
    To find out information on the standard modules available with Python you should:
 
-.. mchoicemf:: question4_1_3
+.. mchoice:: question4_1_3
    :answer_a: True
    :answer_b: False
-   :correct: b
    :feedback_a: Only turtle, math, and random have been ported to work in activecode at this time.
    :feedback_b: Only turtle, math, and random have been ported to work in activecode at this time.
+   :correct: b
 
    True / False:  All standard Python modules will work in activecode.
 
-
+.. In this course, we will be distributing a file called test106.py. In your code files for the rest of the semester, you will need to include the following line, ``import test106 as test``. Then you will be able to have code that invokes a function called testEqual, from test106.py, like so: ``test.testEqual(x, y)``. That will test whether x and y have the same value. testEqual is the function that we've been using already this semester, behind the scenes, to give you automated feedback about whether your problem set answers were correct.
 
 

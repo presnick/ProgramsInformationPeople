@@ -18,28 +18,28 @@ end of the sequence.
 .. activecode:: chp09_6
     
     a_list = ['a', 'b', 'c', 'd', 'e', 'f']
-    print a_list[1:3]
-    print a_list[:4]
-    print a_list[3:]
-    print a_list[:]
+    print(a_list[1:3])
+    print(a_list[:4])
+    print(a_list[3:])
+    print(a_list[:])
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_6_1
+.. mchoice:: test_question9_6_1
    :answer_a: [ [ ], 3.14, False]
    :answer_b: [ [ ], 3.14]
    :answer_c: [ [56, 57, "dog"], [ ], 3.14, False]
-   :correct: a
    :feedback_a: Yes, the slice starts at index 4 and goes up to and including the last item.
    :feedback_b: By leaving out the upper bound on the slice, we go up to and including the last item.
    :feedback_c: Index values start at 0.
+   :correct: a
    
    What is printed by the following statements?
    
    .. code-block:: python
    
      alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
-     print alist[4:]
+     print(alist[4:])
 
 
 

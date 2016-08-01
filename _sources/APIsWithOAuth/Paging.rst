@@ -69,8 +69,8 @@ Caching the combined results can be especially useful when dealing with Twitter.
         next_five_ids = [tweet['id'] for tweet in r.json()]  # get the ids from the tweets we just got
         ids = ids + next_five_ids # add them to the list, and start the for loop process over again
 
-    print ids
-    # print pretty(collected_tweets)
+    print(ids)
+    # print(pretty(collected_tweets))
 
     # cache the data we got back and collected
     fr = open("paging_nested.txt","w")

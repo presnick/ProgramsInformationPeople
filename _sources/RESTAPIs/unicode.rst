@@ -14,7 +14,7 @@ Sometimes, you may need to deal with text that includes characters that are not 
 
 Python has a datatype, **unicode**, that works very much like strings do, but allows for characters to be from a much larger alphabet, including more than 75,000 ideographic characters used in Chinese, Japanese, and Korean alphabets. Everything works fine inside python, for operations like slicing and appending and concatenating strings and using .find() or the in operator. Python's `documentation <https://docs.python.org/2/howto/unicode.html>`_ about unicode is pretty informative and readable.
 
-If you ever want to know whether a string you're working with is a regular string or a unicode string, print out its type: ``print type(s)``. If it's a regular string, it will say ``<type 'str'>``; if it's a unicode string it will say ``<type 'unicode'>``.
+If you ever want to know whether a string you're working with is a regular string or a unicode string, print out its type: ``print((type(s))``. If it's a regular string, it will say ``<type 'str'>``; if it's a unicode string it will say ``<type 'unicode'>``.
 
 Input and output of unicode, however, can get very tricky. First, your terminal window will typically be set up to display characters only from a restricted set of languages. If you issue a print statement on a unicode string, it may not display correctly in your terminal window. 
 

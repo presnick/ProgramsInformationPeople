@@ -27,9 +27,9 @@ statement makes sure that there is no confusion as to the result.
 .. activecode:: ch07_update1
 
     x = 6        # initialize x
-    print x
+    print(x)
     x = x + 1    # update x
-    print x
+    print(x)
 
 
 If you try to update a variable that doesn't exist, you get an error because
@@ -46,27 +46,26 @@ Incrementing and decrementing are such common operations that programming langua
 .. activecode:: ch07_update2
 
     x = 6        # initialize x
-    print x
+    print(x)
     x += 3       # increment x by 3; same as x = x + 3
-    print x
+    print(x)
     x -= 1       # decrement x by 1
-    print x
+    print(x)
 
 
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_10_1
+.. mchoice:: test_question2_10_1
    :answer_a: 12
    :answer_b: -1
    :answer_c: 11
    :answer_d: Nothing.  An error occurs because x can never be equal to x - 1.
-   :correct: c
    :feedback_a: The value of x changes in the second statement.
    :feedback_b: In the second statement, substitute the current value of x before subtracting 1.
    :feedback_c: Yes, this statement sets the value of x equal to the current value minus 1.
    :feedback_d: Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
-
+   :correct: c
 
    What is printed when the following statements execute?
 
@@ -74,19 +73,18 @@ Incrementing and decrementing are such common operations that programming langua
 
      x = 12
      x = x - 1
-     print x
+     print(x)
 
-.. mchoicemf:: test_question2_10_2
+.. mchoice:: test_question2_10_2
    :answer_a: 12
    :answer_b: 9
    :answer_c: 15
    :answer_d: Nothing.  An error occurs because x cannot be used that many times in assignment statements.
-   :correct: c
    :feedback_a: The value of x changes in the second statement.
    :feedback_b: Each statement changes the value of x, so 9 is not the final result.
    :feedback_c: Yes, starting with 12, subtract 3, than add 5, and finally add 1.
    :feedback_d: Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
-
+   :correct: c
 
    What is printed when the following statements execute?
 
@@ -96,7 +94,7 @@ Incrementing and decrementing are such common operations that programming langua
      x = x - 3
      x = x + 5
      x = x + 1
-     print x
+     print(x)
 
 .. parsonsprob:: question2_10_3
 
@@ -104,21 +102,21 @@ Incrementing and decrementing are such common operations that programming langua
    -----
    mybankbalance = 100
    mybankbalance = mybankbalance + 34
-   print mybankbalance
+   print(mybankbalance)
 
-.. mchoicema:: test_question2_10_3
+.. mchoice:: test_question2_10_3
+   :multiple_answers:
    :answer_a: x = x + y
    :answer_b: y += x
    :answer_c: x += x + y
    :answer_d: x += y
    :answer_e: x++ y
-   :correct: a,d
    :feedback_a: x is updated to be the old value of x plus the value of y.
    :feedback_b: y is updated to be the old value of y plus the value of x.
    :feedback_c: This updates x to be its old value (because of the +=) plus its old value again (because of the x on the right side) plus the value of y, so it's equivalent to x = x + x + y
    :feedback_d: x is updated to be the old value of x plus the value of y.
-   :feedback_e: ++ is not a syntax that means anything in python
-
+   :feedback_e: ++ is not a syntax that means anything in python.
+   :correct: a,d
 
    Which of the following statements are equivalent?
  

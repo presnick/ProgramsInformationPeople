@@ -18,11 +18,11 @@ The ``del`` statement removes an element from a list by using its position.
     
     a = ['one', 'two', 'three']
     del a[1]
-    print a
+    print(a)
 
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     del alist[1:5]
-    print alist
+    print(alist)
 
 As you might expect, ``del`` handles negative indices and causes a runtime
 error if the index is out of range.

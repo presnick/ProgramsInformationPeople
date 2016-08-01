@@ -59,9 +59,9 @@ that is currently linked to the variable.  In other words, evaluating a variable
     n = 17
     pi = 3.14159
 
-    print message
-    print n
-    print pi
+    print(message)
+    print(n)
+    print(pi)
 
 In each case the result is the value of the variable.
 To see this in even more detail, we can run the program using codelens.
@@ -73,9 +73,9 @@ To see this in even more detail, we can run the program using codelens.
     n = 17
     pi = 3.14159
 
-    print message
-    print n
-    print pi
+    print(message)
+    print(n)
+    print(pi)
     
 Now, as you step thru the statements, you can see
 the variables and the values they reference as those references are
@@ -100,11 +100,11 @@ assignment we even give it a value that is of a different type.
     :showoutput:
 
     day = "Thursday"
-    print day
+    print(day)
     day = "Friday"
-    print day
+    print(day)
     day = 21
-    print day
+    print(day)
 
 A great deal of programming is about having the computer remember things.  For example, we might want to keep
 track of the number of missed calls on your phone.  Each time another call is missed, we will arrange to update
@@ -121,9 +121,9 @@ For example, we can find out the data type of the current value of a variable by
     n = 17
     pi = 3.14159
 
-    print type(message)
-    print type(n)
-    print type(pi)
+    print(type(message))
+    print(type(n))
+    print(type(pi))
 
 .. note::
    If you have programmed in another language such as Java or C++, you may be used to the idea that *variables* have types that are declared when the variable name is first introduced in a program. Python doesn't do that. Variables don't have types in python; *values* do. That means that it is acceptable in Python to have a variable name refer to an integer and later have the same variable name refer to a string. This is almost never a good idea, because it will confuse human readers (including you), but the Python interpreter will not complain.
@@ -132,16 +132,16 @@ For example, we can find out the data type of the current value of a variable by
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_3_2
+.. mchoice:: test_question2_3_2
    :answer_a: Nothing is printed. A runtime error occurs.
    :answer_b: Thursday
    :answer_c: 32.5
    :answer_d: 19
-   :correct: d
    :feedback_a: It is legal to change the type of data that a variable holds in Python.
    :feedback_b: This is the first value assigned to the variable day, but the next statements reassign that variable to new values.
    :feedback_c: This is the second value assigned to the variable day, but the next statement reassigns that variable to a new value.
    :feedback_d: The variable day will contain the last value assigned to it when it is printed.
+   :correct: d
 
    What is printed when the following statements execute?
 
@@ -150,7 +150,7 @@ For example, we can find out the data type of the current value of a variable by
      day = "Thursday"
      day = 32.5
      day = 19
-     print day
+     print(day)
 
 
 .. index:: keyword, underscore character

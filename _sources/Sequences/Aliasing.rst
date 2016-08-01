@@ -17,7 +17,7 @@ variables refer to the same object:
     
     a = [81, 82, 83]
     b = a
-    print a is b
+    print(a is b)
     
 In this case, the reference diagram looks like this:
 
@@ -35,15 +35,15 @@ to the same list after executing the assignment statement ``b = a``.
     a = [81,82,83]
     b = [81,82,83]
 
-    print a == b
-    print a is b
+    print(a == b)
+    print(a is b)
 
     b = a
-    print a == b
-    print a is b
+    print(a == b)
+    print(a is b)
 
     b[0] = 5
-    print a
+    print(a)
     
 
 
@@ -55,12 +55,12 @@ economize.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_10_1
+.. mchoice:: test_question9_10_1
    :answer_a: [4,2,8,6,5]
    :answer_b: [4,2,8,999,5]
-   :correct: b
    :feedback_a: blist is not a copy of alist, it is a reference to the list alist refers to.
    :feedback_b: Yes, since alist and blist both reference the same list, changes to one also change the other.
+   :correct: b
    
    What is printed by the following statements?
    
@@ -69,7 +69,7 @@ economize.
      alist = [4,2,8,6,5]
      blist = alist
      blist[3] = 999
-     print alist
+     print(alist)
 
 
 .. index:: clone

@@ -35,8 +35,8 @@ Before going on, you should add some print statements to check that you have the
     dest_url = <some expr>
     d = <some dictionary>
     resp = requests.get(dest_url, params = d)]
-    print resp.status_code
+    print(resp.status_code)
     y = json.loads(resp.text)
-    print type(y)
-    print y
+    print(type(y))
+    print(y)
 

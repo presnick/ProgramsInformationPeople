@@ -26,12 +26,12 @@ turtle and a half drawn rectangle.  Press the run button to try it and see.
     :tour_2: "Line by Line Tour"; 1: Example01_Tour02_Line01; 2: Example01_Tour02_Line02; 3: Example01_Tour02_Line03; 4: Example01_Tour02_Line04; 5: Example01_Tour02_Line05; 6: Example01_Tour02_Line06;
     :nocodelens:
 
-    import turtle            	# allows us to use the turtles library
-    wn = turtle.Screen()    	# creates a graphics window
-    alex = turtle.Turtle()   	# create a turtle named alex
-    alex.forward(150)        	# tell alex to move forward by 150 units
-    alex.left(90)           	# turn by 90 degrees
-    alex.forward(75)         	# complete the second side of a rectangle
+    import turtle             # allows us to use the turtles library
+    wn = turtle.Screen()      # creates a graphics window
+    alex = turtle.Turtle()    # create a turtle named alex
+    alex.forward(150)         # tell alex to move forward by 150 units
+    alex.left(90)             # turn by 90 degrees
+    alex.forward(75)          # complete the second side of a rectangle
 
 
 
@@ -66,16 +66,16 @@ instructions that all turtles know how to respond to.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question3_1_0
+.. mchoice:: test_question3_1_0
    :answer_a: North
    :answer_b: South
    :answer_c: East 
    :answer_d: West
-   :correct: c
    :feedback_a: Some turtle systems start with the turtle facing north, but not this one.
    :feedback_b: No, look at the first example with a turtle.  Which direction does the turtle move?
    :feedback_c: Yes, the turtle starts out facing east.
    :feedback_d: No, look at the first example with a turtle.  Which direction does the turtle move?
+   :correct: c
 
    Which direction does the Turtle face when it is created?
 
@@ -182,16 +182,16 @@ screen until we click on it.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question3_1_1
+.. mchoice:: test_question3_1_1
    :answer_a: It creates a new turtle object that can be used for drawing.
    :answer_b: It defines the module turtle which will allow you to create a Turtle object and draw with it.
    :answer_c: It makes the turtle draw half of a rectangle on the screen.
    :answer_d: Nothing, it is unnecessary.
-   :correct: b
    :feedback_a: The line &quotalex = turtle.Turtle()&quot is what actually creates the turtle object.
    :feedback_b: This line imports the module called turtle, which has all the built in functions for drawing on the screen with the Turtle object.
    :feedback_c: This functionality is performed with the lines: &quotalex.forward(150)&quot, &quotlex.left(90)&quot, and &quotalex.forward(75)&quot
    :feedback_d: If we leave it out, Python will give an error saying that it does not know about the name &quotturtle&quot when it reaches the line &quotwn = turtle.Screen()&quot
+   :correct: b
 
    Consider the following code:
 
@@ -206,38 +206,38 @@ screen until we click on it.
 
    What does the line "import turtle" do?
 
-.. mchoicemf:: test_question3_1_2
+.. mchoice:: test_question3_1_2
    :answer_a: This is simply for clarity.  It would also work to just type "Turtle()" instead of "turtle.Turtle()".
    :answer_b: The period (.) is what tells Python that we want to invoke a new object.
    :answer_c: The first "turtle" (before the period) tells Python that we are referring to the turtle module, which is where the object "Turtle" is found.
-   :correct: c
    :feedback_a: We must specify the name of the module where Python can find the Turtle object.
    :feedback_b: The period separates the module name from the object name.  The parentheses at the end are what tell Python to invoke a new object.
    :feedback_c: Yes, the Turtle type is defined in the module turtle.  Remember that Python is case sensitive and Turtle is different from turtle.
+   :correct: c
 
    Why do we type ``turtle.Turtle()`` to get a new Turtle object?
 
-.. mchoicemf:: test_question3_1_3
+.. mchoice:: test_question3_1_3
    :answer_a: True
    :answer_b: False
-   :correct: a
    :feedback_a: In this chapter you saw one named alex and one named tess, but any legal variable name is allowed.
    :feedback_b: A variable, including one referring to a Turtle object, can have whatever name you choose as long as it follows the naming conventions from Chapter 2.
+   :correct: a
 
    True or False: A Turtle object can have any name that follows the naming rules from Chapter 2.
 
-.. mchoicemf:: test_question3_1_4
+.. mchoice:: test_question3_1_4
    :answer_a: <img src="../_static/test1Alt1.png" alt="right turn of 90 degrees before drawing, draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
    :answer_b: <img src="../_static/test1Alt2.png" alt="left turn of 180 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
    :answer_c: <img src="../_static/test1Alt3.png" alt="left turn of 270 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
    :answer_d: <img src="../_static/test1Alt4v2.png" alt="right turn of 270 degrees before drawing, draw a line 150 pixels long, turn right 90, and draw a line 75 pixels long">
    :answer_e: <img src="../_static/test1correct.png" alt="left turn of 90 degrees before drawing,  draw a line 150 pixels long, turn left 90, and draw a line 75 pixels long">
-   :correct: e
    :feedback_a: This code would turn the turtle to the south before drawing
    :feedback_b: This code would turn the turtle to the west before drawing
    :feedback_c: This code would turn the turtle to the south before drawing
    :feedback_d: This code is almost correct, but the short end would be facing east instead of west.  
    :feedback_e: Yes, the turtle starts facing east, so to turn it north you can turn left 90 or right 270 degrees.
+   :correct: e
 
    Which of the following code would produce the following image? 
 
@@ -253,10 +253,10 @@ screen until we click on it.
    import turtle
    wn = turtle.Screen()
    =====
-   wn.bgcolor("blue")     	
+   wn.bgcolor("blue")       
    jamal = turtle.Turtle()
    =====
-   jamal.color("white")               	
+   jamal.color("white")                 
    jamal.pensize(10) 
    =====                
    jamal.right(90)
@@ -272,9 +272,9 @@ screen until we click on it.
    -----
    import turtle
    wn = turtle.Screen()
-   wn.bgcolor("green")     	
+   wn.bgcolor("green")      
    jamal = turtle.Turtle()
-   jamal.color("white")               	
+   jamal.color("white")                 
    jamal.pensize(10) 
    =====                
    jamal.left(90)

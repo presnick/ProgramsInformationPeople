@@ -29,13 +29,13 @@ Consider the following code
     def f(x):
         return x - 1
     
-    print f
-    print type(f)
-    print f(3)
+    print(f)
+    print(type(f))
+    print(f(3))
     
-    print lambda x: x-2
-    print type(lambda x: x-2)
-    print (lambda x: x-2)(6)
+    print(lambda x: x-2)
+    print(type(lambda x: x-2))
+    print((lambda x: x-2)(6))
     
 Note the paralells between the two. At line 4, f is bound to a function object. Its printed representation
 is "<function f>". At line 8, the lambda expression produces a function object. Because it is
@@ -60,10 +60,10 @@ Below, sorting on absolute value has been rewritten using lambda notation and th
 
     L1 = [1, 7, 4, -2, 3]
     
-    print "About to call sorted"
+    print("About to call sorted")
     L2 = sorted(L1, key=lambda x: abs(x))
-    print "Finished execution of sorted"
-    print L2
+    print("Finished execution of sorted")
+    print(L2)
 
 Of course, it's unnecessary to make an anonymous function that takes an input and just calls an existing function on it. That's equivalent to just providing the existing function as a lambda expression. You may find, however, that the lambda expression above helps you understand what sorted does with the function that is passed in: it calls the function on each of the items in the list that is passed to sorted. Make sure you understand why the code above and the code immediately below cause the list to be sorted the same way. 
 
@@ -71,20 +71,20 @@ Of course, it's unnecessary to make an anonymous function that takes an input an
 
     L1 = [1, 7, 4, -2, 3]
     
-    print "About to call sorted"
+    print("About to call sorted")
     L2 = sorted(L1, key=abs)
-    print "Finished execution of sorted"
-    print L2
+    print("Finished execution of sorted")
+    print(L2)
 
 
-.. mchoicemf:: test_questionsort_1
+.. mchoice:: test_questionsort_1
    :answer_a: descending order, from 7 down to -2
    :answer_b: ascending order, from -2 up to 7
    :answer_c: the original order of L1
+   :feedback_a: 7 is decorated with -7, so it is first; -2 is decorated with 2, so it is last.
+   :feedback_b: -x produces the negative of x.
+   :feedback_c: sorted changes the order.
    :correct: a
-   :feedback_a: 7 is decorated with -7, so it is first; -2 is decorated with 2, so it is last 
-   :feedback_b: -x produces the negative of x
-   :feedback_c: sorted changes the order
 
    Describe what the sort order will be for this.
    
@@ -92,16 +92,16 @@ Of course, it's unnecessary to make an anonymous function that takes an input an
 
     L1 = [1, 7, 4, -2, 3]
      
-    print sorted(L1, key = lambda x: -x)
+    print(sorted(L1, key = lambda x: -x))
 
-.. mchoicemf:: test_questionsort_2
+.. mchoice:: test_questionsort_2
    :answer_a: descending order, from 7 down to -2
    :answer_b: ascending order, from -2 up to 7
    :answer_c: the original order of L1
+   :feedback_a: The True value for the reverse parameter says to reverse the order.
+   :feedback_b: The True value for the reverse parameter says to reverse the order.
+   :feedback_c: sorted changes the order.
    :correct: b
-   :feedback_a: The True value for the reverse parameter says to reverse the order 
-   :feedback_b: The True value for the reverse parameter says to reverse the order
-   :feedback_c: sorted changes the order
 
    Describe what the sort order will be for this.
    
@@ -109,5 +109,5 @@ Of course, it's unnecessary to make an anonymous function that takes an input an
 
     L1 = [1, 7, 4, -2, 3]
      
-    print sorted(L1, key = lambda x: -x, reverse = True)
+    print(sorted(L1, key = lambda x: -x, reverse = True))
 

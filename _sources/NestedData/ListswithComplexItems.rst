@@ -26,11 +26,11 @@ we can have a list of lists.
 .. activecode:: nested_data_1
 
     nested1 = [['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
-    print nested1[0]
-    print len(nested1)
+    print(nested1[0])
+    print(len(nested1))
     nested1.append(['i'])
     for L in nested1:
-        print L
+        print(L)
 
 Line 2 prints out the first item from the list that nested1 is bound to. That
 item is itself a list, so it prints out with square brackets. It has length 3,
@@ -42,11 +42,11 @@ Codelens gives a you a reference diagram, a visual display of the contents of ne
 .. codelens:: nested_data_2
 
     nested1 = [['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
-    print nested1[0]
-    print len(nested1)
+    print(nested1[0])
+    print(len(nested1))
     nested1.append(['i'])
     for L in nested1:
-        print L
+        print(L)
 
 
 When you get
@@ -68,11 +68,11 @@ With a nested list, you can make complex expressions to get or set a value in a 
 
     nested1 = [['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
     y = nested1[1]
-    print y
-    print y[0]
+    print(y)
+    print(y[0])
     
-    print [10, 20, 30][1]
-    print nested1[1][0]
+    print([10, 20, 30][1])
+    print(nested1[1][0])
     
 Lines 1-4 above probably look pretty natural to you. Line 6 is just a reminder that
 you index into a list that is written out just as you can index into a list referred to by a variable.
@@ -125,17 +125,17 @@ You can even have a list of functions (!).
         
     L = [square, abs]
 
-    print "****names****"        
+    print("****names****")        
     for f in L:
-        print f
+        print(f)
     
-    print "****call each of them****"    
+    print("****call each of them****")
     for f in L:
-        print f(-2)
+        print(f(-2))
         
-    print "****just the first one in the list****"
-    print L[0]
-    print L[0](3)
+    print("****just the first one in the list****")
+    print(L[0])
+    print(L[0](3))
         
         
 Here, L is a list with three items. All those items are functions. The first is the
@@ -159,15 +159,15 @@ Step through it in Codelens if that's not all clear to you yet.
         
     L = [square, abs]
 
-    print "****names****"        
+    print("****names****")
     for f in L:
-        print f
+        print(f)
     
-    print "****call each of them****"    
+    print("****call each of them****")
     for f in L:
-        print f(-2)
+        print(f(-2))
         
-    print "****just the first one in the list****"
-    print L[0]
-    print L[0](3)
+    print("****just the first one in the list****")
+    print(L[0])
+    print(L[0](3))
 

@@ -22,7 +22,7 @@ consider again the ``square`` function:
         return y
 
     z = square(10)
-    print y
+    print(y)
 
 
 If you press the 'last >>' button you will see an error message.

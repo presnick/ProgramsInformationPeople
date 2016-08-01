@@ -55,7 +55,7 @@ The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier t
     client_secret = None # What Twitter calls Consumer Secret -- fill in a string here
 
     if not client_secret or not client_key:
-        print "You need to fill in client_key and client_secret. See comments in the code around line 8-14"
+        print("You need to fill in client_key and client_secret. See comments in the code around line 8-14")
         exit()
 
     def get_tokens():
@@ -176,17 +176,17 @@ The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier t
     # http://docs.python-requests.org/en/latest/user/quickstart/#response-content
 
     # Of particular interest to us is the json() method of the Response class
-    #print pretty(r.json())
+    #print(pretty(r.json()))
 
 
     r = oauth.get("https://api.twitter.com/1.1/search/tweets.json", params = {'q': 'University of Michigan', 'count' : 3}) # request to the Tweet search endpoint, searching for the phrase 'University of Michigan', looking to get 3 Tweets back
 
     # investigate the data
-    print type(r.json())
-    # print json.dumps(r.json(), indent=2)
+    print(type(r.json()))
+    # print(json.dumps(r.json(), indent=2))
     res = r.json()
-    print res.keys()
-    # print pretty(res)
+    print(res.keys())
+    # print(pretty(res))
     # cache data
     f = open('nested.txt', 'w')
     f.write(json.dumps(res))

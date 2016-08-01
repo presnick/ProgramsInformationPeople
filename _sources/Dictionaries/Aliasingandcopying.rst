@@ -20,10 +20,10 @@ of opposites.
     opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
     alias = opposites
 
-    print alias is opposites
+    print(alias is opposites)
 
     alias['right'] = 'left'
-    print opposites['right']
+    print(opposites['right'])
     
 
 
@@ -39,16 +39,16 @@ If you want to modify a dictionary and keep a copy of the original, use the dict
 
 **Check your understanding**
 
-.. mchoicemf:: test_question11_4_1
+.. mchoice:: test_question11_4_1
    :answer_a: 23
    :answer_b: None
    :answer_c: 999
    :answer_d: Error, there are two different keys named elephant.
-   :correct: c
    :feedback_a: mydict and yourdict are both names for the same dictionary.  
    :feedback_b: The dictionary is mutable so changes can be made to the keys and values.
    :feedback_c: Yes, since yourdict is an alias for mydict, the value for the key elephant has been changed.
    :feedback_d: There is only one dictionary with only one key named elephant.  The dictionary has two different names, mydict and yourdict.
+   :correct: c
    
    What is printed by the following statements?
    
@@ -57,7 +57,7 @@ If you want to modify a dictionary and keep a copy of the original, use the dict
      mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
      yourdict = mydict
      yourdict["elephant"] = 999
-     print mydict["elephant"]
+     print(mydict["elephant"])
 
 
 .. index:: matrix

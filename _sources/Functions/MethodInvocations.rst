@@ -33,11 +33,11 @@ For example, let's look at an invocation of the split method.
 
    y = "This is a sentence"
    z = y.split()
-   print type(z)
-   print len(z)
-   print z
+   print(type(z))
+   print(len(z))
+   print(z)
    for w in z:
-      print w
+       print(w)
       
 The split method operates on a string. Because it is a method rather than a
 regular function, the string it operates on appears to the left of the period, 
@@ -58,7 +58,7 @@ one line as show below.
 
 .. activecode:: functions2_2
 
-   print "This is a sentence".replace("s", "").replace("t", "")
+   print("This is a sentence".replace("s", "").replace("t", ""))
  
 What's going on there? Start reading left to right. "This is a sentence" is a string, and 
 the replace method is invoked on it. Two additional parameter values are provided, "s", and and

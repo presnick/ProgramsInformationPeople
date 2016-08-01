@@ -65,8 +65,8 @@ Putting it all together, you can try putting this code into a file and executing
     import json
     result = requests.get("https://services.faa.gov/airport/status/DTW", params ={'format':'json'})
     d = json.loads(result.text)
-    print d['city']
-    print d['weather']['temp']
+    print(d['city'])
+    print(d['weather']['temp'])
 
 You should get a result like this (your temperature may vary!)
 

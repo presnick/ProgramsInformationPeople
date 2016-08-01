@@ -90,7 +90,7 @@ So let's use our new Point class now. This next part should look a little famili
     p = Point()         # Instantiate an object of type Point
     q = Point()         # and make a second point
 
-    print "Nothing seems to have happened with the points"
+    print("Nothing seems to have happened with the points")
     
    
 During the initialization of the objects, we created two
@@ -120,10 +120,10 @@ However, notice that the ``is`` operator returns ``False`` meaning that they are
     p = Point()         # Instantiate an object of type Point
     q = Point()         # and make a second point
 
-    print p
-    print q
+    print(p)
+    print(q)
 
-    print p is q
+    print(p is q)
 
 
 A function like ``Point`` that creates a new object instance 

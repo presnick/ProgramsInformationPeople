@@ -46,8 +46,8 @@ some pretty amazing drawings with this simple capability.
 
 .. note::
 
-	The turtles are fun, but the real purpose of the chapter is to teach ourselves
-	a little more Python and to develop our theme of *computational thinking*. You'll first do some things with the turtles, and then we'll summarize the concepts and syntax you've learned, in particular classes, instances, and method invocations.
+    The turtles are fun, but the real purpose of the chapter is to teach ourselves
+    a little more Python and to develop our theme of *computational thinking*. You'll first do some things with the turtles, and then we'll summarize the concepts and syntax you've learned, in particular classes, instances, and method invocations.
 
 
 .. index:: object, invoke, method, attribute, state, canvas

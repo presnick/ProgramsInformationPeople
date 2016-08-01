@@ -30,7 +30,7 @@ Look at the following, nonsensical variation of the square function.
 
     power = 2
     result = badsquare(10)
-    print result
+    print(result)
 
 
 Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate
@@ -56,7 +56,7 @@ codelens example:
 
     power = 3
     result = powerof(10,2)
-    print result
+    print(result)
 
 Now step through the code.  What do you notice about the values of variable ``power``
 in the local scope compared to the variable ``power`` in the global scope?
@@ -87,8 +87,8 @@ to cement your understanding of how python works.
 
     power = 3
     result = powerof(10,2)
-    print result
-    print power
+    print(result)
+    print(power)
 
 To cement all of these ideas even further lets look at one final example.
 Inside the ``square`` function we are going to make an assignment to the
@@ -110,41 +110,41 @@ But this example demonstrates that that is clearly not how Python operates.
 
     x = 2
     z = square(x)
-    print z
+    print(z)
 
 
 **Check your understanding**
 
-.. mchoicemf:: test_question5_3_1
+.. mchoice:: test_question5_3_1
    :answer_a: Its value
    :answer_b: The range of statements in the code where a variable can be accessed.
    :answer_c: Its name
-   :correct: b
    :feedback_a: Value is the contents of the variable.  Scope concerns where the variable is &quot;known&quot;.
    :feedback_b:
    :feedback_c: The name of a variable is just an identifier or alias.  Scope concerns where the variable is &quot;known&quot;.
+   :correct: b
 
    What is a variable's scope?
 
-.. mchoicemf:: test_question5_3_2
+.. mchoice:: test_question5_3_2
    :answer_a: A temporary variable that is only used inside a function
    :answer_b: The same as a parameter
    :answer_c: Another name for any variable
-   :correct: a
    :feedback_a: Yes, a local variable is a temporary variable that is only known (only exists) in the function it is defined in.
    :feedback_b: While parameters may be considered local variables, functions may also define and use additional local variables.
    :feedback_c: Variables that are used outside a function are not local, but rather global variables.
+   :correct: a
 
    What is a local variable?
 
-.. mchoicemf:: test_question5_3_3
+.. mchoice:: test_question5_3_3
    :answer_a: Yes, and there is no reason not to.
    :answer_b: Yes, but it is considered bad form.
    :answer_c: No, it will cause an error.
-   :correct: b
    :feedback_a: While there is no problem as far as Python is concerned, it is generally considered bad style because of the potential for the programmer to get confused.
    :feedback_b: it is generally considered bad style because of the potential for the programmer to get confused.  If you must use global variables (also generally bad form) make sure they have unique names.
    :feedback_c: Python manages global and local scope separately and has clear rules for how to handle variables with the same name in different scopes, so this will not cause a Python error.
+   :correct: b
 
    Can you use the same name for a local variable as a global variable?
 

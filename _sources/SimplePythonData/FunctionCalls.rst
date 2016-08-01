@@ -35,10 +35,10 @@ We've defined two functions above. The code is hidden so as not to bother you (y
    :nocanvas:
 
 
-   print square(3)
+   print(square(3))
    square(5)
-   print sub(6, 4)
-   print sub(5, 9)
+   print(sub(6, 4))
+   print(sub(5, 9))
 
 
 Notice that when a function takes more than one input parameter, the inputs are separated by a comma. Also notice that the order of the inputs matters. The value before the comma is treated as the first input, the value after it as the second input.
@@ -52,53 +52,53 @@ Remember the note that some kinds of python objects don't have a nice printed re
    :nocanvas:
 
 
-   print square
-   print sub
+   print(square)
+   print(sub)
 
-.. mchoicemf:: exercise_functionCalls_1
+.. mchoice:: exercise_functionCalls_1
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
-      :correct: b
+      :answer_d: nothing will print
       :feedback_a: The result of executing the function call will print out
       :feedback_b: The second is subtracted from the first
       :feedback_c: The second is subtracted from the first
       :feedback_d: The print statement makes the results print
+      :correct: b
 
       What will the output be from this code?
 
       .. code-block:: python
 
-         print sub(5, 8)
+         print(sub(5, 8))
 
-.. mchoicemf:: exercise_functionCalls_2
+.. mchoice:: exercise_functionCalls_2
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
-      :correct: a
+      :answer_d: nothing will print
       :feedback_a: The character sting is treated as a literal and printed out, without executing
       :feedback_b: The character sting is treated as a literal and printed out, without executing
       :feedback_c: The character sting is treated as a literal and printed out, without executing
       :feedback_d: The character sting is treated as a literal and printed out, without executing
+      :correct: a
 
       What will the output be from this code?
 
       .. code-block:: python
 
-         print "sub(5, 8)"
+         print("sub(5, 8)")
 
-.. mchoicemf:: exercise_functionCalls_3
+.. mchoice:: exercise_functionCalls_3
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
-      :correct: d
+      :answer_d: nothing will print
       :feedback_a: There is no print statement
       :feedback_b: There is no print statement
       :feedback_c: There is no print statement
       :feedback_d: There is no print statement
+      :correct: d
 
       What will the output be from this code?
 
@@ -106,16 +106,16 @@ Remember the note that some kinds of python objects don't have a nice printed re
 
          sub(5, 8)
 
-.. mchoicemf:: exercise_functionCalls_4
+.. mchoice:: exercise_functionCalls_4
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
-      :correct: d
+      :answer_d: nothing will print
       :feedback_a: There is no print statement
       :feedback_b: There is no print statement
       :feedback_c: There is no print statement
       :feedback_d: There is no print statement
+      :correct: d
 
       What will the output be from this code?
 

@@ -29,7 +29,7 @@ Step through the execution of this code to get a feel for how it works.
    for x in L[1:]:
       if x > a:
          a = x
-   print a
+   print(a)
 
 Now, you may notice that this code will break if there isn't more than one item in L. 
 You would get an error on line 4 for trying to access item L[1], which is the second
@@ -44,7 +44,7 @@ item. If we assume that L will have only numbers >= 0, we can initialize the max
    for x in L:
       if x > a:
          a = x
-   print a
+   print(a)
 
 
 We can do a similar thing with a dictionary to find the maximum value. You can loop
@@ -53,16 +53,16 @@ max-so-far.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question_dict_accum_2
+.. mchoice:: test_question_dict_accum_2
    :answer_a: I
    :answer_b: II
    :answer_c: III
    :answer_d: IV
-   :correct: c
    :feedback_a: c will be bound to a key, which is a string; you can't compare that to a number.   
    :feedback_b: That will treate the current value of a as a key in the dictionary and update that key's value. You want to update a instead.
    :feedback_c: When the value associated with the current key c is bigger than the max so far, replace the max so far with that value
    :feedback_d: That will set a to be the current key, a string like 'a', not a value like 194.
+   :correct: c
 
    Which is the right code block to use in place of line 5 if we want to print out the maximum value?
 
@@ -74,7 +74,7 @@ max-so-far.
       for c in d:
          <what code goes here?>
          
-      print "max value is " + a
+      print("max value is " + a)
 
 
    .. code-block:: python

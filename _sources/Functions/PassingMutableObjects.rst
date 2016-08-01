@@ -37,19 +37,19 @@ Consider the following example.
 .. activecode:: function2_7
    
    def double(y):
-      y = 2 * y
+       y = 2 * y
    
    def changeit(lst):
-      lst[0] = "Michigan"
-      lst[1] = "Wolverines"
+       lst[0] = "Michigan"
+       lst[1] = "Wolverines"
 
    y = 5
    double(y)
-   print y
+   print(y)
       
    mylst = ['106', 'students', 'are', 'awesome']
    changeit(mylst)
-   print mylst
+   print(mylst)
 
 Try running it. Similar to examples we have seen before, running double does 
 not change the global y. But
@@ -59,17 +59,17 @@ of mutable objects. Try stepping through it in codelens to see the difference.
 .. codelens:: function2_8
    
    def double(n):
-      n = 2 * n
+       n = 2 * n
    
    def changeit(lst):
-      lst[0] = "Michigan"
-      lst[1] = "Wolverines"
+       lst[0] = "Michigan"
+       lst[1] = "Wolverines"
 
    y = 5
    double(y)
-   print y
+   print(y)
       
    mylst = ['106', 'students', 'are', 'awesome']
    changeit(mylst)
-   print mylst
+   print(mylst)
 

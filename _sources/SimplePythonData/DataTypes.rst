@@ -15,10 +15,10 @@ If you are not sure what class (data type) a value falls into, Python has a func
 .. activecode:: ch02_1
     :nocanvas:
 
-    print type("Hello, World!")
-    print type(17)
-    print "Hello, World"
-    print type(3.2)
+    print(type("Hello, World!"))
+    print(type(17))
+    print("Hello, World")
+    print(type(3.2))
 
 
 What about values like ``"17"`` and ``"3.2"``? They look like numbers, but they
@@ -27,8 +27,8 @@ are in quotation marks like strings.
 .. activecode:: ch02_3
     :nocanvas:
 
-    print type("17")
-    print type("3.2")
+    print(type("17"))
+    print(type("3.2"))
 
 They're strings!
 
@@ -38,10 +38,10 @@ quotes (``"``), or three of each (``'''`` or ``"""``)
 .. activecode:: ch02_4
     :nocanvas:
 
-    print type('This is a string.') 
-    print type("And so is this.")
-    print type("""and this.""")
-    print type('''and even this...''')
+    print(type('This is a string.'))
+    print(type("And so is this."))
+    print(type("""and this."""))
+    print(type('''and even this...'''))
 
 
 Double quoted strings can contain single quotes inside them, as in ``"Bruce's
@@ -53,7 +53,7 @@ triple quoted strings.  They can contain either single or double quotes:
 .. activecode:: ch02_5
     :nocanvas:
 
-    print '''"Oh no", she exclaimed, "Ben's bike is broken!"'''
+    print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
 
 
 
@@ -65,11 +65,11 @@ Triple quoted strings can even span multiple lines:
     message = """This message will
     span several
     lines."""
-    print message
+    print(message)
 
-    print """This message will span
+    print("""This message will span
     several lines
-    of the text."""
+    of the text.""")
 
 Python doesn't care whether you use single or double quotes or the
 three-of-a-kind quotes to surround your strings.  Once it has parsed the text of
@@ -79,8 +79,8 @@ and the surrounding quotes are not part of the value.
 .. activecode:: ch02_7
     :nocanvas:
 
-    print 'This is a string.'
-    print """And so is this."""
+    print('This is a string.')
+    print("""And so is this.""")
 
 So the Python language designers usually chose to surround their strings by
 single quotes.  What do think would happen if the string already contained
@@ -93,19 +93,19 @@ Python, but it does mean something else, which is legal:
 .. activecode:: ch02_8
     :nocanvas:
 
-    print 42500
-    print 42,500
+    print(42500)
+    print(42,500)
 
 
 Well, that's not what we expected at all! Because of the comma, Python chose to
-treat this as a *pair* of values.     In fact, a print statement can print any number of values as long
-as you separate them by commas.  Notice that the values are separated by spaces when they are displayed.
+treat this as a *pair* of values. In fact, a print statement can print any number of values as long
+as you separate them by commas. Notice that the values are separated by spaces when they are displayed.
 
 .. activecode:: ch02_8a
     :nocanvas:
 
-    print 42, 17, 56, 34, 11, 4.35, 32
-    print 3.4, "hello", 45
+    print(42, 17, 56, 34, 11, 4.35, 32)
+    print(3.4, "hello", 45)
 
 Remember not to put commas or spaces in your integers, no
 matter how big they are. Also revisit what we said in the previous chapter:
@@ -113,33 +113,33 @@ formal languages are strict, the notation is concise, and even the smallest
 change might mean something quite different from what you intended.
 
 .. note::
-   The examples in this online text describe how print works in Python 2.7. If you install Python 3 on your machine, it will work slightly differently. One difference is that print is called as a function, with parentheses around the values to be printed.
+   The examples in this online text describe how print works in Python 3. If you install Python 2.7 on your machine, it will work slightly differently. One difference is that print is not called as a function, without parentheses around the values to be printed.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_1_1
+.. mchoice:: test_question2_1_1
    :answer_a: Print out the value and determine the data type based on the value printed.
    :answer_b: Use the type function.
    :answer_c: Use it in a known equation and print the result.
    :answer_d: Look at the declaration of the variable.
-   :correct: b
    :feedback_a: You may be able to determine the data type based on the printed value, but it may also be  deceptive, like when a string prints, there are no quotes around it.
    :feedback_b: The type function will tell you the class the value belongs to.
    :feedback_c: Only numeric values can be used in equations.
-   :feedback_d: In Python variables are not declared. Values, not variables, have types in Python. A variable can even take on values with different types during a program's execution. 
+   :feedback_d: In Python variables are not declared. Values, not variables, have types in Python. A variable can even take on values with different types during a program's execution.
+   :correct: b
 
    How can you determine the type of a variable?
 
-.. mchoicemf:: test_question2_1_2
+.. mchoice:: test_question2_1_2
    :answer_a: Character
    :answer_b: Integer
    :answer_c: Float
    :answer_d: String
-   :correct: d
    :feedback_a: It is not a single character.
    :feedback_b: The data is not numeric.
    :feedback_c: The value is not numeric with a decimal point.
    :feedback_d: Strings can be enclosed in single quotes.
+   :correct: d
 
    What is the data type of 'this is what kind of data'?
 

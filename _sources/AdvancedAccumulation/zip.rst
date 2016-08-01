@@ -21,7 +21,7 @@ One way to do that with a for loop is to loop through the possible index values.
    L3 = []
    
    for i in range(len(L1)):
-      L3.append(L1[i] + L2[i])
+       L3.append(L1[i] + L2[i])
    
    print L3
       
@@ -36,7 +36,7 @@ The zip function takes multiple lists and turns them into a list of tuples, pair
    L1 = [3, 4, 5]
    L2 = [1, 2, 3]
    L4 = zip(L1, L2)
-   print L4
+   print(L4)
 
 Here's what happens when you loop through the tuples.
    
@@ -48,9 +48,9 @@ Here's what happens when you loop through the tuples.
    L4 = zip(L1, L2)
 
    for (x1, x2) in L4:
-      L3.append(x1+x2)
+       L3.append(x1+x2)
    
-   print L3
+   print(L3)
 
 Or, simplifying and using a list comprehension:
 
@@ -59,7 +59,7 @@ Or, simplifying and using a list comprehension:
    L1 = [3, 4, 5]
    L2 = [1, 2, 3]
    L3 = [x1 + x2 for (x1, x2) in zip(L1, L2)]
-   print L3
+   print(L3)
    
 Or, using map and not unpacking the tuple (our online environment has trouble with unpacking the tuple in a lambda expression):
 
@@ -68,7 +68,7 @@ Or, using map and not unpacking the tuple (our online environment has trouble wi
    L1 = [3, 4, 5]
    L2 = [1, 2, 3]
    L3 = map(lambda x: x[0] + x[1], zip(L1, L2))
-   print L3
+   print(L3)
 
 Consider the task from Problem Set 7 where we asked you write a function possible(), as one component of a hangman guesser. It determines whether a word is still possible, given the guesses that have been made and the current state of the blanked word.
 
@@ -88,11 +88,19 @@ We provided a solution that involved iterating through the indexes of the word, 
            elif bc != '_' and bc != wc:
                return False
        return True
-            
-   import test         
-   test.testEqual(possible("HELLO", "_ELL_", "ELJ"), True)
-   test.testEqual(possible("HELLO", "_ELL_", "ELJH"), False)
-   test.testEqual(possible("HELLO", "_E___", "ELJ"), False)
+   
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(possible("HELLO", "_ELL_", "ELJ"), True, "Testing whether possible has been correctly defined.")
+         self.assertEqual(possible("HELLO", "_ELL_", "ELJH"), False, "Testing whether possible has been correctly defined.")
+         self.assertEqual(possible("HELLO", "_E___", "ELJ"), False, "Testing whether possible has been correctly defined.")
+
+   myTests().main()
 
 We can rewrite that using zip, to be a little more comprehensible.
 
@@ -107,8 +115,17 @@ We can rewrite that using zip, to be a little more comprehensible.
            elif bc != '_' and bc != wc:
                return False
        return True
-            
-   import test         
-   test.testEqual(possible("HELLO", "_ELL_", "ELJ"), True)
-   test.testEqual(possible("HELLO", "_ELL_", "ELJH"), False)
-   test.testEqual(possible("HELLO", "_E___", "ELJ"), False)
+   
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(possible("HELLO", "_ELL_", "ELJ"), True, "Testing whether possible has been correctly defined.")
+         self.assertEqual(possible("HELLO", "_ELL_", "ELJH"), False, "Testing whether possible has been correctly defined.")
+         self.assertEqual(possible("HELLO", "_E___", "ELJ"), False, "Testing whether possible has been correctly defined.")
+
+   myTests().main()        
+

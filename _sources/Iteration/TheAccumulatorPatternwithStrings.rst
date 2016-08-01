@@ -18,9 +18,9 @@ isn't very useful, but we will see more useful things later that accumulate stri
    s = raw_input("Enter some text")
    ac = ""
    for c in s:
-      ac = ac + c + "-" + c + "-"
+       ac = ac + c + "-" + c + "-"
        
-   print ac
+   print(ac)
  
 Look carefully at line 4 in the above program (``ac = ac + c + "-" + c + "-"``).  
 In words, it says that the new value of ``ac`` will be the old value of ``ac`` concatenated with the current character, a dash, then the current character and a dash again.
@@ -34,14 +34,14 @@ everywhere in the above code).
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_11_1
+.. mchoice:: test_question8_11_1
    :answer_a: Ball
    :answer_b: BALL
    :answer_c: LLAB
-   :correct: c
    :feedback_a: Each item is converted to upper case before concatenation.
    :feedback_b: Each character is converted to upper case but the order is wrong.
    :feedback_c: Yes, the order is reversed due to the order of the concatenation.
+   :correct: c
 
    What is printed by the following statements:
    
@@ -51,7 +51,7 @@ everywhere in the above code).
       r = ""
       for item in s:
          r = item.upper() + r
-      print r
+      print(r)
 
 
 .. note::

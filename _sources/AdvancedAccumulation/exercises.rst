@@ -19,7 +19,7 @@ Write equivalent code using map instead of the manual accumulation below
    accum = []
    for thing in things:
        accum.append(thing+1)
-   print accum
+   print(accum)
    
 Use manual accumulation to define the lengths function below.
  
@@ -30,8 +30,16 @@ Use manual accumulation to define the lengths function below.
        of strings in the input list. Use manual accumulation!"""
        # fill in this function's definition to make the test pass.
    
-   import test
-   test.testEqual(lengths(["Hello", "hi", "bye"]), [5, 2, 3])
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(lengths(["Hello", "hi", "bye"]), [5, 2, 3], "Testing whether lengths has been correctly defined.")
+
+   myTests().main()   
   
   
 Now define lengths using map instead.
@@ -43,8 +51,17 @@ Now define lengths using map instead.
        of strings in the input list. Use map!"""
        # fill in this function's definition to make the test pass.
    
-   import test
-   test.testEqual(lengths(["Hello", "hi", "bye"]), [5, 2, 3])
+
+    =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(lengths(["Hello", "hi", "bye"]), [5, 2, 3], "Testing whether lengths has been correctly defined.")
+
+   myTests().main()
 
 Now define lengths using a list comprehension instead.
  
@@ -55,8 +72,16 @@ Now define lengths using a list comprehension instead.
        of strings in the input list. Use a list comprehension!"""
        # fill in this function's definition to make the test pass.
    
-   import test
-   test.testEqual(lengths(["Hello", "hi", "bye"]), [5, 2, 3])
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(lengths(["Hello", "hi", "bye"]), [5, 2, 3], "Testing whether lengths has been correctly defined.")
+
+   myTests().main()
    
    
 .. activecode:: filter_exercise_1
@@ -82,9 +107,18 @@ Now define lengths using a list comprehension instead.
    def longwords(strings):
        """Return a shorter list of strings containing only the strings with more than four characters. Use manual accumulation."""
        # write your code here
-              
-   import test
-   test.testEqual(longwords(["Hello", "hi", "bye", "wonderful"]), ["Hello", "wonderful"])
+   
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(longwords(["Hello", "hi", "bye", "wonderful"]), ["Hello", "wonderful"], "Testing whether longwords has been correctly defined.")
+
+   myTests().main()
+
 
 # define longwords using filter
    
@@ -93,9 +127,18 @@ Now define lengths using a list comprehension instead.
    def longwords(strings):
        """Return a shorter list of strings containing only the strings with more than four characters. Use the filter function."""
        # write your code here
-              
-   import test
-   test.testEqual(longwords(["Hello", "hi", "bye", "wonderful"]), ["Hello", "wonderful"])
+   
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(longwords(["Hello", "hi", "bye", "wonderful"]), ["Hello", "wonderful"], "Testing whether longwords has been correctly defined.")
+
+   myTests().main()
+
 
 # define longwords using a list comprehension
 
@@ -105,8 +148,16 @@ Now define lengths using a list comprehension instead.
        """Return a shorter list of strings containing only the strings with more than four characters. Use a list comprehension."""
        # write your code here
               
-   import test
-   test.testEqual(longwords(["Hello", "hi", "bye", "wonderful"]), ["Hello", "wonderful"])
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(longwords(["Hello", "hi", "bye", "wonderful"]), ["Hello", "wonderful"], "Testing whether longwords has been correctly defined.")
+
+   myTests().main()
 
  
 Now combine lengths with longwords to make a function that returns the lengths of those strings that have at least 4 characters. Try it first with a list comprehension.
@@ -115,9 +166,18 @@ Now combine lengths with longwords to make a function that returns the lengths o
 
    def longlengths(strings):
        return None
-       
-   import test
-   test.testEqual(longlengths(["Hello", "hi", "bye", "wonderful"]), [5, 9])
+    
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(longlengths(["Hello", "hi", "bye", "wonderful"]), [5, 9], "Testing whether longlengths has been correctly defined.")
+
+   myTests().main()
+
    
 Now try doing it using map and filter.
 
@@ -126,32 +186,57 @@ Now try doing it using map and filter.
    def longlengths(strings):
        return None
        
-   import test
-   test.testEqual(longlengths(["Hello", "hi", "bye", "wonderful"]), [5, 9])
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(longlengths(["Hello", "hi", "bye", "wonderful"]), [5, 9], "Testing whether longlengths has been correctly defined.")
+
+   myTests().main()
    
 Write a function that takes a list of numbers and returns the sum of the squares of all the numbers. First try it using an accumulator pattern.
 
 .. activecode:: reduce_exercise_2
    
    def sumSquares(L):
-      return None
+       return None
    
    nums = [3, 2, 2, -1, 1]
    
-   import test
-   test.testEqual(sumSquares(nums), 19)
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(sumSquares(nums), 19, "Testing whether sumSquares has been correctly defined.")
+
+   myTests().main()
+
    
 Now, try it using map and sum 
 
 .. activecode:: reduce_exercise_3
    
    def sumSquares(L):
-      return None
+       return None
    
    nums = [3, 2, 2, -1, 1]
    
-   import test
-   test.testEqual(sumSquares(nums), 19)  
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(sumSquares(nums), 19, "Testing whether sumSquares has been correctly defined.")
+
+   myTests().main()
   
    
 Finally, try doing it using reduce 
@@ -159,12 +244,20 @@ Finally, try doing it using reduce
 .. activecode:: reduce_exercise_4
    
    def sumSquares(L):
-      return None
+       return None
    
    nums = [3, 2, 2, -1, 1]
    
-   import test
-   test.testEqual(sumSquares(nums), 19)  
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(sumSquares(nums), 19, "Testing whether sumSquares has been correctly defined.")
+
+   myTests().main()
 
 Use the zip function to take the lists below and turn them into a list of tuples, with all the first items in the first tuple, etc.
 
@@ -176,8 +269,17 @@ Use the zip function to take the lists below and turn them into a list of tuples
    
    tups = []
    
-   import test   
-   test.testEqual(tups, [(1, 4, 0), (2, 3, 5), (3, 2, 0), (4, 3, 5)])
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(tups, [(1, 4, 0), (2, 3, 5), (3, 2, 0), (4, 3, 5)], "Testing whether tups has been correctly defined.")
+
+   myTests().main()
+
    
 Use zip and map or a list comprehension to make a list consisting the maximum value for each position.
 
@@ -189,5 +291,14 @@ Use zip and map or a list comprehension to make a list consisting the maximum va
    
    maxs = []
    
-   import test   
-   test.testEqual(maxs, [4, 5, 3, 5])
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(maxs, [4, 5, 3, 5], "Testing whether maxs has been correctly defined.")
+
+   myTests().main()
+

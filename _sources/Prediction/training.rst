@@ -95,7 +95,7 @@ This would reflect training data where B came after A 2 times in the training te
         return r
 
     counts = next_letter_frequencies(train_txt)
-    print counts
+    print(counts)
 
 Given that counts dictionary, we can create a different guessing rule for each possible previous letter. The keys of the outer dictionary are possible last letters. The keys in each inner dictionary represent a possible next letter, and the value associated with the key is how frequently that next letter occurred. If we sort the inner dictionary's keys based on the associated values, we can get a sorted list of next guesses to make.
 
@@ -121,15 +121,14 @@ Given that counts dictionary, we can create a different guessing rule for each p
 We got another big improvement from that. Our estimated entropy is down to 2.61 bits per character. That's a big improvement, but still quite a bit higher than Shannon's estimate of around 1.3, based on people doing the predicting.  We could go even farther with training our predictor, generating additional rules in various ways. For example, with a larger training corpus we could sort our next guesses based on what follows from the previous *two* characters instead of the last character. Or, once we get to the end of a word, we might estimate frequencies of complete words. Within a word, we might maintain a dictionary of possible completions of the current word. Challenge: see how much additional improvement you can make!
 
 
-.. mchoicemf:: prediction_4
+.. mchoice:: prediction_4
    :answer_a: labeled data used to make a classifier or predictor perform better over time
    :answer_b: a process of making a dataset better over time
-   :correct: a
    :feedback_a: The data are used to "train" a classifier. We make it perform well, at least on the training data.
    :feedback_b: The data are not getting trained. They are being used to train the classifier.
+   :correct: a
 
    What does "training data" refer to?
-
 
 
 .. activecode:: prediction_training_helpers
@@ -163,7 +162,7 @@ We got another big improvement from that. Our estimated entropy is down to 2.61 
             # c has now been revealed, so add it to prev_txt
             prev_txt += c
         # done with the for loop; print the overall performance
-        print "%d characters to guess\t%d guesses\t%.2f guesses per character, on average\n" % (len(txt) -1, tot, float(tot)/(len(txt) -1))
+        print("%d characters to guess\t%d guesses\t%.2f guesses per character, on average\n" % (len(txt) -1, tot, float(tot)/(len(txt) -1)))
 
 
     def collapse(txt):
@@ -343,7 +342,7 @@ We got another big improvement from that. Our estimated entropy is down to 2.61 
                 guess_frequencies[guess_count] = 1
             prev_txt += c
 
-        print "guess_frequencies:", guess_frequencies
+        print("guess_frequencies:", guess_frequencies)
         # from frequencies, compute entropy
         acc = 0.0
         for i in range(len(guess_frequencies.keys())):
@@ -356,6 +355,6 @@ We got another big improvement from that. Our estimated entropy is down to 2.61 
                 next_probability = 0
             acc += guess_count * (probability-next_probability) * math.log(guess_count, 2)
 
-        print "entropy:", acc
+        print("entropy:", acc)
         return acc
 

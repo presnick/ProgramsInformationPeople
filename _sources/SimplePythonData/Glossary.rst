@@ -57,7 +57,6 @@ Glossary
     decrement
         Decrease by 1.
 
-
     evaluate
         To simplify an expression by performing the operations in order to
         yield a single value.

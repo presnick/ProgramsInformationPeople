@@ -41,8 +41,8 @@ For starters, though, here is some code that will draw some text in a non-respon
                               anchor_x='center', anchor_y='center')
 
         def on_draw(self):
-            print 'The window was drawn!'
-            print 'We are also going to draw some text, just because we can.'
+            print('The window was drawn!')
+            print('We are also going to draw some text, just because we can.')
             sys.stdout.flush()
 
             self.label.draw()
@@ -88,8 +88,8 @@ Here's some code that shows how these elements work together to display an image
                       x=self.width//2, y=self.height//2)
 
         def on_draw(self):
-            print 'The window was drawn!'
-            print 'We are also going to draw a square, because squares are amazing'
+            print('The window was drawn!')
+            print('We are also going to draw a square, because squares are amazing')
             sys.stdout.flush()
 
             self.image_sprite.draw()
@@ -145,8 +145,8 @@ This is probably hard to understand, so here is some code that draws various kin
             super(ShapeWindow,self).__init__(*args,**kwargs)
 
         def on_draw(self):
-            print 'The window was drawn!'
-            print 'We are also going to draw a bunch of different shapes'
+            print('The window was drawn!')
+            print('We are also going to draw a bunch of different shapes')
             sys.stdout.flush()
 
             self.draw_points()

@@ -24,16 +24,16 @@ Previously, we saw that a response object has an attribute (instance variable) *
    page3 = requests.get("http://github.com/presnick/runestone")
    
    for p in [page1, page2, page3]:
-       print "********"
-       print "url:", p.url
-       print "status:", p.status_code
-       print "content type:", p.headers['Content-type']
+       print("********")
+       print("url:", p.url)
+       print("status:", p.status_code)
+       print("content type:", p.headers['Content-type'])
        if len(p.text) > 1040:
-           print "content snippet:", p.text[1000:1040]
+           print("content snippet:", p.text[1000:1040])
        if len(p.history) > 0:
-           print "redirection history"
+           print("redirection history")
            for h in p.history:
-               print "  ", h.url, h.status_code
+               print("  ", h.url, h.status_code)
                
 Here's the output that is produced when I run that code.
 
@@ -67,7 +67,7 @@ Next, consider the *.status_code* attribute.
 
 * When the page has moved to a different location, it sends back code 301 and a different URL where the client is supposed to retrieve from. The request.get method is so smart that when it gets a 301, it looks at the new url and fetches it. For example, github redirects all requests using http to the corresponding page using https (the secure http protocol). Thus, when we asked for page3, http://github.com/presnick/runestone, github sent back a 301 code and the url https://github.com/presnick/runestone. The requests.get function then fetched the other url. It reports a status of 200 and the updated url. We have to do further inquiry to find out that a redirection occurred (see below).
 
-The *.headers* attribute has as its value a dictionary consisting of keys and values. To find out all the headers, you can run the code and add a statement ``print p.headers.keys()``. One of the headers is 'Content-type'. For pages 1 and 3 its value is ``text/html; charset-utf-8``. For page2, where we got an error, the contents are of type ``application/json; charset=utf-8``.
+The *.headers* attribute has as its value a dictionary consisting of keys and values. To find out all the headers, you can run the code and add a statement ``print(p.headers.keys())``. One of the headers is 'Content-type'. For pages 1 and 3 its value is ``text/html; charset-utf-8``. For page2, where we got an error, the contents are of type ``application/json; charset=utf-8``.
 
 The *.text* attribute we have seen before. It contains the contents of the file (or sometimes the error message).
 

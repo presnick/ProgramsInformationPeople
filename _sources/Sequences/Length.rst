@@ -15,7 +15,7 @@ The ``len`` function, when applied to a string, returns the number of characters
 .. activecode:: chp08_len1
     
     fruit = "Banana"
-    print len(fruit)
+    print(len(fruit))
     
 
 To get the last letter of a string, you might be tempted to try something like
@@ -26,7 +26,7 @@ this:
     fruit = "Banana"
     sz = len(fruit)
     last = fruit[sz]       # ERROR!
-    print last
+    print(last)
 
 That won't work. It causes the runtime error
 ``IndexError: string index out of range``. The reason is that there is no
@@ -40,7 +40,7 @@ numbered 0 to 5. To get the last character, we have to subtract 1 from
     fruit = "Banana"
     sz = len(fruit)
     lastch = fruit[sz-1]
-    print lastch
+    print(lastch)
 
 .. Alternatively, we can use **negative indices**, which count backward from the
 .. end of the string. The expression ``fruit[-1]`` yields the last letter,
@@ -56,41 +56,38 @@ two lines of code from above.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_4_1
+.. mchoice:: test_question8_4_1
    :answer_a: 11
    :answer_b: 12
-   :correct: b
    :feedback_a: The blank space counts as a character.
    :feedback_b: Yes, there are 12 characters in the string.
-
+   :correct: b
 
    What is printed by the following statements?
    
    .. code-block:: python
    
       s = "python rocks"
-      print len(s)
+      print(len(s))
 
 
-
-.. mchoicemf:: test_question8_4_2
+.. mchoice:: test_question8_4_2
    :answer_a: o
    :answer_b: r
    :answer_c: s
    :answer_d: Error, len(s) is 12 and there is no index 12.
-   :correct: b
    :feedback_a: Take a look at the index calculation again, len(s)-5.
    :feedback_b: Yes, len(s) is 12 and 12-5 is 7.  Use 7 as index and remember to start counting with 0.
    :feedback_c: s is at index 11
    :feedback_d: You subtract 5 before using the index operator so it will work.
-
+   :correct: b
 
    What is printed by the following statements?
    
    .. code-block:: python
    
       s = "python rocks"
-      print s[len(s)-5]
+      print(s[len(s)-5])
 
 .. note::
    You can leave out len(s) entirely in the above expression and get the same 

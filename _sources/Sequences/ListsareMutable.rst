@@ -17,11 +17,11 @@ update one of the list items.
 .. activecode:: ch09_7
     
     fruit = ["banana", "apple", "cherry"]
-    print fruit
+    print(fruit)
 
     fruit[0] = "pear"
     fruit[-1] = "orange"
-    print fruit
+    print(fruit)
 
 
 An
@@ -45,7 +45,7 @@ By combining assignment with the slice operator we can update several elements a
     
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     alist[1:3] = ['x', 'y']
-    print alist
+    print(alist)
 
 We can also remove elements from a list by assigning the empty list to them.
 
@@ -53,7 +53,7 @@ We can also remove elements from a list by assigning the empty list to them.
     
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     alist[1:3] = []
-    print alist
+    print(alist)
 
 We can even insert elements into a list by squeezing them into an empty slice at the
 desired location.
@@ -62,21 +62,21 @@ desired location.
     
     alist = ['a', 'd', 'f']
     alist[1:1] = ['b', 'c']
-    print alist
+    print(alist)
     alist[4:4] = ['e']
-    print alist
+    print(alist)
 
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_7_1
+.. mchoice:: test_question9_7_1
    :answer_a: [4,2,True,8,6,5]
    :answer_b: [4,2,True,6,5]
    :answer_c: Error, it is illegal to assign
-   :correct: b
    :feedback_a: Item assignment does not insert the new item into the list.
-   :feedback_b: Yes, the value True is placed in the list at index 2.  It replaces 8.
-   :feedback_c: Item assignment is allowed with lists.  Lists are mutable.
+   :feedback_b: Yes, the value True is placed in the list at index 2. It replaces 8.
+   :feedback_c: Item assignment is allowed with lists. Lists are mutable.
+   :correct: b
    
    What is printed by the following statements?
    
@@ -84,7 +84,7 @@ desired location.
 
      alist = [4,2,8,6,5]
      alist[2] = True
-     print alist
+     print(alist)
 
 
 .. index:: del statement, statement; del

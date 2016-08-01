@@ -26,16 +26,16 @@ semester you'll have facilities for actually executing it.
 .. activecode:: seq_char_classification
     
     import string
-    print string.ascii_lowercase
-    print string.ascii_uppercase
-    print string.digits
-    print string.punctuation
+    print(string.ascii_lowercase)
+    print(string.ascii_uppercase)
+    print(string.digits)
+    print(string.punctuation)
     x = "a"
     y = "A"
-    print x in string.ascii_lowercase  # True
-    print x in string.ascii_uppercase  # False
-    print y in string.ascii_lowercase  # False
-    print y in string.ascii_uppercase  # True
+    print(x in string.ascii_lowercase)  # True
+    print(x in string.ascii_uppercase)  # False
+    print(y in string.ascii_lowercase)  # False
+    print(y in string.ascii_uppercase)  # True
 
 
 For more information consult the ``string`` module documentation (see `Global Module Index <http://docs.python.org/py3k/py-modindex.html>`_).

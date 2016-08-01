@@ -16,7 +16,7 @@ Exercises
 
     def g():
         return 2*x + y + z
-    print g(3)     # should output 10
-    print g(3, 2)  # should output 8
-    print g(3, 2, 1) #should output 9
+    print(g(3))       # should output 10
+    print(g(3, 2))    # should output 8
+    print(g(3, 2, 1)) #should output 9
  

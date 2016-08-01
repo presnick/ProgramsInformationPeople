@@ -25,13 +25,13 @@ consist of the whole list.
     a = [81,82,83]
 
     b = a[:]       # make a clone using slice
-    print a == b
-    print a is b
+    print(a == b)
+    print(a is b)
 
     b[0] = 5
 
-    print a
-    print b
+    print(a)
+    print(b)
 
 Now we are free to make changes to ``b`` without worrying about ``a``.  Again, we can clearly see in codelens that ``a`` and ``b`` are entirely different list objects.
 
@@ -39,14 +39,14 @@ Now we are free to make changes to ``b`` without worrying about ``a``.  Again, w
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_12_1
+.. mchoice:: test_question9_12_1
    :answer_a: [4,2,8,999,5,4,2,8,6,5]
    :answer_b: [4,2,8,999,5]
    :answer_c: [4,2,8,6,5]
-   :correct: c
    :feedback_a: print alist not print blist
    :feedback_b: blist is changed, not alist.
    :feedback_c: Yes, alist was unchanged by the assignment statement. blist was a copy of the references in alist.
+   :correct: c
    
    What is printed by the following statements?
    
@@ -55,7 +55,7 @@ Now we are free to make changes to ``b`` without worrying about ``a``.  Again, w
      alist = [4,2,8,6,5]
      blist = alist * 2
      blist[3] = 999
-     print alist
+     print(alist)
 
 
 .. index:: list; append

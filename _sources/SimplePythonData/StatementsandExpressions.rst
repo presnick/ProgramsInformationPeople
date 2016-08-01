@@ -26,8 +26,8 @@ If you ask Python to ``print`` an expression, the interpreter **evaluates** the 
 .. activecode:: ch02_13
     :nocanvas:
 
-    print 1 + 1 + (2 * 3)
-    print len("hello")
+    print(1 + 1 + (2 * 3))
+    print(len("hello"))
 
 In this example ``len`` is a built-in Python function that returns the number
 of characters in a string.
@@ -41,8 +41,8 @@ itself is a simple expression, and so is a variable.  Evaluating a variable give
 
     y = 3.14
     x = len("hello")
-    print x
-    print y
+    print(x)
+    print(y)
 
 
 In a program, anywhere that a literal value (a string or a number) is acceptable, a more complicated expression is also acceptable. Here are all the kinds of expressions we've seen so far:
@@ -64,7 +64,7 @@ Notice that operator expressions (like ``+`` and ``*``) have sub-expressions bef
 .. activecode:: ch02_14a
     :nocanvas:
 
-    print 2 * len("hello") + len("goodbye")
+    print(2 * len("hello") + len("goodbye"))
 
 Similarly, when calling a function, instead of putting a literal inside the parentheses, a complex expression can be placed inside the parentheses. (Again, we provide some hidden code that defines the functions ``square`` and ``sub``).
 
@@ -84,9 +84,9 @@ Similarly, when calling a function, instead of putting a literal inside the pare
    
    x = 2
    y = 1
-   print square(y + 3)
-   print square(y + square(x))
-   print sub(square(y), square(x))
+   print(square(y + 3))
+   print(square(y + square(x)))
+   print(sub(square(y), square(x)))
    
 With a function call, it's even possible to have a complex expression before the left parenthesis, as long as that expression evaluates to a function object. For now, though, we will just use variable names (like square, sub, and len) that are directly bound to function objects.
 

@@ -16,9 +16,9 @@ selecting a character:
 .. activecode:: chp08_slice1
     
     singers = "Peter, Paul, and Mary"
-    print singers[0:5]
-    print singers[7:11]
-    print singers[17:21]
+    print(singers[0:5])
+    print(singers[7:11])
+    print(singers[17:21])
     
 
 The `slice` operator ``[n:m]`` returns the part of the string from the n'th character
@@ -33,53 +33,49 @@ end of the string.
 .. activecode:: chp08_slice2
     
     fruit = "banana"
-    print fruit[:3]
-    print fruit[3:]
+    print(fruit[:3])
+    print(fruit[3:])
 
 What do you think ``fruit[:]`` means?
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_5_1
+.. mchoice:: test_question8_5_1
    :answer_a: python
    :answer_b: rocks
    :answer_c: hon r
    :answer_d: Error, you cannot have two numbers inside the [ ].
-   :correct: c
    :feedback_a: That would be s[0:6].
    :feedback_b: That would be s[7:].
    :feedback_c: Yes, start with the character at index 3 and go up to but not include the character at index 8.
    :feedback_d: This is called slicing, not indexing.  It requires a start and an end.
-
+   :correct: c
 
    What is printed by the following statements?
    
    .. code-block:: python
 
       s = "python rocks"
-      print s[3:8]
+      print(s[3:8])
 
 
-
-.. mchoicemf:: test_question8_5_2
+.. mchoice:: test_question8_5_2
    :answer_a: rockrockrock
    :answer_b: rock rock rock
    :answer_c: rocksrocksrocks
    :answer_d: Error, you cannot use repetition with slicing.
-   :correct: a
    :feedback_a: Yes, rock starts at 7 and goes thru 10.  Repeat it 3 times.
    :feedback_b: Repetition does not add a space.
    :feedback_c: Slicing will not include the character at index 11.  Just up to it (10 in this case).
    :feedback_d: The slice will happen first, then the repetition.  So it is ok.
-
+   :correct: a
 
    What is printed by the following statements?
    
    .. code-block:: python
 
       s = "python rocks"
-      print s[7:11]*3
-
+      print(s[7:11]*3)
 
 
 .. note::

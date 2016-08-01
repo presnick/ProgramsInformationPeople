@@ -13,11 +13,11 @@ Glossary
 .. glossary::
 
     deterministic
-		A process that is repeatable and predictable.
+        A process that is repeatable and predictable.
 
     documentation
-	    A place where you can go to get detailed information about aspects of your
-	    programming language.
+        A place where you can go to get detailed information about aspects of your
+        programming language.
 
 
     module
@@ -27,15 +27,15 @@ Glossary
 
 
     pseudo-random number
-		A number that is not genuinely random but is instead created algorithmically.
+        A number that is not genuinely random but is instead created algorithmically.
 
     random number
-		A number that is generated in such a way as to exhibit statistical randomness.
+        A number that is generated in such a way as to exhibit statistical randomness.
 
     random number generator
-		A function that will provide you with random numbers, usually between 0 and 1.
+        A function that will provide you with random numbers, usually between 0 and 1.
 
 
     standard library
-		A collection of modules that are part of the normal installation of Python.
+        A collection of modules that are part of the normal installation of Python.
 

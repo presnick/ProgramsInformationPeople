@@ -50,21 +50,18 @@ Notice that there are now 512 bananas---the dictionary has been modified.  Note 
 of key-value pairs.
 
 
-
-
 **Check your understanding**
 
-.. mchoicemf:: test_question11_2_1
+.. mchoice:: test_question11_2_1
    :answer_a: 12
    :answer_b: 0
    :answer_c: 18
    :answer_d: Error, there is no entry with mouse as the key.
-   :correct: c
    :feedback_a: 12 is associated with the key cat.
    :feedback_b: The key mouse will be associated with the sum of the two values.
    :feedback_c: Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.
    :feedback_d: Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.
-   
+   :correct: c
    
    What is printed by the following statements?
    
@@ -72,7 +69,7 @@ of key-value pairs.
 
      mydict = {"cat":12, "dog":6, "elephant":23}
      mydict["mouse"] = mydict["cat"] + mydict["dog"]
-     print mydict["mouse"]
+     print(mydict["mouse"])
 
 
 

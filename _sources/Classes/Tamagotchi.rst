@@ -68,7 +68,7 @@ To relieve hunger, we call the feed() method.
             return state
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))]
+            print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
         def teach(self, word):
@@ -84,23 +84,23 @@ To relieve hunger, we call the feed() method.
         def reduce_boredom(self):
             self.boredom = max(0, self.boredom - self.boredom_decrement)
 
-Let's try making a pet and playing with it a little. Add some of your own commands, too, and keep printing p1 to see what the effects are. If you want to directly inspect the state, try print p1.boredom or p1.hunger.
+Let's try making a pet and playing with it a little. Add some of your own commands, too, and keep printing p1 to see what the effects are. If you want to directly inspect the state, try printing p1.boredom or p1.hunger.
 
 .. activecode:: tamagotchi_2
     :nocanvas:
     :include: tamagotchi_1
 
     p1 = Pet("Fido")
-    print p1
+    print(p1)
     for i in range(10):
         p1.clock_tick()
-        print p1
+        print(p1)
     p1.feed()
     p1.hi()
     p1.teach("Boo")
     for i in range(10):
         p1.hi()
-    print p1
+    print(p1)
 
 
 
@@ -158,7 +158,7 @@ No matter what the user does, with each command entered, the clock ticks for all
                 pet = whichone(animals, words[1])
                 if not pet:
                     feedback += "I didn't recognize that pet name. Please try again.\n"
-                    print
+                    print()
                 else:
                     pet.hi()
             elif command == "Teach" and len(words) > 2:

@@ -45,8 +45,8 @@ to write functions that return values.  One thing to notice is that even though 
 
     
     p = Point(7,6)
-    print p.getX()
-    print p.getY()
+    print(p.getX())
+    print(p.getY())
 
 Note that the ``getX`` method simply returns the value of the instance variable x from the object self.  In other words, the implementation of the method is to go to the state of the object itself and get the value of ``x``.  Likewise, the ``getY`` method looks almost the same.
 
@@ -75,7 +75,7 @@ It will perform a more complex task.
 
     
     p = Point(7,6)
-    print p.distanceFromOrigin()
+    print(p.distanceFromOrigin())
 
 
 Notice that the call of ``distanceFromOrigin`` does not *explicitly* 

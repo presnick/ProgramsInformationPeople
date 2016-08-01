@@ -42,7 +42,7 @@ If you do get an error when you run the the call to requests.get(), and it's not
 
 1. Get rid of the optional `params = ...` from your call. If that gets rid of the error, the problem was the value you provided for params. Print out that value and see if it's a dictionary with the key-value pairs you wanted to be part of the URL.
 
-2. If that doesn't solve the problem, it must be a problem with the string bound to the variable dest_url. Try executing ``print type(dest_url)`` and ``print dest_url`` to see if something is wrong with it.
+2. If that doesn't solve the problem, it must be a problem with the string bound to the variable dest_url. Try executing ``print(type(dest_url))`` and ``print(dest_url)`` to see if something is wrong with it.
 
 Checking if You Have the Right URL
 ----------------------------------
@@ -58,7 +58,7 @@ Fortunately, the response object returned by requests.get() has the ``.url`` att
     dest_url = <some expr>
     d = <some dictionary>
     resp = requests.get(dest_url, params = d)
-    print resp.url
+    print(resp.url)
 
 Execute the program. The url will print out. You can eyeball it and perhaps notice problems.
 

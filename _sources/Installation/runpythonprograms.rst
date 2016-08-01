@@ -13,7 +13,7 @@
 Run a Python Code File
 ======================
 
-Finally, you are ready to run a python program! At the terminal window, type ``python secondprog.py``. This will invoke the python interpreter, executing the code in file secondprog.py. That file just contains the line ``print "hello world"``, so *hello world* is output to the console. Notice that the console is just the area in the terminal window underneath where you entered the command that invoked python.
+Finally, you are ready to run a python program! At the terminal window, type ``python secondprog.py``. This will invoke the python interpreter, executing the code in file secondprog.py. That file just contains the line ``print("hello world")``, so *hello world* is output to the console. Notice that the console is just the area in the terminal window underneath where you entered the command that invoked python.
 
 .. image:: Figures/secondprog1.JPG
 
@@ -21,4 +21,4 @@ Finally, you are ready to run a python program! At the terminal window, type ``p
 
    If in a terminal window you type ``python`` without specifying a filename, it launches the **python interpreter** and gives a little different command prompt. It's then waiting for you type python commands one at a time, which it immediately evaluates. In my experience, using the python interpreter is very confusing for beginning students, because it mixes up the idea of printed representations being generated only by explicit print statements (print is for people!). If you accidentally launch the python interpreter, I encourage you to just kill it, by typing ``exit()``.
    
-	.. image:: Figures/pythoninterpreter.JPG
+    .. image:: Figures/pythoninterpreter.JPG

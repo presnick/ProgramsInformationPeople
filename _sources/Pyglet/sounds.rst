@@ -35,8 +35,8 @@ Here is some code that demonstrates this:
 
 
         def on_draw(self):
-            print 'The window was drawn!'
-            print 'We are going to make a noise'
+            print('The window was drawn!')
+            print('We are going to make a noise')
             sys.stdout.flush()
             self.make_sound()
 

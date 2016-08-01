@@ -27,16 +27,22 @@ As another example, for the problem sets we have been including some hidden code
    # Assign this sorted list to the variable length_fall_list.
    
    try:
-       test.testEqual(sorted_fall_list[0], 'squash', "squash first")
-       test.testEqual(length_fall_list[0], 'excellent', "excellent first")
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+          def testOne(self):
+            self.assertEqual(sorted_fall_list[0], "squash", "Checking that Squash is first.")
+            self.assertEqual(length_fall_list[0], 'excellent', "Checking that excellent is first.")
+
+       myTests().main()
    except:
-       print "sorted_fall_list or length_fall_list don't exist or have no items"
+       print("sorted_fall_list or length_fall_list don't exist or have no items")
    
 
 When you first run this, sorted_fall_list is not bound, so you get an error that is handled by the exception clause. If you add ``sorted_fall_list = [1, 2, 3]``, it will tell you that the first test doesn't pass, because the list has the wrong first element.
 
-.. note::
-
+.. note
    The testEqual function that we have provided you for download is slightly different than the one that's built into ActiveCode test module. It takes an extra parameter (e.g., "squash first") that is just a comment string. This code may not work properly in an ActiveCode window.  
 
 

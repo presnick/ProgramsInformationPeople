@@ -20,8 +20,8 @@ characters in the string.
 
    fruit = "apple"
    for idx in [0, 1, 2, 3, 4]:
-      currentChar = fruit[idx]
-      print currentChar
+       currentChar = fruit[idx]
+       print(currentChar)
    
    # after you run this, try changing the order of items in the list [0, 1, 2, 3, 4] and see what happens.
    # What happens if you put the number 6 into the list, or the word "hello"?       
@@ -31,8 +31,8 @@ Conveniently, we can use the ``range`` function to automatically generate the in
 .. activecode:: ch08_7a1
 
    x = range(5)
-   print type(x)
-   print x
+   print(type(x))
+   print(x)
    
 
 Consider the following codelens example.
@@ -43,12 +43,12 @@ Consider the following codelens example.
     x = range(5)
     for idx in x:
         currentChar = fruit[idx]
-        print currentChar
+        print(currentChar)
 
 The index positions in "apple" are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by ``range(5)``.  The first time through the for loop, ``idx`` will be 0 and the "a" will be printed.  Then, ``idx`` will be reassigned to 1 and "p" will be displayed.  This will repeat for all the range values up to but not including 5.  Since "e" has index 4, this will be exactly right to show all 
 of the characters.
 
-In order to make the iteration more general, we can use the ``len`` function to provide the bound for ``range``.  This is a very common pattern for traversing any sequence by position.	Make sure you understand why the range function behaves
+In order to make the iteration more general, we can use the ``len`` function to provide the bound for ``range``.  This is a very common pattern for traversing any sequence by position.  Make sure you understand why the range function behaves
 correctly when using ``len`` of the string as its parameter value.
 
 .. activecode:: ch08_7b
@@ -57,7 +57,7 @@ correctly when using ``len`` of the string as its parameter value.
 
     fruit = "apple"
     for idx in range(len(fruit)):
-        print fruit[idx]
+        print(fruit[idx])
 
 
 You may also note that iteration by position allows the programmer to control the direction of the
@@ -67,23 +67,23 @@ traversal by changing the sequence of index values.
 
     fruit = "apple"
     for idx in [0, 2, 4, 3, 1]:
-        print fruit[idx]
+        print(fruit[idx])
 
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_9_1
+.. mchoice:: test_question8_9_1
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2
    :answer_d: 3
    :answer_e: 6
-   :correct: d
    :feedback_a: idx % 2 is 0 whenever idx is even
    :feedback_b: idx % 2 is 0 whenever idx is even
    :feedback_c: idx % 2 is 0 whenever idx is even
    :feedback_d: idx % 2 is 0 whenever idx is even
    :feedback_e: idx % 2 is 0 whenever idx is even
+   :correct: d
 
    How many times is the letter p printed by the following statements?
    
@@ -91,6 +91,6 @@ traversal by changing the sequence of index values.
 
       s = "python"
       for idx in range(len(s)):
-         print s[idx % 2]
+         print(s[idx % 2])
 
 

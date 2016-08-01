@@ -37,9 +37,9 @@ Remember that if we want to see the results of the computation, the program need
     20 + 32
     5 ** 2
     (5 + 9) * (15 - 7)
-    print 7 + 5
+    print(7 + 5)
 
-In Python 2.7, which we will be using, the division operator ``/`` produces a floating point result
+In Python 3, which we will be using, the division operator ``/`` produces a floating point result
 if either of the operands is  of type **float**. If both are of type **int**, then
 it performs **integer division**, which truncates its result down to the next smallest integer.
 
@@ -47,10 +47,10 @@ it performs **integer division**, which truncates its result down to the next sm
 .. activecode:: ch02_16
     :nocanvas:
 
-   print 9 / 5
-   print 9.0 / 5
-   print 9 / 5.0
-   print 5/9
+   print(9 / 5)
+   print(9.0 / 5)
+   print(9 / 5.0)
+   print(5/9)
 
 Pay particular attention to the examples above. Note that it truncates, rather than rounding, so ``9/5`` is ` and ``5/9`` is 0.
 
@@ -65,8 +65,8 @@ you can use the operator ``//``.
 .. activecode:: ch02_16a
    :nocanvas:
 
-   print 7.0 / 3.0
-   print 7.0 // 3.0
+   print(7.0 / 3.0)
+   print(7.0 // 3.0)
 
 .. index:: modulus
 
@@ -78,8 +78,8 @@ operators.
 .. activecode:: ch02_18
     :nocanvas:
 
-    print 7 // 3     # This is the integer division operator
-    print 7 % 3      # This is the remainder or modulus operator
+    print(7 // 3)    # This is the integer division operator
+    print(7 % 3)     # This is the remainder or modulus operator
 
 In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1.
 
@@ -94,82 +94,81 @@ Similarly ``x % 100`` yields the last two digits.
 **Check your understanding**
 
 
-.. mchoicemf:: test_question2_6_1a
+.. mchoice:: test_question2_6_1a
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :correct: c
    :feedback_a: Because 18 and 4 are ints, / does integer division.
    :feedback_b: Integer division results in truncation, not rounding up.
    :feedback_c: Because 18 and 4 are ints, / does integer division.
    :feedback_d: Because 18 and 4 are ints, / does integer division and produces an integer.
    :feedback_e: / does division. Perhaps you were thinking of %, which computes the remainder?
+   :correct: c
 
    What value is printed when the following statement executes?
 
    .. code-block:: python
 
-      print 18 / 4
+      print(18 / 4)
 
-.. mchoicemf:: test_question2_6_1
+.. mchoice:: test_question2_6_1
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :correct: a
    :feedback_a: Because 18.0 is a float, / does exact division.
    :feedback_b: Because 18.0 is a float, / does exact division.
    :feedback_c: Because 18.0 is a float, / does exact division.
    :feedback_d: Because 18.0 is a float, / does exact division.
    :feedback_e: / does division. Perhaps you were thinking of %, which computes the remainder?
+   :correct: a
 
    What value is printed when the following statement executes?
 
    .. code-block:: python
 
-      print 18.0 / 4
+      print(18.0 / 4)
 
 
-
-.. mchoicemf:: test_question2_6_2
+.. mchoice:: test_question2_6_2
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :correct: d
    :feedback_a: - The // operator does integer division, not exact divisions
    :feedback_b: - Integer division results in truncation, not rounding up.
    :feedback_c: - The // operator does integer division, but it yields a float when one of the operands is a float/
    :feedback_d: - The // operator does integer division, and  it yields a float when one of the operands is a float.
    :feedback_e: - / does division. Perhaps you were thinking of %, which computes the remainder?
+   :correct: d
 
    What value is printed when the following statement executes?
 
    .. code-block:: python
 
-      print 18.0 // 4
+      print(18.0 // 4)
 
 
-.. mchoicemf:: test_question2_6_3
+.. mchoice:: test_question2_6_3
    :answer_a: 4.25
    :answer_b: 5
    :answer_c: 4
    :answer_d: 2
-   :correct: d
    :feedback_a: The % operator returns the remainder after division.
    :feedback_b: The % operator returns the remainder after division.
    :feedback_c: The % operator returns the remainder after division.
    :feedback_d: The % operator returns the remainder after division.
+   :correct: d
 
    What value is printed when the following statement executes?
 
    .. code-block:: python
 
-      print 18 % 4
+      print(18 % 4)
 
 
 .. index:: input, input dialog

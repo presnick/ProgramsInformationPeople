@@ -133,4 +133,4 @@ Here's an example of how we could use it with the FAA's REST API. Try saving thi
     dest_url = 'http://services.faa.gov/airport/status/DTW'
     d = {'format': 'json'}
     result_text = get_with_caching(dest_url, d, saved_cache, cache_fname)
-    print json.loads(result_text)
+    print(json.loads(result_text))

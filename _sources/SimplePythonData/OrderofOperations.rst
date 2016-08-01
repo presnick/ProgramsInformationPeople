@@ -51,8 +51,8 @@ rules for its mathematical operators that mathematics does.
 .. activecode:: ch02_23
   :nocanvas:
 
-  print 2 ** 3 ** 2     # the right-most ** operator gets done first!
-  print (2 ** 3) ** 2   # use parentheses to force the order you want!
+  print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
+  print((2 ** 3) ** 2)   # use parentheses to force the order you want!
 
 .. note::
 
@@ -62,16 +62,16 @@ rules for its mathematical operators that mathematics does.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_8_1
+.. mchoice:: test_question2_8_1
    :answer_a: 14
    :answer_b: 24
    :answer_c: 3
    :answer_d: 13.667
-   :correct: a
    :feedback_a: Using parentheses, the expression is evaluated as (2*5) first, then (10 // 3), then (16-3), and then (13+1).
    :feedback_b: Remember that * has precedence over  -.
    :feedback_c: Remember that // has precedence over -.
    :feedback_d: Remember that // does integer division.
+   :correct: a
 
    What is the value of the following expression:
 

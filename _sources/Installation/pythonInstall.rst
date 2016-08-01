@@ -23,16 +23,16 @@ Now, you'll need to install the Python interpreter on your computer. This proces
 Install and configure python for Windows
 ----------------------------------------
 
-Please download and install Python 2.7 from:
+Please download and install Python 3 from:
 
 https://www.python.org/downloads/release
 
-Download and install the file Windows x86 MSI Installer (2.7.10 as of Fall 2015) - when the install process asks you which directory to use - make sure to keep the default directory of C:\Python27\.
+Download and install the file Windows x86 MSI Installer (3.4.5 as of Fall 2016) - when the install process asks you which directory to use - make sure to keep the default directory of C:\Python27\.
 
 .. note::
 
-   Make sure that you install the latest version of Python 2.x - do not install Python 3.x. 
-   There are significant differences between Python 2 and Python 3 and this book/site is based on Python 2.
+   Make sure that you install the latest version of Python 3.x - do not install Python 2.x. 
+   There are significant differences between Python 2 and Python 3 and this book/site is based on Python 3.
 
 With just this installation, you can get an interactive python interpreter where
 you can type code one line at a time and have it executed. You may find some options
@@ -49,9 +49,9 @@ You have one configuration to do, to tell Git Bash where in the file system to f
 
 #. At the command prompt, paste this command ``export PATH="$PATH:/c/Python27"``. That will tell Windows where to find Python. (This assumes that you installed it in C:\\Python27, as we told you to above.)
 
-#. Check to make sure that this worked correctly by entering the command ``python --version``.  It should say Python 2.7.10 (or 2.7.something), as shown in the figure below.
+#. Check to make sure that this worked correctly by entering the command ``python --version``.  It should say Python 3.4.5 (or 3.4.something), as shown in the figure below.
 
-#. Assuming that worked correctly, you will want to set up git bash so that it always knows where to find python. To do that, enter the following command: ``echo 'export PATH="$PATH:/c/Python27"' > .bashrc``. That will save the command into a file called .bashrc. .bashrc is executed every time git bash launches, so you won't have to manually tell the shell where to find python again.
+#. Assuming that worked correctly, you will want to set up git bash so that it always knows where to find python. To do that, enter the following command: ``echo 'export PATH="$PATH:/c/Python34"' > .bashrc``. That will save the command into a file called .bashrc. .bashrc is executed every time git bash launches, so you won't have to manually tell the shell where to find python again.
 
 #. Check to make sure that worked by typing exit, relaunching git bash, and then typing ``python --version`` again.
 
@@ -62,7 +62,7 @@ You have one configuration to do, to tell Git Bash where in the file system to f
 Install and configure python for Mac
 ------------------------------------
 
-Because you have a mac, you're lucky in this case -- you already have Python. It comes pre-installed. However, we need to make sure you have the correct version of Python. We will be using version **2.7.**
+Because you have a mac, you're lucky in this case -- you already have Python. It comes pre-installed. However, we need to make sure you have the correct version of Python. We will be using version **3.4.**
 
 If you have Mac OS 10.7 (Lion) or later, you definitely have Python 2.7. If you have Mac OS 10.6 (Snow Leopard) or earlier, you may have a different version of Python. If so, let's get this straightened out early -- come see one of the instructors. (If this applies to many people, we will provide additional instructions for that installation!)
 
@@ -78,6 +78,6 @@ Type: ``python -V``, and press return. That process should look something like t
  .. image:: Figures/returntypedpython.png
         :width: 300px
 
-If you see a 2.7 (and the third number can be anything) on the screen, like in that image above, you're fine. If you get an error, please see one of the instructors!
+If you see a 3.4 (and the third number can be anything) on the screen, like in that image above, you're fine. If you get an error, please see one of the instructors!
 
 You're now all ready to run Python.

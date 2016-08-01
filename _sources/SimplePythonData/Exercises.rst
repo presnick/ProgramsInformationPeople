@@ -34,7 +34,7 @@ Exercises
 
             .. activecode:: ch02_ex1
 
-               print 5**2
+               print(5**2)
 
         .. tab:: Answer
 
@@ -125,7 +125,7 @@ Exercises
 
                 timeofday = hours % 24
 
-                print timeofday
+                print(timeofday)
 
 
 #. It is possible to name the days 0 thru 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
@@ -169,7 +169,7 @@ Exercises
                 word9 = "dull"
                 word10 = "boy."
 
-                print word1, word2, word3, word4, word5, word6, word7, word8, word9, word10
+                print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
         
 
 
@@ -178,7 +178,7 @@ Exercises
 
    .. actex:: ex_2_6
       
-      print 6 * 1 -2
+      print(6 * 1 -2)
 
   
 #.
@@ -222,7 +222,7 @@ Exercises
 
                 final = P * ( ((1 + (r/n)) ** (n * t)) )
 
-                print "The final amount after", t, "years is", final
+                print("The final amount after", t, "years is", final)
 
     
   
@@ -255,7 +255,7 @@ Exercises
 
                 area = width * height
 
-                print "The area of the rectangle is", area
+                print("The area of the rectangle is", area)
 
 
   
@@ -287,7 +287,7 @@ Exercises
                 # formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
                 deg_f = deg_c * (9 / 5) + 32
 
-                print  deg_c, " degrees Celsius is", deg_f, " degrees Farenheit."
+                print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
 
         .. tab:: Discussion
 

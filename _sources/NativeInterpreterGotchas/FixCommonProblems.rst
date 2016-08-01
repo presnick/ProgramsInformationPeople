@@ -13,7 +13,7 @@ Common Problems
 
 As you run programs in your native Python interpreter, and use the :ref:`pip module installer <pip_chap>` to install modules, you're likely to run into common problems, which may come about due to typos, confusion, or just the unpredicatability of dealing with a lot of interacting systems and files. This chapter is intended to help you sort out these gotchas. (More may be added!)
 
-with your native Python interpreter (all systems)
+With your native Python interpreter (all systems)
 -------------------------------------------------
 
 **Wrong directory problems**

@@ -17,7 +17,7 @@ Exercises
    pocketmoney = 4.99
    t =
    newstring = t.format(pocketmoney)
-   print newstring
+   print(newstring)
    
    
 2. Fill in the missing code after the vals = on the first line, so that it prints out: ``v1, v2 are the 2 items in the list``
@@ -26,7 +26,7 @@ Exercises
 
    vals =                            
    templ = "{}, {} are the {} items in the list"
-   print templ.format(vals[0], vals[1], len(vals))
+   print(templ.format(vals[0], vals[1], len(vals)))
 
 
 3. Fill in the missing code after the ``val =`` on the first line, so that it prints out: ``Hey, you, you there!``
@@ -35,4 +35,4 @@ Exercises
 
    val = 
    temp = "Hey, {0}, {0} there!".format(val)
-   print temp
+   print(temp)
