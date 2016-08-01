@@ -126,21 +126,24 @@ Problem Set
    # Write code to increase the value for the key 
    # "dogs" (in the animals dictionary we've provided) by 1.
 
-   ====
-   
-   import test
-   try: 
-      test.testEqual(num_chickens, animals['chickens'])
-   except:
-      print "Something is is undefined so this test cannot run. Read the directions again!\n"
+   =====
 
-   try:
-      test.testEqual(animals['yak'], 3)
-   except:
-      print "key 'yak' is not yet set in dictionary animals"
-      
-   test.testEqual(animals['dogs'], 2)
+   from unittest.gui import TestCaseGui
 
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         try:
+            self.assertEqual(num_chickens, animals['chickens'])
+         except:
+            print("Something is undefied so this test cannot run. Read directions again!")
+         try:
+            self.assertEqual(animals['yak'], 3)
+         except:
+            print("key 'yak' is not yet set in dictionary animals")
+         self.assertEqual(animals['dogs'], 2)
+
+   myTests().main()
 
 
 2. Here's another dictionary. Write code to print out each key-value pair in it, one key and its value on each line. Then follow the rest of the instructions in the comments.
@@ -151,7 +154,7 @@ Problem Set
    
    # Use a for loop to print out each key-value pair. 
    # Hint to make this easier: printing things with a comma, e.g.
-   # print "hello", "everyone" 
+   # print("hello", "everyone") 
    # will print out those things on the same 
    # line with a space in between them.
    
@@ -173,14 +176,20 @@ Problem Set
    # Your code should work no matter 
    # what the value of the key "well" is.
    
-   ====
-   
-   import test
-   print "\n---\n\n"
-   try:
-      test.testEqual(nd["23"],350)
-   except:
-      print "nd doesn't exist or doesn't have the key '23'"
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         try:
+            self.assertEqual(nd["23"], 350)
+         except:
+            print("nd doesn't exist or doesn't have the key '23'")
+
+   myTests().main()
+
 
 
 3. We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
@@ -190,37 +199,49 @@ Problem Set
   
    # Write your code here!
 
-   ====
+   =====
 
-   import test
-   print "\n---\n\n"
-   tmp = []
-   for l in open("about_programming.txt").readlines():
-     if "program" in l:
-       tmp.append(l)
-   try:
-     test.testEqual(program_lines,tmp)
-   except:
-     print "program_lines has not been defined, or you have another error"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         tmp = []
+         for l in open("about_programming.txt").readlines():
+            if "program" in l:
+               tmp.append(l)
+         try:
+            self.assertEqual(program_lines, tmp)
+         except:
+            print("program_lines has not been defined, or you have another error")
+
+   myTests().main()
 
 
 4. Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
 
 .. activecode:: ps_4_4
 
-  nums = {}
-  num_words = ["two","three","four","seventeen","eight","not_a_number"]
-  # Write your code here.
+   nums = {}
+   num_words = ["two","three","four","seventeen","eight","not_a_number"]
+   # Write your code here.
 
-  ====
+   =====
 
-  import test
-  try:
-    test.testEqual(nums["two"],0)
-    test.testEqual(type(nums["seventeen"]),type(3))
-    test.testEqual(nums,{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0})
-  except:
-    print "You've created an error somewhere or have not completed this problem."
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         try:
+            self.assertEqual(nums["two"], 0)
+            self.assertEqual(type(nums["seventeen"]), type(3))
+            self.assertEqual(nums, {"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0})
+         except:
+            print("You have created an error somewhere or have not completed this problem.")
+
+   myTests().main()
+
 
 5. Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
 
@@ -230,12 +251,17 @@ Problem Set
 
    # Write your code here.
     
-   ====
-    
-   print "\n---\n\n"
-   import test
-   print "testing whether abc is set correctly"
-   try:
-     test.testEqual(abc, 'depends')
-   except:
-     print "The variable abc has not been defined and/or there is another error"
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         print "testing whether abc is set correctly"
+         try:
+            self.assertEqual(abc, 'depends')
+         except:
+            print("The variable abc has not been defined and/or there is another error.")
+
+   myTests().main()

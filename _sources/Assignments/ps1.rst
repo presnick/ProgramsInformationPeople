@@ -114,13 +114,17 @@ Problem Set
 
    tpa = 0
    
-   ====
+   =====
 
-   import test
-   print "\n\n---tests---\n"
-   if type(tpa) != type(6):
-      print "tpa should be an integer; check it's type with print type(tpa)"
-   test.testEqual(tpa, 6)
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(tpa, 6, "tpa should be an integer; check it's type with print(type(tpa))")
+
+   myTests().main()
+   
 
 
 2. Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
@@ -130,16 +134,18 @@ Problem Set
    cw = "Hello"
    yb = 0
 
-   ====
+   =====
 
-   import test
-   print "\n\n---tests---\n"
-   try:
-      test.testEqual(cw, yb)
-   except:
-      print "yb may not be defined yet..."
-   print "Checking to make sure you didn't change cw"
-   test.testEqual(cw, "Hello")
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(cw, yb, "yb may not be defined yet")
+         self.assertEqual(cw, "Hello", "You changed the value of cw.")
+
+   myTests().main()
+   
 
 
 3. Write code to use the type function print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
@@ -155,7 +161,7 @@ Problem Set
 
    ====
 
-   print "\n\n---\n(There are no tests for this problem.)"
+   print("\n\n---\n(There are no tests for this problem.)")
 
 
 4. There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
@@ -165,19 +171,21 @@ Problem Set
 
     # Want to make sure there really is a function called square? Uncomment the following line and press run.
 
-    #print type(square)
+    #print(type(square))
    
     xyz = ""
     
-    ====
+    =====
 
-    import test
-    print "\n\n---tests---\n"
-    try:
-       test.testEqual(type(xyz), type(3))
-       test.testEqual(xyz,25)
-    except:
-       print "variable xyz doesn't have a value at all!"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(type(xyz), type(3), "Checking type of xyz")
+         self.assertEqual(xyz, 25, "Does xyz have a value or the correct value?")
+
+   myTests().main()
 
 
 5. Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
@@ -187,15 +195,19 @@ Problem Set
 
     # write your code here; include a blank line
 
-    ====
+    =====
 
-    import test
-    print "\n\n---\n"
-    import test
-    try:
-       test.testEqual(new_number, 9)
-    except:
-       print "Test failed: the variable new_number does not exist yet"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         try:
+            self.assertEqual(new_number, 9)
+         except:
+            print("Test failed: the variable new_number does not exist yet")
+
+   myTests().main()
 
 
 6. Write in a comment what each line of this code does. 
@@ -214,15 +226,15 @@ Problem Set
     # make sure to be very clear and detailed about the following line of code
     orange = square(b)
 
-    print a
+    print(a)
 
-    print b
+    print(b)
 
-    print orange
+    print(orange)
 
     pear = square
 
-    print pear
+    print(pear)
 
 
 7. There are a couple more functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
@@ -237,35 +249,39 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
    :include: addl_functions
 
    # For example
-   print greeting("Jackie")
-   print greeting("everybody")
-   print greeting("sdgadgsal")
+   print(greeting("Jackie"))
+   print(greeting("everybody"))
+   print(greeting("sdgadgsal"))
    
    # Try running all this code more than once, so you can see how calling the function
    # random_digit works.
-   print random_digit()
-   print random_digit()
+   print(random_digit())
+   print(random_digit())
 
    # Write code that assigns the variables as mentioned in the instructions.
 
-   ====
+   =====
 
-   import test
-   print "\n\n---\n"
-   # wrap these in try/excepts if variables not defined #
-   try:
-      test.testEqual(type(func_var), type(greeting))
-   except:
-      print "Test failed: func_var is undefined"
-   try:
-      test.testEqual(type(new_digit), type(1))
-   except:
-      print "Test failed: new_digit is undefined"
-   try:
-      test.testEqual(type(digit_func), type(random_digit))
-   except:
-      print "Test failed: digit_func is undefined"
+   from unittest.gui import TestCaseGui
 
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         try:
+            self.assertEqual(type(func_var), type(greeting))
+         except:
+            print("Test failed: func_var is undefined")
+         try:
+            self.assertEqual(type(new_digit), type(1))
+         except:
+            print("Test failed: new_digit is undefined")
+         try:
+            self.assertEqual(type(digit_func), type(random_digit))
+         except:
+            print("Test failed: digit_func is undefined")
+
+
+   myTests().main()
 
 
 8. Now write code that assigns the variable ``newval`` to hold the **return value** of ``greeting("everyone in class")``.
@@ -273,14 +289,19 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
 .. activecode:: ps_1_8
    :include: addl_functions
 
-   ====
+   =====
 
-   import test
-   print "\n\n---\n"
-   try:
-      test.testEqual(newval, greeting("everyone in class"))
-   except:
-      print "Test failed: newval is not defined"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         try:
+            self.assertEqual(newval, greeting("everyone in class"), "newval has not been assigned the correct value")
+         except:
+            print("Test failed: newval has not been defined")
+
+   myTests().main()
     
 
 9. This code causes an error. Why? Write a comment explaining.
