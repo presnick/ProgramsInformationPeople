@@ -177,15 +177,15 @@ Problem Set
     
     =====
 
-   from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-   class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-      def testOne(self):
-         self.assertEqual(type(xyz), type(3), "Checking type of xyz")
-         self.assertEqual(xyz, 25, "Does xyz have a value or the correct value?")
+       def testOne(self):
+          self.assertEqual(type(xyz), type(3), "Checking type of xyz")
+          self.assertEqual(xyz, 25, "Does xyz have a value or the correct value?")
 
-   myTests().main()
+    myTests().main()
 
 
 5. Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
@@ -197,17 +197,17 @@ Problem Set
 
     =====
 
-   from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-   class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-      def testOne(self):
-         try:
-            self.assertEqual(new_number, 9)
-         except:
-            print("Test failed: the variable new_number does not exist yet")
+       def testOne(self):
+          try:
+             self.assertEqual(new_number, 9)
+          except:
+             print("Test failed: the variable new_number does not exist yet")
 
-   myTests().main()
+    myTests().main()
 
 
 6. Write in a comment what each line of this code does. 

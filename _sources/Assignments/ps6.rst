@@ -87,8 +87,8 @@ You can see the function definition in the code below, but that's only so you ca
 .. activecode:: ps_6_2
 
    def give_greeting(greet_word="Hello",name="SI106",num_exclam=3):
-      final_string = greet_word + ", " + name + "!"*num_exclam
-      return final_string
+       final_string = greet_word + ", " + name + "!"*num_exclam
+       return final_string
 
    #### DO NOT change the function definition above this line (OK to add comments)
 
@@ -96,9 +96,8 @@ You can see the function definition in the code below, but that's only so you ca
 
    ====
 
-   import test
-   print "\n---\n\n"
-   print "There are no tests for this problem -- check your output."
+   print("\n---\n\n")
+   print("There are no tests for this problem -- check your output.")
 
 
 3. Define a function called ``mult_both`` whose input is two integers, whose default parameter values are the integers 3 and 4. The function's return value should be the two input integers multiplied together.
@@ -107,17 +106,17 @@ You can see the function definition in the code below, but that's only so you ca
 
    # Write your code here
 
-   ====
+   =====
 
-   import test
-   print "\n---\n\n"
-   print "Testing whether your function works as expected (calling the function mult_both)"
-   try:
-      test.testEqual(mult_both(), 12)
-      test.testEqual(mult_both(5,10), 50)
-   except:
-      print "mult_both not defined or yields an error when invoked"
+   from unittest.gui import TestCaseGui
 
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(mult_both(), 12, "Testing whether your function works as expected (calling the function mult_both)")
+         self.assertEqual(mult_both(5,10), 50, "Testing whether your function works as expected (calling the function mult_both)")
+
+   myTests().main()
 
 
 4. You can get data from Facebook that has nested structures which represent posts, or users, or various other types of things on Facebook. We won't put any of our actual Facebook group data on this textbook, because the textbook is publicly available on the internet, but here's a structure that is almost exactly the same as the real thing, with fake data.
@@ -195,15 +194,17 @@ Follow the directions in the comments!
       # Write a second line of code to assign the value of the name of the second person who posted ("John Smythe") to a variable called second_name. Do not hard code your answer!
 
 
-      ====
+      =====
 
-      import test
-      print "testing whether variables first_message and second_name were set correctly"
-      try:
-         test.testEqual(first_message,fb_data["data"][0]["message"])
-         test.testEqual(second_name,fb_data["data"][1]["from"]["name"])
-      except:
-         print "variable(s) not defined, fb_data was changed, or other error occurred"
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(first_message, fb_data['data'][0]['message'], "testing whether first_message was set correctly")
+            self.assertEqual(second_name, fb_data['data'][1]['from']['name'], "testing whether second_name was set correctly")
+
+      myTests().main()
 
 
 5. In the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
@@ -309,74 +310,73 @@ For this question, write which lines of code go with which lines of the flow cha
 .. activecode:: ps_6_6
 
          
-    # Sample calls to this function
-    # (Remember, these won't work until you define the function blanked)
-    print blanked("hello", "elj")
-    #should output _ell_
-    print blanked("almost","amsvr")
-    # should output a_m_s_ 
+   # Sample calls to this function
+   # (Remember, these won't work until you define the function blanked)
+   print(blanked("hello", "elj"))
+   #should output _ell_
+   print(blanked("almost","amsvr"))
+   # should output a_m_s_ 
 
 
-    ====
+   =====
 
-    import test
-    try:
-        print "testing blanking of hello when e,l, and j have been guessed"
-        test.testEqual(blanked("hello", "elj"), "_ell_")
-        print "testing blanking of hello when nothing has been guessed"
-        test.testEqual(blanked("hello", ""), "_____")
-        print "testing blanking of ground when r and n have been guessed"
-        test.testEqual(blanked("ground", "rn"), "_r__n_")
-        print "testing blanking of almost when all the letters have been guessed"
-        test.testEqual(blanked("almost","vrnalmqpost"),"almost")
-    except:
-        print "The function blanked has not been defined yet or has an error."
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(blanked('hello', 'elj'), "_ell_", "testing blanking of hello when e,l, and j have been guessed.")
+         self.assertEqual(blanked('hello', ''), '_____', "testing blanking of hello when nothing has been guessed.")
+         self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
+         self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
+
+   myTests().main()
 
 
 7. Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with + signs for the current health, and - signs for the health that has been lost so far.
 
 .. activecode:: ps_6_7
 
-    # Define your function here.
+   # Define your function here.
 
 
 
 
-    # Sample invocations of the function.
+   # Sample invocations of the function.
 
-    print health_prompt(3, 7)
-    #this statement should produce the output
-    #health: +++----
+   print(health_prompt(3, 7))
+   #this statement should produce the output
+   #health: +++----
 
-    print health_prompt(0, 4)
-    #this statement should produce the output
-    #health: ----
+   print(health_prompt(0, 4))
+   #this statement should produce the output
+   #health: ----
 
-    ====
+   =====
 
-    import test
-    try:
-        print "testing health_prompt(3, 7)"
-        test.testEqual(health_prompt(3,7), "+++----")
-        print "testing health_prompt(0, 4)"
-        test.testEqual(health_prompt(0, 4), "----")
-        print "testing health_prompt(5,5)"
-        test.testEqual(health_prompt(5,5), "+++++")
-    except:
-        print "The function health_prompt is not defined or has an error"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(health_prompt(3,7), "+++----", "Testing health_prompt(3,7)")
+         self.assertEqual(health_prompt(0,4), "----", "Testing health_prompt(0,4)")
+         self.assertEqual(health_prompt(5,5), "+++++", "Testing health_prompt(5,5)")
+
+   myTests().main()
 
    
 8. You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman. Directions follow.
 
-	Below is all of the code for the hangman program, *except* for the two functions you just defined in problems 6 and 7. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided for you to copy.)
+   Below is all of the code for the hangman program, *except* for the two functions you just defined in problems 6 and 7. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided for you to copy.)
 
-	Copy your two function definitions, from the last two problems, into a Python file, and save it as ``hangman.py`` in your ``106`` folder (anywhere in it you want). Then copy the code in the box below into that file, beneath the function definitions you just copied in.
+   Copy your two function definitions, from the last two problems, into a Python file, and save it as ``hangman.py`` in your ``106`` folder (anywhere in it you want). Then copy the code in the box below into that file, beneath the function definitions you just copied in.
 
-	Finally, make one more change to the program: add a little bit of code so that after a user types in a secret word to guess, 27 blank lines are printed. (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
+   Finally, make one more change to the program: add a little bit of code so that after a user types in a secret word to guess, 27 blank lines are printed. (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
 
-	Save this Python program, and run it with the command line: ``cd`` to the correct directory, and then type ``python hangman.py``, as you learned last week.
+   Save this Python program, and run it with the command line: ``cd`` to the correct directory, and then type ``python hangman.py``, as you learned last week.
 
-	**Submit your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to Unix Problems 6 on Canvas.**
+   **Submit your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to Unix Problems 6 on Canvas.**
 
 
 .. activecode:: ps_6_8
@@ -623,7 +623,7 @@ Instead, you'll see something different when you run the code. Go through it car
    list_of_strings = ["hello","goodbye","lampshade","45","63"]
    for i in list_of_strings:
        if i in list_of_strings:
-           print list_of_strings[0]
+           print(list_of_strings[0])
 
 
 
@@ -644,7 +644,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
 
           # Here's a sample function call.
-          print get_vowels("Hello all") # This should print: 3
+          print(get_vowels("Hello all")) # This should print: 3
 
   .. tab:: Solution
 
@@ -657,7 +657,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
                   total += s.count(v)
               return total
 
-          print get_vowels("Hello all")
+          print(get_vowels("Hello all"))
 
 2. Define (and call) a function called ``sum_a_list`` which **takes any list of integers** and **returns the sum of all integers in the list**.
 
@@ -671,7 +671,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
 
           # Here's a sample function call.
-          print sum_a_list([1,4,7,5]) # this should print: 17
+          print(sum_a_list([1,4,7,5])) # this should print: 17
 
           # Extra practice:
           # how would you change this function just a LITTLE
@@ -689,7 +689,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
                   tot = tot + i # each time you get to a new integer in the list, add that integer to the accumulator
               return tot # the for loop is over, so outdent and return the accumulator from the function
 
-          print sum_a_list([1,4,7,5]) # call the function, and print out the result with a print statement
+          print(sum_a_list([1,4,7,5])) # call the function, and print out the result with a print statement
 
           # Here's the version of the function that will work
           #   for EITHER a list of integers or a string of digits
@@ -699,7 +699,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
                   tot = tot + int(i)
               return tot
 
-          print sum_a_list_or_digitstring("1475")
+          print(sum_a_list_or_digitstring("1475"))
 
 
 3. Define (and call!) a function called ``common_word`` that **takes a string** and **prints a tuple** of **the most commonly used word in the string** and **the number of times that word is used**. (If there's more than one word that's used most frequently, the function should **print** all of those words.)
@@ -762,7 +762,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
           # Here's a sample call
           df = {"Nick": 56, "Paul":73, "Jackie":42}
-          print smallest_value_name(df) # should print: Jackie
+          print(smallest_value_name(df)) # should print: Jackie
 
   .. tab:: Solution
 
@@ -788,7 +788,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
           # Sample calls of these solution functions
           d_new = {"Nick": 42, "Paul":73, "Jackie":57}
-          print smallest_value_name(d_new) # should print Nick
+          print(smallest_value_name(d_new)) # should print Nick
 
-          print smallest_val_name_diff(d_new)
+          print(smallest_val_name_diff(d_new))
           # both these calls above print Nick
