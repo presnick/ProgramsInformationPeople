@@ -203,11 +203,11 @@ The Python interpreter looks for an instance variable or method called ``chasing
    :answer_b: 2
    :answer_c: 3
    :answer_d: 4
-   :correct: d
    :feedback_a: Neither Cheshire nor Cat defines an __init__ constructor method, so the grandaprent class, Pet, will have it's __init__ method called. Check how many instance variables it sets.
    :feedback_b: Neither Cheshire nor Cat defines an __init__ constructor method, so the grandaprent class, Pet, will have it's __init__ method called. Check how many instance variables it sets.
    :feedback_c: Neither Cheshire nor Cat defines an __init__ constructor method, so the grandaprent class, Pet, will have it's __init__ method called. Check how many instance variables it sets.
    :feedback_d: Neither Cheshire nor Cat defines an __init__ constructor method, so the grandaprent class, Pet, will have it's __init__ method called. That constructor method sets the instance variables name, hunger, boredom, and sounds.
+   :correct: d
    
    After you run the code, ``new_cat = Cheshire("Pumpkin")``, how many instance variables exist for the new_cat instance of Cheshire?
 
@@ -216,11 +216,11 @@ The Python interpreter looks for an instance variable or method called ``chasing
    :answer_b: Error
    :answer_c: Pumpkin
    :answer_d: Nothing. There’s no print statement.
-   :correct: a
    :feedback_a: another_cat is an instance of Siamese, so its song() method is invoked.
    :feedback_b: another_cat is an instance of Siamese, so its song() method is invoked.
    :feedback_c: This would print if the statement was print new_cat.name.
    :feedback_d: There is a print statement in the method definition.
+   :correct: a
 
    What would print after running the following code:
 
@@ -239,11 +239,11 @@ The Python interpreter looks for an instance variable or method called ``chasing
    :answer_b: Error
    :answer_c: Pumpkin
    :answer_d: Nothing. There’s no print statement.
-   :correct: b
    :feedback_a: You cannot invoke methods defined in the Siamese class on an instance of the Cheshire class. Both are subclasses of Cat, but Cheshire is not a subclass of Siamese, so it doesn't inherit its methods.
    :feedback_b: You cannot invoke methods defined in the Siamese class on an instance of the Cheshire class. Both are subclasses of Cat, but Cheshire is not a subclass of Siamese, so it doesn't inherit its methods.
    :feedback_c: This would print if the statement was print new_cat.name.
    :feedback_d: There is a print statement in the method definition for Siamese.
+   :correct: b
 
    What would print after running the following code:
 

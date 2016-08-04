@@ -60,29 +60,31 @@ When we do, think of it as an encouragement to use the codelens features to step
 
 **Check your understanding**
 
-.. mchoicema:: question1_3_1
+.. mchoice:: question1_3_1
+   :multiple_answers:
    :answer_a: save programs and reload saved programs.
    :answer_b: type in Python source code.
    :answer_c: execute Python code right in the text itself within the web browser.
    :answer_d: receive a yes/no answer about whether your code is correct or not.
-   :correct: a,b,c
    :feedback_a: You can (and should) save the contents of the activecode window.
-   :feedback_b: You are not limited to running the examples that are already there.  Try   adding to them and creating your own.
+   :feedback_b: You are not limited to running the examples that are already there.  Try adding to them and creating your own.
    :feedback_c: The activecode interpreter will allow you type Python code into the textbox and then you can see it execute as the interpreter interprets and executes the source code.
    :feedback_d: Although you can (and should) verify that your code is correct by examining its output, activecode will not directly tell you whether you have correctly implemented your program.
+   :correct: a,b,c
 
    The activecode interpreter allows you to (select all that apply):
 
-.. mchoicema:: question1_3_2
+.. mchoice:: question1_3_2
+   :multiple_answers:
    :answer_a: measure the speed of a program’s execution.
    :answer_b: control the step by step execution of a program.
    :answer_c: write and execute your own Python code.
    :answer_d: execute the Python code that is in codelens.
-   :correct: b,d
    :feedback_a: In fact, codelens steps through each line one by one as you click, which is MUCH slower than the Python interpreter.
-   :feedback_b: By using codelens, you can control the execution of a program step by step.  You can even go backwards!
+   :feedback_b: By using codelens, you can control the execution of a program step by step. You can even go backwards!
    :feedback_c: Codelens works only for the pre-programmed examples.
    :feedback_d: By stepping forward through the Python code in codelens, you are executing the Python program.
+   :correct: b,d
 
    Codelens allows you to (select all that apply):
 

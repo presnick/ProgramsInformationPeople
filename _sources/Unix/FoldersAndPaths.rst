@@ -67,32 +67,34 @@ This is useful for several reasons, including checking where you've navigated to
 
 **Check your understanding**
 
-.. mchoicema:: test_question_unix_ls_1
+.. mchoice:: test_question_unix_ls_1
+   :multiple_answers:
    :answer_a: cd /c/Users/presnick/Documents
    :answer_b: cd presnick/Documents
    :answer_c: cd Documents
    :answer_d: cd ~
    :answer_e: cd ~/Documents
-   :correct: a,d,e
    :feedback_a: It starts with a /.
    :feedback_b: This specifies the presnick subdirectory of the current directory and the Documents subdirectory of that. 
    :feedback_c: This specifies the Document subdirectory of the current directory.
    :feedback_d: This specifies the home directory.
-   :feedback_e: This specifies the Documents subdirectory of the home directory
+   :feedback_e: This specifies the Documents subdirectory of the home directory.
+   :correct: a,d,e
 
    Which of the following commands specify absolute paths?
 
-.. mchoicema:: test_question_unix_ls_2
+.. mchoice:: test_question_unix_ls_2
+   :multiple_answers:
    :answer_a: cd /c/Users/presnick/Documents
    :answer_b: cd presnick/Documents
    :answer_c: cd Documents
    :answer_d: cd ~
    :answer_e: cd ~/Documents
-   :correct: b,c
    :feedback_a: It starts with a /.
    :feedback_b: This specifies the presnick subdirectory of the current directory and the Documents subdirectory of that. 
    :feedback_c: This specifies the Document subdirectory of the current directory.
    :feedback_d: This specifies the full path of the home directory.
-   :feedback_e: This specifies the full path of the Documents subdirectory of the home directory
+   :feedback_e: This specifies the full path of the Documents subdirectory of the home directory.
+   :correct: b,c
 
    Which of the following commands specify relative paths? 

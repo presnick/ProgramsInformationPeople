@@ -38,7 +38,6 @@ Here is the same example in codelens so that you can step thru the statements an
     fruit[-1] = "orange"
 
 
-
 By combining assignment with the slice operator we can update several elements at once.
 
 .. activecode:: ch09_8
@@ -69,14 +68,14 @@ desired location.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_7_1
+.. mchoice:: test_question9_7_1
    :answer_a: [4,2,True,8,6,5]
    :answer_b: [4,2,True,6,5]
    :answer_c: Error, it is illegal to assign
-   :correct: b
    :feedback_a: Item assignment does not insert the new item into the list.
    :feedback_b: Yes, the value True is placed in the list at index 2.  It replaces 8.
    :feedback_c: Item assignment is allowed with lists.  Lists are mutable.
+   :correct: b
    
    What is printed by the following statements?
    

@@ -28,7 +28,7 @@ It is also possible for programmers to define new functions in their programs. Y
    def sub(x, y):
       return x - y
 
-We've defined two functions above. The code is hidden so as not to bother you (yet) with how functions are defined. `square`` takes a single input parameter, and returns that input multiplied by itself. ``sub`` takes two input parameters and returns the result of subtracting the second from the first. Obviously, these functions are not particularly useful, since we have the operators ``*`` and ``-`` available. But they illustrate how functions work.
+We've defined two functions above. The code is hidden so as not to bother you (yet) with how functions are defined. ``square`` takes a single input parameter, and returns that input multiplied by itself. ``sub`` takes two input parameters and returns the result of subtracting the second from the first. Obviously, these functions are not particularly useful, since we have the operators ``*`` and ``-`` available. But they illustrate how functions work.
 
 .. activecode:: functionCalls_2
    :include: functionCalls_1
@@ -55,16 +55,16 @@ Remember the note that some kinds of python objects don't have a nice printed re
    print square
    print sub
 
-.. mchoicemf:: exercise_functionCalls_1
+.. mchoice:: exercise_functionCalls_1
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
-      :correct: b
+      :answer_d: nothing will print
       :feedback_a: The result of executing the function call will print out
       :feedback_b: The second is subtracted from the first
       :feedback_c: The second is subtracted from the first
       :feedback_d: The print statement makes the results print
+      :correct: b
 
       What will the output be from this code?
 
@@ -72,16 +72,16 @@ Remember the note that some kinds of python objects don't have a nice printed re
 
          print sub(5, 8)
 
-.. mchoicemf:: exercise_functionCalls_2
+.. mchoice:: exercise_functionCalls_2
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
+      :answer_d: nothing will print
+      :feedback_a: The character sting is treated as a literal and printed out, without executing.
+      :feedback_b: The character sting is treated as a literal and printed out, without executing.
+      :feedback_c: The character sting is treated as a literal and printed out, without executing.
+      :feedback_d: The character sting is treated as a literal and printed out, without executing.
       :correct: a
-      :feedback_a: The character sting is treated as a literal and printed out, without executing
-      :feedback_b: The character sting is treated as a literal and printed out, without executing
-      :feedback_c: The character sting is treated as a literal and printed out, without executing
-      :feedback_d: The character sting is treated as a literal and printed out, without executing
 
       What will the output be from this code?
 
@@ -89,16 +89,16 @@ Remember the note that some kinds of python objects don't have a nice printed re
 
          print "sub(5, 8)"
 
-.. mchoicemf:: exercise_functionCalls_3
+.. mchoice:: exercise_functionCalls_3
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
-      :correct: d
+      :answer_d: nothing will print
       :feedback_a: There is no print statement
       :feedback_b: There is no print statement
       :feedback_c: There is no print statement
       :feedback_d: There is no print statement
+      :correct: d
 
       What will the output be from this code?
 
@@ -106,16 +106,16 @@ Remember the note that some kinds of python objects don't have a nice printed re
 
          sub(5, 8)
 
-.. mchoicemf:: exercise_functionCalls_4
+.. mchoice:: exercise_functionCalls_4
       :answer_a: sub(5, 8)
       :answer_b: -3
       :answer_c: 3
-      :answer_d: nothing will rpint
-      :correct: d
+      :answer_d: nothing will print
       :feedback_a: There is no print statement
       :feedback_b: There is no print statement
       :feedback_c: There is no print statement
       :feedback_d: There is no print statement
+      :correct: d
 
       What will the output be from this code?
 

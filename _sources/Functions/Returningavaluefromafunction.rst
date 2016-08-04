@@ -179,16 +179,16 @@ interpreter does these steps:
 
 **Check your understanding**
 
-.. mchoicemf:: test_questionfunctions_2_1
+.. mchoice:: test_questionfunctions_2_1
    :answer_a: You should never use a print statement in a function definition.
    :answer_b: You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.
    :answer_c: You must calculate the value of x+y+z before you return it.
    :answer_d: A function cannot return a number.
-   :correct: b
    :feedback_a: Although you should not mistake print for return, you may include print statements inside your functions.
    :feedback_b: This is a very common mistake so be sure to watch out for it when you write your code!
    :feedback_c: Python will automatically calculate the value x+y+z and then return it in the statement as it is written
    :feedback_d: Functions can return any legal data, including (but not limited to) numbers, strings, lists, dictionaries, etc.
+   :correct: b
 
    What is wrong with the following function definition:
 
@@ -199,14 +199,14 @@ interpreter does these steps:
          print 'the answer is', x+y+z
 
 
-.. mchoicemf:: test_questionfunctions_2_2
+.. mchoice:: test_questionfunctions_2_2
    :answer_a: The value None
    :answer_b: The value of x+y+z
    :answer_c: The string 'x+y+z'
-   :correct: a
    :feedback_a: We have accidentally used print where we mean return.  Therefore, the function will return the value None by default.  This is a VERY COMMON mistake so watch out!  This mistake is also particularly difficult to find because when you run the function the output looks the same.  It is not until you try to assign its value to a variable that you can notice a difference.
    :feedback_b: Careful!  This is a very common mistake.  Here we have printed the value x+y+z but we have not returned it.  To return a value we MUST use the return keyword.
    :feedback_c: x+y+z calculates a number (assuming x+y+z are numbers) which represents the sum of the values x, y and z.
+   :correct: a
 
    What will the following function return?
 
@@ -215,14 +215,14 @@ interpreter does these steps:
     def addEm(x, y, z):
         print x+y+z
 
-.. mchoicemf:: test_questionfunctions_2_3
+.. mchoice:: test_questionfunctions_2_3
    :answer_a: 25
    :answer_b: 50
    :answer_c: 25 + 25
+   :feedback_a: It squares 5 twice, and adds them together.
+   :feedback_b: The two return values are added together.
+   :feedback_c: The two results are substituted into the expression and then it is evaluated. The returned values are integers in this case, not strings.
    :correct: b
-   :feedback_a: It squares 5 twice, and adds them together
-   :feedback_b: The two return values are added together
-   :feedback_c: The two results are substituted into the expression and then it is evaluated. The returned values are integers in this case, not strings
    
    
    What will the following code output?
@@ -235,14 +235,14 @@ interpreter does these steps:
            
        print square(5) + square(5)
 
-.. mchoicemf:: test_questionfunctions_2_4
+.. mchoice:: test_questionfunctions_2_4
    :answer_a: 8
    :answer_b: 16
    :answer_c: Error: can't put a function invocation inside parentheses
-   :correct: b
    :feedback_a: It squares 2, yielding the value 4. But that doesn't mean the next value multiplies 2 and 4.
    :feedback_b: It squares 2, yielding the value 4. 4 is then passed as a value to square again, yeilding 16.
-   :feedback_c: This is a more complicated expression, but still valid. The expression square(2) is evaluated, and the return value 4 substitutes for square(2) in the expression.   
+   :feedback_c: This is a more complicated expression, but still valid. The expression square(2) is evaluated, and the return value 4 substitutes for square(2) in the expression.
+   :correct: b   
    
    What will the following code output?
    
@@ -254,18 +254,18 @@ interpreter does these steps:
            
        print square(square(2))
 
-.. mchoicemf:: test_questionfunctions_2_5
+.. mchoice:: test_questionfunctions_2_5
    :answer_a: 1
    :answer_b: Yes
    :answer_c: First one was longer
    :answer_d: Second one was at least as long
    :answer_e: Error
-   :correct: c
    :feedback_a: cyu2 returns the value 1, but that's not what prints.
    :feedback_b: "Yes" is longer, but that's not what prints.
    :feedback_c: cyu2 returns the value 1, which is assigned to z.
    :feedback_d: cyu2 returns the value 1, which is assigned to z.
    :feedback_e: what do you think will cause an error.
+   :correct: c
    
    What will the following code output?
    
@@ -282,14 +282,14 @@ interpreter does these steps:
        else:
            print "Second one was at least as long"
  
-.. mchoicemf:: test_questionfunctions_2_6
+.. mchoice:: test_questionfunctions_2_6
    :answer_a: square
    :answer_b: g
    :answer_c: a number
-   :correct: b
    :feedback_a: Before executing square, it has to figure out what value to pass in, so g is executed first
    :feedback_b: g has to be executed and return a value in order to know what paramater value to provide to x.
-   :feedback_c: square and g both have to execute before the number is printed.   
+   :feedback_c: square and g both have to execute before the number is printed. 
+   :correct: b  
    
    Which will print out first, square, g, or a number?
    
@@ -305,15 +305,14 @@ interpreter does these steps:
            
        print square(g(2))
 
-.. mchoicemf:: test_questionfunctions_2_7
+.. mchoice:: test_questionfunctions_2_7
    :answer_a: 3
    :answer_b: 2
    :answer_c: None
-   :correct: b
    :feedback_a: The function gets to a return statement after 2 lines are printed, so the third print statement will not run.
    :feedback_b: Yes! Two printed lines, and then the function body execution reaches a return statement.
    :feedback_c: The function returns an integer value! However, this code does not print out the result of the function invocation, so you can't see it (print is for people). The only lines you see printed are the ones that occur in the print statements before the return statement.
-   
+   :correct: b
    
    How many lines will the following code print?
    

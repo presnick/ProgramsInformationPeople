@@ -114,14 +114,17 @@ Problem Set
 
    tpa = 0
    
-   ====
+   =====
 
-   import test
-   print "\n\n---tests---\n"
-   if type(tpa) != type(6):
-      print "tpa should be an integer; check it's type with print type(tpa)"
-   test.testEqual(tpa, 6)
+   from unittest.gui import TestCaseGui
 
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(tpa, 6, "Testing that tpa's value is 6.")
+
+   myTests().main()
+   
 
 2. Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
 
@@ -130,16 +133,17 @@ Problem Set
    cw = "Hello"
    yb = 0
 
-   ====
+   =====
 
-   import test
-   print "\n\n---tests---\n"
-   try:
-      test.testEqual(cw, yb)
-   except:
-      print "yb may not be defined yet..."
-   print "Checking to make sure you didn't change cw"
-   test.testEqual(cw, "Hello")
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(cw, yb, "Testing that yb has the same value as cw")
+         self.assertEqual(cw, "Hello", "Testing that cw's value is 'Hello'.")
+
+   myTests().main()
 
 
 3. Write code to use the type function print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
@@ -169,15 +173,17 @@ Problem Set
    
     xyz = ""
     
-    ====
+    =====
 
-    import test
-    print "\n\n---tests---\n"
-    try:
-       test.testEqual(type(xyz), type(3))
-       test.testEqual(xyz,25)
-    except:
-       print "variable xyz doesn't have a value at all!"
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+       def testOne(self):
+          self.assertEqual(type(xyz), type(3), "Checking type of xyz")
+          self.assertEqual(xyz, 25, "Checking if xyz is 25")
+
+    myTests().main()
 
 
 5. Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
@@ -187,15 +193,16 @@ Problem Set
 
     # write your code here; include a blank line
 
-    ====
+    =====
 
-    import test
-    print "\n\n---\n"
-    import test
-    try:
-       test.testEqual(new_number, 9)
-    except:
-       print "Test failed: the variable new_number does not exist yet"
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+       def testOne(self):
+           self.assertEqual(new_number, 9, "Testing that new_number's value is 9")
+
+    myTests().main()
 
 
 6. Write in a comment what each line of this code does. 
@@ -248,23 +255,20 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
 
    # Write code that assigns the variables as mentioned in the instructions.
 
-   ====
+   =====
 
-   import test
-   print "\n\n---\n"
-   # wrap these in try/excepts if variables not defined #
-   try:
-      test.testEqual(type(func_var), type(greeting))
-   except:
-      print "Test failed: func_var is undefined"
-   try:
-      test.testEqual(type(new_digit), type(1))
-   except:
-      print "Test failed: new_digit is undefined"
-   try:
-      test.testEqual(type(digit_func), type(random_digit))
-   except:
-      print "Test failed: digit_func is undefined"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
+      def testTwo(self):
+         self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
+      def testThree(self):
+         self.assertEqual(type(digit_func), type(random_digit), "Testing that digit_func is same type as random_digit")
+
+   myTests().main()
 
 
 
@@ -273,14 +277,16 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
 .. activecode:: ps_1_8
    :include: addl_functions
 
-   ====
+   =====
 
-   import test
-   print "\n\n---\n"
-   try:
-      test.testEqual(newval, greeting("everyone in class"))
-   except:
-      print "Test failed: newval is not defined"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(newval, greeting("everyone in class"), "newval has not been assigned the correct value")
+
+   myTests().main()
     
 
 9. This code causes an error. Why? Write a comment explaining.

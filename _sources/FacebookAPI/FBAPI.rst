@@ -55,32 +55,33 @@ To see more about the Facebook Graph API and other options it allows, you can lo
 You can see that this already gives you a very complicated structure of data! But you can use the Graph API explorer to give you an idea of what different information you can get from the Facebook Graph API and how it might be useful for you. You might also find it helpful to use `jsoneditoronline.org <http://www.jsoneditoronline.org/>`_ to help make sense of the results that come back, and figure out how to extract data from the nested dictionary.
 
 
-.. mchoicemf:: fb_api_1
+.. mchoice:: fb_api_1
    :answer_a: EDT
    :answer_b: GMT
    :answer_c: Ann Arbor
    :answer_d: en_US
-   :correct: d
    :feedback_a: 
    :feedback_b:
    :feedback_c:
    :feedback_d:
+   :correct: d
    
    Use the same setup to run a GET request on me?fields=locale. In the results, what is the value associated with the "locale" key?
      
    
-.. mchoicema:: fb_api_4
+.. mchoice:: fb_api_4
+   :multiple_answers:
    :answer_a: You would like your code to be compressed so that it uses less space on your file system
    :answer_b: You would like to be able to see or revert to any past version of any of the files in your project
    :answer_c: You want to collaborate with others, working in parallel on a project and merging your changes together occasionally
    :answer_d: You would like your code to automatically be checked for syntax errors
    :answer_e: You would like to distribute your code in a public repository that others can easily fork or comment on
-   :correct: b,c,e
    :feedback_a: If you just want compression, use one of the compression programs like gzip or compress.
    :feedback_b: git makes all of your past saved versions accessible.
    :feedback_c: git lets multiple work independently on files. If you work on separate parts of a file, it will merge them automatically. If two people edit the same line, then git will mark where there are conflicts and you can resolve them manually.
    :feedback_d: There are programs like lint that automatically check for syntax and coding style errors, but they are not an integral part of revision control system.
    :feedback_e: Sites like github, bitbucket, and assembla provide a way to publicly share repositories.
+   :correct: b,c,e
      
    Which of the following are reasons to use a version control system like github?
 

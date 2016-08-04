@@ -42,9 +42,9 @@ the target point it accepts as input.
             return "x = {}, y = {}".format(self.x, self.y)
 
         def halfway(self, target): 
-             mx = (self.x + target.x)/2
-             my = (self.y + target.y)/2
-             return Point(mx, my)
+            mx = (self.x + target.x)/2
+            my = (self.y + target.y)/2
+            return Point(mx, my)
 
     p = Point(3,4)
     q = Point(5,12)

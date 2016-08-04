@@ -95,7 +95,7 @@ For those of you who preferred lambda expressions when passing a function for th
        for (f, gender) in rls:
            if f(s):
                return gender
-        return "male"
+       return "male"
 
    rules = [(lambda x: x[-1] == 'e', "female"), 
             (lambda x: x[-1] == 'a', "female"), 
@@ -112,7 +112,7 @@ When we call the classify function we can pass a different set of rules. For exa
        for (f, gender) in rls:
            if f(s):
                return gender
-        return "male"
+       return "male"
 
    rules = [(lambda x: x[:2] == "En", "male"),
             (lambda x: x[-1] == 'e', "female"), 
@@ -127,46 +127,46 @@ Note here how important the order of the rules is. If the check for whether the 
 
 **Check your understanding**
 
-.. mchoicemf:: prediction_1
+.. mchoice:: prediction_1
    :answer_a: list
    :answer_b: tuple
    :answer_c: integer
    :answer_d: string
    :answer_e: function
-   :correct: b
    :feedback_a: rules is a list, but each of the elements is not.
-   :feedback_b: rules is a list of tuples
-   :feedback_c: The first element of the list is not an integer
-   :feedback_d: The first element of the list is not a string
-   :feedback_e: The lambda expression evaluates to a function object, but the lambda expression is not the entirety of the first item
+   :feedback_b: rules is a list of tuples.
+   :feedback_c: The first element of the list is not an integer.
+   :feedback_d: The first element of the list is not a string.
+   :feedback_e: The lambda expression evaluates to a function object, but the lambda expression is not the entirety of the first item.
+   :correct: b
 
    What is the type of rules[0]?
    
-.. mchoicemf:: prediction_2
+.. mchoice:: prediction_2
    :answer_a: list
    :answer_b: tuple
    :answer_c: integer
    :answer_d: string
    :answer_e: function
-   :correct: e
    :feedback_a: The first element of each rule tuple is not a list.
    :feedback_b: rules[0] is a tuple, but its first element is not.
    :feedback_c: The first element of each rule tuple is not an integer.
-   :feedback_d: The first element of each rule tuple is not a string
-   :feedback_e: The lambda expression evaluates to a function object
+   :feedback_d: The first element of each rule tuple is not a string.
+   :feedback_e: The lambda expression evaluates to a function object.
+   :correct: e
 
    What is the type of rules[0][0]?
 
    
-.. mchoicemf:: prediction_3
+.. mchoice:: prediction_3
    :answer_a: rules[1][1]
    :answer_b: rules[1][0]
    :answer_c: rules[0][1]
    :answer_d: rules[0][0]
+   :feedback_a: That's "female" (position 1 is the second item in the list).
+   :feedback_b: That's a function object.
+   :feedback_c: The second element of the first tuple is "male".
+   :feedback_d: That's a function object.
    :correct: c
-   :feedback_a: That's "female" (position 1 is the second item in the list)
-   :feedback_b: That's a function object
-   :feedback_c: The second element of the first tuple is "male"
-   :feedback_d: That's a function object
 
    What expression would you use to pick out the string "male"?   

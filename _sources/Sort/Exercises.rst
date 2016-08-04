@@ -133,6 +133,14 @@ most frequent characters in the string.
             
                 return s[:5]
                 
-            import test
-            test.testEqual(five_most_frequent("aaaaaabbbbbccccdefggghijkk"), ['a', 'b', 'c', 'g', 'k'])                
+            =====
+
+            from unittest.gui import TestCaseGui
+
+            class myTests(TestCaseGui):
+
+               def testOne(self):
+                  self.assertEqual(five_most_frequent("aaaaaabbbbbccccdefggghijkk"), ['a', 'b', 'c', 'g', 'k'], "Checking the value returned from using five_most_frequent.")
+
+            myTests().main()  
     

@@ -47,5 +47,5 @@ Activities through 4/3
     :points: 50
 
 * **Before Sunday 4/3 at 5 pm:**
-	* Complete `Problem Set 11 <https://umich.instructure.com/courses/48961/assignments/55805>`_ on Canvas.
-	* **Before 6 pm:** Complete `Demonstrate Understanding 11 <https://umich.instructure.com/courses/48961/assignments/57701>`_ on Canvas.
+    * Complete `Problem Set 11 <https://umich.instructure.com/courses/48961/assignments/55805>`_ on Canvas.
+    * **Before 6 pm:** Complete `Demonstrate Understanding 11 <https://umich.instructure.com/courses/48961/assignments/57701>`_ on Canvas.

@@ -56,7 +56,6 @@ triple quoted strings.  They can contain either single or double quotes:
     print '''"Oh no", she exclaimed, "Ben's bike is broken!"'''
 
 
-
 Triple quoted strings can even span multiple lines:
 
 .. activecode:: ch02_6
@@ -117,29 +116,29 @@ change might mean something quite different from what you intended.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_1_1
+.. mchoice:: test_question2_1_1
    :answer_a: Print out the value and determine the data type based on the value printed.
    :answer_b: Use the type function.
    :answer_c: Use it in a known equation and print the result.
    :answer_d: Look at the declaration of the variable.
-   :correct: b
    :feedback_a: You may be able to determine the data type based on the printed value, but it may also be  deceptive, like when a string prints, there are no quotes around it.
    :feedback_b: The type function will tell you the class the value belongs to.
    :feedback_c: Only numeric values can be used in equations.
-   :feedback_d: In Python variables are not declared. Values, not variables, have types in Python. A variable can even take on values with different types during a program's execution. 
+   :feedback_d: In Python variables are not declared. Values, not variables, have types in Python. A variable can even take on values with different types during a program's execution.
+   :correct: b
 
    How can you determine the type of a variable?
 
-.. mchoicemf:: test_question2_1_2
+.. mchoice:: test_question2_1_2
    :answer_a: Character
    :answer_b: Integer
    :answer_c: Float
    :answer_d: String
-   :correct: d
    :feedback_a: It is not a single character.
    :feedback_b: The data is not numeric.
    :feedback_c: The value is not numeric with a decimal point.
    :feedback_d: Strings can be enclosed in single quotes.
+   :correct: d
 
    What is the data type of 'this is what kind of data'?
 

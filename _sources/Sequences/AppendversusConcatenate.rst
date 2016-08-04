@@ -49,12 +49,12 @@ accumulator pattern.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_15_1
+.. mchoice:: test_question9_15_1
    :answer_a: [4,2,8,6,5,999]
    :answer_b: Error, you cannot concatenate a list with an integer.
-   :correct: b
    :feedback_a: You cannot concatenate a list with an integer.
    :feedback_b: Yes, in order to perform concatenation you would need to write alist+[999].  You must have two lists.
+   :correct: b
    
    What is printed by the following statements?
    

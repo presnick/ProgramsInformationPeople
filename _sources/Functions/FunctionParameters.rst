@@ -49,8 +49,8 @@ to greet is specified by the parameter.
 .. codelens:: functions_3
 
    def hello2(s):
-      print "Hello " + s
-      print "Glad to meet you"
+       print "Hello " + s
+       print "Glad to meet you"
          
    hello2("Nick")
    hello2("Jackie")
@@ -75,8 +75,8 @@ Try some of your own, too.
 .. activecode:: functions_4
 
    def hello2(s):
-      print "Hello " + s
-      print "Glad to meet you"
+       print "Hello " + s
+       print "Glad to meet you"
          
    hello2("Nick" + " and Jackie")
    hello2("Class " * 3)
@@ -103,29 +103,29 @@ provided. The second parameter name is bound to the second value provided. And s
 
 **Check your understanding**
 
-.. mchoicemf:: test_questionfunctions_1_3
+.. mchoice:: test_questionfunctions_1_3
    :answer_a: def greet(t):
    :answer_b: def greet:
    :answer_c: greet(t, n):
    :answer_d: def greet(t, n)
-   :correct: a
    :feedback_a: A function may take zero or more parameters.  In this case it has one.  
    :feedback_b: A function needs to specify its parameters in its header. If there are no paramters, put () after the function name.
    :feedback_c: A function definition needs to include the keyword def.
    :feedback_d: A function definition header must end in a colon (:).
+   :correct: a
 
    Which of the following is a valid function header (first line of a function definition)?
 
-.. mchoicemf:: test_questionfunctions_1_4
+.. mchoice:: test_questionfunctions_1_4
    :answer_a: def print_many(x, y):
    :answer_b: print_many
    :answer_c: print_many(x, y)
    :answer_d: Print out string x, y times.
-   :correct: b
    :feedback_a: This line is the complete function header (except for the semi-colon) which includes the name as well as several other components.
    :feedback_b: Yes, the name of the function is given after the keyword def and before the list of parameters.
-   :feedback_c: This includes the function name and its parameters
+   :feedback_c: This includes the function name and its parameters.
    :feedback_d: This is a comment stating what the function does.
+   :correct: b
 
    What is the name of the following function?
 
@@ -138,16 +138,16 @@ provided. The second parameter name is bound to the second value provided. And s
 
 
 
-.. mchoicemf:: test_questionfunctions_1_5
+.. mchoice:: test_questionfunctions_1_5
    :answer_a: i
    :answer_b: x
    :answer_c: x, y
    :answer_d: x, y, i
-   :correct: c
    :feedback_a: i is a variable used inside of the function, but not a parameter, which is passed in to the function.
    :feedback_b: x is only one of the parameters to this function.
    :feedback_c: Yes, the function specifies two parameters: x and y.
    :feedback_d: the parameters include only those variables whose values that the function expects to receive as input.  They are specified in the header of the function.
+   :correct: c
 
    What are the parameters of the following function?
 
@@ -160,18 +160,18 @@ provided. The second parameter name is bound to the second value provided. And s
 
 
 
-.. mchoicemf:: test_questionfunctions_1_6
+.. mchoice:: test_questionfunctions_1_6
    :answer_a: print_many(x, y)
    :answer_b: print_many
    :answer_c: print_many("Greetings")
    :answer_d: print_many("Greetings", 10):
    :answer_e: print_many("Greetings", z)
-   :correct: e
    :feedback_a: No, x and y are the names of the formal parameters to this function.  When the function is called, it requires actual values to be passed in.
    :feedback_b: A function call always requires parentheses after the name of the function.
    :feedback_c: This function takes two parameters (arguments)
    :feedback_d: A colon is only required in a function definition.  It will cause an error with a function call.
    :feedback_e: Since z has the value 3, we have passed in two correct values for this function. "Greetings" will be printed 3 times.
+   :correct: e
 
    Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)?
 
@@ -184,25 +184,25 @@ provided. The second parameter name is bound to the second value provided. And s
 
       z = 3
 
-.. mchoicemf:: test_questionfunctions_1_7
+.. mchoice:: test_questionfunctions_1_7
    :answer_a: True
    :answer_b: False
-   :correct: a
    :feedback_a: Yes, you can call a function multiple times by putting the call in a loop.
    :feedback_b: One of the purposes of a function is to allow you to call it more than once.   Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.
+   :correct: a
 
    True or false: A function can be called several times by placing a function call in the body of a for loop.
 
-.. mchoicemf:: test_questionfunctions_1_8
+.. mchoice:: test_questionfunctions_1_8
    :answer_a: Hello
    :answer_b: Goodbye
    :answer_c: s1
    :answer_d: s2
-   :correct: b
    :feedback_a: "Hello" is shorter than "Goodbye"
    :feedback_b: "Goodbye" is longer than "Hello"
-   :feedback_c: s1 is a variable name; its value would print out, not the variable name
-   :feedback_d: s2 is a variable name; its value would print out, not the variable name
+   :feedback_c: s1 is a variable name; its value would print out, not the variable name.
+   :feedback_d: s2 is a variable name; its value would print out, not the variable name.
+   :correct: b
    
    What output will the following code produce?
    

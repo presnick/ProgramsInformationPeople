@@ -45,24 +45,24 @@ If a line causes a run-time error, comment it out and see whether the rest of yo
             ==========  ==============
             English     Pirate
             ==========  ==============
-            sir	        matey
-            hotel	    fleabag inn
-            student	    swabbie
-            boy	        matey
-            madam	    proud beauty
-            professor	foul blaggart
-            restaurant	galley
-            your	    yer
-            excuse	    arr
-            students	swabbies
-            are	        be
-            lawyer	    foul blaggart
-            the	        th'
-            restroom	head
-            my	        me
-            hello	    avast
-            is	        be
-            man	        matey
+            sir         matey
+            hotel       fleabag inn
+            student     swabbie
+            boy         matey
+            madam       proud beauty
+            professor   foul blaggart
+            restaurant  galley
+            your        yer
+            excuse      arr
+            students    swabbies
+            are         be
+            lawyer      foul blaggart
+            the         th'
+            restroom    head
+            my          me
+            hello       avast
+            is          be
+            man         matey
             ==========  ==============
             
             Write a program that asks the user for a sentence in English and then translates that 

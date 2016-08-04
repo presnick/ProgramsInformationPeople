@@ -113,8 +113,7 @@ Problem Set
    several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
    ====
-   
-   import test
+
    print "\n\n---\n"
    print "(There are no tests for this problem.)"
 
@@ -122,27 +121,29 @@ Problem Set
 
 .. activecode:: ps_3_2
 
-    sent = "The magical mystery tour is waiting to take you away."
+   sent = "The magical mystery tour is waiting to take you away."
 
-    # The following code does not iterate over the words in the English sentence we can read that's stored in the variable sent:
-    for x in sent:
-      print x
-    # Why not? Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence? Write a comment explaining:
-
-
-    # Write code that assigns a variable word_list to hold a LIST of all the
-    # WORDS in the string sent. It's fine if words include punctuation.
+   # The following code does not iterate over the words in the English sentence we can read that's stored in the variable sent:
+   for x in sent:
+       print x
+   # Why not? Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence? Write a comment explaining:
 
 
-    ====
+   # Write code that assigns a variable word_list to hold a LIST of all the
+   # WORDS in the string sent. It's fine if words include punctuation.
 
-    import test
-    print "\n\n---\n"
-    print "No tests for the comment, of course -- we can only test stored values!\n"
-    try:
-        test.testEqual(word_list,sent.split())
-    except:
-        print "The variable word_list has not been defined"
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         print "No tests for the comment, of course -- we can only test stored values!\n"
+         self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
+
+   myTests().main()
 
 
 3. Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
@@ -159,15 +160,14 @@ Problem Set
 
 .. activecode:: ps_3_3
 
-    excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
+   excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
 
-    # Write your code here.
+   # Write your code here.
 
-    ====
+   ====
 
-    import test
-    print "\n\n---\n"
-    print "(There are no tests for this problem.)"
+   print "\n\n---\n"
+   print "(There are no tests for this problem.)"
 
 
 4. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) (Hint: use one of the file methods you've learned to make this easy!) Do not print out a list. 
@@ -179,35 +179,36 @@ The result should look like this:
    original formulation of a computing problem to executable programs. It involves
 
 .. activecode:: ps_3_4
-       :available_files: about_programming.txt
+      :available_files: about_programming.txt
 
-       # Write your code here.
-       # Don't worry about extra blank lines between each of the lines when you print them
-       # (but if you want to get rid of them, you can try out the .strip() method)
+      # Write your code here.
+      # Don't worry about extra blank lines between each of the lines when you print them
+      # (but if you want to get rid of them, you can try out the .strip() method)
 
-       ====
+      ====
 
-       import test
-       print "\n\n---\n"
-       print "There are no tests for this problem."
+      print "\n\n---\n"
+      print "There are no tests for this problem."
 
 
 5. Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
 
 .. activecode:: ps_3_5
-       :available_files: about_programming.txt
+      :available_files: about_programming.txt
 
-       # Write your code here.
+      # Write your code here.
 
-       ====
+      =====
 
-       import test
-       print "\n\n---\n"
+      from unittest.gui import TestCaseGui
 
-       try:
-            test.testEqual(file_lines_num,len(open("about_programming.txt","r").readlines()))
-       except:
-            print "The variable file_lines_num has not been defined"
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            print "No tests for the comment, of course -- we can only test stored values!\n"
+            self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
+
+      myTests().main()
 
 
 6. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
@@ -217,43 +218,42 @@ Fix the code so that it passes the test for each different value of x. So when t
 
 .. activecode:: ps_3_6
 
-    #x = 25
-    #x = 15
-    #x = 5
-    #x = -10
+   #x = 25
+   #x = 15
+   #x = 5
+   #x = -10
 
-    if x > 20:
-        y = "yes"
-    if x > 10:
-        y = "no"
-    if x < 0:
-        y = "maybe"
-    else:
-        y = "unknown"
+   if x > 20:
+       y = "yes"
+   if x > 10:
+       y = "no"
+   if x < 0:
+       y = "maybe"
+   else:
+       y = "unknown"
 
-    print "y is " + str(y)
+   print "y is " + str(y)
 
-    ====
+   =====
 
-    import test
-    print "\n---\n\n"
-    try:
-        if x == 25:
-            print "test when x is 25: y should be 'yes'"
-            test.testEqual(y, "yes")
-        elif x == 15:
-            print "test when x is 15: y should be 'no'"
-            test.testEqual(y, "no")
-        elif x == 5:
-            print "test when x is 5: y should be 'unknown'"
-            test.testEqual(y, "unknown")
-        elif x == -10:
-            print "test when x is -10; y should be 'maybe'"
-            test.testEqual(y, "maybe")
-        else:
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         print("No tests for the comment, of course -- we can only test stored values!\n")
+         if x == 25:
+            self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
+         elif x == 15:
+            self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
+         elif x == 5:
+            self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
+         elif x == -10:
+            self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
+         else:
             print "No tests when value of x is %s" % (x)
-    except:
-        print "Failed test. Probably y is not bound to a value."
+
+   myTests().main()
 
 
 7. See comments in code for instructions.
@@ -293,26 +293,26 @@ Fix the code so that it passes the test for each different value of x. So when t
 
    items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
 
-   ====
+   =====
 
-   import test
-   print "\n---\n\n"
-   try:
-      test.testEqual(acc_num,3)
-   except:
-      print "The variable acc_num has not been defined yet"
+   from unittest.gui import TestCaseGui
 
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
+
+   myTests().main()
 
 
 9. **Challenge problem (OPTIONAL, much harder):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
 
 .. activecode:: ps_3_9
-    :available_files: about_programming.txt
+   :available_files: about_programming.txt
 
-    # Write your code here.
+   # Write your code here.
 
-    ====
+   ====
 
-    import test
-    print "\n\n---\n"
-    print "There are no tests for this problem."
+   print "\n\n---\n"
+   print "There are no tests for this problem."

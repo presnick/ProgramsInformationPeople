@@ -52,17 +52,16 @@ It is just a string of length 1.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_2_1
+.. mchoice:: test_question8_2_1
    :answer_a: t
    :answer_b: h
    :answer_c: c
    :answer_d: Error, you cannot use the [ ] operator with a string.
-   :correct: b
    :feedback_a: Index locations do not start with 1, they start with 0.
    :feedback_b: Yes, index locations start with 0.
    :feedback_c: s[-3] would return c, counting from right to left.
-   :feedback_d: [ ] is the index operator
-
+   :feedback_d: [ ] is the index operator.
+   :correct: b
 
    What is printed by the following statements?
       
@@ -72,21 +71,18 @@ It is just a string of length 1.
       print s[3]
 
 
-
-
-.. mchoicemf:: test_question8_2_2
+.. mchoice:: test_question8_2_2
    :answer_a: tr
    :answer_b: to
    :answer_c: ps
    :answer_d: nn
    :answer_e: Error, you cannot use the [ ] operator with the + operator.
-   :correct: b
    :feedback_a: Almost, t is at postion 2, counting left to right starting from 0; but r is at -5, counting right to left starting from -1.
    :feedback_b: For -4 you count from right to left, starting with -1.
    :feedback_c: p is at location 0, not 2.
    :feedback_d: n is at location 5, not 2.
    :feedback_e: [ ] operator returns a string that can be concatenated with another string.
-
+   :correct: b
 
    What is printed by the following statements?
    

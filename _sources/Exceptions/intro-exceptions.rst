@@ -113,48 +113,48 @@ There's one other useful feature. The exception code can access a variable that 
 
 **Check your understanding**
 
-.. mchoicemf:: exceptions_1
+.. mchoice:: exceptions_1
    :answer_a: syntax
    :answer_b: run-time
    :answer_c: semantic
-   :correct: b
    :feedback_a: Syntax errors are things like missing colons or strings that are not terminated. Try/except will not help with those. The program still will not run.
    :feedback_b: Run-time errors like index out of bounds can be caught and handled gracefully with try/except.
    :feedback_c: If your program runs to completion but does the wrong thing, try/except won't help you.
+   :correct: b
    
    Which type of error can be noticed and handled using try/except?
    
-.. mchoicemf:: exceptions_2
+.. mchoice:: exceptions_2
    :answer_a: True
    :answer_b: False
-   :correct: a
    :feedback_a: If your code is only catching IndexError errors, then the exception will not be handled, and execution will terminate.
    :feedback_b: If your code is only catching IndexError errors, then the exception will not be handled, and execution will terminate.
+   :correct: a
 
    When a run-time exception of type ZeroDivisionError occurs, and you have a statement ``except IndexError``, the program will stop executing completely.
 
-.. mchoicemf:: exceptions_3
+.. mchoice:: exceptions_3
    :answer_a: True
    :answer_b: False
-   :correct: b
    :feedback_a: The rest of the code after the whole try/except statement will execute, but not the rest of the code in the try block.
    :feedback_b: The rest of the code after the whole try/except statement will execute, but not the rest of the code in the try block.
+   :correct: b
 
    After a run-time exception is handled by an except clause, the rest of the code in the try clause will be executed.
 
 
-.. mchoicemf:: exceptions_4
+.. mchoice:: exceptions_4
    :answer_a: 0
    :answer_b: 1
    :answer_c: 3
    :answer_d: 4
    :answer_e: 5  
-   :correct: d
    :feedback_a: Try i = 0; that should print out .3333
    :feedback_b: Keep trying.
-   :feedback_c: When i=3, it will no longer be able to pring 1.0/ (3-i), but it will still print one more line in the except clause
-   :feedback_d: It will print the fraction for three values of i, and then one error message
+   :feedback_c: When i=3, it will no longer be able to pring 1.0/ (3-i), but it will still print one more line in the except clause.
+   :feedback_d: It will print the fraction for three values of i, and then one error message.
    :feedback_e: When i=3, it will get a run-time error, and execution stops after that.
+   :correct: d
 
    How many lines will print out when the following code is executed?
    

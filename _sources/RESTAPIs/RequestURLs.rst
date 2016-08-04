@@ -78,16 +78,16 @@ For example, in the following, the base url is https://google.com/search. A dict
 
 **Check your understanding**
 
-.. mchoicemf:: restapis_1
+.. mchoice:: restapis_1
    :answer_a: requests.get("http://bar.com/goodstuff", '?", {'greet': 'hi there'}, '&', {'frosted':'no'})
    :answer_b: requests.get("http://bar.com/", params = {'goodstuff':'?', 'greet':'hi there', 'frosted':'no'})
    :answer_c: requests.get("http://bar.com/goodstuff", params = ['greet', 'hi', 'there', 'frosted', 'no'])
    :answer_d: requests.get("http://bar.com/goodstuff", params = {'greet': 'hi there', 'frosted':'no'})
-   :correct: d
    :feedback_a: The ? and the & are added automatically.
    :feedback_b: goodstuff is part of the base url, not the query params
    :feedback_c: The value of params should be a dictionary, not a list
    :feedback_d: The ? and & are added automatically, and the space in hi there is automatically encoded as %3A.
+   :correct: d
 
    How would you request the URL ``http://bar.com/goodstuff?greet=hi%3Athere&frosted=no`` using the requests module?
 

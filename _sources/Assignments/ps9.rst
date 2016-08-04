@@ -27,15 +27,15 @@ You have the following graded activities:
     :points: 50
 
 * **Before Tuesday at midnight:**
-	* Read *The Success of Open Source*, Chapter 2
-   	* Complete `Reading Response 9 <https://umich.instructure.com/courses/48961/assignments/57685>`_ on Canvas.
+    * Read *The Success of Open Source*, Chapter 2
+    * Complete `Reading Response 9 <https://umich.instructure.com/courses/48961/assignments/57685>`_ on Canvas.
 
 * **Before Wednesday's class:**
-	* Read :ref:`Class Inheritance <inheritance_chap>` and do the exercises in the chapter. 
+    * Read :ref:`Class Inheritance <inheritance_chap>` and do the exercises in the chapter. 
 
 * **Before Sunday 3/20 at 5 pm:**
-	* Complete `Problem Set 9 <https://umich.instructure.com/courses/48961/assignments/55803>`_ on Canvas.
-	* **Before 6 pm:** Complete `Demonstrate Understanding 9 <https://umich.instructure.com/courses/48961/assignments/57698>`_ on Canvas.
+    * Complete `Problem Set 9 <https://umich.instructure.com/courses/48961/assignments/55803>`_ on Canvas.
+    * **Before 6 pm:** Complete `Demonstrate Understanding 9 <https://umich.instructure.com/courses/48961/assignments/57698>`_ on Canvas.
 
 
 .. usageassignment:: prep_17

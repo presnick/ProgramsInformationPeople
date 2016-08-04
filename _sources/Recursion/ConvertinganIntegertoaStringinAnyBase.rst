@@ -78,11 +78,11 @@ outlined above for any base between 2 and 16.
     :caption: Recursively Converting from Integer to String
 
     def toStr(n,base):
-       convertString = "0123456789ABCDEF"
-       if n < base:
-          return convertString[n]
-       else:
-          return toStr(n//base,base) + convertString[n%base]
+        convertString = "0123456789ABCDEF"
+        if n < base:
+            return convertString[n]
+        else:
+            return toStr(n//base,base) + convertString[n%base]
 
     print(toStr(1453,16))
 
@@ -119,14 +119,19 @@ we get the result in the proper order.
 
    .. actex:: recursion_sc_1
 
-      from test import testEqual
+      from unittest.gui import TestCaseGui
       def reverse(s):
           return s
       
-      testEqual(reverse("hello"),"olleh")
-      testEqual(reverse("l"),"l")      
-      testEqual(reverse("follow"),"wollof")
-      testEqual(reverse(""),"")
+      class myTests(TestCaseGui):
+
+          def testOne(self):
+              self.assertEqual(reverse("hello"), "olleh")
+              self.assertEqual(reverse("l"), "l")
+              self.assertEqual(reverse("follow"), "wollof")
+              self.assertEqual(reverse(""), "")
+
+      myTests().main()
 
    Write a function that takes a string as a parameter and returns True if the string is a palindrome, False otherwise.  Remember that a string is a palindrome if it is spelled the same both forward and backward.  for example:  radar is a palindrome.  for bonus points palindromes can also be phrases, but you need to remove the spaces and punctuation before checking.  for example:  madam i'm adam  is a palindrome.  Other fun palindromes include:
    
@@ -141,17 +146,22 @@ we get the result in the proper order.
 
    .. actex:: recursion_sc_2
 
-      from test import testEqual
+      from unittest.gui import TestCaseGui
       def removeWhite(s):
           return s
 
       def isPal(s):
           return False
       
-      testEqual(isPal(removeWhite("x")),True)            
-      testEqual(isPal(removeWhite("radar")),True)
-      testEqual(isPal(removeWhite("hello")),False)
-      testEqual(isPal(removeWhite("")),True)                  
-      testEqual(isPal(removeWhite("hannah")),True)      
-      testEqual(isPal(removeWhite("madam i'm adam")),True)
+      class myTests(TestCaseGui):
+
+          def testOne(self):
+              self.assertEqual(isPal(removeWhite("x")),True)
+              self.assertEqual(isPal(removeWhite("radar")),True)
+              self.assertEqual(isPal(removeWhite("hello")),False)
+              self.assertEqual(isPal(removeWhite("")),True)
+              self.assertEqual(isPal(removeWhite("hannah")), True)
+              self.assertEqual(isPal(removeWhite("madam i'm adam")), True)
+
+      myTests().main()
 

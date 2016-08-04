@@ -98,14 +98,14 @@ analogous thing with these operations will lose the entire list contents (see li
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_13_1
+.. mchoice:: test_question9_13_1
    :answer_a: [4,2,8,6,5,False,True]
    :answer_b: [4,2,8,6,5,True,False]
    :answer_c: [True,False,4,2,8,6,5]
-   :correct: b
    :feedback_a: True was added first, then False was added last.
    :feedback_b: Yes, each item is added to the end of the list.
    :feedback_c: append adds at the end, not the beginning.
+   :correct: b
    
    What is printed by the following statements?
    
@@ -117,15 +117,14 @@ analogous thing with these operations will lose the entire list contents (see li
      print alist
 
 
-
-.. mchoicemf:: test_question9_13_2
+.. mchoice:: test_question9_13_2
    :answer_a: [False,4,2,True,8,6,5]
    :answer_b: [4,False,True,2,8,6,5]
    :answer_c: [False,2,True,6,5]
-   :correct: a
    :feedback_a: Yes, first True was added at index 2, then False was added at index 0.
    :feedback_b: insert will place items at the index position specified and move everything down to the right.
    :feedback_c: insert does not remove anything or replace anything.
+   :correct: a
    
    What is printed by the following statements?
    
@@ -137,14 +136,14 @@ analogous thing with these operations will lose the entire list contents (see li
      print alist
 
 
-.. mchoicemf:: test_question9_13_3
+.. mchoice:: test_question9_13_3
    :answer_a: [4,8,6]
    :answer_b: [2,6,5]
    :answer_c: [4,2,6]
-   :correct: c
    :feedback_a: pop(2) removes the item at index 2, not the 2 itself.
    :feedback_b: pop() removes the last item, not the first.
    :feedback_c: Yes, first the 8 was removed, then the last item, which was 5.
+   :correct: c
    
    What is printed by the following statements?
    
@@ -156,17 +155,16 @@ analogous thing with these operations will lose the entire list contents (see li
      print alist
 
    
-   
-.. mchoicemf:: test_question9_13_4
+.. mchoice:: test_question9_13_4
    :answer_a: [2,8,6,5]
    :answer_b: [4,2,8,6,5]
    :answer_c: 4
    :answer_d: None
-   :correct: c
    :feedback_a: alist is now the value that was returned from pop(0).
    :feedback_b: pop(0) changes the list by removing the first item.
    :feedback_c: Yes, first the 4 was removed from the list, then returned and assigned to alist.  The list is lost.
    :feedback_d: pop(0) returns the first item in the list so alist has now been changed.
+   :correct: c
    
    What is printed by the following statements?
    

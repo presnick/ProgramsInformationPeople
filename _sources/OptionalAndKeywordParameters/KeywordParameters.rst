@@ -54,18 +54,18 @@ As you step through it, each time the function is invoked, make a prediction abo
 
 **Check your understanding**
 
-.. mchoicemf:: test_questionkeyword_params_1
+.. mchoice:: test_questionkeyword_params_1
    :answer_a: 2
    :answer_b: 3
    :answer_c: 5
    :answer_d: 7
    :answer_e: Runtime error since not enough values are passed in the call to f
-   :correct: d
    :feedback_a: 2 is bound to x, not z
    :feedback_b: 3 is the default value for y, not z
    :feedback_c: 5 is bound to y, not z
    :feedback_d: 2 is bound x, 5 to y, and z gets its default value, 7
    :feedback_e: z has a default value in the function definition, so it's optional to pass a value for it.
+   :correct: d
 
    What value will be printed for z?
    
@@ -77,18 +77,18 @@ As you step through it, each time the function is invoked, make a prediction abo
       
       f(2, 5) 
          
-.. mchoicemf:: test_questionkeyword_params_2
+.. mchoice:: test_questionkeyword_params_2
    :answer_a: 2
    :answer_b: 3
    :answer_c: 5
    :answer_d: 10
    :answer_e: Runtime error since no value is provided for y, which comes before z
-   :correct: b
    :feedback_a: 2 is bound to x, not y
    :feedback_b: 3 is the default value for y, and no value is specified for y, 
    :feedback_c: say what?
    :feedback_d: 10 is the second value passed, but it is bound to z, not y.
    :feedback_e: That's the beauty of passing parameters with keywords; you can skip some parameters and they get their default values.
+   :correct: b
 
    What value will be printed for y?
    
@@ -100,18 +100,18 @@ As you step through it, each time the function is invoked, make a prediction abo
       
       f(2, z = 10)
            
-.. mchoicemf:: test_questionkeyword_params_3
+.. mchoice:: test_questionkeyword_params_3
    :answer_a: 2
    :answer_b: 3
    :answer_c: 5
    :answer_d: 7
-   :answer_e: Runtime error since two different values are provided for x
-   :correct: e
+   :answer_e: Runtime error since two different values are provided for x.
    :feedback_a: 2 is bound to x since it's the first value, but so is 5, based on keyword
    :feedback_b: 
    :feedback_c: 5 is bound to x by keyword, but 2 is also bound to it by virtue of being the value and not having a keyword. In the online environment, it actually allows this, but not in a proper python interpreter.
    :feedback_d: 
    :feedback_e: 2 is bound to x since it's the first value, but so is 5, based on keyword
+   :correct: e
 
    What value will be printed for x?
    
@@ -123,16 +123,16 @@ As you step through it, each time the function is invoked, make a prediction abo
       
       f(2, x=5) 
    
-.. mchoicemf:: test_questionkeyword_params_4
+.. mchoice:: test_questionkeyword_params_4
    :answer_a: 2
    :answer_b: 7
    :answer_c: 0
-   :answer_d: Runtime error since two different values are provided for initial
-   :correct: b
-   :feedback_a: 2 is bound to x, no z
+   :answer_d: Runtime error since two different values are provided for initial.
+   :feedback_a: 2 is bound to x, not z.
    :feedback_b: the default value for z is determined at the time the function is defined; at that time initial has the value 0.
-   :feedback_c: the default value for z is determined at the time the function is defined, not when it is invoked
-   :feedback_d: there's nothing wrong with reassigning the value of a variable at a later time
+   :feedback_c: the default value for z is determined at the time the function is defined, not when it is invoked.
+   :feedback_d: there's nothing wrong with reassigning the value of a variable at a later time.
+   :correct: b
 
    What value will be printed for z?
    

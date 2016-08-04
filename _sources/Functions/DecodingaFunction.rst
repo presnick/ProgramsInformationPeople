@@ -75,18 +75,18 @@ with any variable, including a function parameter. If you see...
 
 **Check your understanding: decode this function definition**
 
-.. mchoicemf:: test_questionfunctions_3_1
+.. mchoice:: test_questionfunctions_3_1
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2
    :answer_d: 3
    :answer_e: Can't tell
-   :correct: d
    :feedback_a: Count the number of variable names inside the parenetheses on line 1.
    :feedback_b: Count the number of variable names inside the parenetheses on line 1.
    :feedback_c: Count the number of variable names inside the parenetheses on line 1.
    :feedback_d: x, y, and z.
    :feedback_e: You can tell by looking inside the parentheses on line 1. Each variable name is separated by a comma.
+   :correct: d
 
    How many parameters does function cyu3 take?
 
@@ -99,18 +99,19 @@ with any variable, including a function parameter. If you see...
             z.append(y)
             return x + 3
          
-.. mchoicema:: test_questionfunctions_3_2
+.. mchoice:: test_questionfunctions_3_2
+   :multiple_answers:
    :answer_a: integer
    :answer_b: float
    :answer_c: list
    :answer_d: string
    :answer_e: Can't tell
-   :correct: a,b
-   :feedback_a: x - y, y-2, and x+3 can all be performed on integers
-   :feedback_b: x - y, y-2, and x+3 can all be performed on floats
-   :feedback_c: x - y, y-2, and x+3 can't be performed on lists
-   :feedback_d: x - y and y-2 can't be performed on strings
+   :feedback_a: x - y, y-2, and x+3 can all be performed on integers.
+   :feedback_b: x - y, y-2, and x+3 can all be performed on floats.
+   :feedback_c: x - y, y-2, and x+3 can't be performed on lists.
+   :feedback_d: x - y and y-2 can't be performed on strings.
    :feedback_e: You can tell from some of the operations that are performed on them.
+   :correct: a,b
 
    What are the possible types of variables x and y?
 
@@ -123,18 +124,19 @@ with any variable, including a function parameter. If you see...
             z.append(y)
             return x + 3
          
-.. mchoicema:: test_questionfunctions_3_3
+.. mchoice:: test_questionfunctions_3_3
+   :multiple_answers:
    :answer_a: integer
    :answer_b: float
    :answer_c: list
    :answer_d: string
    :answer_e: Can't tell
-   :correct: c
-   :feedback_a: append can't be performed on integers
-   :feedback_b: append can't be performed on floats
-   :feedback_c: append can be performed on lists
-   :feedback_d: append can't be performed on strings
+   :feedback_a: append can't be performed on integers.
+   :feedback_b: append can't be performed on floats.
+   :feedback_c: append can be performed on lists.
+   :feedback_d: append can't be performed on strings.
    :feedback_e: You can tell from some of the operations that are performed on it.
+   :correct: c
 
    What are the possible types of variable z?
 
@@ -147,18 +149,19 @@ with any variable, including a function parameter. If you see...
             z.append(y)
             return x + 3
 
-.. mchoicema:: test_questionfunctions_3_4
+.. mchoice:: test_questionfunctions_3_4
+   :multiple_answers:
    :answer_a: integer
    :answer_b: float
    :answer_c: list
    :answer_d: string
    :answer_e: Can't tell
-   :correct: a,b
-   :feedback_a: y-2 or  x+3 could produce an integer
-   :feedback_b: y-2 or  x+3 could produce a float
-   :feedback_c: y-2 or  x+3 can't produce a list
-   :feedback_d: neither y-2 or  x+3 could produce a string
+   :feedback_a: y-2 or  x+3 could produce an integer.
+   :feedback_b: y-2 or  x+3 could produce a float.
+   :feedback_c: y-2 or  x+3 can't produce a list.
+   :feedback_d: neither y-2 or  x+3 could produce a string.
    :feedback_e: You can tell from the expressions that follow the word return.
+   :correct: a,b
 
    What are the possible types of the return value from cyu3?
 

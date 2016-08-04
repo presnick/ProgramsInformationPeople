@@ -122,11 +122,11 @@ Let's say we want to create a subclass of ``Pet``, called ``Bird``, and we want 
    :answer_b: ["Mrrp"]
    :answer_c: ["chirp"]
    :answer_d: Error
-   :correct: c
    :feedback_a: This would print if the code was print b1.chirp_number. 
    :feedback_b: We set b1 to be Bird('tweety', 5) above.  Bird is a subclass of Pet, which has ["Mrrp"] for sounds, but Bird has a different value for that class variable. The interpreter looks in the subclass first.
    :feedback_c: The interpeter finds the value in the class variable for the class Bird.
    :feedback_d: We ran set b1 to be Bird('tweety', 5) above.  Bird has a value set for the attribute sounds.
+   :correct: c
 
    What will print when ``print b1.sounds`` is run?
 
@@ -135,11 +135,11 @@ Let's say we want to create a subclass of ``Pet``, called ``Bird``, and we want 
    :answer_b: The string would not print out but d1 would have its hunger reduced.
    :answer_c: The string would print but d1 would not have its hunger reduced.
    :answer_d: Nothing would be different. It is the same as the current code.
-   :correct: c
    :feedback_a: Since we are no longer calling the parent method in the subclass method definition, the actions defined in the parent method feed will not happen, and only Arf! Thanks! will be printed.
    :feedback_b: Remember that the Python interpreter checks for the existence of feed in the Dog class and looks for feed in Pet only if it isn't found in Dog.
    :feedback_c: Since we are no longer calling the parent Pet class's method in the Dog subclass's method definition, the class definition will override the parent method.
    :feedback_d: Remember that the Python interpreter checks for the existence of feed in the Dog class and looks for feed in Pet only if it isn't found in Dog.
+   :correct: c
    
    For the Dog class defined in the earlier activecode window, what would happen when d1.feed() is run if the Pet.feed(self) line was deleted?
 

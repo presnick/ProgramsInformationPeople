@@ -21,7 +21,7 @@ One way to do that with a for loop is to loop through the possible index values.
    L3 = []
    
    for i in range(len(L1)):
-      L3.append(L1[i] + L2[i])
+       L3.append(L1[i] + L2[i])
    
    print L3
       
@@ -48,8 +48,8 @@ Here's what happens when you loop through the tuples.
    L4 = zip(L1, L2)
 
    for (x1, x2) in L4:
-      L3.append(x1+x2)
-   
+       L3.append(x1+x2)
+    
    print L3
 
 Or, simplifying and using a list comprehension:
@@ -89,10 +89,18 @@ We provided a solution that involved iterating through the indexes of the word, 
                return False
        return True
             
-   import test         
-   test.testEqual(possible("HELLO", "_ELL_", "ELJ"), True)
-   test.testEqual(possible("HELLO", "_ELL_", "ELJH"), False)
-   test.testEqual(possible("HELLO", "_E___", "ELJ"), False)
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(possible("HELLO", "_ELL_", "ELJ"), True, "Testing whether possible has been correctly defined.")
+         self.assertEqual(possible("HELLO", "_ELL_", "ELJH"), False, "Testing whether possible has been correctly defined.")
+         self.assertEqual(possible("HELLO", "_E___", "ELJ"), False, "Testing whether possible has been correctly defined.")
+
+   myTests().main()
 
 We can rewrite that using zip, to be a little more comprehensible.
 
@@ -108,7 +116,15 @@ We can rewrite that using zip, to be a little more comprehensible.
                return False
        return True
             
-   import test         
-   test.testEqual(possible("HELLO", "_ELL_", "ELJ"), True)
-   test.testEqual(possible("HELLO", "_ELL_", "ELJH"), False)
-   test.testEqual(possible("HELLO", "_E___", "ELJ"), False)
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(possible("HELLO", "_ELL_", "ELJ"), True, "Testing whether possible has been correctly defined.")
+         self.assertEqual(possible("HELLO", "_ELL_", "ELJH"), False, "Testing whether possible has been correctly defined.")
+         self.assertEqual(possible("HELLO", "_E___", "ELJ"), False, "Testing whether possible has been correctly defined.")
+
+   myTests().main()    

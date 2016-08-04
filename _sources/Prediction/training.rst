@@ -121,15 +121,14 @@ Given that counts dictionary, we can create a different guessing rule for each p
 We got another big improvement from that. Our estimated entropy is down to 2.61 bits per character. That's a big improvement, but still quite a bit higher than Shannon's estimate of around 1.3, based on people doing the predicting.  We could go even farther with training our predictor, generating additional rules in various ways. For example, with a larger training corpus we could sort our next guesses based on what follows from the previous *two* characters instead of the last character. Or, once we get to the end of a word, we might estimate frequencies of complete words. Within a word, we might maintain a dictionary of possible completions of the current word. Challenge: see how much additional improvement you can make!
 
 
-.. mchoicemf:: prediction_4
-   :answer_a: labeled data used to make a classifier or predictor perform better over time
-   :answer_b: a process of making a dataset better over time
-   :correct: a
+.. mchoice:: prediction_4
+   :answer_a: labeled data used to make a classifier or predictor perform better over time.
+   :answer_b: a process of making a dataset better over time.
    :feedback_a: The data are used to "train" a classifier. We make it perform well, at least on the training data.
    :feedback_b: The data are not getting trained. They are being used to train the classifier.
+   :correct: a
 
    What does "training data" refer to?
-
 
 
 .. activecode:: prediction_training_helpers

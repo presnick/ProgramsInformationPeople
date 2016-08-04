@@ -40,8 +40,8 @@ in a count variable.
    # now txt is one long string containing all the characters
    t_count = 0 #initialize the accumulator variable
    for c in txt:
-      if c == 't':
-         t_count = t_count + 1   #increment the counter
+       if c == 't':
+           t_count = t_count + 1   #increment the counter
    print "t: " + str(t_count) + " occurrences"   
 
 We can accumulate counts for more than one character as we traverse the text.
@@ -55,10 +55,10 @@ Suppose, for example, we wanted to compare the counts of 't' and 's' in the text
    t_count = 0 #initialize the accumulator variable
    s_count = 0 # initialize the s counter accumulator as well
    for c in txt:
-      if c == 't':
-         t_count = t_count + 1   #increment the t counter
-      elif c == 's':
-         s_count = s_count + 1
+       if c == 't':
+           t_count = t_count + 1   #increment the t counter
+       elif c == 's':
+           s_count = s_count + 1
    print "t: " + str(t_count) + " occurrences"  
    print "s: " + str(s_count) + " occurrences"  
    
@@ -79,10 +79,10 @@ many times that letter has occurred.
    x['t'] = 0  # initialize the t counter
    x['s'] = 0  # initialize the s counter
    for c in txt:
-      if c == 't':
-         x['t'] = x['t'] + 1  # increment the t counter
-      elif c == 's':
-         x['s'] = x['s'] + 1  # increment the s counter
+       if c == 't':
+           x['t'] = x['t'] + 1  # increment the t counter
+       elif c == 's':
+           x['s'] = x['s'] + 1  # increment the s counter
 
    print "t: " + str(x['t']) + " occurrences"  
    print "s: " + str(x['s']) + " occurrences"   
@@ -100,10 +100,10 @@ character. So lines 9 and 11 could really be the same.
    x['t'] = 0  # intiialize the t counter
    x['s'] = 0  # initialize the s counter
    for c in txt:
-      if c == 't':
-         x[c] = x[c] + 1   # increment the t counter
-      elif c == 's':
-         x[c] = x[c] + 1   # increment the s counter
+       if c == 't':
+           x[c] = x[c] + 1   # increment the t counter
+       elif c == 's':
+           x[c] = x[c] + 1   # increment the s counter
 
    print "t: " + str(x['t']) + " occurrences"  
    print "s: " + str(x['s']) + " occurrences"   
@@ -145,12 +145,12 @@ start keeping count of.
    # now txt is one long string containing all the characters
    x = {} # start with an empty dictionary
    for c in txt:
-      if c not in x:
-         # we have not seen this character before, so initialize a counter for it
-         x[c] = 0
+       if c not in x:
+           # we have not seen this character before, so initialize a counter for it
+           x[c] = 0
       
-      #whether we've seen it before or not, increment its counter
-      x[c] = x[c] + 1
+       #whether we've seen it before or not, increment its counter
+       x[c] = x[c] + 1
 
    print "t: " + str(x['t']) + " occurrences"  
    print "s: " + str(x['s']) + " occurrences"   
@@ -162,18 +162,18 @@ counts for all letters, not just 's' and 't'.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question_string_accum_1
+.. mchoice:: test_question_string_accum_1
    :answer_a: print txt['e'] > txt['t']
    :answer_b: print x['e'] > x['t']
    :answer_c: print x[e] > x[t]
    :answer_d: print x[c] > txt[c]
    :answer_e: print e[x] > t[x]
-   :correct: b
    :feedback_a: txt is the variable that has the original text, not the dictionary of counts.   
    :feedback_b: x is the dictionary of counts; you want to compare the values associated with 'e' and 't'.
    :feedback_c: x is the dictionary of counts, but you don't want to evaluate e and t as variables in order to determine which keys to look up in the dictionary. 
    :feedback_d: It seems like maybe you're guessing. Please review the material above and then try again.
    :feedback_e: It seems like you've reversed things. The variable that refers to the dictionary goes outside the square brackets; the key you're looking up goes inside.
+   :correct: b
 
    Which of the following will print out True if there are more occurrences of e than t in
    the text of A Study in Scarlet, and False if t occurred more frequently (assumming that the previous code, from dict_accum_5, has
@@ -192,15 +192,15 @@ the characters, using a for loop to iterate through the keys in x.
    # now txt is one long string containing all the characters
    x = {} # start with an empty dictionary
    for c in txt:
-      if c not in x:
-         # we have not seen this character before, so initialize a counter for it
-         x[c] = 0
+       if c not in x:
+           # we have not seen this character before, so initialize a counter for it
+           x[c] = 0
       
-      #whether we've seen it before or not, increment its counter
-      x[c] = x[c] + 1
+       #whether we've seen it before or not, increment its counter
+       x[c] = x[c] + 1
 
    for c in x.keys():
-      print c + ": " + str(x[c]) + " occurrences"
+       print c + ": " + str(x[c]) + " occurrences"
    
 Note that only those letters that actually occur in the text are shown. Some
 punctuation marks that are possible in English, but were never used in the 

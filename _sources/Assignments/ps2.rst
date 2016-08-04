@@ -72,18 +72,17 @@ Problem Set
    
    # assign variables as specified below this line!
    
-   ====
-   
-   import test
-   print "\n\n---\n"
-   try:
-      test.testEqual(fl,original_str[0])
-   except:
-      print "The variable fl has not been defined yet"
-   try:
-      test.testEqual(last_l, original_str[-1])
-   except:
-      print "The variable last_l has not been defined yet"
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(fl, original_str[0], "Testing that fl has been set to first char in original_str")
+         self.assertEqual(last_l, original_str[-1], "Testing that last_l has been set to last char in original_str")
+
+   myTests().main()
 
 2. See comments for instructions.
 
@@ -117,22 +116,20 @@ Problem Set
 
    # Assign the index of the first 'v' in the value of the variable sent TO a variable called index_of_v. (Hint: we saw a method of the string class that can help with this)
 
-   ====
-   
-   import test
-   print "\n\n---\n"
-   try:
-      test.testEqual(len_of_sent,len(sent))
-   except:
-      print "The variable len_of_sent has not been defined yet"
-   try:
-      test.testEqual(short_len,len(short_sent))
-   except:
-      print "The variable short_len has not been defined yet"
-   try:
-      test.testEqual(index_of_v, sent.find('v'))
-   except:
-      print "The variable index_of_v has not been defined yet"
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(len_of_sent, len(sent), "Testing that len_of_sent has been set to the length of the variable sent.")
+      def testTwo(self):
+         self.assertEqual(short_len,len(short_sent), "Testing that short_len has been set to the length of the variable short_sent")
+      def testThree(self):
+         self.assertEqual(index_of_v, sent.find('v'), "Testing that index_of_v has been set to the index of v in the variable sent.")
+
+   myTests().main()
 
 
 3. See comments for instructions again. (Keep in mind: All ordinal numbers in *instructions*, like "third" or "fifth" refer to the way HUMANS count. How do you write code to find the right things?)
@@ -157,30 +154,24 @@ Problem Set
 
    # Write code to assign the **type of the first element of mixed_bag** to a variable called another_type
 
-   ====
+   =====
 
-   import test
-   print "\n\n---\n"
-   try:
-      test.testEqual(third_elem, num_lst[2])
-   except:
-      print "The variable third_elem has not been defined"
-   try:
-      test.testEqual(elem_sixth, num_lst[5])
-   except:
-      print "The variable elem_sixth has not been defined"
-   try:
-      test.testEqual(num_lst_len,len(num_lst))
-   except:
-      print "The variable num_lst_len has not been defined"
-   try:
-      test.testEqual(fifth_type,type(mixed_bag[4]))
-   except:
-      print "The variable fifth_type has not been defined"
-   try:
-      test.testEqual(another_type, type(mixed_bag[0]))
-   except:
-      print "The variable another_type has not been defined"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(third_elem, num_lst[2], "Testing that third_elem has been set to the third element of num_lst")
+      def testTwo(self):
+         self.assertEqual(elem_sixth, num_lst[5], "Testing that elem_sixth has been set to the sixth element of num_lst")
+      def testThree(self):
+         self.assertEqual(num_lst_len,len(num_lst), "Testing that num_len has been set to the length of num_lst")
+      def testFour(self):
+         self.assertEqual(fifth_type, type(mixed_bag[4]), "Testing that fifth_type has been set to the type of the fifth element in mixed_bag")
+      def testFive(self):
+         self.assertEqual(another_type, type(mixed_bag[0]), "Testing that another_type has been set to the type of the first element of mixed_bag")
+
+   myTests().main()
 
 
 4. There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
@@ -241,27 +232,26 @@ Now, take a look at the following code and related questions, in this code windo
 
 .. activecode:: ps_2_5
 
-    rv = """Once upon a midnight dreary, while I pondered, weak and weary,
+   rv = """Once upon a midnight dreary, while I pondered, weak and weary,
       Over many a quaint and curious volume of forgotten lore,
       While I nodded, nearly napping, suddenly there came a tapping,
       As of some one gently rapping, rapping at my chamber door.
       'Tis some visitor, I muttered, tapping at my chamber door;
       Only this and nothing more."""
 
-    # Write your code here!
+   # Write your code here!
 
-    ====
+   =====
 
-    import test
-    print "\n\n---\n"
-    try:
-        test.testEqual(num_chars,len(rv))
-    except:
-        print "The variable num_chars has not been defined"
-    try:
-        test.testEqual(num_words,len(rv.split()))
-    except:
-        print "The variable num_words has not been defined"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(num_chars, len(rv), "Testing that num_chars has been set to the length of rv")
+         self.assertEqual(num_words, len(rv.split()), "Testing that num_words has been set to the number of words in rv")
+
+   myTests().main()
 
 
 .. activecode:: addl_functions_2

@@ -52,9 +52,9 @@ Here is a complete program that defines values for ``x`` and ``y``.  Run the pro
 
 .. note::
 
-	In some programming languages, matching the if and the else is a problem.  However, in Python this is not the case.
-	The indentation pattern tells us exactly which else
-	belongs to which if.
+    In some programming languages, matching the if and the else is a problem.  However, in Python this is not the case.
+    The indentation pattern tells us exactly which else
+    belongs to which if.
 
 If you are still a bit unsure, here is the same selection as part of a codelens example.  Step through it to see how the correct ``print`` is chosen.
 
@@ -75,12 +75,12 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
 
 **Check your understanding**
 
-.. mchoicemf:: test_question6_6_1
+.. mchoice:: test_question6_6_1
    :answer_a: No
    :answer_b: Yes
-   :correct: a
    :feedback_a: This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
    :feedback_b: This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
+   :correct: a
 
    Will the following code cause an error?
 

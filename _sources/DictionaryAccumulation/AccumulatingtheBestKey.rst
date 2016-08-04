@@ -38,9 +38,9 @@ but you'll learn more if you try to write it yourself first.
          ks = d.keys()
          # initialize variable best_key_so_far to be the first key in d
          for k in ks:
-            # check if the value associated with the current key is
-            # bigger than the value associated with the best_key_so_far
-            # if so, save the current key as the best so far
+             # check if the value associated with the current key is
+             # bigger than the value associated with the best_key_so_far
+             # if so, save the current key as the best so far
             
          print "key " + best_key_so_far + " has the highest value, " + str(d[best_key_so_far])
    
@@ -53,8 +53,8 @@ but you'll learn more if you try to write it yourself first.
          ks = d.keys()
          best_key_so_far = ks[0]
          for k in ks:
-            if d[k] > d[best_key_so_far]:
-               best_key_so_far = k
+             if d[k] > d[best_key_so_far]:
+                 best_key_so_far = k
             
          print "key " + best_key_so_far + " has the highest value, " + str(d[best_key_so_far])
          

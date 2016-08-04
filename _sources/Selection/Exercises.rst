@@ -46,15 +46,15 @@ Exercises
                fl_sc = float(sc)
                
                if fl_sc < 60:
-                  gr = "F"
+                   gr = "F"
                elif fl_sc <70:
-                  gr = "D"
+                   gr = "D"
                elif fl_sc < 80:
-                  gr = "C"
+                   gr = "C"
                elif fl_sc < 90:
-                  gr = "B"
+                   gr = "B"
                else:
-                  gr = "A"
+                   gr = "A"
                
                print "Score", fl_sc, "gets a grade of", gr
                  

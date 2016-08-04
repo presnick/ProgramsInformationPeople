@@ -72,29 +72,30 @@ Don't worry about mastering this idea yet. But later in the course, if you come
 across some code that someone else has written that uses the * notation inside
 a parameter list, come back and look at this again.
 
-.. mchoicema:: test_questiontuples_2
+.. mchoice:: test_questiontuples_2
+   :multiple_answers:
    :answer_a: Make the last two lines of the function be "return x" and "return y"  
    :answer_b: Include the statement "return [x, y]" 
    :answer_c: Include the statement "return (x, y)"
    :answer_d: Include the statement "return x, y"
    :answer_e: It's not possible to return two values; make two functions that each compute one value.
-   :correct: b,c,d
    :feedback_a: As soon as the first return statement is executed, the function exits, so the second one will never be executed; only x will be returned
    :feedback_b: return [x,y] is not the preferred method because it returns x and y in a list and you would have to manually unpack the values. But it is workable.
    :feedback_c: return (x, y) returns a tuple.
    :feedback_d: return x, y causes the two values to be packed into a tuple.
    :feedback_e: It is possible, and frequently useful, to have one function compute multiple values.
+   :correct: b,c,d
 
    If you want a function to return two values, contained in variables x and y, which of the following methods will work?
 
-.. mchoicemf:: test_questiontuples_3
+.. mchoice:: test_questiontuples_3
    :answer_a: You can't use different variable names on the left and right side of an assignment statement.
    :answer_b: At the end, x still has it's original value instead of y's original value.
    :answer_c: Actually, it works just fine!
-   :correct: b
    :feedback_a: Sure you can; you can use any variable on the right-hand side that already has a value.
-   :feedback_b: Once you assign x's value to y, y's original value is gone
-   :feedback_c: Once you assign x's value to y, y's original value is gone
+   :feedback_b: Once you assign x's value to y, y's original value is gone.
+   :feedback_c: Once you assign x's value to y, y's original value is gone.
+   :correct: b
 
    Consider the following alternative way to swap the values of variables x and y. What's wrong with it?
    

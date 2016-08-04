@@ -35,16 +35,16 @@ Note how this differs from mutating the original list, as you saw in a :ref:`pre
 
 **Check your understanding**
 
-.. mchoicemf:: test_question_iter_accum_1
+.. mchoice:: test_question_iter_accum_1
    :answer_a: [4,2,8,6,5]
    :answer_b: [4,2,8,6,5,5]
    :answer_c: [9,7,13,11,10]
    :answer_d: Error, you cannot concatenate inside an append.
-   :correct: c
    :feedback_a: 5 is added to each item before the append is performed.
    :feedback_b: There are too many items in this list.  Only 5 append operations are performed.
    :feedback_c: Yes, the for loop processes each item of the list.  5 is added before it is appended to blist.
    :feedback_d: 5 is added to each item before the append operation is performed.
+   :correct: c
 
    What is printed by the following statements?
 
@@ -57,16 +57,16 @@ Note how this differs from mutating the original list, as you saw in a :ref:`pre
      print blist
 
 
-.. mchoicemf:: test_question_iter_accum_1
+.. mchoice:: test_question_iter_accum_1
    :answer_a: [8,5,14,9,6]
    :answer_b: [8,5,14,9,6,12]
    :answer_c: [3,0,9,4,1,7,5]
    :answer_d: Error, you cannot concatenate inside an append.
-   :correct: b
    :feedback_a: 5 is added to each list[i] before the append is performed.
    :feedback_b: Yes, the for loop processes each list[i] of the list.  5 is added before list[i] is appended to blist.
    :feedback_c: There are too many items in this list.  Only 5 append operations are performed.
    :feedback_d: 5 is added to each list[i] before the append operation is performed.
+   :correct: b
 
    What is printed by the following statements?
 

@@ -77,14 +77,14 @@ Of course, it's unnecessary to make an anonymous function that takes an input an
     print L2
 
 
-.. mchoicemf:: test_questionsort_1
+.. mchoice:: test_questionsort_1
    :answer_a: descending order, from 7 down to -2
    :answer_b: ascending order, from -2 up to 7
    :answer_c: the original order of L1
-   :correct: a
    :feedback_a: 7 is decorated with -7, so it is first; -2 is decorated with 2, so it is last 
    :feedback_b: -x produces the negative of x
    :feedback_c: sorted changes the order
+   :correct: a
 
    Describe what the sort order will be for this.
    
@@ -94,14 +94,14 @@ Of course, it's unnecessary to make an anonymous function that takes an input an
      
     print sorted(L1, key = lambda x: -x)
 
-.. mchoicemf:: test_questionsort_2
+.. mchoice:: test_questionsort_2
    :answer_a: descending order, from 7 down to -2
    :answer_b: ascending order, from -2 up to 7
    :answer_c: the original order of L1
+   :feedback_a: The True value for the reverse parameter says to reverse the order.
+   :feedback_b: The True value for the reverse parameter says to reverse the order.
+   :feedback_c: sorted changes the order.
    :correct: b
-   :feedback_a: The True value for the reverse parameter says to reverse the order 
-   :feedback_b: The True value for the reverse parameter says to reverse the order
-   :feedback_c: sorted changes the order
 
    Describe what the sort order will be for this.
    

@@ -114,53 +114,53 @@ most programs are more interesting than this one.
 
 .. admonition:: Want to learn more about Python?
 
-	If you would like to learn more about installing and using Python, here are some video links.
-	`Installing Python for Windows <http://youtu.be/9EfGpN1Pnsg>`__ shows you how to install the Python environment under
-	Windows Vista,
-	`Installing Python for Mac <http://youtu.be/MEmEJCLLI2k>`__ shows you how to install under Mac OS/X, and
-	`Installing Python for Linux <http://youtu.be/RLPYBxfAud4>`__ shows you how to install from the Linux
-	command line.
-	`Using Python <http://youtu.be/kXbpB5_ywDw>`__ shows you some details about the Python shell and source code.
+  If you would like to learn more about installing and using Python, here are some video links.
+  `Installing Python for Windows <http://youtu.be/9EfGpN1Pnsg>`__ shows you how to install the Python environment under
+  Windows Vista,
+  `Installing Python for Mac <http://youtu.be/MEmEJCLLI2k>`__ shows you how to install under Mac OS/X, and
+  `Installing Python for Linux <http://youtu.be/RLPYBxfAud4>`__ shows you how to install from the Linux
+  command line.
+  `Using Python <http://youtu.be/kXbpB5_ywDw>`__ shows you some details about the Python shell and source code.
 
 **Check your understanding**
 
-.. mchoicemf:: question1_2_1
+.. mchoice:: question1_2_1
    :answer_a: the instructions in a program, written in a high-level language.
    :answer_b: the language that you are programming in (e.g., Python).
    :answer_c: the environment/tool in which you are programming.
    :answer_d: the number (or “code”) that you must input at the top of each program to tell the computer how to execute your program.
-   :correct: a
    :feedback_a: If the instructions are strored in a file, it is called the source code file.
    :feedback_b: This language is simply called the programming language, or simply the language. Programs are writte in this language.
    :feedback_c: The environment may be called the IDE, or integrated development environment, though not always.
    :feedback_d: There is no such number that you must type in at the start of your program.
+   :correct: a
 
    Source code is another name for:
 
-.. mchoicemf:: question1_2_2
+.. mchoice:: question1_2_2
    :answer_a: It is high-level if you are standing and low-level if you are sitting.
    :answer_b: It is high-level if you are programming for a computer and low-level if you are programming for a phone or mobile device.
    :answer_c: It is high-level if the program must be processed before it can run, and low-level if the computer can execute it without additional processing.
    :answer_d: It is high-level if it easy to program in and is very short; it is low-level if it is really hard to program in and the programs are really long.
-   :correct: c
    :feedback_a: In this case high and low have nothing to do with altitude.
    :feedback_b: High and low have nothing to do with the type of device you are programming for.  Instead, look at what it takes to run the program written in the language.
    :feedback_c: Python is a high level language but must be interpreted into machine code (binary) before it can be executed.
    :feedback_d: While it is true that it is generally easier to program in a high-level language and programs written in a high-level language are usually shorter, this is not always the case.
+   :correct: c
 
 
-    What is the difference between a high-level programming language and a low-level programming language?
+   What is the difference between a high-level programming language and a low-level programming language?
 
-.. mchoicemf:: question1_2_3
+.. mchoice:: question1_2_3
    :answer_a: 1 = a process, 2 = a function
    :answer_b: 1 = translating an entire book, 2 = translating a line at a time
    :answer_c: 1 = software, 2 = hardware
    :answer_d: 1 = object code, 2 = byte code
-   :correct: b
    :feedback_a: Compiling is a software process, and running the interpreter is invoking a function, but how is a process different than a function?
    :feedback_b: Compilers take the entire source code and produce object code or the executable and interpreters execute the code line by line.
    :feedback_c: Both compilers and interpreters are software.
    :feedback_d: Compilers can produce object code or byte code depending on the language.  An interpreter produces neither.
+   :correct: b
 
    Pick the best replacements for 1 and 2 in the following sentence: When comparing compilers and interpreters, a compiler is like 1 while an interpreter is like 2.
 

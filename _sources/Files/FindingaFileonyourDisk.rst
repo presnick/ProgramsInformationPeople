@@ -17,7 +17,7 @@ On a Windows machine the path looks a bit different but the same principles are 
 
 You can access files in folders, also called directories, under your home directory by adding a slash and the name of the folder.  
 For example, if you had a file called ``hello.py`` in a folder called ``SI106``  that was inside a folder called ``PyCharmProjects`` under your home directory, 
-then the full name for ``hello.py`` stored in the CS150 folder would be ``/Users/yourname/PyCharmProjects/SI106/hello.py``
+then the full name for ``hello.py`` stored in the SI106 folder would be ``/Users/yourname/PyCharmProjects/SI106/hello.py``
 
 Here's the important rule to remember:  If your file and your Python program are in the same directory you can simply use the filename. ``open('myfile.txt','r')`` 
 If your file and your Python program are in different directories then you should use the path to the file ``open(/Users/joebob01/myfile.txt)``.

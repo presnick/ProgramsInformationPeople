@@ -61,17 +61,16 @@ done first, you will need to use parentheses.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_1_1 
+.. mchoice:: test_question8_1_1 
    :answer_a: python rocks
    :answer_b: python
    :answer_c: pythonrocks
    :answer_d: Error, you cannot add two strings together.
-   :correct: c
    :feedback_a: Concatenation does not automatically add a space.
    :feedback_b: The expression s+t is evaluated first, then the resulting string is printed.
    :feedback_c: Yes, the two strings are glued end to end.
    :feedback_d: The + operator has different meanings depending on the operands, in this case, two strings.
-
+   :correct: c
 
    What is printed by the following statements?
    
@@ -82,18 +81,16 @@ done first, you will need to use parentheses.
       print s+t
 
 
-
-.. mchoicemf:: test_question8_1_2
+.. mchoice:: test_question8_1_2
    :answer_a: python!!!
    :answer_b: python!python!python!
    :answer_c: pythonpythonpython!
    :answer_d: Error, you cannot perform concatenation and repetition at the same time.
-   :correct: a
    :feedback_a: Yes, repetition has precedence over concatenation
    :feedback_b: Repetition is done first.
    :feedback_c: The repetition operator is working on the excl variable.
    :feedback_d: The + and * operator are defined for strings as well as numbers.
-
+   :correct: a
 
    What is printed by the following statements?
    
@@ -102,6 +99,4 @@ done first, you will need to use parentheses.
       s = "python"
       excl = "!"
       print s+excl*3
-
-
 

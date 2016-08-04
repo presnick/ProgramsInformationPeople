@@ -42,7 +42,7 @@ Glossary
         interepreter.  They have type ``bool``.
 
     class
-		see **data type** below
+        see **data type** below
 
     comment
         Information in a program that is meant for other programmers (or anyone
@@ -110,8 +110,8 @@ Glossary
         another.
 
     object
-		Also known as a data object (or data value).  The fundamental things that programs are designed to
-		manipulate (or that programmers ask to do things for them).
+        Also known as a data object (or data value).  The fundamental things that programs are designed to
+        manipulate (or that programmers ask to do things for them).
 
     operand
         One of the values on which an operator operates.
@@ -121,7 +121,7 @@ Glossary
         multiplication, or string concatenation.
 
     prompt string
-		Used during interactive input to provide the use with hints as to what type of value to enter.
+        Used during interactive input to provide the use with hints as to what type of value to enter.
 
     reference diagram
         A picture showing a variable with an arrow pointing to the value (object) that the variable refers to. See also **state snapshot**.
@@ -144,7 +144,7 @@ Glossary
         A Python data type that holds a string of characters.
 
     type conversion function
-		A function that can convert a data value from one type to another.
+        A function that can convert a data value from one type to another.
 
     value
         A number or string (or other things to be named later) that can be

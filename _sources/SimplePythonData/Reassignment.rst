@@ -71,16 +71,16 @@ You can step through the code and see how the variable assignments change below.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_9_1
+.. mchoice:: test_question2_9_1
    :answer_a: x is 15 and y is 15
    :answer_b: x is 22 and y is 22
    :answer_c: x is 15 and y is 22
    :answer_d: x is 22 and y is 15
-   :correct: d
    :feedback_a: Look at the last assignment statement which gives x a different value.
    :feedback_b: No, x and y are two separate variables.  Just because x changes in the last assignment statement, it does not change the value that was copied into y in the second statement.
    :feedback_c: Look at the last assignment statement, which reassigns x, and not y.
    :feedback_d: Yes, x has the value 22 and y the value 15.
+   :correct: d
 
 
    After the following statements, what are the values of x and y?

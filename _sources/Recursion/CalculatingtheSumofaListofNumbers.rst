@@ -85,9 +85,9 @@ the first element. This is easily expressed in Python.
     :caption: Recursive Summation
 
     def listsum(numList):
-       if len(numList) == 1:
+        if len(numList) == 1:
             return numList[0]
-       else:
+        else:
             return numList[0] + listsum(numList[1:])
             
     print(listsum([1,3,5,7,9]))

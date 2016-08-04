@@ -40,16 +40,16 @@ possible.
 
 **Check your understanding**
 
-.. mchoicemf:: question1_11_1
+.. mchoice:: question1_11_1
    :answer_a: sends information to the printer to be printed on paper.
    :answer_b: displays a value on the screen.
    :answer_c: tells the computer to put the information in print, rather than cursive, format.
    :answer_d: tells the computer to speak the information.
-   :correct: b
    :feedback_a: Within the Python programming language, the print statement has nothing to do with the printer.
    :feedback_b: Yes, the print statement is used to display the value of the thing being printed.
    :feedback_c: The format of the information is called its font and has nothing to do with the print statement.
    :feedback_d: That would be nice! But no...
+   :correct: b
 
    The print statement:
 

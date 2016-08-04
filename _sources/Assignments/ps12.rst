@@ -42,5 +42,5 @@ Activities through 4/10
     :points: 50
 
 * **Before Sunday 4/10 at 5 pm:**
-	* Complete `Problem Set 12 <https://umich.instructure.com/courses/48961/assignments/55806>`_ on Canvas.
-	* **Before 6 pm:** Complete `Demonstrate Understanding 12 <https://umich.instructure.com/courses/48961/assignments/57702>`_ on Canvas.
+    * Complete `Problem Set 12 <https://umich.instructure.com/courses/48961/assignments/55806>`_ on Canvas.
+    * **Before 6 pm:** Complete `Demonstrate Understanding 12 <https://umich.instructure.com/courses/48961/assignments/57702>`_ on Canvas.

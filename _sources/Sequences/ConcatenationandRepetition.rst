@@ -46,16 +46,16 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_5_1
+.. mchoice:: test_question9_5_1
    :answer_a: 6
    :answer_b: [1,2,3,4,5,6]
    :answer_c: [1,3,5,2,4,6]
    :answer_d: [3,7,11]
-   :correct: c
    :feedback_a: Concatenation does not add the lengths of the lists.
    :feedback_b: Concatenation does not reorder the items. 
    :feedback_c: Yes, a new list with all the items of the first list followed by all those from the second.
    :feedback_d: Concatenation does not add the individual items.
+   :correct: c
    
    What is printed by the following statements?
    
@@ -64,19 +64,18 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
      alist = [1,3,5]
      blist = [2,4,6]
      print alist + blist
-
    
    
-.. mchoicemf:: test_question9_5_2
+.. mchoice:: test_question9_5_2
    :answer_a: 9
    :answer_b: [1,1,1,3,3,3,5,5,5]
    :answer_c: [1,3,5,1,3,5,1,3,5]
    :answer_d: [3,9,15]
-   :correct: c
    :feedback_a: Repetition does not multiply the lengths of the lists.  It repeats the items.
    :feedback_b: Repetition does not repeat each item individually.
    :feedback_c: Yes, the items of the list are repeated 3 times, one after another.
    :feedback_d: Repetition does not multiply the individual items.
+   :correct: c
    
    What is printed by the following statements?
    

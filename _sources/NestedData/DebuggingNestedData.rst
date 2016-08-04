@@ -812,7 +812,7 @@ Now extract. Since it's a list, we'll want to work with each item, but to keep t
    print type(res2) # it's a list!
    print len(res2)  # looks like one item representing each of the three tweets
    for res3 in res2[:1]:
-      print "working with a tweet, bound to variable res3"
+       print "working with a tweet, bound to variable res3"
   
 Level 3
 ^^^^^^^
@@ -828,8 +828,8 @@ First understand.
    print type(res2) # it's a list!
    print len(res2)  # looks like one item representing each of the three tweets
    for res3 in res2[:1]:
-      print type(res3) # it's a dictionary
-      print res3.keys()
+       print type(res3) # it's a dictionary
+       print res3.keys()
 
 Then extract. Let's pull out the information about who sent each of the tweets. Probably that's the value associated with the 'user' key.
 
@@ -842,9 +842,9 @@ Then extract. Let's pull out the information about who sent each of the tweets. 
    #print type(res2) # it's a list!
    #print len(res2)  # looks like one item representing each of the three tweets
    for res3 in res2[:1]:
-      #print type(res3) # it's a dictionary
-      #print res3.keys()
-      res4 = res3['user']
+       #print type(res3) # it's a dictionary
+       #print res3.keys()
+       res4 = res3['user']
       
 Now repeat.
 
@@ -862,11 +862,11 @@ Understand.
    #print type(res2) # it's a list!
    #print len(res2)  # looks like one item representing each of the three tweets
    for res3 in res2[:1]:
-      #print type(res3) # it's a dictionary
-      #print res3.keys()
-      res4 = res3['user']
-      print type(res4) # it's a dictionary
-      print res4.keys() 
+       #print type(res3) # it's a dictionary
+       #print res3.keys()
+       res4 = res3['user']
+       print type(res4) # it's a dictionary
+       print res4.keys() 
 
 Extract. Let's print out the user's screen name and when their account was created.
 
@@ -879,12 +879,12 @@ Extract. Let's print out the user's screen name and when their account was creat
    #print type(res2) # it's a list!
    #print len(res2)  # looks like one item representing each of the three tweets
    for res3 in res2[:1]:
-      #print type(res3) # it's a dictionary
-      #print res3.keys()
-      res4 = res3['user']
-      #print type(res4) # it's a dictionary
-      #print res4.keys()
-      print res4['screen_name'], res4['created_at']
+       #print type(res3) # it's a dictionary
+       #print res3.keys()
+       res4 = res3['user']
+       #print type(res4) # it's a dictionary
+       #print res4.keys()
+       print res4['screen_name'], res4['created_at']
 
 Now, we may want to go back have it extract for all the items rather than only the first item in res2.  
 
@@ -897,12 +897,12 @@ Now, we may want to go back have it extract for all the items rather than only t
    #print type(res2) # it's a list!
    #print len(res2)  # looks like one item representing each of the three tweets
    for res3 in res2:
-      #print type(res3) # it's a dictionary
-      #print res3.keys()
-      res4 = res3['user']
-      #print type(res4) # it's a dictionary
-      #print res4.keys()
-      print res4['screen_name'], res4['created_at']
+       #print type(res3) # it's a dictionary
+       #print res3.keys()
+       res4 = res3['user']
+       #print type(res4) # it's a dictionary
+       #print res4.keys()
+       print res4['screen_name'], res4['created_at']
 
 
 Reflections
@@ -916,7 +916,7 @@ Once you've figured out how to extract everything you want, you *may* choose to 
    :include: extract_nested_data_1
 
    for res3 in res['statuses']:
-      print res3['user']['screen_name'], res3['user']['created_at']
+       print res3['user']['screen_name'], res3['user']['created_at']
 
 Even with this compact code, we can still count off how many levels of nesting we have extracted from, in this case four. res['statuses'] says we have descended one level (in a dictionary). for res3 in... says we are have descended another level (in a list). ['user'] is descending one more level, and ['screen_name'] is descending one more level. 
 

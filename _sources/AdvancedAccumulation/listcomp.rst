@@ -32,8 +32,8 @@ The ``if`` clause of a list comprehension can be used to do a filter operation. 
 .. activecode:: listcomp_8
 
    def keep_evens(nums):
-      new_list = [num for num in nums if num % 2 == 0]
-      return new_list
+       new_list = [num for num in nums if num % 2 == 0]
+       return new_list
       
    print keep_evens([3, 4, 6, 7, 0, 1])
 
@@ -53,16 +53,16 @@ You can also combine map and filter operations by chaining them together, or wit
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_20_1
+.. mchoice:: test_question9_20_1
    :answer_a: [4,2,8,6,5]
    :answer_b: [8,4,16,12,10]
    :answer_c: 10
-   :answer_d: [10].
-   :correct: d
+   :answer_d: [10]
    :feedback_a: Items from alist are doubled before being placed in blist.
    :feedback_b: Not all the items in alist are to be included in blist.  Look at the if clause.
    :feedback_c: The result needs to be a list.
    :feedback_d: Yes, 5 is the only odd number in alist.  It is doubled before being placed in blist.
+   :correct: d
    
    What is printed by the following statements?
    

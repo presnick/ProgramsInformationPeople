@@ -63,18 +63,18 @@ Here is the same program using ``elif``.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question6_7_1
+.. mchoice:: test_question6_7_1
    :answer_a: I only
    :answer_b: II only
    :answer_c: III only
    :answer_d: II and III
    :answer_e: I, II, and III
-   :correct: b
    :feedback_a: You can not use a Boolean expression after an else.
    :feedback_b: Yes, II will give the same result.
    :feedback_c: No, III will not give the same result.  The first if statement will be true, but the second will be false, so the else part will execute.
    :feedback_d: No, Although II is correct III will not give the same result.  Try it.
    :feedback_e: No, in I you can not have a Boolean expression after an else.
+   :correct: b
 
    Which of I, II, and III below gives the same result as the following nested if?
 
@@ -126,14 +126,14 @@ Here is the same program using ``elif``.
          print x, " is 0"
 
 
-.. mchoicemf:: test_question6_7_2
+.. mchoice:: test_question6_7_2
    :answer_a: a
    :answer_b: b
    :answer_c: c
-   :correct: c
    :feedback_a: While the value in x is less than the value in y (3 is less than 5) it is not less than the value in z (3 is not less than 2).
    :feedback_b: The value in y is not less than the value in x (5 is not less than 3).
    :feedback_c: Since the first two Boolean expressions are false the else will be executed.
+   :correct: c
 
    What will the following code print if x = 3, y = 5, and z = 2?
 

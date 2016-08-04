@@ -37,7 +37,7 @@ The keys method returns a list of the keys, not necessarily in the same order th
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}  
   
     for akey in inventory.keys():     # the order in which we get the keys is not defined
-       print "Got key", akey, "which maps to value", inventory[akey]     
+        print "Got key", akey, "which maps to value", inventory[akey]     
        
     ks = list(inventory.keys())
     print ks
@@ -52,7 +52,7 @@ a dictionary implicitly iterates over its keys.
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}  
     
     for k in inventory:     
-       print "Got key", k
+        print "Got key", k
 
  
 The ``values`` and ``items`` methods are similar to ``keys``. They return lists of objects which can be iterated over.  Note that the item objects are tuples containing the key and the associated value.
@@ -112,16 +112,16 @@ in the case where the key is not present.  This can be seen in the final example
 **Check your understanding**
 
    
-.. mchoicemf:: test_question11_3_2
+.. mchoice:: test_question11_3_2
    :answer_a: 2
    :answer_b: 0.5
    :answer_c: bear
    :answer_d: Error, divide is not a valid operation on dictionaries.
-   :correct: a
    :feedback_a: get returns the value associated with a given key so this divides 12 by 6.
    :feedback_b: 12 is divided by 6, not the other way around.
    :feedback_c: Take another look at the example for get above.  get returns the value associated with a given key.
    :feedback_d: The integer division operator is being used on the values returned from the get method, not on the dictionary.
+   :correct: a
    
    
    What is printed by the following statements?
@@ -134,12 +134,12 @@ in the case where the key is not present.  This can be seen in the final example
 
    
    
-.. mchoicemf:: test_question11_3_3
+.. mchoice:: test_question11_3_3
    :answer_a: True
    :answer_b: False
-   :correct: a
    :feedback_a: Yes, dog is a key in the dictionary.
    :feedback_b: The in operator returns True if a key is in the dictionary, False otherwise.
+   :correct: a
    
    What is printed by the following statements?
    
@@ -150,12 +150,12 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 
-.. mchoicemf:: test_question11_3_4
+.. mchoice:: test_question11_3_4
    :answer_a: True
    :answer_b: False
-   :correct: b
    :feedback_a: 23 is a value in the dictionary, not a key.  
    :feedback_b: Yes, the in operator returns True if a key is in the dictionary, False otherwise.
+   :correct: b
    
    What is printed by the following statements?
    
@@ -166,16 +166,16 @@ in the case where the key is not present.  This can be seen in the final example
 
 
 
-.. mchoicemf:: test_question11_3_5
+.. mchoice:: test_question11_3_5
    :answer_a: 18
    :answer_b: 43
    :answer_c: 0
    :answer_d: 61
-   :correct: b
    :feedback_a: Add the values that have keys longer than 3 characters, not those with exactly 3 characters.
    :feedback_b: Yes, the for statement iterates over the keys.  It adds the values of the keys that have length greater than 3.
    :feedback_c: This is the accumulator pattern.  Total starts at 0 but then changes as the iteration proceeds.
    :feedback_d: Not all the values are added together.  The if statement only chooses some of them.
+   :correct: b
    
    
    What is printed by the following statements?

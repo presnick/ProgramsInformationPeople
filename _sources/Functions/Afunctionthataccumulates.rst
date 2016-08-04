@@ -24,10 +24,10 @@ and our implementation may not be a very good one.
 .. activecode:: functions_6
 
    def mylen(x):
-      c = 0 # initialize count variable to 0
-      for y in x:
-         c = c + 1   # increment the counter for each item in x
-      return c
+       c = 0 # initialize count variable to 0
+       for y in x:
+           c = c + 1   # increment the counter for each item in x
+       return c
       
    print mylen("hello")
    print mylen([1, 2, 7]) 

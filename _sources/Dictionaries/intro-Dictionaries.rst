@@ -89,26 +89,26 @@ The key ``'two'`` yields the value ``'dos'``. The key ``one`` yields the value `
 
 **Check your understanding**
 
-.. mchoicemf:: test_question11_1_1 
+.. mchoice:: test_question11_1_1 
    :answer_a: False
    :answer_b: True
-   :correct: b
    :feedback_a: Dictionaries associate keys with values but there is no assumed order for the entries.
    :feedback_b: Yes, dictionaries are associative collections meaning that they store key-value pairs.
+   :correct: b
 
    A dictionary is an unordered collection of key-value pairs.
 
 
-.. mchoicemf:: test_question11_1_2
+.. mchoice:: test_question11_1_2
    :answer_a: 12
    :answer_b: 6
    :answer_c: 23
    :answer_d: Error, you cannot use the index operator with a dictionary.
-   :correct: b
    :feedback_a: 12 is associated with the key cat.
    :feedback_b: Yes, 6 is associated with the key dog.
    :feedback_c: 23 is associated with the key elephant.
    :feedback_d: The [ ] operator, when used with a dictionary, will look up a value based on its key.
+   :correct: b
    
    
    What is printed by the following statements?

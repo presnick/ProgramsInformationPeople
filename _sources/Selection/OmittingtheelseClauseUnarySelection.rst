@@ -43,16 +43,16 @@ What would be printed if the value of ``x`` is negative?  Try it.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question6_5_1
+.. mchoice:: test_question6_5_1
    :answer_a: Output a
    :answer_b: Output b
    :answer_c: Output c
    :answer_d: It will cause an error because every if must have an else clause.
-   :correct: b
    :feedback_a: Because -10 is less than 0, Python will execute the body of the if-statement here.
    :feedback_b: Python executes the body of the if-block as well as the statement that follows the if-block.
    :feedback_c: Python will also execute the statement that follows the if-block (because it is not enclosed in an else-block, but rather just a normal statement).
    :feedback_d: It is valid to have an if-block without a corresponding else-block (though you cannot have an else-block without a corresponding if-block).
+   :correct: b
 
    What does the following code print?
 
@@ -76,12 +76,12 @@ What would be printed if the value of ``x`` is negative?  Try it.
      The negative number -10 is not valid here
 
 
-.. mchoicemf:: test_question6_5_2
+.. mchoice:: test_question6_5_2
    :answer_a: No
    :answer_b: Yes
-   :correct: b
    :feedback_a: Every else-block must have exactly one corresponding if-block.  If you want to chain if-else statements together, you must use the else if construct, described in the chained conditionals section.
    :feedback_b: This will cause an error because the second else-block is not attached to a corresponding if-block.
+   :correct: b
 
    Will the following code cause an error?
 

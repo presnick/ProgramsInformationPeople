@@ -16,10 +16,10 @@ In the code below, we implement a guesser function and a list of two rules. The 
        all_guesses = []
        for (f, guesses) in rls:
            if f(prev_txt):
-                # append all the guesses that are new
-                for guess in guesses:
+               # append all the guesses that are new
+               for guess in guesses:
                     if guess not in all_guesses:
-                        all_guesses.append(guess)
+                       all_guesses.append(guess)
        return all_guesses
 
    rules = [(lambda x: x[-1] == "Q", "UAI"),

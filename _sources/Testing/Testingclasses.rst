@@ -49,30 +49,30 @@ A method like distanceFromOrigin does its work by computing a return value, so i
 
 **Check your understanding**
 
-.. mchoicemf:: test_questionmore_testing_1
+.. mchoice:: test_questionmore_testing_1
    :answer_a: True
    :answer_b: False
-   :correct: b
    :feedback_a: Each test case checks whether the function works correctly on one input. It's a good idea to check several different inputs, including some extreme cases.
    :feedback_b: It's a good idea to check some extreme cases, as well as the typical cases.
+   :correct: b
 
    For each function, you should create exactly one test case.
  
-.. mchoicemf:: test_questionmore_testing_2
+.. mchoice:: test_questionmore_testing_2
    :answer_a: return value test
    :answer_b: side effect test
-   :correct: b
    :feedback_a: The method may return the correct value but not properly change the values of instance variables. See the move method of the Point class above. 
    :feedback_b: The move method of the Point class above is a good example.
+   :correct: b
 
    To test a method that changes the value of an instance variable, which kind of test case should you write?
 
-.. mchoicemf:: test_questionmore_testing_3
+.. mchoice:: test_questionmore_testing_3
    :answer_a: return value test
    :answer_b: side effect test
-   :correct: a
    :feedback_a: You want to check if maxabs returns the correct value for some input. 
    :feedback_b: The function has no side effects; even though it takes a list L as a parameter, it doesn't alter its contents.
+   :correct: a
 
    To test the function maxabs, which kind of test case should you write?
 
@@ -82,12 +82,12 @@ A method like distanceFromOrigin does its work by computing a return value, so i
          """L should be a list of numbers (ints or floats). The return value should be the maximum absolute value of the numbers in L."""
          return max(L, key = abs)
 
-.. mchoicemf:: test_questionmore_testing_4
+.. mchoice:: test_questionmore_testing_4
    :answer_a: return value test
    :answer_b: side effect test
-   :correct: b
    :feedback_a: The sort method always returns None, so there's nothing to check about whether it is returning the right value. 
    :feedback_b: You want to check whether it has the correct side effect, whether it correctly mutates the list.
+   :correct: b
       
    We have usually used the sorted function, which takes a list as input and returns a new list containing the same items, possibly in a different order. There is also a method called sort for lists. It changes the order of the items in the list, and returns the value None. Which kind of test case would you use on the sort method?    
    

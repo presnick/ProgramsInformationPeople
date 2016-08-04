@@ -180,14 +180,15 @@ dictionary, which really means the keys of the dictionary. The third parameter, 
 key function, decorates the dictionary key with a post-it note containing that key's value in
 dictionary d. The last parameter, True, says to sort in reverse order.
     
-.. mchoicema:: test_questionsort_3
+.. mchoice:: test_questionsort_3
+   :multiple_answers:
    :answer_a: sorted(ks, key=g) 
    :answer_b: sorted(ks, key=lambda x: g(x, d))
    :answer_c: sorted(ks, key=lambda x: d[x])
-   :correct: b,c
    :feedback_a: g is a function that takes two parameters. The key function passed to sorted must always take just one parameter 
    :feedback_b: The lambda function takes just one parameter, and calls g with two parameters. 
-   :feedback_c: The lambda function looks up the value of x in d. 
+   :feedback_c: The lambda function looks up the value of x in d.
+   :correct: b,c
 
    Which of the following will sort the keys of d in ascending order of their values (i.e., from lowest to highest)?
    

@@ -20,12 +20,12 @@ For example, we can count the items in a list, or add them all up.
    
    count = 0
    for num in nums:
-      count = count + 1
+       count = count + 1
    print count
    
    total = 0
    for num in nums:
-      total = total + num
+       total = total + num
    print total
    
 These particular operations, counting and summing, are so commonly performed that python provides built-in functions, ``len`` and ``sum``
@@ -47,7 +47,7 @@ Another common accumulation that combines all the elements is to take a list of 
    
    result = strings[0]
    for s in strings[1:]:
-      result = result + "--" + s
+       result = result + "--" + s
    print result
    
 Again, this way of combining lists of strings is so common that python has a built-in way to do it, in this case the ``join`` method. It's invoked in a slightly strange way because join is a method of string class, not a method of the list class. The string to invoke the method on is the separator to be used in between each of the elements. The list of strings that are to be concatenated together is passed as a parameter.
@@ -78,10 +78,10 @@ All of the specific accumulations that you've seen before can be expressed compa
    
    # find the largest; max
    def greater(x, y):
-      if x > y:
-         return x
-      else:
-         return y
+       if x > y:
+           return x
+       else:
+           return y
    print reduce(greater, nums)
    
    
@@ -95,11 +95,11 @@ Of course, it's easier to understand code using the more specific functions ``le
 
    # manual accumulation         
    def maxabs(nums):
-      best_so_far = nums[0]
-      for num in nums:
-        if abs(num) > abs(best_so_far):
-           best_so_far = num
-      return best_so_far
+       best_so_far = nums[0]
+       for num in nums:
+           if abs(num) > abs(best_so_far):
+               best_so_far = num
+       return best_so_far
    
    # alternative using reduce
    # find the max absolute value
@@ -110,7 +110,7 @@ Of course, it's easier to understand code using the more specific functions ``le
            return y
    
    def maxabs2(nums):
-     return reduce(greater_abs, nums)
+       return reduce(greater_abs, nums)
    
    nums = [3, 4, 6, -7, 0, 1]
    print maxabs(nums)

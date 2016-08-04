@@ -18,20 +18,21 @@ can be many layers of nesting.
 Only the values in dictionaries can be objects of arbitrary type. The keys in dictionaries must be one of the
 immutable data types (numbers, strings, tuples).
 
-.. mchoicema:: test_questionnested_9
-    :answer_a: d[5] = {1: 2, 3: 4}
-    :answer_b: d[{1:2, 3:4}] = 5
-    :answer_c: d['key1']['d'] = d['key2']
-    :answer_d: d[key2] =3
-    :correct: a,c
-    :feedback_a: 5 is a valid key; {1:2, 3:4} is a dictionary with two keys, and is a valid value to associate with key 5.
-    :feedback_b: Dictionary keys must be of immutable types. A dictionary can't be used as a key in a dictionary.
-    :feedback_c: d['key2'] is {'b': 3, 'c': "yes"}, a python object. It can be bound to the key 'd' in a dictionary {'a': 5, 'c': 90, 5: 50}
-    :feedback_d: key2 is an unbound variable here. d['key2'] would be OK.
+.. mchoice:: test_questionnested_9
+   :multiple_answers:
+   :answer_a: d[5] = {1: 2, 3: 4}
+   :answer_b: d[{1:2, 3:4}] = 5
+   :answer_c: d['key1']['d'] = d['key2']
+   :answer_d: d[key2] =3
+   :feedback_a: 5 is a valid key; {1:2, 3:4} is a dictionary with two keys, and is a valid value to associate with key 5.
+   :feedback_b: Dictionary keys must be of immutable types. A dictionary can't be used as a key in a dictionary.
+   :feedback_c: d['key2'] is {'b': 3, 'c': "yes"}, a python object. It can be bound to the key 'd' in a dictionary {'a': 5, 'c': 90, 5: 50}
+   :feedback_d: key2 is an unbound variable here. d['key2'] would be OK.
+   :correct: a,c
     
-    Which of the following is a legal assignment statement, after the following code executes?
+   Which of the following is a legal assignment statement, after the following code executes?
     
-    .. code-block:: python 
+   .. code-block:: python 
     
-        d = {'key1': {'a': 5, 'c': 90, 5: 50}, 'key2':{'b': 3, 'c': "yes"}} 
+       d = {'key1': {'a': 5, 'c': 90, 5: 50}, 'key2':{'b': 3, 'c': "yes"}} 
 

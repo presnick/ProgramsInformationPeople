@@ -119,25 +119,25 @@ terminates. That also makes a while loop harder to read and understand than the 
 
 **Check your understanding**
 
-.. mchoicemf:: test_question7_2_1
+.. mchoice:: test_question7_2_1
    :answer_a: True
    :answer_b: False
-   :correct: a
    :feedback_a: Although the while loop uses a different syntax, it is just as powerful as a for-loop and often more flexible.
    :feedback_b: Often a for-loop is more natural and convenient for a task, but that same task can always be expressed using a while loop.
+   :correct: a
 
    True or False: You can rewrite any for-loop as a while-loop.
 
-.. mchoicemf:: test_question7_2_2
+.. mchoice:: test_question7_2_2
    :answer_a: n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
    :answer_b: answer starts at 1 and is incremented by n each time, so it will always be positive
    :answer_c: You cannot compare n to 0 in while loop.  You must compare it to another variable.
-   :answer_d: In the while loop body, we must set n to False, and this code does not do that.  
-   :correct: a
+   :answer_d: In the while loop body, we must set n to False, and this code does not do that.
    :feedback_a: The loop will run as long as n is positive.  In this case, we can see that n will never become non-positive.
    :feedback_b: While it is true that answer will always be positive, answer is not considered in the loop condition.
    :feedback_c: It is perfectly valid to compare n to 0.  Though indirectly, this is what causes the infinite loop.
    :feedback_d: The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.
+   :correct: a
 
    The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?
 
@@ -150,14 +150,14 @@ terminates. That also makes a while loop harder to read and understand than the 
        n = n + 1
      print answer
 
-.. mchoicemf:: test_question7_3_1
+.. mchoice:: test_question7_3_1
    :answer_a: a for-loop or a while-loop
    :answer_b: only a for-loop
    :answer_c: only a while-loop
-   :correct: a
    :feedback_a: Although you do not know how many iterations you loop will run before the program starts running, once you have chosen your random integer, Python knows exactly how many iterations the loop will run, so either a for-loop or a while-loop will work.
    :feedback_b: As you learned in section 7.2, a while-loop can always be used for anything a for-loop can be used for.
    :feedback_c: Although you do not know how many iterations you loop will run before the program starts running, once you have chosen your random integer, Python knows exactly how many iterations the loop will run, so this is an example of definite iteration.
+   :correct: a
 
    Which type of loop can be used to perform the following iteration: You choose a positive integer at random and then print the numbers from 1 up to and including the selected integer.
 

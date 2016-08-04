@@ -37,8 +37,8 @@ For example, let's look at an invocation of the split method.
    print len(z)
    print z
    for w in z:
-      print w
-      
+       print w
+     
 The split method operates on a string. Because it is a method rather than a
 regular function, the string it operates on appears to the left of the period, 
 rather than inside the parentheses. The split method always returns a list.

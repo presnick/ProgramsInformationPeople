@@ -17,14 +17,14 @@ Dictionary Accumulation In Class Code Samples
     ######Count occurrences of letter i###########
     icount = 0
     for letter in str2:
-       if letter == 'i':
-          icount += 1
+        if letter == 'i':
+            icount += 1
     print icount
 
     icount = 0
     for letter in "team":
-       if letter == 'i':
-          icount += 1
+        if letter == 'i':
+            icount += 1
     print icount
 
 .. activecode:: session8_1
@@ -36,10 +36,10 @@ Dictionary Accumulation In Class Code Samples
     vcounts= [0,0,0,0,0]
     vowels = ['a', 'e', 'i', 'o', 'uu']
     for letter in str2:
-       if letter in vowels:
-          vcounts[vowels.index(letter)] += 1
+        if letter in vowels:
+            vcounts[vowels.index(letter)] += 1
     for vowel in vowels:
-       print vowel + ": " + str(vcounts[vowels.index(vowel)])
+        print vowel + ": " + str(vcounts[vowels.index(vowel)])
 
 .. activecode:: session8_2
 
@@ -60,14 +60,14 @@ Dictionary Accumulation In Class Code Samples
     # one more way to initialize
     d = {}
     for vowel in vowels:
-       d[vowel] = 0
+        d[vowel] = 0
 
     for letter in str2:
-       if letter in vowels:
-          d[letter] += 1
+        if letter in vowels:
+            d[letter] += 1
 
     for vowel in vowels:
-       print vowel + ": " + str(d[vowel])
+        print vowel + ": " + str(d[vowel])
 
 .. activecode:: session8_3
 
@@ -88,14 +88,14 @@ Dictionary Accumulation In Class Code Samples
     # one more way to initialize
     d = {}
     for vowel in vowels:
-       d[vowel] = 0
+        d[vowel] = 0
 
     for letter in str2:
-       if letter in vowels:
-          d[letter] += 1
+        if letter in vowels:
+            d[letter] += 1
 
     for vowel in vowels:
-       print vowel + ": " + str(d[vowel])
+        print vowel + ": " + str(d[vowel])
 
 .. activecode:: session8_4
 
@@ -106,14 +106,14 @@ Dictionary Accumulation In Class Code Samples
     ######Method 3: create counters as needed######
     d = {}
     for letter in str2:
-       if letter in d:
-          d[letter] += 1
-       else:
-          d[letter] = 1
+        if letter in d:
+            d[letter] += 1
+        else:
+            d[letter] = 1
 
     for vowel in vowels:
-       if vowel in d:
-          print vowel + ": " + str(d[vowel])
+        if vowel in d:
+            print vowel + ": " + str(d[vowel])
     print d
 
 .. activecode:: session8_5
@@ -125,15 +125,15 @@ Dictionary Accumulation In Class Code Samples
     #######Accumulating from a dictionary: how many vowels?#######
     d = {}
     for letter in str2:
-       if letter in d:
-          d[letter] += 1
-       else:
-          d[letter] = 1
+        if letter in d:
+            d[letter] += 1
+        else:
+            d[letter] = 1
 
     tot = 0
     for letter in d.keys():
-       if letter in vowels:
-          tot += d[letter]
+        if letter in vowels:
+            tot += d[letter]
     print tot
 
 .. activecode:: session8_6
@@ -145,16 +145,16 @@ Dictionary Accumulation In Class Code Samples
     ####### Scrabble values: combining two dictionaries######
     d = {}
     for letter in str2:
-       if letter in d:
-          d[letter] += 1
-       else:
-          d[letter] = 1
+        if letter in d:
+            d[letter] += 1
+        else:
+            d[letter] = 1
 
     letter_values = {' ': 0, 'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f':4, 'g': 2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1, 'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1, 's':1, 't':1, 'uu':1, 'v':8, 'w':4, 'x':8, 'y':4, 'z':10}
 
     tot = 0
     for letter in d: # same as iterating over d.keys()
-       tot = tot + letter_values[letter] * d[letter]
+        tot = tot + letter_values[letter] * d[letter]
 
     print tot
 
@@ -167,15 +167,15 @@ Dictionary Accumulation In Class Code Samples
     ####### which letter occurs most frequently? ########
     d = {}
     for letter in str2:
-       if letter in d:
-          d[letter] += 1
-       else:
-          d[letter] = 1
+        if letter in d:
+            d[letter] += 1
+        else:
+            d[letter] = 1
 
     letters = d.keys()
     best_letter_so_far = letters[0]
     for let in letters:
-       if d[let] > d[best_letter_so_far]:
-          best_letter_so_far = let
+        if d[let] > d[best_letter_so_far]:
+            best_letter_so_far = let
 
     print best_letter_so_far + " has the highest value, " + str(d[best_letter_so_far])

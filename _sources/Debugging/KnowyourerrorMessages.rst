@@ -41,14 +41,14 @@ Let's try the program again, but this time in an activecode window:
 
 Aha!  Now we have an error message that might be useful.  The name error tells us that  ``wait_time_int`` is not defined.  It also tells us that the error is on line 5.  That's **really** useful information.  Now look at line five and you will see that ``wait_time_int`` is used on both the left and the right hand side of the assignment statement. 
 
-.. mchoicemf:: db_qex32
+.. mchoice:: db_qex32
    :answer_a: You cannot use a variable on both the left and right hand sides of an assignment statement.
    :answer_b: wait_time_int does not have a value so it cannot be used on the right hand side.
    :answer_c: This is not really an error, Python is broken.
-   :correct: b
    :feedback_a: No, You can, as long as all the variables on the right hand side already have values.
    :feedback_b: Yes.  Variables must already have values in order to be used on the right hand side.
    :feedback_c: No, No, No!
+   :correct: b
 
    Which of the following explains why ``wait_time_int = int(wait_time_int)`` is an error.
 
@@ -166,14 +166,14 @@ your clue that it thinks the string ends after the word the (because there's a c
 when you put your cursor to left of a ``)``, it changes the color of that parenthesis and its matching ``(``. And similarly if
 you put the cursor to the left of ``(``. But check what happens if the ``(`` has no matching ``)``.
 
-.. mchoicemf:: db_qex33
+.. mchoice:: db_qex33
    :answer_a: Nothing. The program has a syntax error and can't run.
    :answer_b: The left parenthesis turns green.
    :answer_c: The left parenthesis turns red.
-   :correct: c
-   :feedback_a: You may be reading too fast and not trying to test your understanding using an ActiveCode window
+   :feedback_a: You may be reading too fast and not trying to test your understanding using an ActiveCode window.
    :feedback_b: Sounds like you tried it on a left paren that did have a matching right paren.
-   :feedback_c: This color coding is your friend and can help you notice and fix parenthesis errors
+   :feedback_c: This color coding is your friend and can help you notice and fix parenthesis errors.
+   :correct: c
 
    In an ActiveCode window, what happens when you put the cursor left of a left parenthesis ``(`` that has no matching right parenthesis ``)``?
 

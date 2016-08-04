@@ -21,8 +21,8 @@ One very common pattern is called a **listener loop**. Inside the while loop the
    theSum = 0
    x = -1
    while (x != 0):
-      x = int(raw_input("next number to add up (enter 0 if no more numbers): "))
-      theSum = theSum + x
+       x = int(raw_input("next number to add up (enter 0 if no more numbers): "))
+       theSum = theSum + x
 
    print theSum
    

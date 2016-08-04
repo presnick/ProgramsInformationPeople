@@ -14,11 +14,11 @@ Now consider another common pattern: going through a list and keeping only those
 .. activecode:: listcomp_5
 
    def keep_evens(nums):
-      new_list = []
-      for num in nums:
-         if num % 2 == 0:
-            new_list.append(num)
-      return new_list
+       new_list = []
+       for num in nums:
+           if num % 2 == 0:
+               new_list.append(num)
+       return new_list
       
    print keep_evens([3, 4, 6, 7, 0, 1])
 
@@ -27,8 +27,8 @@ Again, this pattern of computation is so common that python offers a more compac
 .. activecode:: listcomp_6
 
    def keep_odds(nums):
-      new_list = filter(lambda num: num % 2 == 1, nums)
-      return new_list
+       new_list = filter(lambda num: num % 2 == 1, nums)
+       return new_list
       
    print keep_odds([3, 4, 6, 7, 0, 1])
 

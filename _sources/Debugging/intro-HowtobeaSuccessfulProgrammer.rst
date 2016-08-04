@@ -57,14 +57,14 @@ So far so good.  Now lets take the next step.  We need to figure out what the ti
 
 Hmm, when you run that example you see that something funny has happened.
 
-.. mchoicemf:: db_q_ex3_1
+.. mchoice:: db_q_ex3_1
    :answer_a: Python is stupid and does not know how to add properly.
    :answer_b: There is nothing wrong here.
    :answer_c: Python is doing string concatenation, not integer addition.
-   :correct: c
    :feedback_a: No, Python is probabaly not broken.
    :feedback_b: No, try adding the two numbers together yourself, you will definitely get a different result.
    :feedback_c: Yes!  Remember that input returns a string.  Now we will need to convert the string to an integer
+   :correct: c
 
    Which of the following best describes what is wrong with the  previous example?
 

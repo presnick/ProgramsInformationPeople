@@ -67,42 +67,42 @@ executed a second time.
 
 **Check your understanding**
 
-.. mchoicemf:: test_questionfunctions_1_1
+.. mchoice:: test_questionfunctions_1_1
    :answer_a: A named sequence of statements.
    :answer_b: Any sequence of statements.
    :answer_c: A mathematical expression that calculates a value.
    :answer_d: A statement of the form x = 5 + 4.
-   :correct: a
    :feedback_a: Yes, a function is a named sequence of statements.
    :feedback_b: While functions contain sequences of statements, not all sequences of statements are considered functions.
    :feedback_c: While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values.  Consider, for example, the turtle functions in this section.   They made the turtle draw a specific shape, rather than calculating a value.
    :feedback_d: This statement is called an assignment statement.  It assigns the value on the right (9), to the name on the left (x).
+   :correct: a
 
    What is a function in Python?
 
 
-.. mchoicemf:: test_questionfunctions_1_2
+.. mchoice:: test_questionfunctions_1_2
    :answer_a: To improve the speed of execution
    :answer_b: To help the programmer organize programs into chunks that match how they think about the solution to the problem.
    :answer_c: All Python programs must be written using functions
    :answer_d: To calculate values.
-   :correct: b
    :feedback_a: Functions have little effect on how fast the program runs.
    :feedback_b: While functions are not required, they help the programmer better think about the solution by organizing pieces of the solution into logical chunks that can be reused.
    :feedback_c: In the first several chapters, you have seen many examples of Python programs written without the use of functions.  While writing and using functions is desirable and essential for good programming style as your programs get longer, it is not required.
    :feedback_d: Not all functions calculate values.
+   :correct: b
 
    What is one main purpose of a function?
 
 
-.. mchoicemf:: test_questionfunctions_1_2a
+.. mchoice:: test_questionfunctions_1_2a
    :answer_a: 0
    :answer_b: 1
    :answer_c: 2
-   :correct: a
    :feedback_a: The code only defines the function. Nothing prints until the function is called.
    :feedback_b: Check again.
    :feedback_c: When the function is invoked, it will print two lines, but it has only been defined, not invoked.
+   :correct: a
 
    How many lines will be output by executing this code?
    
@@ -113,18 +113,18 @@ executed a second time.
          print "Glad to meet you"
 
 
-.. mchoicemf:: test_questionfunctions_1_2b
+.. mchoice:: test_questionfunctions_1_2b
    :answer_a: 0
    :answer_b: 1
    :answer_c: 3
    :answer_d: 4
    :answer_e: 7
-   :correct: e
    :feedback_a: Here the the function is invoked and there is also a separate print statement.
    :feedback_b: There is only one print statement outside the funciton, but the invocations of hello also cause lines to print.
    :feedback_c: There are three print statements, but the function is invoked more than once.
    :feedback_d: Each time the function is invoked, it will print two lines, not one.
    :feedback_e: Three invocations generate two lines each, plus the line "It works"
+   :correct: e
 
    How many lines will be output by executing this code?
 

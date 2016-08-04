@@ -85,15 +85,14 @@ change the original.  You can also consult the `Python documentation for strings
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_3_1
+.. mchoice:: test_question8_3_1
    :answer_a: 0
    :answer_b: 2
    :answer_c: 3
-   :correct: c
    :feedback_a: There are definitely o and p characters.
    :feedback_b: There are 2 o characters but what about p?
    :feedback_c: Yes, add the number of o characters and the number of p characters.
-
+   :correct: c
 
    What is printed by the following statements?
    
@@ -103,19 +102,16 @@ change the original.  You can also consult the `Python documentation for strings
       print s.count("o") + s.count("p")
 
 
-
-
-.. mchoicemf:: test_question8_3_2
+.. mchoice:: test_question8_3_2
    :answer_a: yyyyy
    :answer_b: 55555
    :answer_c: n
    :answer_d: Error, you cannot combine all those things together.
-   :correct: a
    :feedback_a: Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the index method has precedence over the repetition operator.  Repetition is done last.
    :feedback_b: Close.  5 is not repeated, it is the number of times to repeat.
    :feedback_c: This expression uses the index of n
    :feedback_d: This is fine, the repetition operator used the result of indexing and the index method.
-
+   :correct: a
 
    What is printed by the following statements?
    

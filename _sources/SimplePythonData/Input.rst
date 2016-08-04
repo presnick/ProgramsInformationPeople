@@ -57,16 +57,16 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
 
 **Check your understanding**
 
-.. mchoicemf:: test_question2_7_1
+.. mchoice:: test_question2_7_1
    :answer_a: &lt;class 'str'&gt;
    :answer_b: &lt;class 'int'&gt;
    :answer_c: &lt;class 18&gt;
    :answer_d: 18
-   :correct: a
    :feedback_a: All input from users is read in as a string.
    :feedback_b: Even though the user typed in an integer, it does not come into the program as an integer.
    :feedback_c: 18 is the value of what the user typed, not the type of the data.
    :feedback_d: 18 is the value of what the user typed, not the type of the data.
+   :correct: a
 
    What is printed when the following statements execute?
 

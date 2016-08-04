@@ -122,16 +122,16 @@ appended is not present in the list that is printed on line 9.
 
 **Check your understanding**
 
-.. mchoicemf:: test_questionopt_params_1
+.. mchoice:: test_questionopt_params_1
    :answer_a: 0
    :answer_b: 1
    :answer_c: None
    :answer_d: Runtime error since no parameters are passed in the call to f
-   :correct: a
-   :feedback_a: Since no parameters are specified, x is 0 and y is 1, so 0 is returned
+   :feedback_a: Since no parameters are specified, x is 0 and y is 1, so 0 is returned.
    :feedback_b: 0 * 1 is 0.
-   :feedback_c: The function does return a value
-   :feedback_d: Because both parameters have default values specified in the definition, they are both optional
+   :feedback_c: The function does return a value.
+   :feedback_d: Because both parameters have default values specified in the definition, they are both optional.
+   :correct: a
 
    What will the following code print?
    
@@ -142,16 +142,16 @@ appended is not present in the list that is printed on line 9.
            
        print f()
 
-.. mchoicemf:: test_questionopt_params_2
+.. mchoice:: test_questionopt_params_2
    :answer_a: 0
    :answer_b: 1
    :answer_c: None
    :answer_d: Runtime error since the second parameter value is missing
-   :correct: b
    :feedback_a: Since one parameter value is specified, it is bound to x; y gets the default value of 1
    :feedback_b: Since one parameter value is specified, it is bound to x; y gets the default value of 1
-   :feedback_c: The function does return a value
-   :feedback_d: Because both parameters have default values specified in the definition, they are both optional
+   :feedback_c: The function does return a value.
+   :feedback_d: Because both parameters have default values specified in the definition, they are both optional.
+   :correct: b
 
    What will the following code print?
    

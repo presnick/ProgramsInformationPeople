@@ -37,11 +37,11 @@ Consider the following example.
 .. activecode:: function2_7
    
    def double(y):
-      y = 2 * y
+       y = 2 * y
    
    def changeit(lst):
-      lst[0] = "Michigan"
-      lst[1] = "Wolverines"
+       lst[0] = "Michigan"
+       lst[1] = "Wolverines"
 
    y = 5
    double(y)

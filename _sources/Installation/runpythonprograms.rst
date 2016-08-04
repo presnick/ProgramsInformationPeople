@@ -21,4 +21,4 @@ Finally, you are ready to run a python program! At the terminal window, type ``p
 
    If in a terminal window you type ``python`` without specifying a filename, it launches the **python interpreter** and gives a little different command prompt. It's then waiting for you type python commands one at a time, which it immediately evaluates. In my experience, using the python interpreter is very confusing for beginning students, because it mixes up the idea of printed representations being generated only by explicit print statements (print is for people!). If you accidentally launch the python interpreter, I encourage you to just kill it, by typing ``exit()``.
    
-	.. image:: Figures/pythoninterpreter.JPG
+    .. image:: Figures/pythoninterpreter.JPG

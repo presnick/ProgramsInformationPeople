@@ -52,15 +52,15 @@ As we did when passing a function as a parameter to the ``sorted`` function, we 
 .. activecode:: listcomp_3
 
    def triple(value):
-      return 3*value
+       return 3*value
       
    def tripleStuff(a_list):
-      new_list = map(triple, a_list)
-      return new_list
+       new_list = map(triple, a_list)
+       return new_list
 
    def quadrupleStuff(a_list):
-      new_list = map(lambda value: 4*value, a_list)
-      return new_list      
+       new_list = map(lambda value: 4*value, a_list)
+       return new_list      
       
    things = [2, 5, 9]
    things3 = tripleStuff(things)

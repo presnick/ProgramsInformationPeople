@@ -100,15 +100,16 @@ Problem Set
 
    y = subtract_five(9) - 6
 
-   ====
+   =====
 
-   print "\n---\n\n"
-   import test
-   try:
-       print "testing if y is -2"
-       test.testEqual(y, -2)
-   except:
-       print "The variable y was deleted or is not defined"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(y, -2, "Testing if y is -2")
+
+   myTests().main()
 
 2. Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
@@ -126,21 +127,21 @@ Problem Set
 
 .. activecode:: ps_5_3
 
-    # We've started you off with the first line...
-    def change_amounts(num_here):
+   # We've started you off with the first line...
+   def change_amounts(num_here):
        pass # delete this line and put in your own code for the body of the function.
 
-    ====
+   =====
 
-    print "\n---\n\n"
-    import test
-    try:
-      print "testing if change_amounts(9) equals 11"
-      test.testEqual(change_amounts(9),11)
-      print "testing if change_amounts(12) equals 17"
-      test.testEqual(change_amounts(12),17)
-    except:
-      print "The function change_amounts has not been defined properly"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
+         self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
+
+   myTests().main()
 
 
 4. We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
@@ -150,53 +151,54 @@ Problem Set
 
    # Write code here!
     
-   ====
-    
-   print "\n---\n\n"
-   import test
-   try:
-     print "testing whether abc is set correctly"
-     test.testEqual(abc, 'the')
-   except:
-     print "The variable abc has not been defined"
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(abc, 'the', "testing whether abc is set correctly.")
+
+   myTests().main()
 
 
 5. Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Write a comment explaining why an error occurs. Then fix line 5 so that it does not generate an error.
 
 .. activecode:: ps_5_5
 
-    def change_amounts(yp):
+   def change_amounts(yp):
        n = yp - 4
        return n * 7
 
-    print yp
+   print yp
 
-    ====
+   ====
 
-    print "\n---\n\n"
-    print "There are no tests for this problem"
+   print "\n---\n\n"
+   print "There are no tests for this problem"
 
 7. See comments and code below for instructions.
 
 .. activecode:: ps_5_7
 
-    # Here is a function definition. DO NOT change it!
-    def list_end_with_string(new_list):
-        if type(new_list[-1]) == type("hello"):
-            return new_list
-        new_list.append("the last element is a string no matter what now!")
-        return new_list
+   # Here is a function definition. DO NOT change it!
+   def list_end_with_string(new_list):
+       if type(new_list[-1]) == type("hello"):
+           return new_list
+       new_list.append("the last element is a string no matter what now!")
+       return new_list
 
-    # Play around with this function with the following function calls.
-    l = [3,46,6]
-    b = [4,"hi",10,"12",12,123,"whoa!"]
-    print list_end_with_string([1,2])
-    print list_end_with_string(l)
-    print list_end_with_string(b)
+   # Play around with this function with the following function calls.
+   l = [3,46,6]
+   b = [4,"hi",10,"12",12,123,"whoa!"]
+   print list_end_with_string([1,2])
+   print list_end_with_string(l)
+   print list_end_with_string(b)
 
-    # Now write a couple invocations of this function yourself below this line.
+   # Now write a couple invocations of this function yourself below this line.
 
-    # Finally, write a few sentences in comments that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like l gets input into this function AND what happens if a list like b gets input into it.
+   # Finally, write a few sentences in comments that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like l gets input into this function AND what happens if a list like b gets input into it.
 
 8. Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns ``False`` otherwise.
 
@@ -214,21 +216,19 @@ Problem Set
       print is_prefix("Hel","Hello") # should print True
       # Remember, these won't work at all until you have defined a function called is_prefix
 
-      ====
+      =====
 
-      print "\n---\n\n"
-      import test
-      try:
-        print 'testing whether "Big" is a prefix of "Bigger"'
-        test.testEqual(is_prefix("Big", "Bigger"), True)
-        print 'testing whether "Bigger" is a prefix of "Big"'
-        test.testEqual(is_prefix("Bigger", "Big"), False)
-        print 'testing whether "ge" is a prefix of "Bigger"'
-        test.testEqual(is_prefix("ge","Bigger"), False)
-        print 'testing whether "Bigge" is a prefix of "Bigger"'
-        test.testEqual(is_prefix("Bigge","Bigger"),True)
-      except:
-        print "Looks like the function is_prefix has not been defined or has another error"
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(is_prefix("Big", "Bigger"), True, "Testing whether 'Big' is a prefix of 'Bigger'")
+            self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
+            self.assertEqual(is_prefix('ge', 'Bigger'), False, "Testing whether 'ge' is a prefix of 'Bigger'")
+            self.assertEqual(is_prefix('Bigge', "Bigger"), True, "Testing whether 'Bigge' is a prefix of 'Bigger'")
+
+      myTests().main()
 
 
 9. Define a python function ``grep`` that works just like the unix command ``grep``. Your function should take two inputs, a string and a filename. It should return a list of all the lines in the file that contain the string, and only the lines in the file that contain the string.
@@ -238,24 +238,24 @@ Problem Set
 
    # Write code here!
 
-   ====
+   =====
 
-   print "\n---\n\n"
-   import test
-   def solgrep(a, b):
-     lines = open(b, 'r').readlines()
-     acc = []
-     for l in lines:
-       if a in l:
-         acc.append(l)
-     return acc
-   try:
-     print "testing whether grep('autumn', 'timely_file.txt') returns the right two lines"
-     test.testEqual(grep('autumn', 'timely_file.txt'), solgrep('autumn', 'timely_file.txt'))
-     print "testing whether grep('fool', 'timely_file.txt') correctly returns an empty list"
-     test.testEqual(grep('fool', 'timely_file.txt'), solgrep('fool', 'timely_file.txt'))
-   except:
-     print "The function grep has not been defined yet"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         def solgrep(a, b):
+            lines = open(b, 'r').readlines()
+            acc = []
+            for l in lines:
+               if a in l:
+                  acc.append(l)
+            return acc
+         self.assertEqual(grep('autumn', 'timely_file.txt'), solgrep('autumn', 'timely_file.txt'), "testing whether grep('autumn', 'timely_file.txt') returns the right two lines.")
+         self.assertEqual(grep('fool', 'timely_file.txt'), solgrep('fool', 'timely_file.txt'), "Testing whether grep('fool', 'timely_file.txt') correctly returns an empty list.")
+         
+   myTests().main()
 
 
 10. Write code that repeatedly asks the user to input numbers. Keep going until the sum of the numbers is 21 or more. Print out the total.

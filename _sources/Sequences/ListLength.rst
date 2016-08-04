@@ -24,12 +24,12 @@ Note that ``alist[0]`` is the string ``"hello"``, which has length 5.
 
 **Check your understanding**
 
-.. mchoicemf:: test_question9_2_1 
+.. mchoice:: test_question9_2_1 
    :answer_a: 4
    :answer_b: 5
-   :correct: b
    :feedback_a: len returns the actual number of items in the list, not the maximum index value.
    :feedback_b: Yes, there are 5 items in this list.
+   :correct: b
 
    What is printed by the following statements?
    
@@ -39,16 +39,16 @@ Note that ``alist[0]`` is the string ``"hello"``, which has length 5.
      print len(alist)
     
         
-.. mchoicemf:: test_question9_2_2 
+.. mchoice:: test_question9_2_2 
    :answer_a: 2
    :answer_b: 3
    :answer_c: 4
    :answer_d: 5
-   :correct: b
    :feedback_a: The list begins with the second item of L and includes everything up to but not including the last item.
    :feedback_b: Yes, there are 3 items in this list.
    :feedback_c: The list begins with the second item of L and includes everything up to but not including the last item.
    :feedback_d: The list begins with the second item of L and includes everything up to but not including the last item.
+   :correct: b
 
    What is printed by the following statements?
    

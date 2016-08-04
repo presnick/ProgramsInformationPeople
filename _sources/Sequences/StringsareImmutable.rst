@@ -38,14 +38,14 @@ The solution here is to concatenate a new first letter onto a slice of
 
 **Check your understanding**
 
-.. mchoicemf:: test_question8_7_1
+.. mchoice:: test_question8_7_1
    :answer_a: Ball
    :answer_b: Call
    :answer_c: Error
-   :correct: c
    :feedback_a: Assignment is not allowed with strings.
    :feedback_b: Assignment is not allowed with strings.
    :feedback_c: Yes, strings are immutable.
+   :correct: c
 
    What is printed by the following statements:
    
@@ -54,7 +54,6 @@ The solution here is to concatenate a new first letter onto a slice of
       s = "Ball"
       s[0] = "C"
       print s
-
 
 
 .. index::

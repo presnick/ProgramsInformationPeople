@@ -93,19 +93,18 @@ Similarly ``x % 100`` yields the last two digits.
 
 **Check your understanding**
 
-
-.. mchoicemf:: test_question2_6_1a
+.. mchoice:: test_question2_6_1a
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :correct: c
    :feedback_a: Because 18 and 4 are ints, / does integer division.
    :feedback_b: Integer division results in truncation, not rounding up.
    :feedback_c: Because 18 and 4 are ints, / does integer division.
    :feedback_d: Because 18 and 4 are ints, / does integer division and produces an integer.
    :feedback_e: / does division. Perhaps you were thinking of %, which computes the remainder?
+   :correct: c
 
    What value is printed when the following statement executes?
 
@@ -113,18 +112,18 @@ Similarly ``x % 100`` yields the last two digits.
 
       print 18 / 4
 
-.. mchoicemf:: test_question2_6_1
+.. mchoice:: test_question2_6_1
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :correct: a
    :feedback_a: Because 18.0 is a float, / does exact division.
    :feedback_b: Because 18.0 is a float, / does exact division.
    :feedback_c: Because 18.0 is a float, / does exact division.
    :feedback_d: Because 18.0 is a float, / does exact division.
    :feedback_e: / does division. Perhaps you were thinking of %, which computes the remainder?
+   :correct: a
 
    What value is printed when the following statement executes?
 
@@ -133,19 +132,18 @@ Similarly ``x % 100`` yields the last two digits.
       print 18.0 / 4
 
 
-
-.. mchoicemf:: test_question2_6_2
+.. mchoice:: test_question2_6_2
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :correct: d
    :feedback_a: - The // operator does integer division, not exact divisions
    :feedback_b: - Integer division results in truncation, not rounding up.
    :feedback_c: - The // operator does integer division, but it yields a float when one of the operands is a float/
    :feedback_d: - The // operator does integer division, and  it yields a float when one of the operands is a float.
    :feedback_e: - / does division. Perhaps you were thinking of %, which computes the remainder?
+   :correct: d
 
    What value is printed when the following statement executes?
 
@@ -154,16 +152,16 @@ Similarly ``x % 100`` yields the last two digits.
       print 18.0 // 4
 
 
-.. mchoicemf:: test_question2_6_3
+.. mchoice:: test_question2_6_3
    :answer_a: 4.25
    :answer_b: 5
    :answer_c: 4
    :answer_d: 2
-   :correct: d
    :feedback_a: The % operator returns the remainder after division.
    :feedback_b: The % operator returns the remainder after division.
    :feedback_c: The % operator returns the remainder after division.
    :feedback_d: The % operator returns the remainder after division.
+   :correct: d
 
    What value is printed when the following statement executes?
 
