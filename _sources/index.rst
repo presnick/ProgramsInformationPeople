@@ -127,6 +127,7 @@ Sequences
    Sequences/SplitandJoin.rst
    Sequences/Glossary.rst
    Sequences/Exercises.rst
+   Sequences/ExtraExercises.rst
 
 
 Iteration
