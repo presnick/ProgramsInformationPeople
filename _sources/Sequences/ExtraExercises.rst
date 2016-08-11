@@ -8,7 +8,7 @@
     License".
 
 Extra Exercises
-=====
+===============
 
 1. Assign the value of the 34st element of ``lst`` to the variable ``output``.
 

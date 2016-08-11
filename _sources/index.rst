@@ -147,6 +147,7 @@ Iteration
    Iteration/TheAccumulatorPatternwithStrings.rst
    Iteration/Glossary.rst
    Iteration/Exercises.rst
+   Iteration/ExtraExercises.rst
 
 Conditionals
 ::::::::::::
