@@ -8,7 +8,7 @@
     License".
 
 Extra Exercises
-=====
+===============
 
 1. Assign the value of the 34st element of ``lst`` to the variable ``output``.
 
@@ -115,7 +115,7 @@ Extra Exercises
 
    myTests().main()
 
-4. Create a new list of the 6th through 14th elements of ``lst`` and assign it to the variable ``output``.
+4. Create a new list of the 6th through 13th elements of ``lst`` (eight items in all) and assign it to the variable ``output``.
 
 .. activecode:: ee_ch9_04
    
@@ -128,11 +128,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFour(self):
-         self.assertEqual(output, ["shine", "marsh", "winter", "donkey", "rain", ["Rio", "Beijing", "London"], [1,2,3], "gold"], "Testing that output value is assigned to correct value.")
+         self.assertEqual(output, lst[5:13], "Testing that output value is assigned to correct value.")
 
    myTests().main()
 
-4.1 Create a new list using the 9th through 12th elements of ``new_lst`` and assign it to the variable``sub_lst``.
+4.1 Create a new list using the 9th through 12th elements (four items in all) of ``new_lst`` and assign it to the variable``sub_lst``.
 
 .. activecode:: ee_ch9_041
    :tags: Sequences/TheSliceOperator.rst
@@ -146,11 +146,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(sub_lst, new_lst[8:13], "Testing that sub_lst has the correct elements assigned.")
+         self.assertEqual(sub_lst, new_lst[8:12], "Testing that sub_lst has the correct elements assigned.")
 
    myTests().main()
 
-5. Create a new string of ``str1`` but lowercase and assign it to the variable ``output``. Do not hard code this.
+5. Create a new string from ``str1`` that is all lower case, and assign it to the variable ``output``. Do not hard code this: use a python string method to convert str1 to lower case.
 
 .. activecode:: ee_ch9_05
       
@@ -167,7 +167,7 @@ Extra Exercises
 
    myTests().main()
 
-5.1 Create a variable called ``low_stri`` and assign it the value of stri, but lowercase. Do not hardcode this.
+5.1 Create a variable called ``low_stri`` and assign it the value of stri, but lowercased. Do not hard code this: use a python string method to convert str1 to lower case.
 
 .. activecode:: ee_ch9_051
    :tags: Sequences/StringMethods.rst
@@ -239,7 +239,7 @@ Extra Exercises
    myTests().main()
 
 
-7.1 Add the string dogs to the end of the list ``pets``. Do this using a list method.
+7.1 Add the string "dogs" to the end of the list ``pets``. Do this using a list method.
 
 .. activecode:: ee_ch_071
    :tags: Sequences/AppendversusConcatenate.rst
@@ -310,7 +310,7 @@ Extra Exercises
 
    myTests().main()
 
-9.1 **Challenge:** Please get rid of the fourth element in the list ``office``. Then, replace that element with the string chair.
+9.1 **Challenge:** Please get rid of the fourth element in the list ``office``. Then, replace that element with the string "chair".
 
 .. activecode:: ee_ch_091
    :tags: Sequences/ListDeletion.rst, Sequences/ListMethods.rst
@@ -405,7 +405,7 @@ Extra Exercises
 
    myTests().main()
 
-12. **Challenge** Remove the whitespace from ``str1`` and assign the new string to variable ``newstring``. Then save the number of characters of ``newstring`` to ``newlength``. Next, split ``newstring`` on every occurrence the letter 'p' and assign to ``output``.
+12. **Challenge** Remove the whitespace from the beginning and end of ``str1`` and assign the new string to variable ``newstring``. Then save the number of characters of ``newstring`` to ``newlength``. Next, split ``newstring`` on every occurrence the letter 'p' and assign to ``output``.
 
 .. activecode:: ee_ch9_12
 
@@ -428,7 +428,7 @@ Extra Exercises
 
    myTests().main()
 
-12.1 **Challenge:** Remove the white space in the variable ``full_sent`` and assign that to the variable ``sent``. Then, save the number of characters in sent to a variable called ``char_sent``. Finally, assign to the variable ``word_c``, the value of sent, split on every occurance of the letter c.
+12.1 **Challenge:** Remove the white space from the beginning and the end of the string bound to the variable ``full_sent`` and assign that to the variable ``sent``. Then, save the number of characters in sent to a variable called ``char_sent``. Finally, assign to the variable ``word_c``, the value of sent, split on every occurance of the letter c.
 
 .. activecode:: ee_ch_121
    :tags: Sequences/StringMethods.rst, Sequences/Length.rst, Sequences/SplitandJoin.rst
