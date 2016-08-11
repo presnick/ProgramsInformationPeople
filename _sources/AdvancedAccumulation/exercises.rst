@@ -254,6 +254,7 @@ Finally, try doing it using reduce
          self.assertEqual(sumSquares(nums), 19, "Testing whether sumSquares has been correctly defined.")
 
    myTests().main()
+
 Use the zip function to take the lists below and turn them into a list of tuples, with all the first items in the first tuple, etc.
 
 .. activecode:: zip_exercise_1
