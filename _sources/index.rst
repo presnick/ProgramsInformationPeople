@@ -161,6 +161,7 @@ Conditionals
    Selection/Chainedconditionals.rst
    Selection/Glossary.rst
    Selection/Exercises.rst
+   Selection/ExtraExercises.rst
 
 Files
 :::::
