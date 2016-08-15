@@ -201,6 +201,7 @@ Dictionaries
    Dictionaries/Aliasingandcopying.rst
    Dictionaries/Glossary.rst
    Dictionaries/Exercises.rst
+   Dictionaries/ExtraExercises.rst
 
 
 Accumulating Results in Dictionaries
