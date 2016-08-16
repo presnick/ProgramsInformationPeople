@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. Write code to create a list of integers from 0 through 52 and assign that list to the variable ``numbers``. You should use a special Python function -- do not type out the whole list yourself.
+1. Write code to create a list of integers from 0 through 52 and assign that list to the variable ``numbers``. You should use a special Python function -- do not type out the whole list yourself. HINT: You can do this in one line of code!
 
 .. activecode:: ee_ch10_01
       
@@ -21,7 +21,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(numbers, raneg(53), "Testing that numbers is a list that contains the correct elements.")
+         self.assertEqual(numbers, range(53), "Testing that numbers is a list that contains the correct elements.")
 
    myTests().main()
 
@@ -47,6 +47,7 @@ Extra Exercises
 .. activecode:: ee_ch10_02
 
    str1 = "I love python"
+   # HINT: what's the accumulator? That should go here.
       
    =====
 
@@ -160,7 +161,7 @@ Extra Exercises
 
    myTests().main()
 
-5.1 **Challenge:** Now do this again, however instead of saving the numbers into a new list, overwrite the old list so that lst_nums has the new numbers.
+5.1 **Challenge:** Now do that again, but instead of saving the numbers into a new list, overwrite the old list so that lst_nums has the new numbers.
 
 .. activecode:: ee_ch10_051
 
