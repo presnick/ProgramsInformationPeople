@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. Write code to assign the string "You can apply to SI!" to ``output`` if "SI 106" is in the list ``courses``. If it is not in ``courses``, assign ``output`` to "Take SI 106!"
+1. Write code to assign the string "You can apply to SI!" to ``output`` *if* the string ``"SI 106"`` is in the list ``courses``. If it is not in ``courses``, assign the value ``"Take SI 106!"`` to the variable ``output``.
 
 .. activecode:: ee_ch11_01
    :tags:Selection/ConditionalExecutionBinarySelection.rst
@@ -24,11 +24,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(output, "You can apply to SI!", "Testing that output is assigned to correct values")
+         self.assertEqual(output, "You can apply to SI!", "Testing that output has the correct value, given the courses list provided")
 
    myTests().main()
 
-1.1 Write code so that if "STATS 250" is in the list ``schedule`` then the string "You could be in Information Science!" is assigned to the variable ``resp``. Otherwise, the string "That's too bad." is assigned to the variable ``resp``.
+1.1 Write code so that if ``"STATS 250"`` is in the list ``schedule``, then the string ``"You could be in Information Science!"`` is assigned to the variable ``resp``. Otherwise, the string ``"That's too bad."`` should be assigned to the variable ``resp``.
 
 .. activecode:: ee_ch11_011
    :tags: Selection/ConditionalExecutionBinarySelection.rst
@@ -42,11 +42,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(resp, "You could be in Information Science!", "Testing the value of resp.")
+         self.assertEqual(resp, "You could be in Information Science!", "Testing the value of resp given the schedule list provided.")
 
    myTests().main()
 
-2. Create another variable, ``b``, and assign it the value of 15. Then, test to see if ``b`` is greater than ``a``. If so, then multiply ``a`` by 2. If ``b`` is less than ``a``, nothing should happen. Finally, create variable ``c`` and assign it the value of the sum of ``a`` and ``b``.
+2. Create a variable, ``b``, and assign it the value of ``15``. Then, write code to see if the value ``b`` is greater than that of ``a``. If it is, ``a``'s value should be multiplied by 2. If the value of ``b`` is less than ``a``, nothing should happen. Finally, create variable ``c`` and assign it the value of the sum of ``a`` and ``b``.
 
 .. activecode:: ee_ch11_02
    :tags:Selection/OmittingtheelseClauseUnarySelection.rst
@@ -60,14 +60,14 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testTwoA(self):
-         self.assertEqual(a, 20, "Testing that a is assigned to correct value.")
+         self.assertEqual(a, 20, "Testing that a has the correct value.")
 
       def testTwoB(self):
-         self.assertEqual(c, 35, "Testing that c is assigned to correct value.")
+         self.assertEqual(c, 35, "Testing that c has the correct value.")
 
    myTests().main()
 
-2.2 Create the variable ``z`` whose value is 30. Test to see if z is greater than ``y``,  if so then add 5 to y, otherwise do nothing. Then, multiply z and y, and assign that value to the variable ``x``.
+2.2 Create the variable ``z`` whose value is ``30``. Write code to see if ``z`` is greater than ``y``. If so, add 5 to ``y``'s value, otherwise do nothing. Then, multiply ``z`` and ``y``, and assign the resulting value to the variable ``x``.
 
 .. activecode:: ee_ch11_022
    :tags: Selection/OmittingtheelseClauseUnarySelection.rst
@@ -87,7 +87,7 @@ Extra Exercises
 
    myTests().main()
 
-3. Create one conditional to test if "false" is in string ``str1``. If so, assign variable ``output`` to "False. You aren't you?". Otherwise, test if "true" is in string ``str1``. If so, assign variable ``output`` to "True! You are you!". If neither are in ``str1``, assign ``output`` to "Neither true nor false!"
+3. Create one conditional to find whether "false" is in string ``str1``. If so, assign variable ``output`` to  the string ``"False. You aren't you?".`` Otherwise, if "true" is in string ``str1``. If so, assign variable ``output`` to "True! You are you!". If neither are in ``str1``, assign ``output`` to "Neither true nor false!"
 
 .. activecode:: ee_ch11_03
    :tags:Selection/Chainedconditionals.rst
@@ -105,7 +105,7 @@ Extra Exercises
 
    myTests().main()
 
-3.1 Create one conditional so that if "Friendly" is in ``w``, then "Friendly is here!" should be assigned to the variable ``wrd``, otherwise if "Friend" is in w, then "Friend is here!" should be assigned to the variable wrd, otherwise "No variation of friend is in here." should be assigned to the variable wrd.
+3.1 Create one conditional so that if "Friendly" is in ``w``, then "Friendly is here!" should be assigned to the variable ``wrd``. If it's not, check if "Friend" is in w. If so, the string "Friend is here!" should be assigned to the variable ``wrd``, otherwise "No variation of friend is in here." should be assigned to the variable wrd.
 
 .. activecode:: ee_ch11_031
    :tags: Selection/Chainedconditionals.rst
@@ -124,7 +124,7 @@ Extra Exercises
    myTests().main()
 
 
-4. **Challenge** For each grade in list ``grades``, if the grade is greater than 90, add "Good job!" to list ``notes``. If less than 90 but greater than 80, add "Keep it up!". If less than 80 but greater than 70, add "Study some more!". If less than 70, add "Try going to office hours!"
+4. **Challenge** For each grade in list ``grades``, if the grade is greater than 90, add "Whoa, good job!" to list ``notes``. If less than 90 but greater than 80, add "Keep it up!". If less than 80 but greater than 70, add "Great opportunity to figure out confusions!". If less than 70, add "Join us at office hours!"
 
 .. activecode:: ee_ch11_04
    :tags:Selection/Chainedconditionals.rst
@@ -138,7 +138,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFour(self):
-         self.assertEqual(notes, ['Good job!', 'Try going to office hours!', 'Keep it up!', 'Study some more!', 'Try going to office hours!'], "Testing that notes is assigned to correct values.")
+         self.assertEqual(notes, ['Whoa, good job!', 'Join us at office hours!', 'Keep it up!', 'Great opportunity to figure out confusions!', 'Join us at office hours!'], "Testing that notes holds the correct value.")
 
    myTests().main()
 
@@ -161,7 +161,7 @@ Extra Exercises
    myTests().main()
 
 
-5. For each word in list ``words``, find the number of characters in the string. If the number of characters in each string is greater than 3, add 1 to the variable "num_words" so that num_words should have the total number of words with less than 3 characters.
+5. For each word in list ``words``, find the number of characters in the string. If the number of characters in each string is greater than 3, add 1 to the variable "num_words" so that ``num_words`` should end up with the total number of words with more than 3 characters.
 
 .. activecode:: ee_ch11_05
    :tags:Selection/ConditionalExecutionBinarySelection.rst
@@ -175,14 +175,14 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFive(self):
-         self.assertEqual(num_words, 3, "Testing that num_words is assigned to correct values.")
+         self.assertEqual(num_words, 3, "Testing that num_words has the correct value.")
 
    myTests().main()
 
 5.1 For each string in ``wrd_lst``, find the number of characters in the string. If the number of characters is less than 6, add 1 to ``accum`` so that in the end, accum will have the total number of words that have fewer than 6 characters.
 
 .. activecode:: ee_ch11_051
-   :tags: Selection/OmittingtheelseClauseUnarySelection.rst
+   :tags:Selection/OmittingtheelseClauseUnarySelection.rst
 
    wrd_lst = ["Hello", "activecode", "Java", "C#", "Python", "HTML and CSS", "Javascript", "Swift", "php"]
 
@@ -197,7 +197,7 @@ Extra Exercises
 
    myTests().main()
 
-6. We have created conditionals for you to use. Find an integer value of x that will output "True" and "None".
+6. We have created conditionals for you to use. Do not change the conditional statements. Find an integer value of x that will cause ``output`` to hold the string values ``"True"`` and ``"None"``.
 
 .. activecode:: ee_ch11_06
    :tags:Selection/Chainedconditionals.rst
@@ -227,13 +227,12 @@ Extra Exercises
          self.assertEqual(output, ["True", "None"], "Testing that output is correct.")
 
       def testSixB(self):
-         self.assertEqual(x in [64, 65, 66, 67], True, "Testing that value of x is correct.")
+         self.assertEqual(x in [64, 65, 66, 67], True, "Testing that value of x is acceptable result.")
 
    myTests().main()
 
-.. works for 64-67
 
-6.1 We have written conditionals for you to use. Create the variable x and assign it to some integer so that at the end of the code, ``output`` will be assigned the string "Consistently working".
+6.1 We have written conditionals for you to use. Create the variable x and assign it to some integer so that at the end of the code, ``output`` will be assigned the string ``"Consistently working"``.
 
 .. activecode:: ee_ch11_061
    :tags: Selection/Chainedconditionals.rst
@@ -263,47 +262,8 @@ Extra Exercises
 
    myTests().main()
 
-7. Create a set of conditionals to determine shipping prices. Usually, it will cost you $7 to ship a large package within your state. In this case, ``location`` would be "domestic", the variable ``cost`` would be set to 7, and ``destination`` would be ``0``. If you continue to ship domestically, the cost of shipping for 1 state away is $11. For 2 states away, the cost is $15. For 3 states away, the cost is $19. If the destination is 4 or more states away, the shipping cost is fixed at $25. If you ship international the variable ``i_dest`` is 0 (within your continent), the cost is $30. Anywhere other than your continent ``i_dest`` would be set to 1 and the cost is $45. 
-The variable ``location`` will have either the value "domestic" or "international". If domestic, the variable ``destination`` could have the values 0 (within the state), 1 (1 state away), 2 (2 states away), 3 (3 states away), or 4 and above (4 or more states away). If international, ``i_dest`` will either be 0 (within your continent) or 1 (out of your continent)
-Use nested conditionals to help someone determine the shipping cost. Uncomment each set of variables one at a time to test.
 
-.. activecode:: ee_ch11_07
-   :tags: Selection/Nestedconditionals.rst
-
-   #Uncomment next two lines to test domestic and 2 states away.
-   #location = "domestic"
-   #destination = 2
-
-   #Uncomment next two lines to test international and not on your continent.
-   #location = "international"
-   #i_dest = 1
-
-   #Uncomment next two lines to test domestic and 6 states away.
-   #location = "domestic"
-   #destination = 6
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testSeven(self):
-         if location == "domestic" and destination == 2:
-          self.assertEqual(cost, 15, "Testing that cost is assigned to correct value.")
-
-         elif location == "international" and i_dest == 1:
-          self.assertEqual(cost, 45, "Testing that cost is assigned to correct value.")
-
-         elif location == "domestic" and destination == 6:
-          self.assertEqual(cost, 25, "Testing that cost is assigned to correct value.")
-
-         else:
-          print "Test not able to run. Check for specific values."
-
-   myTests().main()
-
-
-7.1 Say you are shipping a package that costs 5 dollars to ship usually. You want to find out the price though for shipping farther than your town. Create conditionals so that if it is shipping domestically, within the state, then the variable ``price`` is set to 5, if is one state away, then price is set to 10, otherwise it is set to 15. Otherwise, if it is not domestic, then if it is within the continent, then price is set to 40, otherwise, price is set to 60. The variable ``country`` will have "domestic" or "international" as the values, and ``d_dist`` will have an integer value for domestic state distance (0 being within the state, 1, being 1 state away, 3 as 3 states away) and ``i_dist`` will have the value of True or False to distinguish if it is within the same continent(True) or not (False). Use nested conditionals to help someone determine the shipping price. Uncomment each set of variables one at a time to test.
+7. Say you are shipping a package that normally costs 5 dollars to ship to another place in your city. You want to find out the price for shipping further away. Create conditionals so that if it is shipping domestically (where the variable ``country`` has the value ``domestic``), and 0 states away (``d_dist`` = ``0``), then the variable ``price`` is set to ``5``, if is one state away, then price is set to ``10``, and otherwise, the price is set to ``15``. Otherwise, if it is not domestic, then you need to know if it is within the continent. If it is (``i_dist`` = ``0``), then ``price`` is set to ``40``, otherwise, ``price`` is set to ``60``. The variable ``country`` will have ``"domestic"`` or ``"international"`` as the values, and ``d_dist`` will have an integer value for domestic state distance (0 being within the state, 1, being 1 state away, 3 as 3 states away) and ``i_dist`` will have the value of True or False to distinguish if it is within the same continent (``True``) or not (``False``). Use nested conditionals to help someone determine the correct shipping price. Uncomment each set of variables one at a time to test.
 
 .. activecode:: ee_ch11_071
    :tags: Selection/Nestedconditionals.rst
@@ -311,14 +271,17 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
    #Uncomment the next 3 lines to test domestic, in-state
    #country = "domestic"
    #d_dist = 0
+   #i_dist = True
 
    #Uncomment the next 3 lines to test domestic, one state away
    #country = "domestic"
    #d_dist = 1
+   #i_dist = True
 
    #Uncomment the next 3 lines to test domestic, multiple states away
    #country = "domestic"
    #d_dist = 3
+   #i_dist = True
 
    #Uncomment the next 3 lines to test international, within continent
    #country = "international"
@@ -347,13 +310,13 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
          elif country == "international" and i_dist == False:
             self.assertEqual(price, 60, "Testing the value of price with international, not in continent")
          else:
-            print "Test not able to run, looking for specific values, check spelling and value types."
+            print "Test not able to run, looking for specific values. Check your spelling and value types and use print statements."
 
 
    myTests().main()
 
 
-8. **Challenge** In XYZ University, upper level math classes are numbered 300 and up. Upper level English classes are numbered 200 and up. Upper level Psychology classes are 400 and up. Create two lists, ``upper`` and ``lower``. Assign each course in ``classes`` to the correct list, upper or lower. As a hint, remember you can convert strings to different types.
+8. **Challenge** In XYZ University, upper level math classes are numbered 300 and up. Upper level English classes are numbered 200 and up. Upper level Psychology classes are 400 and up. Create two lists, ``upper`` and ``lower``. Assign each course in ``classes`` to the correct list, upper or lower. As a hint, remember you can convert some strings to different types.
 
 .. activecode:: ee_ch11_08
    :tags: Selection/Nestedconditionals.rst
@@ -374,7 +337,7 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
 
    myTests().main()
 
-8.1 **Challenge:** We're trying to find out if you'll get a ticket or not depending on your speed and where you're driving on the highway. In Michigan, the speed limit is 70, in Hawaii, the speed limit is 60, in Montana the speed limit is 80. Create a list called ``result``. For each element in cases, decide if there should be a ticket given. If their speed is above the speed limit for that state, add "Ticket" to result. Otherwise, add "No Ticket" to result. As a hint, remember that you can convert values to different types.
+8.1 **Challenge:** We're trying to find out if you'll get a ticket or not depending on your speed and where you're driving on the highway. In Michigan, the speed limit is 70, in Hawaii, the speed limit is 60, in Montana the speed limit is 80. Create a list called ``result``. For each element in ``cases``, decide if there should be a ticket given. If their speed is above the speed limit for that state, add "Ticket" to ``result``. Otherwise, add "No Ticket" to ``result``. As a hint, remember that you can convert values to different types.
 
 .. activecode:: ee_ch11_081
    :tags: Selection/Nestedconditionals.rst
@@ -393,7 +356,7 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
 
    myTests().main()
 
-9. For each word in ``words``, add '-d' to the end of the word if the word ends in "e" to make it past tense. Otherwise, add '-ed' to make it past tense. Save these past tense words to a list called ``past_tense``.
+9. For each word in ``words``, add 'd' to the end of the word if the word ends in "e" to make it past tense. Otherwise, add 'ed' to make it past tense. Save these past tense words to a list called ``past_tense``.
 
 .. activecode:: ee_ch11_09
 
@@ -427,20 +390,5 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
          self.assertEqual(old_wrds, ["ended", 'worked', "confessed", "decided", "liked", "played", "started", "walked", "hated", "loved", "looked", "opened", "closed", "rained", "noticed", "learned", "cleaned", "tasted"], "Testing that old_wrds has been created correctly." )
 
    myTests().main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-​
 
 
