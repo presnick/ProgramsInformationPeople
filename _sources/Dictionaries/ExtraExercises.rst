@@ -65,7 +65,7 @@ Extra Exercises
 .. activecode:: ee_ch12_02
    :tags:Dictionaries/intro-Dictionaries.rst
 
-   swimmers = {'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4}
+   swimmers = {'Manuel':4, Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4}
       
    =====
 
@@ -74,7 +74,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testTwo(self):
-         self.assertEqual(sorted(swimmers.items()), sorted([('Adrian', 7), ('Dirado', 4), ('Ledecky', 5), ('Lochte', 12), ('Phelps', 23)]), "Testing that swimmers is assigned to correct value.")
+         self.assertEqual(sorted(swimmers.items()), sorted([('Adrian', 7), ('Dirado', 4), ('Manuel',4), ('Ledecky', 5), ('Lochte', 12), ('Phelps', 23)]), "Testing that swimmers is assigned to correct value.")
 
    myTests().main()
 
@@ -121,7 +121,7 @@ Extra Exercises
 .. activecode:: ee_ch12_03
    :tags:Dictionaries/Dictionaryoperations.rst
 
-   swimmers = {'Manuel':4, Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4, 'Phelps':23}
+   swimmers = {'Manuel':4, 'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4, 'Phelps':23}
       
    =====
 
@@ -130,7 +130,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testThree(self):
-         self.assertEqual(sorted(swimmers.items()), sorted([('Adrian', 7), ('Dirado', 4), ('Ledecky', 5), ('Lochte', 12), ('Phelps', 28)]), "Testing that swimmers is assigned to correct values.")
+         self.assertEqual(sorted(swimmers.items()), sorted([('Adrian', 7), ('Dirado', 4), ('Ledecky', 5), ('Lochte', 12), ('Phelps', 28), ('Manuel',4)]), "Testing that swimmers is assigned to correct values.")
 
    myTests().main()
 
@@ -140,7 +140,6 @@ Extra Exercises
    :tags:Dictionaries/Dictionaryoperations.rst
 
    golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
-
 
    =====
 
@@ -153,31 +152,13 @@ Extra Exercises
 
    myTests().main()
 
-3.2 Congrats, Italy won another gold medal! Update the value for the gold medals in the dictionary ``golds`` so that it reflects the new win.
 
-.. activecode:: ee_ch12_032
-   :tags:Dictionaries/Dictionaryoperations.rst
-
-   golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(sorted(golds.items()), sorted([[('Brazil', 15), ('Canada', 22), ('Italy', 13), ('England', 29), ('USA', 33), ('China', 27), ('Argentina', 8), ('Spain', 19)]), "Testing that the golds dictionary was updated correctly.")    
-
-   myTests().main()
-
-
-4. The dictionary ``china_medals`` shows the events China has medaled in and the number of medals won. Create a list of only the keys from ``china_medals``. Do not hard-code this.
+4. The dictionary ``china_medals`` shows the events China has medaled in and the number of medals won. Create a list of only the keys from ``china_medals`` and save it in a variable called ``events``. Do not hard-code this.
 
 .. activecode:: ee_ch12_04
    :tags:Dictionaries/Dictionarymethods.rst
       
-   China_medals = {'weightlifting':7, 'diving':6, 'table tennis':4, 'shooting':7, 'swimming':6}
+   china_medals = {'weightlifting':7, 'diving':6, 'table tennis':4, 'shooting':7, 'swimming':6}
 
    =====
 
@@ -186,7 +167,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFour(self):
-         self.assertEqual(sorted(events), sorted(['weightlifting', 'diving', 'table tennis', 'shooting', 'swimming']) , "Testing that events is assigned to correct values.")
+         self.assertEqual(sorted(events), sorted(['weightlifting', 'diving', 'table tennis', 'shooting', 'swimming']) , "Testing that events holds the correct list.")
 
    myTests().main()
 
@@ -208,12 +189,12 @@ Extra Exercises
 
    myTests().main()
 
-4.2 We have a dictionary of the specific events that Italy has won medals in and the number of medals they have won for each event. Assign to the variable ``events`` a list of the keys from the dictionary ``metal_events``. Do not hard code this.
+4.2 We have a dictionary of the specific events that Italy has won medals in and the number of medals they have won for each event. Assign to the variable ``events`` a list of the keys from the dictionary ``medal_events``. Do not hard code this.
 
 .. activecode:: ee_ch12_042
    :tags:Dictionaries/Dictionarymethods.rst
 
-   metal_events = {'Shooting': 7, 'Fencing': 4, 'Judo': 2, 'Swimming': 3, 'Diving': 2}
+   medal_events = {'Shooting': 7, 'Fencing': 4, 'Judo': 2, 'Swimming': 3, 'Diving': 2}
 
    =====
 
@@ -242,11 +223,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFive(self):
-         self.assertEqual(sorted(dives.items()), sorted([('twist in free', 1), ('back dive', 3), ('armstand reverse', 1), ('forward tuck', 5), ('reverse tuck', 4)]), "Testing that dives is assigned to correct values.")
+         self.assertEqual(sorted(dives.items()), sorted([('forward tuck', 5), ('reverse tuck', 4), ('forward 2 1/2 somersault pike', 1), ('back dive', 3), ('twist in free', 1), ('armstand reverse', 1), ('twist in pike', 1)]), "Testing that dives has been updated correctly.")
 
    myTests().main()
 
-5.1 **Challenge** The list ``current`` contains some of the sports that were played in the 2016 Olympics. The dictionary ``sport_counts`` contains some of the sports that have been played in prior Olympic meets, and how many Olympics they were played in. Iterate through each sport included in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed).
+5.1 **Challenge** The list ``current`` contains some of the sports that were played in the 2016 Olympics. The dictionary ``sport_counts`` contains some of the sports that have been played in prior Olympic meets, and how many Olympics they were played in. Iterate through each sport included in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed, and you should not record sports that are not already recorded in the dives dictionary).
 
 .. activecode:: ee_ch12_051
    :tags:Dictionaries/Dictionaryoperations.rst
@@ -299,7 +280,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testSix(self):
-         self.assertEqual(Belarus, 4, "Testing that belarus is assigned the correct value.")
+         self.assertEqual(belarus, 4, "Testing that belarus is assigned the correct value.")
 
    myTests().main()
 
@@ -327,7 +308,7 @@ Extra Exercises
 .. activecode:: ee_ch12_062
    :tags:Dictionaries/Dictionarymethods.rst
 
-   US_metals = {"Swimming": 33, "Gymnastics": 6, "Track & Field": 6, "Tennis": 3, "Judo": 2, "Rowing": 2, "Shooting": 3, "Cycling - Road": 1, "Fencing": 4, "Diving": 2, "Archery": 2, "Cycling - Track": 1, "Equestrian": 2, "Golf": 1, "Weightlifting": 1}
+   US_medals = {"Swimming": 33, "Gymnastics": 6, "Track & Field": 6, "Tennis": 3, "Judo": 2, "Rowing": 2, "Shooting": 3, "Cycling - Road": 1, "Fencing": 4, "Diving": 2, "Archery": 2, "Cycling - Track": 1, "Equestrian": 2, "Golf": 1, "Weightlifting": 1}
 
    =====
 
@@ -336,7 +317,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(fencing_value, US_metals.get("Fencing"), "Testing that fencing_value was created correctly.")
+         self.assertEqual(fencing_value, US_medals.get("Fencing"), "Testing that fencing_value was created correctly.")
          
 
    myTests().main()
