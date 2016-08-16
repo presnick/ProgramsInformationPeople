@@ -317,7 +317,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(fencing_value, US_medals.get("Fencing"), "Testing that fencing_value was created correctly.")
+         self.assertEqual(fencing_value, US_medals.get("Fencing"), "Testing that fencing_value was set correctly.")
          
 
    myTests().main()
