@@ -215,6 +215,7 @@ Accumulating Results in Dictionaries
    DictionaryAccumulation/AccumulatingaMaximumValue.rst
    DictionaryAccumulation/AccumulatingtheBestKey.rst
    DictionaryAccumulation/Exercises.rst
+   DictionaryAccumulation/ExtraExercises.rst
 
 Building Programs
 :::::::::::::::::
