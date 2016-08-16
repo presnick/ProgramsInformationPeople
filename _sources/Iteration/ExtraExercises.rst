@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. Create a list of numbers from 0 through 52 and assign to the variable ``numbers``. Do not hard code.
+1. Write code to create a list of integers from 0 through 52 and assign that list to the variable ``numbers``. You should use a special Python function -- do not type out the whole list yourself.
 
 .. activecode:: ee_ch10_01
       
@@ -21,11 +21,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(numbers, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52], "Testing that numbers is assigned to correct values.")
+         self.assertEqual(numbers, raneg(53), "Testing that numbers is a list that contains the correct elements.")
 
    myTests().main()
 
-1.1 Create a list of numbers from 0 to 67 and assign that to the variable ``nums``. Do not hard code this.
+1.1 Write code to create a list of numbers from 0 to 67 and assign that list to the variable ``nums``. Do not hard code the list.
 
 .. activecode:: ee_ch10_011
 
@@ -36,13 +36,13 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(nums, range(68), "Testing that nums has the correct value.")
+         self.assertEqual(nums, range(68), "Testing that nums is a list that contains the correct elements.")
 
    myTests().main()
 
 .. Iteration/TraversalandtheforLoopByIndex.rst
 
-2. For each character in string ``str1``, append each character to a list called ``chars``. 
+2. For each character in the string already saved in the variable ``str1``, append each character to a list called ``chars``. 
 
 .. activecode:: ee_ch10_02
 
@@ -59,7 +59,7 @@ Extra Exercises
 
    myTests().main()
 
-2.1 For each character in the string ``ael``, append it to a list called ``app``.
+2.1 For each character in the string saved in ``ael``, append that character to a list that should be saved in a variable ``app``.
 
 .. activecode:: ee_ch10_022
 
@@ -78,7 +78,7 @@ Extra Exercises
 
 .. Iteration/Stringsandforloops.rst
 
-3. Create an empty string and assign to the variable ``output``. Using range, for each item in range, add the letter "a" to output so once you are done, output should have 35 a's.
+3. Assign an empty string to the variable ``output``. Using the ``range`` function, write code to make it so that the variable ``output`` has 35 ``a``s inside it (like ``"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"``). Hint: use the accumulation pattern!
 
 .. activecode:: ee_ch10_03
       
@@ -89,7 +89,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testThree(self):
-         self.assertEqual(output, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Testing that output is assigned to correct values.")
+         self.assertEqual(output, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Testing that output has the correct value (a string with 25 a's).")
 
    myTests().main()
 
@@ -110,7 +110,7 @@ Extra Exercises
 
 .. Iteration/TraversalandtheforLoopByIndex.rst, Iteration/TheAccumulatorPatternwithStrings.rst
 
-4. Given the list of numbers, ``numbs``, create a new list of those same numbers increased by 5. Save this new list to list ``newlist``. 
+4. Given the list of numbers, ``numbs``, create a new list of those same numbers increased by 5. Save this new list to the variable ``newlist``. 
 
 .. activecode:: ee_ch10_04
       
