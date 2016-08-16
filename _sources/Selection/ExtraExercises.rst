@@ -142,7 +142,7 @@ Extra Exercises
 
    myTests().main()
 
-4.1 Create an empty list called ``resps``. Using the list ``percent_rain``, for each grade, if it is above 90, add the string 'Bring an umbrella.' to resps, otherwise if it is above 80, add the string 'Good for the flowers?' to resps, otherwise if it is above 50, add the string 'Watch out for clouds!' to resps, otherwise, add the string 'Nice day!' to resps.
+4.1 Create an empty list called ``resps``. Using the list ``percent_rain``, for each percent, if it is above 90, add the string 'Bring an umbrella.' to ``resps``, otherwise if it is above 80, add the string 'Good for the flowers?' to ``resps``, otherwise if it is above 50, add the string 'Watch out for clouds!' to ``resps``, otherwise, add the string 'Nice day!' to ``resps``.
 
 .. activecode:: ee_ch11_041
    :tags: Selection/Chainedconditionals.rst
