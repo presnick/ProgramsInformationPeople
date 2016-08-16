@@ -230,7 +230,7 @@ Extra Exercises
 
    myTests().main()
 
-8. Count the number of characters in string ``str1``. Do not use len(). Save the number in variable ``numbs``.
+8. Count the number of characters in string ``str1``. Do not use ``len()``. Save the number in variable ``numbs``.
 
 .. activecode:: ee_ch10_08
       
@@ -247,7 +247,7 @@ Extra Exercises
 
    myTests().main()
 
-8.1 Count how many characters there are in ``sent`` and assign that number to the variable ``char_sent``. Do not use len().
+8.1 Count how many characters there are in ``sent`` and assign that number to the variable ``char_sent``. Do not use ``len()``.
 
 .. activecode:: ee_ch10_081
 
@@ -263,7 +263,7 @@ Extra Exercises
 
    myTests().main()
 
-9. Create a list of numbers 0 through 40. Assign this list to variable ``numbers``. Then, accumulate the list's values and assign the sum in variable ``sum1``. 
+9. Create a list of numbers 0 through 40 and assign this list to the variable ``numbers``. Then, accumulate the total of the list's values and assign that sum to the variable ``sum1``. 
 
 .. activecode:: ee_ch10_09
       
@@ -277,11 +277,11 @@ Extra Exercises
          self.assertEqual(numbers, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40], "Testing that numbers is assigned to correct values.")
 
       def testNineB(self):
-         self.assertEqual(sum1, 820, "Testing that sum1 is assigned to correct values.")
+         self.assertEqual(sum1, 820, "Testing that sum1 has the correct value.")
 
    myTests().main()
 
-9.1 Create a list of numbers from 0-74 and assign that to the variable ``nums``. Then accumulate that list's values so that the total is assigned to the variable ``total``.
+9.1 Create a list of numbers from 0-74 and assign that to the variable ``nums``. Then accumulate the total of that list's values so that the total is assigned to the variable ``total``.
 
 .. activecode:: ee_ch10_091
 
