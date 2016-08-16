@@ -247,6 +247,7 @@ Functions
    Functions/PassingMutableObjects.rst
    Functions/SideEffects.rst
    Functions/Glossary.rst
+   Functions/ExtraExercises.rst
 
 
 While Loops
