@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. At the halfway point during the Rio Olympics, the United States had 70 medals, Great Britain had 38 medals, China had 45 medals, Russia had 30 medals, and Germany had 17 medals. Create a dictionary assigned to the variable ``medal_count`` with the country as the key and the number of medals as the values. 
+1. At the halfway point during the Rio Olympics, the United States had 70 medals, Great Britain had 38 medals, China had 45 medals, Russia had 30 medals, and Germany had 17 medals. Create a dictionary assigned to the variable ``medal_count`` with the country names as the keys and the number of medals the country had as each key's value. 
 
 .. activecode:: ee_ch12_01
    :tags:Dictionaries/intro-Dictionaries.rst
@@ -22,11 +22,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(sorted(medal_count.items()), sorted([('China', 45), ('Germany', 17), ('Great Britain', 38), ('Russia', 30), ('United States', 70)]), "Testing that medal_count is assigned to correct values")
+         self.assertEqual(sorted(medal_count.items()), sorted([('China', 45), ('Germany', 17), ('Great Britain', 38), ('Russia', 30), ('United States', 70)]), "Testing that the medal_count dictionary has the correct key-value pairs")
 
    myTests().main()
 
-1.1 Create a dictionary that keeps track of the USA's Olympic medal count. Each key of the dictionary should be the type of medal (gold, silver, bronze) and the value should be the number of medals. Currently, the USA has 33 gold medals, 17 silver, and 12 bronze. Create a dictionary named ``medals`` that reflect this. 
+1.1 Create a dictionary that keeps track of the USA's Olympic medal count. Each key of the dictionary should be the type of medal (gold, silver, or bronze) and each key's value should be the number of that type of medal the USA's won. Currently, the USA has 33 gold medals, 17 silver, and 12 bronze. Create a dictionary saved in the variable ``medals`` that reflects this information. 
 
 .. activecode:: ee_ch12_011
    :tags:Dictionaries/intro-Dictionaries.rst
@@ -43,7 +43,7 @@ Extra Exercises
 
    myTests().main()
 
-1.2 You are keeping track of olympic medals for Italy in the 2016 Rio Summer Olympics. At the moment, Italy has 7 gold metals, 8 silver metals, and 6 bronze metals. Create a dictionary called ``olympics`` where the keys are the types of metals, and the values are the number of metals won so far. 
+1.2 You are keeping track of olympic medals for Italy in the 2016 Rio Summer Olympics! At the moment, Italy has 7 gold medals, 8 silver metals, and 6 bronze medals. Create a dictionary called ``olympics`` where the keys are the types of medals, and the values are the number of that type of medals that Italy has won so far. 
 
 .. activecode:: ee_ch12_012
    :tags:Dictionaries/intro-Dictionaries.rst
@@ -60,7 +60,7 @@ Extra Exercises
 
    myTests().main()
 
-2. Given the dictionary, ``swimmers``, add an additional key-value pair to the dictionary with "Phelps" as the key and 23 as the value. Do not rewrite the entire dictionary.
+2. Given the dictionary ``swimmers``, add an additional key-value pair to the dictionary with ``"Phelps"`` as the key and the integer ``23`` as the value. Do not rewrite the entire dictionary.
 
 .. activecode:: ee_ch12_02
    :tags:Dictionaries/intro-Dictionaries.rst
@@ -116,12 +116,12 @@ Extra Exercises
    myTests().main()
 
 
-3. Update the value for "Phelps" in the dictionary ``swimmers`` to include his medals from the Rio Olympics by adding 5 to the current value (Phelps will have 28 total medals). Do not rewrite the dictionary.
+3. Update the value for "Phelps" in the dictionary ``swimmers`` to include his medals from the Rio Olympics by adding 5 to the current value (Phelps will now have 28 total medals). Do not rewrite the dictionary.
 
 .. activecode:: ee_ch12_03
    :tags:Dictionaries/Dictionaryoperations.rst
 
-   swimmers = {'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4, 'Phelps':23}
+   swimmers = {'Manuel':4, Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4, 'Phelps':23}
       
    =====
 
@@ -134,7 +134,7 @@ Extra Exercises
 
    myTests().main()
 
-3.1 The dictionary ``golds`` contains information about how many gold medals each country won in the 2016 Olympics. Today, Spain won 2 more gold medals. Update ``golds`` to reflect this information. 
+3.1 The dictionary ``golds`` contains information about how many gold medals each country won in the 2016 Olympics. But today, Spain won 2 more gold medals. Update ``golds`` to reflect this information. 
 
 .. activecode:: ee_ch12_031
    :tags:Dictionaries/Dictionaryoperations.rst
@@ -153,10 +153,12 @@ Extra Exercises
 
    myTests().main()
 
-3.2 Congrats, Italy won another gold metal! Update the value for the gold metals so that it reflects the new win (8 gold metals, 8 silver metals, and 6 bronze metals now). Name the dictionary ``olympics`` again.
+3.2 Congrats, Italy won another gold medal! Update the value for the gold medals in the dictionary ``golds`` so that it reflects the new win.
 
 .. activecode:: ee_ch12_032
    :tags:Dictionaries/Dictionaryoperations.rst
+
+   golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
 
    =====
 
@@ -165,12 +167,12 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(sorted(olympics.items()), sorted([('gold', 8), ('silver', 8), ('bronze', 6)]), "Testing that olympics was updated correctly.")    
+         self.assertEqual(sorted(golds.items()), sorted([[('Brazil', 15), ('Canada', 22), ('Italy', 13), ('England', 29), ('USA', 33), ('China', 27), ('Argentina', 8), ('Spain', 19)]), "Testing that the golds dictionary was updated correctly.")    
 
    myTests().main()
 
 
-4. The dictionary ``China_medals`` shows the events China has medaled in and the number of medals one. Create a list of only the keys from ``China_medals``. Do not hardcode this.
+4. The dictionary ``china_medals`` shows the events China has medaled in and the number of medals won. Create a list of only the keys from ``china_medals``. Do not hard-code this.
 
 .. activecode:: ee_ch12_04
    :tags:Dictionaries/Dictionarymethods.rst
@@ -188,7 +190,7 @@ Extra Exercises
 
    myTests().main()
 
-4.1 Create a list of the countries that are in the dictionary ``golds``, and assign it to the variable name ``countries``. Do not hard code this. 
+4.1 Create a list of the countries that are in the dictionary ``golds``, and assign that list to the variable name ``countries``. Do not hard code this. 
 
 .. activecode:: ee_ch12_041
    :tags:Dictionaries/Dictionarymethods.rst
@@ -206,7 +208,7 @@ Extra Exercises
 
    myTests().main()
 
-4.1 We have a dictionary of the specific events that Italy has won metals in and the number of metals they have won for each event. Assign to the variable ``events`` a list of the keys from the dictionary ``metal_events``. Do not hard code this.
+4.2 We have a dictionary of the specific events that Italy has won medals in and the number of medals they have won for each event. Assign to the variable ``events`` a list of the keys from the dictionary ``metal_events``. Do not hard code this.
 
 .. activecode:: ee_ch12_042
    :tags:Dictionaries/Dictionarymethods.rst
@@ -224,7 +226,7 @@ Extra Exercises
 
    myTests().main()
 
-5. **Challenge** The list ``performed`` contains diving moves that have been performed. The dictionary ``dives`` contains the moves and the number of times each has been performed during the current set. Update the dictionary ``dives`` to reflect the additional dives performed. If the dive in ``dives`` is in the list ``performed``, update the value in the dictionary by 1. 
+5. **Challenge** The list ``performed`` contains diving moves that have been performed. The dictionary ``dives`` contains the moves and the number of times each move has been performed.  The list ``performed`` is a list of additional diving moves that have just been done. Write code to update the dictionary ``dives``, so that for each move in the list ``performed``, if the move is in the dictionary ``dives`` already, you should update the value in the dictionary by 1. If that move is not in the dictionary ``dives`` yet, add a new key-value pair to the dictionary to record that move.
 
 .. activecode:: ee_ch12_05
    :tags:Dictionaries/Dictionaryoperations.rst
@@ -244,7 +246,7 @@ Extra Exercises
 
    myTests().main()
 
-5.1 **Challenge Problem:** The list ``current`` contains some of the sports that were played in the 2016 Olympics. The dictionary ``sport_counts`` contains some of the sports that have been played in prior Olympic meets, and how many Olympic meets they were played in. Iterate through each sport in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed).
+5.1 **Challenge** The list ``current`` contains some of the sports that were played in the 2016 Olympics. The dictionary ``sport_counts`` contains some of the sports that have been played in prior Olympic meets, and how many Olympics they were played in. Iterate through each sport included in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed).
 
 .. activecode:: ee_ch12_051
    :tags:Dictionaries/Dictionaryoperations.rst
@@ -264,7 +266,7 @@ Extra Exercises
 
    myTests().main()
 
-5.2 **Challenge:** We have a dictionary of synchronized swimming moves called ``sswim_moves``, with the moves as keys and the amount of times they are used as the values. We also have a list of some moves that have not been added yet. Go through the list, called ``moves_to_add``, and if the move is in sswim_moves, then update the value, adding 1, otherwise do nothing. 
+5.2 **Challenge:** We have a dictionary of synchronized swimming moves called ``sswim_moves``, with the move names as keys and the amount of times they are used as the values. We also have a list of some moves that have not been added yet. Go through the list, called ``moves_to_add``, and if the move is in ``sswim_moves``, then update the value by 1. Otherwise, do nothing. 
 
 .. activecode:: ee_ch12_052
    :tags:Dictionaries/Dictionaryoperations.rst
@@ -283,7 +285,7 @@ Extra Exercises
 
    myTests().main()
 
-6. Provided is the dictionary, ``medal_count`` which lists countries and their respective medal count at the halfway point in the 2016 Rio Olympics. Using dictionary methods, assign the medal count value for "Belarus" to the variable ``Belarus``. Do not hardcode this.
+6. Provided is the dictionary, ``medal_count``, which lists countries and their respective medal count at the halfway point in the 2016 Rio Olympics. Using dictionary mechanics, assign the medal count value for ``"Belarus"`` to the variable ``belarus``. Do not hardcode this.
 
 .. activecode:: ee_ch12_06
    :tags:Dictionaries/Dictionarymethods.rst
@@ -297,7 +299,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testSix(self):
-         self.assertEqual(Belarus, 4, "Testing that Belarus is assigned the correct value.")
+         self.assertEqual(Belarus, 4, "Testing that belarus is assigned the correct value.")
 
    myTests().main()
 
@@ -320,7 +322,7 @@ Extra Exercises
 
    myTests().main()
 
-6.2 Provided is a dictionary called ``US_metals`` which has the first 70 metals that the United States has won and in which category they have won it in. Using a dictionary method, retreive the value associated with the key "Fencing" and assign that to the variable ``fencing_value``. Remember, do not hard code this.
+6.2 Provided is a dictionary called ``US_medals`` which has the first 70 metals that the United States has won in 2016, and in which category they have won it in. Using dictionary mechanics, assign the value of the key ``''Fencing''`` to a variable ``fencing_value``. Remember, do not hard code this.
 
 .. activecode:: ee_ch12_062
    :tags:Dictionaries/Dictionarymethods.rst
