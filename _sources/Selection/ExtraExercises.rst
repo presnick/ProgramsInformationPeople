@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. Write code to assign the string "You can apply to SI!" to ``output`` *if* the string ``"SI 106"`` is in the list ``courses``. If it is not in ``courses``, assign the value ``"Take SI 106!"`` to the variable ``output``.
+1. Write code to assign the string ``"You can apply to SI!"`` to ``output`` *if* the string ``"SI 106"`` is in the list ``courses``. If it is not in ``courses``, assign the value ``"Take SI 106!"`` to the variable ``output``.
 
 .. activecode:: ee_ch11_01
    :tags:Selection/ConditionalExecutionBinarySelection.rst
@@ -46,7 +46,7 @@ Extra Exercises
 
    myTests().main()
 
-2. Create a variable, ``b``, and assign it the value of ``15``. Then, write code to see if the value ``b`` is greater than that of ``a``. If it is, ``a``'s value should be multiplied by 2. If the value of ``b`` is less than ``a``, nothing should happen. Finally, create variable ``c`` and assign it the value of the sum of ``a`` and ``b``.
+2. Create a variable, ``b``, and assign it the value of ``15``. Then, write code to see if the value ``b`` is greater than that of ``a``. If it is, ``a``'s value should be multiplied by 2. If the value of ``b`` is less than or equal to ``a``, nothing should happen. Finally, create variable ``c`` and assign it the value of the sum of ``a`` and ``b``.
 
 .. activecode:: ee_ch11_02
    :tags:Selection/OmittingtheelseClauseUnarySelection.rst
@@ -101,11 +101,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testThree(self):
-         self.assertEqual(output, "True! You are you!", "Testing that action is assigned to correct values.")
+         self.assertEqual(output, "True! You are you!", "Testing that output has the correct value, given the str1 provided.")
 
    myTests().main()
 
-3.1 Create one conditional so that if "Friendly" is in ``w``, then "Friendly is here!" should be assigned to the variable ``wrd``. If it's not, check if "Friend" is in w. If so, the string "Friend is here!" should be assigned to the variable ``wrd``, otherwise "No variation of friend is in here." should be assigned to the variable wrd.
+3.1 Create one conditional so that if "Friendly" is in ``w``, then "Friendly is here!" should be assigned to the variable ``wrd``. If it's not, check if "Friend" is in w. If so, the string "Friend is here!" should be assigned to the variable ``wrd``, otherwise "No variation of friend is in here." should be assigned to the variable wrd. (Also consider: does the order of your conditional statements matter for this problem? Why?)
 
 .. activecode:: ee_ch11_031
    :tags: Selection/Chainedconditionals.rst
@@ -138,16 +138,16 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFour(self):
-         self.assertEqual(notes, ['Whoa, good job!', 'Join us at office hours!', 'Keep it up!', 'Great opportunity to figure out confusions!', 'Join us at office hours!'], "Testing that notes holds the correct value.")
+         self.assertEqual(notes, ['Whoa, good job!', 'Join us at office hours!', 'Keep it up!', 'Great opportunity to figure out confusions!', 'Join us at office hours!'], "Testing that notes holds a list with the correct elements.")
 
    myTests().main()
 
-4.1 Create an empty list called ``resps``. Using the list ``grades``, for each grade, if it is above 90, add the string 'Congrats!' to resps, otherwise if it is above 80, add the string 'Good work!' to resps, otherwise if it is above 70, add the string 'You can do it!' to resps, otherwise, add the string 'You should try going to office hours.' to resps.
+4.1 Create an empty list called ``resps``. Using the list ``percent_rain``, for each grade, if it is above 90, add the string 'Bring an umbrella.' to resps, otherwise if it is above 80, add the string 'Good for the flowers?' to resps, otherwise if it is above 50, add the string 'Watch out for clouds!' to resps, otherwise, add the string 'Nice day!' to resps.
 
 .. activecode:: ee_ch11_041
    :tags: Selection/Chainedconditionals.rst
 
-   grades = [94.3, 87, 100, 78, 83, 63.5, 79, 86]
+   percent_rain = [94.3, 45, 100, 78, 16, 5.3, 79, 86]
 
    =====
 
@@ -156,7 +156,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(resps, ['Congrats!','Good work!','Congrats!','You can do it!',"Good work!",'You should try going to office hours.','You can do it!',"Good work!"], "Testing the value of resps")
+         self.assertEqual(resps, ['Bring an umbrella.','Nice day!','Bring an umbrella.','Watch out for clouds!',"Nice day!",'Nice day!','Watch out for clouds!',"Good for the flowers?"], "Testing the value of resps")
 
    myTests().main()
 
@@ -197,7 +197,7 @@ Extra Exercises
 
    myTests().main()
 
-6. We have created conditionals for you to use. Do not change the conditional statements. Find an integer value of x that will cause ``output`` to hold the string values ``"True"`` and ``"None"``.
+6. We have created conditionals for you to use. Do not change the conditional statements. Find an integer value of x that will cause ``output`` to hold the string values ``"True"`` and ``"None"``. (Drawing diagrams or flow charts for yourself may help!)
 
 .. activecode:: ee_ch11_06
    :tags:Selection/Chainedconditionals.rst
@@ -224,10 +224,10 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testSixA(self):
-         self.assertEqual(output, ["True", "None"], "Testing that output is correct.")
+         self.assertEqual(output, ["True", "None"], "Testing that value of output is correct.")
 
       def testSixB(self):
-         self.assertEqual(x in [64, 65, 66, 67], True, "Testing that value of x is acceptable result.")
+         self.assertEqual(x in [64, 65, 66, 67], True, "Testing that value of x is reasonable for this problem")
 
    myTests().main()
 
@@ -263,7 +263,7 @@ Extra Exercises
    myTests().main()
 
 
-7. Say you are shipping a package that normally costs 5 dollars to ship to another place in your city. You want to find out the price for shipping further away. Create conditionals so that if it is shipping domestically (where the variable ``country`` has the value ``domestic``), and 0 states away (``d_dist`` = ``0``), then the variable ``price`` is set to ``5``, if is one state away, then price is set to ``10``, and otherwise, the price is set to ``15``. Otherwise, if it is not domestic, then you need to know if it is within the continent. If it is (``i_dist`` = ``0``), then ``price`` is set to ``40``, otherwise, ``price`` is set to ``60``. The variable ``country`` will have ``"domestic"`` or ``"international"`` as the values, and ``d_dist`` will have an integer value for domestic state distance (0 being within the state, 1, being 1 state away, 3 as 3 states away) and ``i_dist`` will have the value of True or False to distinguish if it is within the same continent (``True``) or not (``False``). Use nested conditionals to help someone determine the correct shipping price. Uncomment each set of variables one at a time to test.
+7. **Challenge** Say you are shipping a package that normally costs 5 dollars to ship to another place in your city. You want to find out the price for shipping further away. Create conditionals so that if it is shipping domestically (where the variable ``country`` has the value ``domestic``), and 0 states away (``d_dist`` = ``0``), then the variable ``price`` is set to ``5``, if is one state away, then price is set to ``10``, and otherwise, the price is set to ``15``. Otherwise, if it is not domestic, then you need to know if it is within the continent. If it is (``i_dist`` = ``0``), then ``price`` is set to ``40``, otherwise, ``price`` is set to ``60``. The variable ``country`` will have ``"domestic"`` or ``"international"`` as the values, and ``d_dist`` will have an integer value for domestic state distance (0 being within the state, 1, being 1 state away, 3 as 3 states away) and ``i_dist`` will have the value of True or False to distinguish if it is within the same continent (``True``) or not (``False``). Use nested conditionals to help someone determine the correct shipping price. Uncomment each set of variables one at a time to test.
 
 .. activecode:: ee_ch11_071
    :tags: Selection/Nestedconditionals.rst
@@ -285,10 +285,12 @@ Extra Exercises
 
    #Uncomment the next 3 lines to test international, within continent
    #country = "international"
+   #d_dist = 0
    #i_dist = True
 
    #Uncomment the next 3 lines to test international, not in continent
    #country = "international"
+   #d_dist = 0
    #i_dist = False
 
 
@@ -330,9 +332,9 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testEightA(self):
-         self.assertEqual(upper, ['PSYCH 412', 'MATH 300', 'MATH 404', 'ENG 201', 'PSYCH 508', 'ENG 220'], "Testing that u_math is assigned to correct values.")
+         self.assertEqual(upper, ['PSYCH 412', 'MATH 300', 'MATH 404', 'ENG 201', 'PSYCH 508', 'ENG 220'], "Testing that the upper list exists and contains the correct elements.")
       def testEightB(self):
-         self.assertEqual(lower, ['MATH 150', 'PSYCH 111', 'PSYCH 313', 'MATH 206', 'ENG 100', 'ENG 103', 'ENG 125', 'ENG 124'], "Testing that l_math is assigned to correct values.")
+         self.assertEqual(lower, ['MATH 150', 'PSYCH 111', 'PSYCH 313', 'MATH 206', 'ENG 100', 'ENG 103', 'ENG 125', 'ENG 124'], "Testing that the lower list exists and contains the correct elements.")
       
 
    myTests().main()
@@ -369,7 +371,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testNine(self):
-         self.assertEqual(past_tense, ['adopted', 'baked', 'beamed', 'confided', 'grilled', 'planted', 'timed', 'waved', 'wished'], "Testing that past_tense is assigned to correct values.")
+         self.assertEqual(past_tense, ['adopted', 'baked', 'beamed', 'confided', 'grilled', 'planted', 'timed', 'waved', 'wished'], "Testing that the past_tense list is correct.")
 
    myTests().main()
 
@@ -387,7 +389,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(old_wrds, ["ended", 'worked', "confessed", "decided", "liked", "played", "started", "walked", "hated", "loved", "looked", "opened", "closed", "rained", "noticed", "learned", "cleaned", "tasted"], "Testing that old_wrds has been created correctly." )
+         self.assertEqual(old_wrds, ["ended", 'worked', "confessed", "decided", "liked", "played", "started", "walked", "hated", "loved", "looked", "opened", "closed", "rained", "noticed", "learned", "cleaned", "tasted"], "Testing that the old_wrds list is correct." )
 
    myTests().main()
 
