@@ -143,7 +143,7 @@ Extra Exercises
 
    myTests().main()
 
-5. **Challenge** Now do ths same as above, but do not create a new list. Overwrite the old list ``numbs`` so that it has the new numbers.
+5. **Challenge** Now do ths same as above, but do not create a new list. Overwrite the list ``numbs`` so that it has the new numbers.
 
 .. activecode:: ee_ch10_05
       
