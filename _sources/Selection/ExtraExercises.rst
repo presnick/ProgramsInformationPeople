@@ -161,7 +161,7 @@ Extra Exercises
    myTests().main()
 
 
-5. For each word in list ``words``, find the number of characters in the string. If the number of characters in each string is greater than 3, add 1 to the variable "num_words" so that ``num_words`` should end up with the total number of words with more than 3 characters.
+5. For each word in list ``words``, find the number of characters in the string. If the number of characters in each string is greater than 3, add 1 to the variable ``num_words`` so that ``num_words`` should end up with the total number of words with more than 3 characters.
 
 .. activecode:: ee_ch11_05
    :tags:Selection/ConditionalExecutionBinarySelection.rst
@@ -179,7 +179,7 @@ Extra Exercises
 
    myTests().main()
 
-5.1 For each string in ``wrd_lst``, find the number of characters in the string. If the number of characters is less than 6, add 1 to ``accum`` so that in the end, accum will have the total number of words that have fewer than 6 characters.
+5.1 For each string in ``wrd_lst``, find the number of characters in the string. If the number of characters is less than 6, add 1 to ``accum`` so that in the end, ``accum`` will contain an integer representing the total number of words in the list that have fewer than 6 characters.
 
 .. activecode:: ee_ch11_051
    :tags:Selection/OmittingtheelseClauseUnarySelection.rst
@@ -197,7 +197,7 @@ Extra Exercises
 
    myTests().main()
 
-6. We have created conditionals for you to use. Do not change the conditional statements. Find an integer value of x that will cause ``output`` to hold the string values ``"True"`` and ``"None"``. (Drawing diagrams or flow charts for yourself may help!)
+6. We have created conditionals for you to use. Do not change the provided conditional statements. Find an integer value for ``x`` that will cause ``output`` to hold the values ``True`` and ``None``. (Drawing diagrams or flow charts for yourself may help!)
 
 .. activecode:: ee_ch11_06
    :tags:Selection/Chainedconditionals.rst
@@ -206,16 +206,16 @@ Extra Exercises
    output = []
 
    if x > 63:
-       output.append("True")
+       output.append(True)
    elif x > 55:
-       output.append("False")
+       output.append(False)
    else: 
        output.append("Neither")
 
    if x > 67:
-       output.append("True")
+       output.append(True)
    else:
-       output.append("None")
+       output.append(None)
 
    =====
 
@@ -224,7 +224,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testSixA(self):
-         self.assertEqual(output, ["True", "None"], "Testing that value of output is correct.")
+         self.assertEqual(output, [True, None], "Testing that value of output is correct.")
 
       def testSixB(self):
          self.assertEqual(x in [64, 65, 66, 67], True, "Testing that value of x is reasonable for this problem")
