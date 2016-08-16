@@ -40,7 +40,7 @@ Extra Exercises
 
    myTests().main()
 
-.. Iteration/TraversalandtheforLoopByIndex.rst
+.. Iteration/TraversalandtheforLoopByIndex.rst, Iteration/TheAccumulatorPatternwithStrings.rst
 
 2. For each character in the string already saved in the variable ``str1``, append each character to a list called ``chars``. 
 
@@ -77,9 +77,9 @@ Extra Exercises
 
    myTests().main()
 
-.. Iteration/Stringsandforloops.rst
+.. Iteration/Stringsandforloops.rst, Iteration/TheAccumulatorPatternwithStrings.rst
 
-3. Assign an empty string to the variable ``output``. Using the ``range`` function, write code to make it so that the variable ``output`` has 35 ``a``s inside it (like ``"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"``). Hint: use the accumulation pattern!
+3. Assign an empty string to the variable ``output``. Using the ``range`` function, write code to make it so that the variable ``output`` has 35 ``a`` s inside it (like ``"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"``). Hint: use the accumulation pattern!
 
 .. activecode:: ee_ch10_03
       
@@ -90,11 +90,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testThree(self):
-         self.assertEqual(output, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Testing that output has the correct value (a string with 25 a's).")
+         self.assertEqual(output, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "Testing that output has the correct value.")
 
    myTests().main()
 
-3.1 Create an empty string and assign it to the variable ``lett``. Then using range, for each item in range, add a "b" to lett so once you are done, lett has 7 b's.
+3.1 Create an empty string and assign it to the variable ``lett``. Then using range, write code such that when your code is run, lett has 7 b's (``"bbbbbbb"``).
 
 .. activecode:: ee_ch10_031
 
@@ -105,7 +105,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(lett, "bbbbbbb", "Testing that lett has been created correctly." )
+         self.assertEqual(lett, "bbbbbbb", "Testing that lett has the correct value." )
 
    myTests().main()
 
@@ -124,15 +124,16 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFour(self):
-         self.assertEqual(newlist, [10, 15, 20, 25, 30], "Testing that newlist is assigned to correct values.")
+         self.assertEqual(newlist, [10, 15, 20, 25, 30], "Testing that the newlist value contains the correct elements.")
 
    myTests().main()
 
-4.1 For each number in ``lst_nums``, multiply that number by 2 and save it to a new list called ``larger_nums``. 
+4.1 For each number in ``lst_nums``, multiply that number by 2 and append it to a new list called ``larger_nums``. 
 
 .. activecode:: ee_ch10_041
 
    lst_nums = [4, 29, 5.3, 10, 2, 1817, 1967, 9, 31.32]
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -144,7 +145,7 @@ Extra Exercises
 
    myTests().main()
 
-5. **Challenge** Now do ths same as above, but do not create a new list. Overwrite the list ``numbs`` so that it has the new numbers.
+5. **Challenge** Now do the same as in problem 4, but do not create a new list. Overwrite the list ``numbs`` so that each of the original numbers are increased by 5.
 
 .. activecode:: ee_ch10_05
       
@@ -161,21 +162,6 @@ Extra Exercises
 
    myTests().main()
 
-5.1 **Challenge:** Now do that again, but instead of saving the numbers into a new list, overwrite the old list so that lst_nums has the new numbers.
-
-.. activecode:: ee_ch10_051
-
-   lst_nums = [4, 29, 5.3, 10, 2, 1817, 1967, 9, 31.32]
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(lst_nums, [8, 58, 10.6, 20, 4, 3634, 3934, 18, 62.64], "Testing that lst_nums has been created correctly." )
-
-   myTests().main()
 
 6. For each word in the list ``verbs``, add an -ing ending. Save this new list in a new list, ``ing``.
 
@@ -190,27 +176,12 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testSix(self):
-         self.assertEqual(ing, ['kayaking', 'crying', 'walking', 'eating', 'drinking', 'flying'], "Testing that ing is assigned to correct values.")
+         self.assertEqual(ing, ['kayaking', 'crying', 'walking', 'eating', 'drinking', 'flying'], "Testing that the variable ing has the correct value.")
 
    myTests().main()
 
-6.1 For each word in ``wrds``, add 'ed' to the end of the word to make it past tense. Save these past tense words to a list called ``past_wrds``.
 
-.. activecode:: ee_ch10_061
-
-   wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(past_wrds, ["ended", 'worked', "played", "started", "walked", "looked", "opened", "rained", "learned", "cleaned"], "Testing that past_wrds has been created correctly." )
-
-   myTests().main()
-
-7. **Challenge** Do the same as above but do not create a new list. Overwrite the old list so that ``verbs`` has the new words. 
+6.1 **Challenge** Do the same as above, but do not create a new list. Instead, overwrite the old list so that ``verbs`` has the same words with ``ing`` at the end of each one. 
 
 .. activecode:: ee_ch10_07
       
@@ -224,6 +195,22 @@ Extra Exercises
 
       def testSeven(self):
          self.assertEqual(verbs, ['kayaking', 'crying', 'walking', 'eating', 'drinking', 'flying'], "Testing that verbs is assigned to correct values.")
+
+   myTests().main()
+
+7. For each string in ``wrds``, add 'ed' to the end of the word (to make the word past tense). Save these past tense words to a list called ``past_wrds``.
+
+.. activecode:: ee_ch10_061
+
+   wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(past_wrds, ["ended", 'worked', "played", "started", "walked", "looked", "opened", "rained", "learned", "cleaned"], "Testing that past_wrds has the correct value." )
 
    myTests().main()
 
