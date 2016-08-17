@@ -32,4 +32,4 @@ The correct way to answer that sort of exercise would be to write: ``zx = y + x`
 
 In the code above, if the value of ``x`` were ``40``, ``55`` would not be the correct value for ``zx`` to have. But ``zx = y + x`` would still be absolutely correct. 
 
-Another way of thinking about hard-coding is to ask yourself: *Will my answer be correct even if the provided variables had different values?* If the answer to that question is no, you're probably hard-coding, which you should avoid -- and there's probably at least a slightly more concise way to construct your answer!
+Another way of thinking about hard-coding is to ask yourself: *Would my answer be correct even if the provided variables had different values?* If the answer to that question is no, you're probably hard-coding, which you should avoid -- and there's probably at least a slightly more concise way to construct your answer!
