@@ -270,6 +270,7 @@ Optional and Keyword Parameters
    OptionalAndKeywordParameters/OptionalParameters.rst
    OptionalAndKeywordParameters/KeywordParameters.rst
    OptionalAndKeywordParameters/exercises.rst
+   OptionalAndKeywordParameters/ExtraExercises.rst
 
 Tuples
 ::::::
@@ -284,6 +285,7 @@ Tuples
    Tuples/UnpackingDictionaryItems.rst
    Tuples/Glossary.rst
    Tuples/Exercises.rst
+   Tuples/ExtraExercises.rst
 
 
 Nested Data and Nested Iteration
