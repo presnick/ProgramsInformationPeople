@@ -303,6 +303,7 @@ Sorting
    Sort/Optionalkeyparameter.rst
    Sort/Anonymousfunctionswithlambdaexpressions.rst
    Sort/SortingaDictionary.rst
+   Sort/StableSorting.rst
    Sort/Glossary.rst
    Sort/Exercises.rst
 
