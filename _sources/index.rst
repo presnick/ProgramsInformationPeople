@@ -298,6 +298,7 @@ Nested Data and Nested Iteration
    NestedData/NestedDictionaries.rst
    NestedData/NestedIteration.rst
    NestedData/DebuggingNestedData.rst
+   NestedData/ExtraExercises.rst
 
 
 Sorting
