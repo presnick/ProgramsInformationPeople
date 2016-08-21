@@ -12,47 +12,36 @@
     :linenothreshold: 500
 
 
-Activities through 1/17
+Activities through 9/16
 =======================
 
-* **Before Thursday's discussion section, 1/7 (preferably before first lecture on Wednesday 1/6):**
+* **Before Thursday's discussion section, 9/15 (preferably before first lecture on Wednesday 9/7):**
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
-  * Sign up for/join the `Facebook group <https://www.facebook.com/groups/1752935254934382/>`_
+  * Sign up for/join the `Facebook group <linkgoeshere.notrealTODO>`_
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
-.. usageassignment:: prep_01
-    :chapters: GeneralIntro
-    :assignment_name: Prep 01
-    :deadline: 2016-01-08 02:30:01
-    :pct_required: 80
-    :points: 50
+.. usageassignment or appropriate directive
 
-* Participation in Thursday discussion section, 1/7
+* Participation in discussion section, 9/8 or 9/9
 
-* **By Sunday night, 1/10:**
+* **By Sunday night, 9/11:**
 
   * read the intro and chapter 1 of The Most Human Human book.
-  * Answer `Reading Response 1 <https://umich.instructure.com/courses/48961/assignments/57676>`_ .
+  * Answer `Reading Response 1 <LINK TODO>`_ .
 
-* **Before Monday's class, 1/11:**
+* **Before Monday's class, 9/12:**
 
   * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
 
+.. usageassignment directive here as appropriate
 
-.. usageassignment:: prep_02
-    :chapters: SimplePythonData
-    :assignment_name: Prep 02
-    :deadline: 2016-01-11 19:40:00
-    :pct_required: 80
-    :points: 50
+* **By Tuesday night 11:59, 9/13:**
 
-* **By Tuesday night, 1/12:**
+  * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <UPDATE FILE LINK>`_, by Richard Searle. It's in the Canvas Files folder, if that link doesn't work.
+  * Answer `Reading Response 2 <UPDATE LINK>`_ .
 
-  * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/files/321962/download?download_frd=1>`_, by Richard Searle. It's in the Canvas Files folder, if that link doesn't work.
-  * Answer `Reading Response 2 <https://umich.instructure.com/courses/48961/assignments/57677>`_ .
-
-* **Before Wednesday's class, 1/13:**
+* **Before Wednesday's class, 9/14:**
 
   * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
   * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
