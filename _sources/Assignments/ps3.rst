@@ -12,53 +12,36 @@
     :linenothreshold: 500
 
 
-Activities through 1/31
+Activities through 9/30
 =======================
 
 You have the following graded activities:
 
-* **Before Monday's class, 1/25:**
+* **Before Monday's class, 9/26:**
 
-
-  * Read :ref:`Folders and copying <mkdir_and_cp_sect>` about the Unix commands ``mkdir`` and ``cp``
-
-.. usageassignment
-
-* **Before Tuesday 1/26 at midnight:**
-
-  * Read Chapter 3 of the Most Human Human
-  * Answer `Reading Response 4 <https://umich.instructure.com/courses/48961/assignments/57679>`_ on Canvas.
-
-* **Before Wednesday's class, 1/27:**
-  
   * Read :ref:`Conditionals <conditionals_chap>` and do exercises
   * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
   * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
 
-.. usageassignment:: prep_06
-    :chapters: Selection, Files
-    :subchapters: BuildingAProgram/UnderstandingCode
-    :assignment_name: Prep 06
-    :deadline: 2016-01-27 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment
 
-* **Before Sunday evening, 1/31:**
+* **Before Tuesday 9/27 at 11:59 pm:**
 
-  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and the exercises in :ref:`Unix Problems 3 <unix_pset3>` to Canvas by **5PM**
-  * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
+  * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <UPDATELINK>`_ on Canvas.
 
+* **Before Wednesday's class, 9/28:**
+  
+  * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
 
-.. _unix_pset3:
+.. usageassignment
 
-Unix Problems
--------------
+* **Before Friday 9/30 at 6:30 PM:**
 
-1. Use the ``mkdir`` command and other Unix commands you've learned to create a folder called ``ps3`` inside your ``106`` folder. Use the ``cp`` command and other Unix commands you've learned as needed to copy ``sample.txt`` from the ``ps2`` folder into the ``ps3`` folder. Then use the ``mkdir`` command to make a sub-directory inside the ``ps3`` folder called ``inside_ps3``. Take a screenshot showing that you typed these commands and that they worked properly (you could use ``ls`` or ``pwd`` to show that they worked!), and upload it to **Unix problems 3** on Canvas.
+  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas (linked in the problem set).
 
-2. Use the ``cp`` command to copy all of the individual files inside ``106/ps1`` to your ``106/ps3`` directory. (You can't copy sub-directories without a special flag, but you can copy files! See the chapter you read.) 
+.. TODO basic dictionary mechanics in pset??
 
-After this, if you type ``ls`` in the ``ps3`` folder, you should see ``test.txt`` and ``sample.txt`` and the ``inside_ps3`` folder (unless you previously added more files to the ``ps1`` directory, in which case you should see those, too). Take a screenshot to show that you typed these commands and that they were successful. Upload it to **Unix problems 3** on Canvas.
+  * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 5:00 pm.
 
 
 .. _problem_set_3:
@@ -299,9 +282,22 @@ Fix the code so that it passes the test for each different value of x. So when t
    myTests().main()
 
 
-9. **Challenge problem (OPTIONAL, much harder):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
+9. Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
 
 .. activecode:: ps_3_9
+   
+   diction = {"python":"you are awesome","autumn":100}
+
+   # Write your code here.
+
+   ====
+
+   print "\n\n---\n"
+   print "There are no tests for this problem."
+
+10. **Challenge problem (OPTIONAL):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
+
+.. activecode:: ps_3_10
    :available_files: about_programming.txt
 
    # Write your code here.
@@ -310,3 +306,5 @@ Fix the code so that it passes the test for each different value of x. So when t
 
    print "\n\n---\n"
    print "There are no tests for this problem."
+
+11. Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
