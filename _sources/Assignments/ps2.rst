@@ -237,6 +237,7 @@ Now, take a look at the following code and related questions, in this code windo
 
    myTests().main()
 
+6. Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131285>`_ assignment for this week.
 
 .. activecode:: addl_functions_2
    :nopre:
