@@ -314,6 +314,7 @@ Sorting
    Sort/SortingaDictionary.rst
    Sort/Glossary.rst
    Sort/Exercises.rst
+   Sort/ExtraExercises.rst
 
 
 Python Modules
