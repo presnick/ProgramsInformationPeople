@@ -16,56 +16,31 @@ Activities through 2/7
 
 You have the following graded activities:
 
-* **Before Monday's class, 2/1:**
+* **Before Monday's class, 10/3:**
 
-  * Read `External tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ and `External tutorial on unix grep  <http://www.uccs.edu/~ahitchco/grep/>`_.
-  * Note: If you're trying out the commands in the tutorial on your own machine, don't be alarmed by the *who* command that is used in one of the examples. It's not very intuitive what it's doing on a single-user computing system like a Mac, and it's not available all in git bash for Windows users.
-    
-    * Note: you might also like some of the other pages in the tutorial at that site.
+  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the following exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
 
-  * Read :ref:`Dictionaries<dictionaries_chap>`, and do the exercises in that chapter
-
-.. usageassignment:: prep_07
-    :chapters: Dictionaries
-    :assignment_name: Prep 07
-    :deadline: 2016-02-01 19:40:00
-    :pct_required: 80
-    :points: 50
-
-
-* **By Tuesday midnight, 2/2:**
-
-  * Read chapter 5 of The Most Human Human
-  * Answer `Reading Response 5 <https://umich.instructure.com/courses/48961/assignments/57680>`_ on Canvas.
-
-* **Before Wednesday's class, 2/3:**
-
-  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and do the exercises in that chapter
   * Read :ref:`Strategy for building programs <build_program_chap>`
 
-.. usageassignment:: prep_08
-    :chapters: DictionaryAccumulation
-    :subchapters: BuildingAProgram/TheStrategy
-    :assignment_name: Prep 08
-    :deadline: 2016-02-03 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment
 
-* **By Sunday evening, 2/7:**
+
+* **By Tuesday 10/4 11:59 pm:**
+
+  * Read chapter 5 of The Most Human Human and answer `Reading Response 5 <https://umich.instructure.com/courses/105657/assignments/131316>`_ on Canvas.
+
+* **Before Wednesday's class, 10/5:**
+
+  * Read :ref:`Defining Functions<functions_chap>`, and try the following exercises in that chapter
   
-  * Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>` and the exercises in :ref:`Unix Problems 4 <unix_pset4>` to Canvas by **5PM**
-  * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
+.. usageassignment
 
-Unix Problems
--------------
+* **By Friday, 10/7 at 6:30 pm:**
+  
+  * Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>`and  submit your **Demonstrate Understanding** assignment to Canvas
 
-.. _unix_pset4:
+  * Note that you have a grace period for the PSet and DYU until Sunday 10/9 at 5:00 PM
 
-Turn these in as screenshots showing you've done these things via Canvas > Assignments > Unix problems 4.
-
-1. In the `tutorial on unix <, >, and |  <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_,  there are instructions for creating two files called  ``list1`` and ``list2``. Write a single unix command that displays all lines in either file that contain the letter ``p``.
-
-2. Save a file in the ``106`` folder you created a couple weeks ago called ``fun_with_unix.txt``. Now use ``ls``, ``|`` (pipe), and ``grep`` to find all filenames in your folder containing the string ``unix``. (For fun, try this with other substrings and other folders.)
 
 .. _problem_set_4:
 
@@ -106,7 +81,7 @@ Problem Set
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
-**Note:** Passing tests for a problem (``Pass``) does not ensure that the problem is 100% correct -- we can only test some things, to provide a bit of feedback as you go.
+**Note:** Passing tests for a problem (``Pass``) does not ensure that the problem is 100% correct -- we can only test some things, to provide feedback as you go.
 
 
 1. Old McDonald had a farm. He records the animals on his farm in a dictionary called 'animals'. See comments for additional instructions...
@@ -115,9 +90,8 @@ Problem Set
 
    animals = {'cows': 2, 'chickens': 8, 'pigs': 4, 'mice': 72, 'cats': 9,'dogs': 1}
 
-   # Write code to look up the number of chickens
-   # Old McDonald recorded and assign it to the 
-   # variable num_chickens. 
+   # Write code to look up the number of chickens that Old McDonald recorded 
+   # and assign it to the variable num_chickens. 
    # (Do not hard-code values! num_chickens = 8 will not earn points.)
 
    # Write code to add the key-value pair "yak":3
@@ -135,7 +109,7 @@ Problem Set
       def testOne(self):
          self.assertEqual(num_chickens, animals['chickens'], "Testing that num_chickens has been assigned the value of the key 'chickens'")
       def testTwo(self):
-         self.assertEqual(animals['yak'], 3, "Testing to see that 'yak' is a key in the dictionary animals")
+         self.assertEqual(animals['yak'], 3, "Testing to see that 'yak' is a key in the dictionary animals with the correct value")
       def testThree(self):
          self.assertEqual(animals['dogs'], 2, "Testing that the value of 'dogs' is now 2 in the dictionary animals")
 
@@ -247,3 +221,61 @@ Problem Set
          self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
 
    myTests().main()
+
+6. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+
+.. activecode:: ps_4_6
+
+   def subtract_five(inp):
+       print inp - 5
+       return None
+
+   y = subtract_five(9) - 6
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(y, -2, "Testing if y is -2")
+
+   myTests().main()
+
+7. Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+
+.. activecode:: ps_4_7
+
+   # We've started you off with the first line...
+   def change_amounts(num_here):
+       pass # delete this line and put in your own code for the body of the function.
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
+         self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
+
+   myTests().main()
+
+8. Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Why does it cause an error? Write a comment explaining why an error occurs. Then change line 5 to print out the result of an expression that evaluates to ``7``.
+
+.. activecode:: ps_4_8
+
+   def change_amounts(yp):
+       n = yp - 4
+       return n * 7
+
+   print yp
+
+   ====
+
+   print "\n---\n\n"
+   print "There are no tests for this problem, but when you run your code, you should see the integer 7"
+
+9. Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131287>`_ on Canvas.
