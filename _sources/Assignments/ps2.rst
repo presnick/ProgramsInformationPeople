@@ -12,57 +12,41 @@
     :linenothreshold: 500
 
 
-Activities through 1/24
+Activities through 9/23
 =======================
 
 You have the following graded activities:
 
-* **Before Tuesday 1/19 at midnight:** (Changed for clarity in retrospect: amnesty granted for W16 until 1/21 midnight)
+* **By Sunday 9/18 at 11:59 pm:** 
 
-  * Answer `Reading Response 3 <https://umich.instructure.com/courses/48961/assignments/57678>`_ .
+  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ .
 
-* **Before Wednesday's class 1/20** (no class Monday for MLK Day):
+* **Before class Monday 9/19:**
 
-  * Read :ref:`Sequences <sequences_chap>`, and do the exercises in that chapter.
-  * Read :ref:`unix cat and less<less_chap>` section of the Unix chapter
-
-  * Read chapter 2 of The Most Human Human.
-
-.. usageassignment:: prep_04
-    :chapters: Sequences
-    :subchapters: Unix/lessCommand
-    :assignment_name: Prep 04
-    :deadline: 2016-01-20 19:40:00
-    :pct_required: 80
-    :points: 50
-
-* By **Sunday 1/24 at 5PM**, save answers to the exercises in **Problem Set 2**:
-
-  * Do the Unix Problems part of the problem set: :ref:`Unix Problems (2) <unix_pset2>` and upload the screenshots in Canvas, Assignments > Unix problems 2.
-  * Save answers to each of the exercises in :ref:`Problem Set 2 <problem_set_2>`
-
-* By **Sunday 1/24 at 6PM**, save your **Demonstrate Understanding** assignment for this week in Canvas.
+  * * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
 
-.. _unix_pset2:
+* **Before Wednesday's class 9/21:**
 
-Unix Problems
--------------
+  * * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
 
-The following problems include instructions for you to follow in your Terminal application, if you have a Mac, or in Git Bash, if you have Windows (:ref:`instructions for installing git bash <install_git_bash>`). Each one requires you to take a screenshot of the result and upload all these screenshots to **PS3 Unix Problems** on Canvas  > Assignments PS3 Unix Problems.
+.. usageassignment
 
-1. Create a folder ``ps2`` in your 106 directory. Download the file ``sample.txt`` from the Canvas Code directory and save it in your ``ps2`` directory.
+* By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
-2. Connect to the ``ps2`` directory. Run the command ``less sample.txt``. Take a screenshot to show that the command worked for displaying the contents. Upload it to the Canvas assignment for **Unix problems 2**.
+  * Complete and save each of the problem set problems.
+  * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
+
+* Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 5:00 PM. 
+
 
 
 .. _problem_set_2:
 
 Problem Set
 -----------
-**Due:** **Sunday, January 24 at 5 pm**
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
+**Instructions:** Write the code you want to save in the provided boxes, and click **save & run** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
 1. Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
 
