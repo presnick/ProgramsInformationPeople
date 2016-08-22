@@ -54,8 +54,14 @@ Activities through 9/16
 
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ (DYU).
 
+* **By Sunday 9/18 at 11:59 pm:** (We include this in your assignments for next week)
 
-* Note that there is a grace period for the problem set and DYU assignment until **SUnday 9/18 at 5:00 PM**. You will not lose any points if you submit before then, even if you submit after the Friday deadline. After the grace period, we do not accept late assignments. See syllabus.
+  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ .
+
+
+* Note that there is a grace period for the problem set and DYU assignment until **Sunday 9/18 at 5:00 PM**. You will not lose any points if you submit before then, even if you submit after the Friday deadline. After the grace period, we do not accept late assignments. See syllabus.
+
+
 
 
 
@@ -68,7 +74,7 @@ Problem Set
 
 1. The variable ``tpa`` currently has the value ``0``. Assign the variable ``tpa`` the value ``6`` .
 
-.. activecode:: ps_1_1
+.. actex:: ps_1_1
 
    tpa = 0
    
@@ -86,7 +92,7 @@ Problem Set
 
 2. Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
 
-.. activecode:: ps_1_2
+.. actex:: ps_1_2
 
    cw = "Hello"
    yb = 0
@@ -106,7 +112,7 @@ Problem Set
 
 3. Write code to use the type function print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
 
-.. activecode:: ps_1_3
+.. actex:: ps_1_3
    
    apples_and_oranges = """hello, everybody
                              how're you?"""
@@ -122,7 +128,7 @@ Problem Set
 
 4. There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
 
-.. activecode:: ps_1_4
+.. actex:: ps_1_4
     :include: addl_functions
 
     # Want to make sure there really is a function called square? Uncomment the following line and press run.
@@ -146,7 +152,7 @@ Problem Set
 
 5. Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
 
-.. activecode:: ps_1_5
+.. actex:: ps_1_5
     :include: addl_functions
 
     # write your code here; include a blank line
@@ -165,7 +171,7 @@ Problem Set
 
 6. Write in a comment what each line of this code does. 
 
-.. activecode:: ps_1_6
+.. actex:: ps_1_6
     :include: addl_functions
 
     # Here's an example.
@@ -198,7 +204,7 @@ Then, write code that assigns to the variable ``new_digit`` the **return value**
 
 Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
 
-.. activecode:: ps_1_7
+.. actex:: ps_1_7
    :include: addl_functions
 
    # For example
@@ -232,7 +238,7 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
 
 8. Now write code that assigns the variable ``newval`` to hold the **return value** of ``greeting("everyone in class")``.
 
-.. activecode:: ps_1_8
+.. actex:: ps_1_8
    :include: addl_functions
 
    =====
@@ -249,7 +255,7 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
 
 9. This code causes an error. Why? Write a comment explaining.
 
-.. activecode:: ps_1_9
+.. actex:: ps_1_9
 
    another_variable = "?!"
    b = another_variable()
@@ -290,7 +296,7 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
 
 11. Write a program that uses the turtle module to draw something interesting. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to the Facebook group, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
 
-.. activecode:: ps_1_11
+.. actex:: ps_1_11
 
    import turtle
 
@@ -298,7 +304,7 @@ Then, write code that assigns to the variable ``digit_func`` the **function** ``
 
 That's the end of the problem set. In the hidden code below, you will find the definitions of functions square, random_digit, and greeting that were used elsewhere in the problem set. They're hidden because you don't yet need to understand how function definitions work. But if you want a preview, feel free to click on Show/hide code.
 
-.. activecode:: addl_functions
+.. actex:: addl_functions
    :nopre:
    :hidecode:
 
