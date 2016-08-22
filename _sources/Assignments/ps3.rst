@@ -19,16 +19,10 @@ You have the following graded activities:
 
 * **Before Monday's class, 1/25:**
 
-  * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter
+
   * Read :ref:`Folders and copying <mkdir_and_cp_sect>` about the Unix commands ``mkdir`` and ``cp``
 
-.. usageassignment:: prep_05
-    :chapters: Iteration
-    :subchapters: Unix/DirectoriesAndCopying
-    :assignment_name: Prep 05
-    :deadline: 2016-01-25 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment
 
 * **Before Tuesday 1/26 at midnight:**
 
