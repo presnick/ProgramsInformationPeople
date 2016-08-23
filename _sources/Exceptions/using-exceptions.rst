@@ -14,30 +14,32 @@ The reason to use try/except is when you have a code block to execute that will 
 
 For example, when you are running code that fetches data from a website, you may run the code when you don't have a network connection or when the external website is temporarily not responding. If your program can still do something useful in those situations, you would like to handle the exception and have the rest of your code execute.
 
-As another example, for the problem sets we have been including some hidden code that runs tests to automatically inform you whether your programs are running correctly. We do that by running a function called testEqual, in the test module, that takes two inputs and checks whether they are equal. We call testEqual, passing the values of variables or the return values from function calls. If those variables and functions are defined but produce the wrong values, our code tells you that you have failed the test. On the other hand, if our test calls a function that you have not yet defined, it will cause a run-time error. When there is a danger of that, we have wrapped our call to test.testEqual in a try/except. Starting with this problem set, where you get all of the code in a file, you can see these try/except clauses. For example, in ps7, we have the following:
+As another example, suppose you have fetched some nested data from a website into a dictionary d. When you try to extract specific elements, some may be missing: d may not include a particular key, for example. If you anticipate a particular key potentially not being present, you could write an if..else check to take care of it.
 
 .. sourcecode:: python
 
-   fall_list = ["leaves","apples","autumn","bicycles","pumpkin","squash","excellent"]
-   
-   # Write code to sort the list fall_list in reverse alphabetical order. 
-   # Assign the sorted list to the variable sorted_fall_list.
-   
-   # Now write code to sort the list fall_list by length of the word, longest to shortest.
-   # Assign this sorted list to the variable length_fall_list.
-   
-   try:
-       test.testEqual(sorted_fall_list[0], 'squash', "squash first")
-       test.testEqual(length_fall_list[0], 'excellent', "excellent first")
-   except:
-       print "sorted_fall_list or length_fall_list don't exist or have no items"
-   
+    if somekey in d:
+        # it's there; extract the data
+        extract_data(d)
+    else:
+        skip_this_one(d)
 
-When you first run this, sorted_fall_list is not bound, so you get an error that is handled by the exception clause. If you add ``sorted_fall_list = [1, 2, 3]``, it will tell you that the first test doesn't pass, because the list has the wrong first element.
+However, if you're extracting lots of different data, it can get tedious to check for all of them. You can wrap all the data extraction in a try/except.
 
-.. note::
+.. sourcecode:: python
 
-   The testEqual function that we have provided you for download is slightly different than the one that's built into ActiveCode test module. It takes an extra parameter (e.g., "squash first") that is just a comment string. This code may not work properly in an ActiveCode window.  
+    try:
+        extract_data(d)
+    except:
+        skip_this_one(d)
 
+It's considered poor practice to catch all exceptions this way. Instead, python provides a mechanism to specify just certain kinds of exceptions that you'll catch (for example, just catching exceptions of type KeyError, which happens when a key is missing from a dictionary.
 
+.. sourcecode:: python
 
+    try:
+        extract_data(d)
+    except KeyError:
+        skip_this_one(d)
+
+We won't go into more details of exception handling in this introductory course. Check out the official `python tutorial section on error handling <https://docs.python.org/3/tutorial/errors.html>`_ if you're interested.

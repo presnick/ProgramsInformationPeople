@@ -24,23 +24,44 @@ A useful function will do some combination of three things, given its input para
 * Modify the contents of some mutable object, like a list or dictionary. For these you will write **side effect tests**.
 * Print something or write something to a file. Tests of whether a function generates the right printed output are beyond the scope of this testing framework; you won't write these tests.
 
-Testing whether a function returns the correct value is the easiest test case to define. You simply check whether the result of invoking the function on a particular input produces the particular output that you expect. If f is your function, and you think that it should transform inputs x and y into output z, then you could write a test as ``test.testEqual(f(x, y), z)``. Or, to give a more concrete example, if you have a function ``sqaure``, you could have a test case ``test.testEqual(square(3), 9)``. Call this a **return value test**. 
+Testing whether a function returns the correct value is the easiest test case to define. You simply check whether the result of invoking the function on a particular input produces the particular output that you expect. If f is your function, and you think that it should transform inputs x and y into output z, then you could write a test as ``self.assertEqual(f(x, y), z)``. Or, to give a more concrete example, if you have a function ``square``, you could have a test case ``self.assertEqual(square(3), 9)``. Call this a **return value test**.
 
-To test whether a function makes correct changes to a mutable object, you will need more than one line of code. You will first set the mutable object to some value, then run the function, then check whether the object has the expected value. An example follows. Call this a **side effect test** because you are checking to see whether the function invocation has had the correct side effect on the mutable object.
+To test whether a function makes correct changes to a mutable object, you will need more than one line of code. You will first set the mutable object to some value, then run the function, then check whether the object has the expected value. Call this a **side effect test** because you are checking to see whether the function invocation has had the correct side effect on the mutable object.
+
+An example follows, testing the update_counts function. It takes a string called letters and updates the counts in counts_diction that are associated with each character in the string. To do a side effect test, we first create a dictionary with initial counts for some letters. Then we invoke the function. Then we assert that the dictionary has the correct counts for some letters (those correct counts are computed manually when we write the test).
+
+.. activecode:: simple_test_3
+
+    def square(x):
+        return x*x
+
+    def update_counts(letters, counts_dict):
+        for c in letters:
+            if c in counts_dict:
+                counts_dict[c] = counts_dict[c] + 1
+            else:
+                counts_dict[c] = 1
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test_return_value(self):
+            self.assertEqual(square(3), 9)
+
+        def test_side_effect(self):
+            counts_dict = {'a': 3, 'b': 2}
+            update_counts("aaab", counts_dict)
+            # 3 more occurrences of a, so 6 in all
+            self.assertEqual(counts_dict['a'], 6)
+            # 1 more occurrence of b, so 3 in all
+            self.assertEqual(counts_dict['b'], 3)
+
+    myTests().main()
 
 .. sourcecode:: python
 
-   def update_counts(letters, counts_dict):
-       for c in letters:
-           if c in counts_dict:
-               counts_dict[c] = counts_dict[c] + 1
-           else:
-               counts_dict[c] = 1
-   
-   counts_dict = {'a': 3, 'b': 2}
-   update_counts("aaab", counts_dict)
-   test.testEqual(counts_dict['a'], 6)
-   test.testEqual(counts_dict['b'], 3)
+
 
 Because each test checks whether a function works properly on specific inputs, the test cases will never be complete: in principle, a function might work properly on all the inputs that are tested in the test cases, but still not work properly on some other inputs. That's where the art of defining test cases comes in: you try to find specific inputs that are representative of all the important kinds of inputs that might ever be passed to the function.
 

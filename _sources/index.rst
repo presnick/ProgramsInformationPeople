@@ -481,7 +481,6 @@ Test Cases
    :maxdepth: 2
 
    Testing/intro-TestCases.rst
-   Testing/TestCasesRevisited.rst
    Testing/Testingfunctions.rst
    Testing/Testingclasses.rst
    Testing/Glossary.rst

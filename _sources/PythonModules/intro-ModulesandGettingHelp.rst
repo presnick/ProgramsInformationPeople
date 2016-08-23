@@ -74,7 +74,7 @@ When you see imported modules in a Python program, there are a few variations th
 
 1. The most common is  ``import morecode``. That imports everything in morecode.py. To invoke a function f1 that is defined in morecode.py, you would write ``morecode.f1()``. Note that you have to explicitly mention morecode again, to specify that you want the f1 function from morecode namespace. If you just write ``f1()``, python will look for an f1 that was defined in the current file, rather than in morecode.py.
 
-2. You can also give the imported module an alias. For example, after executing ``import morecode as mc``, you would invoke f1 as ``mc.f1()``. Programmers often do this to make code easier to type. In this course, we will be distributing a file called test106.py. In your code files for the rest of the semester, you will need to include the following line, ``import test106 as test``. Then you will be able to have code that invokes a function called testEqual, from test106.py, like so: ``test.testEqual(x, y)``. That will test whether x and y have the same value. testEqual is the function that we've been using already this semester, behind the scenes, to give you automated feedback about whether your problem set answers were correct.
+2. You can also give the imported module an alias. For example, after executing ``import morecode as mc``, you would invoke f1 as ``mc.f1()``. Programmers often do this to make code easier to type.
 
 3. A third possibility for importing occurs when you only want to import SOME of the functionality from a module, and you want to make those objects be part of the current module's namespace. For example, you could write ``from morecode import f1``. Then you could invoke f1 without referencing morecode again: ``f1()``.
 
