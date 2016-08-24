@@ -23,9 +23,10 @@ Activities through 9/16
 
 .. usageassignment or appropriate directive
 
-* Participation in discussion section, 9/8 or 9/9
+* **Participation in discussion section**, 9/8 or 9/9
 
-* **By Sunday night, 9/11:**
+
+* **By Sunday 9/11 at 11:59 pm:**
 
   * read the intro and chapter 1 of The Most Human Human book.
   * Answer `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_ .
@@ -70,7 +71,7 @@ Activities through 9/16
 Problem Set
 -----------
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
+**Instructions:** Write the code you want to save in the provided boxes, and click **Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
 
 
 .. question:: problem_set_1_1
@@ -93,217 +94,234 @@ Problem Set
      myTests().main()
    
 
-2. Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
+.. question:: problem_set_1_2
 
-.. activecode:: ps_1_2
+  Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
 
-   cw = "Hello"
-   yb = 0
+  .. activecode:: ps_1_2
 
-   =====
+     cw = "Hello"
+     yb = 0
 
-   from unittest.gui import TestCaseGui
+     =====
 
-   class myTests(TestCaseGui):
+     from unittest.gui import TestCaseGui
 
-      def testOne(self):
-         self.assertEqual(cw, yb, "Testing that yb has the same value as cw")
-         self.assertEqual(cw, "Hello", "Testing that cw's value is 'Hello'.")
+     class myTests(TestCaseGui):
 
-   myTests().main()
+        def testOne(self):
+           self.assertEqual(cw, yb, "Testing that yb has the same value as cw")
+           self.assertEqual(cw, "Hello", "Testing that cw's value is 'Hello'.")
 
-
-3. Write code to use the type function print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
-
-.. activecode:: ps_1_3
-   
-   apples_and_oranges = """hello, everybody
-                             how're you?"""
-
-   abc = 6.75483
-
-   new_var = 824
-
-   ====
-
-   print "\n\n---\n(There are no tests for this problem.)"
+     myTests().main()
 
 
-4. There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
+.. question:: problem_set_1_3
 
-.. activecode:: ps_1_4
-    :include: addl_functions
+  Write code to use the type function print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
 
-    # Want to make sure there really is a function called square? Uncomment the following line and press run.
+  .. activecode:: ps_1_3
+     
+     apples_and_oranges = """hello, everybody
+                               how're you?"""
 
-    #print type(square)
-   
-    xyz = ""
+     abc = 6.75483
+
+     new_var = 824
+
+     ====
+
+     print "\n\n---\n(There are no tests for this problem.)"
+
+.. question:: problem_set_1_4
+
+  There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
+
+  .. activecode:: ps_1_4
+      :include: addl_functions
+
+      # Want to make sure there really is a function called square? Uncomment the following line and press run.
+
+      #print type(square)
+     
+      xyz = ""
+      
+      =====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+            self.assertEqual(type(xyz), type(3), "Checking type of xyz")
+            self.assertEqual(xyz, 25, "Checking if xyz is 25")
+
+      myTests().main()
+
+.. question:: problem_set_1_5
+
+  Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
+
+  .. activecode:: ps_1_5
+      :include: addl_functions
+
+      # write your code here; include a blank line
+
+      =====
+
+      from unittest.gui import TestCaseGui
+
+      class myTests(TestCaseGui):
+
+         def testOne(self):
+             self.assertEqual(new_number, 9, "Testing that new_number's value is 9")
+
+      myTests().main()
+
+.. question:: problem_set_1_6
+
+  Write in a comment what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
+
+  .. activecode:: ps_1_6
+      :include: addl_functions
+
+      # Here's an example.
+      xyz = 12 # The variable xyz is being assigned the value 12, which is an integer
+
+      # Now do the same for these!
+      a = 6
+
+      b = a
+
+      # make sure to be very clear and detailed about the following line of code
+      orange = square(b)
+
+      print a
+
+      print b
+
+      print orange
+
+      pear = square
+
+      print pear
+
+
+.. question:: problem_set_1_7
+
+  There are a couple more functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
+
+  Write code that assigns to the variable ``func_var`` the **function** ``greeting`` (without executing the function). 
+
+  Then, write code that assigns to the variable ``new_digit`` the **return value** from executing the function ``random_digit``.
+
+  Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
+
+  .. activecode:: ps_1_7
+     :include: addl_functions
+
+     # For example
+     print greeting("Jackie")
+     print greeting("everybody")
+     print greeting("sdgadgsal")
+     
+     # Try running all this code more than once, so you can see how calling the function
+     # random_digit works.
+     print random_digit()
+     print random_digit()
+
+     # Write code that assigns the variables as mentioned in the instructions.
+
+     =====
+
+     from unittest.gui import TestCaseGui
+
+     class myTests(TestCaseGui):
+
+        def testOne(self):
+           self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
+        def testTwo(self):
+           self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
+        def testThree(self):
+           self.assertEqual(type(digit_func), type(random_digit), "Testing that digit_func is same type as random_digit")
+
+     myTests().main()
+
+.. question:: problem_set_1_8
+
+  Now write code that assigns the variable ``newval`` to hold the **return value** of ``greeting("everyone in class")``.
+
+  .. activecode:: ps_1_8
+     :include: addl_functions
+
+     =====
+
+     from unittest.gui import TestCaseGui
+
+     class myTests(TestCaseGui):
+
+        def testOne(self):
+           self.assertEqual(newval, greeting("everyone in class"), "newval has not been assigned the correct value")
+
+     myTests().main()
     
-    =====
 
-    from unittest.gui import TestCaseGui
+.. question:: problem_set_1_9
 
-    class myTests(TestCaseGui):
+  This code causes an error. Why? Write a comment in the code window to explain.
 
-       def testOne(self):
-          self.assertEqual(type(xyz), type(3), "Checking type of xyz")
-          self.assertEqual(xyz, 25, "Checking if xyz is 25")
+  .. activecode:: ps_1_9
 
-    myTests().main()
+     another_variable = "?!"
+     b = another_variable()
 
+.. question:: problem_set_1_10
 
-5. Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
+  Here's another complicated expression, using the Turtle framework we talked about. Arrange these expressions in the order they are executed, like you did in an exercise in Chapter 2 of the textbook.
 
-.. activecode:: ps_1_5
-    :include: addl_functions
+  .. sourcecode:: python
 
-    # write your code here; include a blank line
+     import turtle
 
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-
-       def testOne(self):
-           self.assertEqual(new_number, 9, "Testing that new_number's value is 9")
-
-    myTests().main()
+     ella = turtle.Turtle()
+     x = "hello class".find("o") - 1
+     ella.speed = 3
 
 
-6. Write in a comment what each line of this code does. 
+     ella.move(square(x*ella.speed))
 
-.. activecode:: ps_1_6
-    :include: addl_functions
+  .. parsonsprob:: ps_1_10
 
-    # Here's an example.
-    xyz = 12 # The variable xyz is being assigned the value 12, which is an integer
+     Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code, ``ella.move(square(x*ella.speed))`` (It may help to think about what specifically is happening in the first four lines of code as well.)
+     -----
+     Look up the variable ella and find that it is an instance of a Turtle object
+     =====
+     Look up the attribute move of the Turtle ella and find that it's a method object
+     =====
+     Look up the function square
+     =====
+     Look up the value of the variable x and find that it is an integer
+     =====
+     Look up the value of the attribute speed of the instance ella and find that it is an integer
+     =====
+     Evaluate the expression x * ella.speed to one integer
+     =====
+     Call the function square on an integer value
+     =====
+     Call the method .move of the Turtle ella on its input integer
 
-    # Now do the same for these!
-    a = 6
+.. question:: problem_set_1_11
 
-    b = a
+  Write a program that uses the turtle module to draw something interesting. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to the Facebook group, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
 
-    # make sure to be very clear and detailed about the following line of code
-    orange = square(b)
+  .. activecode:: ps_1_11
 
-    print a
+     import turtle
 
-    print b
+.. question:: problem_set_1_12
 
-    print orange
+  Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ for this week.
 
-    pear = square
-
-    print pear
-
-
-7. There are a couple more functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
-
-Write code that assigns to the variable ``func_var`` the **function** ``greeting`` (without executing the function). 
-
-Then, write code that assigns to the variable ``new_digit`` the **return value** from executing the function ``random_digit``.
-
-Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
-
-.. activecode:: ps_1_7
-   :include: addl_functions
-
-   # For example
-   print greeting("Jackie")
-   print greeting("everybody")
-   print greeting("sdgadgsal")
-   
-   # Try running all this code more than once, so you can see how calling the function
-   # random_digit works.
-   print random_digit()
-   print random_digit()
-
-   # Write code that assigns the variables as mentioned in the instructions.
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
-      def testTwo(self):
-         self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
-      def testThree(self):
-         self.assertEqual(type(digit_func), type(random_digit), "Testing that digit_func is same type as random_digit")
-
-   myTests().main()
-
-
-
-8. Now write code that assigns the variable ``newval`` to hold the **return value** of ``greeting("everyone in class")``.
-
-.. activecode:: ps_1_8
-   :include: addl_functions
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(newval, greeting("everyone in class"), "newval has not been assigned the correct value")
-
-   myTests().main()
-    
-
-9. This code causes an error. Why? Write a comment explaining.
-
-.. activecode:: ps_1_9
-
-   another_variable = "?!"
-   b = another_variable()
-
-
-10. Here's another complicated expression, using the Turtle framework we talked about. Arrange these expressions in the order they are executed, like you did in an exercise in Chapter 2 of the textbook.
-
-.. sourcecode:: python
-
-   import turtle
-
-   ella = turtle.Turtle()
-   x = "hello class".find("o") - 1
-   ella.speed = 3
-
-
-   ella.move(square(x*ella.speed))
-
-.. parsonsprob:: ps_1_10
-
-   Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code, ``ella.move(square(x*ella.speed))`` (It may help to think about what specifically is happening in the first four lines of code as well.)
-   -----
-   Look up the variable ella and find that it is an instance of a Turtle object
-   =====
-   Look up the attribute move of the Turtle ella and find that it's a method object
-   =====
-   Look up the function square
-   =====
-   Look up the value of the variable x and find that it is an integer
-   =====
-   Look up the value of the attribute speed of the instance ella and find that it is an integer
-   =====
-   Evaluate the expression x * ella.speed to one integer
-   =====
-   Call the function square on an integer value
-   =====
-   Call the method .move of the Turtle ella on its input integer
-
-11. Write a program that uses the turtle module to draw something interesting. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to the Facebook group, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
-
-.. activecode:: ps_1_11
-
-   import turtle
-
-12. Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ for this week.
 
 That's the end of the problem set. In the hidden code below, you will find the definitions of functions square, random_digit, and greeting that were used elsewhere in the problem set. They're hidden because you don't yet need to understand how function definitions work. But if you want a preview, feel free to click on Show/hide code.
 
