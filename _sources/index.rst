@@ -375,6 +375,7 @@ String Formatting
    StringFormatting/Interpolation.rst
    StringFormatting/CSV.rst
    StringFormatting/Exercises.rst
+   StringFormatting/ExtraExercises.rst
 
 Using RESTAPIs
 ::::::::::::::
@@ -419,6 +420,7 @@ Classes
    Classes/Tamagotchi.rst
    Classes/Glossary.rst
    Classes/Exercises.rst
+   Classes/ExtraExercises.rst
 
 Inheritance
 :::::::::::
