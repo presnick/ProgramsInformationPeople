@@ -49,7 +49,8 @@ Problem Set
 **Instructions:** Write the code you want to save in the provided boxes, and click **save & run** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
 .. question:: problem_set_2_1
-
+  :number: 1
+  
   Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
 
   .. activecode:: ps_2_1
@@ -166,6 +167,8 @@ Problem Set
 
   .. activecode:: ps_2_4
      :include: addl_functions_2
+     :coach:
+     :gradebutton:
      
      new_str = "'Twas brillig"
      
