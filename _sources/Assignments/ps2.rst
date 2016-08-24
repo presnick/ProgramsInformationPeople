@@ -189,7 +189,7 @@ Problem Set
      #####################   
      
      # Write a comment explaining each of the following, after each question.
-     # Don't forget to save!
+     # Don't forget to press **run** to save!
      
      # What is square? 
      
