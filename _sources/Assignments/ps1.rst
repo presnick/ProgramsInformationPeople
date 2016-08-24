@@ -72,22 +72,25 @@ Problem Set
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
-1. The variable ``tpa`` currently has the value ``0``. Assign the variable ``tpa`` the value ``6`` .
 
-.. actex:: ps_1_1
+.. question:: problem_set_1_1
 
-   tpa = 0
-   
-   =====
+  The variable ``tpa`` currently has the value ``0``. Assign the variable ``tpa`` the value ``6`` .
 
-   from unittest.gui import TestCaseGui
+  .. activecode:: ps_1_1
 
-   class myTests(TestCaseGui):
+     tpa = 0
+     
+     =====
 
-      def testOne(self):
-         self.assertEqual(tpa, 6, "Testing that tpa's value is 6.")
+     from unittest.gui import TestCaseGui
 
-   myTests().main()
+     class myTests(TestCaseGui):
+
+        def testOne(self):
+           self.assertEqual(tpa, 6, "Testing that tpa's value is 6.")
+
+     myTests().main()
    
 
 2. Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
