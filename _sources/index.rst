@@ -448,6 +448,7 @@ More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
    AdvancedAccumulation/reduce.rst
    AdvancedAccumulation/zip.rst
    AdvancedAccumulation/exercises.rst
+   AdvancedAccumulation/ExtraExercises.rst
 
 The FaceBook Graph API
 ::::::::::::::::::::::
