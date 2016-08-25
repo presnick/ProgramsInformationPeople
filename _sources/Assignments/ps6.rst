@@ -12,39 +12,30 @@
     :linenothreshold: 500
 
 
-Activities through 2/21
-=======================
+Activities through 10/28
+========================
 
 You have the following graded activities:
 
-* Before Monday's class:
+* **Before Monday's class 10/24:**
     * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and do the exercises in that chapter
 
-* **By Tuesday 2/16 midnight:**
+* **By Tuesday 10/25 11:59 pm:**
     * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below)
     * Read *The Most Human Human*, Chapter 10, p.237-259.
-    * Answer `Reading Response 7 <https://umich.instructure.com/courses/48961/assignments/57683>`_ on Canvas.
+    * Answer `Reading Response 7 <UPDATELINK>`_ on Canvas.
 
-.. usageassignment:: prep_11
-    :chapters: OptionalAndKeywordParameters
-    :assignment_name: Prep a11
-    :deadline: 2016-02-16 21:30:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment
 
-* Before Wednesday's class:
-   * Read :ref:`Tuples<tuples_chap>`, and do the exercises in that chapter
-   * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and do the exercises in that chapter
+* **Before Wednesday's class 10/26:**
+   * Read :ref:`Tuples<tuples_chap>`, and try the exercises in that chapter
+   * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and try the exercises in that chapter
 
-.. usageassignment:: prep_12
-    :chapters: Tuples, NestedData
-    :assignment_name: Prep a12
-    :deadline: 2016-02-18 21:30:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment
 
-* By Sunday 02/21 at 5PM:
-   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`. 
+* **By Friday 10/28 at 6:30 PM:**
+   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`.
+   * Submit your **Demonstrate Your Understanding** assignment on Canvas (linked in problem set) 
 
 * By Monday 10/23 at 7PM:
    * Be ready for the midterm exam (7 pm), see syllabus.
