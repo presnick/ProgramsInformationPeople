@@ -17,15 +17,9 @@ Activities through 2/14
 You have the following graded activities:
 
 * Before Monday's class:
-    * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+    
 
-
-.. usageassignment:: prep_09
-    :chapters: Functions
-    :assignment_name: Prep 09
-    :deadline: 2016-02-08 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment
 
 * By Tuesday midnight:
     * Read *The Most Human Human*, Chapter 10, p.219-237.
@@ -90,26 +84,7 @@ Problem Set
     In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
     (Wikipedia)
 
-1. Take a look at the code below. The function subtract_five is supposed to take one integer as input and return that integer - 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
 
-.. activecode:: ps_5_1
-
-   def subtract_five(inp):
-       print inp - 5
-       return None
-
-   y = subtract_five(9) - 6
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(y, -2, "Testing if y is -2")
-
-   myTests().main()
 
 2. Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
@@ -123,25 +98,7 @@ Problem Set
    print "There are no tests for this problem"
 
 
-3. Define a function called change_amounts that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
 
-.. activecode:: ps_5_3
-
-   # We've started you off with the first line...
-   def change_amounts(num_here):
-       pass # delete this line and put in your own code for the body of the function.
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
-         self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
-
-   myTests().main()
 
 
 4. We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
@@ -162,21 +119,6 @@ Problem Set
 
    myTests().main()
 
-
-5. Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Write a comment explaining why an error occurs. Then fix line 5 so that it does not generate an error.
-
-.. activecode:: ps_5_5
-
-   def change_amounts(yp):
-       n = yp - 4
-       return n * 7
-
-   print yp
-
-   ====
-
-   print "\n---\n\n"
-   print "There are no tests for this problem"
 
 7. See comments and code below for instructions.
 
