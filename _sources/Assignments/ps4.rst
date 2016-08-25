@@ -199,7 +199,7 @@ Problem Set
       def testOne(self):
          self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
          self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
-         self.assertEqual(nums, {"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}, "Testing that the contents of nums is accurate.")
+         self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
 
    myTests().main()
 
