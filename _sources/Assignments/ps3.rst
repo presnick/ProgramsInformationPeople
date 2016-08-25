@@ -83,79 +83,88 @@ Problem Set
    security clearance). However, representing oneself as a "professional software engineer"
    without a license from an accredited institution is illegal in many parts of the world.
 
-1. Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+.. question:: problem_set_3_1
 
-.. activecode:: ps_3_1
+  Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
 
-   several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+  .. activecode:: ps_3_1
 
-   ====
+     several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
-   print "\n\n---\n"
-   print "(There are no tests for this problem.)"
+     ====
 
-2. See the comments for directions.
+     print "\n\n---\n"
+     print "(There are no tests for this problem.)"
 
-.. activecode:: ps_3_2
+.. question:: problem_set_3_1
 
-   sent = "The magical mystery tour is waiting to take you away."
+  See the comments for directions.
 
-   # The following code does not iterate over the words in the English sentence we can read that's stored in the variable sent:
-   for x in sent:
-       print x
-   # Why not? Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence? Write a comment explaining:
+  .. activecode:: ps_3_2
 
+     sent = "The magical mystery tour is waiting to take you away."
 
-   # Write code that assigns a variable word_list to hold a LIST of all the
-   # WORDS in the string sent. It's fine if words include punctuation.
-
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         print "No tests for the comment, of course -- we can only test stored values!\n"
-         self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
-
-   myTests().main()
+     # The following code does not iterate over the words in the English sentence we can read that's stored in the variable sent:
+     for x in sent:
+         print x
+     # Why not? Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence? Write a comment explaining:
 
 
-3. Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
-
-``hello``
-
-``goodbye``
-
-``wonderful``
-
-``I love Python``
-
-(Hint: remember string slicing?)
-
-.. activecode:: ps_3_3
-
-   excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
-
-   # Write your code here.
-
-   ====
-
-   print "\n\n---\n"
-   print "(There are no tests for this problem.)"
+     # Write code that assigns a variable word_list to hold a LIST of all the
+     # WORDS in the string sent. It's fine if words include punctuation.
 
 
-4. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) (Hint: use one of the file methods you've learned to make this easy!) Do not print out a list. 
+     =====
 
-The result should look like this:
+     from unittest.gui import TestCaseGui
 
-   Computer programming (often shortened to programming) is a process that leads from an
+     class myTests(TestCaseGui):
+
+        def testOne(self):
+           print "No tests for the comment, of course -- we can only test stored values!\n"
+           self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
+
+     myTests().main()
+
+.. question:: problem_set_3_3
+
+  Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+
+  ::
+
+    hello
+    goodbye
+    wonderful
+    I love Python
+
+  (Hint: remember string slicing?)
+
+  .. activecode:: ps_3_3
+
+     excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
+
+     # Write your code here.
+
+     ====
+
+     print "\n\n---\n"
+     print "(There are no tests for this problem.)"
+
+.. question:: problem_set_3_4
+
+  Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) 
+
+  **Hint:** Use one of the file methods you've learned to make this easy! Do not print out a list with ``[``s.
+
+  The result should look like this:
+
+  ::
+
+    Computer programming (often shortened to programming) is a process that leads from an
   
-   original formulation of a computing problem to executable programs. It involves
+    original formulation of a computing problem to executable programs. It involves
 
-.. activecode:: ps_3_4
+  .. activecode:: ps_3_4
       :available_files: about_programming.txt
 
       # Write your code here.
@@ -167,144 +176,158 @@ The result should look like this:
       print "\n\n---\n"
       print "There are no tests for this problem."
 
+.. question:: problem_set_3_5
 
-5. Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
+  Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
 
-.. activecode:: ps_3_5
-      :available_files: about_programming.txt
+  .. activecode:: ps_3_5
+        :available_files: about_programming.txt
 
-      # Write your code here.
+        # Write your code here.
 
-      =====
+        =====
 
-      from unittest.gui import TestCaseGui
+        from unittest.gui import TestCaseGui
 
-      class myTests(TestCaseGui):
+        class myTests(TestCaseGui):
 
-         def testOne(self):
-            print "No tests for the comment, of course -- we can only test stored values!\n"
-            self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
+           def testOne(self):
+              print "No tests for the comment, of course -- we can only test stored values!\n"
+              self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
 
-      myTests().main()
-
-
-6. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
-
-Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
-(HINT: you don't have to make a big change.)
-
-.. activecode:: ps_3_6
-
-   #x = 25
-   #x = 15
-   #x = 5
-   #x = -10
-
-   if x > 20:
-       y = "yes"
-   if x > 10:
-       y = "no"
-   if x < 0:
-       y = "maybe"
-   else:
-       y = "unknown"
-
-   print "y is " + str(y)
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         print("No tests for the comment, of course -- we can only test stored values!\n")
-         if x == 25:
-            self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
-         elif x == 15:
-            self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
-         elif x == 5:
-            self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
-         elif x == -10:
-            self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
-         else:
-            print "No tests when value of x is %s" % (x)
-
-   myTests().main()
+        myTests().main()
 
 
-7. See comments in code for instructions.
+.. question:: problem_set_3_6
 
-.. activecode:: ps_3_7
+  The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
-   lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
+  Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
 
-   # How many characters are in each element of list lp?
-   # Write code to print the length (number of characters)
-   # of each element of the list on a separate line.
-   ## (Do not write 8+ lines of code to do this. Use a for loop.)
+  (HINT: you don't have to make a big change.)
 
-   # The output you get should be:
-   # 5
-   # 13
-   # 11
-   # 12
-   # 3
-   # 12
-   # 11
-   # 6
+  .. activecode:: ps_3_6
 
-   # Now write code to print out each element of
-   # list lp only IF the length of the element is
-   # an even number. Use iteration (a for loop!).
+     #x = 25
+     #x = 15
+     #x = 5
+     #x = -10
 
-   ====
+     if x > 20:
+         y = "yes"
+     if x > 10:
+         y = "no"
+     if x < 0:
+         y = "maybe"
+     else:
+         y = "unknown"
 
-   print "\n---\n\n"
-   print "There are no tests for this problem."
+     print "y is " + str(y)
+
+     =====
+
+     from unittest.gui import TestCaseGui
+
+     class myTests(TestCaseGui):
+
+        def testOne(self):
+           print("No tests for the comment, of course -- we can only test stored values!\n")
+           if x == 25:
+              self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
+           elif x == 15:
+              self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
+           elif x == 5:
+              self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
+           elif x == -10:
+              self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
+           else:
+              print "No tests when value of x is %s" % (x)
+
+     myTests().main()
 
 
-8. Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. HINT 1: Use the accumulation pattern! HINT 2: the ``in`` operator checks whether a letter or substring is present in a string.
+.. question:: problem_set_3_7
 
-.. activecode:: ps_3_8
+  How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
-   items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
+  The output you get should be:
 
-   =====
+  :: 
 
-   from unittest.gui import TestCaseGui
+    5
+    13
+    11
+    12
+    3
+    12
+    11
+    6
 
-   class myTests(TestCaseGui):
+  Then, write code to print out each element of list ``lp`` *only if* the length of the element is an even number. Use iteration (a for loop!).
 
-      def testOne(self):
-         self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
+  .. activecode:: ps_3_7
 
-   myTests().main()
+     lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
 
+    
 
-9. Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+     ====
 
-.. activecode:: ps_3_9
-   
-   diction = {"python":"you are awesome","autumn":100}
+     print "\n---\n\n"
+     print "There are no tests for this problem."
 
-   # Write your code here.
+.. question:: ps_3_8
 
-   ====
+  Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
 
-   print "\n\n---\n"
-   print "There are no tests for this problem."
+  HINT 1: Use the accumulation pattern! 
 
-10. **Challenge problem (OPTIONAL):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
+  HINT 2: the ``in`` operator checks whether a substring is present in a string.
 
-.. activecode:: ps_3_10
-   :available_files: about_programming.txt
+  .. activecode:: ps_3_8
 
-   # Write your code here.
+     items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
 
-   ====
+     =====
 
-   print "\n\n---\n"
-   print "There are no tests for this problem."
+     from unittest.gui import TestCaseGui
 
-11. Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
+     class myTests(TestCaseGui):
+
+        def testOne(self):
+           self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
+
+     myTests().main()
+
+.. question:: problem_set_3_9
+
+  Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+
+  .. activecode:: ps_3_9
+     
+     diction = {"python":"you are awesome","autumn":100}
+
+     # Write your code here.
+
+     ====
+
+     print "\n\n---\n"
+     print "There are no tests for this problem."
+
+.. question:: problem_set_3_10
+
+  **Challenge problem (OPTIONAL):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
+
+  .. activecode:: ps_3_10
+     :available_files: about_programming.txt
+
+     # Write your code here.
+
+     ====
+
+     print "\n\n---\n"
+     print "There are no tests for this problem."
+
+.. question:: problem_set_3_11
+
+  Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
