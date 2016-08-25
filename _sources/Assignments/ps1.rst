@@ -165,7 +165,7 @@ Problem Set
   .. activecode:: ps_1_5
       :include: addl_functions
 
-      # write your code here; include a blank line
+      # Write your code here: 
 
       =====
 

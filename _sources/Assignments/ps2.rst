@@ -167,8 +167,6 @@ Problem Set
 
   .. activecode:: ps_2_4
      :include: addl_functions_2
-     :coach:
-     :gradebutton:
      
      new_str = "'Twas brillig"
      
