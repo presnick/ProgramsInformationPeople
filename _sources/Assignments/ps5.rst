@@ -30,7 +30,7 @@ You have the following graded activities:
 
 * **Before Wednesday's class 10/12:**
     
-  * Read :ref:`Unix and the Command Line<unix_chap>`, and try out the commands you learn in Terminal, if you use a mac, or Git Bash, if you use Windows.
+  * Read :ref:`Unix and the Command Line<unix_chapter>`, and try out the commands you learn in Terminal, if you use a mac, or Git Bash, if you use Windows.
   * Read `this tutorial <>`_ on Unix pipes and the Unix command **grep**.
 
 .. usageassignment
