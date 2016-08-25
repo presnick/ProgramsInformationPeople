@@ -450,7 +450,7 @@ Problem Set
       main()
 
 
-.. question:: problem_set_6_7
+.. question:: problem_set_6_9
 
   Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131289>`_ assignment on Canvas.
 
