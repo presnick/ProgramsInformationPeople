@@ -19,8 +19,8 @@ You have the following graded activities:
 
 * **Before Monday's class, 9/26:**
 
-  * Read :ref:`Conditionals <conditionals_chap>` and do exercises
-  * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
+  * Read :ref:`Conditionals <conditionals_chap>` and try exercises
+  * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or the last exercise will be very confusing...)
   * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
 
 .. usageassignment
