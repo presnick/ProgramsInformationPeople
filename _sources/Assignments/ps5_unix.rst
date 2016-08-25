@@ -30,7 +30,7 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
     Open the text editor you installed: Sublime Text. You will be creating and saving 4 different files to your ``Desktop``. 
 
-    * In the first file, put the following:
+    * **In the first file,** put the following:
 
     .. sourcecode:: python
 
@@ -38,9 +38,10 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
     Save the file as ``prog1.py``. You've now saved a Python program on your computer!
 
-    * In the second file, put the following:
 
-    .. sourceode:: python
+    * **In the second file,** put the following:
+
+    .. sourcecode:: python
 
         def greeting(x):
             return "hello " + x
@@ -49,20 +50,26 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
     Save this file as ``prog2.py``.
     
-    * In the third file, put the following:
 
-    `` this is a file
-    it has 
-    multiple
-    lines``
+    * **In the third file,** put the following:
+
+    :: 
+
+        this is a file
+        it has 
+        multiple
+        lines
 
     Save this as ``unix_test_text.txt``.
 
-    * In the fourth file, put the following:
 
-    ``here is another file
-    what a wonderful
-    story this is``
+    * **In the fourth file,** put the following:
+
+    ::
+
+        here is another file
+        what a wonderful
+        story this is
 
     Save this file as ``another_text.txt``.
 
@@ -94,7 +101,7 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
 .. question:: problem_set_5_unix_6
 
-    You want to concatenate the 2 text files inside the ``text_files`` folder together, and save the result in a file called ``big_story.txt``, which should also be inside that directory. Use unix commands to do this.
+    You want to concatenate the 2 text files inside the ``text_files`` folder together, and save the result in a file called ``big_story.txt``, which should also be inside that directory. Use unix commands to do this. (Hint: You'll probably need more than 1 typed in the same line.)
 
 .. question:: problem_set_5_unix_7
 
@@ -102,12 +109,19 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
 .. question:: problem_set_5_unix_8
 
-    Now that you have a bunch of practice with the unix command prompt, it's time to run Python natively on your computer. You've saved 2 Python files that are in your ``~/Desktop/new_class_programs`` directory. Go there, and run ``prog2.py`` by typing ``python prog2.py``. Take a screenshot of what happens. 
+    Now that you have a bunch of practice with the unix command prompt, it's time to run Python natively on your computer. You've saved 2 Python files that are in your ``~/Desktop/new_class_programs`` directory. Go there in your command prompt, and run ``prog2.py`` by typing ``python prog2.py`` at the prompt. Take a screenshot of what happens. 
 
     (Feel free to also play around -- you know a lot of programming now, and you can run it all on your computer, but it will look a little bit different in the command prompt than it did in the textbook.)
 
+.. note::
 
-You're done with the Unix part of the problem set. `Here <>`_ is the Canvas assignment for submitting your screenshots. 
+    You may discover another way to run your python program directly from Sublime Text. We have found that this will not work for everything you need to do throughout the semester. Therefore, it's very important that you learn how to run your python programs from the unix command prompt, including figuring out how to connect to the right directory with the unix ``cd`` command. You will only get credit for these unix problems if your screenshots show that you ran the programs from the unix command prompt.
+
+
+**This is very important for the rest of the semester. Starting with Problem Set 7, ALL of your problem set will be turned in via Canvas, and you will be writing code in a text editor and running it on your own computer. If you have any trouble running Python natively (on your computer), let an instructor know *right away*.**
+
+
+You're done with the Unix part of the problem set. `Here <https://umich.instructure.com/courses/105657/assignments/139051>`_ is the Canvas assignment for submitting your screenshots. 
 
 :ref:`Go back to the other part of problem set 5 <problem_set_5>`.
 
