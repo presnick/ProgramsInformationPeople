@@ -44,6 +44,7 @@ Problem Set
 .. _problem_set_6:
 
 .. question:: problem_set_6_1
+  :number: 1
 
   Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
 
@@ -259,6 +260,12 @@ Problem Set
     import sys #don't worry about this line; you'll understand it next week
     sys.setExecutionLimit(60000)     # let the game take up to a minute, 60 * 1000 milliseconds
     main()
+
+
+  .. shortanswer:: ps6_5_a
+
+   What line(s) of code do what's mentioned in Box 1?
+
 
 # TODO THIS CAN BE REFACTORED INTO A BUNCH OF SHORT ANSWER QUESTIONS WHICH WE CAN TOTALLY GRADE
   # What line(s) of code do what's mentioned in box 1?
