@@ -30,8 +30,8 @@ You have the following graded activities:
 
 * **Before Wednesday's class 10/12:**
     
-  * Read :ref:`Unix and the Command Line<unix_chapter>`, and try out the commands you learn in Terminal, if you use a mac, or Git Bash, if you use Windows.
-  * Read `this tutorial <>`_ on Unix pipes and the Unix command **grep**.
+  * Read :ref:`Unix and the Command Line<unix_chapter>`, and try out the commands you learn -- in Terminal, if you use a mac, or Git Bash, if you use Windows.
+  * Read `this tutorial <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ on Unix pipes (you can ignore the ``who`` command in the tutorial) and `this tutorial <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ on the Unix command **grep** (you can scroll down to it on that page).
 
 .. usageassignment
 
@@ -569,3 +569,7 @@ We strongly suggest that you try to do the problems yourself before looking at t
 
           print smallest_val_name_diff(d_new)
           # both these calls above print Nick
+
+.. question:: problem_set_5_5
+
+  Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131288>`_ assignment on Canvas.

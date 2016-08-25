@@ -105,7 +105,7 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
 .. question:: problem_set_5_unix_7
 
-    You now want to see a list list all the files and/or directories inside your ``new_class_programs`` folder whose names include ``text``. Use Unix commands to do this. (Hint: You'll need >2 Unix commands in one line typed into the command prompt to do this.)
+    You now want to see a list of all the files and/or directories inside your ``new_class_programs`` folder whose names include ``text``. Use Unix commands to do this. (Hint: You'll need pipe (``|``) and ``grep``, and ``ls``.)
 
 .. question:: problem_set_5_unix_8
 

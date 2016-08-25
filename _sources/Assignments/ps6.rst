@@ -23,7 +23,7 @@ You have the following graded activities:
 * **By Tuesday 10/25 11:59 pm:**
     * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below)
     * Read *The Most Human Human*, Chapter 10, p.237-259.
-    * Answer `Reading Response 7 <UPDATELINK>`_ on Canvas.
+    * Answer `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
 
 .. usageassignment
 
@@ -76,7 +76,7 @@ Problem Set
 
      ====
 
-     print "TODO ADD TESTS FOR THIS, STAFF"
+     print "TODO ADD TESTS FOR THIS, TEAM"
 
 .. question:: problem_set_6_3
 
@@ -264,160 +264,194 @@ Problem Set
 
   .. shortanswer:: ps6_5_a
 
-   What line(s) of code do what's mentioned in Box 1?
+   What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? **FEEDBACK FIX TBA**
+
+  .. shortanswer:: ps6_5_b
+
+   What line(s) of code do what's mentioned in Box 2?
+
+  .. shortanswer:: ps6_5_c
+
+   What line(s) of code do what's mentioned in Box 3?
+
+  .. shortanswer:: ps6_5_d
+
+   What line(s) of code do what's mentioned in Box 4?
+
+  .. shortanswer:: ps6_5_e
+
+   What line(s) of code do what's mentioned in Box 5?
+
+  .. shortanswer:: ps6_5_f
+
+   What line(s) of code do what's mentioned in Box 6?
+
+  .. shortanswer:: ps6_5_g
+
+   What line(s) of code do what's mentioned in Box 7?
+
+  .. shortanswer:: ps6_5_h
+
+   What line(s) of code do what's mentioned in Box 8?
+
+  .. shortanswer:: ps6_5_i
+
+   What line(s) of code do what's mentioned in Box 9?
+
+  .. shortanswer:: ps6_5_j
+
+   What line(s) of code do what's mentioned in Box 10?
+
+  .. shortanswer:: ps6_5_k
+
+   What line(s) of code do what's mentioned in Box 11?
+
+.. question:: problem_set_6_6
+
+  The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
+
+  It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). 
+
+  **HINT:** Iterate through the letters in the word, accumulating characters as you go. If you try to iterate through the guesses, it's harder.
+
+  .. activecode:: ps_6_6
+
+           
+     # Sample calls to this function
+     # (Remember, these won't work until you define the function blanked)
+     print blanked("hello", "elj")
+     #should output _ell_
+     print blanked("almost","amsvr")
+     # should output a_m_s_ 
 
 
-# TODO THIS CAN BE REFACTORED INTO A BUNCH OF SHORT ANSWER QUESTIONS WHICH WE CAN TOTALLY GRADE
-  # What line(s) of code do what's mentioned in box 1?
+     =====
 
-  # What line(s) of code do what's mentioned in box 2?
+     from unittest.gui import TestCaseGui
 
-  # What line(s) of code do what's mentioned in box 3?
+     class myTests(TestCaseGui):
 
-  # What line(s) of code do what's mentioned in box 4?
+        def testOne(self):
+           self.assertEqual(blanked('hello', 'elj'), "_ell_", "testing blanking of hello when e,l, and j have been guessed.")
+           self.assertEqual(blanked('hello', ''), '_____', "testing blanking of hello when nothing has been guessed.")
+           self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
+           self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
 
-  # What line(s) of code do what's mentioned in box 5?
+     myTests().main()
 
-  # What line(s) of code do what's mentioned in box 6?
+.. question:: problem_set_6_7
 
-  # What line(s) of code do what's mentioned in box 7?
+  Now you have to create a good version of the ``health_prompt`` function: 
 
-  # What line(s) of code do what's mentioned in box 8?
+  Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). 
 
-  # What line(s) of code do what's mentioned in box 9?
+  The function should return a string with ``+`` signs for the current health, and ``- ``signs for the health that has been lost so far.
 
-  # What line(s) of code do what's mentioned in box 10?
+  .. activecode:: ps_6_7
 
-  # What line(s) of code do what's mentioned in box 11?
-
-         
-6. The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). **HINT:** Iterate through the letters in the word, accumulating characters as you go. If you try to iterate through the guesses, it's harder.
-
-.. activecode:: ps_6_6
-
-         
-   # Sample calls to this function
-   # (Remember, these won't work until you define the function blanked)
-   print blanked("hello", "elj")
-   #should output _ell_
-   print blanked("almost","amsvr")
-   # should output a_m_s_ 
-
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(blanked('hello', 'elj'), "_ell_", "testing blanking of hello when e,l, and j have been guessed.")
-         self.assertEqual(blanked('hello', ''), '_____', "testing blanking of hello when nothing has been guessed.")
-         self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
-         self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
-
-   myTests().main()
-
-
-7. Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with + signs for the current health, and - signs for the health that has been lost so far.
-
-.. activecode:: ps_6_7
-
-   # Define your function here.
+     # Define your function here.
 
 
 
 
-   # Sample invocations of the function.
+     # Sample invocations of the function.
 
-   print health_prompt(3, 7)
-   #this statement should produce the output
-   #health: +++----
+     print health_prompt(3, 7)
+     #this statement should produce the output
+     #health: +++----
 
-   print health_prompt(0, 4)
-   #this statement should produce the output
-   #health: ----
+     print health_prompt(0, 4)
+     #this statement should produce the output
+     #health: ----
 
-   =====
+     =====
 
-   from unittest.gui import TestCaseGui
+     from unittest.gui import TestCaseGui
 
-   class myTests(TestCaseGui):
+     class myTests(TestCaseGui):
 
-      def testOne(self):
-         self.assertEqual(health_prompt(3,7), "+++----", "Testing health_prompt(3,7)")
-         self.assertEqual(health_prompt(0,4), "----", "Testing health_prompt(0,4)")
-         self.assertEqual(health_prompt(5,5), "+++++", "Testing health_prompt(5,5)")
+        def testOne(self):
+           self.assertEqual(health_prompt(3,7), "+++----", "Testing health_prompt(3,7)")
+           self.assertEqual(health_prompt(0,4), "----", "Testing health_prompt(0,4)")
+           self.assertEqual(health_prompt(5,5), "+++++", "Testing health_prompt(5,5)")
 
-   myTests().main()
+     myTests().main()
 
+
+.. question:: problem_set_6_8
+
+  You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
+
+  In the below code window is all of the code for the hangman program, *except* for the two functions you just defined in problems 6 and 7. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided here for you to copy.)
+
+  Copy your two function definitions, from the last two problems, into a *Python file* on your computer, just like ``prog1.py`` from last week, except much more complicated a program. Save that file as ``hangman.py``.
+
+  Thenc copy all the code in the box below into that file, too, underneat the function definitions you just copied in.
+
+  Finally, make one more change to the program: add a little bit of code so that after a user types in a secret word to guess, 27 blank lines are printed. 
+
+  (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
+
+  Save this Python program, and run it with the command line: ``cd`` to the correct directory where you saved the file, and then type ``python hangman.py``, as you learned last week.
+
+  **Submit** your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to `Problem 6 Unix Exercises <>`_ on Canvas.
+
+  .. sourcecode:: python
+     
+      def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
+          res = "\n" + txt + "\n"
+          res = res + health_prompt(h, m_h) + "\n"
+          if guesses != "":
+              res = res + "Guesses so far: " + guesses.upper() + "\n"
+          else:
+              res = res + "No guesses so far" + "\n"
+          res = res + "Word: " + blanked(word, guesses) + "\n"
    
-8. You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman. Directions follow.
+          return(res)
 
-  Below is all of the code for the hangman program, *except* for the two functions you just defined in problems 6 and 7. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided for you to copy.)
+      def main():
+          max_health = 3
+          health = max_health
+          secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+          secret_word = secret_word.upper() # everything in all capitals to avoid confusion
+          guesses_so_far = ""
+          game_over = False
 
-  Copy your two function definitions, from the last two problems, into a Python file, and save it as ``hangman.py`` in your ``106`` folder (anywhere in it you want). Then copy the code in the box below into that file, beneath the function definitions you just copied in.
+          feedback = "let's get started"
 
-  Finally, make one more change to the program: add a little bit of code so that after a user types in a secret word to guess, 27 blank lines are printed. (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
+          # Now interactively ask the user to guess
+          while not game_over:
+              prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
+              next_guess = raw_input(prompt)
+              next_guess = next_guess.upper()
+              feedback = ""
+              if len(next_guess) != 1:
+                  feedback = "I only understand single letter guesses. Please try again."
+              elif next_guess in guesses_so_far:
+                  feedback = "You already guessed that"
+              else:
+                  guesses_so_far = guesses_so_far + next_guess
+                  if next_guess in secret_word:
+                      if blanked(secret_word, guesses_so_far) == secret_word:
+                          feedback = "Congratulations"
+                          game_over = True
+                      else:
+                          feedback = "Yes, that letter is in the word"
+                  else: # next_guess is not in the word secret_word
+                      feedback = "Sorry, " + next_guess + " is not in the word."
+                      health = health - 1
+                      if health <= 0:
+                          feedback = " Waah, waah, waah. Game over."
+                          game_over= True
 
-  Save this Python program, and run it with the command line: ``cd`` to the correct directory, and then type ``python hangman.py``, as you learned last week.
+          print(feedback)
+          print("The word was..." + secret_word)
 
-  **Submit your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to Unix Problems 6 on Canvas.**
-
-
-.. activecode:: ps_6_8
-   
-    def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
-        res = "\n" + txt + "\n"
-        res = res + health_prompt(h, m_h) + "\n"
-        if guesses != "":
-            res = res + "Guesses so far: " + guesses.upper() + "\n"
-        else:
-            res = res + "No guesses so far" + "\n"
-        res = res + "Word: " + blanked(word, guesses) + "\n"
- 
-        return(res)
-
-    def main():
-        max_health = 3
-        health = max_health
-        secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
-        secret_word = secret_word.upper() # everything in all capitals to avoid confusion
-        guesses_so_far = ""
-        game_over = False
-
-        feedback = "let's get started"
-
-        # Now interactively ask the user to guess
-        while not game_over:
-            prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
-            next_guess = raw_input(prompt)
-            next_guess = next_guess.upper()
-            feedback = ""
-            if len(next_guess) != 1:
-                feedback = "I only understand single letter guesses. Please try again."
-            elif next_guess in guesses_so_far:
-                feedback = "You already guessed that"
-            else:
-                guesses_so_far = guesses_so_far + next_guess
-                if next_guess in secret_word:
-                    if blanked(secret_word, guesses_so_far) == secret_word:
-                        feedback = "Congratulations"
-                        game_over = True
-                    else:
-                        feedback = "Yes, that letter is in the word"
-                else: # next_guess is not in the word secret_word
-                    feedback = "Sorry, " + next_guess + " is not in the word."
-                    health = health - 1
-                    if health <= 0:
-                        feedback = " Waah, waah, waah. Game over."
-                        game_over= True
-
-        print(feedback)
-        print("The word was..." + secret_word)
-
-    main()
+      main()
 
 
+.. question:: problem_set_6_7
+
+  Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131289>`_ assignment on Canvas.
 
 
