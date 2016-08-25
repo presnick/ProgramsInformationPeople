@@ -15,7 +15,7 @@ variable on the left hand side of the assignment operator. It is called local be
 exists inside the function and you cannot use it outside. For example,
 consider again the ``square`` function:
 
-.. codelens:: bad_local
+.. activecode:: bad_local
 
     def square(x):
         y = x * x
@@ -25,9 +25,7 @@ consider again the ``square`` function:
     print y
 
 
-If you press the 'last >>' button you will see an error message.
-When we try to use ``y`` on line 6 (outside the function) Python looks for a global
-variable named ``y`` but does not find one.  This results in the
+Try running this in Codelens. If you press the 'last >>' button you will see an error message. When we try to use ``y`` on line 6 (outside the function) Python looks for a global variable named ``y`` but does not find one.  This results in the
 error: ``Name Error: 'y' is not defined.``
 
 The variable ``y`` only exists while the function is being executed ---
