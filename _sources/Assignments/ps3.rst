@@ -49,7 +49,7 @@ You have the following graded activities:
 Problem Set
 -----------
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
+**Instructions:** Write the code you want to save in the provided boxes, and click **run** for each one, which will save what is in the code window. The last code you have saved for each one by the deadline is what will be graded.
 
 .. datafile::  about_programming.txt
    :hide:
