@@ -11,7 +11,7 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Activities through 10/14
+Activities through 10/19
 ========================
 
 You have the following graded activities:
@@ -220,7 +220,8 @@ Practice Problems: Earlier Semester Material
 --------------------------------------------
 
 .. question:: midterm_practice_1
-  
+    :number: 1
+
     How many characters are in string ``s``? Write code to print the answer.
 
     How many vowels are in string ``s``? Write code to print the answer.
@@ -322,13 +323,13 @@ Practice Problems: Earlier Semester Material
     
     Write code to print out the string "Why hello, Irene" using the variable ``nm``.
 
-    Write code to print "Nice to meet you," in front of each element in list ``hlt`` on a separate line. e.g. `` Nice to meet you, mycroft`` and ``Nice to meet you, Lestrade``
+    Write code to print "Nice to meet you," in front of each element in list ``hlt`` on a separate line. e.g. ``Nice to meet you, mycroft`` and ``Nice to meet you, Lestrade``
 
-.. activecode:: rv_1_5
+    .. activecode:: rv_1_5
 
-   nm = "Irene"
+       nm = "Irene"
 
-   hlt = ['mycroft','Lestrade','gregson','sherlock','Joan','john','holmes','mrs hudson']
+       hlt = ['mycroft','Lestrade','gregson','sherlock','Joan','john','holmes','mrs hudson']
  
 
 .. question:: midterm_practice_5
@@ -553,4 +554,4 @@ We strongly suggest that you try to do the problems yourself before looking at t
               print smallest_value_name(d_new) # should print Nick
 
               print smallest_val_name_diff(d_new)
-              # both these calls above print Nick
+              # should print Nick
