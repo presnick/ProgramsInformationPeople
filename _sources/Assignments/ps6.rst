@@ -109,7 +109,7 @@ Problem Set
 
   **FIRST,** look through the data structure saved in the variable ``fb_data`` to get a sense for it. 
 
-  Here are some questions to consider. We won't grade your answers to these questions, but we suggest that you write them in the code as comments. They may help you think through this big nested data structure. You can test your answers using print statements.
+  Here are some questions to consider. We won't grade your answers to these questions, but we suggest that you write them in the code as comments. They may help you think through this big nested data structure. You can test your answers using print statements. e.g. ``print type(fb_data["data"])``
       
   * What type is the structure saved in the variable ``fb_data``?
   * What type does the expression ``fb_data["data"]`` evaluate to?
@@ -345,7 +345,7 @@ Problem Set
 
   Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). 
 
-  The function should return a string with ``+`` signs for the current health, and ``- ``signs for the health that has been lost so far.
+  The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
 
   .. activecode:: ps_6_7
 
@@ -394,7 +394,7 @@ Problem Set
 
   Save this Python program, and run it with the command line: ``cd`` to the correct directory where you saved the file, and then type ``python hangman.py``, as you learned last week.
 
-  **Submit** your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to `Problem 6 Unix Exercises <>`_ on Canvas.
+  **Submit** your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to `Problem 6 Unix Exercises <UPDATELINK>`_ on Canvas.
 
   .. sourcecode:: python
      
