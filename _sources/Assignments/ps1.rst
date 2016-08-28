@@ -23,7 +23,7 @@ Activities through 9/16
 
 .. usageassignment or appropriate directive
 
-* **Participation in discussion section**, 9/8 or 9/9
+* Participation in your discussion section
 
 
 * **By Sunday 9/11 at 11:59 pm:**
