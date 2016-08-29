@@ -178,6 +178,7 @@ Files
    Files/WritingTextFiles.rst
    Files/Glossary.rst
    Files/Exercises.rst
+   Files/ExtraExercises.rst
 
 Understanding Code
 ::::::::::::::::::
@@ -328,6 +329,7 @@ Python Modules
    Installation/pip.rst
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
+   PythonModules/ExtraExercises.rst
 
 Requests
 ::::::::
@@ -363,6 +365,7 @@ Exceptions
 
    Exceptions/intro-exceptions.rst
    Exceptions/using-exceptions.rst
+   Exceptions/ExtraExercises.rst
 
 
 String Formatting
@@ -434,6 +437,7 @@ Inheritance
    Inheritance/InvokingSuperMethods.rst
    Inheritance/TamagotchiRevisited.rst
    Inheritance/Exercises.rst
+   Inheritance/ExtraExercises.rst
 
 More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
