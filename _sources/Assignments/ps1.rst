@@ -318,7 +318,7 @@ Problem Set
 
      import turtle
 
-.. question:: problem_set_1_12
+.. external:: problem_set_1_12
 
   Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ for this week.
 
