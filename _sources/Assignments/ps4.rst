@@ -83,59 +83,53 @@ Problem Set
 
 **Note:** Passing tests for a problem (``Pass``) does not ensure that the problem is 100% correct -- we can only test some things, to provide feedback as you go.
 
-.. question:: problem_set_4_1
-    :number: 1
+.. activecode:: ps_4_01
+       :language: python
 
-    Old McDonald had a farm. He records the animals on his farm in a dictionary called ``animals``.
+       **1.** Old McDonald had a farm. He records the animals on his farm in a dictionary called ``animals``.
+     
+       Write code to look up the number of chickens that Old McDonald recorded and assign it to the variable ``num_chickens``.
 
-    Write code to look up the number of chickens that Old McDonald recorded and assign it to the variable ``num_chickens``.
+       Write code to add the key-value pair ``"yak":3`` to the ``animals`` dictionary.
 
-    Write code to add the key-value pair ``"yak":3`` to the ``animals`` dictionary.
+       Write code to increase the value for the key ``"dogs"`` in the ``animals`` dictionary by 1. Do not hard code values -- this code should work no matter what the original value associated with key ``"dogs"`` is. You can assume that this key already exists in the dictionary. 
+       ~~~~
+       animals = {'cows': 2, 'chickens': 8, 'pigs': 4, 'mice': 72, 'cats': 9,'dogs': 1}
+       =====
 
-    Write code to increase the value for the key ``"dogs"`` in the ``animals`` dictionary by 1. Do not hard code values -- this code should work no matter what the original value associated with key ``"dogs"`` is. You can assume that this key already exists in the dictionary. 
+       from unittest.gui import TestCaseGui
 
-.. activecode:: ps_4_1
+       class myTests(TestCaseGui):
 
-   animals = {'cows': 2, 'chickens': 8, 'pigs': 4, 'mice': 72, 'cats': 9,'dogs': 1}
+           def testOne(self):
+               self.assertEqual(num_chickens, animals['chickens'], "Testing that num_chickens has been assigned the value of the key 'chickens'")
+           def testTwo(self):
+               self.assertEqual(animals['yak'], 3, "Testing to see that 'yak' is a key in the dictionary animals with the correct value")
+           def testThree(self):
+               self.assertEqual(animals['dogs'], 2, "Testing that the value of 'dogs' is now 2 in the dictionary animals")
 
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(num_chickens, animals['chickens'], "Testing that num_chickens has been assigned the value of the key 'chickens'")
-      def testTwo(self):
-         self.assertEqual(animals['yak'], 3, "Testing to see that 'yak' is a key in the dictionary animals with the correct value")
-      def testThree(self):
-         self.assertEqual(animals['dogs'], 2, "Testing that the value of 'dogs' is now 2 in the dictionary animals")
-
-   myTests().main()
+       myTests().main()
 
 
-.. question:: problem_set_4_2
+.. activecode:: ps_4_02
+       :language: python
 
-    Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
+       **2.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
 
-    ::
-        autumn spring
-        4 seasons
-        23 345
-        well spring
-
-    **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
-
-    Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
-
-    Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
-
-
-    .. activecode:: ps_4_2
-
-       nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
+       ::
        
+           autumn spring
+           4 seasons
+           23 345
+           well spring
+
+       **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
+
+       Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
+
+       Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
+       ~~~~
+       nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
        =====
 
        from unittest.gui import TestCaseGui
@@ -148,15 +142,14 @@ Problem Set
        myTests().main()
 
 
-.. question:: problem_set_4_3
+.. activecode:: ps_4_03
+       :language: python
 
-    We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
+       **3.** We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
 
-    .. activecode:: ps_4_3
        :available_files: about_programming.txt
-      
+       ~~~~
        # Write your code here!
-
        =====
 
        from unittest.gui import TestCaseGui
@@ -172,12 +165,11 @@ Problem Set
 
        myTests().main()
 
-.. question:: problem_set_4_4
+.. activecode:: ps_4_04
+       :language: python
 
-    Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
-
-    .. activecode:: ps_4_4
-
+       **4.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+       ~~~~
        nums = {}
        num_words = ["two","three","four","seventeen","eight","not_a_number"]
        # Write your code here.
@@ -195,12 +187,11 @@ Problem Set
 
        myTests().main()
 
-.. question:: problem_set_4_5
+.. activecode:: ps_4_05
+       :language: python
 
-    Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
-
-    .. activecode:: ps_4_5
-
+       **5.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
+       ~~~~
        s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
 
        # Write your code here.
@@ -216,12 +207,11 @@ Problem Set
 
        myTests().main()
 
-.. question:: problem_set_4_6
+.. activecode:: ps_4_06
+       :language: python
 
-    Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
-
-    .. activecode:: ps_4_6
-
+       **6.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+       ~~~~
        def subtract_five(inp):
            print inp - 5
            return None
@@ -239,12 +229,11 @@ Problem Set
 
        myTests().main()
 
-.. question:: problem_set_4_7
+.. activecode:: ps_4_07
+       :language: python
 
-    Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
-
-    .. activecode:: ps_4_7
-
+       **7.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+       ~~~~ 
        # We've started you off with the first line...
        def change_amounts(num_here):
            pass # delete this line and put in your own code for the body of the function.
@@ -262,12 +251,11 @@ Problem Set
        myTests().main()
 
 
-.. question:: problem_set_4_8
+.. activecode:: ps_4_08
+       :language: python
 
-    Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Why does it cause an error? Write a comment explaining why an error occurs. Then change line 5 to print out the result of an expression that invokes the function ``change_amounts`` and evaluates to ``7``.
-
-    .. activecode:: ps_4_8
-
+       **8.** Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Why does it cause an error? Write a comment explaining why an error occurs. Then change line 5 to print out the result of an expression that invokes the function ``change_amounts`` and evaluates to ``7``.
+       ~~~~
        def change_amounts(yp):
            n = yp - 4
            return n * 7
@@ -279,6 +267,6 @@ Problem Set
        print "\n---\n\n"
        print "There are no tests for this problem, but when you run your code, you should see the integer 7"
 
-.. question:: ps_4_9
+.. question:: problem_set_4_09
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131287>`_ on Canvas.
+       **9.** Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131287>`_ on Canvas.
