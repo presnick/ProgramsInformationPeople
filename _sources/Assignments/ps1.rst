@@ -277,11 +277,10 @@ Problem Set
     b = another_variable()
 
 
-.. question:: problem_set_1_10
-    :number: 10
-    Here's another complicated expression, using the Turtle framework we talked about. Arrange these expressions in the order they are executed, like you did in an exercise in Chapter 2 of the textbook.
 
-  .. sourcecode:: python
+**10.** Here's another complicated expression, using the Turtle framework we talked about. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
+
+.. sourcecode:: python
 
      import turtle
 
@@ -291,26 +290,27 @@ Problem Set
 
 
      ella.move(square(x*ella.speed))
+  
+.. parsonsprob:: ps_1_10
 
-  .. parsonsprob:: ps_1_10
+   Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code.
 
-     Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code, ``ella.move(square(x*ella.speed))`` (It may help to think about what specifically is happening in the first four lines of code as well.)
-     -----
-     Look up the variable ella and find that it is an instance of a Turtle object
-     =====
-     Look up the attribute move of the Turtle ella and find that it's a method object
-     =====
-     Look up the function square
-     =====
-     Look up the value of the variable x and find that it is an integer
-     =====
-     Look up the value of the attribute speed of the instance ella and find that it is an integer
-     =====
-     Evaluate the expression x * ella.speed to one integer
-     =====
-     Call the function square on an integer value
-     =====
-     Call the method .move of the Turtle ella on its input integer
+   -----
+   Look up the variable ella and find that it is an instance of a Turtle object
+   =====
+   Look up the attribute move of the Turtle ella and find that it's a method object
+   =====
+   Look up the function square
+   =====
+   Look up the value of the variable x and find that it is an integer
+   =====
+   Look up the value of the attribute speed of the instance ella and find that it is an integer
+   =====
+   Evaluate the expression x * ella.speed to one integer
+   =====
+   Call the function square on an integer value
+   =====
+   Call the method .move of the Turtle ella on its input integer
 
 
 .. activecode:: ps_1_11
@@ -323,7 +323,7 @@ Problem Set
 
 .. external:: problem_set_1_12
 
-  Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ for this week.
+    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ for this week.
 
 
 That's the end of the problem set. In the hidden code below, you will find the definitions of functions square, random_digit, and greeting that were used elsewhere in the problem set. They're hidden because you don't yet need to understand how function definitions work. But if you want a preview, feel free to click on Show/hide code.
