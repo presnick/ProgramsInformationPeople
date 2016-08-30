@@ -194,7 +194,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(first_forty, 'Sad upset blue down melancholy somber bit', "Testing that first_forty was created correctly.")
+         self.assertEqual(first_forty, 'Sad upset blue down melancholy somber bi', "Testing that first_forty was created correctly.")
    myTests().main()    
 
 

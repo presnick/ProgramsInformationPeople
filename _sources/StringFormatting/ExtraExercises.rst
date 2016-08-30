@@ -259,7 +259,7 @@ Extra Exercises
 5.1 Provided is a list of dictionaries of pokemon trainers. If they have walked less than 2 kilometers, then they should have their name and the message "you are so close to hatching a 2 km egg, you've gone ___ km so far!" added to a new list called ``trainer_data``. If they have walked less than 5 km, they should have the same messaged printed, but with 5km, not 2km. The same for a 10 km egg. If they have walked more than 10 km, then it should print their name, plus the message "you could have hatched a 10 km egg or more! You walked ___ km!" (example, a trainer with the name of Nurse Joy who has walked 1.3, would have "Nurse Joy, you are so close to hatching a 2 km egg, you've gone 1.3 km so far!")
 
 .. activecode:: ee_interpolation_051
-   :tags:StringFormatting/Interpolation.rst
+   :tags: StringFormatting/Interpolation.rst
 
    lst = [{'trainer_name': "Ash", 'distance_traveled': 8.9, 'pokemon_caught': 17}, {'trainer_name': "Mysti", "distance_traveled": 4.7, 'pokemon_caught': 9}, {'trainer_name': "Brock", 'distance_traveled': 20.2, 'pokemon_caught': 39}, {'trainer_name': "Gary", 'distance_traveled': 1.8, 'pokemon_caught': 89}]
 
@@ -271,7 +271,9 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(trainer_data, ["Ash, you are so close to hatching a 10 km egg, you've gone 8.9 km so far!", "Mysti, you are so close to hatching a 5 km egg, you've gone 4.7 km so far!", 'Brock, you could have atched a 10 km egg or more! You walked 20.2 km!', "Gary, you are so close to hatching a 2 km egg, you've gone 1.8 km so far!"], "Testing that trainer_data has the correct value.")
+         print trainer_data
+         print type(trainer_data)
+         self.assertEqual(sorted(trainer_data), sorted(['Ash, you are so close to hatching a 2 km egg, you have gone 8.9 km so far!', 'Mysti, you are so close to hatching a 2 km egg, you have gone 4.7 km so far!', 'Brock, you could have hatched a 10 km egg or more! You walked 20.2 km!', 'Gary, you are so close to hatching a 2 km egg, you have gone 1.8 km so far!']))
          
    myTests().main()
 
