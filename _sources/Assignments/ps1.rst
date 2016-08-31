@@ -63,7 +63,19 @@ Activities through 9/16
 * Note that there is a grace period for the problem set and DYU assignment until **Sunday 9/18 at 5:00 PM**. You will not lose any points if you submit before then, even if you submit after the Friday deadline. After the grace period, we do not accept late assignments. See syllabus.
 
 
+This Week's Reading Responses 
+-----------------------------
+.. _reading_response_1:
 
+.. external:: rr_1
+
+  `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_.
+
+.. _reading_response_2:
+
+.. external:: rr_2
+
+  `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_.
 
 
 .. _problem_set_1:
