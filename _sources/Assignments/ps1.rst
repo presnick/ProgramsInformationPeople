@@ -122,7 +122,7 @@ Problem Set
 
         def testOne(self):
            self.assertEqual(cw, yb, "Testing that yb has the same value as cw")
-           self.assertEqual(cw, "Hello", "Testing that cw's value is 'Hello'.")
+           self.assertEqual(cw, "Hello", "Testing that cw's value is 'Hello'.")           
 
     myTests().main()
 
@@ -141,7 +141,16 @@ Problem Set
 
     ====
 
-    print "\n\n---\n(There are no tests for this problem.)"
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+           self.assertIn('print', self.getEditorText(), "Testing that 'print' is in the code. (Don't worry about Actual and Expected Values.)")
+           self.assertIn('type', self.getOutput(), "Testing output. (Don't worry about Actual and Expected Values.)")           
+
+    myTests().main()
+    
 
 
 .. activecode:: ps_1_4
@@ -165,6 +174,7 @@ Problem Set
         def testOne(self):
             self.assertEqual(type(xyz), type(3), "Checking type of xyz")
             self.assertEqual(xyz, 25, "Checking if xyz is 25")
+            self.assertIn('square', self.getEditorText(), "Testing that 'square' is in your code. (Don't worry about Actual and Expected Values.)")
 
     myTests().main()
 
@@ -248,7 +258,7 @@ Problem Set
 
     class myTests(TestCaseGui):
 
-        def testOne(self):
+        def testOne(self): 
            self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
         def testTwo(self):
            self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
@@ -275,7 +285,7 @@ Problem Set
     class myTests(TestCaseGui):
 
         def testOne(self):
-           self.assertEqual(newval, greeting("everyone in class"), "newval has not been assigned the correct value")
+           self.assertEqual(newval, greeting("everyone in class"), "Testing that newval was created correctly.")
 
     myTests().main()
     
@@ -348,7 +358,7 @@ That's the end of the problem set. In the hidden code below, you will find the d
         return num**2
 
     def greeting(st):
-        #st = str(st) # just in case
+        st = str(st) # just in case
         return "Hello, " + st
 
     def random_digit():
