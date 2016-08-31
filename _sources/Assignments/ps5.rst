@@ -179,9 +179,6 @@ Problem Set
 
    class myTests(TestCaseGui):
 
-      def testCode(self):
-         self.assertIn("def is_prefix", self.getEditorText(), "Testing that is_prefix is defined (Don't worry about actual and expected values)")
-
       def testOne(self):
          self.assertEqual(is_prefix("Big", "Bigger"), True, "Testing whether 'Big' is a prefix of 'Bigger'")
          self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
@@ -205,9 +202,6 @@ Problem Set
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
-
-      def testCode(self):
-         self.assertIn("def grep", self.getEditorText(), "Testing that grep is defined (Don't worry about actual and expected values)")
 
       def testOne(self):
          def solgrep(a, b):

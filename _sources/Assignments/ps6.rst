@@ -61,6 +61,17 @@ Problem Set
    ~~~~
    new_tuple_list = [(1,2),(4, "umbrella"),("chair","hello"),("soda",56.2)]
 
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testCode(self):
+         self.assertIn("2\numbrella\nhello\n56.2", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+
+   myTests().main()
+
 
 .. activecode:: ps_6_2
    :language: python
@@ -84,9 +95,23 @@ Problem Set
 
    # Write your three print statements with function calls below
 
-   ====
+   =====
 
-   print "TODO ADD TESTS FOR THIS, TEAM"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testCode(self):
+         self.assertNotIn("Hello, SI106!!!", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertNotIn("Hello, world!!!", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertNotIn("Hey, everybody!", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+      def testOutput(self):
+         self.assertNotIn("Hello, SI106!!!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+         self.assertNotIn("Hello, world!!!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+         self.assertNotIn("Hey, everybody!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+
+   myTests().main()
 
 
 .. activecode:: ps_6_3
@@ -102,6 +127,10 @@ Problem Set
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
+
+      def testCode(self):
+         self.assertIn("3", self.getEditorText(), "Testing code. (Don't worry about actual and expected output)")
+         self.assertIn("4", self.getEditorText(), "Testing code. (Don't worry about actual and expected output)")
 
       def testOne(self):
          self.assertEqual(mult_both(), 12, "Testing whether your function works as expected (calling the function mult_both)")
@@ -185,6 +214,10 @@ Problem Set
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
+
+      def testCode(self):
+         self.assertNotIn("This problem might use the accumulation pattern, like many problems do", self.getEditorText()[1058:], "Testing code. (Don't worry about expected and actual output)")
+         self.assertNotIn("John Smythe", self.getEditorText()[1058:], "Testing code. (Don't worry about expected and actual output")
 
       def testOne(self):
          self.assertEqual(first_message, fb_data['data'][0]['message'], "testing whether first_message was set correctly")
