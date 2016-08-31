@@ -130,7 +130,7 @@ Problem Set
 .. activecode:: ps_1_3
     :language: python
 
-    **3.** Write code to use the type function print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
+    **3.** Write code to print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``. (Use the print command!)
     ~~~~
     apples_and_oranges = """hello, everybody
                                how're you?"""
