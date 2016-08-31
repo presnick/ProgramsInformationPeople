@@ -83,10 +83,19 @@ Problem Set
    ~~~~
    # Write code here
 
-   ====
+   =====
 
-   print "\n---\n\n"
-   print "There are no tests for this problem"
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testCode(self):
+         self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+
+   myTests().main()
+
 
 
 .. activecode:: ps_5_2
@@ -103,6 +112,9 @@ Problem Set
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
+
+      def testCode(self):
+         self.assertNotIn("the", self.getEditorText(), "Testing code (Don't worry about actual and expected values)")
 
       def testOne(self):
          self.assertEqual(abc, 'the', "testing whether abc is set correctly.")
@@ -167,6 +179,9 @@ Problem Set
 
    class myTests(TestCaseGui):
 
+      def testCode(self):
+         self.assertIn("def is_prefix", self.getEditorText(), "Testing that is_prefix is defined (Don't worry about actual and expected values)")
+
       def testOne(self):
          self.assertEqual(is_prefix("Big", "Bigger"), True, "Testing whether 'Big' is a prefix of 'Bigger'")
          self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
@@ -191,6 +206,9 @@ Problem Set
 
    class myTests(TestCaseGui):
 
+      def testCode(self):
+         self.assertIn("def grep", self.getEditorText(), "Testing that grep is defined (Don't worry about actual and expected values)")
+
       def testOne(self):
          def solgrep(a, b):
             lines = open(b, 'r').readlines()
@@ -212,10 +230,19 @@ Problem Set
    # Write your code here!
 
 
-   ====
-        
-   print "\n---\n\n" 
-   print "There are no tests for this problem."
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testCode(self):
+         self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("+", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+
+   myTests().main()
 
 .. external:: ps5_dyu
 
