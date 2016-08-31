@@ -64,7 +64,7 @@ The python interpreter will look for ``morecode.py`` in the following places, in
 
     Bottom line: make sure you put ``morecode.py`` in the same directory as ``myprog.py``
 
-The tests you see in your problem sets are also using a Python module that's in the standard library, called ``UnitTest``. Right now, you can't see the code that causes those tests to run, because we have hidden it from you, but later in the course, you will learn how to write your own Unit Tests for code, and to do so, you will need to write an import statement at the beginning of your programs.
+The tests you see in your problem sets are also using a Python module that's in the standard library, called ``UnitTest``. Right now, you can't see the code that causes those tests to run, because we have hidden it from you, but later in the course, you will learn how to write your own Unit Tests for code, and to do so, you will need to write an import statement at the beginning of your programs. Even before you learn how to write your own tests, you will see code for Unit Tests in your problem set files.
 
 .. admonition:: Don't overwrite standard library modules!
 
