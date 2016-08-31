@@ -23,13 +23,12 @@ Activities through 9/16
 
 .. usageassignment or appropriate directive
 
-* Participation in your discussion section
-
 
 * **By Sunday 9/11 at 11:59 pm:**
 
   * read the intro and chapter 1 of The Most Human Human book.
   * Answer `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_ .
+
 
 * **Before Monday's class, 9/12:**
 
@@ -37,10 +36,12 @@ Activities through 9/16
 
 .. usageassignment directive here as appropriate (propagate through)
 
+
 * **By Tuesday night 11:59, 9/13:**
 
   * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/courses/105657/files?preview=2142149>`_, by Richard Searle. (It's in the Canvas Files folder, if that link doesn't work.)
   * Answer `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_ .
+
 
 * **Before Wednesday's class, 9/14:**
 
@@ -78,6 +79,32 @@ This Week's Reading Responses
   `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_ on Canvas.
 
 
+.. activecode:: waiver502_23
+   :nocodelens:
+
+   # Write code to iterate through the numbers in lst,
+   # printing out double each value.
+   # Your output should be:
+   # 2
+   # 4
+   # 6
+   # 8
+   # 10
+
+   lst = [1, 2, 3, 4, 5]
+
+   ====
+
+   from unittest.gui import TestCaseGui
+
+     class myTests(TestCaseGui):
+
+       def testOne(self):
+           self.assertIn("2\n4\n6\n8\n10",self.getOutput())
+
+      myTests().main()
+
+
 .. _problem_set_1:
 
 Problem Set
@@ -93,6 +120,17 @@ Problem Set
     **1.** The variable ``tpa`` currently has the value ``0``. Assign the variable ``tpa`` the value ``6`` .
     ~~~~
     tpa = 0
+
+    # Write code to iterate through the numbers in lst,
+    # printing out double each value.
+    # Your output should be:
+    # 2
+    # 4
+    # 6
+    # 8
+    # 10
+
+    lst = [1, 2, 3, 4, 5]
      
     =====
 
@@ -102,7 +140,8 @@ Problem Set
 
         def testOne(self):
            self.assertEqual(tpa, 6, "Testing that tpa's value is 6.")
-
+        def testTwo(self):
+           self.assertIn("2\n4\n6\n8\n10",self.getOutput())
     myTests().main()
    
 
@@ -141,7 +180,14 @@ Problem Set
 
     ====
 
-    print "\n\n---\n(There are no tests for this problem.)"
+    from unittest.gui import TestCaseGui
+    # TODO FIX THIS
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+            self.assertIn('hello',self.getOutput())
+
+    myTests().main()
 
 
 .. activecode:: ps_1_4
