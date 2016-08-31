@@ -116,6 +116,7 @@ Problem Set
                self.assertEqual(animals['yak'], 3, "Testing to see that 'yak' is a key in the dictionary animals with the correct value")
            def testThree(self):
                self.assertEqual(animals['dogs'], 2, "Testing that the value of 'dogs' is now 2 in the dictionary animals")
+               self.assertIn("animals['dogs']", self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
        myTests().main()
 
@@ -147,6 +148,10 @@ Problem Set
 
           def testOne(self):
              self.assertEqual(nd["23"], 350, "Testing that the value associated with the key '23' is 350")
+             self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).") 
+             self.assertIn("well spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+             self.assertIn("4 seasons", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+             self.assertIn("23 345", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
        myTests().main()
 
@@ -172,6 +177,10 @@ Problem Set
                    tmp.append(l)
              self.assertEqual(program_lines, tmp, "Testing that program_lines is a list of lines that contain the string 'program'")
 
+          def testOneA(self):
+              self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+              self.assertIn('other technical professions in that programmers, in general, do not need to be licensed', self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
        myTests().main()
 
 .. activecode:: ps_4_04
@@ -194,6 +203,9 @@ Problem Set
              self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
              self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
 
+          def testOneA(self):
+             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
        myTests().main()
 
 .. activecode:: ps_4_05
@@ -213,6 +225,9 @@ Problem Set
 
           def testOne(self):
              self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
+
+          def testOneA(self):
+             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
        myTests().main()
 
@@ -273,8 +288,14 @@ Problem Set
 
        ====
 
-       print "\n---\n\n"
-       print "There are no tests for this problem, but when you run your code, you should see the integer 7"
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def test_output(self):
+               self.assertIn("7", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+       myTests().main()
 
 .. external:: ps4_dyu
 
