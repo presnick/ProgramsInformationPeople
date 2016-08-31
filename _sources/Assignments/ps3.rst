@@ -99,10 +99,17 @@ Problem Set
        ~~~~
        several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
-       ====
+       =====
 
-       print "\n\n---\n"
-       print "(There are no tests for this problem.)"
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def test_output(self):
+               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+               self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+       myTests().main()
 
 .. activecode:: ps_3_2
        :language: python
@@ -147,6 +154,19 @@ Problem Set
 
        (Hint: remember string slicing?)
        ~~~~
+       excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
+
+       # Write your code here.
+       =====
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def test_output(self):
+               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+               self.assertIn("hello\ngoodbye\nwonderful\nI love Python", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+       myTests().main()
 
 .. activecode:: ps_3_4
        :language: python
@@ -171,8 +191,18 @@ Problem Set
 
        ====
 
-       print "\n\n---\n"
-       print "There are no tests for this problem."
+       from unittest.gui import TestCaseGui
+       
+       class myTests(TestCaseGui):
+
+           def test_output(self):
+               self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+           def test_outputB(self):
+               self.assertIn("Computer programming (often shortened to programming) is a process that leads from an", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+           def test_outputC(self):
+               self.assertIn("original formulation of a computing problem to executable programs. It involves", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+       myTests().main()
 
 .. activecode:: ps_3_5
        :language: python
@@ -190,7 +220,7 @@ Problem Set
        class myTests(TestCaseGui):
 
           def testOne(self):
-             print "No tests for the comment, of course -- we can only test stored values!\n"
+             self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
              self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
 
        myTests().main()
@@ -266,8 +296,18 @@ Problem Set
        lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
        ====
 
-       print "\n---\n\n"
-       print "There are no tests for this problem."
+       from unittest.gui import TestCaseGui
+       
+       class myTests(TestCaseGui):
+
+           def test_output(self):
+               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+           def test_outputB(self):
+               self.assertIn("5\n13\n11\n12\n3\n12\n11\n6", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+           def test_outputB(self):
+               self.assertIn("inspirations\namalgamation\nPython", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+    
+       myTests().main()
 
 .. activecode:: ps_3_8
        :language: python
@@ -286,6 +326,7 @@ Problem Set
        class myTests(TestCaseGui):
 
            def testOne(self):
+               self.assertIn('in', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
                self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
 
        myTests().main()
@@ -301,22 +342,35 @@ Problem Set
 
        ====
 
-       print "\n\n---\n"
-       print "There are no tests for this problem."
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def testOne(self):
+               self.assertIn('you are awesome', self.getOutput(), "Testing your code (Don't worry about actual and expected values).")
+
+       myTests().main()
 
 .. activecode:: ps_3_10
        :language: python
 
-       **10. Challenge problem (OPTIONAL):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
+       **10. Challenge problem (OPTIONAL):** write code to find the actual average (mean) number of words in each line of the file ``about_programming.txt``. Use float to do this. Assign this number to the variable ``avg_words``. 
 
        :available_files: about_programming.txt
        ~~~~
        # Write your code here.
 
-       ====
+       =====
 
-       print "\n\n---\n"
-       print "There are no tests for this problem."
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def testOne(self):
+               self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+               self.assertIn('float', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+       myTests().main()
 
 .. external:: ps3_dyu
 
