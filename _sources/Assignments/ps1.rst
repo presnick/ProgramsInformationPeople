@@ -69,13 +69,13 @@ This Week's Reading Responses
 
 .. external:: rr_1
 
-  `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_.
+  `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_ on Canvas.
 
 .. _reading_response_2:
 
 .. external:: rr_2
 
-  `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_.
+  `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_ on Canvas.
 
 
 .. _problem_set_1:
@@ -333,7 +333,7 @@ Problem Set
     import turtle
 
 
-.. external:: ps_1_12
+.. external:: ps1_dyu
 
     **12.** Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ for this week.
     

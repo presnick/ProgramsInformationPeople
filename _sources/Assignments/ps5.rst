@@ -51,6 +51,14 @@ You have the following graded activities:
       * Repeat as necessary. On later iterations of this process, only redo the problems that you did not solve immediately on the previous iteration.
   * There are practice problems in all Extra Exercises sections, and some additional ones at the bottom of this page. Some have solutions. They are *not* required, but may be helpful if you are looking for more study material. Try writing your answers out on paper and checking them here!
 
+.. _reading_response_6:
+
+This Week's Reading Responses
+-----------------------------
+
+.. external:: rr_6
+
+  `Reading Response 6 <https://umich.instructure.com/courses/105657/assignments/131317>`_ on Canvas.
 
 .. _problem_set_5:
 
@@ -209,9 +217,9 @@ Problem Set
    print "\n---\n\n" 
    print "There are no tests for this problem."
 
-.. question:: problem_set_5_7
+.. external:: ps5_dyu
 
-  Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131288>`_ assignment on Canvas.
+   Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131288>`_ assignment on Canvas.
 
 
 Practice Problems: Earlier Semester Material

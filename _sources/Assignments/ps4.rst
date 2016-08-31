@@ -41,6 +41,15 @@ You have the following graded activities:
 
   * Note that you have a grace period for the PSet and DYU until Sunday 10/9 at 5:00 PM
 
+.. _reading_response_5:
+
+This Week's Reading Responses
+-----------------------------
+
+.. external:: rr_5
+
+  `Reading Response 5 <https://umich.instructure.com/courses/105657/assignments/131316>`_ on Canvas.  
+
 
 .. _problem_set_4:
 
@@ -267,6 +276,6 @@ Problem Set
        print "\n---\n\n"
        print "There are no tests for this problem, but when you run your code, you should see the integer 7"
 
-.. question:: problem_set_4_09
+.. external:: ps4_dyu
 
-       **9.** Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131287>`_ on Canvas.
+       Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131287>`_ on Canvas.

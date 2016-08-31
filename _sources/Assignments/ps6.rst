@@ -37,6 +37,15 @@ You have the following graded activities:
    * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`.
    * Submit your **Demonstrate Your Understanding** assignment on Canvas (linked in problem set) 
 
+.. _reading_response_7:
+
+This Week's Reading Responses
+-----------------------------
+
+.. external:: rr_7
+
+  `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
+
 
 Problem Set
 -----------

@@ -39,7 +39,14 @@ You have the following graded activities:
 
 * Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 5:00 PM. 
 
+This Week's Reading Responses
+-----------------------------
 
+.. _reading_response_3:
+
+.. external:: rr_3
+    
+    `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ on Canvas.
 
 .. _problem_set_2:
 
@@ -241,8 +248,7 @@ Problem Set
     myTests().main()
 
 
-.. question:: problem_set_2_6
-    :number: 6
+.. external:: ps2_dyu
 
   Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131285>`_ assignment for this week.
 

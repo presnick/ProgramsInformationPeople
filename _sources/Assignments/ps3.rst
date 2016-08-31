@@ -27,7 +27,7 @@ You have the following graded activities:
 
 * **Before Tuesday 9/27 at 11:59 pm:**
 
-  * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <UPDATELINK>`_ on Canvas.
+  * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <https://umich.instructure.com/courses/105657/assignments/131315>`_ on Canvas.
 
 * **Before Wednesday's class, 9/28:**
   
@@ -43,6 +43,14 @@ You have the following graded activities:
 
   * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 5:00 pm.
 
+This Week's Reading Responses
+-----------------------------
+
+.. _reading_response_4:
+
+.. external:: rr_4
+
+  `Reading Response 4 <https://umich.instructure.com/courses/105657/assignments/131315>`_ on Canvas.
 
 .. _problem_set_3:
 
@@ -310,6 +318,6 @@ Problem Set
        print "\n\n---\n"
        print "There are no tests for this problem."
 
-.. question:: problem_set_3_11
+.. external:: ps3_dyu
 
-   **11.** Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
+  Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
