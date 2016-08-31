@@ -53,7 +53,7 @@ Activities through 9/16
 .. usageassignment:: prep_02
     :chapters: SimplePythonData
     :assignment_name: Prep 02
-    :deadline: 2016-01-11 19:40:00
+    :deadline: 2016-09-12 19:40:00
     :pct_required: 80
     :points: 50
 

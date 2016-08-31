@@ -34,12 +34,23 @@ You have the following graded activities:
 
   * * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
+.. usageassignment:: prep_03
+    :chapters: Sequences
+    :assignment_name: Prep 03
+    :deadline: 2016-09-19 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **Before Wednesday's class 9/21:**
 
   * * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
 
-.. usageassignment
+.. usageassignment:: prep_04
+    :chapters: Iteration
+    :assignment_name: Prep 04
+    :deadline: 2016-09-21 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 

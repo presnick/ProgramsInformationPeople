@@ -32,7 +32,13 @@ You have the following graded activities:
 
   * Read :ref:`Strategy for building programs <build_program_chap>`
 
-.. usageassignment
+.. usageassignment:: prep_07
+    :chapters: DictionaryAccumulation
+    :subchapters: BuildingAProgram/TheStrategy
+    :assignment_name: Prep 07
+    :deadline: 2016-10-03 19:40:00
+    :pct_required: 80
+    :points: 50
 
 
 * **By Tuesday 10/4 11:59 pm:**
@@ -43,7 +49,12 @@ You have the following graded activities:
 
   * Read :ref:`Defining Functions<functions_chap>`, and try the following exercises in that chapter
   
-.. usageassignment
+.. usageassignment:: prep_08
+    :chapters: Functions
+    :assignment_name: Prep 08
+    :deadline: 2016-10-05 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **By Friday, 10/7 at 6:30 pm:**
   

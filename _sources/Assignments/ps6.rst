@@ -34,13 +34,23 @@ You have the following graded activities:
     * Read *The Most Human Human*, Chapter 10, p.237-259.
     * Answer `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
 
-.. usageassignment
+.. usageassignment:: prep_11
+    :chapters: OptionalAndKeywordParameters
+    :assignment_name: Prep a11
+    :deadline: 2016-10-24 21:30:00
+    :pct_required: 80
+    :points: 50
 
 * **Before Wednesday's class 10/26:**
    * Read :ref:`Tuples<tuples_chap>`, and try the exercises in that chapter
    * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and try the exercises in that chapter
 
-.. usageassignment
+.. usageassignment:: prep_12
+    :chapters: Tuples, NestedData
+    :assignment_name: Prep a12
+    :deadline: 2016-10-26 21:30:00
+    :pct_required: 80
+    :points: 50
 
 * **By Friday 10/28 at 6:30 PM:**
    * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`.

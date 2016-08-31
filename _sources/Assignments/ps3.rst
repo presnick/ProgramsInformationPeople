@@ -33,7 +33,13 @@ You have the following graded activities:
   * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or the last exercise will be very confusing...)
   * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
 
-.. usageassignment
+.. usageassignment:: prep_05
+    :chapters: Selection, Files
+    :subchapters: BuildingAProgram/UnderstandingCode
+    :assignment_name: Prep 05
+    :deadline: 2016-09-26 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **Before Tuesday 9/27 at 11:59 pm:**
 
@@ -43,13 +49,16 @@ You have the following graded activities:
   
   * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
 
-.. usageassignment
+.. usageassignment:: prep_06
+    :chapters: Dictionaries
+    :assignment_name: Prep 06
+    :deadline: 2016-09-28 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **Before Friday 9/30 at 6:30 PM:**
 
   * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas (linked in the problem set).
-
-.. TODO basic dictionary mechanics in pset??
 
   * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 5:00 pm.
 
