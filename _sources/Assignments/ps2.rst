@@ -73,6 +73,7 @@ Problem Set
         def testOne(self):
            self.assertEqual(fl, original_str[0], "Testing that fl has been set to first char in original_str")
            self.assertEqual(last_l, original_str[-1], "Testing that last_l has been set to last char in original_str")
+           self.assertIn('-1', self.getEditorText(), "Testing that you indexed correctly. (Don't worry about Actual and Expected Values.)")
 
     myTests().main()
 
@@ -117,6 +118,8 @@ Problem Set
            self.assertEqual(short_len,len(short_sent), "Testing that short_len has been set to the length of the variable short_sent")
         def testThree(self):
            self.assertEqual(index_of_v, sent.find('v'), "Testing that index_of_v has been set to the index of v in the variable sent.")
+        def testFour(self):
+           self.assertIn('20', self.getOutput(), "Testing that you printed the length of short_sent. (Don't worry about Actual and Expected Values.)")
 
     myTests().main()
 
@@ -162,6 +165,11 @@ Problem Set
            self.assertEqual(fifth_type, type(mixed_bag[4]), "Testing that fifth_type has been set to the type of the fifth element in mixed_bag")
         def testFive(self):
            self.assertEqual(another_type, type(mixed_bag[0]), "Testing that another_type has been set to the type of the first element of mixed_bag")
+        def testSix(self):
+           self.assertIn('print', self.getEditorText(), "Testing that 'print' is in your code. (Don't worry about Actual and Expected Values.)")
+        def testSeven(self):
+           self.assertIn('int', self.getOutput(), "Testing that you printed the correct element of mixed_bag. (Don't worry about Actual and Expected Values.)")
+
 
     myTests().main()
 
