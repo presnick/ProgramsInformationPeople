@@ -8,9 +8,18 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. assignment for problem set
+
+.. assignments for lecture waivers
+
+.. assignments for end of lecture exercise sets
+
+.. assignments for reading responses
+
+.. assignment for DYU
+
 .. highlight:: python
     :linenothreshold: 500
-
 
 Activities through 9/23
 =======================

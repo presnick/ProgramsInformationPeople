@@ -11,6 +11,15 @@
 .. highlight:: python
     :linenothreshold: 500
 
+.. assignment for problem set
+
+.. assignments for lecture waivers
+
+.. assignments for end of lecture exercise sets
+
+.. assignments for reading responses
+
+.. assignment for DYU
 
 Activities through 10/28
 ========================

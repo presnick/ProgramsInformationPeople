@@ -8,6 +8,18 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+
+.. assignment for problem set
+
+.. assignments for lecture waivers
+
+.. assignments for end of lecture exercise sets
+
+.. assignments for reading responses
+
+.. assignment for DYU
+
+
 .. highlight:: python
     :linenothreshold: 500
 
@@ -21,8 +33,12 @@ Activities through 9/16
   * Sign up for/join the `Facebook group <linkgoeshere.notrealTODO>`_
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
-.. usageassignment or appropriate directive
-
+.. usageassignment:: prep_01
+    :chapters: GeneralInfo
+    :assignment_name: Prep 01
+    :deadline: 2016-09-15 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **By Sunday 9/11 at 11:59 pm:**
 
@@ -34,8 +50,14 @@ Activities through 9/16
 
   * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
 
-.. usageassignment directive here as appropriate (propagate through)
+.. usageassignment:: prep_02
+    :chapters: SimplePythonData
+    :assignment_name: Prep 02
+    :deadline: 2016-01-11 19:40:00
+    :pct_required: 80
+    :points: 50
 
+  * :ref:`Lecture 2 Waiver <lecture_2_waiver>`
 
 * **By Tuesday night 11:59, 9/13:**
 
