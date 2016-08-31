@@ -98,6 +98,6 @@ A method like ``distanceFromOrigin`` in the ``Point`` class you saw does its wor
    :feedback_b: You want to check whether it has the correct side effect, whether it correctly mutates the list.
    :correct: b
       
-   We have usually used the sorted function, which takes a list as input and returns a new list containing the same items, possibly in a different order. There is also a method called sort for lists. It changes the order of the items in the list, and returns the value None. Which kind of test case would you use on the sort method?    
+   We have usually used the ``sorted`` function, which takes a list as input and returns a new list containing the same items, possibly in a different order. There is also a method called ``sort`` for lists (e.g. ``[1,6,2,4].sort()``). It changes the order of the items in the list itself, and it returns the value ``None``. Which kind of test case would you use on the sort method?    
    
 
