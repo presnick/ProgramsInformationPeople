@@ -32,6 +32,8 @@ You have the following graded activities:
   * *If you use a Windows computer,* read and do the installation in the (:ref:`instructions for installing git bash <install_git_bash>`). 
   * Read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python. Try to do the exercises and installations. You will address any installation problems you have (hopefully none!) in section this week. 
 
+  * :ref:`Lecture 9 Waiver <lecture_9_waiver>`
+
 .. usageassignment:: prep_09
     :chapters: IndefiniteIteration
     :subchapters: Installation/TextEditor
@@ -39,8 +41,7 @@ You have the following graded activities:
     :deadline: 2016-10-10 19:40:00
     :pct_required: 80
     :points: 50
-
-  * :ref:`Lecture 9 Waiver <lecture_9_waiver>`
+  
 
 * **By Tuesday 10/11 11:59 pm:**
     * Read *The Most Human Human*, Chapter 10, p.219-237.
@@ -51,6 +52,8 @@ You have the following graded activities:
   * Read :ref:`Unix and the Command Line<unix_chapter>`, and try out the commands you learn -- in Terminal, if you use a mac, or Git Bash, if you use Windows.
   * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
 
+  * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
+
 .. usageassignment:: prep_10
     :chapters: Unix
     :assignment_name: Prep 10
@@ -58,7 +61,6 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-  * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
 
 * By Friday 10/14 at 6:30 PM:
    * Complete the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_unix>`. (Half the problem set)

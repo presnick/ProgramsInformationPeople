@@ -32,6 +32,8 @@ You have the following graded activities:
 
   * Read :ref:`Strategy for building programs <build_program_chap>`
 
+  * :ref:`Lecture 7 Waiver <lecture_7_waiver>`
+
 .. usageassignment:: prep_07
     :chapters: DictionaryAccumulation
     :subchapters: BuildingAProgram/TheStrategy
@@ -40,7 +42,7 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-  * :ref:`Lecture 7 Waiver <lecture_7_waiver>`
+  
 
 * **By Tuesday 10/4 11:59 pm:**
 
@@ -49,6 +51,8 @@ You have the following graded activities:
 * **Before Wednesday's class, 10/5:**
 
   * Read :ref:`Defining Functions<functions_chap>`, and try the following exercises in that chapter
+
+  * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
   
 .. usageassignment:: prep_08
     :chapters: Functions
@@ -57,7 +61,6 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-  * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
 
 * **By Friday, 10/7 at 6:30 pm:**
   
