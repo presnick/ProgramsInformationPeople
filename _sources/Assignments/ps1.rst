@@ -57,8 +57,6 @@ Activities through 9/16
     :pct_required: 80
     :points: 50
 
-  * :ref:`Lecture 2 Waiver <lecture_2_waiver>`
-
 * **By Tuesday night 11:59, 9/13:**
 
   * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/courses/105657/files?preview=2142149>`_, by Richard Searle. (It's in the Canvas Files folder, if that link doesn't work.)
@@ -99,32 +97,6 @@ This Week's Reading Responses
 .. external:: rr_2
 
   `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_ on Canvas.
-
-
-.. activecode:: waiver502_23
-   :nocodelens:
-
-   # Write code to iterate through the numbers in lst,
-   # printing out double each value.
-   # Your output should be:
-   # 2
-   # 4
-   # 6
-   # 8
-   # 10
-
-   lst = [1, 2, 3, 4, 5]
-
-   ====
-
-   from unittest.gui import TestCaseGui
-
-     class myTests(TestCaseGui):
-
-       def testOne(self):
-           self.assertIn("2\n4\n6\n8\n10",self.getOutput())
-
-      myTests().main()
 
 
 .. _problem_set_1:
