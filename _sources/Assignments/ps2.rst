@@ -32,7 +32,7 @@ You have the following graded activities:
 
 * **Before class Monday 9/19:**
 
-  * * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
+  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
   * :ref:`Lecture 3 Waiver <lecture_3_waiver>`
 

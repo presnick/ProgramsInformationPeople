@@ -57,7 +57,6 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-  
 
 * **By Friday 10/28 at 6:30 PM:**
    * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`.
