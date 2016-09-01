@@ -10,7 +10,7 @@
     License".
 
 .. highlight:: python
-    :linenothreshold: 500
+   :linenothreshold: 500
 
 Lecture 4: Waiver Challenge Exercises
 =====================================
@@ -19,6 +19,7 @@ Lecture 4: Waiver Challenge Exercises
 
 .. activecode:: ee_ch10_091
    :language: python
+   :autograde: unittest
 
 	Create a list of numbers from 0-74 and assign that to the variable ``nums``. Then accumulate the total of that list's values so that the total is assigned to the variable ``total``.
 	~~~~
@@ -40,12 +41,12 @@ Lecture 4: Waiver Challenge Exercises
 
 .. activecode:: ee_ch10_081
    :language: python
+   :autograde: unittest
 
 	Count how many characters there are in ``sent`` and assign that number to the variable ``char_sent``. Do not use ``len()``.
-
 	~~~~
-
    sent = "Oh the places you'll go."
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -62,6 +63,7 @@ Lecture 4: Waiver Challenge Exercises
 
 .. activecode:: ee_ch10_071
    :language: python
+   :autograde: unittest
 
 	For each string in ``wrds``, add 'ed' to the end of the word (to make the word past tense). Instead of saving the words into a new list, overwrite the old list ``wrds``. So at the end of the code execution, ``wrds`` should have the new, past tense words.
 	~~~~

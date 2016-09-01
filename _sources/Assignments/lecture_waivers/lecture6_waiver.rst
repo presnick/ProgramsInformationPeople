@@ -23,7 +23,6 @@ Lecture 6: Waiver Challenge Exercises
 
    The dictionary ``china_medals`` shows the events China has medaled in and the number of medals won. Create a list of only the keys from ``china_medals`` and save it in a variable called ``events``. Do not hard-code this. (You can do this in one line of code!)
    ~~~~
-      
    china_medals = {'weightlifting':7, 'diving':6, 'table tennis':4, 'shooting':7, 'swimming':6}
 
    =====
@@ -42,9 +41,8 @@ Lecture 6: Waiver Challenge Exercises
 
    The dictionary ``dives`` contains the moves and the number of times each move has been performed.  The list ``performed`` is a list of additional diving moves that have just been performed. 
 
-	Write code to update the dictionary ``dives``, so that for each move in the list ``performed``, if the move is in the dictionary ``dives`` already, you should update the value in the dictionary by 1. If that move is not in the dictionary ``dives`` yet, add a new key-value pair to the dictionary to record that move.
-	~~~~
-
+	 Write code to update the dictionary ``dives``, so that for each move in the list ``performed``, if the move is in the dictionary ``dives`` already, you should update the value in the dictionary by 1. If that move is not in the dictionary ``dives`` yet, add a new key-value pair to the dictionary to record that move.
+	 ~~~~
    performed = ['reverse tuck', 'forward 2 1/2 somersault pike', 'back dive', 'twist in pike']
       
    dives = {'twist in free': 1, 'back dive': 2, 'armstand reverse': 1, 'forward tuck':5, 'reverse tuck': 3}
@@ -66,9 +64,8 @@ Lecture 6: Waiver Challenge Exercises
 
    The list ``current`` contains some of the sports that were played in the 2016 Olympics. The dictionary ``sport_counts`` contains some of the sports that have been played in prior Olympic meets, and how many Olympics they were played in. 
 
-	Iterate through each sport included in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed, and you should not record sports that are not already recorded in the dives dictionary).
-	~~~~
-
+	 Iterate through each sport included in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed, and you should not record sports that are not already recorded in the dives dictionary).
+	 ~~~~
    current = ["basketball", "soccer", "volleyball", "gymnastics", "wrestling", "golf", "equestrian", "swimming", "diving"]
 
    sport_counts = {"equestrian": 30, "tug of war": 3, "soccer": 15, "basketball": 8, "polo": 20, "swimming": 32, "gymnastics": 20, "diving": 24, "cricket": 12, "volleyball": 11, "croquet": 9}
@@ -90,7 +87,6 @@ Lecture 6: Waiver Challenge Exercises
 
    We have a dictionary of synchronized swimming moves called ``sswim_moves``, with the move names as keys and the amount of times they are used as the values. We also have a list of some moves that have not been added yet. Go through the list, called ``moves_to_add``, and if the move is in ``sswim_moves``, then update the value by 1. Otherwise, do nothing. 
    ~~~~
-
    sswim_moves = {'sculls': 23, 'sailboat': 12, 'back layout': 9, 'The Oyster': 8}
    moves_to_add = ['sculls', 'The Oyster' 'eggbeaters', 'eggbeaters', 'back layout', 'sculls', 'sailboat', 'The Oyster', 'The Water Wheel', 'sculls']
 

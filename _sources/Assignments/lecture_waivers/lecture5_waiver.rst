@@ -37,8 +37,7 @@ Lecture 5: Waiver Challenge Exercises
    :tags:Selection/Chainedconditionals.rst
 
    For each grade in list ``grades``, if the grade is greater than 90, add "Whoa, good job!" to list ``notes``. If less than 90 but greater than 80, add "Keep it up!". If less than 80 but greater than 70, add "Great opportunity to figure out confusions!". If less than 70, add "Join us at office hours!"
-   ~~~~
-      
+   ~~~~  
    grades = [95, 50, 85, 74, 67]
 
    =====
@@ -64,7 +63,6 @@ Lecture 5: Waiver Challenge Exercises
 
 	Use nested conditionals to help someone determine the correct shipping price. Uncomment each set of variables one at a time to test.
 	~~~~
-
    #Uncomment the next 3 lines to test domestic, in-state
    #country = "domestic"
    #d_dist = 0
@@ -123,7 +121,6 @@ Lecture 5: Waiver Challenge Exercises
 
    Create a list called ``result``. For each element in ``cases``, decide if there should be a ticket given. If their speed is above the speed limit for that state, add "Ticket" to ``result``. Otherwise, add "No Ticket" to ``result``. As a hint, remember that you can convert values to different types.
    ~~~~
-
    cases = ["Michigan 70", "Michigan 75", "Hawaii 65", "Montana 80", "Michigan 90", "Hawaii 50", "Montana 65"]
 
 
@@ -144,7 +141,6 @@ Lecture 5: Waiver Challenge Exercises
 
    For each word in ``wrds``, if 'e' is the last letter of the word, then add 'd', otherwise add 'ed' to the end of the word to make it past tense. Save these past tense words to a list called ``old_wrds``.
    ~~~~
-
    wrds = ["end", "work", "confess", "decide", "like", "play", "start", "walk", "hate", "love",  "look", "open", "close", "rain", "notice", "learn", "clean", "taste"]
 
    =====
@@ -164,7 +160,6 @@ Lecture 5: Waiver Challenge Exercises
 
    Assign the second word of every line of the file called ``files_extra.txt``  to the list saved in the variable ``second``.
    ~~~~
-
    second = []
    
    =====

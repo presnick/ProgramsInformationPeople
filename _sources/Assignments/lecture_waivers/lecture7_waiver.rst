@@ -23,7 +23,6 @@ Lecture 7: Waiver Challenge Exercises
 
    Create a dictionary that contains all the letters in ``quote`` and the number of times they occur. Then, find the letter in the string ``quote`` that occurs the LEAST often. Save this letter to the variable name ``unpop``. 
    ~~~~
-
    quote = "bananas and berries, ribs, series"
 
    =====
@@ -42,7 +41,6 @@ Lecture 7: Waiver Challenge Exercises
 
    Given the string ``str1``, make a dictionary assigned to the variable ``char_dict`` with each letter in ``str1`` as a key and the letter's frequency as its value. Make sure that capitalization does not matter, i.e. "G" and "g" should count as the same letter.
    ~~~~
-
    str1 = "SupercaliFragilisticExpialiDocious"
 
    =====
@@ -67,7 +65,6 @@ Lecture 7: Waiver Challenge Exercises
 
    Provided is a string saved to the variable ``str1``. Using string methods and dictionary accumulation, find the word that occurs most often. Save the word to the variable name ``most_pop_word``. 
    ~~~~
-
    str1 = "There are many many seasons and I often cannot decide which is my favorite. In the fall, there are many leaves falling and I really enjoy leaping in them. In the winter, there are many snowflakes that fall everywhere. I love both seasons!"
 
    =====
@@ -87,8 +84,7 @@ Lecture 7: Waiver Challenge Exercises
 
    ``schedule`` is a dictionary where a class name is a key and its value is how many credits it was worth. Go through and accumulate the total number of credits that have been recorded so far in *SI classes* only, and assign that to the variable ``si_credits``, using dictionary mechanics and the accumulation pattern. Do not hard-code!
    ~~~~
-
-   schedule = {"UARTS 150": 3, "SPANISH 103": 4, "ENGLISH 125": 4, "SI 110": 4, "ENS 356": 2, "WOMENSTD 240": 4, "SI 106": 4, "BIO 118": 3, "SPANISH 231": 4, "PSYCH 111": 4, "LING 111": 3, "SPANISH 232": 4, "STATS 250": 4, "SI 206": 4, "COGSCI 200": 4, "AMCULT 202": 4, "ANTHRO 101": 4, SI 764: 3}
+   schedule = {"UARTS 150": 3, "SPANISH 103": 4, "ENGLISH 125": 4, "SI 110": 4, "ENS 356": 2, "WOMENSTD 240": 4, "SI 106": 4, "BIO 118": 3, "SPANISH 231": 4, "PSYCH 111": 4, "LING 111": 3, "SPANISH 232": 4, "STATS 250": 4, "SI 206": 4, "COGSCI 200": 4, "AMCULT 202": 4, "ANTHRO 101": 4, "SI 764": 3}
 
    =====
 
