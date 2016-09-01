@@ -12,6 +12,21 @@
 .. highlight:: python
     :linenothreshold: 500
 
+.. datafile:: files_extra.txt
+   :hide:
+
+   This summer I will be travelling.
+   I will go to...
+   Italy: Rome
+   Greece: Athens
+   England: London, Manchester
+   France: Paris, Nice, Lyon
+   Spain: Madrid, Barcelona, Granada
+   Austria: Vienna
+   I will probably not even want to come back! 
+   However, I wonder how I will get by with all the different languages.
+   I only know English!
+
 Lecture 5: Waiver Challenge Exercises
 =====================================
 
@@ -139,5 +154,25 @@ Lecture 5: Waiver Challenge Exercises
 
       def testOne(self):
          self.assertEqual(old_wrds, ["ended", 'worked', "confessed", "decided", "liked", "played", "started", "walked", "hated", "loved", "looked", "opened", "closed", "rained", "noticed", "learned", "cleaned", "tasted"], "Testing that the old_wrds list is correct." )
+
+   myTests().main()
+
+
+.. activecode:: ee_files_03
+   :tags: Files/intro-WorkingwithDataFiles.rst
+
+   Assign the second word of every line of the file called ``files_extra.txt``  to the list saved in the variable ``second``.
+   ~~~~
+
+   second = []
+   
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testThree(self):
+         self.assertEqual(second, ['summer', 'will', 'Rome', 'Athens', 'London,', 'Paris,', 'Madrid,', 'Vienna', 'will', 'I', 'only'], "Testing that second is assigned to correct value.")
 
    myTests().main()
