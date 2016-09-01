@@ -41,9 +41,11 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
+  * :ref:`Lecture 3 Waiver <lecture_3_waiver>`
+
 * **Before Wednesday's class 9/21:**
 
-  * * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
+  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
 
 .. usageassignment:: prep_04
     :chapters: Iteration
@@ -51,6 +53,8 @@ You have the following graded activities:
     :deadline: 2016-09-21 19:40:00
     :pct_required: 80
     :points: 50
+
+  * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
