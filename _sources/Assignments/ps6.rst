@@ -70,7 +70,7 @@ This Week's Reading Responses
 
 .. external:: rr_7
 
-  `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
+    `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
 
 
 Problem Set
@@ -82,7 +82,7 @@ Problem Set
 .. activecode:: ps_6_1
    :language: python
 
-   Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
+   *1.** Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
 
    ~~~~
    new_tuple_list = [(1,2),(4, "umbrella"),("chair","hello"),("soda",56.2)]
@@ -102,7 +102,7 @@ Problem Set
 .. activecode:: ps_6_2
    :language: python
 
-    Write three assignment statements with function calls to the function ``give_greeting``:
+   **2.** Write three assignment statements with function calls to the function ``give_greeting``:
 
       * one that will return the string ``Hello, SI106!!!``
       * one that will return the string ``Hello, world!!!``
@@ -143,7 +143,7 @@ Problem Set
 .. activecode:: ps_6_3
    :language: python
 
-   Define a function called ``mult_both`` whose input is two integers, whose default parameter values are the integers 3 and 4. The function's return value should be the two input integers multiplied together.
+   **3.** Define a function called ``mult_both`` whose input is two integers, whose default parameter values are the integers 3 and 4. The function's return value should be the two input integers multiplied together.
 
    ~~~~
    # Write your code here
@@ -168,7 +168,7 @@ Problem Set
 .. activecode:: ps_6_4
    :language: python
 
-   You can get data from Facebook that has nested structures which represent posts, or users, or various other types of things on Facebook. We won't put any of our actual Facebook group data on this textbook, because the textbook is publicly available on the internet, but here's a structure that is almost exactly the same as the real thing, with fake data.
+   **4.** You can get data from Facebook that has nested structures which represent posts, or users, or various other types of things on Facebook. We won't put any of our actual Facebook group data on this textbook, because the textbook is publicly available on the internet, but here's a structure that is almost exactly the same as the real thing, with fake data.
 
    Notice that the stuff in the variable ``fb_data`` is basically a big nested dictionary, with dictionaries and lists, strings and integers, inside it as keys and values. 
 
@@ -256,7 +256,7 @@ Problem Set
 .. activecode:: ps_6_5
    :language: python
 
-   In the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
+   **5.** In the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
 
    .. image:: Figures/HangmanSample.JPG
 
@@ -335,7 +335,7 @@ Problem Set
 
 .. shortanswer:: ps6_5_a
 
-   What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? **FEEDBACK FIX TBA**
+   What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? 
 
 .. shortanswer:: ps6_5_b
 
@@ -381,7 +381,7 @@ Problem Set
 .. activecode:: ps_6_6
    :language: python
 
-   The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
+   **6.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
 
    It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). 
 
@@ -414,7 +414,7 @@ Problem Set
 .. activecode:: ps_6_7
    :language: python
 
-   Now you have to create a good version of the ``health_prompt`` function: 
+   **7.** Now you have to create a good version of the ``health_prompt`` function: 
 
    Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). 
 
@@ -450,7 +450,7 @@ Problem Set
    myTests().main()
 
 
-.. question:: problem_set_6_8
+.. external:: problem_set_6_8
 
    You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
 
@@ -466,7 +466,7 @@ Problem Set
 
    Save this Python program, and run it with the command line: ``cd`` to the correct directory where you saved the file, and then type ``python hangman.py``, as you learned last week.
 
-   **Submit** your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to `Problem 6 Unix Exercises <UPDATELINK>`_ on Canvas.
+   **Submit** your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to `Problem 6 Unix Exercises <https://umich.instructure.com/courses/105657/assignments/151663>`_ on Canvas.
 
    .. sourcecode:: python
      
@@ -522,8 +522,6 @@ Problem Set
       main()
 
 
-.. question:: problem_set_6_9
-
-  .. external:: ps6_dyu
+.. external:: ps6_dyu
 
     Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131289>`_ assignment on Canvas.
