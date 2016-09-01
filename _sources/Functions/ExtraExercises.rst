@@ -328,7 +328,7 @@ Extra Exercises
 
    myTests().main() 
 
-6.2 Write two functions, one called ``addit`` and one called ``mult`` where addit takes one number as an input and adds 5. mult takes one number as an input, and multiplies that input by whatever is returned by addit and returns that mathematical expression.
+6.2 Write two functions, one called ``addit`` and one called ``mult``. ``addit`` takes one number as an input and adds 5. ``mult`` takes one number as an input, and multiplies that input by whatever is returned by ``addit``, and then returns the result.
 
 .. activecode:: ee_functions_062
    :tags: Functions/Returningavaluefromafunction.rst, Functions/Functionscancallotherfunctions.rst
@@ -340,14 +340,14 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(mult(1), 6,"Testing the function mult with input 1")
-         self.assertEqual(mult(-2), -6, "Testing the function mult with input -2")
-         self.assertEqual(mult(0), 0, "Testing the function mult with input 0")
+         self.assertEqual(mult(1), 6,"Testing the function mult with input 1 (should be 6)")
+         self.assertEqual(mult(-2), -6, "Testing the function mult with input -2 (should be -6)")
+         self.assertEqual(mult(0), 0, "Testing the function mult with input 0 (should be 0)")
 
       def testTwo(self):
-         self.assertEqual(addit(1), 6, "Testing the function addit with input 1")
-         self.assertEqual(addit(-2), 3, "Testing the function addit with input -2")
-         self.assertEqual(addit(0), 5, "Testing the function addit with input 0")
+         self.assertEqual(addit(1), 6, "Testing the function addit with input 1 (should be 6)")
+         self.assertEqual(addit(-2), 3, "Testing the function addit with input -2 (should be 3)")
+         self.assertEqual(addit(0), 5, "Testing the function addit with input 0 (should be 5)")
 
    myTests().main()
 
@@ -373,7 +373,7 @@ Extra Exercises
 
    myTests().main()
 
-7.2 **Challenge:** Write a function called ``work`` that takes 3 inputs, the first as an integer, the second as a string, and the third as a list. Check to see if the string is in the list, and if it is, then return the string multiplied by the first parameter. If the string is not in the list, then return the string plus the phrase "is not in the list". (For example, if your second parameter was "whelp" and was not in the list, then the string "whelp is not in the list" is returned.)
+7.2 **Challenge:** Write a function called ``work`` that takes 3 inputs: an integer, a string, and a list. Your function should check to see if the string input is in the list input, and if it is, then return the string multiplied by the first parameter. If the string is not in the list, then your function ``work`` should return the string plus the phrase ``"is not in the list"``. (For example, if your second parameter was ``"whelp"`` and was not in the list, then the string ``"whelp is not in the list"`` should be returned.)
 
 .. activecode:: ee_functions_072
    :tags: Functions/Returningavaluefromafunction.rst 

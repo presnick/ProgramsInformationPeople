@@ -36,13 +36,12 @@ Lecture 6: Waiver Challenge Exercises
 
    myTests().main()
 
+
 .. activecode:: ee_ch12_05
    :tags:Dictionaries/Dictionaryoperations.rst
 
-   The dictionary ``dives`` contains the moves and the number of times each move has been performed.  The list ``performed`` is a list of additional diving moves that have just been performed. 
-
-	 Write code to update the dictionary ``dives``, so that for each move in the list ``performed``, if the move is in the dictionary ``dives`` already, you should update the value in the dictionary by 1. If that move is not in the dictionary ``dives`` yet, add a new key-value pair to the dictionary to record that move.
-	 ~~~~
+   The dictionary ``dives`` contains the moves and the number of times each move has been performed. The list ``performed`` is a list of additional diving moves that have just been performed. Write code to update the dictionary ``dives``, so that for each move in the list ``performed``, if the move is in the dictionary ``dives`` already, you should update the value in the dictionary by 1. If that move is not in the dictionary ``dives`` yet, add a new key-value pair to the dictionary to record that move.
+    ~~~~
    performed = ['reverse tuck', 'forward 2 1/2 somersault pike', 'back dive', 'twist in pike']
       
    dives = {'twist in free': 1, 'back dive': 2, 'armstand reverse': 1, 'forward tuck':5, 'reverse tuck': 3}
@@ -64,8 +63,8 @@ Lecture 6: Waiver Challenge Exercises
 
    The list ``current`` contains some of the sports that were played in the 2016 Olympics. The dictionary ``sport_counts`` contains some of the sports that have been played in prior Olympic meets, and how many Olympics they were played in. 
 
-	 Iterate through each sport included in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed, and you should not record sports that are not already recorded in the dives dictionary).
-	 ~~~~
+    Iterate through each sport included in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed, and you should not record sports that are not already recorded in the dives dictionary).
+    ~~~~
    current = ["basketball", "soccer", "volleyball", "gymnastics", "wrestling", "golf", "equestrian", "swimming", "diving"]
 
    sport_counts = {"equestrian": 30, "tug of war": 3, "soccer": 15, "basketball": 8, "polo": 20, "swimming": 32, "gymnastics": 20, "diving": 24, "cricket": 12, "volleyball": 11, "croquet": 9}
