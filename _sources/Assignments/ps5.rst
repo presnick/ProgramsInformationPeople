@@ -40,6 +40,8 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
+  * :ref:`Lecture 9 Waiver <lecture_9_waiver>`
+
 * **By Tuesday 10/11 11:59 pm:**
     * Read *The Most Human Human*, Chapter 10, p.219-237.
     * Answer `Reading Response 6 <https://umich.instructure.com/courses/105657/assignments/131317>`_ on Canvas.
@@ -55,6 +57,8 @@ You have the following graded activities:
     :deadline: 2016-10-12 19:40:00
     :pct_required: 80
     :points: 50
+
+  * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
 
 * By Friday 10/14 at 6:30 PM:
    * Complete the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_unix>`. (Half the problem set)

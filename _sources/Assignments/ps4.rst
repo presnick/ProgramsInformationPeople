@@ -40,6 +40,7 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
+  * :ref:`Lecture 7 Waiver <lecture_7_waiver>`
 
 * **By Tuesday 10/4 11:59 pm:**
 
@@ -55,6 +56,8 @@ You have the following graded activities:
     :deadline: 2016-10-05 19:40:00
     :pct_required: 80
     :points: 50
+
+  * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
 
 * **By Friday, 10/7 at 6:30 pm:**
   

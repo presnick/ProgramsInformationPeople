@@ -41,6 +41,8 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
+  * :ref:`Lecture 11 Waiver <lecture_11_waiver>`
+
 * **Before Wednesday's class 10/26:**
    * Read :ref:`Tuples<tuples_chap>`, and try the exercises in that chapter
    * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and try the exercises in that chapter
@@ -51,6 +53,8 @@ You have the following graded activities:
     :deadline: 2016-10-26 21:30:00
     :pct_required: 80
     :points: 50
+
+  * :ref:`Lecture 12 Waiver <lecture_12_waiver>`
 
 * **By Friday 10/28 at 6:30 PM:**
    * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`.
