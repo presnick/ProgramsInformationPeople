@@ -214,21 +214,6 @@ Extra Exercises
 
    myTests().main()
 
-7.1 **Challenge:** Now do this again, however instead of saving the words into a new list, overwrite the old list so that ``wrds`` has the new words.
-
-.. activecode:: ee_ch10_071
-
-   wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(wrds, ["ended", 'worked', "played", "started", "walked", "looked", "opened", "rained", "learned", "cleaned"], "Testing that wrds has been created correctly." )
-
-   myTests().main()
 
 8. Count the number of characters in string ``str1``. Do not use ``len()``. Save the number in variable ``numbs``.
 
@@ -244,22 +229,6 @@ Extra Exercises
 
       def testEight(self):
          self.assertEqual(numbs, 90, "Testing that numbs is assigned to correct values.")
-
-   myTests().main()
-
-8.1 Count how many characters there are in ``sent`` and assign that number to the variable ``char_sent``. Do not use ``len()``.
-
-.. activecode:: ee_ch10_081
-
-   sent = "Oh the places you'll go."
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(char_sent, 23, "Testing that char_sent has the correct value." )
 
    myTests().main()
 
@@ -280,22 +249,3 @@ Extra Exercises
          self.assertEqual(sum1, 820, "Testing that sum1 has the correct value.")
 
    myTests().main()
-
-9.1 Create a list of numbers from 0-74 and assign that to the variable ``nums``. Then accumulate the total of that list's values so that the total is assigned to the variable ``total``.
-
-.. activecode:: ee_ch10_091
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(nums, range(75), "Testing that nums has been created correctly.")
-
-      def testTwo(self):
-         self.assertEqual(total, 2775, "Testing that total has the correct value." )
-
-   myTests().main()
-
