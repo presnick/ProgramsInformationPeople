@@ -210,7 +210,7 @@ Extra Exercises
 
    myTests().main() 
 
-4.2 Write a function called ``check_letts`` that takes a list as its parameter, and contains a while loop that only stops once the element of the list is the string 'no'. What is returned is a list of all of the strings up until it reaches 'no'.
+4.2 Write a function called ``check_letts`` that takes a list as its parameter, and contains a while loop that only stops once it reaches an element of the list that is the string ``'no'``. What is returned is a list of all of the strings up until it reaches 'no'.
 
 .. activecode:: ee_ch07_042
    :tags: IndefiniteIteration/listenerLoop.rst
@@ -274,46 +274,9 @@ Extra Exercises
 
    myTests().main() 
 
-5.2 Here is a for loop that works. Underneath, rewrite the problem so that it is done using a while loop, but save the accumulated total to the variable ``total``.
 
-.. activecode:: ee_ch07_052
-   :tags: IndefiniteIteration/ThewhileStatement.rst
 
-   L = [3,9,29,8,48,5,3,8,6,1,2]
-   accum = 0
-   for elem in L:
-       accum += elem
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(total, 122 , "Testing that total has the correct value")
-
-   myTests().main()
-
-6. **Challenge** Create a function called ``first_five`` that takes in a list of numbers. In this function, create a sublist of the inputted list by using a while loop that stops when it reaches the number 0. The function should only return a list of the first five numbers of the sublist, regardless of where the while loop stops. i.e. the sublist [1, 1, 2, 3, 4, 3, 2] will only return [1, 1, 2, 3, 4]. For a challenge, do this without using slicing.
-
-.. activecode:: ee_ch07_06
-   :tags: IndefiniteIteration/listenerLoop.rst
-   
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testSix(self):
-         self.assertEqual(first_five([1, 2, 0]), [1,2], "Testing that first_five([1, 2, 0]) returns [1,2]")
-         self.assertEqual(first_five([1, 2, 3, 4, 3, 2, 5, 0, 3, 4]), [1, 2, 3, 4, 3], "Testing that first_five([1, 2, 3, 4, 3, 2, 5, 0, 3, 4]) returns [1, 2, 3, 4, 3]")
-         self.assertEqual(first_five([0]), [], "Testing that first_five([0]) returns []")
-
-   myTests().main()
-
-6.1 **Challenge:** Write a function called ``beginning`` that takes a list as input and contains a while loop that only stops once the element of the list is the string 'bye'. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if it stops on the 32nd element, the first 10 are returned. If "bye" is the 5th element, the first 4 are returned.) *If you want to make this even more of a challenge, do this without slicing*
+6. **Challenge:** Write a function called ``beginning`` that takes a list as input and contains a while loop that only stops once the element of the list is the string 'bye'. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if it stops on the 32nd element, the first 10 are returned. If "bye" is the 5th element, the first 4 are returned.) *If you want to make this even more of a challenge, do this without slicing*
 
 .. activecode:: ee_ch07_061
    :tags: IndefiniteIteration/listenerLoop.rst
