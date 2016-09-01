@@ -191,25 +191,7 @@ Extra Exercises
 
    myTests().main()
 
-4.1 Provided is a string saved to the variable name ``str1``. Using string methods and dictionary accumulation, find the word that occurs most often. Save the word to the variable name ``most_pop_word``. 
-
-.. activecode:: ee_ch13_041
-   :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
-
-   str1 = "There are many many seasons and I often cannot decide which is my favorite. In the fall, there are many leaves falling and I really enjoy leaping in them. In the winter, there are many snowflakes that fall everywhere. I love both seasons!"
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(most_pop_word, 'many', "Testing that most_pop_word was assigned to the correct word.")
-
-   myTests().main()
-
-4.2 Create a dictionary called ``lett_d`` that keeps track of all of the characters in the string ``product`` and notes how many times each character was seen. Then, find the key with the highest value in this dictionary and assign that key to ``max_value``.
+4.1 Create a dictionary called ``lett_d`` that keeps track of all of the characters in the string ``product`` and notes how many times each character was seen. Then, find the key with the highest value in this dictionary and assign that key to ``max_value``.
 
 .. activecode:: ee_ch13_042
    :tags: DictionaryAccumulation/AccumulatingaMaximumValue.rst, DictionaryAccumulation/AccumulatingtheBestKey.rst
@@ -230,7 +212,7 @@ Extra Exercises
 
    myTests().main()
 
-5. Do the same as above but now find the least frequent letter. Create the dictionary ``characters`` that shows each character from string ``sally`` and its frequency. Then, find the least frequent letter and assign the letter to the variable ``worst_char``. 
+5. Do the same as above but now find the least frequent letter. Create the dictionary ``characters`` that shows each character from string ``sally`` and its frequency. Then, find the least frequent letter in the string and assign the letter to the variable ``worst_char``. 
 
 .. activecode:: ee_ch13_05
    :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
@@ -251,23 +233,7 @@ Extra Exercises
 
    myTests().main()
 
-5.1 Create a dictionary that contains all the letters in ``quote`` and the number of times they occur. Then, find the letter that occurs the LEAST often. Save this letter to the variable name ``unpop``. 
 
-.. activecode:: ee_ch13_051
-   :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
-
-   quote = "bananas and berries, ribs, series"
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(unpop, 'd', "Testing that upop was assigned to the correct letter.")
-
-   myTests().main()
 
 5.2 Create a dictionary called ``d`` that keeps track of all the characters in the string ``placement`` and notes how many times each character was seen. Then, find the key with the lowest value in this dictionary and assign that key to ``min_value``.
 
@@ -291,29 +257,7 @@ Extra Exercises
 
    myTests().main()
 
-6. **Challenge** Given the string ``str1``, make a dictionary assigned to the variable ``char_dict`` with the letters as the key and their frequency as the value. Make sure that capitalization does not matter, i.e. "G" and "g" will count as the same letter.
 
-.. activecode:: ee_ch13_06
-   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
-
-   str1 = "SupercaliFragilisticExpialiDocious"
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testSixA(self):
-         self.assertEqual(char_dict['s'], 3, "Testing that s has correct value.")
-      def testSixB(self):
-         self.assertEqual(char_dict['f'], 1, "Testing that f has correct value.")
-      def testSixC(self):
-         self.assertEqual(char_dict['e'], 2, "Testing that e has correct value.")
-      def testSixD(self):
-         self.assertEqual(char_dict['d'], 1, "Testing that d has correct value.")
-
-   myTests().main()
 
 6.1 Create a dictionary named ``letter_counts`` that contains each letter and the number of times it occurs in ``string1``. **Challenge:** Letters should not be counted separately as upper-case and lower-case. 
 
