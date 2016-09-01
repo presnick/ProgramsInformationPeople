@@ -19,9 +19,8 @@ Lecture 3: Waiver Challenge Exercises
 
 .. activecode:: ee_ch9_09
 
-   Please get rid of the pet ``"cat"`` from the list ``pets``. Add the pet ``"dog"`` in its place.
+   Get rid of the pet ``"cat"`` from the list ``pets``. Add the pet ``"dog"`` in its place.
    ~~~~
-
    pets = ["goldfish", "cat", "parrot", "hamster"]
 
    =====
@@ -40,9 +39,8 @@ Lecture 3: Waiver Challenge Exercises
 .. activecode:: ee_ch_091
    :tags: Sequences/ListDeletion.rst, Sequences/ListMethods.rst
 
-   Please get rid of the fourth element in the list ``office``. Then, replace that element with the string "chair".
+   Get rid of the fourth element in the list ``office``. Then, replace that element with the string "chair".
    ~~~~
-
    office = ["table", "computer", "clock", "smoothie machine", "water cooler", "fax machine", "printers", "pencils", "desks"]
 
    =====
@@ -61,7 +59,6 @@ Lecture 3: Waiver Challenge Exercises
 
    Create a list made up of the 5th and 37th element from the list ``words`` and assign it to the variable ``output``. As always, do not hard code!
    ~~~~
-
    words = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
    
    =====
@@ -80,7 +77,6 @@ Lecture 3: Waiver Challenge Exercises
 
    Create a list made up of the 11th and 29th elements from the list ``practice`` and assign that to the variable ``content``.
    ~~~~
-   
    practice = ["hi", "goodbye", "python", "106", "506", 91, ['all', 'Paul', 'Jackie', "UMSI", 1, "Stephen", 4.5], 109, "chair", "pizza", "wolverine", 2017, 3.92, 1817, "account", "readings", "papers", 12, "facebook", "twitter", 193.2, "snapchat", "leaders and the best", "social", "1986", 9, 29, "holiday", ["women", "olympics", "gold", "rio", 21, "2016", "men"], "26trombones"]
 
    =====
@@ -99,7 +95,6 @@ Lecture 3: Waiver Challenge Exercises
 
    Create a new list, ``newlist``, that is made up of the last 6 elements of ``lst``. Then assign the fourth element of the new list to the variable ``output``. Note: This should work regardless of the length of the list.
    ~~~~
-
    lst = ["swimming", 2, "water bottle", 44, "lollipop", "shine", "marsh", "winter", "donkey", "rain", ["Rio", "Beijing", "London"], [1,2,3], "gold", "bronze", "silver", "mathematician", "scientist", "actor", "actress", "win", "cell phone", "leg", "running", "horse", "socket", "plug", ["Phelps", "le Clos", "Lochte"], "drink", 22, "happyfeet", "penguins"]
    
    =====
@@ -122,7 +117,6 @@ Lecture 3: Waiver Challenge Exercises
 
    Create a new list called ``small_lst`` whose elements are the last five of ``new_lst``. Do this so that it would work, no matter how long new_lst is. Then assign the third element of small_lst to the variable ``third``.
    ~~~~
-
    new_lst = ["computer", "luxurious", "basket", "crime", 0, 2.49, "institution", "slice", "sun", ["water", "air", "fire", "earth"], "games", 2.7, "code", "java", ["birthday", "celebration", 1817, "party", "cake", 5], "rain", "thunderstorm", "top down"]
 
    =====
@@ -144,7 +138,6 @@ Lecture 3: Waiver Challenge Exercises
 
    Remove the whitespace from the beginning and end of ``str1`` and assign the new string to variable ``newstring``. Then save the number of characters of ``newstring`` to ``newlength``. Next, split ``newstring`` on every occurrence the letter 'p' and assign that to ``output``.
    ~~~~
-
    str1 = "     peter piper picked a peck of pickled peppers.               "
    
    =====
@@ -170,7 +163,6 @@ Lecture 3: Waiver Challenge Exercises
 
    Remove the white space from the beginning and the end of the string bound to the variable ``full_sent`` and assign that to the variable ``sent``. Then, save the number of characters in sent to a variable called ``char_sent``. Finally, assign to the variable ``word_c``, the value of ``sent`` that is split on every occurance of the letter **c**.
    ~~~~
-
    full_sent = "     A broken clock is correct at least twice a day.    "
 
    =====
