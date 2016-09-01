@@ -17,3 +17,4 @@ Lecture 10: Waiver Challenge Exercises
 
 .. _lecture_10_waiver:
 
+If you have submitted the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_unix>` before this course, you may skip lecture. However, we *strongly* suggest you attend lecture this time. It will be extremely important for the rest of the semester.
