@@ -112,6 +112,7 @@ Lecture 5: Waiver Challenge Exercises
             print "Test not able to run, looking for specific values. Check your spelling and value types and use print statements."
 
    myTests().main()
+   
 
 .. activecode:: ee_ch11_081
    :tags: Selection/Nestedconditionals.rst
