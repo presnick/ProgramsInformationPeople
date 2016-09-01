@@ -41,6 +41,8 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
+  * :ref:`Lecture 5 Waiver <lecture_5_waiver>`
+
 * **Before Tuesday 9/27 at 11:59 pm:**
 
   * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <https://umich.instructure.com/courses/105657/assignments/131315>`_ on Canvas.
@@ -55,6 +57,8 @@ You have the following graded activities:
     :deadline: 2016-09-28 19:40:00
     :pct_required: 80
     :points: 50
+
+  * :ref:`Lecture 6 Waiver <lecture_6_waiver>`
 
 * **Before Friday 9/30 at 6:30 PM:**
 
