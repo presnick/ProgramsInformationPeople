@@ -50,7 +50,7 @@ You have the following graded activities:
 
 * **Before Wednesday's class 9/21:**
 
-  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the following exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
+  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
 
 .. usageassignment:: prep_05
     :chapters: DictionaryAccumulation
@@ -243,7 +243,7 @@ Problem Set
        class myTests(TestCaseGui):
 
            def testOne(self):
-               self.assertIn('in', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+               self.assertIn(' in ', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
                self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
 
        myTests().main()
