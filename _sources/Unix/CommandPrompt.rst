@@ -6,7 +6,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. _command_prompt_sect:
+.. _unix_chapter:
 
 What is the Command Prompt?
 ---------------------------

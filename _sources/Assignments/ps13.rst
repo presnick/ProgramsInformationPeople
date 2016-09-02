@@ -12,36 +12,7 @@
     :linenothreshold: 500
 
 
-Activities through 4/17
-=======================
+Activities through the end of the semester
+==========================================
 
-There are no required textbook readings for this week, but there is one more reading response, due Tuesday night.
-
-* **Monday's class:**
-    * Monday's class will be all project coding time with instructional staff.
-    * We have a new system for queuing and asking questions to make the distribution of help as fair (and as helpful to you all) as we can. You will:
-        * Post your question on the FB group. Be sure to include the following:
-            1) What are you trying to accomplish?
-            2) What have you tried? (Include screenshot of code snippet if appropriate)
-            3) What happens that's not what you wanted (Include a screenshot of output or error message if appropriate)
-            4) What's your best explanation of why that's happening.
-        * Fill out the `form <https://docs.google.com/a/umich.edu/forms/d/1i1GHtnhY67s1Kdyb7frXx2hrZXWXeldBt8oSwJf7VGI/viewform>`_ to put yourself in the queue
-        * A response may come on FB or in person, depending on circumstances.
-        * **Please do not put yourself in the queue outside of class or office hours sessions** (we will clear the queue in our spreadsheet before each one), but please do post on the Facebook group!
-    * You can `see where you are in the queue <https://docs.google.com/spreadsheets/d/1ZoB3wg13EXLy7xInXRKV-d_IJXJn2epIVI_6-0cVbTs/#gid=26909305>`_
-
-* **Before Tuesday at midnight:**
-    * Read *The Success of Open Source*, Chapter 6
-    * Complete `Reading Response 13 <https://umich.instructure.com/courses/48961/assignments/57689>`_ on Canvas.
-
-* **Wednesday's class:**
-       * Wednesday will also include project coding time with instructional staff. See above.
-
-* **Discussion sections:**
-       * Discussion sections will also also be project coding time with instructional staff. Instructors may or may not decide to use the online queueing system.
-
-* **Upcoming (more later):**
-       * Project Hackathon, April 17, 1-8 pm.
-       * Projects due April 18, 2 pm.
-       * Final Exam Review, April 19, time/location TBA, probably 10-11:30AM.
-   
+TBA

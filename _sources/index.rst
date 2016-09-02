@@ -127,7 +127,6 @@ Sequences
    Sequences/SplitandJoin.rst
    Sequences/Glossary.rst
    Sequences/Exercises.rst
-   Sequences/ExtraExercises.rst
 
 
 Iteration
@@ -264,6 +263,7 @@ Optional and Keyword Parameters
    OptionalAndKeywordParameters/OptionalParameters.rst
    OptionalAndKeywordParameters/KeywordParameters.rst
    OptionalAndKeywordParameters/exercises.rst
+   OptionalAndKeywordParameters/ExtraExercises.rst
 
 Tuples
 ::::::
@@ -290,6 +290,7 @@ Nested Data and Nested Iteration
    NestedData/NestedDictionaries.rst
    NestedData/NestedIteration.rst
    NestedData/DebuggingNestedData.rst
+   NestedData/ExtraExercises.rst
 
 
 Sorting
@@ -366,6 +367,7 @@ String Formatting
    StringFormatting/Interpolation.rst
    StringFormatting/CSV.rst
    StringFormatting/Exercises.rst
+
 
 Using RESTAPIs
 ::::::::::::::
@@ -543,17 +545,6 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-In Class Code Samples
-:::::::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   InClass/DictionaryAccum.rst
-   InClass/FunctionsExamples.rst
-   InClass/IndefiniteIteration.rst
-   InClass/OptionalKeywordParams.rst
-   InClass/TuplesAndNestedData.rst
 
 Indices and tables
 ::::::::::::::::::

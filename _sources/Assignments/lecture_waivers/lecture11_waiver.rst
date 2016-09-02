@@ -1,6 +1,7 @@
+
 :orphan:
 
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Paul Resnick, Jackie Cohen.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -8,21 +9,12 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. assignment for problem set
-
-.. assignments for lecture waivers
-
-.. assignments for end of lecture exercise sets
-
-.. assignments for reading responses
-
-.. assignment for DYU
-
 .. highlight:: python
     :linenothreshold: 500
 
+Lecture 11: Waiver Challenge Exercises
+=====================================
 
-Activities through 11/4
-=======================
+.. _lecture_11_waiver:
 
-TBA
+If you have submitted the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_unix>` before this course, you may skip lecture. However, we *strongly* suggest you attend lecture this time. It will be extremely important for the rest of the semester.
