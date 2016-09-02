@@ -62,10 +62,9 @@ You have the following graded activities:
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
-* Complete each of the problem set problems.
+  * Complete each of the problem set problems.
   * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
-
-* Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 5:00 PM. 
+  * Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 5:00 PM. 
 
 This Week's Reading Responses
 -----------------------------
