@@ -35,10 +35,10 @@ You have the following graded activities:
 
   * :ref:`Lecture 5 Waiver <lecture_5_waiver>`
 
-.. usageassignment:: prep_05
+.. usageassignment:: prep_06
     :chapters: Selection, Files
     :subchapters: BuildingAProgram/UnderstandingCode
-    :assignment_name: Prep 05
+    :assignment_name: Prep 06
     :deadline: 2016-09-26 19:40:00
     :pct_required: 80
     :points: 50
@@ -54,9 +54,9 @@ You have the following graded activities:
 
   * :ref:`Lecture 6 Waiver <lecture_6_waiver>`
 
-.. usageassignment:: prep_06
+.. usageassignment:: prep_07
     :chapters: Dictionaries
-    :assignment_name: Prep 06
+    :assignment_name: Prep 07
     :deadline: 2016-09-28 19:40:00
     :pct_required: 80
     :points: 50

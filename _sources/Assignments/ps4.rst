@@ -34,10 +34,10 @@ You have the following graded activities:
 
   * :ref:`Lecture 7 Waiver <lecture_7_waiver>`
 
-.. usageassignment:: prep_07
+.. usageassignment:: prep_08
     :chapters: DictionaryAccumulation
     :subchapters: BuildingAProgram/TheStrategy
-    :assignment_name: Prep 07
+    :assignment_name: Prep 08
     :deadline: 2016-10-03 19:40:00
     :pct_required: 80
     :points: 50
@@ -54,9 +54,9 @@ You have the following graded activities:
 
   * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
   
-.. usageassignment:: prep_08
+.. usageassignment:: prep_09
     :chapters: Functions
-    :assignment_name: Prep 08
+    :assignment_name: Prep 09
     :deadline: 2016-10-05 19:40:00
     :pct_required: 80
     :points: 50

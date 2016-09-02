@@ -9,21 +9,20 @@
     License".
 
 
-.. assignment for problem set
-
-.. assignment:: 
-   :name: problem_set_01
-   :assignment_type: summative
-   :questions: ps_1_1 100, ps_1_2 100, ps_1_3 100, ps_1_4 100, ps_1_5 100, ps_1_6 100, ps_1_7 100, ps_1_8 100, ps_1_9 100, ps_1_10 100, ps_1_11 100
-   :deadline: 2016-09-18 22:00
-   :points: 1000
+.. assignment for problem set TODO
 
 .. assignments for lecture waivers
-.. none for lectures 1 and 2
+.. none for lectures 1 and 2 and 3
 
 .. assignments for end of lecture exercise sets
 
 .. assignments for reading responses
+.. assignment::
+  :name: response_1
+  :assignment_type: summative
+  :questions: rr_1 100
+  :deadline: 2016-09-23 15:30
+  :points: 12
 
 .. assignment for DYU
 
@@ -35,7 +34,7 @@
 Activities through 9/16
 =======================
 
-* **Before Thursday's discussion section, 9/15 (preferably before first lecture on Wednesday 9/7):**
+* **Before your first discussion section (preferably before first lecture on Wednesday 9/7):**
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
   * Sign up for/join the `Facebook group <linkgoeshere.notrealTODO>`_
@@ -76,7 +75,12 @@ Activities through 9/16
   * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
   * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
 
-.. usage assignment
+.. usageassignment:: prep_03
+    :chapters: Debugging, PythonTurtle
+    :assignment_name: Prep 03
+    :deadline: 2016-01-13 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * Participation in your discussion section this week
 

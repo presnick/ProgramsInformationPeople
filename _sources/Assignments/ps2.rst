@@ -34,11 +34,11 @@ You have the following graded activities:
 
   * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
-  * :ref:`Lecture 3 Waiver <lecture_3_waiver>`
+  * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
 
-.. usageassignment:: prep_03
+.. usageassignment:: prep_04
     :chapters: Sequences
-    :assignment_name: Prep 03
+    :assignment_name: Prep 04
     :deadline: 2016-09-19 19:40:00
     :pct_required: 80
     :points: 50
@@ -50,9 +50,9 @@ You have the following graded activities:
 
   * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
 
-.. usageassignment:: prep_04
+.. usageassignment:: prep_05
     :chapters: Iteration
-    :assignment_name: Prep 04
+    :assignment_name: Prep 05
     :deadline: 2016-09-21 19:40:00
     :pct_required: 80
     :points: 50
