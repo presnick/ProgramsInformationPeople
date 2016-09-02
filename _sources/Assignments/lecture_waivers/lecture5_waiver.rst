@@ -17,9 +17,8 @@ Lecture 5: Waiver Challenge Exercises
 
 .. _lecture_5_waiver:
 
-.. activecode:: ee_ch10_091
+.. activecode:: l5w_1
    :language: python
-   :autograde: unittest
 
 	Create a list of numbers from 0-74 and assign that to the variable ``nums``. Then accumulate the total of that list's values so that the total is assigned to the variable ``total``.
 	~~~~
@@ -39,12 +38,12 @@ Lecture 5: Waiver Challenge Exercises
    myTests().main()
 
 
-.. activecode:: ee_ch10_081
+.. activecode:: l5w_2
    :language: python
    :autograde: unittest
 
-	Count how many characters there are in ``sent`` and assign that number to the variable ``char_sent``. Do not use ``len()``.
-	~~~~
+	 Count how many characters there are in ``sent`` and assign that number to the variable ``char_sent``. Do not use ``len()``.
+	 ~~~~
    sent = "Oh the places you'll go."
 
    =====
@@ -61,12 +60,12 @@ Lecture 5: Waiver Challenge Exercises
    myTests().main()
 
 
-.. activecode:: ee_ch10_071
+.. activecode:: l5w_3
    :language: python
    :autograde: unittest
 
-	For each string in ``wrds``, add 'ed' to the end of the word (to make the word past tense). Instead of saving the words into a new list, overwrite the old list ``wrds``. So at the end of the code execution, ``wrds`` should have the new, past tense words.
-	~~~~
+	 For each string in ``wrds``, add 'ed' to the end of the word (to make the word past tense). Instead of saving the words into a new list, overwrite the old list ``wrds``. So at the end of the code execution, ``wrds`` should have the new, past tense words.
+	 ~~~~
    wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
    =====
 

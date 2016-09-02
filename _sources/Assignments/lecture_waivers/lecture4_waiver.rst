@@ -167,7 +167,6 @@ Lecture 4: Waiver Challenge Exercises
 
 .. activecode:: l4w_8
    :tags: Sequences/StringMethods.rst, Sequences/Length.rst, Sequences/SplitandJoin.rst
-   :autograde: unittest
 
    Remove the white space from the beginning and the end of the string bound to the variable ``full_sent`` and assign that to the variable ``sent``. Then, save the number of characters in sent to a variable called ``char_sent``. Finally, assign to the variable ``word_c``, the value of ``sent`` that is split on every occurance of the letter **c**.
    ~~~~
