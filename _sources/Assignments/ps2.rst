@@ -8,11 +8,18 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. assignment for problem set
+.. assignment for problem set TODO
 
 .. assignments for reading responses
 
+
 .. assignment for DYU
+.. assignment::
+  :name: dyu2
+  :assignment_type: summative
+  :questions: ps2_dyu 100
+  :deadline: 
+  :points: 100
 
 .. highlight:: python
     :linenothreshold: 500
@@ -23,14 +30,14 @@ Activities through 9/23
 You have the following graded activities:
 
 * **By Sunday 9/18 at 11:59 pm:** 
-
+    
   * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <UPDATELINK>`_ .
 
 * **Before class Monday 9/19:**
 
-    * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
-    * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
-    * You may want to review the following chapters if you do not feel comfortable with them: :ref:`Conditionals <conditionals_chap>`, :ref:`File Input/Output <files_chap>`
+  * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
+  * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
+  * You may want to review the following chapters if you do not feel comfortable with them: :ref:`Conditionals <conditionals_chap>`, :ref:`File Input/Output <files_chap>`
 
 .. usageassignment:: prep_04
     :chapters: Dictionaries
@@ -55,7 +62,7 @@ You have the following graded activities:
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
-  * Complete each of the problem set problems.
+* Complete each of the problem set problems.
   * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
 
 * Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 5:00 PM. 
@@ -117,7 +124,6 @@ Problem Set
 
 .. activecode:: ps_2_1
        :language: python
-       :autograde: unittest
        :available_files: about_programming.txt
 
        **1.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
@@ -138,7 +144,7 @@ Problem Set
 
 .. activecode:: ps_2_2
        :language: python
-       :autograde: unittest
+       
 
        **2.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
@@ -185,7 +191,7 @@ Problem Set
 
 .. activecode:: ps_2_3
        :language: python
-       :autograde: unittest
+       
 
        **7.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
@@ -222,7 +228,7 @@ Problem Set
 
 .. activecode:: ps_2_4
        :language: python
-       :autograde: unittest
+       
 
        **4.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
 
@@ -265,7 +271,7 @@ Problem Set
 
 .. activecode:: ps_2_6
        :language: python
-       :autograde: unittest
+       
 
        **2.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
 
@@ -300,7 +306,7 @@ Problem Set
 
 .. activecode:: ps_2_7
        :language: python
-       :autograde: unittest
+       
 
        **7.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
        ~~~~
@@ -326,7 +332,7 @@ Problem Set
 
 .. activecode:: ps_2_8
        :language: python
-       :autograde: unittest
+       
 
        **8.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
        ~~~~
@@ -349,6 +355,8 @@ Problem Set
        myTests().main()
 
 
+
+
 .. external:: ps2_dyu
 
-    Submit your `Demonstrate Your Understanding <UPDATELINK>`_ for this week on Canvas.
+    Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139240>`_ for this week on Canvas.

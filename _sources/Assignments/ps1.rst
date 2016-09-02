@@ -9,17 +9,37 @@
     License".
 
 
-.. assignment for problem set
-
-.. assignment::
-   :name: problem_set_1
-   :assignment_type: summative
-   :questions:
-   :
+.. assignment for problem set TODO
 
 .. assignments for reading responses
+.. assignment::
+  :name: response_1
+  :assignment_type: summative
+  :questions: rr_1 100
+  :deadline: 
+  :points: 100
+
+.. assignment::
+  :name: response_2
+  :assignment_type: summative
+  :questions: rr_2 100
+  :deadline: 
+  :points: 100
+
+.. assignment::
+  :name: response_3
+  :assignment_type: summative
+  :questions: rr_3 100
+  :deadline: 
+  :points: 100
 
 .. assignment for DYU
+.. assignment::
+  :name: dyu1
+  :assignment_type: summative
+  :questions: ps1_dyu 100
+  :deadline: 
+  :points: 100
 
 
 .. highlight:: python
@@ -46,7 +66,7 @@ Activities through 9/16
 * **By Sunday 9/11 at 11:59 pm:**
 
   * read the intro and chapter 1 of The Most Human Human book.
-  * Answer `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_ .
+  * Answer `Reading Response 1 <https://umich.instructure.com/courses/108426/assignments/139258>`_ .
 
 
 * **Before Monday's class, 9/12:**
@@ -65,7 +85,7 @@ Activities through 9/16
 * **By Tuesday night 11:59, 9/13:**
 
   * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/courses/105657/files?preview=2142149>`_, by Richard Searle. (It's in the Canvas Files folder, if that link doesn't work.)
-  * Answer `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_ .
+  * Answer `Reading Response 2 <https://umich.instructure.com/courses/108426/assignments/139263>`_ .
 
 
 * **Before Wednesday's class, 9/14:**
@@ -83,11 +103,11 @@ Activities through 9/16
 
 * **By Friday 9/16 at 6:30 PM:** 
 
-  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <UPDATELINK>`_ (DYU).
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139248>`_ (DYU).
 
 * **By Sunday 9/18 at 11:59 pm:** (We include this in your assignments for next week)
 
-  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ .
+  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
 
 
 * Note that there is a grace period for the problem set and DYU assignment until **Sunday 9/18 at 5:00 PM**. You will not lose any points if you submit before then, even if you submit after the Friday deadline. After the grace period, we do not accept late assignments. See syllabus.
@@ -449,7 +469,7 @@ Problem Set
 
 .. external:: ps1_dyu
 
-    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ for this week.
+    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139248>`_ for this week.
     
 
 That's the end of the problem set. In the hidden code below, you will find the definitions of functions square, random_digit, and greeting that were used elsewhere in the problem set. They're hidden because you don't yet need to understand how function definitions work. But if you want a preview, feel free to click on Show/hide code.
