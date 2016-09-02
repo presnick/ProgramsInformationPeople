@@ -17,7 +17,7 @@ Lecture 4: Waiver Challenge Exercises
 
 .. _lecture_4_waiver:
 
-.. activecode:: ee_ch9_09
+.. activecode:: l4w_1
    :autograde: unittest
 
    Get rid of the pet ``"cat"`` from the list ``pets``. Add the pet ``"dog"`` in its place.
@@ -37,7 +37,7 @@ Lecture 4: Waiver Challenge Exercises
    myTests().main()
 
 
-.. activecode:: ee_ch_091
+.. activecode:: l4w_2
    :tags: Sequences/ListDeletion.rst, Sequences/ListMethods.rst
    :autograde: unittest
 
@@ -57,7 +57,7 @@ Lecture 4: Waiver Challenge Exercises
 
    myTests().main()  
 
-.. activecode:: ee_ch9_10
+.. activecode:: l4w_3
    :autograde: unittest
 
    Create a list made up of the 5th and 37th element from the list ``words`` and assign it to the variable ``output``. As always, do not hard code!
@@ -75,7 +75,7 @@ Lecture 4: Waiver Challenge Exercises
 
    myTests().main()
 
-.. activecode:: ee_ch9_101
+.. activecode:: l4w_4
    :tags: Sequences/ConcatenationandRepetition.rst, Sequences/AccessingElements.rst
    :autograde: unittest
 
@@ -95,7 +95,7 @@ Lecture 4: Waiver Challenge Exercises
    myTests().main()
 
 
-.. activecode:: ee_ch9_11
+.. activecode:: l4w_5
    :autograde: unittest
 
    Create a new list, ``newlist``, that is made up of the last 6 elements of ``lst``. Then assign the fourth element of the new list to the variable ``output``. Note: This should work regardless of the length of the list.
@@ -117,7 +117,7 @@ Lecture 4: Waiver Challenge Exercises
    myTests().main()
 
 
-.. activecode:: ee_ch9_111
+.. activecode:: l4w_6
    :tags: Sequences/TheSliceOperator.rst, Sequences/AccessingElements.rst
    :autograde: unittest
 
@@ -140,7 +140,7 @@ Lecture 4: Waiver Challenge Exercises
    myTests().main()
 
 
-.. activecode:: ee_ch9_12
+.. activecode:: l4w_7
    :autograde: unittest
 
    Remove the whitespace from the beginning and end of ``str1`` and assign the new string to variable ``newstring``. Then save the number of characters of ``newstring`` to ``newlength``. Next, split ``newstring`` on every occurrence the letter 'p' and assign that to ``output``.
@@ -165,7 +165,7 @@ Lecture 4: Waiver Challenge Exercises
    myTests().main()
 
 
-.. activecode:: ee_ch_121
+.. activecode:: l4w_8
    :tags: Sequences/StringMethods.rst, Sequences/Length.rst, Sequences/SplitandJoin.rst
    :autograde: unittest
 

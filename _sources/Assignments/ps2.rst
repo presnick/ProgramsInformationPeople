@@ -12,6 +12,15 @@
 
 .. assignments for lecture waivers
 
+.. this particular (first) lecture waiver assignment will have/actually has questions l4w_1 .. l4w_8, with that naming convention.
+.. but, it requires the threshold argument: 100% threshold for lecture waivers, small threshold for lecture attendance
+.. for that reason the remainder will be filled in week of 9/5/16 for F16SI106
+
+.. assignment::
+  :name: lecture4_waiver
+  :assignment_type: lecture_waiver
+  :points: 100
+
 .. assignments for end of lecture exercise sets
 
 .. assignments for reading responses
