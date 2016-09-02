@@ -560,17 +560,21 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-In Class Code Samples
-:::::::::::::::::::::
+Extra Exercises
+:::::::::::::::
 
 .. toctree::
    :maxdepth: 2
 
-   InClass/DictionaryAccum.rst
-   InClass/FunctionsExamples.rst
-   InClass/IndefiniteIteration.rst
-   InClass/OptionalKeywordParams.rst
-   InClass/TuplesAndNestedData.rst
+   Sequences/ExtraExercises.rst
+   Iteration/ExtraExercises.rst
+   Dictionaries/ExtraExercises.rst
+   DictionaryAccumulation/ExtraExercises.rst
+   Functions/ExtraExercises.rst
+   Selection/ExtraExercises.rst
+   Files/ExtraExercises.rst
+   IndefiniteIteration/ExtraExercises.rst
+   OptionalandKeywordParameters/ExtraExercises.rst
 
 Indices and tables
 ::::::::::::::::::
