@@ -548,17 +548,6 @@ Unix
    Unix/lessCommand.rst
 
 
-
-..Sequences/ExtraExercises.rst
-..Iteration/ExtraExercises.rst
-..Dictionaries/ExtraExercises.rst
-..DictionaryAccumulation/ExtraExercises.rst
-..Functions/ExtraExercises.rst
-..Selection/ExtraExercises.rst
-..Files/ExtraExercises.rst
-..IndefiniteIteration/ExtraExercises.rst
-..OptionalandKeywordParameters/ExtraExercises.rst
-
 Indices and tables
 ::::::::::::::::::
 
