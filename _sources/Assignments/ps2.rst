@@ -10,10 +10,6 @@
 
 .. assignment for problem set
 
-.. assignments for lecture waivers
-
-.. assignments for end of lecture exercise sets
-
 .. assignments for reading responses
 
 .. assignment for DYU
@@ -28,36 +24,34 @@ You have the following graded activities:
 
 * **By Sunday 9/18 at 11:59 pm:** 
 
-  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ .
+  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <UPDATELINK>`_ .
 
 * **Before class Monday 9/19:**
 
-  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
+    * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
+    * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
+    * You may want to review the following chapters if you do not feel comfortable with them: :ref:`Conditionals <conditionals_chap>`, :ref:`File Input/Output <files_chap>`
 
-  * :ref:`Lecture 3 Waiver <lecture_3_waiver>`
-
-.. usageassignment:: prep_03
-    :chapters: Sequences
-    :assignment_name: Prep 03
-    :deadline: 2016-09-19 19:40:00
+.. usageassignment:: prep_04
+    :chapters: Dictionaries
+    :subchapters: BuildingAProgram/UnderstandingCode
+    :assignment_name: Prep 04
+    :deadline: 2016-09-19 21:40:00
     :pct_required: 80
     :points: 50
 
 
 * **Before Wednesday's class 9/21:**
 
-  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
+  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the following exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
 
-  * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
-
-.. usageassignment:: prep_04
-    :chapters: Iteration
-    :assignment_name: Prep 04
-    :deadline: 2016-09-21 19:40:00
+.. usageassignment:: prep_05
+    :chapters: DictionaryAccumulation
+    :subchapters: BuildingAProgram/TheStrategy
+    :assignment_name: Prep 05
+    :deadline: 2016-09-21 21:40:00
     :pct_required: 80
     :points: 50
-
-  
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
@@ -79,229 +73,282 @@ This Week's Reading Responses
 
 Problem Set
 -----------
+**This problem set is in draft. You may look at it and run code. The problems/instructions may change slightly while this disclaimer remains here.**
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save & run** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
+
+Problem Set
+-----------
+
+**Instructions:** Write the code you want to save in the provided boxes, and click **run** for each one, which will save what is in the code window. The last code you have saved for each one by the deadline is what will be graded.
+
+.. datafile::  about_programming.txt
+   :hide:
+
+   Computer programming (often shortened to programming) is a process that leads from an
+   original formulation of a computing problem to executable programs. It involves
+   activities such as analysis, understanding, and generically solving such problems
+   resulting in an algorithm, verification of requirements of the algorithm including its
+   correctness and its resource consumption, implementation (or coding) of the algorithm in
+   a target programming language, testing, debugging, and maintaining the source code,
+   implementation of the build system and management of derived artefacts such as machine
+   code of computer programs. The algorithm is often only represented in human-parseable
+   form and reasoned about using logic. Source code is written in one or more programming
+   languages (such as C++, C#, Java, Python, Smalltalk, JavaScript, etc.). The purpose of
+   programming is to find a sequence of instructions that will automate performing a
+   specific task or solve a given problem. The process of programming thus often requires
+   expertise in many different subjects, including knowledge of the application domain,
+   specialized algorithms and formal logic.
+   Within software engineering, programming (the implementation) is regarded as one phase in a software development process. There is an on-going debate on the extent to which
+   the writing of programs is an art form, a craft, or an engineering discipline. In
+   general, good programming is considered to be the measured application of all three,
+   with the goal of producing an efficient and evolvable software solution (the criteria
+   for "efficient" and "evolvable" vary considerably). The discipline differs from many
+   other technical professions in that programmers, in general, do not need to be licensed
+   or pass any standardized (or governmentally regulated) certification tests in order to
+   call themselves "programmers" or even "software engineers." Because the discipline
+   covers many areas, which may or may not include critical applications, it is debatable
+   whether licensing is required for the profession as a whole. In most cases, the
+   discipline is self-governed by the entities which require the programming, and sometimes
+   very strict environments are defined (e.g. United States Air Force use of AdaCore and
+   security clearance). However, representing oneself as a "professional software engineer"
+   without a license from an accredited institution is illegal in many parts of the world.
+
 .. activecode:: ps_2_1
-    :language: python
-  
-    **1.** Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
-    ~~~~
-    original_str = "The quick brown rhino jumped over the extremely lazy fox."
-     
-    # assign variables as specified below this line!
-     
-    =====
+       :language: python
+       :autograde: unittest
+       :available_files: about_programming.txt
 
-    from unittest.gui import TestCaseGui
+       **1.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
+       ~~~~
+       # Write your code here.
 
-    class myTests(TestCaseGui):
+       =====
 
-        def testOne(self):
-           self.assertEqual(fl, original_str[0], "Testing that fl has been set to first char in original_str")
-           self.assertEqual(last_l, original_str[-1], "Testing that last_l has been set to last char in original_str")
-           self.assertIn('-1', self.getEditorText(), "Testing that you indexed correctly. (Don't worry about Actual and Expected Values.)")
+       from unittest.gui import TestCaseGui
 
-    myTests().main()
+       class myTests(TestCaseGui):
 
+          def testOne(self):
+             self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+             self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
+
+       myTests().main()
 
 .. activecode:: ps_2_2
-    :language: python
+       :language: python
+       :autograde: unittest
 
-    **2.** How long (how many characters) is the string in the variable ``sent``? Write code to assign the length of that string to a variable called ``len_of_sent``.
+       **2.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
-    How long is the string in the variable ``short_sent``? Write code to assign the value of that string's length to a variable ``short_len``.
+       Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
 
-    Write code to print out the value of ``short_len`` (and the value of len_of_sent, if you want!) so you can see it.
+       (HINT: you don't have to make a big change.)
+       ~~~~ 
+       #x = 25
+       #x = 15
+       #x = 5
+       #x = -10
 
-    Consider (ungraded but important): Why is the length of ``short_sent`` longer than 15 characters?
+       if x > 20:
+           y = "yes"
+       if x > 10:
+           y = "no"
+       if x < 0:
+           y = "maybe"
+       else:
+           y = "unknown"
 
-    Finally, write code to assign the index of the first ``'v'`` in the value of the variable ``sent`` TO a variable called ``index_of_v``. (Hint: we saw a method of the string class that can help with this)
-    ~~~~
-    sent = """
-    He took his vorpal sword in hand:
-    Long time the manxome foe he sought
-    So rested he by the Tumtum tree,
-    And stood awhile in thought.
-    - Jabberwocky, Lewis Carroll (1832-1898)"""
+       print "y is " + str(y)
 
-    short_sent = """
-    So much depends
-    on
-    """
+       =====
 
-    # Write your code here.
+       from unittest.gui import TestCaseGui
 
+       class myTests(TestCaseGui):
 
-     =====
+           def testOne(self):
+               print("No tests for the comment, of course -- we can only test stored values!\n")
+               if x == 25:
+                   self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
+               elif x == 15:
+                   self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
+               elif x == 5:
+                   self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
+               elif x == -10:
+                   self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
+               else:
+                   print "No tests when value of x is %s" % (x)
 
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-
-        def testOne(self):
-           self.assertEqual(len_of_sent, len(sent), "Testing that len_of_sent has been set to the length of the variable sent.")
-        def testTwo(self):
-           self.assertEqual(short_len,len(short_sent), "Testing that short_len has been set to the length of the variable short_sent")
-        def testThree(self):
-           self.assertEqual(index_of_v, sent.find('v'), "Testing that index_of_v has been set to the index of v in the variable sent.")
-        def testFour(self):
-           self.assertIn('20', self.getOutput(), "Testing that you printed the length of short_sent. (Don't worry about Actual and Expected Values.)")
-
-    myTests().main()
-
+       myTests().main()
 
 .. activecode:: ps_2_3
-    :language: python
+       :language: python
+       :autograde: unittest
 
-    **3.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
+       **7.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
-    Assign the value of the sixth element of ``num_lst`` to a variable called ``elem_sixth``.
+       The output you get should be:
 
-    Assign the length of ``num_lst`` to a variable called ``num_lst_len``.
+       :: 
 
-    *Consider:* what is the difference between ``mixed_bag[-1]`` and ``mixed_bag[-2]`` (you may want to print out those values or print out information about those values, so you can make sure you know what they are!)?
+           5
+           13
+           11
+           12
+           3
+           12
+           11
+           6 
 
-    Write code to print out the type of the third element of ``mixed_bag``.
+       Then, write code to print out each element of list ``lp`` *only if* the length of the element is an even number. Use iteration (a for loop).
+       ~~~~
+       lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
+       ====
 
-    Write code to assign the **type of the fifth element of** ``mixed_bag`` to a variable called ``fifth_type``.
+       from unittest.gui import TestCaseGui
+       
+       class myTests(TestCaseGui):
 
-    Write code to assign the **type of the first element of** ``mixed_bag`` to a variable called ``another_type``.
-
-    **Keep in mind:** All ordinal numbers in *instructions*, like "third" or "fifth" refer to the way HUMANS count. How do you write code to find the right things?
-    ~~~~
-    num_lst = [4,16,25,9,100,12,13]
-    mixed_bag = ["hi", 4,6,8, 92.4, "see ya", "23", 23]
-
-    # Write your code here:
-
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-
-        def testOne(self):
-           self.assertEqual(third_elem, num_lst[2], "Testing that third_elem has been set to the third element of num_lst")
-        def testTwo(self):
-           self.assertEqual(elem_sixth, num_lst[5], "Testing that elem_sixth has been set to the sixth element of num_lst")
-        def testThree(self):
-           self.assertEqual(num_lst_len,len(num_lst), "Testing that num_len has been set to the length of num_lst")
-        def testFour(self):
-           self.assertEqual(fifth_type, type(mixed_bag[4]), "Testing that fifth_type has been set to the type of the fifth element in mixed_bag")
-        def testFive(self):
-           self.assertEqual(another_type, type(mixed_bag[0]), "Testing that another_type has been set to the type of the first element of mixed_bag")
-        def testSix(self):
-           self.assertIn('print', self.getEditorText(), "Testing that 'print' is in your code. (Don't worry about Actual and Expected Values.)")
-        def testSeven(self):
-           self.assertIn('int', self.getOutput(), "Testing that you printed the correct element of mixed_bag. (Don't worry about Actual and Expected Values.)")
-
-
-    myTests().main()
-
+           def test_output(self):
+               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+           def test_outputB(self):
+               self.assertIn("5\n13\n11\n12\n3\n12\n11\n6", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+           def test_outputB(self):
+               self.assertIn("inspirations\namalgamation\nPython", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+    
+       myTests().main()
 
 .. activecode:: ps_2_4
-    :include: addl_functions_2
-    :language: python
+       :language: python
+       :autograde: unittest
 
-    **4.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
+       **4.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
 
-    Now, take a look at the following code and related questions, in this code window.
-    ~~~~
-    new_str = "'Twas brillig"
-     
-    y = add_lengths("receipt","receive")
-     
-    x = random_digit()
-     
-    z = new_str.find('b')
-     
-    l = new_str.find("'")
-     
-    # notice that this line of code is made up of a lot of different expressions
-    fin_value = square(len(new_str)) + (z - l) + (x * random_digit())
-     
-    # DO NOT CHANGE ANY CODE ABOVE THIS LINE
-    # But below here, putting print statements and running the code may help you!
-     
-    # The following questions are based on that code. All refer to the types of the 
-    #variables and/or expressions after the above code is run.
-     
-    #####################   
-     
-    # Write a comment explaining each of the following, after each question.
-    # Don't forget to press **run** to save!
-     
-    # What is square? 
-     
-    # What type of object does the expression square(len(new_str)) evaluate to?
-     
-    # What type is z?
-     
-    # What type is l?
-     
-    # What type is the expression z-l?
-     
-    # What type is x?
-     
-    # What is random_digit? How many inputs does it take?
-     
-    # What type does the expression x * random_digit() evaluate to?
-     
-    # Given all this information, what type will fin_value hold once all this code is run?
+       HINT 1: Use the accumulation pattern! 
 
-    ====
+       HINT 2: the ``in`` operator checks whether a substring is present in a string.
+       ~~~~
+       items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
+       =====
 
-    print "\n\nThere are no tests for this problem"
+       from unittest.gui import TestCaseGui
 
+       class myTests(TestCaseGui):
+
+           def testOne(self):
+               self.assertIn('in', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+               self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
+
+       myTests().main()
 
 .. activecode:: ps_2_5
-    :language: python
+       :language: python
 
-    **5.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
-    ~~~~
-    rv = """Once upon a midnight dreary, while I pondered, weak and weary,
-        Over many a quaint and curious volume of forgotten lore,
-        While I nodded, nearly napping, suddenly there came a tapping,
-        As of some one gently rapping, rapping at my chamber door.
-        'Tis some visitor, I muttered, tapping at my chamber door;
-        Only this and nothing more."""
+       **9.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+       ~~~~
+       diction = {"python":"you are awesome","autumn":100}
 
-    # Write your code here!
+       # Write your code here.
 
-    =====
+       ====
 
-    from unittest.gui import TestCaseGui
+       from unittest.gui import TestCaseGui
 
-    class myTests(TestCaseGui):
+       class myTests(TestCaseGui):
 
-        def testOne(self):
-           self.assertEqual(num_chars, len(rv), "Testing that num_chars has been set to the length of rv")
-           self.assertEqual(num_words, len(rv.split()), "Testing that num_words has been set to the number of words in rv")
+           def testOne(self):
+               self.assertIn('you are awesome', self.getOutput(), "Testing your code (Don't worry about actual and expected values).")
 
-    myTests().main()
+       myTests().main()
+
+.. activecode:: ps_2_6
+       :language: python
+       :autograde: unittest
+
+       **2.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
+
+       ::
+       
+           autumn spring
+           4 seasons
+           23 345
+           well spring
+
+       **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
+
+       Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
+
+       Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
+       ~~~~
+       nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
+       =====
+
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+          def testOne(self):
+             self.assertEqual(nd["23"], 350, "Testing that the value associated with the key '23' is 350")
+             self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).") 
+             self.assertIn("well spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+             self.assertIn("4 seasons", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+             self.assertIn("23 345", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+       myTests().main()
+
+.. activecode:: ps_2_7
+       :language: python
+       :autograde: unittest
+
+       **7.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+       ~~~~
+       nums = {}
+       num_words = ["two","three","four","seventeen","eight","not_a_number"]
+       # Write your code here.
+
+       =====
+
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+          def testOne(self):
+             self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
+             self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
+             self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
+
+          def testOneA(self):
+             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+       myTests().main()
+
+.. activecode:: ps_2_8
+       :language: python
+       :autograde: unittest
+
+       **8.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
+       ~~~~
+       s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
+
+       # Write your code here.
+        
+       =====
+
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+          def testOne(self):
+             self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
+
+          def testOneA(self):
+             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+       myTests().main()
 
 
 .. external:: ps2_dyu
 
-  Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131285>`_ assignment for this week.
-
-
-.. activecode:: addl_functions_2
-    :nopre:
-    :hidecode:
-
-    def square(num):
-        return num**2
-
-    def greeting(st):
-        #st = str(st) # just in case
-        return "Hello, " + st
-
-    def random_digit():
-        import random
-        return random.choice([0,1,2,3,4,5,6,7,8,9])
-      
-    def add_lengths(str1, str2):
-        return len(str1) + len(str2)
+    Submit your `Demonstrate Your Understanding <UPDATELINK>`_ for this week on Canvas.

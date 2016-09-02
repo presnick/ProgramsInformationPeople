@@ -52,11 +52,13 @@ Activities through 9/16
 * **Before Monday's class, 9/12:**
 
   * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and try the exercises in that chapter
+  * Read :ref:`Debugging tips<debugging_chap>`, and try the exercises in that chapter
 
 .. usageassignment:: prep_02
-    :chapters: SimplePythonData
-    :assignment_name: Prep 02
-    :deadline: 2016-09-12 19:40:00
+    :chapters: Debugging, PythonTurtle
+    :subchapters: Installation/FirstSteps, Unix/CommandPrompt, Unix/FoldersAndPaths
+    :assignment_name: Prep 03
+    :deadline: 2016-01-13 19:40:00
     :pct_required: 80
     :points: 50
 
@@ -68,16 +70,20 @@ Activities through 9/16
 
 * **Before Wednesday's class, 9/14:**
 
-  * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
-  * 
+  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
-.. usage assignment
+.. usageassignment:: prep_04
+    :chapters: Sequences
+    :assignment_name: Prep 04
+    :deadline: 2016-09-14 21:40:00
+    :pct_required: 80
+    :points: 50
 
 * Participation in your discussion section this week
 
 * **By Friday 9/16 at 6:30 PM:** 
 
-  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ (DYU).
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <UPDATELINK>`_ (DYU).
 
 * **By Sunday 9/18 at 11:59 pm:** (We include this in your assignments for next week)
 
@@ -106,6 +112,7 @@ This Week's Reading Responses
 
 Problem Set
 -----------
+**This problem set is in draft. You may look at it and run code. The problems/instructions may change slightly while this disclaimer remains here.**
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
 
