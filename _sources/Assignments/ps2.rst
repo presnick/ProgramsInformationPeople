@@ -15,8 +15,20 @@
 .. assignments for end of lecture exercise sets
 
 .. assignments for reading responses
+.. assignment::
+  :name: response_3
+  :assignment_type: summative
+  :questions: rr_3 100
+  :deadline: 
+  :points: 100
 
 .. assignment for DYU
+.. assignment::
+  :name: dyu2
+  :assignment_type: summative
+  :questions: ps2_dyu 100
+  :deadline:
+  :points: 100
 
 .. highlight:: python
     :linenothreshold: 500

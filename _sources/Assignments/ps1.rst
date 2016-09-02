@@ -21,11 +21,23 @@
   :name: response_1
   :assignment_type: summative
   :questions: rr_1 100
+  :deadline: 
+  :points: 100
+
+.. assignment::
+  :name: response_2
+  :assignment_type: summative
+  :questions: rr_2 100
   :deadline: 2016-09-23 15:30
-  :points: 12
+  :points: 100
 
 .. assignment for DYU
-
+.. assignment::
+  :name: dyu1
+  :assignment_type: summative
+  :questions: ps1_dyu 100
+  :deadline:
+  :points: 100
 
 .. highlight:: python
     :linenothreshold: 500
