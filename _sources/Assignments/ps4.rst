@@ -28,7 +28,7 @@ You have the following graded activities:
 
 * **Before Monday's class, 10/3:**
 
-  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the following exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
+  
 
   * Read :ref:`Strategy for building programs <build_program_chap>`
 
@@ -148,39 +148,6 @@ Problem Set
        myTests().main()
 
 
-.. activecode:: ps_4_02
-       :language: python
-
-       **2.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
-
-       ::
-       
-           autumn spring
-           4 seasons
-           23 345
-           well spring
-
-       **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
-
-       Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
-
-       Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
-       ~~~~
-       nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             self.assertEqual(nd["23"], 350, "Testing that the value associated with the key '23' is 350")
-             self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).") 
-             self.assertIn("well spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-             self.assertIn("4 seasons", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-             self.assertIn("23 345", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-
-       myTests().main()
 
 
 .. activecode:: ps_4_03
@@ -210,53 +177,6 @@ Problem Set
 
        myTests().main()
 
-.. activecode:: ps_4_04
-       :language: python
-
-       **4.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
-       ~~~~
-       nums = {}
-       num_words = ["two","three","four","seventeen","eight","not_a_number"]
-       # Write your code here.
-
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
-             self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
-             self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
-
-          def testOneA(self):
-             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-
-       myTests().main()
-
-.. activecode:: ps_4_05
-       :language: python
-
-       **5.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
-       ~~~~
-       s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
-
-       # Write your code here.
-        
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
-
-          def testOneA(self):
-             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-
-       myTests().main()
 
 .. activecode:: ps_4_06
        :language: python
