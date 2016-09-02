@@ -34,7 +34,7 @@ You have the following graded activities:
     * Read *The Most Human Human*, Chapter 10, p.237-259.
     * Answer `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
 
-    * :ref:`Lecture 11 Waiver <lecture_11_waiver>`
+    * :ref:`Lecture 12 Waiver <lecture_12_waiver>`
 
 .. usageassignment:: prep_11
     :chapters: OptionalAndKeywordParameters

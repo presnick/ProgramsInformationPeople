@@ -32,7 +32,7 @@ You have the following graded activities:
 
   * Read :ref:`Strategy for building programs <build_program_chap>`
 
-  * :ref:`Lecture 7 Waiver <lecture_7_waiver>`
+  * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
 
 .. usageassignment:: prep_08
     :chapters: DictionaryAccumulation
@@ -52,7 +52,7 @@ You have the following graded activities:
 
   * Read :ref:`Defining Functions<functions_chap>`, and try the following exercises in that chapter
 
-  * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
+  * :ref:`Lecture 9 Waiver <lecture_9_waiver>`
   
 .. usageassignment:: prep_09
     :chapters: Functions

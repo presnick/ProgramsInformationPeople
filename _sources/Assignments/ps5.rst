@@ -32,9 +32,9 @@ You have the following graded activities:
   * *If you use a Windows computer,* read and do the installation in the (:ref:`instructions for installing git bash <install_git_bash>`). 
   * Read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python. Try to do the exercises and installations. You will address any installation problems you have (hopefully none!) in section this week. 
 
-  * :ref:`Lecture 9 Waiver <lecture_9_waiver>`
+  * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
 
-.. usageassignment:: prep_09
+.. usageassignment:: prep_10
     :chapters: IndefiniteIteration
     :subchapters: Installation/TextEditor
     :assignment_name: Prep 10
@@ -52,11 +52,11 @@ You have the following graded activities:
   * Read :ref:`Unix and the Command Line<unix_chapter>`, and try out the commands you learn -- in Terminal, if you use a mac, or Git Bash, if you use Windows.
   * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
 
-  * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
+  * :ref:`Lecture 11 Waiver <lecture_11_waiver>`
 
-.. usageassignment:: prep_10
+.. usageassignment:: prep_11
     :chapters: Unix
-    :assignment_name: Prep 10
+    :assignment_name: Prep 11
     :deadline: 2016-10-12 19:40:00
     :pct_required: 80
     :points: 50

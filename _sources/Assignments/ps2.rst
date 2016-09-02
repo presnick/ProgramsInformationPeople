@@ -60,7 +60,7 @@ You have the following graded activities:
 
   * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
 
-  * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
+  * :ref:`Lecture 5 Waiver <lecture_5_waiver>`
 
 .. usageassignment:: prep_05
     :chapters: Iteration
