@@ -17,16 +17,13 @@ Lecture 8: Waiver Challenge Exercises
 
 .. _lecture_8_waiver:
 
-.. activecode:: ee_functions_061
-   :tags: Functions/Returningavaluefromafunction.rst, Functions/Functionscancallotherfunctions.rst
-   :autograde: unittest
 
-   This problem will require you to write two functions. The first function, named ``func1``, should take a number as input, and return that number multiplied by 3. The second function, named ``func2``, should take a number as input, multiply it by 3, and then add 10. You should call on ``func1`` within ``func2`` to accomplish this.
+.. activecode:: ee_ch13_051
+   :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
+
+   Create a dictionary that contains all the letters in ``quote`` and the number of times they occur. Then, find the letter in the string ``quote`` that occurs the LEAST often. Save this letter to the variable name ``unpop``. 
    ~~~~
-   def func1():
-
-
-   def func2():
+   quote = "bananas and berries, ribs, series"
 
    =====
 
@@ -35,20 +32,16 @@ Lecture 8: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(func1(10), 30, "Testing func1 on input 10.")
-         self.assertEqual(func1(0), 0, "Testing func1 on input 0.")
-         self.assertEqual(func2(-2), 4, "Testing func2 on input -2.")
-         self.assertEqual(func2(0), 10, "Testing func2 on input 0.")
+         self.assertEqual(unpop, 'd', "Testing that upop was assigned to the correct letter.")
 
    myTests().main()
- 
 
-.. activecode:: ee_Function_07
-   :tags: Functions/Afunctionthataccumulates.rst, Functions/Returningavaluefromafunction.rst
-   :autograde: unittest
+.. activecode:: ee_ch13_06
+   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
 
-   Write a function called ``dict_test`` that takes in 2 parameters: a dictionary whose keys are strings and values are integers, and a character. The function should go through the dictionary and see if the inputted character is in each key of the dictionary. It should total the values of all keys which include that character, and return that sum.
+   Given the string ``str1``, make a dictionary assigned to the variable ``char_dict`` with each letter in ``str1`` as a key and the letter's frequency as its value. Make sure that capitalization does not matter, i.e. "G" and "g" should count as the same letter.
    ~~~~
+   str1 = "SupercaliFragilisticExpialiDocious"
 
    =====
 
@@ -56,24 +49,23 @@ Lecture 8: Waiver Challenge Exercises
 
    class myTests(TestCaseGui):
 
-      def testSeven(self):
-
-         self.assertEqual(dict_test({'swimming':10, 'running':15, 'walking':5, 'jogging':10}, 'w'), 15, "Testing that dict_test({'swimming':10, 'running':15, 'walking':5, 'jogging':10}, 'w') returns 15")
-
-         self.assertEqual(dict_test({}, "x"), 0, "Testing that dict_test({}, 'x') returns 0")
-
-         self.assertEqual(dict_test({'cat':4, 'dog':4,'chicken':2, 'snake':0, 'horse':4}, 'g'), 4, "Testing that dict_test({'cat':4, 'dog':4,'chicken':2, 'snake':0, 'horse':4}, 'g') returns 4")
-
+      def testSixA(self):
+         self.assertEqual(char_dict['s'], 3, "Testing that s has correct value.")
+      def testSixB(self):
+         self.assertEqual(char_dict['f'], 1, "Testing that f has correct value.")
+      def testSixC(self):
+         self.assertEqual(char_dict['e'], 2, "Testing that e has correct value.")
+      def testSixD(self):
+         self.assertEqual(char_dict['d'], 1, "Testing that d has correct value.")
 
    myTests().main()
 
+.. activecode:: ee_ch13_041
+   :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
 
-.. activecode:: ee_functions_072
-   :tags: Functions/Returningavaluefromafunction.rst
-   :autograde: unittest
-
-   Write a function called ``work`` that takes 3 inputs: an integer, a string, and a list. Your function should check to see if the string input is in the list input, and if it is, then return the string multiplied by the first parameter. If the string is not in the list, then your function ``work`` should return the string plus the phrase ``"is not in the list"``. (For example, if your second parameter was ``"whelp"`` and was not in the list, then the string ``"whelp is not in the list"`` should be returned.)
-   ~~~~ 
+   Provided is a string saved to the variable ``str1``. Using string methods and dictionary accumulation, find the word that occurs most often. Save the word to the variable name ``most_pop_word``. 
+   ~~~~
+   str1 = "There are many many seasons and I often cannot decide which is my favorite. In the fall, there are many leaves falling and I really enjoy leaping in them. In the winter, there are many snowflakes that fall everywhere. I love both seasons!"
 
    =====
 
@@ -82,21 +74,17 @@ Lecture 8: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(work(2,"why",["hello", 3, 3.4, 'why', 'velma']), "whywhy", "Testing the function work with inputs 2, 'why', ['hello', 3, 3.4, 'why', 'velma']")
-
-         self.assertEqual(work(8, 'how', [3, "02", "however", "scooby", "snacks", ['hose']]), "how is not in the list", "Testing the function work with inputs 8, 'how', [3, '02', 'however', 'scooby', 'snacks', ['hose']]")
-
-         self.assertEqual(work(4, '4', [3, 4, '5', 'UofM', '4']), "4444", "Testing the function word with inputs 4, '4', [3, 4, '5', 'UofM', '4']")
+         self.assertEqual(most_pop_word, 'many', "Testing that most_pop_word was assigned to the correct word.")
 
    myTests().main()
-   
 
-.. activecode:: ee_functions_08
-   :tags: Functions/Returningavaluefromafunction.rst
-   :autograde: unittest
 
-   Write a function named ``add_all`` that takes two parameters. The first parameter should be a list of numbers, and the second should be an integer. The function should return a new list whose elements are all the numbers from the old list with the integer added to them (i.e.: Given the inputs [1, 2, 3], 1, the function should return [2, 3, 4]).
+.. activecode:: ee_ch13_012
+   :tags: DictionaryAccumulation/AccumulatingResultsFromaDictionary.rst
+
+   ``schedule`` is a dictionary where a class name is a key and its value is how many credits it was worth. Go through and accumulate the total number of credits that have been recorded so far in *SI classes* only, and assign that to the variable ``si_credits``, using dictionary mechanics and the accumulation pattern. Do not hard-code!
    ~~~~
+   schedule = {"UARTS 150": 3, "SPANISH 103": 4, "ENGLISH 125": 4, "SI 110": 4, "ENS 356": 2, "WOMENSTD 240": 4, "SI 106": 4, "BIO 118": 3, "SPANISH 231": 4, "PSYCH 111": 4, "LING 111": 3, "SPANISH 232": 4, "STATS 250": 4, "SI 206": 4, "COGSCI 200": 4, "AMCULT 202": 4, "ANTHRO 101": 4, "SI 764": 3}
 
    =====
 
@@ -105,11 +93,6 @@ Lecture 8: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(add_all([1, 2, 3], 0), [1, 2, 3], "Testing add_all on inputs [1, 2, 3], 0.")
-         self.assertEqual(add_all([], 10), [], "Testing add_all on inputs [], 10.")
-         self.assertEqual(add_all([5], 7), [12], "Testing add_all on inputs [5], 7.")
+         self.assertEqual(si_credits, 15, "Testing that si_credits has the correct value.")
 
-   myTests().main() 
-
-
-
+   myTests().main()

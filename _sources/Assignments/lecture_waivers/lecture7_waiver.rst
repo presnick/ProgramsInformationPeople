@@ -18,12 +18,56 @@ Lecture 7: Waiver Challenge Exercises
 .. _lecture_7_waiver:
 
 
-.. activecode:: ee_ch13_051
-   :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
+.. activecode:: ee_ch12_04
+   :tags:Dictionaries/Dictionarymethods.rst
 
-   Create a dictionary that contains all the letters in ``quote`` and the number of times they occur. Then, find the letter in the string ``quote`` that occurs the LEAST often. Save this letter to the variable name ``unpop``. 
+   The dictionary ``china_medals`` shows the events China has medaled in and the number of medals won. Create a list of only the keys from ``china_medals`` and save it in a variable called ``events``. Do not hard-code this. (You can do this in one line of code!)
    ~~~~
-   quote = "bananas and berries, ribs, series"
+   china_medals = {'weightlifting':7, 'diving':6, 'table tennis':4, 'shooting':7, 'swimming':6}
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testFour(self):
+         self.assertEqual(sorted(events), sorted(['weightlifting', 'diving', 'table tennis', 'shooting', 'swimming']) , "Testing that events holds the correct list.")
+
+   myTests().main()
+
+
+.. activecode:: ee_ch12_05
+   :tags:Dictionaries/Dictionaryoperations.rst
+
+   The dictionary ``dives`` contains the moves and the number of times each move has been performed. The list ``performed`` is a list of additional diving moves that have just been performed. Write code to update the dictionary ``dives``, so that for each move in the list ``performed``, if the move is in the dictionary ``dives`` already, you should update the value in the dictionary by 1. If that move is not in the dictionary ``dives`` yet, add a new key-value pair to the dictionary to record that move.
+    ~~~~
+   performed = ['reverse tuck', 'forward 2 1/2 somersault pike', 'back dive', 'twist in pike']
+      
+   dives = {'twist in free': 1, 'back dive': 2, 'armstand reverse': 1, 'forward tuck':5, 'reverse tuck': 3}
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testFive(self):
+         self.assertEqual(sorted(dives.items()), sorted([('forward tuck', 5), ('reverse tuck', 4), ('forward 2 1/2 somersault pike', 1), ('back dive', 3), ('twist in free', 1), ('armstand reverse', 1), ('twist in pike', 1)]), "Testing that dives has been updated correctly.")
+
+   myTests().main()
+
+
+.. activecode:: ee_ch12_051
+   :tags:Dictionaries/Dictionaryoperations.rst
+
+   The list ``current`` contains some of the sports that were played in the 2016 Olympics. The dictionary ``sport_counts`` contains some of the sports that have been played in prior Olympic meets, and how many Olympics they were played in. 
+
+    Iterate through each sport included in the dictionary ``sport_counts`` and update its value by 1 if it was played in 2016 (if it was not played in 2016, its value should not be changed, and you should not record sports that are not already recorded in the dives dictionary).
+    ~~~~
+   current = ["basketball", "soccer", "volleyball", "gymnastics", "wrestling", "golf", "equestrian", "swimming", "diving"]
+
+   sport_counts = {"equestrian": 30, "tug of war": 3, "soccer": 15, "basketball": 8, "polo": 20, "swimming": 32, "gymnastics": 20, "diving": 24, "cricket": 12, "volleyball": 11, "croquet": 9}
 
    =====
 
@@ -32,40 +76,18 @@ Lecture 7: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(unpop, 'd', "Testing that upop was assigned to the correct letter.")
+         self.assertEqual(sorted(sport_counts.items()), sorted([("equestrian", 31), ("tug of war", 3), ("soccer", 16), ("basketball", 9), ("polo", 20), ("swimming", 33), ("gymnastics", 21), ("diving", 25), ("cricket", 12), ("volleyball", 12), ("croquet", 9)]), "Testing that sport_counts has been updated correctly.")
 
    myTests().main()
 
-.. activecode:: ee_ch13_06
-   :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
 
-   Given the string ``str1``, make a dictionary assigned to the variable ``char_dict`` with each letter in ``str1`` as a key and the letter's frequency as its value. Make sure that capitalization does not matter, i.e. "G" and "g" should count as the same letter.
+.. activecode:: ee_ch12_052
+   :tags:Dictionaries/Dictionaryoperations.rst
+
+   We have a dictionary of synchronized swimming moves called ``sswim_moves``, with the move names as keys and the amount of times they are used as the values. We also have a list of some moves that have not been added yet. Go through the list, called ``moves_to_add``, and if the move is in ``sswim_moves``, then update the value by 1. Otherwise, do nothing. 
    ~~~~
-   str1 = "SupercaliFragilisticExpialiDocious"
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testSixA(self):
-         self.assertEqual(char_dict['s'], 3, "Testing that s has correct value.")
-      def testSixB(self):
-         self.assertEqual(char_dict['f'], 1, "Testing that f has correct value.")
-      def testSixC(self):
-         self.assertEqual(char_dict['e'], 2, "Testing that e has correct value.")
-      def testSixD(self):
-         self.assertEqual(char_dict['d'], 1, "Testing that d has correct value.")
-
-   myTests().main()
-
-.. activecode:: ee_ch13_041
-   :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
-
-   Provided is a string saved to the variable ``str1``. Using string methods and dictionary accumulation, find the word that occurs most often. Save the word to the variable name ``most_pop_word``. 
-   ~~~~
-   str1 = "There are many many seasons and I often cannot decide which is my favorite. In the fall, there are many leaves falling and I really enjoy leaping in them. In the winter, there are many snowflakes that fall everywhere. I love both seasons!"
+   sswim_moves = {'sculls': 23, 'sailboat': 12, 'back layout': 9, 'The Oyster': 8}
+   moves_to_add = ['sculls', 'The Oyster' 'eggbeaters', 'eggbeaters', 'back layout', 'sculls', 'sailboat', 'The Oyster', 'The Water Wheel', 'sculls']
 
    =====
 
@@ -74,25 +96,6 @@ Lecture 7: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(most_pop_word, 'many', "Testing that most_pop_word was assigned to the correct word.")
-
-   myTests().main()
-
-
-.. activecode:: ee_ch13_012
-   :tags: DictionaryAccumulation/AccumulatingResultsFromaDictionary.rst
-
-   ``schedule`` is a dictionary where a class name is a key and its value is how many credits it was worth. Go through and accumulate the total number of credits that have been recorded so far in *SI classes* only, and assign that to the variable ``si_credits``, using dictionary mechanics and the accumulation pattern. Do not hard-code!
-   ~~~~
-   schedule = {"UARTS 150": 3, "SPANISH 103": 4, "ENGLISH 125": 4, "SI 110": 4, "ENS 356": 2, "WOMENSTD 240": 4, "SI 106": 4, "BIO 118": 3, "SPANISH 231": 4, "PSYCH 111": 4, "LING 111": 3, "SPANISH 232": 4, "STATS 250": 4, "SI 206": 4, "COGSCI 200": 4, "AMCULT 202": 4, "ANTHRO 101": 4, "SI 764": 3}
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(si_credits, 15, "Testing that si_credits has the correct value.")
+         self.assertEqual(sorted(sswim_moves.items()), sorted([('sculls', 26), ('sailboat', 13), ('back layout', 10), ('The Oyster', 9)]), "Testing that sswim_moves was updated correctly.")        
 
    myTests().main()

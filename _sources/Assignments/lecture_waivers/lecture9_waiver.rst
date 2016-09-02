@@ -17,17 +17,16 @@ Lecture 9: Waiver Challenge Exercises
 
 .. _lecture_9_waiver:
 
-
-.. activecode:: ee_ch07_052
-   :tags: IndefiniteIteration/ThewhileStatement.rst
+.. activecode:: ee_functions_061
+   :tags: Functions/Returningavaluefromafunction.rst, Functions/Functionscancallotherfunctions.rst
    :autograde: unittest
 
-   Here is a for loop that works. Underneath, rewrite the problem so that it is done using a while loop, but save the accumulated total to the variable ``total``.
+   This problem will require you to write two functions. The first function, named ``func1``, should take a number as input, and return that number multiplied by 3. The second function, named ``func2``, should take a number as input, multiply it by 3, and then add 10. You should call on ``func1`` within ``func2`` to accomplish this.
    ~~~~
-   L = [3,9,29,8,48,5,3,8,6,1,2]
-   accum = 0
-   for elem in L:
-       accum += elem
+   def func1():
+
+
+   def func2():
 
    =====
 
@@ -36,36 +35,67 @@ Lecture 9: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(total, 122 , "Testing that total has the correct value")
+         self.assertEqual(func1(10), 30, "Testing func1 on input 10.")
+         self.assertEqual(func1(0), 0, "Testing func1 on input 0.")
+         self.assertEqual(func2(-2), 4, "Testing func2 on input -2.")
+         self.assertEqual(func2(0), 10, "Testing func2 on input 0.")
+
+   myTests().main()
+ 
+
+.. activecode:: ee_Function_07
+   :tags: Functions/Afunctionthataccumulates.rst, Functions/Returningavaluefromafunction.rst
+   :autograde: unittest
+
+   Write a function called ``dict_test`` that takes in 2 parameters: a dictionary whose keys are strings and values are integers, and a character. The function should go through the dictionary and see if the inputted character is in each key of the dictionary. It should total the values of all keys which include that character, and return that sum.
+   ~~~~
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testSeven(self):
+
+         self.assertEqual(dict_test({'swimming':10, 'running':15, 'walking':5, 'jogging':10}, 'w'), 15, "Testing that dict_test({'swimming':10, 'running':15, 'walking':5, 'jogging':10}, 'w') returns 15")
+
+         self.assertEqual(dict_test({}, "x"), 0, "Testing that dict_test({}, 'x') returns 0")
+
+         self.assertEqual(dict_test({'cat':4, 'dog':4,'chicken':2, 'snake':0, 'horse':4}, 'g'), 4, "Testing that dict_test({'cat':4, 'dog':4,'chicken':2, 'snake':0, 'horse':4}, 'g') returns 4")
+
 
    myTests().main()
 
-.. activecode:: ee_ch07_06
-   :tags: IndefiniteIteration/listenerLoop.rst
+
+.. activecode:: ee_functions_072
+   :tags: Functions/Returningavaluefromafunction.rst
    :autograde: unittest
 
-   Create a function called ``first_five`` that takes in a list of numbers. In this function, create a sublist of the inputted list by using a while loop that stops when it reaches the number 0. The function should only return a list of the first five numbers of the sublist, regardless of where the while loop stops. i.e. invoking the function with input ``[1, 1, 2, 3, 4, 3, 2]`` should return ``[1, 1, 2, 3, 4]``. But invoking the function with the input ``[1,5,0,2,3,4,6]`` should return ``[1,5]``. (For a challenge, do this without using slicing. You may use slicing to solve this problem, though.)
-   ~~~~
+   Write a function called ``work`` that takes 3 inputs: an integer, a string, and a list. Your function should check to see if the string input is in the list input, and if it is, then return the string multiplied by the first parameter. If the string is not in the list, then your function ``work`` should return the string plus the phrase ``"is not in the list"``. (For example, if your second parameter was ``"whelp"`` and was not in the list, then the string ``"whelp is not in the list"`` should be returned.)
+   ~~~~ 
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(work(2,"why",["hello", 3, 3.4, 'why', 'velma']), "whywhy", "Testing the function work with inputs 2, 'why', ['hello', 3, 3.4, 'why', 'velma']")
+
+         self.assertEqual(work(8, 'how', [3, "02", "however", "scooby", "snacks", ['hose']]), "how is not in the list", "Testing the function work with inputs 8, 'how', [3, '02', 'however', 'scooby', 'snacks', ['hose']]")
+
+         self.assertEqual(work(4, '4', [3, 4, '5', 'UofM', '4']), "4444", "Testing the function word with inputs 4, '4', [3, 4, '5', 'UofM', '4']")
+
+   myTests().main()
    
-   =====
 
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testSix(self):
-         self.assertEqual(first_five([1, 2, 0]), [1,2], "Testing that first_five([1, 2, 0]) returns [1,2]")
-         self.assertEqual(first_five([1, 2, 3, 4, 3, 2, 5, 0, 3, 4]), [1, 2, 3, 4, 3], "Testing that first_five([1, 2, 3, 4, 3, 2, 5, 0, 3, 4]) returns [1, 2, 3, 4, 3]")
-         self.assertEqual(first_five([0]), [], "Testing that first_five([0]) returns []")
-
-   myTests().main()
-
-
-.. activecode:: ee_ch07_042
-   :tags: IndefiniteIteration/listenerLoop.rst
+.. activecode:: ee_functions_08
+   :tags: Functions/Returningavaluefromafunction.rst
    :autograde: unittest
 
-   Write a function called ``check_letts`` that takes a list as its parameter, and contains a while loop that only stops once it reaches an element of the list that is the string ``'no'``. It should return a list of all of the strings up until it reaches 'no'.
+   Write a function named ``add_all`` that takes two parameters. The first parameter should be a list of numbers, and the second should be an integer. The function should return a new list whose elements are all the numbers from the old list with the integer added to them (i.e.: Given the inputs [1, 2, 3], 1, the function should return [2, 3, 4]).
    ~~~~
 
    =====
@@ -75,29 +105,11 @@ Lecture 9: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(check_letts(['hey', 'now', 'you', 'are', 'a', 'rockstar', 'no', 'get', 'your', 'game', 'on']), ['hey', 'now', 'you', 'are', 'a', 'rockstar'], "Testing that check_letts stops on the correct position with input ['hey', 'now', 'you', 'are', 'a', 'rockstar', 'no', 'get', 'your', 'game', 'on']")
-         self.assertEqual(check_letts(['never gonna give you up no', 'never', 'gonna', 'let', 'you', 'no']), ['never gonna give you up no', 'never', 'gonna', 'let', 'you'], "Testing that check_letts stops on the correct position with input ['never gonna give you up no', 'never', 'gonna', 'let', 'you', 'no']")
-         self.assertEqual(check_letts(['no', 'aowef', 'wawfefj', 'awofjno', 'a23raf', '23rfad']), [], "Testing that check_letts stops on the correct position with input ['no', 'aowef', 'wawfefj', 'awofjno', 'a23raf', '23rfad']")
+         self.assertEqual(add_all([1, 2, 3], 0), [1, 2, 3], "Testing add_all on inputs [1, 2, 3], 0.")
+         self.assertEqual(add_all([], 10), [], "Testing add_all on inputs [], 10.")
+         self.assertEqual(add_all([5], 7), [12], "Testing add_all on inputs [5], 7.")
 
-   myTests().main()
+   myTests().main() 
 
 
-.. activecode:: ee_ch7_062
-   :tags: IndefiniteIteration/listenerLoop.rst
-   :autograde: unittest
 
-   Write a function called ``too_big`` that takes a list of numbers as input and produces a new list of numbers as output. Using a while loop, the function should output a list of all of the numbers in the list *up until* the total is 30 or more. So, if the input to this function is ``[10,20,4,6,7,9]``, it should return the list ``[10,20]``. If the input is ``[10,3,5,6,7,9]``, it should return ``[10,3,5,6,7]``. 
-   ~~~~
-   def too_big(): 
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(too_big([12, 19, 5, 10, 10, 13, 4, 16]), [12, 19], "Testing the function too_big on the input [12, 19, 5, 10, 10, 13, 4, 16].")
-         self.assertEqual(too_big([2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2]), 2, 3, 4, 5, 2, 2, 7, 2, 4], "Testing the function too_big on the input [2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2].")
-
-   myTests().main()   
