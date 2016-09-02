@@ -11,7 +11,15 @@
 
 .. assignment for problem set
 
+.. assignment:: 
+   :name: problem_set_01
+   :assignment_type: summative
+   :questions: ps_1_1 100, ps_1_2 100, ps_1_3 100, ps_1_4 100, ps_1_5 100, ps_1_6 100, ps_1_7 100, ps_1_8 100, ps_1_9 100, ps_1_10 100, ps_1_11 100
+   :deadline: 2016-09-18 22:00
+   :points: 1000
+
 .. assignments for lecture waivers
+.. none for lectures 1 and 2
 
 .. assignments for end of lecture exercise sets
 
