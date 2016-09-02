@@ -131,7 +131,8 @@ Problem Set
    class myTests(TestCaseGui):
 
       def testCode(self):
-         self.assertNotIn("= 'the'", self.getEditorText(), "Testing code (Don't worry about actual and expected values)")
+         self.assertNotIn("= 'the'", self.getEditorText(), "Testing code input (Don't worry about actual and expected values)")
+         self.assertIn("open",self.getEditorText(),"Testing that you have probably opened the file (Don't worry about actual and expected values)")
 
       def testOne(self):
          self.assertEqual(abc, 'the', "testing whether abc is set correctly.")
