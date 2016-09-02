@@ -49,7 +49,7 @@
 Activities through 9/16
 =======================
 
-* **Before your first discussion section, 9/15 (preferably before first lecture on Wednesday 9/7):**
+* **Before your first discussion section, this week (preferably before first lecture on Wednesday 9/7):**
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
   * Sign up for/join the `Facebook group <https://www.facebook.com/groups/323187111349524/>`_
