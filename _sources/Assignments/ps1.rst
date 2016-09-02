@@ -15,28 +15,40 @@
 .. none for lectures 1 and 2 and 3
 
 .. assignments for end of lecture exercise sets
+.. assignment::
+  :name: lec2_attendance
+  :assignment_type: lecture_attendance
+  :questions:  
+  :deadline: 2016-09-12 21:10:00
+  :points: 50
+
+.. assignment::
+  :name: lec3_attendance
+  :assignment_type: lecture_attendance
+  :questions: 
+  :deadline: 2016-09-14 21:10:00
+  :points: 50
+
 
 .. assignments for reading responses
 .. assignment::
   :name: response_1
-  :assignment_type: summative
+  :assignment_type: reading_response
   :questions: rr_1 100
-  :deadline: 
   :points: 100
 
 .. assignment::
   :name: response_2
-  :assignment_type: summative
+  :assignment_type: reading_response
   :questions: rr_2 100
-  :deadline: 2016-09-23 15:30
+  :deadline: 
   :points: 100
 
 .. assignment for DYU
 .. assignment::
   :name: dyu1
-  :assignment_type: summative
+  :assignment_type: dyu
   :questions: ps1_dyu 100
-  :deadline:
   :points: 100
 
 .. highlight:: python
@@ -49,13 +61,13 @@ Activities through 9/16
 * **Before your first discussion section (preferably before first lecture on Wednesday 9/7):**
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
-  * Sign up for/join the `Facebook group <linkgoeshere.notrealTODO>`_
+  * Sign up for/join the `Facebook group <https://www.facebook.com/groups/628933357287543/>`_
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
 .. usageassignment:: prep_01
     :chapters: GeneralInfo
     :assignment_name: Prep 01
-    :deadline: 2016-09-15 19:40:00
+    :deadline: 2016-09-07 19:40:00
     :pct_required: 80
     :points: 50
 
@@ -90,7 +102,7 @@ Activities through 9/16
 .. usageassignment:: prep_03
     :chapters: Debugging, PythonTurtle
     :assignment_name: Prep 03
-    :deadline: 2016-01-13 19:40:00
+    :deadline: 2016-09-14 19:40:00
     :pct_required: 80
     :points: 50
 

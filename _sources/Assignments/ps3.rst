@@ -17,17 +17,15 @@
 .. assignments for reading responses
 .. assignment::
   :name: response_4
-  :assignment_type: summative
+  :assignment_type: reading_response
   :questions: rr_4 100
-  :deadline: 
   :points: 100
 
 .. assignment for DYU
 .. assignment::
   :name: dyu3
-  :assignment_type: summative
+  :assignment_type: dyu
   :questions: ps3_dyu 100
-  :deadline:
   :points: 100
 
 .. highlight:: python
