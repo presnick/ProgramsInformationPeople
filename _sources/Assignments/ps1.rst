@@ -29,7 +29,7 @@
 Activities through 9/16
 =======================
 
-* **Before Thursday's discussion section, 9/15 (preferably before first lecture on Wednesday 9/7):**
+* **Before your first discussion section, 9/15 (preferably before first lecture on Wednesday 9/7):**
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
   * Sign up for/join the `Facebook group <https://www.facebook.com/groups/323187111349524/>`_
@@ -120,7 +120,6 @@ Problem Set
 
 .. activecode:: ps_1_1
     :language: python
-    :autograde: unittest
 
     **1.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
     ~~~~
@@ -149,14 +148,9 @@ Problem Set
 .. activecode:: ps_1_2
     :include: addl_functions
     :language: python
-    :autograde: unittest
 
     **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
-    # Want to make sure there really is a function called square? Uncomment the following line and press run.
-
-    #print type(square)
-     
     xyz = ""
       
     =====
@@ -176,7 +170,6 @@ Problem Set
 .. activecode:: ps_1_3
     :include: addl_functions
     :language: python
-    :autograde: unittest
 
     **3.** Write in a comment what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
     ~~~~
@@ -202,28 +195,27 @@ Problem Set
     print pear
 
 .. activecode:: ps_1_4
-       :language: python
+    :language: python
 
-       **4.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
-       ~~~~
-       several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+    **4.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+    ~~~~
+    several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
-       =====
+    =====
 
-       from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-       class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-           def test_output(self):
-               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-               self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+    def test_output(self):
+       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+       self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
-       myTests().main()
+    myTests().main()
 
 .. activecode:: ps_1_5
     :include: addl_functions
     :language: python
-    :autograde: unittest
 
     **5.** There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
 
@@ -263,7 +255,6 @@ Problem Set
 
 .. activecode:: ps_1_6
        :language: python
-       :autograde: unittest
 
        **6.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
 
