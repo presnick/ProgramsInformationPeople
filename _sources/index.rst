@@ -560,21 +560,17 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-Extra Exercises
-:::::::::::::::
 
-.. toctree::
-   :maxdepth: 2
 
-   Sequences/ExtraExercises.rst
-   Iteration/ExtraExercises.rst
-   Dictionaries/ExtraExercises.rst
-   DictionaryAccumulation/ExtraExercises.rst
-   Functions/ExtraExercises.rst
-   Selection/ExtraExercises.rst
-   Files/ExtraExercises.rst
-   IndefiniteIteration/ExtraExercises.rst
-   OptionalandKeywordParameters/ExtraExercises.rst
+..Sequences/ExtraExercises.rst
+..Iteration/ExtraExercises.rst
+..Dictionaries/ExtraExercises.rst
+..DictionaryAccumulation/ExtraExercises.rst
+..Functions/ExtraExercises.rst
+..Selection/ExtraExercises.rst
+..Files/ExtraExercises.rst
+..IndefiniteIteration/ExtraExercises.rst
+..OptionalandKeywordParameters/ExtraExercises.rst
 
 Indices and tables
 ::::::::::::::::::
