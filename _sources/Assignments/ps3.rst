@@ -37,7 +37,7 @@ You have the following graded activities:
 
 * **Before Monday's class, 9/26:**
 
-    * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+  * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 .. usageassignment:: prep_06
     :chapters: Functions
