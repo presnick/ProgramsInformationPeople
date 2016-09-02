@@ -210,23 +210,6 @@ Extra Exercises
 
    myTests().main() 
 
-4.2 Write a function called ``check_letts`` that takes a list as its parameter, and contains a while loop that only stops once it reaches an element of the list that is the string ``'no'``. What is returned is a list of all of the strings up until it reaches 'no'.
-
-.. activecode:: ee_ch07_042
-   :tags: IndefiniteIteration/listenerLoop.rst
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(check_letts(['hey', 'now', 'you', 'are', 'a', 'rockstar', 'no', 'get', 'your', 'game', 'on']), ['hey', 'now', 'you', 'are', 'a', 'rockstar'], "Testing that check_letts stops on the correct position with input ['hey', 'now', 'you', 'are', 'a', 'rockstar', 'no', 'get', 'your', 'game', 'on']")
-         self.assertEqual(check_letts(['never gonna give you up no', 'never', 'gonna', 'let', 'you', 'no']), ['never gonna give you up no', 'never', 'gonna', 'let', 'you'], "Testing that check_letts stops on the correct position with input ['never gonna give you up no', 'never', 'gonna', 'let', 'you', 'no']")
-         self.assertEqual(check_letts(['no', 'aowef', 'wawfefj', 'awofjno', 'a23raf', '23rfad']), [], "Testing that check_letts stops on the correct position with input ['no', 'aowef', 'wawfefj', 'awofjno', 'a23raf', '23rfad']")
-
-   myTests().main()
 
 5. Below is a for loop that works. Underneath the for loop, rewrite the problem so that it does the same thing, but using a while loop instead of a for loop. Assign the accumulated total in the while loop code to the variable ``sum2``. Once complete, sum2 should equal sum1.
 
@@ -295,23 +278,3 @@ Extra Exercises
 
    myTests().main()
 
-6.2 **Ultra Challenge:** Write a function called ``too_big`` that takes a list of numbers as input and produces a new list of numbers as output. Using a while loop, the function should output a list of only even numbers from the list that is passed in. It should stop once there are 5 elements in the new list, OR once the sum of all the numbers in the new list is greater than 30 - whichever comes first. 
-
-.. activecode:: ee_ch7_062
-   :tags: IndefiniteIteration/listenerLoop.rst
-
-   def too_big(): 
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(too_big([12, 19, 5, 10, 10, 13, 4, 16]), [12, 10, 10], "Testing the function too_big on the input [12, 19, 5, 10, 10, 13, 4, 16].")
-         self.assertEqual(too_big([2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2]), [2, 4, 2, 2, 2], "Testing the function too_big on the input [2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2].")
-
-
-
-   myTests().main()   
