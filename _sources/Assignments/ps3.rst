@@ -13,17 +13,15 @@
 .. assignments for reading responses
 .. assignment::
   :name: response_4
-  :assignment_type: summative
+  :assignment_type: reading_response
   :questions: rr_4 100
-  :deadline: 
   :points: 100
 
 .. assignment for DYU
 .. assignment::
   :name: dyu3
-  :assignment_type: summative
+  :assignment_type: dyu
   :questions: ps3_dyu 100
-  :deadline: 
   :points: 100
 
 .. highlight:: python
@@ -48,7 +46,7 @@ You have the following graded activities:
 
 * **Before Tuesday 9/27 at 11:59 pm:**
 
-  * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <UPDATELINK>`_ on Canvas.
+  * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <https://umich.instructure.com/courses/108426/assignments/139265>`_ on Canvas.
 
 * **Before Wednesday's class, 9/28:**
   
@@ -76,7 +74,7 @@ This Week's Reading Responses
 
 .. external:: rr_4
 
-  `Reading Response 4 <UPDATELINK>`_ on Canvas.
+  `Reading Response 4 <https://umich.instructure.com/courses/108426/assignments/139265>`_ on Canvas.
 
 
 Problem Set
@@ -273,4 +271,4 @@ Problem Set
 
 .. external:: ps3_dyu
 
-  Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
+   Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
