@@ -16,21 +16,18 @@
   :name: response_1
   :assignment_type: summative
   :questions: rr_1 100
-  :deadline: 
   :points: 100
 
 .. assignment::
   :name: response_2
   :assignment_type: summative
   :questions: rr_2 100
-  :deadline: 
   :points: 100
 
 .. assignment::
   :name: response_3
   :assignment_type: summative
   :questions: rr_3 100
-  :deadline: 
   :points: 100
 
 .. assignment for DYU
@@ -38,7 +35,6 @@
   :name: dyu1
   :assignment_type: summative
   :questions: ps1_dyu 100
-  :deadline: 
   :points: 100
 
 
