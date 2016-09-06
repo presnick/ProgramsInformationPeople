@@ -55,12 +55,12 @@ You have the following graded activities:
 
   * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
 
-.. usageassignment:: prep_04
-    :chapters: Sequences
-    :assignment_name: Prep 04
-    :deadline: 2016-09-19 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment:: 
+  :chapters: Sequences
+  :assignment_name: Prep 04
+  :deadline: 2016-09-19 19:40:00
+  :pct_required: 80
+  :points: 50
 
 
 * **Before Wednesday's class 9/21:**
@@ -69,12 +69,12 @@ You have the following graded activities:
 
   * Lecture 5 Waiver TBA
 
-.. usageassignment:: prep_05
-    :chapters: Iteration
-    :assignment_name: Prep 05
-    :deadline: 2016-09-21 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment:: 
+  :chapters: Iteration
+  :assignment_name: Prep 05
+  :deadline: 2016-09-21 19:40:00
+  :pct_required: 80
+  :points: 50
 
   
 

@@ -64,12 +64,12 @@ Activities through 9/16
   * Sign up for/join the `Facebook group <https://www.facebook.com/groups/628933357287543/>`_
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
 
-.. usageassignment:: prep_01
-    :chapters: GeneralInfo
-    :assignment_name: Prep 01
-    :deadline: 2016-09-07 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment:: 
+  :chapters: GeneralInfo
+  :assignment_name: Prep 01
+  :deadline: 2016-09-07 19:40:00
+  :pct_required: 80
+  :points: 50
 
 * **By Sunday 9/11 at 11:59 pm:**
 
@@ -81,12 +81,12 @@ Activities through 9/16
 
   * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
 
-.. usageassignment:: prep_02
-    :chapters: SimplePythonData
-    :assignment_name: Prep 02
-    :deadline: 2016-09-12 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment::
+  :chapters: SimplePythonData
+  :assignment_name: Prep 02
+  :deadline: 2016-09-12 19:40:00
+  :pct_required: 80
+  :points: 50
 
 * **By Tuesday night 11:59, 9/13:**
 
