@@ -21,7 +21,7 @@ Assignments
 .. toctree::
    :maxdepth: 1
 
-   assignments.rst
+   static_assignments.rst
 
 General Introduction
 ::::::::::::::::::::
