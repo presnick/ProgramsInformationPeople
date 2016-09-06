@@ -16,9 +16,8 @@
 .. assignment for DYU
 .. assignment::
   :name: dyu2
-  :assignment_type: summative
+  :assignment_type: dyu
   :questions: ps2_dyu 100
-  :deadline: 
   :points: 100
 
 .. highlight:: python
@@ -31,7 +30,7 @@ You have the following graded activities:
 
 * **By Sunday 9/18 at 11:59 pm:** 
     
-  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <UPDATELINK>`_ .
+  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
 
 * **Before class Monday 9/19:**
 
@@ -123,236 +122,232 @@ Problem Set
    without a license from an accredited institution is illegal in many parts of the world.
 
 .. activecode:: ps_2_1
-       :language: python
-       :available_files: about_programming.txt
+   :language: python
+   :available_files: about_programming.txt
 
-       **1.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
-       ~~~~
-       # Write your code here.
+   **1.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
+   ~~~~
+   # Write your code here.
 
-       =====
+   =====
 
-       from unittest.gui import TestCaseGui
+   from unittest.gui import TestCaseGui
 
-       class myTests(TestCaseGui):
+   class myTests(TestCaseGui):
 
-          def testOne(self):
-             self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-             self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
+    def testOne(self):
+       self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+       self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
 
-       myTests().main()
+   myTests().main()
 
 .. activecode:: ps_2_2
-       :language: python
-       
+   :language: python
 
-       **2.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
+   **2.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
-       Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
+   Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
 
-       (HINT: you don't have to make a big change.)
-       ~~~~ 
-       #x = 25
-       #x = 15
-       #x = 5
-       #x = -10
+   (HINT: you don't have to make a big change.)
+   ~~~~ 
+   #x = 25
+   #x = 15
+   #x = 5
+   #x = -10
 
-       if x > 20:
-           y = "yes"
-       if x > 10:
-           y = "no"
-       if x < 0:
-           y = "maybe"
-       else:
-           y = "unknown"
+   if x > 20:
+     y = "yes"
+   if x > 10:
+     y = "no"
+   if x < 0:
+     y = "maybe"
+   else:
+     y = "unknown"
 
-       print "y is " + str(y)
+   print "y is " + str(y)
 
-       =====
+   =====
 
-       from unittest.gui import TestCaseGui
+   from unittest.gui import TestCaseGui
 
-       class myTests(TestCaseGui):
+   class myTests(TestCaseGui):
 
-           def testOne(self):
-               print("No tests for the comment, of course -- we can only test stored values!\n")
-               if x == 25:
-                   self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
-               elif x == 15:
-                   self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
-               elif x == 5:
-                   self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
-               elif x == -10:
-                   self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
-               else:
-                   print "No tests when value of x is %s" % (x)
+     def testOne(self):
+         print("No tests for the comment, of course -- we can only test stored values!\n")
+         if x == 25:
+             self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
+         elif x == 15:
+             self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
+         elif x == 5:
+             self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
+         elif x == -10:
+             self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
+         else:
+             print "No tests when value of x is %s" % (x)
 
-       myTests().main()
+   myTests().main()
 
 .. activecode:: ps_2_3
-       :language: python
-       
+   :language: python
 
-       **7.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
-       The output you get should be:
+   **7.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
-       :: 
+   The output you get should be:
 
-           5
-           13
-           11
-           12
-           3
-           12
-           11
-           6 
+   :: 
 
-       Then, write code to print out each element of list ``lp`` *only if* the length of the element is an even number. Use iteration (a for loop).
-       ~~~~
-       lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
-       ====
+     5
+     13
+     11
+     12
+     3
+     12
+     11
+     6 
 
-       from unittest.gui import TestCaseGui
-       
-       class myTests(TestCaseGui):
+   Then, write code to print out each element of list ``lp`` *only if* the length of the element is an even number. Use iteration (a for loop).
+   ~~~~
+   lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
+   ====
 
-           def test_output(self):
-               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-           def test_outputB(self):
-               self.assertIn("5\n13\n11\n12\n3\n12\n11\n6", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-           def test_outputB(self):
-               self.assertIn("inspirations\namalgamation\nPython", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-    
-       myTests().main()
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def test_output(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+     def test_outputB(self):
+         self.assertIn("5\n13\n11\n12\n3\n12\n11\n6", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+     def test_outputB(self):
+         self.assertIn("inspirations\namalgamation\nPython", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()
 
 .. activecode:: ps_2_4
-       :language: python
-       
+   :language: python
 
-       **4.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
+   **4.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
 
-       HINT 1: Use the accumulation pattern! 
+   HINT 1: Use the accumulation pattern! 
 
-       HINT 2: the ``in`` operator checks whether a substring is present in a string.
-       ~~~~
-       items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
-       =====
+   HINT 2: the ``in`` operator checks whether a substring is present in a string.
+   ~~~~
+   items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
+   =====
 
-       from unittest.gui import TestCaseGui
+   from unittest.gui import TestCaseGui
 
-       class myTests(TestCaseGui):
+   class myTests(TestCaseGui):
 
-           def testOne(self):
-               self.assertIn(' in ', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-               self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
+     def testOne(self):
+         self.assertIn(' in ', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+         self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
 
-       myTests().main()
+   myTests().main()
 
 .. activecode:: ps_2_5
-       :language: python
+   :language: python
 
-       **9.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
-       ~~~~
-       diction = {"python":"you are awesome","autumn":100}
+   **9.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+   ~~~~
+   diction = {"python":"you are awesome","autumn":100}
 
-       # Write your code here.
+   # Write your code here.
 
-       ====
+   ====
 
-       from unittest.gui import TestCaseGui
+   from unittest.gui import TestCaseGui
 
-       class myTests(TestCaseGui):
+   class myTests(TestCaseGui):
 
-           def testOne(self):
-               self.assertIn('you are awesome', self.getOutput(), "Testing your code (Don't worry about actual and expected values).")
+     def testOne(self):
+         self.assertIn('you are awesome', self.getOutput(), "Testing your code (Don't worry about actual and expected values).")
 
-       myTests().main()
+   myTests().main()
 
 .. activecode:: ps_2_6
-       :language: python
-       
+   :language: python
 
-       **2.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
+   **2.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
 
-       ::
-       
-           autumn spring
-           4 seasons
-           23 345
-           well spring
+   ::
 
-       **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
+     autumn spring
+     4 seasons
+     23 345
+     well spring
 
-       Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
+   **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
 
-       Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
-       ~~~~
-       nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
-       =====
+   Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
 
-       from unittest.gui import TestCaseGui
+   Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
+   ~~~~
+   nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
+   =====
 
-       class myTests(TestCaseGui):
+   from unittest.gui import TestCaseGui
 
-          def testOne(self):
-             self.assertEqual(nd["23"], 350, "Testing that the value associated with the key '23' is 350")
-             self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).") 
-             self.assertIn("well spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-             self.assertIn("4 seasons", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-             self.assertIn("23 345", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+   class myTests(TestCaseGui):
 
-       myTests().main()
+    def testOne(self):
+       self.assertEqual(nd["23"], 350, "Testing that the value associated with the key '23' is 350")
+       self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).") 
+       self.assertIn("well spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+       self.assertIn("4 seasons", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+       self.assertIn("23 345", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()
 
 .. activecode:: ps_2_7
-       :language: python
-       
+   :language: python
 
-       **7.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
-       ~~~~
-       nums = {}
-       num_words = ["two","three","four","seventeen","eight","not_a_number"]
-       # Write your code here.
+   **7.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+   ~~~~
+   nums = {}
+   num_words = ["two","three","four","seventeen","eight","not_a_number"]
+   # Write your code here.
 
-       =====
+   =====
 
-       from unittest.gui import TestCaseGui
+   from unittest.gui import TestCaseGui
 
-       class myTests(TestCaseGui):
+   class myTests(TestCaseGui):
 
-          def testOne(self):
-             self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
-             self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
-             self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
+    def testOne(self):
+       self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
+       self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
+       self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
 
-          def testOneA(self):
-             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+    def testOneA(self):
+       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-       myTests().main()
+   myTests().main()
 
 .. activecode:: ps_2_8
-       :language: python
-       
+   :language: python
 
-       **8.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
-       ~~~~
-       s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
 
-       # Write your code here.
-        
-       =====
+   **8.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
+   ~~~~
+   s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
 
-       from unittest.gui import TestCaseGui
+   # Write your code here.
 
-       class myTests(TestCaseGui):
+   =====
 
-          def testOne(self):
-             self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
+   from unittest.gui import TestCaseGui
 
-          def testOneA(self):
-             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+   class myTests(TestCaseGui):
 
-       myTests().main()
+    def testOne(self):
+       self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
+
+    def testOneA(self):
+       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
 
 
 

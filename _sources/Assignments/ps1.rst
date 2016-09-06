@@ -14,26 +14,26 @@
 .. assignments for reading responses
 .. assignment::
   :name: response_1
-  :assignment_type: summative
+  :assignment_type: reading_response
   :questions: rr_1 100
   :points: 100
 
 .. assignment::
   :name: response_2
-  :assignment_type: summative
+  :assignment_type: reading_response
   :questions: rr_2 100
   :points: 100
 
 .. assignment::
   :name: response_3
-  :assignment_type: summative
+  :assignment_type: reading_response
   :questions: rr_3 100
   :points: 100
 
 .. assignment for DYU
 .. assignment::
   :name: dyu1
-  :assignment_type: summative
+  :assignment_type: dyu
   :questions: ps1_dyu 100
   :points: 100
 
