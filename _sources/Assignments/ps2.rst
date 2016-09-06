@@ -35,12 +35,13 @@ You have the following graded activities:
 
 * **Before class Monday 9/19:**
 
+  * Read :ref:`Conditionals <conditionals_chap>`
+  * Read :ref:`File Input/Output <files_chap>`
   * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
   * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
-  * You may want to review the following chapters if you do not feel comfortable with them: :ref:`Conditionals <conditionals_chap>`, :ref:`File Input/Output <files_chap>`
 
-.. usageassignment:: prep_04
-    :chapters: Dictionaries
+.. usageassignment::
+    :chapters: Selection, Files, Dictionaries
     :subchapters: BuildingAProgram/UnderstandingCode
     :assignment_name: Prep 04
     :deadline: 2016-09-19 21:40:00
@@ -52,7 +53,7 @@ You have the following graded activities:
 
   * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
 
-.. usageassignment:: prep_05
+.. usageassignment::
     :chapters: DictionaryAccumulation
     :subchapters: BuildingAProgram/TheStrategy
     :assignment_name: Prep 05

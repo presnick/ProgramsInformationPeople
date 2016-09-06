@@ -56,7 +56,7 @@ Activities through 9/16
   * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter. 
   * You may also want to review the material you covered to waive 502/early chapters in the textbook, like Simple Python Data this week.
 
-.. usageassignment:: prep_01
+.. usageassignment::
     :chapters: GeneralInfo
     :assignment_name: Prep 01
     :deadline: 2016-09-14 21:40:00
@@ -74,9 +74,8 @@ Activities through 9/16
   * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and try the exercises in that chapter
   * Read :ref:`Debugging tips<debugging_chap>`, and try the exercises in that chapter
 
-.. usageassignment:: prep_02
-    :chapters: Debugging, PythonTurtle
-    :subchapters: Installation/FirstSteps, Unix/CommandPrompt, Unix/FoldersAndPaths
+.. usageassignment::
+    :chapters: SimplePythonData, Debugging, PythonTurtle
     :assignment_name: Prep 03
     :deadline: 2016-01-13 19:40:00
     :pct_required: 80
@@ -92,8 +91,8 @@ Activities through 9/16
 
   * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
-.. usageassignment:: prep_04
-    :chapters: Sequences
+.. usageassignment::
+    :chapters: Sequences, Iteration
     :assignment_name: Prep 04
     :deadline: 2016-09-14 21:40:00
     :pct_required: 80

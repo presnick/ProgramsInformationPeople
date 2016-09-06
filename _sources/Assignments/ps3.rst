@@ -39,7 +39,7 @@ You have the following graded activities:
 
   * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
-.. usageassignment:: prep_06
+.. usageassignment::
     :chapters: Functions
     :assignment_name: Prep 06
     :deadline: 2016-09-30 21:40:00
@@ -55,7 +55,7 @@ You have the following graded activities:
   * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
 
 
-.. usageassignment:: prep_07
+.. usageassignment::
     :chapters: IndefiniteIteration
     :assignment_name: Prep 10
     :deadline: 2016-09-28 21:40:00
