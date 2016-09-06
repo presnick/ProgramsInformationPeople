@@ -45,13 +45,13 @@ You have the following graded activities:
 
   * :ref:`Lecture 6 Waiver <lecture_6_waiver>`
 
-.. usageassignment:: prep_06
-    :chapters: Selection, Files
-    :subchapters: BuildingAProgram/UnderstandingCode
-    :assignment_name: Prep 06
-    :deadline: 2016-09-26 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment::
+   :chapters: Selection, Files
+   :subchapters: BuildingAProgram/UnderstandingCode
+   :assignment_name: Prep 06
+   :deadline: 2016-09-26 19:40:00
+   :pct_required: 80
+   :points: 50
 
 
 * **Before Tuesday 9/27 at 11:59 pm:**
@@ -64,12 +64,12 @@ You have the following graded activities:
 
   * :ref:`Lecture 7 Waiver <lecture_7_waiver>`
 
-.. usageassignment:: prep_07
-    :chapters: Dictionaries
-    :assignment_name: Prep 07
-    :deadline: 2016-09-28 19:40:00
-    :pct_required: 80
-    :points: 50
+.. usageassignment:: 
+   :chapters: Dictionaries
+   :assignment_name: Prep 07
+   :deadline: 2016-09-28 19:40:00
+   :pct_required: 80
+   :points: 50
 
 
 * **Before Friday 9/30 at 6:30 PM:**
