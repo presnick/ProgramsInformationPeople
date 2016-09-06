@@ -8,6 +8,24 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. assignment for problem set TODO
+
+.. assignments for reading responses
+.. assignment::
+  :name: response_4
+  :assignment_type: summative
+  :questions: rr_4 100
+  :deadline: 
+  :points: 100
+
+.. assignment for DYU
+.. assignment::
+  :name: dyu3
+  :assignment_type: summative
+  :questions: ps3_dyu 100
+  :deadline: 
+  :points: 100
+
 .. highlight:: python
     :linenothreshold: 500
 
@@ -19,11 +37,14 @@ You have the following graded activities:
 
 * **Before Monday's class, 9/26:**
 
-  * Read :ref:`Conditionals <conditionals_chap>` and do exercises
-  * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
-  * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
+  * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
-.. usageassignment
+.. usageassignment:: prep_06
+    :chapters: Functions
+    :assignment_name: Prep 06
+    :deadline: 2016-09-30 21:40:00
+    :pct_required: 80
+    :points: 50
 
 * **Before Tuesday 9/27 at 11:59 pm:**
 
@@ -31,185 +52,187 @@ You have the following graded activities:
 
 * **Before Wednesday's class, 9/28:**
   
-  * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
+  * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
 
-.. usageassignment
+
+.. usageassignment:: prep_07
+    :chapters: IndefiniteIteration
+    :assignment_name: Prep 10
+    :deadline: 2016-09-28 21:40:00
+    :pct_required: 80
+    :points: 50
+
 
 * **Before Friday 9/30 at 6:30 PM:**
 
   * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas (linked in the problem set).
 
-.. TODO basic dictionary mechanics in pset??
-
   * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 5:00 pm.
 
+This Week's Reading Responses
+-----------------------------
 
-.. _problem_set_3:
+.. _reading_response_4:
+
+.. external:: rr_4
+
+  `Reading Response 4 <UPDATELINK>`_ on Canvas.
+
 
 Problem Set
 -----------
+**This problem set is in draft. You may look at it and run code. The problems/instructions may change slightly while this disclaimer remains here.**
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
+.. _problem_set_3:
 
-.. datafile::  about_programming.txt
+.. datafile:: timely_file.txt
    :hide:
 
-   Computer programming (often shortened to programming) is a process that leads from an
-   original formulation of a computing problem to executable programs. It involves
-   activities such as analysis, understanding, and generically solving such problems
-   resulting in an algorithm, verification of requirements of the algorithm including its
-   correctness and its resource consumption, implementation (or coding) of the algorithm in
-   a target programming language, testing, debugging, and maintaining the source code,
-   implementation of the build system and management of derived artefacts such as machine
-   code of computer programs. The algorithm is often only represented in human-parseable
-   form and reasoned about using logic. Source code is written in one or more programming
-   languages (such as C++, C#, Java, Python, Smalltalk, JavaScript, etc.). The purpose of
-   programming is to find a sequence of instructions that will automate performing a
-   specific task or solve a given problem. The process of programming thus often requires
-   expertise in many different subjects, including knowledge of the application domain,
-   specialized algorithms and formal logic.
-   Within software engineering, programming (the implementation) is regarded as one phase in a software development process. There is an on-going debate on the extent to which
-   the writing of programs is an art form, a craft, or an engineering discipline. In
-   general, good programming is considered to be the measured application of all three,
-   with the goal of producing an efficient and evolvable software solution (the criteria
-   for "efficient" and "evolvable" vary considerably). The discipline differs from many
-   other technical professions in that programmers, in general, do not need to be licensed
-   or pass any standardized (or governmentally regulated) certification tests in order to
-   call themselves "programmers" or even "software engineers." Because the discipline
-   covers many areas, which may or may not include critical applications, it is debatable
-   whether licensing is required for the profession as a whole. In most cases, the
-   discipline is self-governed by the entities which require the programming, and sometimes
-   very strict environments are defined (e.g. United States Air Force use of AdaCore and
-   security clearance). However, representing oneself as a "professional software engineer"
-   without a license from an accredited institution is illegal in many parts of the world.
+   Autumn is interchangeably known as fall in the US and Canada, and is one of the four temperate seasons. Autumn marks the transition from summer into winter.
+   Some cultures regard the autumn equinox as mid autumn while others, with a longer temperature lag, treat it as the start of autumn then. 
+   In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
+   (Wikipedia)
 
-1. Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
 
 .. activecode:: ps_3_1
+   :language: python
 
-   several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+   **1.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
-   ====
+   ~~~~
+   # Write code here
 
-   print "\n\n---\n"
-   print "(There are no tests for this problem.)"
+   =====
 
-2. See the comments for directions.
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testCode(self):
+         self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+
+   myTests().main()
 
 .. activecode:: ps_3_2
+   :available_files: timely_file.txt
+   :language: python
 
-   sent = "The magical mystery tour is waiting to take you away."
+   **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. 
 
-   # The following code does not iterate over the words in the English sentence we can read that's stored in the variable sent:
-   for x in sent:
-       print x
-   # Why not? Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence? Write a comment explaining:
-
-
-   # Write code that assigns a variable word_list to hold a LIST of all the
-   # WORDS in the string sent. It's fine if words include punctuation.
-
-
+   ~~~~
+   # Write code here!
+        
    =====
 
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
 
+      def testCode(self):
+         self.assertNotIn("= 'the'", self.getEditorText(), "Testing code input (Don't worry about actual and expected values)")
+         self.assertIn("open",self.getEditorText(),"Testing that you have probably opened the file (Don't worry about actual and expected values)")
+
       def testOne(self):
-         print "No tests for the comment, of course -- we can only test stored values!\n"
-         self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
+         self.assertEqual(abc, 'the', "testing whether abc is set correctly.")
 
    myTests().main()
-
-
-3. Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
-
-``hello``
-
-``goodbye``
-
-``wonderful``
-
-``I love Python``
-
-(Hint: remember string slicing?)
 
 .. activecode:: ps_3_3
+   :language: python
 
-   excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
+   **3.** Below is a function definition. **DO NOT** change it! 
 
-   # Write your code here.
+   We have also provided some invocations of that function. Run those and see what they do.
 
-   ====
+   Below the comment provided in the code window, write a few calls to this function yourself, with whatever appropriate input you want.
 
-   print "\n\n---\n"
-   print "(There are no tests for this problem.)"
+   Finally, write a few sentences in comments in the code window that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like ``l`` gets input into this function AND what happens if a list like ``b`` gets input into it. 
+
+   Don't forget to run it and save!
+
+   ~~~~
+   # Function definition
+   def list_end_with_string(new_list):
+       if type(new_list[-1]) == type("hello"):
+           return new_list
+       new_list.append("the last element is a string no matter what now!")
+       return new_list
+
+   # Some function calls and lines that print out the results
+   l = [3,46,6]
+   b = [4,"hi",10,"12",12,123,"whoa!"]
+   print list_end_with_string([1,2])
+   print list_end_with_string(l)
+   print list_end_with_string(b)
+
+   # Now write a couple invocations of this function yourself below this line.
 
 
-4. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) (Hint: use one of the file methods you've learned to make this easy!) Do not print out a list. 
-
-The result should look like this:
-
-   Computer programming (often shortened to programming) is a process that leads from an
-  
-   original formulation of a computing problem to executable programs. It involves
+   # Write your comments here.
 
 .. activecode:: ps_3_4
-      :available_files: about_programming.txt
+       :language: python
 
-      # Write your code here.
-      # Don't worry about extra blank lines between each of the lines when you print them
-      # (but if you want to get rid of them, you can try out the .strip() method)
+       **4.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+       ~~~~
+       def subtract_five(inp):
+           print inp - 5
+           return None
 
-      ====
+       y = subtract_five(9) - 6
 
-      print "\n\n---\n"
-      print "There are no tests for this problem."
+       =====
 
+       from unittest.gui import TestCaseGui
 
-5. Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
+       class myTests(TestCaseGui):
+
+          def testOne(self):
+             self.assertEqual(y, -2, "Testing if y is -2")
+
+       myTests().main()
 
 .. activecode:: ps_3_5
-      :available_files: about_programming.txt
+       :language: python
 
-      # Write your code here.
+       **5.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+       ~~~~ 
+       # We've started you off with the first line...
+       def change_amounts(num_here):
+           pass # delete this line and put in your own code for the body of the function.
 
-      =====
+       =====
 
-      from unittest.gui import TestCaseGui
+       from unittest.gui import TestCaseGui
 
-      class myTests(TestCaseGui):
+       class myTests(TestCaseGui):
 
-         def testOne(self):
-            print "No tests for the comment, of course -- we can only test stored values!\n"
-            self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
+          def testOne(self):
+             self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
+             self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
 
-      myTests().main()
+       myTests().main()
 
-
-6. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
-
-Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
-(HINT: you don't have to make a big change.)
 
 .. activecode:: ps_3_6
+   :language: python
 
-   #x = 25
-   #x = 15
-   #x = 5
-   #x = -10
+   **6.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise.
 
-   if x > 20:
-       y = "yes"
-   if x > 10:
-       y = "no"
-   if x < 0:
-       y = "maybe"
-   else:
-       y = "unknown"
+   ~~~~   
+   # Define your function here.
 
-   print "y is " + str(y)
+
+   # Here's a couple example function calls, printing the return value
+   # to show you what it is.
+   print is_prefix("He","Hello") # should print True
+   print is_prefix("Hello","He") # should print False
+   print is_prefix("Hi","Hello") # should print False
+   print is_prefix("lo","Hello") # should print False
+   print is_prefix("Hel","Hello") # should print True
+   # Remember, these won't work at all until you have defined a function called is_prefix
 
    =====
 
@@ -218,57 +241,20 @@ Fix the code so that it passes the test for each different value of x. So when t
    class myTests(TestCaseGui):
 
       def testOne(self):
-         print("No tests for the comment, of course -- we can only test stored values!\n")
-         if x == 25:
-            self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
-         elif x == 15:
-            self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
-         elif x == 5:
-            self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
-         elif x == -10:
-            self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
-         else:
-            print "No tests when value of x is %s" % (x)
+         self.assertEqual(is_prefix("Big", "Bigger"), True, "Testing whether 'Big' is a prefix of 'Bigger'")
+         self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
+         self.assertEqual(is_prefix('ge', 'Bigger'), False, "Testing whether 'ge' is a prefix of 'Bigger'")
+         self.assertEqual(is_prefix('Bigge', "Bigger"), True, "Testing whether 'Bigge' is a prefix of 'Bigger'")
 
    myTests().main()
-
-
-7. See comments in code for instructions.
 
 .. activecode:: ps_3_7
+   :language: python
 
-   lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
+   **7.** Write code that repeatedly asks the user to input numbers. Keep going until the sum of the numbers is 21 or more. Print out the total.
+   ~~~~
+   # Write your code here!
 
-   # How many characters are in each element of list lp?
-   # Write code to print the length (number of characters)
-   # of each element of the list on a separate line.
-   ## (Do not write 8+ lines of code to do this. Use a for loop.)
-
-   # The output you get should be:
-   # 5
-   # 13
-   # 11
-   # 12
-   # 3
-   # 12
-   # 11
-   # 6
-
-   # Now write code to print out each element of
-   # list lp only IF the length of the element is
-   # an even number. Use iteration (a for loop!).
-
-   ====
-
-   print "\n---\n\n"
-   print "There are no tests for this problem."
-
-
-8. Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. HINT 1: Use the accumulation pattern! HINT 2: the ``in`` operator checks whether a letter or substring is present in a string.
-
-.. activecode:: ps_3_8
-
-   items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
 
    =====
 
@@ -276,35 +262,15 @@ Fix the code so that it passes the test for each different value of x. So when t
 
    class myTests(TestCaseGui):
 
-      def testOne(self):
-         self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
+      def testCode(self):
+         self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("+", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
 
    myTests().main()
 
 
-9. Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+.. external:: ps3_dyu
 
-.. activecode:: ps_3_9
-   
-   diction = {"python":"you are awesome","autumn":100}
-
-   # Write your code here.
-
-   ====
-
-   print "\n\n---\n"
-   print "There are no tests for this problem."
-
-10. **Challenge problem (OPTIONAL):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
-
-.. activecode:: ps_3_10
-   :available_files: about_programming.txt
-
-   # Write your code here.
-
-   ====
-
-   print "\n\n---\n"
-   print "There are no tests for this problem."
-
-11. Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
+  Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.

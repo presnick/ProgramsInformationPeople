@@ -127,7 +127,6 @@ Sequences
    Sequences/SplitandJoin.rst
    Sequences/Glossary.rst
    Sequences/Exercises.rst
-   Sequences/ExtraExercises.rst
 
 
 Iteration
@@ -148,6 +147,7 @@ Iteration
    Iteration/Glossary.rst
    Iteration/Exercises.rst
 
+
 Conditionals
 ::::::::::::
 
@@ -160,6 +160,7 @@ Conditionals
    Selection/Chainedconditionals.rst
    Selection/Glossary.rst
    Selection/Exercises.rst
+
 
 Files
 :::::
@@ -213,6 +214,7 @@ Accumulating Results in Dictionaries
    DictionaryAccumulation/AccumulatingtheBestKey.rst
    DictionaryAccumulation/Exercises.rst
 
+
 Building Programs
 :::::::::::::::::
 
@@ -254,6 +256,7 @@ While Loops
    IndefiniteIteration/intro-indefiniteiteration.rst
    IndefiniteIteration/ThewhileStatement.rst
    IndefiniteIteration/listenerLoop.rst
+
 
 Optional and Keyword Parameters
 :::::::::::::::::::::::::::::::
@@ -366,6 +369,7 @@ String Formatting
    StringFormatting/Interpolation.rst
    StringFormatting/CSV.rst
    StringFormatting/Exercises.rst
+
 
 Using RESTAPIs
 ::::::::::::::
@@ -543,17 +547,6 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-In Class Code Samples
-:::::::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   InClass/DictionaryAccum.rst
-   InClass/FunctionsExamples.rst
-   InClass/IndefiniteIteration.rst
-   InClass/OptionalKeywordParams.rst
-   InClass/TuplesAndNestedData.rst
 
 Indices and tables
 ::::::::::::::::::

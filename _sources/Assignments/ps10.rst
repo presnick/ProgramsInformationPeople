@@ -8,45 +8,21 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. assignment for problem set
+
+.. assignments for lecture waivers
+
+.. assignments for end of lecture exercise sets
+
+.. assignments for reading responses
+
+.. assignment for DYU
+
 .. highlight:: python
     :linenothreshold: 500
 
 
-Activities through 3/27
-=======================
+Activities through 11/27 (through T-Giving Break)
+=================================================
 
-* **Before Monday's class:**
-       * Read :ref:`List comprehensions<list_comp_chap>`
-       * Try the exercises at the end of the chapter. We will work on them together in lecture on Monday, but see if you can at least get the first four done in advance.
-
-.. usageassignment:: prep_18
-    :chapters: AdvancedAccumulation
-    :assignment_name: Prep a18
-    :deadline: 2016-03-21 21:30:00
-    :pct_required: 80
-    :points: 50
-
-* **Before Tuesday at midnight:**
-    * Read the tutorial on GitHub. You will not need to create or use a github repository for this course, but this will help prepare you for the reading and reading response for this week and some later chapters in the Weber book.
-         * `Part I <http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1>`_
-         * `Part II <http://readwrite.com/2013/10/02/github-for-beginners-part-2>`_
-
-    * Read *The Success of Open Source*, Chapter 3
-    * Complete `Reading Response 10 <https://umich.instructure.com/courses/48961/assignments/57686>`_ on Canvas.
-
-* **Before Wednesday's class:**
-       * View slides ``FB Graph API`` in cTools resources/Slides
-       * Use pip to install the requests module and facebook-sdk module (instructions in the slides)
-       * Read about the :ref:`FB Graph API<fb_api_exercises>` and do the exercises.
-
-.. usageassignment:: prep_19
-    :chapters: FacebookAPI
-    :assignment_name: Prep a19
-    :deadline: 2016-03-23 21:30:00
-    :pct_required: 80
-    :points: 50
-
-* **Before Sunday 3/27 at 5 pm:**
-    * Complete `Problem Set 10 <https://umich.instructure.com/courses/48961/assignments/55804>`_ on Canvas.
-    * **Before 6 pm:** Complete `Demonstrate Understanding 10 <https://umich.instructure.com/courses/48961/assignments/57700>`_ on Canvas.
-
+TBA

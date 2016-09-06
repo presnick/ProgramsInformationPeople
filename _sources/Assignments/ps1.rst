@@ -8,6 +8,40 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+
+.. assignment for problem set TODO
+
+.. assignments for reading responses
+.. assignment::
+  :name: response_1
+  :assignment_type: summative
+  :questions: rr_1 100
+  :deadline: 
+  :points: 100
+
+.. assignment::
+  :name: response_2
+  :assignment_type: summative
+  :questions: rr_2 100
+  :deadline: 
+  :points: 100
+
+.. assignment::
+  :name: response_3
+  :assignment_type: summative
+  :questions: rr_3 100
+  :deadline: 
+  :points: 100
+
+.. assignment for DYU
+.. assignment::
+  :name: dyu1
+  :assignment_type: summative
+  :questions: ps1_dyu 100
+  :deadline: 
+  :points: 100
+
+
 .. highlight:: python
     :linenothreshold: 500
 
@@ -15,271 +49,384 @@
 Activities through 9/16
 =======================
 
-* **Before Thursday's discussion section, 9/15 (preferably before first lecture on Wednesday 9/7):**
+* **Before your first discussion section, this week (preferably before first lecture on Wednesday 9/7):**
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
-  * Sign up for/join the `Facebook group <linkgoeshere.notrealTODO>`_
-  * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
+  * Sign up for/join the `Facebook group <https://www.facebook.com/groups/323187111349524/>`_
+  * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter. 
+  * You may also want to review the material you covered to waive 502/early chapters in the textbook, like Simple Python Data this week.
 
-.. usageassignment or appropriate directive
-
-* **Participation in discussion section**, 9/8 or 9/9
-
+.. usageassignment:: prep_01
+    :chapters: GeneralInfo
+    :assignment_name: Prep 01
+    :deadline: 2016-09-14 21:40:00
+    :pct_required: 80
+    :points: 50
 
 * **By Sunday 9/11 at 11:59 pm:**
 
   * read the intro and chapter 1 of The Most Human Human book.
-  * Answer `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_ .
+  * Answer `Reading Response 1 <https://umich.instructure.com/courses/108426/assignments/139258>`_ .
+
 
 * **Before Monday's class, 9/12:**
 
-  * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
+  * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and try the exercises in that chapter
+  * Read :ref:`Debugging tips<debugging_chap>`, and try the exercises in that chapter
 
-.. usageassignment directive here as appropriate (propagate through)
+.. usageassignment:: prep_02
+    :chapters: Debugging, PythonTurtle
+    :subchapters: Installation/FirstSteps, Unix/CommandPrompt, Unix/FoldersAndPaths
+    :assignment_name: Prep 03
+    :deadline: 2016-01-13 19:40:00
+    :pct_required: 80
+    :points: 50
 
 * **By Tuesday night 11:59, 9/13:**
 
   * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/courses/105657/files?preview=2142149>`_, by Richard Searle. (It's in the Canvas Files folder, if that link doesn't work.)
-  * Answer `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_ .
+  * Answer `Reading Response 2 <https://umich.instructure.com/courses/108426/assignments/139263>`_ .
+
 
 * **Before Wednesday's class, 9/14:**
 
-  * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
-  * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
+  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
-.. usage assignment
+.. usageassignment:: prep_04
+    :chapters: Sequences
+    :assignment_name: Prep 04
+    :deadline: 2016-09-14 21:40:00
+    :pct_required: 80
+    :points: 50
 
 * Participation in your discussion section this week
 
 * **By Friday 9/16 at 6:30 PM:** 
 
-  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ (DYU).
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139248>`_ (DYU).
 
 * **By Sunday 9/18 at 11:59 pm:** (We include this in your assignments for next week)
 
-  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ .
+  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
 
 
 * Note that there is a grace period for the problem set and DYU assignment until **Sunday 9/18 at 5:00 PM**. You will not lose any points if you submit before then, even if you submit after the Friday deadline. After the grace period, we do not accept late assignments. See syllabus.
 
 
+This Week's Reading Responses 
+-----------------------------
+.. _reading_response_1:
 
+.. external:: rr_1
+
+  `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_ on Canvas.
+
+.. _reading_response_2:
+
+.. external:: rr_2
+
+  `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_ on Canvas.
 
 
 .. _problem_set_1:
 
 Problem Set
 -----------
+**This problem set is in draft. You may look at it and run code. The problems/instructions may change slightly while this disclaimer remains here.**
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
 
 
-.. question:: problem_set_1_1
 
-  The variable ``tpa`` currently has the value ``0``. Assign the variable ``tpa`` the value ``6`` .
+.. activecode:: ps_1_1
+    :language: python
 
-  .. activecode:: ps_1_1
+    **1.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
+    ~~~~
+    rv = """Once upon a midnight dreary, while I pondered, weak and weary,
+        Over many a quaint and curious volume of forgotten lore,
+        While I nodded, nearly napping, suddenly there came a tapping,
+        As of some one gently rapping, rapping at my chamber door.
+        'Tis some visitor, I muttered, tapping at my chamber door;
+        Only this and nothing more."""
 
-     tpa = 0
-     
-     =====
+    # Write your code here!
 
-     from unittest.gui import TestCaseGui
+    =====
 
-     class myTests(TestCaseGui):
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
 
         def testOne(self):
-           self.assertEqual(tpa, 6, "Testing that tpa's value is 6.")
+           self.assertEqual(num_chars, len(rv), "Testing that num_chars has been set to the length of rv")
+           self.assertEqual(num_words, len(rv.split()), "Testing that num_words has been set to the number of words in rv")
 
-     myTests().main()
+    myTests().main()
    
+    
+.. activecode:: ps_1_2
+    :include: addl_functions
+    :language: python
 
-.. question:: problem_set_1_2
+    **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
+    ~~~~
+    xyz = ""
+      
+    =====
 
-  Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
+    from unittest.gui import TestCaseGui
 
-  .. activecode:: ps_1_2
-
-     cw = "Hello"
-     yb = 0
-
-     =====
-
-     from unittest.gui import TestCaseGui
-
-     class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
         def testOne(self):
-           self.assertEqual(cw, yb, "Testing that yb has the same value as cw")
-           self.assertEqual(cw, "Hello", "Testing that cw's value is 'Hello'.")
-
-     myTests().main()
-
-
-.. question:: problem_set_1_3
-
-  Write code to use the type function print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``.
-
-  .. activecode:: ps_1_3
-     
-     apples_and_oranges = """hello, everybody
-                               how're you?"""
-
-     abc = 6.75483
-
-     new_var = 824
-
-     ====
-
-     print "\n\n---\n(There are no tests for this problem.)"
-
-.. question:: problem_set_1_4
-
-  There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
-
-  .. activecode:: ps_1_4
-      :include: addl_functions
-
-      # Want to make sure there really is a function called square? Uncomment the following line and press run.
-
-      #print type(square)
-     
-      xyz = ""
-      
-      =====
-
-      from unittest.gui import TestCaseGui
-
-      class myTests(TestCaseGui):
-
-         def testOne(self):
             self.assertEqual(type(xyz), type(3), "Checking type of xyz")
             self.assertEqual(xyz, 25, "Checking if xyz is 25")
+            self.assertIn('square', self.getEditorText(), "Testing that 'square' is in your code. (Don't worry about Actual and Expected Values.)")
 
-      myTests().main()
-
-.. question:: problem_set_1_5
-
-  Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
-
-  .. activecode:: ps_1_5
-      :include: addl_functions
-
-      # write your code here; include a blank line
-
-      =====
-
-      from unittest.gui import TestCaseGui
-
-      class myTests(TestCaseGui):
-
-         def testOne(self):
-             self.assertEqual(new_number, 9, "Testing that new_number's value is 9")
-
-      myTests().main()
-
-.. question:: problem_set_1_6
-
-  Write in a comment what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
-
-  .. activecode:: ps_1_6
-      :include: addl_functions
-
-      # Here's an example.
-      xyz = 12 # The variable xyz is being assigned the value 12, which is an integer
-
-      # Now do the same for these!
-      a = 6
-
-      b = a
-
-      # make sure to be very clear and detailed about the following line of code
-      orange = square(b)
-
-      print a
-
-      print b
-
-      print orange
-
-      pear = square
-
-      print pear
+    myTests().main()
 
 
-.. question:: problem_set_1_7
+.. activecode:: ps_1_3
+    :include: addl_functions
+    :language: python
 
-  There are a couple more functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
+    **3.** Write in a comment what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
+    ~~~~
+    # Here's an example.
+    xyz = 12 # The variable xyz is being assigned the value 12, which is an integer
 
-  Write code that assigns to the variable ``func_var`` the **function** ``greeting`` (without executing the function). 
+    # Now do the same for these!
+    a = 6
 
-  Then, write code that assigns to the variable ``new_digit`` the **return value** from executing the function ``random_digit``.
+    b = a
 
-  Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
+    # make sure to be very clear and detailed about the following line of code
+    orange = square(b)
 
-  .. activecode:: ps_1_7
-     :include: addl_functions
+    print a
 
-     # For example
-     print greeting("Jackie")
-     print greeting("everybody")
-     print greeting("sdgadgsal")
+    print b
+
+    print orange
+
+    pear = square
+
+    print pear
+
+.. activecode:: ps_1_4
+    :language: python
+
+    **4.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+    ~~~~
+    several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+    def test_output(self):
+       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+       self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+    myTests().main()
+
+.. activecode:: ps_1_5
+    :include: addl_functions
+    :language: python
+
+    **5.** There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
+
+    Write code that assigns to the variable ``func_var`` the **function** ``greeting`` (without executing the function). 
+
+    Then, write code that assigns to the variable ``new_digit`` the **return value** from executing the function ``random_digit``.
+
+    Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
+    ~~~~
+    # For example
+    print greeting("Jackie")
+    print greeting("everybody")
+    print greeting("sdgadgsal")
      
-     # Try running all this code more than once, so you can see how calling the function
-     # random_digit works.
-     print random_digit()
-     print random_digit()
+    # Try running all this code more than once, so you can see how calling the function
+    # random_digit works.
+    print random_digit()
+    print random_digit()
 
-     # Write code that assigns the variables as mentioned in the instructions.
+    # Write code that assigns the variables as mentioned in the instructions.
 
-     =====
 
-     from unittest.gui import TestCaseGui
+    =====
 
-     class myTests(TestCaseGui):
+    from unittest.gui import TestCaseGui
 
-        def testOne(self):
+    class myTests(TestCaseGui):
+
+        def testOne(self): 
            self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
         def testTwo(self):
            self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
         def testThree(self):
            self.assertEqual(type(digit_func), type(random_digit), "Testing that digit_func is same type as random_digit")
 
-     myTests().main()
+    myTests().main()
 
-.. question:: problem_set_1_8
+.. activecode:: ps_1_6
+       :language: python
 
-  Now write code that assigns the variable ``newval`` to hold the **return value** of ``greeting("everyone in class")``.
+       **6.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
 
-  .. activecode:: ps_1_8
-     :include: addl_functions
+       ::
 
-     =====
+           hello
+           goodbye
+           wonderful
+           I love Python
 
-     from unittest.gui import TestCaseGui
+       (Hint: remember string slicing?)
+       ~~~~
+       excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
 
-     class myTests(TestCaseGui):
+       # Write your code here.
+       =====
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def test_output(self):
+               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+               self.assertIn("hello\ngoodbye\nwonderful\nI love Python", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+       myTests().main()
+
+.. activecode:: ps_1_7
+    :include: addl_functions
+    :language: python
+
+    **7.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
+
+    Now, take a look at the following code and related questions, in this code window.
+    ~~~~
+    new_str = "'Twas brillig"
+     
+    y = add_lengths("receipt","receive")
+     
+    x = random_digit()
+     
+    z = new_str.find('b')
+     
+    l = new_str.find("'")
+     
+    # notice that this line of code is made up of a lot of different expressions
+    fin_value = square(len(new_str)) + (z - l) + (x * random_digit())
+     
+    # DO NOT CHANGE ANY CODE ABOVE THIS LINE
+    # But below here, putting print statements and running the code may help you!
+     
+    # The following questions are based on that code. All refer to the types of the 
+    #variables and/or expressions after the above code is run.
+     
+    #####################   
+     
+    # Write a comment explaining each of the following, after each question.
+    # Don't forget to press **run** to save!
+     
+    # What is square? 
+     
+    # What type of object does the expression square(len(new_str)) evaluate to?
+     
+    # What type is z?
+     
+    # What type is l?
+     
+    # What type is the expression z-l?
+     
+    # What type is x?
+     
+    # What is random_digit? How many inputs does it take?
+     
+    # What type does the expression x * random_digit() evaluate to?
+     
+    # Given all this information, what type will fin_value hold once all this code is run?
+
+    ====
+
+    print "\n\nThere are no tests for this problem"
+
+.. activecode:: ps_1_8
+    :language: python
+
+    **8.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
+
+    Assign the value of the sixth element of ``num_lst`` to a variable called ``elem_sixth``.
+
+    Assign the length of ``num_lst`` to a variable called ``num_lst_len``.
+
+    *Consider:* what is the difference between ``mixed_bag[-1]`` and ``mixed_bag[-2]`` (you may want to print out those values or print out information about those values, so you can make sure you know what they are!)?
+
+    Write code to print out the type of the third element of ``mixed_bag``.
+
+    Write code to assign the **type of the fifth element of** ``mixed_bag`` to a variable called ``fifth_type``.
+
+    Write code to assign the **type of the first element of** ``mixed_bag`` to a variable called ``another_type``.
+
+    **Keep in mind:** All ordinal numbers in *instructions*, like "third" or "fifth" refer to the way HUMANS count. How do you write code to find the right things?
+    ~~~~
+    num_lst = [4,16,25,9,100,12,13]
+    mixed_bag = ["hi", 4,6,8, 92.4, "see ya", "23", 23]
+
+    # Write your code here:
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
 
         def testOne(self):
-           self.assertEqual(newval, greeting("everyone in class"), "newval has not been assigned the correct value")
+           self.assertEqual(third_elem, num_lst[2], "Testing that third_elem has been set to the third element of num_lst")
+        def testTwo(self):
+           self.assertEqual(elem_sixth, num_lst[5], "Testing that elem_sixth has been set to the sixth element of num_lst")
+        def testThree(self):
+           self.assertEqual(num_lst_len,len(num_lst), "Testing that num_len has been set to the length of num_lst")
+        def testFour(self):
+           self.assertEqual(fifth_type, type(mixed_bag[4]), "Testing that fifth_type has been set to the type of the fifth element in mixed_bag")
+        def testFive(self):
+           self.assertEqual(another_type, type(mixed_bag[0]), "Testing that another_type has been set to the type of the first element of mixed_bag")
+        def testSix(self):
+           self.assertIn('print', self.getEditorText(), "Testing that 'print' is in your code. (Don't worry about Actual and Expected Values.)")
+        def testSeven(self):
+           self.assertIn('int', self.getOutput(), "Testing that you printed the correct element of mixed_bag. (Don't worry about Actual and Expected Values.)")
 
-     myTests().main()
-    
 
-.. question:: problem_set_1_9
+    myTests().main()
 
-  This code causes an error. Why? Write a comment in the code window to explain.
+.. activecode:: ps_1_9
+    :language: python
+  
+    **9.** Write code to count the number of characters in ``original_str`` using the accumulation pattern and assign the answer to a variable ``num_chars_sent``. Do NOT use the ``len`` function to solve the problem (if you use it while you are working on this problem, comment it out afterward!)
+    ~~~~
+    original_str = "The quick brown rhino jumped over the extremely lazy fox."
+     
+     
+    =====
 
-  .. activecode:: ps_1_9
+    from unittest.gui import TestCaseGui
 
-     another_variable = "?!"
-     b = another_variable()
+    class myTests(TestCaseGui):
 
-.. question:: problem_set_1_10
+        def testOne(self):
+           self.assertEqual(num_chars_sent, len(original_str), "Testing whether num_chars_sent has the correct value")
+           self.assertNotIn('len', self.getEditorText(), "Testing that you are not including the len function in your code. (Don't worry about Actual and Expected Values.)")
 
-  Here's another complicated expression, using the Turtle framework we talked about. Arrange these expressions in the order they are executed, like you did in an exercise in Chapter 2 of the textbook.
+    myTests().main()
 
-  .. sourcecode:: python
+**10.** Here's another complicated expression, using the Turtle framework we talked about. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
+
+.. sourcecode:: python
 
      import turtle
 
@@ -289,54 +436,58 @@ Problem Set
 
 
      ella.move(square(x*ella.speed))
+  
+.. parsonsprob:: ps_1_10
 
-  .. parsonsprob:: ps_1_10
+   Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code.
 
-     Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code, ``ella.move(square(x*ella.speed))`` (It may help to think about what specifically is happening in the first four lines of code as well.)
-     -----
-     Look up the variable ella and find that it is an instance of a Turtle object
-     =====
-     Look up the attribute move of the Turtle ella and find that it's a method object
-     =====
-     Look up the function square
-     =====
-     Look up the value of the variable x and find that it is an integer
-     =====
-     Look up the value of the attribute speed of the instance ella and find that it is an integer
-     =====
-     Evaluate the expression x * ella.speed to one integer
-     =====
-     Call the function square on an integer value
-     =====
-     Call the method .move of the Turtle ella on its input integer
+   -----
+   Look up the variable ella and find that it is an instance of a Turtle object
+   =====
+   Look up the attribute move of the Turtle ella and find that it's a method object
+   =====
+   Look up the function square
+   =====
+   Look up the value of the variable x and find that it is an integer
+   =====
+   Look up the value of the attribute speed of the instance ella and find that it is an integer
+   =====
+   Evaluate the expression x * ella.speed to one integer
+   =====
+   Call the function square on an integer value
+   =====
+   Call the method .move of the Turtle ella on its input integer
 
-.. question:: problem_set_1_11
 
-  Write a program that uses the turtle module to draw something interesting. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to the Facebook group, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
+.. activecode:: ps_1_11
+    :language: python
 
-  .. activecode:: ps_1_11
+    **11.** Write a program that uses the turtle module to draw something interesting. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to the Facebook group, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
+    ~~~~
+    import turtle
 
-     import turtle
 
-.. question:: problem_set_1_12
+.. external:: ps1_dyu
 
-  Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131293>`_ for this week.
-
+    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139248>`_ for this week.
+    
 
 That's the end of the problem set. In the hidden code below, you will find the definitions of functions square, random_digit, and greeting that were used elsewhere in the problem set. They're hidden because you don't yet need to understand how function definitions work. But if you want a preview, feel free to click on Show/hide code.
 
 .. activecode:: addl_functions
-   :nopre:
-   :hidecode:
+    :nopre:
+    :hidecode:
 
-   def square(num):
-      return num**2
+    def square(num):
+        return num**2
 
-   def greeting(st):
-      #st = str(st) # just in case
-      return "Hello, " + st
+    def greeting(st):
+        st = str(st) # just in case
+        return "Hello, " + st
 
-   def random_digit():
-     import random
-     return random.choice([0,1,2,3,4,5,6,7,8,9])
+    def random_digit():
+        import random
+        return random.choice([0,1,2,3,4,5,6,7,8,9])
 
+    def add_lengths(str1, str2):
+        return len(str1) + len(str2)
