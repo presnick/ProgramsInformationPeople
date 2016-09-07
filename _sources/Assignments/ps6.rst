@@ -36,7 +36,7 @@ You have the following graded activities:
 
     * :ref:`Lecture 12 Waiver <lecture_12_waiver>`
 
-.. usageassignment:: prep_11
+.. usageassignment::
     :chapters: OptionalAndKeywordParameters
     :assignment_name: Prep a11
     :deadline: 2016-10-24 21:30:00
@@ -50,7 +50,7 @@ You have the following graded activities:
 
    * :ref:`Lecture 12 Waiver <lecture_12_waiver>`
 
-.. usageassignment:: prep_12
+.. usageassignment::
     :chapters: Tuples, NestedData
     :assignment_name: Prep a12
     :deadline: 2016-10-26 21:30:00
