@@ -213,8 +213,8 @@ Problem Set
     from unittest.gui import TestCaseGui
 
         def testOne(self):
-           self.assertIn('print', self.getEditorText(), "Testing that 'print' is in the code. (Don't worry about Actual and Expected Values.)")
-           self.assertIn('type', self.getOutput(), "Testing output. (Don't worry about Actual and Expected Values.)")           
+            self.assertIn('print', self.getEditorText(), "Testing that 'print' is in the code. (Don't worry about Actual and Expected Values.)")
+            self.assertIn('type', self.getOutput(), "Testing output. (Don't worry about Actual and Expected Values.)")           
 
     myTests().main()
     
@@ -259,7 +259,7 @@ Problem Set
     class myTests(TestCaseGui):
 
         def testOne(self):
-             self.assertEqual(new_number, 9, "Testing that new_number's value is 9")
+            self.assertEqual(new_number, 9, "Testing that new_number's value is 9")
 
     myTests().main()
 
@@ -290,6 +290,10 @@ Problem Set
     pear = square
 
     print pear
+
+    =====
+
+    print "\n\nThere are no tests for this problem. We have to read your comments.\n"
 
 
 .. activecode:: ps_1_7
@@ -324,11 +328,11 @@ Problem Set
     class myTests(TestCaseGui):
 
         def testOne(self): 
-           self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
+            self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
         def testTwo(self):
-           self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
+            self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
         def testThree(self):
-           self.assertEqual(type(digit_func), type(random_digit), "Testing that digit_func is same type as random_digit")
+            self.assertEqual(type(digit_func), type(random_digit), "Testing that digit_func is same type as random_digit")
 
     myTests().main()
 
@@ -350,7 +354,7 @@ Problem Set
     class myTests(TestCaseGui):
 
         def testOne(self):
-           self.assertEqual(newval, greeting("everyone in class"), "Testing that newval was created correctly.")
+            self.assertEqual(newval, greeting("everyone in class"), "Testing that newval was created correctly.")
 
     myTests().main()
     
