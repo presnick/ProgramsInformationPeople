@@ -55,7 +55,7 @@ You have the following graded activities:
 
 .. usageassignment::
     :chapters: IndefiniteIteration
-    :assignment_name: Prep 10
+    :assignment_name: Prep 07
     :deadline: 2016-09-28 21:40:00
     :pct_required: 80
     :points: 50
