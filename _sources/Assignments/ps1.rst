@@ -99,7 +99,7 @@ Activities through 9/16
   * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
   * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
 
-.. usageassignment:: prep_03
+.. usageassignment::
     :chapters: Debugging, PythonTurtle
     :assignment_name: Prep 03
     :deadline: 2016-09-14 19:40:00

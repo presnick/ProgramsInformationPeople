@@ -34,7 +34,7 @@ You have the following graded activities:
 
   * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
 
-.. usageassignment:: prep_10
+.. usageassignment::
     :chapters: IndefiniteIteration
     :subchapters: Installation/TextEditor
     :assignment_name: Prep 10
@@ -54,7 +54,7 @@ You have the following graded activities:
 
   * :ref:`Lecture 11 Waiver <lecture_11_waiver>`
 
-.. usageassignment:: prep_11
+.. usageassignment::
     :chapters: Unix
     :assignment_name: Prep 11
     :deadline: 2016-10-12 19:40:00

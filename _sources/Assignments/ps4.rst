@@ -34,7 +34,7 @@ You have the following graded activities:
 
   * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
 
-.. usageassignment:: prep_08
+.. usageassignment::
     :chapters: DictionaryAccumulation
     :subchapters: BuildingAProgram/TheStrategy
     :assignment_name: Prep 08
@@ -54,7 +54,7 @@ You have the following graded activities:
 
   * :ref:`Lecture 9 Waiver <lecture_9_waiver>`
   
-.. usageassignment:: prep_09
+.. usageassignment::
     :chapters: Functions
     :assignment_name: Prep 09
     :deadline: 2016-10-05 19:40:00
