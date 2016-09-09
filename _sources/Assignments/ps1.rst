@@ -49,13 +49,14 @@ Activities through 9/16
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
   * Sign up for/join the `Facebook group <https://www.facebook.com/groups/323187111349524/>`_
-  * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter. 
+  * Read :ref:`General Intro <the_way_of_the_program>`. When reading, run the activecodes and answer the multiple choice questions. If there are exercises at the end of a chapter, try to do at least some of them.
+
   * You may also want to review the material you covered to waive 502/early chapters in the textbook, like Simple Python Data this week.
 
 .. usageassignment::
-    :chapters: GeneralInfo
+    :chapters: GeneralIntro
     :assignment_name: Prep 01
-    :deadline: 2016-09-14 21:40:00
+    :deadline: 2016-09-14 21:40
     :pct_required: 80
     :points: 50
 
@@ -67,13 +68,14 @@ Activities through 9/16
 
 * **Before Monday's class, 9/12:**
 
-  * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and try the exercises in that chapter
-  * Read :ref:`Debugging tips<debugging_chap>`, and try the exercises in that chapter
+  * Read :ref:`Simple Python Data<simple_python_data>`. When reading, run the activecodes and answer the multiple choice questions. If there are exercises at the end of a chapter, try to do at least some of them. That goes for all reading assignments, so we'll stop repeating that...
+  * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`.
+  * Read :ref:`Debugging tips<debugging_chap>`.
 
 .. usageassignment::
     :chapters: SimplePythonData, Debugging, PythonTurtle
     :assignment_name: Prep 03
-    :deadline: 2016-01-13 19:40:00
+    :deadline: 2016-01-13 19:40
     :pct_required: 80
     :points: 50
 
@@ -90,7 +92,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: Sequences, Iteration
     :assignment_name: Prep 04
-    :deadline: 2016-09-14 21:40:00
+    :deadline: 2016-09-14 21:40
     :pct_required: 80
     :points: 50
 
