@@ -151,16 +151,6 @@ Problem Set
     ~~~~
     tpa = 0
 
-    # Write code to iterate through the numbers in lst,
-    # printing out double each value.
-    # Your output should be:
-    # 2
-    # 4
-    # 6
-    # 8
-    # 10
-
-    lst = [1, 2, 3, 4, 5]
      
     =====
 
@@ -170,8 +160,7 @@ Problem Set
 
         def testOne(self):
            self.assertEqual(tpa, 6, "Testing that tpa's value is 6.")
-        def testTwo(self):
-           self.assertIn("2\n4\n6\n8\n10",self.getOutput())
+
     myTests().main()
    
 
