@@ -164,7 +164,7 @@ Problem Set
     :include: addl_functions
     :language: python
 
-    **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
+    **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
     xyz = ""
       
@@ -222,9 +222,9 @@ Problem Set
 
     class myTests(TestCaseGui):
 
-    def test_output(self):
-       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-       self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+      def test_output(self):
+          self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+          self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
     myTests().main()
 
