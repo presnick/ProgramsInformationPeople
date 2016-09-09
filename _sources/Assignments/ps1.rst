@@ -56,7 +56,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: GeneralIntro
     :assignment_name: Prep 01
-    :deadline: 2016-09-14 21:40
+    :deadline: 2016-09-12 21:40
     :pct_required: 80
     :points: 50
 
@@ -75,7 +75,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: SimplePythonData, Debugging, PythonTurtle
     :assignment_name: Prep 03
-    :deadline: 2016-01-13 19:40
+    :deadline: 2016-09-12 20:40
     :pct_required: 80
     :points: 50
 
@@ -166,7 +166,7 @@ Problem Set
     :include: addl_functions
     :language: python
 
-    **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
+    **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
     xyz = ""
       
@@ -224,9 +224,9 @@ Problem Set
 
     class myTests(TestCaseGui):
 
-    def test_output(self):
-       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-       self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+      def test_output(self):
+          self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+          self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
     myTests().main()
 
