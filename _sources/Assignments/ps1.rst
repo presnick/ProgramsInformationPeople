@@ -67,7 +67,7 @@ Activities through 9/16
 .. usageassignment:: 
   :chapters: GeneralInfo
   :assignment_name: Prep 01
-  :deadline: 2016-09-07 19:40:00
+  :deadline: 2016-09-12 18:40:00
   :pct_required: 80
   :points: 50
 
