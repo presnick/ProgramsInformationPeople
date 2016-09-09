@@ -55,7 +55,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: GeneralInfo
     :assignment_name: Prep 01
-    :deadline: 2016-09-14 21:40:00
+    :deadline: 2016-09-12 21:40:00
     :pct_required: 80
     :points: 50
 
@@ -73,7 +73,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: SimplePythonData, Debugging, PythonTurtle
     :assignment_name: Prep 03
-    :deadline: 2016-01-13 19:40:00
+    :deadline: 2016-09-12 20:40:00
     :pct_required: 80
     :points: 50
 
@@ -90,7 +90,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: Sequences, Iteration
     :assignment_name: Prep 04
-    :deadline: 2016-09-14 21:40:00
+    :deadline: 2016-09-14 20:40:00
     :pct_required: 80
     :points: 50
 
