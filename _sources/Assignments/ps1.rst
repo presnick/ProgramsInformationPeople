@@ -19,14 +19,14 @@
   :name: lec2_attendance
   :assignment_type: lecture_attendance
   :questions:  
-  :deadline: 2016-09-12 21:10:00
+  :deadline: 2016-09-12 21:10
   :points: 50
 
 .. assignment::
   :name: lec3_attendance
   :assignment_type: lecture_attendance
   :questions: 
-  :deadline: 2016-09-14 21:10:00
+  :deadline: 2016-09-14 21:10
   :points: 50
 
 
@@ -41,7 +41,6 @@
   :name: response_2
   :assignment_type: reading_response
   :questions: rr_2 100
-  :deadline: 
   :points: 100
 
 .. assignment for DYU
@@ -62,12 +61,12 @@ Activities through 9/16
 
   * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
   * Sign up for/join the `Facebook group <https://www.facebook.com/groups/628933357287543/>`_
-  * Read :ref:`General Intro <the_way_of_the_program>`, and do the exercises in that chapter.
+  * Read :ref:`General Intro <the_way_of_the_program>`. When reading, run the activecodes and answer the multiple choice questions. If there are exercises at the end of a chapter, try to do at least some of them.
 
 .. usageassignment:: 
-  :chapters: GeneralInfo
+  :chapters: GeneralIntro
   :assignment_name: Prep 01
-  :deadline: 2016-09-12 18:40:00
+  :deadline: 2016-09-12 18:40
   :pct_required: 80
   :points: 50
 
@@ -79,12 +78,12 @@ Activities through 9/16
 
 * **Before Monday's class, 9/12:**
 
-  * Read :ref:`Simple Python Data <simple_python_data>`, and do the exercises in that chapter.
+  * Read :ref:`Simple Python Data <simple_python_data>`. When reading, run the activecodes and answer the multiple choice questions. If there are exercises at the end of a chapter, try to do at least some of them.
 
 .. usageassignment::
   :chapters: SimplePythonData
   :assignment_name: Prep 02
-  :deadline: 2016-09-12 19:40:00
+  :deadline: 2016-09-12 19:40
   :pct_required: 80
   :points: 50
 
@@ -96,13 +95,13 @@ Activities through 9/16
 
 * **Before Wednesday's class, 9/14:**
 
-  * Read :ref:`Debugging tips<debugging_chap>`, and do the exercises in that chapter
-  * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`, and do the exercises in that chapter
+  * Read :ref:`Debugging tips<debugging_chap>`
+  * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`
 
 .. usageassignment::
     :chapters: Debugging, PythonTurtle
     :assignment_name: Prep 03
-    :deadline: 2016-09-14 19:40:00
+    :deadline: 2016-09-14 19:40
     :pct_required: 80
     :points: 50
 
