@@ -9,7 +9,13 @@
     License".
 
 
-.. assignment for problem set TODO
+.. assignment for problem set
+.. assignment::
+  :name: PS1
+  :assignment_type: problem_set
+  :questions: ps_1_1 100, ps_1_2 100, ps_1_3 100, ps_1_4 100, ps_1_5 50, ps_1_6 200, ps_1_7 100, ps_1_8 100, ps_1_9 100, ps_1_10 0, ps_1_11 50
+  :deadline: 2016-09-18 21:05
+  :points: 1000
 
 .. assignments for lecture waivers
 .. none for lectures 1 and 2 and 3
