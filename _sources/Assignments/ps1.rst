@@ -219,10 +219,6 @@ Problem Set
 
     **4.** There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
-    # Want to make sure there really is a function called square? Uncomment the following line and press run.
-
-    #print type(square)
-     
     xyz = ""
       
     =====
