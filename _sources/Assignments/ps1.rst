@@ -206,6 +206,7 @@ Problem Set
 
     from unittest.gui import TestCaseGui
 
+    class myTests(TestCaseGui):
         def testOne(self):
             self.assertIn('print', self.getEditorText(), "Testing that 'print' is in the code. (Don't worry about Actual and Expected Values.)")
             self.assertIn('type', self.getOutput(), "Testing output. (Don't worry about Actual and Expected Values.)")           
