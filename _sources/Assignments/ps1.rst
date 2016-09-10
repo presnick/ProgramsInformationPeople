@@ -9,7 +9,13 @@
     License".
 
 
-.. assignment for problem set TODO
+.. assignment for problem set
+.. assignment::
+  :name: PS1
+  :assignment_type: problem_set
+  :questions: ps_1_1 100, ps_1_2 100, ps_1_3 150, ps_1_4 150, ps_1_5 100, ps_1_6 100, ps_1_7 100, ps_1_8 150, ps_1_9 100, ps_1_10 0, ps_1_11 50
+  :deadline: 2016-09-18 21:01
+  :points: 1000 
 
 .. assignments for reading responses
 .. assignment::
@@ -56,7 +62,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: GeneralIntro
     :assignment_name: Prep 01
-    :deadline: 2016-09-12 21:40
+    :deadline: 2016-09-12 20:40
     :pct_required: 80
     :points: 50
 
@@ -92,7 +98,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: Sequences, Iteration
     :assignment_name: Prep 04
-    :deadline: 2016-09-14 21:40
+    :deadline: 2016-09-14 20:40
     :pct_required: 80
     :points: 50
 
@@ -129,9 +135,8 @@ This Week's Reading Responses
 
 Problem Set
 -----------
-**This problem set is in draft. You may look at it and run code. The problems/instructions may change slightly while this disclaimer remains here.**
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
+**Instructions:** Write the code you want to save in the provided boxes, and click **Save & Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
 
 
 
@@ -188,12 +193,12 @@ Problem Set
     :include: addl_functions
     :language: python
 
-    **3.** Write in a comment what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
+    **3.** Write in a comment next to each line of code, what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
     ~~~~
     # Here's an example.
     xyz = 12 # The variable xyz is being assigned the value 12, which is an integer
 
-    # Now do the same for these!
+    # Now do the same for each of these lines!
     a = 6
 
     b = a
