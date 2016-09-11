@@ -206,6 +206,7 @@ Problem Set
 
     from unittest.gui import TestCaseGui
 
+    class myTests(TestCaseGui):
         def testOne(self):
             self.assertIn('print', self.getEditorText(), "Testing that 'print' is in the code. (Don't worry about Actual and Expected Values.)")
             self.assertIn('type', self.getOutput(), "Testing output. (Don't worry about Actual and Expected Values.)")           
@@ -218,10 +219,6 @@ Problem Set
 
     **4.** There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
-    # Want to make sure there really is a function called square? Uncomment the following line and press run.
-
-    #print type(square)
-     
     xyz = ""
       
     =====
