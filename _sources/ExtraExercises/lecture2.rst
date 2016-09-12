@@ -22,9 +22,9 @@ Lecture 2 Exercises
 
    class myTests(TestCaseGui):
 
-   def testOne(self):
-      self.assertEqual(y, 0, "Testing the value of the variable y.")
-      self.assertEqual(b, 3.0/7, "Testing the value of the variable b.")
+       def testOne(self):
+          self.assertEqual(y, 0, "Testing the value of the variable y.")
+          self.assertEqual(b, 3.0/7, "Testing the value of the variable b.")
 
    myTests().main()
     
@@ -57,32 +57,18 @@ Lecture 2 Exercises
       def testOne(self):
          self.assertEqual(x,5,"Testing value of x.")
          self.assertEqual(apple,"television", "Testing value of apple.")
-         self.assertNotIn("x = 5", self.getEditorText(), "Testing to make sure there is no hard-coding to reassign the variable x. (Don't worry about actual and expected values."))
-
-    myTests().main()
-
-.. activecode:: lec2_4
-
-   Write code to find the number of characters in the string saved in variable ``st``. Assign that value to the variable ``nc``.
-   ~~~~
-   st = "One day you finally knew / what you had to do, and began"
-
-   =====
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(nc,len(st),"Testing value of nc.")
-         self.assertIn("len",self.getEditorText(), "Testing whether you used the right built-in Python function. (Don't worry about actual and expected values.)")
+         self.assertNotIn("x = 5", self.getEditorText(), "Testing to make sure there is no hard-coding to reassign the variable x. (Don't worry about actual and expected values.)")
 
    myTests().main()
 
 
-.. activecode:: lec2_5
+.. activecode:: lec2_4
 
    Write code to draw a triangle with the ``turtle`` module. Try out some fun tricks: make the triangle green? Make the background blue? Make it move faster or slower?
    ~~~~
-   import turtle
+   import turtle             # allows us to use the turtle library
+   wn = turtle.Screen()      # creates a graphics window
+   alex = turtle.Turle()     # creates a turtle object
 
    =====
 
