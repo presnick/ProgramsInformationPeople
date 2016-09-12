@@ -68,7 +68,7 @@ Lecture 2 Exercises
    ~~~~
    import turtle             # allows us to use the turtle library
    wn = turtle.Screen()      # creates a graphics window
-   alex = turtle.Turle()     # creates a turtle object
+   alex = turtle.Turtle()     # creates a turtle object
 
    =====
 
