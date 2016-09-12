@@ -22,16 +22,16 @@ Lecture 2 Exercises
 
    class myTests(TestCaseGui):
 
-   def testOne(self):
-      self.assertEqual(y, 0, "Testing the value of the variable y.")
-      self.assertEqual(b, 3.0/7, "Testing the value of the variable b.")
+       def testOne(self):
+          self.assertEqual(y, 0, "Testing the value of the variable y.")
+          self.assertEqual(b, 3.0/7, "Testing the value of the variable b.")
 
    myTests().main()
-    
+
 
 .. activecode:: lec2_2
 
-   Write code to let the user input their name. Store the string in a variable. Then write code to print out ``Welcome to the world of programming, <USER'S NAME>`` (except instead of "<USER'S NAME>" should be the name the user typed). 
+   Write code to let the user input their name. Store the string in a variable. Then write code to print out ``Welcome to the world of programming, <USER'S NAME>`` (except instead of "<USER'S NAME>" should be the name the user typed).
    ~~~~
    # Write your code here.
 
@@ -49,7 +49,7 @@ Lecture 2 Exercises
 
 
    =====
-   
+
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
@@ -57,6 +57,6 @@ Lecture 2 Exercises
       def testOne(self):
          self.assertEqual(x,5,"Testing value of x.")
          self.assertEqual(apple,"television", "Testing value of apple.")
-         self.assertNotIn("x = 5", self.getEditorText(), "Testing to make sure there is no hard-coding to reassign the variable x. (Don't worry about actual and expected values."))
+         self.assertNotIn("x = 5", self.getEditorText(), "Testing to make sure there is no hard-coding to reassign the variable x. (Don't worry about actual and expected values.)")
 
-    myTests().main()
+   myTests().main()
