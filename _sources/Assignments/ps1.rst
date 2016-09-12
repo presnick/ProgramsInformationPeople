@@ -24,7 +24,7 @@
 .. assignment::
   :name: lec2_attendance
   :assignment_type: lecture_attendance
-  :questions:  
+  :questions: lec2_1 10, lec2_2 10, lec2_3, 20 
   :deadline: 2016-09-12 21:10
   :points: 50
 
