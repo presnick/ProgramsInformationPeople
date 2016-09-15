@@ -94,9 +94,10 @@ Activities through 9/16
 * **Before Wednesday's class, 9/14:**
 
   * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
+  * Read :ref:`Iteration <iteration_chap>`, and try exercises in that chapter. (**Note:** Not included in the lecture prep for points due to our mistake, but it *is* very important that you read and understand it!)
 
 .. usageassignment::
-    :chapters: Sequences, Iteration
+    :chapters: Sequences
     :assignment_name: Prep 04
     :deadline: 2016-09-14 20:40
     :pct_required: 80
@@ -108,7 +109,7 @@ Activities through 9/16
 
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139248>`_ (DYU).
 
-* **By Sunday 9/18 at 11:59 pm:** (We include this in your assignments for next week)
+* **By Sunday 9/18 at 11:59 pm:** (We include this in your assignments for next week, too)
 
   * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
 
