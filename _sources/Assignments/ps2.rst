@@ -60,7 +60,7 @@ You have the following graded activities:
   * **To get credit for lecture attendance for Monday's lecture** (thus making attendance at Monday's lecture optional), complete the :ref:`Lecture 4 Waiver <lecture_4_waiver>` *before* Monday's lecture and pass all of the tests. (We encourage you to try these, regardless!)
 
 .. usageassignment:: 
-  :chapters: Sequences
+  :subchapters: Sequences
   :assignment_name: Prep 04
   :deadline: 2016-09-19 19:40:00
   :pct_required: 80
@@ -107,6 +107,7 @@ Problem Set
 
 .. activecode:: ps_2_1
     :language: python
+    :autograde: unittest
   
     **1.** Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
     ~~~~
@@ -130,6 +131,7 @@ Problem Set
 
 .. activecode:: ps_2_2
     :language: python
+    :autograde: unittest
 
     **2.** How long (how many characters) is the string in the variable ``sent``? Write code to assign the length of that string to a variable called ``len_of_sent``.
 
@@ -176,6 +178,7 @@ Problem Set
 
 .. activecode:: ps_2_3
     :language: python
+    :autograde: unittest
 
     **3.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
 
@@ -281,6 +284,7 @@ Problem Set
 
 .. activecode:: ps_2_5
     :language: python
+    :autograde: unittest
 
     **5.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
     ~~~~
