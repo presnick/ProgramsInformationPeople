@@ -18,10 +18,14 @@
 
 .. assignment::
   :name: lecture4_waiver
+  :deadline: 09-19-2016 18:40:00
+  :questions: l4w_1 10, l4w_2 10, l4w_3 10, l4w_4 10, l4w_5 20, l4w_6 20, l4w_7 20 
   :assignment_type: lecture_waiver
   :points: 100
 
-.. assignments for end of lecture exercise sets
+.. note that the points above are "fake" -- ideally it's a 100% threshold, but we don't have that yet; we shouldn't really show anything <100 points because it's 100 or 0, but treating this as additive so we can have it here. Noted 09-16-16.
+
+.. assignments for end of lecture exercise sets TODO
 
 .. assignments for reading responses
 .. assignment::
@@ -53,7 +57,7 @@ You have the following graded activities:
 
   * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
-  * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
+  * **To get credit for lecture attendance for Monday's lecture** (thus making attendance at Monday's lecture optional), complete the :ref:`Lecture 4 Waiver <lecture_4_waiver>` *before* Monday's lecture and pass all of the tests. (We encourage you to try these, regardless!)
 
 .. usageassignment:: 
   :chapters: Sequences
