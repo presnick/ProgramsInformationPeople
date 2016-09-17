@@ -56,7 +56,7 @@ You have the following graded activities:
   * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
 
 .. usageassignment:: 
-  :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin, 
+  :chapters: Sequences
   :assignment_name: Prep 04
   :deadline: 2016-09-19 19:40:00
   :pct_required: 80
