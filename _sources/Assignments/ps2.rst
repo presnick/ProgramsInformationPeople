@@ -18,7 +18,7 @@
 
 .. assignment::
   :name: lecture4_waiver
-  :deadline: 09-19-2016 18:40:00
+  :deadline: 2016-09-19 18:40:00
   :questions: l4w_1 10, l4w_2 10, l4w_3 10, l4w_4 10, l4w_5 20, l4w_6 20, l4w_7 20 
   :assignment_type: lecture_waiver
   :points: 100
