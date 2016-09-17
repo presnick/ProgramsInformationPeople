@@ -10,6 +10,13 @@
 
 .. assignment for problem set
 
+.. assignment::
+  :name: PS02
+  :assignment_type: problem_set
+  :questions: ps_2_1 100, ps_2_2 200, ps_2_3 300, ps_2_4 200, ps_2_5 200
+  :deadline: 2016-09-25 21:05
+  :points: 1000
+
 .. assignments for lecture waivers
 
 .. this particular (first) lecture waiver assignment will have/actually has questions l4w_1 .. l4w_8, with that naming convention.
