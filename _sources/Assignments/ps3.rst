@@ -129,6 +129,7 @@ Problem Set
 
 .. activecode:: ps_3_1
    :language: python
+   :autograde: unittest
 
    **1.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
    ~~~~
@@ -148,6 +149,7 @@ Problem Set
 
 .. activecode:: ps_3_2
    :language: python
+   :autograde: unittest
 
    **2.** The code provided does not iterate over the words in the English sentence that's stored in the variable ``sent``. Why not? Write a comment in the box below explaining why not. (Hint: Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence?) 
 
@@ -173,6 +175,7 @@ Problem Set
 
 .. activecode:: ps_3_3
    :language: python
+   :autograde: unittest
 
    **3.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
 
@@ -202,6 +205,7 @@ Problem Set
 .. activecode:: ps_3_4
    :language: python
    :available_files: about_programming.txt
+   :autograde: unittest
 
    **4.** Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) 
 
@@ -237,6 +241,7 @@ Problem Set
 .. activecode:: ps_3_5
    :language: python
    :available_files: about_programming.txt
+   :autograde: unittest
 
    **5.** Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
    ~~~~
@@ -257,6 +262,7 @@ Problem Set
 
 .. activecode:: ps_3_6
    :language: python
+   :autograde: unittest
 
    **6.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
@@ -304,6 +310,7 @@ Problem Set
 
 .. activecode:: ps_3_7
    :language: python
+   :autograde: unittest
 
    **7.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
@@ -340,6 +347,7 @@ Problem Set
 
 .. activecode:: ps_3_8
    :language: python
+   :autograde: unittest
 
    **8.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
 
@@ -362,6 +370,7 @@ Problem Set
 
 .. activecode:: ps_3_9
    :language: python
+   :autograde: unittest
 
    **9.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
    ~~~~
@@ -380,25 +389,6 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_3_10
-   :language: python
-   :available_files: about_programming.txt
-
-   **10. Challenge problem (OPTIONAL):** write code to find the actual average (mean) number of words in each line of the file ``about_programming.txt``. Use float to do this. Assign this number to the variable ``avg_words``. 
-   ~~~~
-   # Write your code here.
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-     def testOne(self):
-         self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-         self.assertIn('float', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-
-   myTests().main()
 
 .. external:: ps3_dyu
 
