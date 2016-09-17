@@ -67,7 +67,7 @@ You have the following graded activities:
 
   * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
 
-  * Lecture 5 Waiver TBA
+  * :ref:`Lecture 5 Waiver <lecture_5_waiver>` 
 
 .. usageassignment:: 
   :chapters: Iteration
@@ -77,7 +77,7 @@ You have the following graded activities:
   :points: 50
 
   
-
+  
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
   * Complete each of the problem set problems.
