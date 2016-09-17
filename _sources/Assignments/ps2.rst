@@ -36,12 +36,13 @@ You have the following graded activities:
 
   * Read :ref:`Conditionals <conditionals_chap>`
   * Read :ref:`File Input/Output <files_chap>`
-  * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
-  * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
+  * Read :ref:`Dictionaries<dictionaries_chap>`
+  * Read about :ref:`Understanding Code <understand_code_chap>`
+  * Try the exercises included within each chapter section below for lecture prep. (The exercises listed under **Exercises** and **Extra Exercises** are optional practice!)
 
 .. usageassignment::
     :chapters: Selection, Files, Dictionaries
-    :subchapters: BuildingAProgram/UnderstandingCode
+    :subchapters: Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles, Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying, BuildingAProgram/UnderstandingCode
     :assignment_name: Prep 04
     :deadline: 2016-09-19 21:40:00
     :pct_required: 80
@@ -51,14 +52,16 @@ You have the following graded activities:
 * **Before Wednesday's class 9/21:**
 
   * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
+  * Read another part of :ref:`Building A Program<build_program_chap>`
 
 .. usageassignment::
-    :chapters: DictionaryAccumulation
-    :subchapters: BuildingAProgram/TheStrategy
+
+    :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
     :assignment_name: Prep 05
     :deadline: 2016-09-21 21:40:00
     :pct_required: 80
     :points: 50
+    :no_exercises:
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
@@ -79,7 +82,6 @@ This Week's Reading Responses
 
 Problem Set
 -----------
-**This problem set is in draft. You may look at it and run code. The problems/instructions may change slightly while this disclaimer remains here.**
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save & run** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
