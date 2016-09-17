@@ -149,19 +149,14 @@ Problem Set
 .. activecode:: ps_3_2
    :language: python
 
-   **2.** See the comments for directions.
+   **2.** The code provided does not iterate over the words in the English sentence that's stored in the variable ``sent``. Why not? Write a comment in the box below explaining why not. (Hint: Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence?) 
+
+   Then, write code that assigns a variable word_list to hold a LIST of all the WORDS in the string sent. (It's fine if words include punctuation.)
    ~~~~
    sent = "The magical mystery tour is waiting to take you away."
 
-   # The following code does not iterate over the words in the English sentence we can read that's stored in the variable sent:
    for x in sent:
-   print x
-   # Why not? Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence? Write a comment explaining:
-
-
-   # Write code that assigns a variable word_list to hold a LIST of all the
-   # WORDS in the string sent. It's fine if words include punctuation.
-
+      print x
 
    =====
 
@@ -169,11 +164,12 @@ Problem Set
 
    class myTests(TestCaseGui):
 
-   def testOne(self):
-      print "No tests for the comment -- we have to read those!\n"
-      self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
+      def testOne(self):
+         print "No tests for the comment -- we have to read those!\n"
+         self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
 
    myTests().main()
+
 
 .. activecode:: ps_3_3
    :language: python
@@ -229,12 +225,12 @@ Problem Set
 
    class myTests(TestCaseGui):
 
-   def test_output(self):
-      self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-   def test_outputB(self):
-      self.assertIn("Computer programming (often shortened to programming) is a process that leads from an", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-   def test_outputC(self):
-      self.assertIn("original formulation of a computing problem to executable programs. It involves", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+      def test_output(self):
+         self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+      def test_outputB(self):
+         self.assertIn("Computer programming (often shortened to programming) is a process that leads from an", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+      def test_outputC(self):
+         self.assertIn("original formulation of a computing problem to executable programs. It involves", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
    myTests().main()
 
