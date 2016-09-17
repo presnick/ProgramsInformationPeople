@@ -193,7 +193,7 @@ Problem Set
    :language: python
 
 
-   **7.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
+   **3.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
    The output you get should be:
 
@@ -251,7 +251,7 @@ Problem Set
 .. activecode:: ps_2_5
    :language: python
 
-   **9.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+   **5.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
    ~~~~
    diction = {"python":"you are awesome","autumn":100}
 
@@ -271,7 +271,7 @@ Problem Set
 .. activecode:: ps_2_6
    :language: python
 
-   **2.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
+   **6.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
 
    ::
 
