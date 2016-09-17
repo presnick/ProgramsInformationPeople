@@ -26,7 +26,7 @@
   :name: lecture5_waiver
   :assignment_type: lecture_waiver
   :questions: l5w_1 25, l5w_2 25, l5w_3 50
-  :deadline:
+  :deadline: 2016-09-21 18:40:00
   :points: 100
 
 .. assignments for end of lecture exercise sets
