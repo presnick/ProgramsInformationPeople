@@ -10,8 +10,8 @@
 The Accumulator Pattern with Strings
 ------------------------------------
 
-We can also accumulate strings rather than accumulating numbers. The following "stuttering" program 
-isn't very useful, but we will see more useful things later that accumulate strings.
+We can also accumulate strings rather than accumulating numbers. The following program 
+isn't particularly useful for data processing, but we will see more useful things later that accumulate strings.
 
 .. activecode:: ch08_acc1
     
