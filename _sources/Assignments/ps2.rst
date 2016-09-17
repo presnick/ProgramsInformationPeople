@@ -10,7 +10,7 @@
 
 .. assignment for problem set
 
-.. assignments for lecture waivers
+.. assignments for lecture waivers 
 
 .. this particular (first) lecture waiver assignment will have/actually has questions l4w_1 .. l4w_8, with that naming convention.
 .. but, it requires the threshold argument: 100% threshold for lecture waivers, small threshold for lecture attendance
@@ -19,6 +19,14 @@
 .. assignment::
   :name: lecture4_waiver
   :assignment_type: lecture_waiver
+  :points: 100
+
+
+.. assignment::
+  :name: lecture5_waiver
+  :assignment_type: lecture_waiver
+  :questions: l5w_1 25, l5w_2 25, l5w_3 50
+  :deadline:
   :points: 100
 
 .. assignments for end of lecture exercise sets
@@ -77,7 +85,7 @@ You have the following graded activities:
   :points: 50
 
   
-  
+
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
   * Complete each of the problem set problems.
