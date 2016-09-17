@@ -25,10 +25,14 @@
 
 .. assignment::
   :name: lecture4_waiver
+  :deadline: 2016-09-19 18:40:00
+  :questions: l4w_1 10, l4w_2 10, l4w_3 10, l4w_4 10, l4w_5 20, l4w_6 20, l4w_7 20 
   :assignment_type: lecture_waiver
   :points: 100
 
-.. assignments for end of lecture exercise sets
+.. note that the points above are "fake" -- ideally it's a 100% threshold, but we don't have that yet; we shouldn't really show anything <100 points because it's 100 or 0, but treating this as additive so we can have it here. Noted 09-16-16.
+
+.. assignments for end of lecture exercise sets TODO
 
 .. assignments for reading responses
 .. assignment::
@@ -60,7 +64,7 @@ You have the following graded activities:
 
   * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. (You should try all the exercises **in the Sequences** sections that are listed below**. There are also additional exercises for practice! You may try these any time and we may discuss them in lecture. They may help you understand the material better! You do *not* need to do them for Lecture Prep.)
 
-  * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
+  * **To get credit for lecture attendance for Monday's lecture** (thus making attendance at Monday's lecture optional), complete the :ref:`Lecture 4 Waiver <lecture_4_waiver>` *before* Monday's lecture and pass all of the tests. (We encourage you to try these, regardless!)
 
 .. usageassignment:: 
   :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin
@@ -69,12 +73,9 @@ You have the following graded activities:
   :pct_required: 80
   :points: 50
 
-
 * **Before Wednesday's class 9/21:**
-
-  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
-
   * Lecture 5 Waiver TBA
+  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
 
 .. usageassignment:: 
   :subchapters: Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings
