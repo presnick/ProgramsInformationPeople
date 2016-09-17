@@ -142,6 +142,7 @@ Problem Set
 
 .. activecode:: ps_1_1
     :language: python
+    :autograde: unittest
 
     **1.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
     ~~~~
@@ -170,6 +171,7 @@ Problem Set
 .. activecode:: ps_1_2
     :include: addl_functions
     :language: python
+    :autograde: unittest
 
     **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
@@ -192,6 +194,7 @@ Problem Set
 .. activecode:: ps_1_3
     :include: addl_functions
     :language: python
+    :autograde: unittest
 
     **3.** Write in a comment next to each line of code, what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
     ~~~~
@@ -218,6 +221,7 @@ Problem Set
 
 .. activecode:: ps_1_4
     :language: python
+    :autograde: unittest
 
     **4.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
     ~~~~
@@ -238,6 +242,7 @@ Problem Set
 .. activecode:: ps_1_5
     :include: addl_functions
     :language: python
+    :autograde: unittest
 
     **5.** There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
 
@@ -277,6 +282,7 @@ Problem Set
 
 .. activecode:: ps_1_6
        :language: python
+       :autograde: unittest
 
        **6.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
 
@@ -355,10 +361,12 @@ Problem Set
 
     ====
 
+    print "==========="
     print "\n\nThere are no tests for this problem"
 
 .. activecode:: ps_1_8
     :language: python
+    :autograde: unittest
 
     **8.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
 
@@ -408,6 +416,7 @@ Problem Set
 
 .. activecode:: ps_1_9
     :language: python
+    :autograde: unittest
   
     **9.** Write code to count the number of characters in ``original_str`` using the accumulation pattern and assign the answer to a variable ``num_chars_sent``. Do NOT use the ``len`` function to solve the problem (if you use it while you are working on this problem, comment it out afterward!)
     ~~~~
