@@ -51,7 +51,7 @@ You have the following graded activities:
 
 * **Before class Monday 9/19:**
 
-  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. (You should try all the exercises **in the Sequences** sections that are listed below**. There are also additional exercises for practice! You may try these any time and we may discuss them in lecture. They may help you understand the material better! You do *not* need to do them for Lecture Prep.)
+  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
 
   * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
 
