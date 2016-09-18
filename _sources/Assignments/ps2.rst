@@ -9,8 +9,6 @@
     License".
 
 .. assignment for problem set
-
-<<<<<<< HEAD
 .. assignment::
   :name: PS02
   :assignment_type: problem_set
@@ -78,9 +76,10 @@ You have the following graded activities:
   :pct_required: 80
   :points: 50
 
+
 * **Before Wednesday's class 9/21:**
 
-  * :ref:`Lecture 5 Waiver <lecture_5_waiver>`
+  * :ref:`Lecture 5 Waiver<lecture_5_waiver>`
 
   * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter. 
 

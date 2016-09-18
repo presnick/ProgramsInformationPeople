@@ -23,8 +23,8 @@ Note that iteration is *very important* for the remainder of this course, and if
    :language: python
    :autograde: unittest
 
-	Create a list of numbers from 0-74 using a Python function, and assign that to the variable ``nums``. Then use the accumulator pattern to accumulate the total of that list's values, so that the total is assigned to the variable ``total``.
-	~~~~
+  Create a list of numbers from 0-74 using a Python function, and assign that to the variable ``nums``. Then use the accumulator pattern to accumulate the total of that list's values, so that the total is assigned to the variable ``total``.
+  ~~~~
 
    =====
 
@@ -45,8 +45,8 @@ Note that iteration is *very important* for the remainder of this course, and if
    :language: python
    :autograde: unittest
 
-	 Count how many characters there are in ``sent`` and assign that number to the variable ``char_sent``. Do *not* use ``len()``.
-	 ~~~~
+   Count how many characters there are in ``sent`` and assign that number to the variable ``char_sent``. Do *not* use ``len()``.
+   ~~~~
    sent = "Oh the places you'll go."
 
    =====
@@ -58,7 +58,7 @@ Note that iteration is *very important* for the remainder of this course, and if
       def testOne(self):
          self.assertEqual(char_sent, 23, "Testing that char_sent has the correct value." )
       def testTwo(self):
-      	self.assertNotIn("len",self.getEditorText(),"Testing whether the len function is used in your code. If you used it to test your answer, you should get rid of it in order to pass this test! (Don't worry about actual and expected values.)")
+        self.assertNotIn("len",self.getEditorText(),"Testing whether the len function is used in your code. If you used it to test your answer, you should get rid of it in order to pass this test! (Don't worry about actual and expected values.)")
 
    myTests().main()
 
@@ -67,8 +67,8 @@ Note that iteration is *very important* for the remainder of this course, and if
    :language: python
    :autograde: unittest
 
-	 For each string in ``wrds``, add 'ed' to the end of the word (to make the word past tense). Save the past-tense list to a list called ``past_tense``.
-	 ~~~~
+   For each string in ``wrds``, add 'ed' to the end of the word (to make the word past tense). Save the past-tense list to a list called ``past_tense``.
+   ~~~~
    wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
    =====
 
