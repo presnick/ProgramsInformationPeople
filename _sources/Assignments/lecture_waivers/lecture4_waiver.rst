@@ -18,9 +18,10 @@ Lecture 4: Waiver Challenge Exercises
 .. _lecture_4_waiver:
 
 .. activecode:: l4w_1
+   :language: python
    :autograde: unittest
 
-   Get rid of the pet ``"cat"`` from the list ``pets``. Add the pet ``"dog"`` in its place.
+   Get rid of the pet ``"cat"`` from the list ``pets``. Put the string ``"dog"`` in its place.
    ~~~~
    pets = ["goldfish", "cat", "parrot", "hamster"]
 
@@ -58,9 +59,10 @@ Lecture 4: Waiver Challenge Exercises
    myTests().main()  
 
 .. activecode:: l4w_3
+   :language: python
    :autograde: unittest
 
-   Create a list made up of the 5th and 37th element from the list ``words`` and assign it to the variable ``output``. As always, do not hard code!
+   Create a list made up of the 5th and 37th element (as humans count) from the list ``words``, and assign that list to the variable ``output``. As always, do not hard-code! (See the :ref:`Simple Python Data <simple_python_data>` chapter for an explanation of hard-coding.)
    ~~~~
    words = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
    
@@ -163,28 +165,3 @@ Lecture 4: Waiver Challenge Exercises
          self.assertEqual(output, ['', 'eter ', 'i', 'er ', 'icked a ', 'eck of ', 'ickled ', 'e', '', 'ers.'], "Testing that output value is assigned to correct value.")
 
    myTests().main()
-
-
-.. activecode:: l4w_8
-   :tags: Sequences/StringMethods.rst, Sequences/Length.rst, Sequences/SplitandJoin.rst
-
-   Remove the white space from the beginning and the end of the string bound to the variable ``full_sent`` and assign that to the variable ``sent``. Then, save the number of characters in sent to a variable called ``char_sent``. Finally, assign to the variable ``word_c``, the value of ``sent`` that is split on every occurance of the letter **c**.
-   ~~~~
-   full_sent = "     A broken clock is correct at least twice a day.    "
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(sent, full_sent.strip(), "Testing that sent has been correctly assigned.")
-      
-      def testTwo(self): 
-         self.assertEqual(char_sent, len(sent), "Testing that char_sent has been correctly assigned.")
-      
-      def testThree(self):
-         self.assertEqual(word_c, sent.split('c'), "Testing that word_c has been correctly assigned.")
-
-   myTests().main() 
