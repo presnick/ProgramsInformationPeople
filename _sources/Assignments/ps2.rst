@@ -9,7 +9,6 @@
     License".
 
 .. assignment for problem set
-
 .. assignment::
   :name: PS02
   :assignment_type: problem_set
@@ -19,10 +18,6 @@
 
 .. assignments for lecture waivers
 
-.. this particular (first) lecture waiver assignment will have/actually has questions l4w_1 .. l4w_8, with that naming convention.
-.. but, it requires the threshold argument: 100% threshold for lecture waivers, small threshold for lecture attendance
-.. for that reason the remainder will be filled in week of 9/5/16 for F16SI106
-
 .. assignment::
   :name: lecture4_waiver
   :deadline: 2016-09-19 18:40:00
@@ -30,7 +25,15 @@
   :assignment_type: lecture_waiver
   :points: 100
 
+
 .. note that the points above are "fake" -- ideally it's a 100% threshold, but we don't have that yet; we shouldn't really show anything <100 points because it's 100 or 0, but treating this as additive so we can have it here. Noted 09-16-16.
+
+.. assignment::
+  :name: lecture5_waiver
+  :assignment_type: lecture_waiver
+  :questions: l5w_1 25, l5w_2 25, l5w_3 50
+  :deadline: 2016-09-21 18:40:00
+  :points: 100
 
 .. assignments for end of lecture exercise sets TODO
 
@@ -73,9 +76,12 @@ You have the following graded activities:
   :pct_required: 80
   :points: 50
 
+
 * **Before Wednesday's class 9/21:**
-  * Lecture 5 Waiver TBA
-  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
+
+  * :ref:`Lecture 5 Waiver<lecture_5_waiver>`
+
+  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter. 
 
 .. usageassignment:: 
   :subchapters: Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings
