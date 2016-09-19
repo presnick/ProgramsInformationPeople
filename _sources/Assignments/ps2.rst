@@ -67,7 +67,7 @@ You have the following graded activities:
 
   * Complete each of the problem set problems.
   * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
-  * Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 5:00 PM. 
+  * Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 11:59 PM. 
 
 This Week's Reading Responses
 -----------------------------
