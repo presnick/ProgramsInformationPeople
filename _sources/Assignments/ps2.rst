@@ -20,7 +20,7 @@
 
 .. assignment::
   :name: lecture4_waiver
-  :deadline: 2016-09-19 18:40:00
+  :deadline: 2016-09-19 18:40
   :questions: l4w_1 10, l4w_2 10, l4w_3 10, l4w_4 10, l4w_5 20, l4w_6 20, l4w_7 20 
   :assignment_type: lecture_waiver
   :points: 100
@@ -32,7 +32,7 @@
   :name: lecture5_waiver
   :assignment_type: lecture_waiver
   :questions: l5w_1 25, l5w_2 25, l5w_3 50
-  :deadline: 2016-09-21 18:40:00
+  :deadline: 2016-09-21 18:40
   :points: 100
 
 .. assignments for end of lecture exercise sets TODO
@@ -72,7 +72,7 @@ You have the following graded activities:
 .. usageassignment:: 
   :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin
   :assignment_name: Prep 04
-  :deadline: 2016-09-19 19:40:00
+  :deadline: 2016-09-19 19:40
   :pct_required: 80
   :points: 50
 
@@ -86,7 +86,7 @@ You have the following graded activities:
 .. usageassignment:: 
   :subchapters: Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings
   :assignment_name: Prep 05
-  :deadline: 2016-09-21 19:40:00
+  :deadline: 2016-09-21 19:40
   :pct_required: 80
   :points: 50
 

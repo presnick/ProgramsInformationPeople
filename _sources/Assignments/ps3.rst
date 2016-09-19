@@ -43,13 +43,13 @@ You have the following graded activities:
   * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or the last exercise will be very confusing...)
   * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
 
-  * :ref:`Lecture 6 Waiver <lecture_6_waiver>`
+  * :ref:`Lecture 6 Waiver<lecture_6_waiver>`
 
 .. usageassignment::
    :chapters: Selection, Files
    :subchapters: BuildingAProgram/UnderstandingCode
    :assignment_name: Prep 06
-   :deadline: 2016-09-26 19:40:00
+   :deadline: 2016-09-26 18:40:00
    :pct_required: 80
    :points: 50
 
@@ -62,12 +62,12 @@ You have the following graded activities:
   
   * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
 
-  * :ref:`Lecture 7 Waiver <lecture_7_waiver>`
+  * :ref:`Lecture 7 Waiver<lecture_7_waiver>`
 
 .. usageassignment:: 
    :chapters: Dictionaries
    :assignment_name: Prep 07
-   :deadline: 2016-09-28 19:40:00
+   :deadline: 2016-09-28 18:40
    :pct_required: 80
    :points: 50
 
