@@ -126,6 +126,7 @@ Problem Set
 .. activecode:: ps_2_1
    :language: python
    :available_files: about_programming.txt
+   :hidecode:
 
    **1.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
    ~~~~
@@ -145,6 +146,8 @@ Problem Set
 
 .. activecode:: ps_2_2
    :language: python
+   :autograde: unittest
+   :hidecode:
 
    **2.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
@@ -191,6 +194,8 @@ Problem Set
 
 .. activecode:: ps_2_3
    :language: python
+   :autograde: unittest
+   :hidecode:
 
 
    **3.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
@@ -228,6 +233,8 @@ Problem Set
 
 .. activecode:: ps_2_4
    :language: python
+   :autograde: unittest
+   :hidecode:
 
    **4.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
 
@@ -250,6 +257,8 @@ Problem Set
 
 .. activecode:: ps_2_5
    :language: python
+   :autograde: unittest
+   :hidecode:
 
    **5.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
    ~~~~
@@ -270,6 +279,8 @@ Problem Set
 
 .. activecode:: ps_2_6
    :language: python
+   :autograde: unittest
+   :hidecode:
 
    **6.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
 
@@ -304,6 +315,8 @@ Problem Set
 
 .. activecode:: ps_2_7
    :language: python
+   :autograde: unittest
+   :hidecode:
 
    **7.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
    ~~~~
@@ -329,6 +342,8 @@ Problem Set
 
 .. activecode:: ps_2_8
    :language: python
+   :autograde: unittest
+   :hidecode:
 
 
    **8.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
