@@ -31,10 +31,10 @@
 .. assignment::
   :name: lec3_attendance
   :assignment_type: lecture_attendance
-  :questions: 
+  :questions: lec3_1 25, lec3_2 25
   :deadline: 2016-09-14 21:10
   :points: 50
-
+.. this needs to be edited for thresholding this is temporary, TODO !!!
 
 .. assignments for reading responses
 .. assignment::
