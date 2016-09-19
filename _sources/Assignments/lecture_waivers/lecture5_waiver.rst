@@ -23,8 +23,8 @@ Note that iteration is *very important* for the remainder of this course, and if
    :language: python
    :autograde: unittest
 
-  Create a list of numbers from 0-74 using a Python function, and assign that to the variable ``nums``. Then use the accumulator pattern to accumulate the total of that list's values, so that the total is assigned to the variable ``total``.
-  ~~~~
+   Create a list of numbers from 0-74 using a Python function, and assign that to the variable ``nums``. Then use the accumulator pattern to accumulate the total of that list's values, so that the total is assigned to the variable ``total``.
+   ~~~~
 
    =====
 
