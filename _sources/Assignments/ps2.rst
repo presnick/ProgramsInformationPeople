@@ -13,7 +13,7 @@
   :name: PS02
   :assignment_type: problem_set
   :questions: ps_2_1 100, ps_2_2 200, ps_2_3 300, ps_2_4 200, ps_2_5 200
-  :deadline: 2016-09-25 21:05
+  :deadline: 2016-09-26 4:00:00
   :points: 1000
 
 .. assignments for lecture waivers
@@ -97,7 +97,7 @@ You have the following graded activities:
   * Complete each of the problem set problems.
   * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
 
-* Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 5:00 PM. 
+* Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 11:59 PM. 
 
 This Week's Reading Responses
 -----------------------------
