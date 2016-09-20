@@ -19,28 +19,6 @@ Note that iteration is *very important* for the remainder of this course, and if
 
 .. _lecture_5_waiver:
 
-.. activecode:: l5w_1
-   :language: python
-   :autograde: unittest
-
-  Create a list of numbers from 0-74 using a Python function, and assign that to the variable ``nums``. Then use the accumulator pattern to accumulate the total of that list's values, so that the total is assigned to the variable ``total``.
-  ~~~~
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(nums, range(75), "Testing that nums has been created correctly.")
-
-      def testTwo(self):
-         self.assertEqual(total, 2775, "Testing that total has the correct value." )
-
-   myTests().main()
-
-
 .. activecode:: l5w_2
    :language: python
    :autograde: unittest
@@ -56,7 +34,7 @@ Note that iteration is *very important* for the remainder of this course, and if
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(char_sent, 23, "Testing that char_sent has the correct value." )
+         self.assertEqual(char_sent,len(sent), "Testing that char_sent has the correct value." )
       def testTwo(self):
         self.assertNotIn("len",self.getEditorText(),"Testing whether the len function is used in your code. If you used it to test your answer, you should get rid of it in order to pass this test! (Don't worry about actual and expected values.)")
 
