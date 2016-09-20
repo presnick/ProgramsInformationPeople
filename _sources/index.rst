@@ -330,6 +330,7 @@ Python Modules
    Installation/pip.rst
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
+   PythonModules/ExtraExercises.rst
 
 
 Requests
