@@ -548,6 +548,19 @@ Unix
    Unix/lessCommand.rst
 
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   navhelp.rst
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   ExtraExercises/session4_6925.rst
+
+
 Indices and tables
 ::::::::::::::::::
 
