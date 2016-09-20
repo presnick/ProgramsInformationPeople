@@ -49,7 +49,7 @@ You have the following graded activities:
    :chapters: Selection, Files
    :subchapters: BuildingAProgram/UnderstandingCode
    :assignment_name: Prep 06
-   :deadline: 2016-09-26 18:40:00
+   :deadline: 2016-09-26 18:40
    :pct_required: 80
    :points: 50
 
