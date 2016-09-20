@@ -37,7 +37,7 @@ Previously, we saw that a response object has an attribute (instance variable) *
                
 Here's the output that is produced when I run that code.
 
-.. sourcecode:: python
+::
 
    $ python fetching.py
    ********
