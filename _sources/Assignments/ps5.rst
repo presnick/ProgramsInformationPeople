@@ -76,7 +76,8 @@ You have the following graded activities:
       * Go through all the problem sets, looking at your answers and fixing them if they weren't correct.
       * Then make another pass through the problem sets. This time, don't look at your past answer or any solution set. Write new answers from scratch. See how quickly you can solve them. Make a note of any problems that take you a long time to solve.
       * Repeat as necessary. On later iterations of this process, only redo the problems that you did not solve immediately on the previous iteration.
-  * There are practice problems in all Extra Exercises sections, and some additional ones at the bottom of this page. Some have solutions. They are *not* required, but may be helpful if you are looking for more study material. Try writing your answers out on paper and checking them here!
+
+   * There are practice problems in all chapters under ExtraExercises, and some additional ones at the bottom of this page. Some have solutions. They are *not* required, but may be helpful if you are looking for more study material. Try writing your answers out on paper and checking them here!
 
 .. _reading_response_6:
 

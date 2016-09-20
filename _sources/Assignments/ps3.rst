@@ -217,7 +217,7 @@ Problem Set
 
       original formulation of a computing problem to executable programs. It involves
 
-   **Hint:** Use one of the file methods you've learned to make this easy! Do not print out a list with ``[``s.
+   **Hint:** Use one of the file methods you've learned to make this easy! Do not print out a list by typing square brackets.
    ~~~~
    # Write your code here.
    # Don't worry about extra blank lines between each of the lines when you print them
