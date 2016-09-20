@@ -209,15 +209,15 @@ Problem Set
 
    **4.** Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) 
 
-   **Hint:** Use one of the file methods you've learned to make this easy! Do not print out a list with ``[``s.
-
    The result should look like this:
 
    ::
 
-   Computer programming (often shortened to programming) is a process that leads from an
+      Computer programming (often shortened to programming) is a process that leads from an
 
-   original formulation of a computing problem to executable programs. It involves
+      original formulation of a computing problem to executable programs. It involves
+
+   **Hint:** Use one of the file methods you've learned to make this easy! Do not print out a list with ``[``s.
    ~~~~
    # Write your code here.
    # Don't worry about extra blank lines between each of the lines when you print them

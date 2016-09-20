@@ -38,7 +38,7 @@ You have the following graded activities:
     :chapters: IndefiniteIteration
     :subchapters: Installation/TextEditor
     :assignment_name: Prep 10
-    :deadline: 2016-10-10 19:40:00
+    :deadline: 2016-10-10 19:40
     :pct_required: 80
     :points: 50
   
@@ -57,7 +57,7 @@ You have the following graded activities:
 .. usageassignment::
     :chapters: Unix
     :assignment_name: Prep 11
-    :deadline: 2016-10-12 19:40:00
+    :deadline: 2016-10-12 19:40
     :pct_required: 80
     :points: 50
 
