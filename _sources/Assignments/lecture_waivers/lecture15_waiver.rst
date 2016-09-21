@@ -13,7 +13,7 @@
     :linenothreshold: 500
 
 Lecture 15: Waiver Challenge Exercises
-=====================================
+======================================
 
 .. _lecture_15_waiver:
 

@@ -38,7 +38,7 @@ You have the following graded activities:
     :chapters: DictionaryAccumulation
     :subchapters: BuildingAProgram/TheStrategy
     :assignment_name: Prep 08
-    :deadline: 2016-10-03 19:40:00
+    :deadline: 2016-10-03 19:40
     :pct_required: 80
     :points: 50
 
@@ -52,12 +52,12 @@ You have the following graded activities:
 
   * Read :ref:`Defining Functions<functions_chap>`, and try the following exercises in that chapter
 
-  * :ref:`Lecture 9 Waiver <lecture_9_waiver>`
+  * :ref:`Lecture 9 Waiver<lecture_9_waiver>`
   
 .. usageassignment::
     :chapters: Functions
     :assignment_name: Prep 09
-    :deadline: 2016-10-05 19:40:00
+    :deadline: 2016-10-05 19:40
     :pct_required: 80
     :points: 50
 

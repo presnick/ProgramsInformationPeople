@@ -39,7 +39,7 @@ You have the following graded activities:
 .. usageassignment::
     :chapters: OptionalAndKeywordParameters
     :assignment_name: Prep a11
-    :deadline: 2016-10-24 21:30:00
+    :deadline: 2016-10-24 19:40
     :pct_required: 80
     :points: 50
 
@@ -53,7 +53,7 @@ You have the following graded activities:
 .. usageassignment::
     :chapters: Tuples, NestedData
     :assignment_name: Prep a12
-    :deadline: 2016-10-26 21:30:00
+    :deadline: 2016-10-26 19:40
     :pct_required: 80
     :points: 50
 

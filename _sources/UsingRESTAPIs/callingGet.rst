@@ -17,8 +17,8 @@ The trick in writing your program is to test whether you've set everything up ri
 
 
     import requests
-    dest_url = <some expr>
-    d = <some dictionary>
+    dest_url = #<some expr>
+    d = #<some dictionary>
     resp = requests.get(dest_url, params = d)
 
 Of course, in the code above, you'd need to set dest_url and d appropriately based on your understanding of the particular REST API that you're making a request to. To figure out what dest_url and d should be, you will need to look at the documentation for the REST API, and probably some examples of URL requests that are provided in the documentation.
@@ -32,7 +32,7 @@ The first thing that might go wrong is that you get an error during execution of
 
 The first possibility is that the variable dest_url is either not bound to a string, or is bound to a string that isn't a valid URL. For example, it might be bound to the string ``"http://foo.bar/bat"``. foo.bar is not a valid domain name that can be resolved to an ip address, so there's no server to contact. That will yield an error of type requests.exceptions.ConnectionError. Here's a complete error message:
 
-.. sourcecode:: python
+::
 
     requests.exceptions.ConnectionError: HTTPConnectionPool(host='foo.bar', port=80): Max retries exceeded with url: /bat?key=val (Caused by <class 'socket.gaierror'>: [Errno 11004] getaddrinfo failed)
 

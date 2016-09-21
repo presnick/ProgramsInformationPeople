@@ -9,19 +9,39 @@
     License".
 
 .. assignment for problem set
+.. assignment::
+  :name: PS02
+  :assignment_type: problem_set
+  :questions: ps_2_1 100, ps_2_2 200, ps_2_3 300, ps_2_4 200, ps_2_5 200
+  :deadline: 2016-09-26 4:00:00
+  :points: 1000
 
 .. assignments for lecture waivers
 
-.. this particular (first) lecture waiver assignment will have/actually has questions l4w_1 .. l4w_8, with that naming convention.
-.. but, it requires the threshold argument: 100% threshold for lecture waivers, small threshold for lecture attendance
-.. for that reason the remainder will be filled in week of 9/5/16 for F16SI106
-
 .. assignment::
   :name: lecture4_waiver
+  :deadline: 2016-09-19 18:40
+  :questions: l4w_1 10, l4w_2 10, l4w_3 10, l4w_4 10, l4w_5 20, l4w_6 20, l4w_7 20 
   :assignment_type: lecture_waiver
   :points: 100
 
-.. assignments for end of lecture exercise sets
+
+.. note that the points above are "fake" -- ideally it's a 100% threshold, but we don't have that yet; we shouldn't really show anything <100 points because it's 100 or 0, but treating this as additive so we can have it here. Noted 09-16-16.
+
+.. assignment::
+  :name: lecture5_waiver
+  :assignment_type: lecture_waiver
+  :questions: l5w_1 25, l5w_2 25, l5w_3 50
+  :deadline: 2016-09-21 18:40
+  :points: 100
+
+.. assignments for end of lecture exercise sets TODO
+.. assignment::
+  :name: lecture5_attendance
+  :assignment_type: lecture_attendance
+  :questions: lec5_1 50, lec5_2 50
+  :deadline: 2016-09-22 21:40:00
+  :points: 100
 
 .. assignments for reading responses
 .. assignment::
@@ -51,28 +71,28 @@ You have the following graded activities:
 
 * **Before class Monday 9/19:**
 
-  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
+  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. (You should try all the exercises **in the Sequences** sections that are listed below**. There are also additional exercises for practice! You may try these any time and we may discuss them in lecture. They may help you understand the material better! You do *not* need to do them for Lecture Prep.)
 
-  * :ref:`Lecture 4 Waiver <lecture_4_waiver>`
+  * **To get credit for lecture attendance for Monday's lecture** (thus making attendance at Monday's lecture optional), complete the :ref:`Lecture 4 Waiver <lecture_4_waiver>` *before* Monday's lecture and pass all of the tests. (We encourage you to try these, regardless!)
 
 .. usageassignment:: 
-  :chapters: Sequences
+  :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin
   :assignment_name: Prep 04
-  :deadline: 2016-09-19 19:40:00
+  :deadline: 2016-09-19 19:40
   :pct_required: 80
   :points: 50
 
 
 * **Before Wednesday's class 9/21:**
 
-  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter.
+  * :ref:`Lecture 5 Waiver<lecture_5_waiver>`
 
-  * Lecture 5 Waiver TBA
+  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter. 
 
 .. usageassignment:: 
-  :chapters: Iteration
+  :subchapters: Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings
   :assignment_name: Prep 05
-  :deadline: 2016-09-21 19:40:00
+  :deadline: 2016-09-21 19:40
   :pct_required: 80
   :points: 50
 
@@ -83,7 +103,7 @@ You have the following graded activities:
   * Complete each of the problem set problems.
   * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
 
-* Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 5:00 PM. 
+* Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 11:59 PM. 
 
 This Week's Reading Responses
 -----------------------------
@@ -103,6 +123,8 @@ Problem Set
 
 .. activecode:: ps_2_1
     :language: python
+    :autograde: unittest
+    :hidecode:
   
     **1.** Assign the variable ``fl`` the value of the first element of the string value in ``original_str``. Use string indexing to assign the variable ``last_l`` the value of the last element of the string value in ``original_str``. Write code so that will work no matter how long ``original_str``'s value is.
     ~~~~
@@ -126,6 +148,8 @@ Problem Set
 
 .. activecode:: ps_2_2
     :language: python
+    :autograde: unittest
+    :hidecode:
 
     **2.** How long (how many characters) is the string in the variable ``sent``? Write code to assign the length of that string to a variable called ``len_of_sent``.
 
@@ -172,6 +196,8 @@ Problem Set
 
 .. activecode:: ps_2_3
     :language: python
+    :autograde: unittest
+    :hidecode:
 
     **3.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
 
@@ -223,6 +249,7 @@ Problem Set
 .. activecode:: ps_2_4
     :include: addl_functions_2
     :language: python
+    :hidecode:
 
     **4.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
 
@@ -277,6 +304,8 @@ Problem Set
 
 .. activecode:: ps_2_5
     :language: python
+    :autograde: unittest
+    :hidecode:
 
     **5.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
     ~~~~

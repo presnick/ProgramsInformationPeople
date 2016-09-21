@@ -9,7 +9,13 @@
     License".
 
 
-.. assignment for problem set TODO
+.. assignment for problem set
+.. assignment::
+  :name: PS1
+  :assignment_type: problem_set
+  :questions: ps_1_1 100, ps_1_2 100, ps_1_3 100, ps_1_4 100, ps_1_5 50, ps_1_6 200, ps_1_7 100, ps_1_8 100, ps_1_9 100, ps_1_10 0, ps_1_11 50
+  :deadline: 2016-09-18 21:05
+  :points: 1000
 
 .. assignments for lecture waivers
 .. none for lectures 1 and 2 and 3
@@ -18,17 +24,17 @@
 .. assignment::
   :name: lec2_attendance
   :assignment_type: lecture_attendance
-  :questions:  
+  :questions: lec2_1 10, lec2_2 10, lec2_3 20 
   :deadline: 2016-09-12 21:10
   :points: 50
 
 .. assignment::
   :name: lec3_attendance
   :assignment_type: lecture_attendance
-  :questions: 
+  :questions: lec3_1 25, lec3_2 25
   :deadline: 2016-09-14 21:10
   :points: 50
-
+.. this needs to be edited for thresholding this is temporary, TODO !!!
 
 .. assignments for reading responses
 .. assignment::
@@ -145,6 +151,7 @@ Problem Set
 
 .. activecode:: ps_1_1
     :language: python
+    :autograde: unittest
 
     **1.** The variable ``tpa`` currently has the value ``0``. Assign the variable ``tpa`` the value ``6`` .
     ~~~~
@@ -165,6 +172,7 @@ Problem Set
 
 .. activecode:: ps_1_2
     :language: python
+    :autograde: unittest
 
     **2.** Write code to assign the variable ``yb`` to have the same value that variable ``cw`` has. Do not change the first line of code (``cw = "Hello"``). Also, do not "hard code" the result by setting ``yb = "Hello"``. Instead, write code that would work no matter what the current value of ``cw`` is.
     ~~~~
@@ -186,6 +194,7 @@ Problem Set
 
 .. activecode:: ps_1_3
     :language: python
+    :autograde: unittest
 
     **3.** Write code to print out the type of the variable ``apples_and_oranges``, the type of the variable ``abc``, and the type of the variable ``new_var``. (Use the print command!)
     ~~~~
@@ -200,6 +209,7 @@ Problem Set
 
     from unittest.gui import TestCaseGui
 
+    class myTests(TestCaseGui):
         def testOne(self):
             self.assertIn('print', self.getEditorText(), "Testing that 'print' is in the code. (Don't worry about Actual and Expected Values.)")
             self.assertIn('type', self.getOutput(), "Testing output. (Don't worry about Actual and Expected Values.)")           
@@ -209,13 +219,10 @@ Problem Set
 .. activecode:: ps_1_4
     :include: addl_functions
     :language: python
+    :autograde: unittest
 
     **4.** There is a function we are giving you called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable callex ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
-    # Want to make sure there really is a function called square? Uncomment the following line and press run.
-
-    #print type(square)
-     
     xyz = ""
       
     =====
@@ -235,6 +242,7 @@ Problem Set
 .. activecode:: ps_1_5
     :include: addl_functions
     :language: python
+    :autograde: unittest
 
     **5.** Write code to assign the return value of the function call ``square(3)`` to the variable ``new_number``.
     ~~~~
@@ -287,6 +295,7 @@ Problem Set
 .. activecode:: ps_1_7
     :include: addl_functions
     :language: python
+    :autograde: unittest
 
     **7.** There are a couple more functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
 
@@ -328,6 +337,7 @@ Problem Set
 .. activecode:: ps_1_8
     :include: addl_functions
     :language: python
+    :autograde: unittest
 
     **8.** Now write code that assigns the variable ``newval`` to hold the **return value** of ``greeting("everyone in class")``.
     ~~~~
