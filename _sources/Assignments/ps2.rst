@@ -41,7 +41,6 @@ You have the following graded activities:
   * Try the exercises included within each chapter section below for lecture prep. (The exercises listed under **Exercises** and **Extra Exercises** are optional practice!)
 
 .. usageassignment::
-    :chapters: Selection, Files, Dictionaries
     :subchapters: Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles, Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying, BuildingAProgram/UnderstandingCode
     :assignment_name: Prep 04
     :deadline: 2016-09-19 21:40:00
@@ -55,7 +54,6 @@ You have the following graded activities:
   * Read another part of :ref:`Building A Program<build_program_chap>`
 
 .. usageassignment::
-
     :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
     :assignment_name: Prep 05
     :deadline: 2016-09-21 21:40:00
