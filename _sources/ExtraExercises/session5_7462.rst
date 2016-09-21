@@ -17,7 +17,7 @@ Lecture 5 Exercises
    class myTests(TestCaseGui):
 
       def testTwo(self):
-         self.assertEqual(chars, ['I', ' ', 'l', 'o', 'v', 'e', ' ', 'p', 'y', 't', 'h', 'o', 'n'], "Testing that chars is assigned to correct values.")
+         self.assertEqual(chars, ['I', ' ', 'l', 'o', 'v', 'e', ' ', 'p', 'y', 't', 'h', 'o', 'n'], "Testing that chars has the correct value.")
 
    myTests().main()
 
