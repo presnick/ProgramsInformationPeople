@@ -59,7 +59,6 @@ You have the following graded activities:
     :deadline: 2016-09-21 21:40:00
     :pct_required: 80
     :points: 50
-    :no_exercises:
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
