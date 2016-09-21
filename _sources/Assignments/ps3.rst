@@ -43,13 +43,13 @@ You have the following graded activities:
   * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or the last exercise will be very confusing...)
   * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
 
-  * :ref:`Lecture 6 Waiver <lecture_6_waiver>`
+  * :ref:`Lecture 6 Waiver<lecture_6_waiver>`
 
 .. usageassignment::
    :chapters: Selection, Files
    :subchapters: BuildingAProgram/UnderstandingCode
    :assignment_name: Prep 06
-   :deadline: 2016-09-26 19:40:00
+   :deadline: 2016-09-26 18:40
    :pct_required: 80
    :points: 50
 
@@ -62,12 +62,12 @@ You have the following graded activities:
   
   * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
 
-  * :ref:`Lecture 7 Waiver <lecture_7_waiver>`
+  * :ref:`Lecture 7 Waiver<lecture_7_waiver>`
 
 .. usageassignment:: 
    :chapters: Dictionaries
    :assignment_name: Prep 07
-   :deadline: 2016-09-28 19:40:00
+   :deadline: 2016-09-28 18:40
    :pct_required: 80
    :points: 50
 
@@ -209,15 +209,15 @@ Problem Set
 
    **4.** Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) 
 
-   **Hint:** Use one of the file methods you've learned to make this easy! Do not print out a list with ``[``s.
-
    The result should look like this:
 
    ::
 
-   Computer programming (often shortened to programming) is a process that leads from an
+      Computer programming (often shortened to programming) is a process that leads from an
 
-   original formulation of a computing problem to executable programs. It involves
+      original formulation of a computing problem to executable programs. It involves
+
+   **Hint:** Use one of the file methods you've learned to make this easy! Do not print out a list by typing square brackets.
    ~~~~
    # Write your code here.
    # Don't worry about extra blank lines between each of the lines when you print them

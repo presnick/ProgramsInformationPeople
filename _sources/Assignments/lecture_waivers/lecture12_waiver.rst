@@ -12,10 +12,11 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Lecture 11: Waiver Challenge Exercises
-=====================================
+Lecture 12: Waiver Challenge Exercises
+======================================
 
-.. _lecture_11_waiver:
+.. _lecture_12_waiver:
+.. this needs to be checked to ensure it is correct
 
 .. activecode:: ee_Opt_Params_04
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst

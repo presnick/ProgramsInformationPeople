@@ -13,7 +13,7 @@
     :linenothreshold: 500
 
 Lecture 10: Waiver Challenge Exercises
-=====================================
+======================================
 
 .. _lecture_10_waiver:
 
