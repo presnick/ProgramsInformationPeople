@@ -38,7 +38,7 @@ You have the following graded activities:
   * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 .. usageassignment::
-    :chapters: Functions
+    :subchapters: Functions/FunctionDefinitions,Functions/FunctionInvocation,Functions/FunctionParameters,Functions/Returningavaluefromafunction,Functions/Afunctionthataccumulates,Functions/DecodingaFunction,Functions/MethodInvocations,Functions/Variablesandparametersarelocal,Functions/GlobalVariables,Functions/Functionscancallotherfunctions,Functions/FlowofExecutionSummary,Functions/Printvs.return,Functions/PassingMutableObjects,Functions/SideEffects
     :assignment_name: Prep 06
     :deadline: 2016-09-30 21:40:00
     :pct_required: 80
@@ -54,7 +54,7 @@ You have the following graded activities:
 
 
 .. usageassignment::
-    :chapters: IndefiniteIteration
+    :subchapters: IndefiniteIteration/intro-indefiniteiteration,IndefiniteIteration/thewhilestatement,IndefiniteIteration/listenerloop
     :assignment_name: Prep 07
     :deadline: 2016-09-28 21:40:00
     :pct_required: 80
@@ -65,7 +65,7 @@ You have the following graded activities:
 
   * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas (linked in the problem set).
 
-  * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 5:00 pm.
+  * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 11:59 pm.
 
 This Week's Reading Responses
 -----------------------------
@@ -94,6 +94,7 @@ Problem Set
 
 .. activecode:: ps_3_1
    :language: python
+   :hidecode:
 
    **1.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
@@ -116,6 +117,8 @@ Problem Set
 .. activecode:: ps_3_2
    :available_files: timely_file.txt
    :language: python
+   :autograde: unittest
+   :hidecode:
 
    **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. 
 
@@ -139,6 +142,7 @@ Problem Set
 
 .. activecode:: ps_3_3
    :language: python
+   :hidecode:
 
    **3.** Below is a function definition. **DO NOT** change it! 
 
@@ -171,51 +175,57 @@ Problem Set
    # Write your comments here.
 
 .. activecode:: ps_3_4
-       :language: python
+   :language: python
+   :hidecode:
 
-       **4.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
-       ~~~~
-       def subtract_five(inp):
-           print inp - 5
-           return None
+   **4.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+   ~~~~
+   def subtract_five(inp):
+       print inp - 5
+       return None
 
-       y = subtract_five(9) - 6
+   y = subtract_five(9) - 6
 
-       =====
+   =====
 
-       from unittest.gui import TestCaseGui
+   from unittest.gui import TestCaseGui
 
-       class myTests(TestCaseGui):
+   class myTests(TestCaseGui):
 
-          def testOne(self):
-             self.assertEqual(y, -2, "Testing if y is -2")
+      def testOne(self):
+         self.assertEqual(y, -2, "Testing if y is -2")
 
-       myTests().main()
+   myTests().main()
+
 
 .. activecode:: ps_3_5
-       :language: python
+   :language: python
+   :hidecode:
+   :autograde: unittest
 
-       **5.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
-       ~~~~ 
-       # We've started you off with the first line...
-       def change_amounts(num_here):
-           pass # delete this line and put in your own code for the body of the function.
+   **5.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+   ~~~~ 
+   # We've started you off with the first line...
+   def change_amounts(num_here):
+       pass # delete this line and put in your own code for the body of the function.
 
-       =====
+   =====
 
-       from unittest.gui import TestCaseGui
+   from unittest.gui import TestCaseGui
 
-       class myTests(TestCaseGui):
+   class myTests(TestCaseGui):
 
-          def testOne(self):
-             self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
-             self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
+      def testOne(self):
+         self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
+         self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
 
-       myTests().main()
+   myTests().main()
 
 
 .. activecode:: ps_3_6
    :language: python
+   :autograde: unittest
+   :hidecode:
 
    **6.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise.
 
@@ -248,6 +258,7 @@ Problem Set
 
 .. activecode:: ps_3_7
    :language: python
+   :hidecode:
 
    **7.** Write code that repeatedly asks the user to input numbers. Keep going until the sum of the numbers is 21 or more. Print out the total.
    ~~~~
