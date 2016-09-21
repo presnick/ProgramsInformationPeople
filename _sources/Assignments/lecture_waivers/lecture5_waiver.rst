@@ -56,7 +56,7 @@ Note that iteration is *very important* for the remainder of this course, and if
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(char_sent, 23, "Testing that char_sent has the correct value." )
+         self.assertEqual(char_sent,len(sent), "Testing that char_sent has the correct value." )
       def testTwo(self):
         self.assertNotIn("len",self.getEditorText(),"Testing whether the len function is used in your code. If you used it to test your answer, you should get rid of it in order to pass this test! (Don't worry about actual and expected values.)")
 
