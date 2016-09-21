@@ -36,6 +36,12 @@
   :points: 100
 
 .. assignments for end of lecture exercise sets TODO
+.. assignment::
+  :name: lecture5_attendance
+  :assignment_type: lecture_attendance
+  :questions: lec5_1 50, lec5_2 50
+  :deadline: 2016-09-22 21:40:00
+  :points: 100
 
 .. assignments for reading responses
 .. assignment::
