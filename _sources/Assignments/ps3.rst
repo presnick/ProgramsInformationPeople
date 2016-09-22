@@ -54,7 +54,7 @@ You have the following graded activities:
 
 
 .. usageassignment::
-    :subchapters: IndefiniteIteration/intro-indefiniteiteration,IndefiniteIteration/thewhilestatement,IndefiniteIteration/listenerloop
+    :subchapters: IndefiniteIteration/intro-indefiniteiteration,IndefiniteIteration/ThewhileStatement,IndefiniteIteration/listenerLoop
     :assignment_name: Prep 07
     :deadline: 2016-09-28 21:40
     :pct_required: 80
