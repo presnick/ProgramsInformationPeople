@@ -158,9 +158,9 @@ Extra Exercises
 
    myTests().main()
 
-3.1 Below, we have provided a list of integers called ``nums``. Use reduce to produce a variable, ``product``, that is all of the integers in ``nums`` multiplied together. 
+3.2 Below, we have provided a list of integers called ``nums``. Use reduce to produce a variable, ``product``, that is all of the integers in ``nums`` multiplied together. 
 
-.. activecode:: ee_listcomp_031
+.. activecode:: ee_listcomp_032
    :tags: AdvancedAccumulation/reduce.rst
 
    nums = [5, 2, 3, 4, 8, 7, 6]
