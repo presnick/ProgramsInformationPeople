@@ -558,7 +558,7 @@ Unix
    :maxdepth: 2
    :hidden:
 
-   ExtraExercises/session4_6925.rst
+   
 
 
 Indices and tables
