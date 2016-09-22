@@ -30,7 +30,7 @@ You have the following graded activities:
 
 * **By Sunday 9/18 at 11:59 pm:** 
     
-  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
+  * Read chapter 2 of The Most Human Human and answer `RR3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
 
 * **Before class Monday 9/19:**
 
