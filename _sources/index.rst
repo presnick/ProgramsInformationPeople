@@ -369,6 +369,7 @@ Exceptions
 
    Exceptions/intro-exceptions.rst
    Exceptions/using-exceptions.rst
+   Exceptions/ExtraExercises.rst
 
 
 String Formatting
