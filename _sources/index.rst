@@ -575,6 +575,7 @@ Unix
    :hidden:
 
    ExtraExercises/session4_6925.rst
+   ExtraExercises/session5_7462.rst
 
 
 Indices and tables
