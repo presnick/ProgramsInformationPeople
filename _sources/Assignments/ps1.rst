@@ -69,7 +69,7 @@ Activities through 9/16
 * **By Sunday 9/11 at 11:59 pm:**
 
   * read the intro and chapter 1 of The Most Human Human book.
-  * Answer `Reading Response 1 <https://umich.instructure.com/courses/108426/assignments/139258>`_ .
+  * Answer `RR 1 <https://umich.instructure.com/courses/108426/assignments/139258>`_ .
 
 
 * **Before Monday's class, 9/12:**
@@ -88,7 +88,7 @@ Activities through 9/16
 * **By Tuesday night 11:59, 9/13:**
 
   * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/courses/105657/files?preview=2142149>`_, by Richard Searle. (It's in the Canvas Files folder, if that link doesn't work.)
-  * Answer `Reading Response 2 <https://umich.instructure.com/courses/108426/assignments/139263>`_ .
+  * Answer `RR 2 <https://umich.instructure.com/courses/108426/assignments/139263>`_ .
 
 
 * **Before Wednesday's class, 9/14:**

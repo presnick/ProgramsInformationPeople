@@ -40,7 +40,7 @@ You have the following graded activities:
 .. usageassignment::
     :subchapters: Functions/FunctionDefinitions,Functions/FunctionInvocation,Functions/FunctionParameters,Functions/Returningavaluefromafunction,Functions/Afunctionthataccumulates,Functions/DecodingaFunction,Functions/MethodInvocations,Functions/Variablesandparametersarelocal,Functions/GlobalVariables,Functions/Functionscancallotherfunctions,Functions/FlowofExecutionSummary,Functions/Printvs.return,Functions/PassingMutableObjects,Functions/SideEffects
     :assignment_name: Prep 06
-    :deadline: 2016-09-30 21:40:00
+    :deadline: 2016-09-30 21:40
     :pct_required: 80
     :points: 50
 
@@ -54,9 +54,9 @@ You have the following graded activities:
 
 
 .. usageassignment::
-    :subchapters: IndefiniteIteration/intro-indefiniteiteration,IndefiniteIteration/thewhilestatement,IndefiniteIteration/listenerloop
+    :subchapters: IndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop
     :assignment_name: Prep 07
-    :deadline: 2016-09-28 21:40:00
+    :deadline: 2016-09-28 21:40
     :pct_required: 80
     :points: 50
 

@@ -30,7 +30,7 @@ You have the following graded activities:
 
 * **By Sunday 9/18 at 11:59 pm:** 
     
-  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
+  * Read chapter 2 of The Most Human Human and answer `RR 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
 
 * **Before class Monday 9/19:**
 
@@ -43,7 +43,7 @@ You have the following graded activities:
 .. usageassignment::
     :subchapters: Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles, Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying, BuildingAProgram/UnderstandingCode
     :assignment_name: Prep 04
-    :deadline: 2016-09-19 21:40:00
+    :deadline: 2016-09-19 21:40
     :pct_required: 80
     :points: 50
 
@@ -56,7 +56,7 @@ You have the following graded activities:
 .. usageassignment::
     :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
     :assignment_name: Prep 05
-    :deadline: 2016-09-21 21:40:00
+    :deadline: 2016-09-21 21:40
     :pct_required: 80
     :points: 50
 

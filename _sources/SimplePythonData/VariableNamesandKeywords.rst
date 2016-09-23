@@ -28,7 +28,7 @@ letter.
 If you give a variable an illegal name, you get a syntax error.  In the example below, each
 of the variable names is illegal.
 
-.. sourcecode:: python
+::
 
     76trombones = "big parade"
     more$ = 1000000
