@@ -30,7 +30,7 @@ You have the following graded activities:
 
 * **By Sunday 9/18 at 11:59 pm:** 
     
-  * Read chapter 2 of The Most Human Human and answer `RR3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
+  * Read chapter 2 of The Most Human Human and answer `RR 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
 
 * **Before class Monday 9/19:**
 
@@ -59,6 +59,7 @@ You have the following graded activities:
     :deadline: 2016-09-21 21:40
     :pct_required: 80
     :points: 50
+    :no_exercises:
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
 
