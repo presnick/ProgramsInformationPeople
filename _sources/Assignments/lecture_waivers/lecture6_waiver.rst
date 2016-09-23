@@ -36,7 +36,7 @@ Lecture 6: Waiver Challenge Exercises
 .. activecode:: ee_ch11_04
    :tags:Selection/Chainedconditionals.rst
 
-   For each grade in list ``grades``, if the grade is greater than 90, add "Whoa, good job!" to list ``notes``. If less than 90 but greater than 80, add "Keep it up!". If less than 80 but greater than 70, add "Great opportunity to figure out confusions!". If less than 70, add "Join us at office hours!"
+   For each grade in list ``grades``, if the grade is greater than 90, add "Whoa, good job!" to list ``notes``. If less than 90 but greater than 80, add "Keep it up!" to the list. If less than 80 but greater than 70, add "Great opportunity to figure out confusions!". If less than 70, add "Join us at office hours! It's great."
    ~~~~  
    grades = [95, 50, 85, 74, 67]
 
@@ -47,7 +47,7 @@ Lecture 6: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testFour(self):
-         self.assertEqual(notes, ['Whoa, good job!', 'Join us at office hours!', 'Keep it up!', 'Great opportunity to figure out confusions!', 'Join us at office hours!'], "Testing that notes holds a list with the correct elements.")
+         self.assertEqual(notes, ['Whoa, good job!', 'Join us at office hours! It's great., 'Keep it up!', 'Great opportunity to figure out confusions!', 'Join us at office hours! It's great.], "Testing that notes holds a list with the correct elements.")
 
    myTests().main()
 
