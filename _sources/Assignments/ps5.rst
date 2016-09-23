@@ -104,6 +104,9 @@ This Week's Reading Responses
 Problem Set
 -----------
 
+**Problem Set 5 is in DRAFT form. You may save answers to the problems and try them out, but until we remove this notification, we cannot guarantee there will not be small changes. It will not change dramatically.**
+
+
 .. datafile:: timely_file.txt
    :hide:
 
