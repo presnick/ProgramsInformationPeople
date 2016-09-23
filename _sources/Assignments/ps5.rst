@@ -9,14 +9,27 @@
     License".
 
 .. assignment for problem set (make sure it has unix ones too)
+.. ps5_unix has external directives for them, 1-8, e.g. problem_set_5_unix_8
+
+
 
 .. assignments for lecture waivers
 
 .. assignments for end of lecture exercise sets
 
 .. assignments for reading responses
+.. assignment::
+  :name: response_6
+  :assignment_type: reading_response
+  :questions: rr_6 100
+  :points: 100
 
 .. assignment for DYU
+.. assignment::
+  :name: dyu5
+  :assignment_type: dyu
+  :questions: ps5_dyu 100
+  :points: 100
 
 .. highlight:: python
     :linenothreshold: 500
@@ -41,7 +54,6 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
   
-
 * **By Tuesday 10/11 11:59 pm:**
     * Read *The Most Human Human*, Chapter 10, p.219-237.
     * Answer `Reading Response 6 <https://umich.instructure.com/courses/105657/assignments/131317>`_ on Canvas.
@@ -100,7 +112,9 @@ Problem Set
    In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
    (Wikipedia)
 
+**IMPORTANT:** The first half of the problem set is to be done on your own computer, with Unix commands. **You can find it `right here<problem_set_5_unix>`. **
 
+The second half of the problem set is below, in Activecode windows, as usual, but we are going to begin to move toward executing Python programs on your own computers after the midterm! If you have *installation* problems, we want to resolve them soon, but first and foremost, you should concentrate on the concepts this week, and on understanding Unix commands.
 
 .. activecode:: ps_5_1
    :language: python
@@ -128,6 +142,7 @@ Problem Set
 .. activecode:: ps_5_2
    :available_files: timely_file.txt
    :language: python
+   :autograde: unittest
 
    **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
 
@@ -151,6 +166,7 @@ Problem Set
 
 .. activecode:: ps_5_3
    :language: python
+   :autograde: unittest
 
    **3.** Below is a function definition. **DO NOT** change it! 
 
@@ -184,6 +200,7 @@ Problem Set
 
 .. activecode:: ps_5_4
    :language: python
+   :autograde: unittest
 
    **4.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns ``False`` otherwise.
 
@@ -218,6 +235,7 @@ Problem Set
 .. activecode:: ps_5_9
    :available_files: timely_file.txt
    :language: python
+   :autograde: unittest
 
    **5.** Define a python function ``grep`` that works just like the unix command ``grep``. Your function should take two inputs, a string and a filename. It should return a list of all the lines in the file that contain the string, and only the lines in the file that contain the string.
 
@@ -268,6 +286,8 @@ Problem Set
 .. external:: ps5_dyu
 
    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131288>`_ assignment on Canvas.
+
+
 
 
 Practice Problems: Earlier Semester Material
