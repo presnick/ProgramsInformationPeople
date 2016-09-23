@@ -46,8 +46,7 @@ You have the following graded activities:
   * :ref:`Lecture 6 Waiver<lecture_6_waiver>`
 
 .. usageassignment::
-   :chapters: Selection, Files
-   :subchapters: BuildingAProgram/UnderstandingCode
+   :subchapters: BuildingAProgram/UnderstandingCode, Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles
    :assignment_name: Prep 06
    :deadline: 2016-09-26 18:40
    :pct_required: 80
@@ -65,7 +64,7 @@ You have the following graded activities:
   * :ref:`Lecture 7 Waiver<lecture_7_waiver>`
 
 .. usageassignment:: 
-   :chapters: Dictionaries
+   :subchapters: Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying
    :assignment_name: Prep 07
    :deadline: 2016-09-28 18:40
    :pct_required: 80
