@@ -17,7 +17,6 @@
   :points: 1000
 
 .. assignments for lecture waivers
-
 .. assignment::
   :name: lecture4_waiver
   :deadline: 2016-09-19 18:40
@@ -35,6 +34,7 @@
   :assignment_type: lecture_waiver
   :questions: l5w_1 25, l5w_2 25, l5w_3 50
   :deadline: 2016-09-21 18:40
+  :points: 100
   :autograde: unittest
   :threshold: 100
 
@@ -43,7 +43,7 @@
   :name: lecture5_attendance
   :assignment_type: lecture_attendance
   :questions: lec5_1 50, lec5_2 50
-  :deadline: 2016-09-22 21:40:00
+  :deadline: 2016-09-22 21:40
   :points: 100
   :autograde: visited
   :threshold: 1
