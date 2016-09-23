@@ -20,6 +20,7 @@ Lecture 8: Waiver Challenge Exercises
 
 .. activecode:: ee_ch13_051
    :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
+   :autograde: unittest
 
    Create a dictionary that contains all the letters in ``quote`` and the number of times they occur. Then, find the letter in the string ``quote`` that occurs the LEAST often. Save this letter to the variable name ``unpop``. 
    ~~~~
@@ -38,6 +39,7 @@ Lecture 8: Waiver Challenge Exercises
 
 .. activecode:: ee_ch13_06
    :tags: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary.rst
+   :autograde: unittest
 
    Given the string ``str1``, make a dictionary assigned to the variable ``char_dict`` with each letter in ``str1`` as a key and the letter's frequency as its value. Make sure that capitalization does not matter, i.e. "G" and "g" should count as the same letter.
    ~~~~
@@ -62,6 +64,7 @@ Lecture 8: Waiver Challenge Exercises
 
 .. activecode:: ee_ch13_041
    :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
+   :autograde: unittest
 
    Provided is a string saved to the variable ``str1``. Using string methods and dictionary accumulation, find the word that occurs most often. Save the word to the variable name ``most_pop_word``. 
    ~~~~
@@ -81,6 +84,7 @@ Lecture 8: Waiver Challenge Exercises
 
 .. activecode:: ee_ch13_012
    :tags: DictionaryAccumulation/AccumulatingResultsFromaDictionary.rst
+   :autograde: unittest
 
    ``schedule`` is a dictionary where a class name is a key and its value is how many credits it was worth. Go through and accumulate the total number of credits that have been recorded so far in *SI classes* only, and assign that to the variable ``si_credits``, using dictionary mechanics and the accumulation pattern. Do not hard-code!
    ~~~~

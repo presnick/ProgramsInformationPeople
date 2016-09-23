@@ -30,13 +30,12 @@ You have the following graded activities:
     
   * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
   * *If you use a Windows computer,* read and do the installation in the (:ref:`instructions for installing git bash <install_git_bash>`). 
-  * Read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python. Try to do the exercises and installations. You will address any installation problems you have (hopefully none!) in section this week. 
+  * Read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python. Try to do the exercises and installations. You will address any installation problems you have (hopefully none! Fingers crossed) in section this week. 
 
   * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
 
 .. usageassignment::
-    :chapters: IndefiniteIteration
-    :subchapters: Installation/TextEditor
+    :subchapters: ndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop, Installation/TextEditor
     :assignment_name: Prep 10
     :deadline: 2016-10-10 19:40
     :pct_required: 80
@@ -55,7 +54,7 @@ You have the following graded activities:
   * :ref:`Lecture 11 Waiver <lecture_11_waiver>`
 
 .. usageassignment::
-    :chapters: Unix
+    :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand.rst
     :assignment_name: Prep 11
     :deadline: 2016-10-12 19:40
     :pct_required: 80

@@ -12,8 +12,8 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Problem Set 5: Unix Exercises
-=============================
+Problem Set 5: Unix Exercises (Problem Set Part 1)
+==================================================
 
 .. _problem_set_5_unix:
 
@@ -25,10 +25,9 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
 ----------
 
-.. question:: problem_set_5_unix_1
-    :number: 1
+.. external:: problem_set_5_unix_1
 
-    Open the text editor you installed: Sublime Text. You will be creating and saving 4 different files to your ``Desktop``. 
+    1. Open the text editor you installed: Sublime Text. You will be creating and saving 4 different files to your ``Desktop``. 
 
     * **In the first file,** put the following:
 
@@ -75,41 +74,41 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
     No need to take a screenshot of the file saving since you need them for the rest of the exercises, but if it's not working or is confusing, let staff know right away so we can help.
 
-.. question:: problem_set_5_unix_2
+.. external:: problem_set_5_unix_2
 
-    Open your Command Prompt program -- Terminal or Git Bash. ``cd`` to your ``Desktop``, as you saw in the chapter. Then type ``ls``. You should see a list of all file names on your Desktop, including the files you just saved in step 1. If you have any directories saved in your Desktop, you'll also see those names, of course. Take a screenshot that shows this worked for you.
+    2. Open your Command Prompt program -- Terminal or Git Bash. ``cd`` to your ``Desktop``, as you saw in the chapter. Then type ``ls``. You should see a list of all file names on your Desktop, including the files you just saved in step 1. If you have any directories saved in your Desktop, you'll also see those names, of course. Take a screenshot that shows this worked for you.
 
-.. question:: problem_set_5_unix_3
+.. external:: problem_set_5_unix_3
 
-    You now want to make a new directory called ``new_class_programs`` in your ``Desktop``, and copy ``prog1.py`` and ``prog2.py`` into it. (Note that files will NOT disappear from your desktop when you've completed this step. There should be a copy of each file in both places.) 
+    3. You now want to make a new directory called ``new_class_programs`` in your ``Desktop``, and copy ``prog1.py`` and ``prog2.py`` into it. (Note that files will NOT disappear from your desktop when you've completed this step. There should be a copy of each file in both places.) 
 
     Use Unix commands to do this, and take a screenshot of the commands you use + evidence they worked. (Hint: using commands like ``cd`` and ``ls`` and ``pwd`` can help you check what you've done when you're creating directories and copying files around!) 
 
     There is more than one perfectly reasonable way to complete this exercise, but all ways use a similar set of Unix commands.
 
-.. question:: problem_set_5_unix_4
+.. external:: problem_set_5_unix_4
     
-    Now, you want to create a new directory *inside* the ``new_class_programs`` directory, called ``text_files``, and copy both ``unix_test_text.txt`` and ``another_text.txt`` into *that* folder. Use Unix commands to do this. 
+    4. Now, you want to create a new directory *inside* the ``new_class_programs`` directory, called ``text_files``, and copy both ``unix_test_text.txt`` and ``another_text.txt`` into *that* folder. Use Unix commands to do this. 
 
     When you've completed that, change directories to be inside that folder in your command prompt, and use the ``pwd`` command to show the full path of your location. (It should look *something like* this: ``/Users/Jackie/Desktop/new_class_programs/text_files``)
 
     Take a screenshot showing that these things worked for you. Your screenshot should show the command you typed + evidence it worked.
 
-.. question:: problem_set_5_unix_5
+.. external:: problem_set_5_unix_5
 
-    You want to see what content is inside each of your files. Use a unix command to view the content of ``prog2.py`` before you open it. Take a screenshot to show that this worked.
+    5. You want to see what content is inside each of your files. Use a unix command to view the content of ``prog2.py`` before you open it. Take a screenshot to show that this worked.
 
-.. question:: problem_set_5_unix_6
+.. external:: problem_set_5_unix_6
 
-    You want to concatenate the 2 text files inside the ``text_files`` folder together, and save the result in a file called ``big_story.txt``, which should also be inside that directory. Use unix commands to do this. (Hint: You'll probably need more than 1 typed in the same line.)
+    6. You want to concatenate the 2 text files inside the ``text_files`` folder together, and save the result in a file called ``big_story.txt``, which should also be inside that directory. Use unix commands to do this. (Hint: You'll probably need more than 1 typed in the same line.)
 
-.. question:: problem_set_5_unix_7
+.. external:: problem_set_5_unix_7
 
-    You now want to see a list of all the files and/or directories inside your ``new_class_programs`` folder whose names include ``text``. Use Unix commands to do this. (Hint: You'll need pipe (``|``) and ``grep``, and ``ls``.)
+    7. You now want to see a list of all the files and/or directories inside your ``new_class_programs`` folder whose names include ``text``. Use Unix commands to do this. (Hint: You'll need pipe (``|``) and ``grep``, and ``ls``.)
 
-.. question:: problem_set_5_unix_8
+.. external:: problem_set_5_unix_8
 
-    Now that you have a bunch of practice with the unix command prompt, it's time to run Python natively on your computer. You've saved 2 Python files that are in your ``~/Desktop/new_class_programs`` directory. Go there in your command prompt, and run ``prog2.py`` by typing ``python prog2.py`` at the prompt. Take a screenshot of what happens. 
+    8. Now that you have a bunch of practice with the unix command prompt, it's time to run Python natively on your computer. You've saved 2 Python files that are in your ``~/Desktop/new_class_programs`` directory. Go there in your command prompt, and run ``prog2.py`` by typing ``python prog2.py`` at the prompt. Take a screenshot of what happens. 
 
     (Feel free to also play around -- you know a lot of programming now, and you can run it all on your computer, but it will look a little bit different in the command prompt than it did in the textbook.)
 
