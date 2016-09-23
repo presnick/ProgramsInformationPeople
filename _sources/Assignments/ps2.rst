@@ -250,7 +250,6 @@ Problem Set
 
     myTests().main()
 
-
 .. activecode:: ps_2_4
     :include: addl_functions_2
     :language: python
@@ -340,6 +339,7 @@ Problem Set
 
   Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131285>`_ assignment for this week.
 
+The code below is NOT a problem in your problem set. You do not need to edit it or look at it (in fact, you should NOT change it). These are function definitions that we are providing for you to use. You will learn more about this in a couple of weeks!
 
 .. activecode:: addl_functions_2
     :nopre:
