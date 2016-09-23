@@ -34,8 +34,8 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Activities through 10/19
-========================
+Activities through 10/19 (through Fall Break)
+=============================================
 
 You have the following graded activities:
 
@@ -112,7 +112,7 @@ Problem Set
    In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
    (Wikipedia)
 
-**IMPORTANT:** The first half of the problem set is to be done on your own computer, with Unix commands. **You can find it `right here<problem_set_5_unix>`. **
+**IMPORTANT:** The first half of the problem set is to be done on your own computer, with Unix commands. You can find it :ref:`right here <problem_set_5_unix>`.
 
 The second half of the problem set is below, in Activecode windows, as usual, but we are going to begin to move toward executing Python programs on your own computers after the midterm! If you have *installation* problems, we want to resolve them soon, but first and foremost, you should concentrate on the concepts this week, and on understanding Unix commands.
 
@@ -290,8 +290,8 @@ The second half of the problem set is below, in Activecode windows, as usual, bu
 
 
 
-Practice Problems: Earlier Semester Material
---------------------------------------------
+Practice Problems: Earlier Semester Material (OPTIONAL!)
+--------------------------------------------------------
 
 .. activecode:: rv_1_1
    :language: python

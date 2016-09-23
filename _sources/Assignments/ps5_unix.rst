@@ -29,7 +29,7 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
 
     1. Open the text editor you installed: Sublime Text. You will be creating and saving 4 different files to your ``Desktop``. 
 
-    * **In the first file,** put the following:
+    **In the first file,** put the following:
 
     .. sourcecode:: python
 
@@ -38,7 +38,8 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
     Save the file as ``prog1.py``. You've now saved a Python program on your computer!
 
 
-    * **In the second file,** put the following:
+
+    **In the second file,** put the following:
 
     .. sourcecode:: python
 
@@ -50,7 +51,8 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
     Save this file as ``prog2.py``.
     
 
-    * **In the third file,** put the following:
+
+    **In the third file,** put the following:
 
     :: 
 
@@ -62,7 +64,7 @@ For each step of this assignment, please take a screenshot (HOWTO DO THAT HERE) 
     Save this as ``unix_test_text.txt``.
 
 
-    * **In the fourth file,** put the following:
+    **In the fourth file,** put the following:
 
     ::
 
