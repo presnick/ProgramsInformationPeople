@@ -16,6 +16,7 @@
   :questions: ps_1_1 100, ps_1_2 100, ps_1_3 100, ps_1_4 100, ps_1_5 50, ps_1_6 200, ps_1_7 100, ps_1_8 100, ps_1_9 100, ps_1_10 0, ps_1_11 50
   :deadline: 2016-09-18 21:05
   :points: 1000
+  :autograde: unittest
 
 .. assignments for lecture waivers
 .. none for lectures 1 and 2 and 3
@@ -27,6 +28,9 @@
   :questions: lec2_1 10, lec2_2 10, lec2_3 20 
   :deadline: 2016-09-12 21:10
   :points: 50
+  :autograde: visited
+  :threshold: 1
+
 
 .. assignment::
   :name: lec3_attendance
@@ -34,7 +38,8 @@
   :questions: lec3_1 25, lec3_2 25
   :deadline: 2016-09-14 21:10
   :points: 50
-.. this needs to be edited for thresholding this is temporary, TODO !!!
+  :autograde: visited
+  :threshold: 1
 
 .. assignments for reading responses
 .. assignment::
