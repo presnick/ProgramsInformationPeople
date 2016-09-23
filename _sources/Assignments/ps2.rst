@@ -24,6 +24,8 @@
   :questions: l4w_1 10, l4w_2 10, l4w_3 10, l4w_4 10, l4w_5 20, l4w_6 20, l4w_7 20 
   :assignment_type: lecture_waiver
   :points: 100
+  :autograde: unittest
+  :threshold: 100
 
 
 .. note that the points above are "fake" -- ideally it's a 100% threshold, but we don't have that yet; we shouldn't really show anything <100 points because it's 100 or 0, but treating this as additive so we can have it here. Noted 09-16-16.
@@ -33,7 +35,8 @@
   :assignment_type: lecture_waiver
   :questions: l5w_1 25, l5w_2 25, l5w_3 50
   :deadline: 2016-09-21 18:40
-  :points: 100
+  :autograde: unittest
+  :threshold: 100
 
 .. assignments for end of lecture exercise sets TODO
 .. assignment::
@@ -42,6 +45,8 @@
   :questions: lec5_1 50, lec5_2 50
   :deadline: 2016-09-22 21:40:00
   :points: 100
+  :autograde: visited
+  :threshold: 1
 
 .. assignments for reading responses
 .. assignment::
