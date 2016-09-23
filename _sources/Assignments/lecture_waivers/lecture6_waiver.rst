@@ -35,8 +35,9 @@ Lecture 6: Waiver Challenge Exercises
 
 .. activecode:: ee_ch11_04
    :tags:Selection/Chainedconditionals.rst
+   :autograde: unittest
 
-   For each grade in list ``grades``, if the grade is greater than 90, add "Whoa, good job!" to list ``notes``. If less than 90 but greater than 80, add "Keep it up!". If less than 80 but greater than 70, add "Great opportunity to figure out confusions!". If less than 70, add "Join us at office hours!"
+   For each grade in list ``grades``, if the grade is greater than 90, add "Whoa, good job!" to list ``notes``. If less than 90 but greater than 80, add "Keep it up!" to the list. If less than 80 but greater than 70, add "Great opportunity to figure out confusions!". If less than 70, add "Join us at office hours! It's great."
    ~~~~  
    grades = [95, 50, 85, 74, 67]
 
@@ -47,22 +48,23 @@ Lecture 6: Waiver Challenge Exercises
    class myTests(TestCaseGui):
 
       def testFour(self):
-         self.assertEqual(notes, ['Whoa, good job!', 'Join us at office hours!', 'Keep it up!', 'Great opportunity to figure out confusions!', 'Join us at office hours!'], "Testing that notes holds a list with the correct elements.")
+         self.assertEqual(notes, ['Whoa, good job!', "Join us at office hours! It's great.", 'Keep it up!', 'Great opportunity to figure out confusions!', "Join us at office hours! It's great."], "Testing that notes holds a list with the correct elements.")
 
    myTests().main()
 
 
 .. activecode:: ee_ch11_071
    :tags: Selection/Nestedconditionals.rst
+   :autograde: unittest
 
    Say you are shipping a package that normally costs 5 dollars to ship to another place in your city. You want to find out the price for shipping it further away. 
 
    Create conditionals so that if it is shipping domestically (where the variable ``country`` has the value ``domestic``), and 0 states away (``d_dist`` = ``0``), then the variable ``price`` is set to ``5``, if is one state away, then price is set to ``10``, and otherwise, the price is set to ``15``. Otherwise, if it is not domestic, then you need to know if it is within the continent. If it is (``i_dist`` = ``0``), then ``price`` is set to ``40``, otherwise, ``price`` is set to ``60``. 
 
-	The variable ``country`` will have ``"domestic"`` or ``"international"`` as the values, and ``d_dist`` will have an integer value for domestic state distance (0 being within the state, 1, being 1 state away, 3 as 3 states away) and ``i_dist`` will have the value of True or False to distinguish if it is within the same continent (``True``) or not (``False``). 
+   The variable ``country`` will have ``"domestic"`` or ``"international"`` as the values, and ``d_dist`` will have an integer value for domestic state distance (0 being within the state, 1, being 1 state away, 3 as 3 states away) and ``i_dist`` will have the value of True or False to distinguish if it is within the same continent (``True``) or not (``False``). 
 
-	Use nested conditionals to help someone determine the correct shipping price. Uncomment each set of variables one at a time to test.
-	~~~~
+   Use nested conditionals to help someone determine the correct shipping price. Uncomment each set of variables one at a time to test.
+   ~~~~
    #Uncomment the next 3 lines to test domestic, in-state
    #country = "domestic"
    #d_dist = 0
@@ -114,6 +116,7 @@ Lecture 6: Waiver Challenge Exercises
 
 .. activecode:: ee_ch11_081
    :tags: Selection/Nestedconditionals.rst
+   :autograde: unittest
 
    We're trying to find out if you'll get a ticket or not depending on your speed and where you're driving on the highway. 
 
@@ -138,6 +141,7 @@ Lecture 6: Waiver Challenge Exercises
 
 .. activecode:: ee_ch11_091
    :tags: Selection/ConditionalExecutionBinarySelection.rst
+   :autograde: unittest
 
    For each word in ``wrds``, if 'e' is the last letter of the word, then add 'd', otherwise add 'ed' to the end of the word to make it past tense. Save these past tense words to a list called ``old_wrds``.
    ~~~~
@@ -157,6 +161,7 @@ Lecture 6: Waiver Challenge Exercises
 
 .. activecode:: ee_files_03
    :tags: Files/intro-WorkingwithDataFiles.rst
+   :autograde: unittest
 
    Assign the second word of every line of the file called ``files_extra.txt``  to the list saved in the variable ``second``.
    ~~~~

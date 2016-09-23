@@ -13,17 +13,18 @@
   :name: PS02
   :assignment_type: problem_set
   :questions: ps_2_1 100, ps_2_2 200, ps_2_3 300, ps_2_4 200, ps_2_5 200
-  :deadline: 2016-09-26 4:00:00
+  :deadline: 2016-09-26 4:00
   :points: 1000
 
 .. assignments for lecture waivers
-
 .. assignment::
   :name: lecture4_waiver
   :deadline: 2016-09-19 18:40
   :questions: l4w_1 10, l4w_2 10, l4w_3 10, l4w_4 10, l4w_5 20, l4w_6 20, l4w_7 20 
   :assignment_type: lecture_waiver
   :points: 100
+  :autograde: unittest
+  :threshold: 100
 
 
 .. note that the points above are "fake" -- ideally it's a 100% threshold, but we don't have that yet; we shouldn't really show anything <100 points because it's 100 or 0, but treating this as additive so we can have it here. Noted 09-16-16.
@@ -34,14 +35,18 @@
   :questions: l5w_1 25, l5w_2 25, l5w_3 50
   :deadline: 2016-09-21 18:40
   :points: 100
+  :autograde: unittest
+  :threshold: 100
 
 .. assignments for end of lecture exercise sets TODO
 .. assignment::
   :name: lecture5_attendance
   :assignment_type: lecture_attendance
   :questions: lec5_1 50, lec5_2 50
-  :deadline: 2016-09-22 21:40:00
+  :deadline: 2016-09-22 21:40
   :points: 100
+  :autograde: visited
+  :threshold: 1
 
 .. assignments for reading responses
 .. assignment::
@@ -245,7 +250,6 @@ Problem Set
 
     myTests().main()
 
-
 .. activecode:: ps_2_4
     :include: addl_functions_2
     :language: python
@@ -335,6 +339,7 @@ Problem Set
 
   Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131285>`_ assignment for this week.
 
+The code below is NOT a problem in your problem set. You do not need to edit it or look at it (in fact, you should NOT change it). These are function definitions that we are providing for you to use. You will learn more about this in a couple of weeks!
 
 .. activecode:: addl_functions_2
     :nopre:
