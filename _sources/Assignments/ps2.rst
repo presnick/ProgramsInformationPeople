@@ -15,6 +15,7 @@
   :questions: ps_2_1 100, ps_2_2 200, ps_2_3 300, ps_2_4 200, ps_2_5 200
   :deadline: 2016-09-26 4:00:00
   :points: 1000
+  :autograde: unittest
 
 .. assignments for lecture waivers
 
