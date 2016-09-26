@@ -572,10 +572,18 @@ Unix
 
 .. toctree::
    :maxdepth: 2
+
    :hidden:
 
    ExtraExercises/session4_6925.rst
    ExtraExercises/session5_7462.rst
+
+
+   InClass/DictionaryAccum.rst
+   InClass/FunctionsExamples.rst
+   InClass/IndefiniteIteration.rst
+   InClass/OptionalKeywordParams.rst
+   InClass/TuplesAndNestedData.rst
 
 
 Indices and tables
