@@ -572,7 +572,6 @@ Unix
 
 .. toctree::
    :maxdepth: 2
-
    :hidden:
 
    ExtraExercises/session4_6925.rst
