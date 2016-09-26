@@ -577,6 +577,7 @@ Unix
 
    ExtraExercises/session4_6925.rst
    ExtraExercises/session5_7462.rst
+   ExtraExercises/session6_8512.rst
 
 
    InClass/DictionaryAccum.rst
