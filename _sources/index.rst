@@ -549,12 +549,7 @@ In Class Code Samples
 
 .. toctree::
    :maxdepth: 2
-
-   InClass/DictionaryAccum.rst
-   InClass/FunctionsExamples.rst
-   InClass/IndefiniteIteration.rst
-   InClass/OptionalKeywordParams.rst
-   InClass/TuplesAndNestedData.rst
+   
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
