@@ -555,6 +555,11 @@ In Class Code Samples
    InClass/IndefiniteIteration.rst
    InClass/OptionalKeywordParams.rst
    InClass/TuplesAndNestedData.rst
+   InClass/DictionaryAccum.rst
+   InClass/FunctionsExamples.rst
+   InClass/IndefiniteIteration.rst
+   InClass/OptionalKeywordParams.rst
+   InClass/TuplesAndNestedData.rst
 
 Indices and tables
 ::::::::::::::::::
