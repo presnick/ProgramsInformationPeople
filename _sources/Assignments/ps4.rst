@@ -15,8 +15,18 @@
 .. assignments for end of lecture exercise sets
 
 .. assignments for reading responses
+.. assignment::
+  :name: response_5
+  :assignment_type: reading_response
+  :questions: rr_5 100
+  :points: 100
 
 .. assignment for DYU
+.. assignment::
+  :name: dyu4
+  :assignment_type: dyu
+  :questions: ps4_dyu 100
+  :points: 100
 
 .. highlight:: python
     :linenothreshold: 500
@@ -35,15 +45,13 @@ You have the following graded activities:
   * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
 
 .. usageassignment::
-    :chapters: DictionaryAccumulation
-    :subchapters: BuildingAProgram/TheStrategy
+    :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
     :assignment_name: Prep 08
     :deadline: 2016-10-03 19:40
     :pct_required: 80
     :points: 50
 
   
-
 * **By Tuesday 10/4 11:59 pm:**
 
   * Read chapter 5 of The Most Human Human and answer `Reading Response 5 <https://umich.instructure.com/courses/105657/assignments/131316>`_ on Canvas.
@@ -55,7 +63,7 @@ You have the following graded activities:
   * :ref:`Lecture 9 Waiver<lecture_9_waiver>`
   
 .. usageassignment::
-    :chapters: Functions
+    :subchapters: Functions/FunctionDefinitions,Functions/FunctionInvocation,Functions/FunctionParameters,Functions/Returningavaluefromafunction,Functions/Afunctionthataccumulates,Functions/DecodingaFunction,Functions/MethodInvocations,Functions/Variablesandparametersarelocal,Functions/GlobalVariables,Functions/Functionscancallotherfunctions,Functions/FlowofExecutionSummary,Functions/Printvs.return,Functions/PassingMutableObjects,Functions/SideEffects
     :assignment_name: Prep 09
     :deadline: 2016-10-05 19:40
     :pct_required: 80
@@ -117,7 +125,7 @@ Problem Set
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
-**Note:** Passing tests for a problem (``Pass``) does not ensure that the problem is 100% correct -- we can only test some things, to provide feedback as you go.
+**Note:** Remember, passing tests for a problem (``Pass``) does not ensure that the problem is 100% correct -- we can only test some things, to provide feedback as you go. Passing tests is necessary, but not always sufficient (enough to guarantee 100%).
 
 .. activecode:: ps_4_01
        :language: python
@@ -185,10 +193,9 @@ Problem Set
 
 .. activecode:: ps_4_03
        :language: python
+       :available_files: about_programming.txt
 
        **3.** We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
-
-       :available_files: about_programming.txt
        ~~~~
        # Write your code here!
        =====
@@ -305,7 +312,7 @@ Problem Set
 .. activecode:: ps_4_08
        :language: python
 
-       **8.** Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Why does it cause an error? Write a comment explaining why an error occurs. Then change line 5 to print out the result of an expression that invokes the function ``change_amounts`` and evaluates to ``7``.
+       **8.** Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Why does it cause an error? Write a comment explaining why an error occurs. Then change line 5 to print out the result of an expression that invokes the function ``change_amounts`` and evaluates to ``7``. (So line 5 should be a print statement whose result is printing the integer ``7``.)
        ~~~~
        def change_amounts(yp):
            n = yp - 4

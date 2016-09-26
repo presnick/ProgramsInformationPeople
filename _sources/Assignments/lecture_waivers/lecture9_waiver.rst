@@ -72,7 +72,7 @@ Lecture 9: Waiver Challenge Exercises
    :tags: Functions/Returningavaluefromafunction.rst
    :autograde: unittest
 
-   Write a function called ``work`` that takes 3 inputs: an integer, a string, and a list. Your function should check to see if the string input is in the list input, and if it is, then return the string multiplied by the first parameter. If the string is not in the list, then your function ``work`` should return the string plus the phrase ``"is not in the list"``. (For example, if your second parameter was ``"whelp"`` and was not in the list, then the string ``"whelp is not in the list"`` should be returned.)
+   Write a function called ``work`` that takes 3 inputs: an integer, a string, and a list, in that order. Your function should check to see if the string input is in the list input, and if it is, then return the string multiplied by the first parameter. If the string is not in the list, then your function ``work`` should return the string plus the phrase ``"is not in the list"``. (For example, if your second parameter was ``"whelp"`` and was not in the list, then the string ``"whelp is not in the list"`` should be returned.)
    ~~~~ 
 
    =====
@@ -95,7 +95,7 @@ Lecture 9: Waiver Challenge Exercises
    :tags: Functions/Returningavaluefromafunction.rst
    :autograde: unittest
 
-   Write a function named ``add_all`` that takes two parameters. The first parameter should be a list of numbers, and the second should be an integer. The function should return a new list whose elements are all the numbers from the old list with the integer added to them (i.e.: Given the inputs [1, 2, 3], 1, the function should return [2, 3, 4]).
+   Write a function named ``add_all`` that takes two parameters. The first parameter should be a list of numbers, and the second should be an integer. The function should return a new list whose elements are all the numbers from the old list with the integer added to them (For example: Given the inputs [1, 2, 3], 1, the function should return [2, 3, 4]).
    ~~~~
 
    =====
