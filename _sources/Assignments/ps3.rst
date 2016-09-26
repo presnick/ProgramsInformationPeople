@@ -33,7 +33,7 @@
 .. assignment::
   :name: lec6_attendance
   :assignment_type: lecture_attendance
-  :questions: lec3_1 25, lec3_2 25
+  :questions: lec6_1 25, lec6_2 25, lec6_3 50
   :deadline: 2016-09-26 21:10
   :points: 50
   :autograde: visited
