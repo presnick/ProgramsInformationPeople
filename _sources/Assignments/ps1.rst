@@ -13,7 +13,7 @@
 .. assignment::
   :name: PS1
   :assignment_type: problem_set
-  :questions: ps_1_1 100, ps_1_2 100, ps_1_3 150, ps_1_4 150, ps_1_5 100, ps_1_6 100, ps_1_7 100, ps_1_8 150, ps_1_9 100, ps_1_10 0, ps_1_11 50
+  :questions: ps_1_1 100, ps_1_2 50, ps_1_3 150, ps_1_4 100, ps_1_5 100, ps_1_6 100, ps_1_7 100, ps_1_8 150, ps_1_9 100, ps_1_10 0, ps_1_11 50
   :deadline: 2016-09-18 21:01
   :points: 1000
   :autograde: unittest
