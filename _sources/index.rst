@@ -67,6 +67,7 @@ Simple Python Data
    SimplePythonData/PrecedenceofOperators.rst
    SimplePythonData/Reassignment.rst
    SimplePythonData/UpdatingVariables.rst
+   SimplePythonData/HardCoding.rst
    SimplePythonData/Input.rst
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
@@ -575,8 +576,11 @@ Unix
    :maxdepth: 2
    :hidden:
 
-   
-
+   InClass/DictionaryAccum.rst
+   InClass/FunctionsExamples.rst
+   InClass/IndefiniteIteration.rst
+   InClass/OptionalKeywordParams.rst
+   InClass/TuplesAndNestedData.rst
 
 Indices and tables
 ::::::::::::::::::
