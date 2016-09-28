@@ -98,8 +98,8 @@ Activities through 9/16
   * Read :ref:`Iteration <iteration_chap>`, and try exercises in that chapter. (**Note:** Not included in the lecture prep for points due to our mistake, but it *is* very important that you read and understand it!)
 
 .. usageassignment::
-    :chapters: Sequences
-    :assignment_name: Prep 04
+    :subchapters: Sequences/intro-Sequences.rst, Sequences/OperationsonStrings.rst, Sequences/IndexOperatorWorkingwiththeCharactersofaString.rst, Sequences/OperationsandStrings.rst, Sequences/StringMethods.rst, Sequences/Length.rst, Sequences/TheSliceOperator.rst, Sequences/StringsareImmutable.rst, Sequences/Theinandnotinoperators.rst, Sequences/Characterclassification.rst, Sequences/Lists.rst, Sequences/ListValues.rst, Sequences/ListLength.rst, Sequences/AccessingElements.rst, Sequences/ListMembership.rst, Sequences/ConcatenationandRepetition.rst, Sequences/ListSlices.rst, Sequences/ListsareMutable.rst, Sequences/ListDeletion.rst, Sequences/ObjectsandReferences.rst, Sequences/Aliasing.rst, Sequences/CloningLists.rst, Sequences/ListMethods.rst, Sequences/AppendversusConcatenate.rst, Sequences/SplitandJoin.rst
+    :assignment_name: Prep 02
     :deadline: 2016-09-14 20:40
     :pct_required: 80
     :points: 50
