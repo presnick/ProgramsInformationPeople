@@ -74,8 +74,9 @@ You have the following graded activities:
 
 
 * By Friday 10/14 at 6:30 PM:
-   * Complete the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_unix>`. (Half the problem set)
-   * Save answers to the exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>` (the other half of the problem set)
+   * Save answers to the code exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>` (Half of the problem set, which is just like the usual ones, but shorter)
+   * Complete the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_unix>`. (Half the problem set, which you will also find at the botton of this page)
+   
    * Submit your **Demonstrate Understanding** assignment on Canvas
 
 * **By Wednesday 10/19, after fall break:**
@@ -115,9 +116,9 @@ Problem Set
    In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
    (Wikipedia)
 
-**IMPORTANT:** The first half of the problem set is to be done on your own computer, with Unix commands. You can find it :ref:`right here <problem_set_5_unix>`.
+**IMPORTANT:** The first half of the problem set is to be done on your own computer, with Unix commands. You can find it :ref:`right here <problem_set_5_unix>`, below.
 
-The second half of the problem set is below, in Activecode windows, as usual, but we are going to begin to move toward executing Python programs on your own computers after the midterm! If you have *installation* problems, we want to resolve them soon, but first and foremost, you should concentrate on the concepts this week, and on understanding Unix commands.
+We are going to begin to move toward executing Python programs on your own computers after the midterm! If you have *installation* problems, we want to resolve them soon, but first and foremost, you should concentrate on the concepts this week, and on understanding Unix commands.
 
 .. activecode:: ps_5_1
    :language: python
@@ -286,6 +287,119 @@ The second half of the problem set is below, in Activecode windows, as usual, bu
 
    myTests().main()
 
+Problem Set 5: Unix Exercises (Problem Set Part 1)
+==================================================
+
+.. _problem_set_5_unix:
+
+The following is a set of exercises for you to practice the Unix commands you learned about this week. At the end of this part of the problem set, you will run a Python program on your computer for the first time in this course. The other Unix commands you have learned will be very useful when you start programming entirely on your own computer, writing programs in a text editor, rather than programming in the browser, on our textbook, and are closely connected to the processes you use when you run a Python program on your computer. They will help you be able to not just run Python programs, but deal comfortably with your computer's file system while you do that.
+
+**This is part of your Problem Set 5. It is graded. The other part is writing Python code, in Activecode windows, above.**
+
+For each step of this assignment, please take a screenshot that shows us the command(s) you typed and the results. Save the screenshots as ``step1.jpg`` (or ``.png``), ``step2.jpg``, etc. Upload them all to `the PS 5 Unix Exercises <https://umich.instructure.com/courses/105657/assignments/139051>`_ assignment on Canvas.
+
+----------
+
+.. external:: problem_set_5_unix_1
+
+    1. Open the text editor you installed: Sublime Text. You will be creating and saving 4 different files to your ``Desktop``. 
+
+    **In the first file,** put the following:
+
+    .. sourcecode:: python
+
+        print "hello world"
+
+    Save the file as ``prog1.py``. You've now saved a Python program on your computer!
+
+
+
+    **In the second file,** put the following:
+
+    .. sourcecode:: python
+
+        def greeting(x):
+            return "hello " + x
+
+        print greeting("there")
+
+    Save this file as ``prog2.py``.
+    
+
+
+    **In the third file,** put the following:
+
+    :: 
+
+        this is a file
+        it has 
+        multiple
+        lines
+
+    Save this as ``unix_test_text.txt``.
+
+
+    **In the fourth file,** put the following:
+
+    ::
+
+        here is another file
+        what a wonderful
+        story this is
+
+    Save this file as ``another_text.txt``.
+
+    No need to take a screenshot of the file saving since you need them for the rest of the exercises, but if it's not working or is confusing, let staff know right away so we can help.
+
+.. external:: problem_set_5_unix_2
+
+    2. Open your Command Prompt program -- Terminal or Git Bash. ``cd`` to your ``Desktop``, as you saw in the chapter. Then type ``ls``. You should see a list of all file names on your Desktop, including the files you just saved in step 1. If you have any directories saved in your Desktop, you'll also see those names, of course. Take a screenshot that shows this worked for you.
+
+.. external:: problem_set_5_unix_3
+
+    3. You now want to make a new directory called ``new_class_programs`` in your ``Desktop``, and copy ``prog1.py`` and ``prog2.py`` into it. (Note that files will NOT disappear from your desktop when you've completed this step. There should be a copy of each file in both places.) 
+
+    Use Unix commands to do this, and take a screenshot of the commands you use + evidence they worked. (Hint: using commands like ``cd`` and ``ls`` and ``pwd`` can help you check what you've done when you're creating directories and copying files around!) 
+
+    There is more than one perfectly reasonable way to complete this exercise, but all ways use a similar set of Unix commands.
+
+.. external:: problem_set_5_unix_4
+    
+    4. Now, you want to create a new directory *inside* the ``new_class_programs`` directory, called ``text_files``, and copy both ``unix_test_text.txt`` and ``another_text.txt`` into *that* folder. Use Unix commands to do this. 
+
+    When you've completed that, change directories to be inside that folder in your command prompt, and use the ``pwd`` command to show the full path of your location. (It should look *something like* this: ``/Users/Jackie/Desktop/new_class_programs/text_files``)
+
+    Take a screenshot showing that these things worked for you. Your screenshot should show the command you typed + evidence it worked.
+
+.. external:: problem_set_5_unix_5
+
+    5. You want to see what content is inside each of your files. Use a unix command to view the content of ``prog2.py`` before you open it. Take a screenshot to show that this worked.
+
+.. external:: problem_set_5_unix_6
+
+    6. You want to concatenate the 2 text files inside the ``text_files`` folder together, and save the result in a file called ``big_story.txt``, which should also be inside that directory. Use unix commands to do this. (Hint: You'll probably need more than 1 typed in the same line.)
+
+.. external:: problem_set_5_unix_7
+
+    7. You now want to see a list of all the files and/or directories inside your ``new_class_programs`` folder whose names include ``text``. Use Unix commands to do this. (Hint: You'll need pipe (``|``) and ``grep``, and ``ls``.)
+
+.. external:: problem_set_5_unix_8
+
+    8. Now that you have a bunch of practice with the unix command prompt, it's time to run Python natively on your computer. You've saved 2 Python files that are in your ``~/Desktop/new_class_programs`` directory. Go there in your command prompt, and run ``prog2.py`` by typing ``python prog2.py`` at the prompt. Take a screenshot of what happens. 
+
+    (Feel free to also play around -- you know a lot of programming now, and you can run it all on your computer, but it will look a little bit different in the command prompt than it did in the textbook.)
+
+.. note::
+
+    You may discover another way to run your python program directly from Sublime Text. We have found that this will not work for everything you need to do throughout the semester. Therefore, it's very important that you learn how to run your python programs from the unix command prompt, including figuring out how to connect to the right directory with the unix ``cd`` command. You will only get credit for these unix problems if your screenshots show that you ran the programs from the unix command prompt.
+
+
+**This is very important for the rest of the semester. Starting with Problem Set 7, ALL of your problem set will be turned in via Canvas, and you will be writing code in a text editor and running it on your own computer. If you have any trouble running Python natively (on your computer), let an instructor know *right away*.**
+
+
+You're done with the Unix part of the problem set. Again, `here <https://umich.instructure.com/courses/105657/assignments/139051>`_ is the Canvas assignment for submitting your screenshots. 
+
+
 .. external:: ps5_dyu
 
    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131288>`_ assignment on Canvas.
@@ -293,350 +407,3 @@ The second half of the problem set is below, in Activecode windows, as usual, bu
 
 
 
-Practice Problems: Earlier Semester Material (OPTIONAL!)
---------------------------------------------------------
-
-.. activecode:: rv_1_1
-   :language: python
-   
-   How many characters are in string ``s``? Write code to print the answer.
-
-   How many vowels are in string ``s``? Write code to print the answer.
-
-   How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list on a separate line. (Do NOT write 8+ lines of code to do this.)
-
-   The output you should get is:
-
-   ::
-
-      5
-      13
-      11
-      12
-      3
-      12
-      11
-      6
-   
-   ~~~~
-   s = "supercalifragilisticexpialidocious"
-
-   lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
-  
-
-.. activecode:: rv_1_2
-   :language: python
-
-   What is the value if you add 5 to the integer in ``ic``?
-
-   Add 14 to each element of the list ``dcm`` and print out the result from each computation.
-
-   The output you get should be:
-
-   ::
-
-      23
-      18
-      81
-      103
-      98338
-      37
-      48
-      81
-      103
-      48
-      70
-      81
-      104
-      3256
-      9907
-      19  
-
-   ~~~~  
-   ic = 93252759253293024
-
-   dcm = [9, 4, 67, 89, 98324, 23, 34, 67, 89, 34, 56, 67, 90, 3242, 9893, 5]
-   
-
-.. activecode:: rv_1_3
-   :language: python
-
-   What is the last character of the string value in the variable ``pl``? Find it and print it. This should work no matter what string value ``pl`` has.
-
-   What is the last character of each element in the list ``plts``? Print the last character of each element in the list on a separate line. HINT: You should NOT have to count the length of any of these strings manually/by yourself.
-
-   ~~~~
-   pl = "keyboard smashing: sdgahgkslghgisaoghdwkltewighigohdjdslkfjisdoghkshdlfkdjgdshglsdkfdsgkldhfkdlsfhdsklghdskgdlhgsdklghdsgkdslghdskglsdgkhdskfls"
-
-   plts = ["sdsagdsal","sdadfsfsk","dsgsafsal","tomorrow","cooperative","sdgadtx","289,670,452","!)?+)_="]
-       
-
-   # Your output should be:
-   # l
-   # k
-   # l
-   # w
-   # e
-   # x
-   # 2
-   # =
-
-
-.. activecode:: rv_1_4
-
-   bz = "elementary, my dear watson"
-   # Write code to print the fifth character of string bz.
-   # Your output should be:
-   # e
-
-   # Write code to print the seventh character of string bz.
-   # Your output should be:
-   # t
-
-
-.. activecode:: rv_1_5
-   :language: python
-
-   Write code to print out the string "Why hello, Irene" using the variable ``nm``.
-
-   Write code to print "Nice to meet you," in front of each element in list ``hlt`` on a separate line. e.g. ``Nice to meet you, mycroft`` and ``Nice to meet you, Lestrade``
-
-   ~~~~
-   nm = "Irene"
-
-   hlt = ['mycroft','Lestrade','gregson','sherlock','Joan','john','holmes','mrs hudson']
- 
-
-.. activecode:: rv_1_6
-   :language: python
-
-   Write code to print the type of the value in the variable ``z``. Before you do so, think: what type is the value in the variable ``z``?
-    
-   Do the same for the variable ``ab``. 
-
-   ~~~~
-   z = True
-
-   ab = 45.6
-
-
-.. activecode:: rv_1_7
-   :language: python
-
-   Write code to print the length of the list ``fancy_tomatoes``.
-
-   Write code to print out each element of the list ``fancy_tomatoes`` on a separate line. (You can do this in just 2 lines of code!)
-
-   Now write code to print out the type of each element of the list fancy_tomatoes on a separate line.
-
-   ~~~~
-   fancy_tomatoes = ["hello", 6, 4.24, 8, 20, "newspaper", True, "goodbye", "False", False, 5967834, "6578.31"]
-
-.. activecode:: rv_1_8
-   :language: python
-
-   The following code runs, but not the way we expect it to. **You want to print out the first character of each string in the list of strings.** So the following output should print out:
-
-   ::
-
-      h
-      g
-      l
-      4
-      6
-
-   Instead, you'll see something different when you run the code. Go through it carefully, understand what is happening, and then fix the code so that the output above appears. Good practice: explain to someone else (or yourself) why exactly it is working incorrectly (semantic errors!) and what is happening on each line, and then fix it.
-
-   ~~~~
-   list_of_strings = ["hello","goodbye","lampshade","45","63"]
-   for i in list_of_strings:
-       if i in list_of_strings:
-           print list_of_strings[0]
-
-
-
-Functions Practice Problems
----------------------------
-
-We strongly suggest that you try to do the problems yourself before looking at the solutions (which are heavily commented)
-
-
-.. tabbed:: func_review_1
-
-   .. tab:: Problem
-
-      .. activecode:: fr_1
-         :language: python
-
-         Define (and write an invocation of) a function called ``get_vowels`` which takes an **input** of a string and **returns the total number of vowels in the string**.
- 
-         ~~~~
-         # Write your code here!
-
-
-         # Here's a sample function call.
-         print get_vowels("Hello all") # This should print: 3
-
-   .. tab:: Solution
-
-      .. activecode:: fr_1a
-
-         def get_vowels(s):
-             vowels = "aeiou"
-             total = 0
-             for v in vowels:
-                 total += s.count(v)
-             return total
-
-         print get_vowels("Hello all")
-
-
-.. tabbed:: func_review_2
-
-   .. tab:: Problem
-
-      .. activecode:: fr_2
-         :language: python
-
-         Define (and call) a function called ``sum_a_list`` which **takes any list of integers** and **returns the sum of all integers in the list**.
-
-         ~~~~
-         # Write your code here!
-
-
-         # Here's a sample function call.
-         print sum_a_list([1,4,7,5]) # this should print: 17
-
-         # Extra practice:
-         # how would you change this function just a LITTLE
-         # so that the function could also take a string of digits
-         # and return the sum of all those digits.
-         # (Hint: to do this, you only have to type 5 more characters.)
-
-   .. tab:: Solution
-
-      .. activecode:: fr_2a
-         :language: python
-
-         Define (and call) a function called ``sum_a_list`` which **takes any list of integers** and **returns the sum of all integers in the list**.
-
-         ~~~~
-         def sum_a_list(lt): # function definition statement with one parameter
-             tot = 0 # intiialize accumulator to 0
-             for i in lt: # iterate over the list that is passed in to the function
-                 tot = tot + i # each time you get to a new integer in the list, add that integer to the accumulator
-             return tot # the for loop is over, so outdent and return the accumulator from the function
-
-         print sum_a_list([1,4,7,5]) # call the function, and print out the result with a print statement
-
-         # Here's the version of the function that will work
-         #   for EITHER a list of integers or a string of digits
-         def sum_a_list_or_digitstring(lt):
-             tot = 0
-             for i in lt:
-                 tot = tot + int(i)
-             return tot
-
-         print sum_a_list_or_digitstring("1475")
-
-
-.. tabbed:: func_review_3
-
-   .. tab:: Problem
-
-      .. activecode:: fr_3
-         :language: python
-
-         Define (and call!) a function called ``common_word`` that **takes a string** and **prints a tuple** of **the most commonly used word in the string** and **the number of times that word is used**. (If there's more than one word that's used most frequently, the function should **print** all of those words.)
-
-         ~~~~
-         # Write your code here!
-
-
-         # Here's a sample function call.
-         common_word("hello hello hello is what they said to the class!") # should print: hello
-
-
-         # For extra practice: you've done something like this before --
-         # how would you change this function to print the LONGEST word in the string?
-
-   .. tab:: Solution
-
-      .. activecode:: fr_3a
-         :language: python
-
-         Define (and call!) a function called ``common_word`` that **takes a string** and **prints a tuple** of **the most commonly used word in the string** and **the number of times that word is used**. (If there's more than one word that's used most frequently, the function should **print** all of those words.)
-
-         ~~~~
-         def common_word(s):
-             d = {}
-             sp = s.split() # split my string by whitespace, so into 'words'
-             for w in sp:
-                 if w in d:
-                     d[w] = d[w] + 1
-                 else:
-                     d[w] = 1
-             kys = d.keys() # get all the keys from the dict you built, in a list
-             most_common = kys[0] # start at the beginning of the list -- this is the most common so far!
-             for k in d: # go through the keys in the dictionary
-                 if d[k] > d[most_common]: # if the value of the key is bigger than the value of the most common key SO FAR, then you have a new most common key so far
-                     most_common = k # so reassign the most_common key
-             for ky in d: # now that we know the value of the most common key, go through the keys of the dictionary again
-                 if d[ky] == d[most_common]: # for every key that has the same value as the most common one
-                     print ky, d[ky] # print the key and its value
-             # note that we do NOT return anything here!
-             # because we asked to print stuff out
-
-         common_word("hello hello hello is what they said to the class!") # should print: hello
-
-         # Think further: what would happen if you put a return statement where that print statement is? why wouldn't that work?
-
-
-.. tabbed:: func_review_4
-   
-   .. tab:: Problem
-
-      .. activecode:: fr_4
-         :language: python
-
-          Define (and call!) a function called ``smallest_value_name`` that **takes a dictionary** with key-value pairs of names and integer values, like this: ``{"Nick": 56, "Paul":73, "Jackie":42}``, and **returns the name associated with the *lowest integer value**. (So in the case of that example dictionary, the function should return ``Jackie``.)
-
-         ~~~~
-         # Write your code here!
-
-         # Here's a sample call
-         df = {"Nick": 56, "Paul":73, "Jackie":42}
-         print smallest_value_name(df) # should print: Jackie
-
-   .. tab:: Solution
-
-      .. activecode:: fr_4a
-         :language: python
-
-          Define (and call!) a function called ``smallest_value_name`` that **takes a dictionary** with key-value pairs of names and integer values, like this: ``{"Nick": 56, "Paul":73, "Jackie":42}``, and **returns the name associated with the *lowest integer value**. (So in the case of that example dictionary, the function should return ``Jackie``.)
-
-         ~~~~
-         # Here's one solution
-         def smallest_value_name(d):
-             kys = d.keys() # returns a list of the keys in the dictionary d
-             m = kys[0] # start off examining the first key in the list
-             for k in kys: # for each key in the list of keys
-                 if d[k] < d[m]: # if the value associated with that key is smaller than the value associated with the key saved in the variable m (the smallest so far)
-                     m = k # then reassign m so it has the same value as this new key, k
-             return m # when the loop is over, m contains the key that has the smallest value, so return that from the function!
-
-         # Here's another solution
-         def smallest_val_name_diff(d):
-             its = d.items() # returns a list of tuples (key, value) in dictionary d and stores it in its
-             tn = its[0]
-             for t in its:
-                 if t[1] < tn[1]:
-                     tn = t
-             return tn[0]
-
-         # Sample calls of these solution functions
-         d_new = {"Nick": 42, "Paul":73, "Jackie":57}
-         print smallest_value_name(d_new) # should print Nick
-
-         print smallest_val_name_diff(d_new)
-         # should print Nick

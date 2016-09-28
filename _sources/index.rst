@@ -563,6 +563,13 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
+Discussion Section Resources (F16)
+::::::::::::::::::::::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   SectionResources/section4_106_f16.rst
 
 .. toctree::
    :maxdepth: 1
