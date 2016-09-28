@@ -287,12 +287,10 @@ We are going to begin to move toward executing Python programs on your own compu
 
    myTests().main()
 
-Problem Set 5: Unix Exercises (Problem Set Part 1)
-==================================================
 
 .. _problem_set_5_unix:
 
-The following is a set of exercises for you to practice the Unix commands you learned about this week. At the end of this part of the problem set, you will run a Python program on your computer for the first time in this course. The other Unix commands you have learned will be very useful when you start programming entirely on your own computer, writing programs in a text editor, rather than programming in the browser, on our textbook, and are closely connected to the processes you use when you run a Python program on your computer. They will help you be able to not just run Python programs, but deal comfortably with your computer's file system while you do that.
+**Now, the second part of Problem Set 5!** At the end of this part of the problem set, you will run a Python program on your computer for the first time in this course. The other Unix commands you have learned will be very useful when you start programming entirely on your own computer, writing programs in a text editor, rather than programming in the browser, on our textbook, and are closely connected to the processes you use when you run a Python program on your computer. They will help you be able to not just run Python programs, but deal comfortably with your computer's file system while you do that.
 
 **This is part of your Problem Set 5. It is graded. The other part is writing Python code, in Activecode windows, above.**
 
