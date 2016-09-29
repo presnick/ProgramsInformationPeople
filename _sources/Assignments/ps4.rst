@@ -187,6 +187,7 @@ Your first task is just to understand the logic of the program, by matching up e
 You may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have in the game, and it won't stop if you guess all the letters, so you can't *really* play with this version of the code here. (It can also go on for a very long time, until you exceed the time limit in the code window, unless you cancel it yourself.) Allowing the game to do those things (manage health, show you the word you've guessed so far) comes from code you will write in later problems!
 
 .. activecode:: ps_4_hangman_code_9
+  :hidecode:
 
   **9.** This is the base code for a Hangman game. (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.)
   ~~~~
@@ -301,6 +302,7 @@ See the flow chart below for a better understanding of what's happening in the c
 .. activecode:: ps_4_10
    :language: python
    :autograde: unittest
+   :hidecode:
 
    **10.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
 
@@ -338,6 +340,8 @@ See the flow chart below for a better understanding of what's happening in the c
    myTests().main()
 
 .. activecode:: ps_4_11
+    :autograde: unittest
+    :hidecode:
 
     **11.** Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
     ~~~~
