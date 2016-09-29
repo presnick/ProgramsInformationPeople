@@ -14,7 +14,7 @@
   :name: PS1
   :assignment_type: problem_set
   :questions: ps_1_1 100, ps_1_2 50, ps_1_3 150, ps_1_4 100, ps_1_5 100, ps_1_6 100, ps_1_7 100, ps_1_8 150, ps_1_9 100, ps_1_10 0, ps_1_11 50
-  :deadline: 2016-09-18 21:01
+  :deadline: 2016-09-30 04:00
   :points: 1000
   :autograde: unittest
 
@@ -63,7 +63,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: GeneralIntro
     :assignment_name: Prep 01
-    :deadline: 2016-09-12 20:40
+    :deadline: 2016-09-30 04:00
     :pct_required: 80
     :points: 50
 
