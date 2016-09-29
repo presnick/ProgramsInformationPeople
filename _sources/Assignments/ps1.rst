@@ -14,7 +14,7 @@
   :name: PS1
   :assignment_type: problem_set
   :questions: ps_1_1 100, ps_1_2 100, ps_1_3 100, ps_1_4 100, ps_1_5 50, ps_1_6 200, ps_1_7 100, ps_1_8 100, ps_1_9 100, ps_1_10 0, ps_1_11 50
-  :deadline: 2016-09-18 21:05
+  :deadline: 2016-09-30 04:00
   :points: 1000
   :autograde: unittest
 
@@ -77,7 +77,7 @@ Activities through 9/16
 .. usageassignment:: 
   :chapters: GeneralIntro
   :assignment_name: Prep 01
-  :deadline: 2016-09-12 18:40
+  :deadline: 2016-09-30 04:00
   :pct_required: 80
   :points: 50
 
@@ -94,7 +94,7 @@ Activities through 9/16
 .. usageassignment::
   :chapters: SimplePythonData
   :assignment_name: Prep 02
-  :deadline: 2016-09-12 19:40
+  :deadline: 2016-09-30 04:00
   :pct_required: 80
   :points: 50
 
@@ -112,7 +112,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: Debugging, PythonTurtle
     :assignment_name: Prep 03
-    :deadline: 2016-09-14 19:40
+    :deadline: 2016-09-30 04:00
     :pct_required: 80
     :points: 50
 
