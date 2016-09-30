@@ -13,7 +13,7 @@
   :name: PS02
   :assignment_type: problem_set
   :questions: ps_2_1 100, ps_2_2 200, ps_2_3 300, ps_2_4 200, ps_2_5 200
-  :deadline: 2016-09-26 4:00
+  :deadline: 2016-09-30 04:00
   :points: 1000
   :autograde: unittest
 
@@ -84,7 +84,7 @@ You have the following graded activities:
 .. usageassignment:: 
   :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin
   :assignment_name: Prep 04
-  :deadline: 2016-09-19 19:40
+  :deadline: 2016-09-30 04:00
   :pct_required: 80
   :points: 50
 
@@ -98,7 +98,7 @@ You have the following graded activities:
 .. usageassignment:: 
   :subchapters: Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings
   :assignment_name: Prep 05
-  :deadline: 2016-09-21 19:40
+  :deadline: 2016-09-30 04:00
   :pct_required: 80
   :points: 50
 

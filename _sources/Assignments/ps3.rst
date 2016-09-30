@@ -82,7 +82,7 @@ You have the following graded activities:
 .. usageassignment::
    :subchapters: BuildingAProgram/UnderstandingCode, Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles
    :assignment_name: Prep 06
-   :deadline: 2016-09-26 18:40
+   :deadline: 2016-09-30 04:00
    :pct_required: 80
    :points: 50
 
@@ -100,7 +100,7 @@ You have the following graded activities:
 .. usageassignment:: 
    :subchapters: Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying
    :assignment_name: Prep 07
-   :deadline: 2016-09-28 18:40
+   :deadline: 2016-09-30 04:00
    :pct_required: 80
    :points: 50
 
