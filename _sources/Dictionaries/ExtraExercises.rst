@@ -10,7 +10,11 @@
 Extra Exercises
 ===============
 
+<<<<<<< HEAD
 1. At the halfway point during the Rio Olympics, the United States had 70 medals, Great Britain had 38 medals, China had 45 medals, Russia had 30 medals, and Germany had 17 medals. Create a dictionary assigned to the variable ``medal_count`` with the country as the key and the number of medals as the values. 
+=======
+1. At the halfway point during the Rio Olympics, the United States had 70 medals, Great Britain had 38 medals, China had 45 medals, Russia had 30 medals, and Germany had 17 medals. Create a dictionary assigned to the variable ``medal_count`` with the country names as the keys and the number of medals the country had as each key's value. 
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_01
    :tags:Dictionaries/intro-Dictionaries.rst
@@ -22,11 +26,19 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
+<<<<<<< HEAD
          self.assertEqual(sorted(medal_count.items()), sorted([('China', 45), ('Germany', 17), ('Great Britain', 38), ('Russia', 30), ('United States', 70)]), "Testing that medal_count is assigned to correct values")
 
    myTests().main()
 
 1.1 Create a dictionary that keeps track of the USA's Olympic medal count. Each key of the dictionary should be the type of medal (gold, silver, bronze) and the value should be the number of medals. Currently, the USA has 33 gold medals, 17 silver, and 12 bronze. Create a dictionary named ``medals`` that reflect this. 
+=======
+         self.assertEqual(sorted(medal_count.items()), sorted([('China', 45), ('Germany', 17), ('Great Britain', 38), ('Russia', 30), ('United States', 70)]), "Testing that the medal_count dictionary has the correct key-value pairs")
+
+   myTests().main()
+
+1.1 Create a dictionary that keeps track of the USA's Olympic medal count. Each key of the dictionary should be the type of medal (gold, silver, or bronze) and each key's value should be the number of that type of medal the USA's won. Currently, the USA has 33 gold medals, 17 silver, and 12 bronze. Create a dictionary saved in the variable ``medals`` that reflects this information. 
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_011
    :tags:Dictionaries/intro-Dictionaries.rst
@@ -43,7 +55,11 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 1.2 You are keeping track of olympic medals for Italy in the 2016 Rio Summer Olympics. At the moment, Italy has 7 gold metals, 8 silver metals, and 6 bronze metals. Create a dictionary called ``olympics`` where the keys are the types of metals, and the values are the number of metals won so far. 
+=======
+1.2 You are keeping track of olympic medals for Italy in the 2016 Rio Summer Olympics! At the moment, Italy has 7 gold medals, 8 silver metals, and 6 bronze medals. Create a dictionary called ``olympics`` where the keys are the types of medals, and the values are the number of that type of medals that Italy has won so far. 
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_012
    :tags:Dictionaries/intro-Dictionaries.rst
@@ -60,12 +76,20 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 2. Given the dictionary, ``swimmers``, add an additional key-value pair to the dictionary with "Phelps" as the key and 23 as the value. Do not rewrite the entire dictionary.
+=======
+2. Given the dictionary ``swimmers``, add an additional key-value pair to the dictionary with ``"Phelps"`` as the key and the integer ``23`` as the value. Do not rewrite the entire dictionary.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_02
    :tags:Dictionaries/intro-Dictionaries.rst
 
+<<<<<<< HEAD
    swimmers = {'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4}
+=======
+   swimmers = {'Manuel':4, Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4}
+>>>>>>> upstream/106F16
       
    =====
 
@@ -74,7 +98,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testTwo(self):
+<<<<<<< HEAD
          self.assertEqual(sorted(swimmers.items()), sorted([('Adrian', 7), ('Dirado', 4), ('Ledecky', 5), ('Lochte', 12), ('Phelps', 23)]), "Testing that swimmers is assigned to correct value.")
+=======
+         self.assertEqual(sorted(swimmers.items()), sorted([('Adrian', 7), ('Dirado', 4), ('Manuel',4), ('Ledecky', 5), ('Lochte', 12), ('Phelps', 23)]), "Testing that swimmers is assigned to correct value.")
+>>>>>>> upstream/106F16
 
    myTests().main()
 
@@ -116,12 +144,20 @@ Extra Exercises
    myTests().main()
 
 
+<<<<<<< HEAD
 3. Update the value for "Phelps" in the dictionary ``swimmers`` to include his medals from the Rio Olympics by adding 5 to the current value (Phelps will have 28 total medals). Do not rewrite the dictionary.
+=======
+3. Update the value for "Phelps" in the dictionary ``swimmers`` to include his medals from the Rio Olympics by adding 5 to the current value (Phelps will now have 28 total medals). Do not rewrite the dictionary.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_03
    :tags:Dictionaries/Dictionaryoperations.rst
 
+<<<<<<< HEAD
    swimmers = {'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4, 'Phelps':23}
+=======
+   swimmers = {'Manuel':4, 'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4, 'Phelps':23}
+>>>>>>> upstream/106F16
       
    =====
 
@@ -130,18 +166,29 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testThree(self):
+<<<<<<< HEAD
          self.assertEqual(sorted(swimmers.items()), sorted([('Adrian', 7), ('Dirado', 4), ('Ledecky', 5), ('Lochte', 12), ('Phelps', 28)]), "Testing that swimmers is assigned to correct values.")
 
    myTests().main()
 
 3.1 The dictionary ``golds`` contains information about how many gold medals each country won in the 2016 Olympics. Today, Spain won 2 more gold medals. Update ``golds`` to reflect this information. 
+=======
+         self.assertEqual(sorted(swimmers.items()), sorted([('Adrian', 7), ('Dirado', 4), ('Ledecky', 5), ('Lochte', 12), ('Phelps', 28), ('Manuel',4)]), "Testing that swimmers is assigned to correct values.")
+
+   myTests().main()
+
+3.1 The dictionary ``golds`` contains information about how many gold medals each country won in the 2016 Olympics. But today, Spain won 2 more gold medals. Update ``golds`` to reflect this information. 
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_031
    :tags:Dictionaries/Dictionaryoperations.rst
 
    golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/106F16
    =====
 
    from unittest.gui import TestCaseGui
@@ -153,6 +200,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 3.2 Congrats, Italy won another gold metal! Update the value for the gold metals so that it reflects the new win (8 gold metals, 8 silver metals, and 6 bronze metals now). Name the dictionary ``olympics`` again.
 
 .. activecode:: ee_ch12_032
@@ -189,6 +237,10 @@ Extra Exercises
    myTests().main()
 
 4.1 Create a list of the countries that are in the dictionary ``golds``, and assign it to the variable name ``countries``. Do not hard code this. 
+=======
+
+4. Create a list of the countries that are in the dictionary ``golds``, and assign that list to the variable name ``countries``. Do not hard code this. 
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_041
    :tags:Dictionaries/Dictionarymethods.rst
@@ -206,12 +258,20 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 4.1 We have a dictionary of the specific events that Italy has won metals in and the number of metals they have won for each event. Assign to the variable ``events`` a list of the keys from the dictionary ``metal_events``. Do not hard code this.
+=======
+5. We have a dictionary of the specific events that Italy has won medals in and the number of medals they have won for each event. Assign to the variable ``events`` a list of the keys from the dictionary ``medal_events``. Do not hard code this.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_042
    :tags:Dictionaries/Dictionarymethods.rst
 
+<<<<<<< HEAD
    metal_events = {'Shooting': 7, 'Fencing': 4, 'Judo': 2, 'Swimming': 3, 'Diving': 2}
+=======
+   medal_events = {'Shooting': 7, 'Fencing': 4, 'Judo': 2, 'Swimming': 3, 'Diving': 2}
+>>>>>>> upstream/106F16
 
    =====
 
@@ -224,6 +284,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 5. **Challenge** The list ``performed`` contains diving moves that have been performed. The dictionary ``dives`` contains the moves and the number of times each has been performed during the current set. Update the dictionary ``dives`` to reflect the additional dives performed. If the dive in ``dives`` is in the list ``performed``, update the value in the dictionary by 1. 
 
 .. activecode:: ee_ch12_05
@@ -284,6 +345,9 @@ Extra Exercises
    myTests().main()
 
 6. Provided is the dictionary, ``medal_count`` which lists countries and their respective medal count at the halfway point in the 2016 Rio Olympics. Using dictionary methods, assign the medal count value for "Belarus" to the variable ``Belarus``. Do not hardcode this.
+=======
+6. Provided is the dictionary, ``medal_count``, which lists countries and their respective medal count at the halfway point in the 2016 Rio Olympics. Using dictionary mechanics, assign the medal count value for ``"Belarus"`` to the variable ``belarus``. Do not hardcode this.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_06
    :tags:Dictionaries/Dictionarymethods.rst
@@ -297,12 +361,20 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testSix(self):
+<<<<<<< HEAD
          self.assertEqual(Belarus, 4, "Testing that Belarus is assigned the correct value.")
+=======
+         self.assertEqual(belarus, 4, "Testing that belarus is assigned the correct value.")
+>>>>>>> upstream/106F16
 
    myTests().main()
 
 
+<<<<<<< HEAD
 6.1 The dictionary ``total_golds`` contains the total number of gold medals that countries have won over the course of history. Use a dictionary method to find the number of golds Chile has won, and assign that number to the variable name ``chile_golds``. Do not hard code this!  
+=======
+6.1 The dictionary ``total_golds`` contains the total number of gold medals that countries have won over the course of history. Use dictionary mechanics to find the number of golds Chile has won, and assign that number to the variable name ``chile_golds``. Do not hard code this!  
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_061
    :tags:Dictionaries/Dictionarymethods.rst
@@ -320,12 +392,20 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 6.2 Provided is a dictionary called ``US_metals`` which has the first 70 metals that the United States has won and in which category they have won it in. Using a dictionary method, retreive the value associated with the key "Fencing" and assign that to the variable ``fencing_value``. Remember, do not hard code this.
+=======
+6.2 Provided is a dictionary called ``US_medals`` which has the first 70 metals that the United States has won in 2016, and in which category they have won it in. Using dictionary mechanics, assign the value of the key ``''Fencing''`` to a variable ``fencing_value``. Remember, do not hard code this.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch12_062
    :tags:Dictionaries/Dictionarymethods.rst
 
+<<<<<<< HEAD
    US_metals = {"Swimming": 33, "Gymnastics": 6, "Track & Field": 6, "Tennis": 3, "Judo": 2, "Rowing": 2, "Shooting": 3, "Cycling - Road": 1, "Fencing": 4, "Diving": 2, "Archery": 2, "Cycling - Track": 1, "Equestrian": 2, "Golf": 1, "Weightlifting": 1}
+=======
+   US_medals = {"Swimming": 33, "Gymnastics": 6, "Track & Field": 6, "Tennis": 3, "Judo": 2, "Rowing": 2, "Shooting": 3, "Cycling - Road": 1, "Fencing": 4, "Diving": 2, "Archery": 2, "Cycling - Track": 1, "Equestrian": 2, "Golf": 1, "Weightlifting": 1}
+>>>>>>> upstream/106F16
 
    =====
 
@@ -334,7 +414,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
+<<<<<<< HEAD
          self.assertEqual(fencing_value, US_metals.get("Fencing"), "Testing that fencing_value was created correctly.")
+=======
+         self.assertEqual(fencing_value, US_medals.get("Fencing"), "Testing that fencing_value was set correctly.")
+>>>>>>> upstream/106F16
          
 
    myTests().main()

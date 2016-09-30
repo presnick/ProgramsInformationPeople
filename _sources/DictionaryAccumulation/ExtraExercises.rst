@@ -191,6 +191,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 4.1 Provided is a string saved to the variable name ``str1``. Using string methods and dictionary accumulation, find the word that occurs most often. Save the word to the variable name ``most_pop_word``. 
 
 .. activecode:: ee_ch13_041
@@ -210,6 +211,9 @@ Extra Exercises
    myTests().main()
 
 4.2 Create a dictionary called ``lett_d`` that keeps track of all of the characters in the string ``product`` and notes how many times each character was seen. Then, find the key with the highest value in this dictionary and assign that key to ``max_value``.
+=======
+4.1 Create a dictionary called ``lett_d`` that keeps track of all of the characters in the string ``product`` and notes how many times each character was seen. Then, find the key with the highest value in this dictionary and assign that key to ``max_value``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch13_042
    :tags: DictionaryAccumulation/AccumulatingaMaximumValue.rst, DictionaryAccumulation/AccumulatingtheBestKey.rst
@@ -230,7 +234,11 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 5. Do the same as above but now find the least frequent letter. Create the dictionary ``characters`` that shows each character from string ``sally`` and its frequency. Then, find the least frequent letter and assign the letter to the variable ``worst_char``. 
+=======
+5. Do the same as above but now find the least frequent letter. Create the dictionary ``characters`` that shows each character from string ``sally`` and its frequency. Then, find the least frequent letter in the string and assign the letter to the variable ``worst_char``. 
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch13_05
    :tags: DictionaryAccumulation/AccumulatingtheBestKey.rst, DictionaryAccumulation/AccumulatingaMaximumValue.rst
@@ -251,6 +259,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 5.1 Create a dictionary that contains all the letters in ``quote`` and the number of times they occur. Then, find the letter that occurs the LEAST often. Save this letter to the variable name ``unpop``. 
 
 .. activecode:: ee_ch13_051
@@ -268,6 +277,9 @@ Extra Exercises
          self.assertEqual(unpop, 'd', "Testing that upop was assigned to the correct letter.")
 
    myTests().main()
+=======
+
+>>>>>>> upstream/106F16
 
 5.2 Create a dictionary called ``d`` that keeps track of all the characters in the string ``placement`` and notes how many times each character was seen. Then, find the key with the lowest value in this dictionary and assign that key to ``min_value``.
 
@@ -291,6 +303,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 6. **Challenge** Given the string ``str1``, make a dictionary assigned to the variable ``char_dict`` with the letters as the key and their frequency as the value. Make sure that capitalization does not matter, i.e. "G" and "g" will count as the same letter.
 
 .. activecode:: ee_ch13_06
@@ -314,6 +327,9 @@ Extra Exercises
          self.assertEqual(char_dict['d'], 1, "Testing that d has correct value.")
 
    myTests().main()
+=======
+
+>>>>>>> upstream/106F16
 
 6.1 Create a dictionary named ``letter_counts`` that contains each letter and the number of times it occurs in ``string1``. **Challenge:** Letters should not be counted separately as upper-case and lower-case. 
 

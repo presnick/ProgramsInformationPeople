@@ -115,7 +115,7 @@ Extra Exercises
 
    myTests().main()
 
-4. Create a new list of the 6th through 14th elements of ``lst`` and assign it to the variable ``output``.
+4. Create a new list of the 6th through 13th elements of ``lst`` (eight items in all) and assign it to the variable ``output``.
 
 .. activecode:: ee_ch9_04
    
@@ -128,11 +128,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFour(self):
-         self.assertEqual(output, ["shine", "marsh", "winter", "donkey", "rain", ["Rio", "Beijing", "London"], [1,2,3], "gold"], "Testing that output value is assigned to correct value.")
+         self.assertEqual(output, lst[5:13], "Testing that output value is assigned to correct value.")
 
    myTests().main()
 
-4.1 Create a new list using the 9th through 12th elements of ``new_lst`` and assign it to the variable``sub_lst``.
+4.1 Create a new list using the 9th through 12th elements (four items in all) of ``new_lst`` and assign it to the variable``sub_lst``.
 
 .. activecode:: ee_ch9_041
    :tags: Sequences/TheSliceOperator.rst
@@ -146,11 +146,11 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(sub_lst, new_lst[8:13], "Testing that sub_lst has the correct elements assigned.")
+         self.assertEqual(sub_lst, new_lst[8:12], "Testing that sub_lst has the correct elements assigned.")
 
    myTests().main()
 
-5. Create a new string of ``str1`` but lowercase and assign it to the variable ``output``. Do not hard code this.
+5. Create a new string from ``str1`` that is all lower case, and assign it to the variable ``output``. Do not hard code this: use a python string method to convert str1 to lower case.
 
 .. activecode:: ee_ch9_05
       
@@ -167,7 +167,7 @@ Extra Exercises
 
    myTests().main()
 
-5.1 Create a variable called ``low_stri`` and assign it the value of stri, but lowercase. Do not hardcode this.
+5.1 Create a variable called ``low_stri`` and assign it the value of stri, but lowercased. Do not hard code this: use a python string method to convert str1 to lower case.
 
 .. activecode:: ee_ch9_051
    :tags: Sequences/StringMethods.rst
@@ -239,7 +239,7 @@ Extra Exercises
    myTests().main()
 
 
-7.1 Add the string dogs to the end of the list ``pets``. Do this using a list method.
+7.1 Add the string "dogs" to the end of the list ``pets``. Do this using a list method.
 
 .. activecode:: ee_ch_071
    :tags: Sequences/AppendversusConcatenate.rst
@@ -291,163 +291,3 @@ Extra Exercises
          self.assertEqual(letts, ['a', 'b', 'b', 'c', 'd', 'f', 'f'], "Testing the list letts.") 
 
    myTests().main()
-
-9. **Challenge** Please get rid of the pet "cat" from the list ``pets``. Add the pet "dog" in its place.
-
-.. activecode:: ee_ch9_09
-
-   pets = ["goldfish", "cat", "parrot", "hamster"]
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testNine(self):
-         self.assertEqual(pets[1], "dog", "Testing that dog is in correct location.")
-         self.assertEqual(pets, ["goldfish", "dog", "parrot", "hamster"], "Testing that output value is assigned to correct value.")
-
-   myTests().main()
-
-9.1 **Challenge:** Please get rid of the fourth element in the list ``office``. Then, replace that element with the string chair.
-
-.. activecode:: ee_ch_091
-   :tags: Sequences/ListDeletion.rst, Sequences/ListMethods.rst
-
-   office = ["table", "computer", "clock", "smoothie machine", "water cooler", "fax machine", "printers", "pencils", "desks"]
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(office[3], "chair", "Testing the fourth element of office.") 
-         self.assertEqual(office, ["table", "computer", "clock", "chair", "water cooler", "fax machine", "printers", "pencils", "desks"], "Testing the contents of office.")
-
-   myTests().main()  
-
-10. **Challenge** Create a list made up of the 5th and 37th element from the list ``words`` and assign it to the variable ``output``.
-
-.. activecode:: ee_ch9_10
-
-   words = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
-   
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testTen(self):
-         self.assertEqual(output, ["caterpillar", "hotdog"], "Testing that output value is assigned to correct value.")
-
-   myTests().main()
-
-10.1 **Challenge:** Create a list made up of the 11th and 29th elements from the list ``practice`` and assign that to the variable ``content``.
-
-.. activecode:: ee_ch9_101
-   :tags: Sequences/ConcatenationandRepetition.rst, Sequences/AccessingElements.rst
-   
-   practice = ["hi", "goodbye", "python", "106", "506", 91, ['all', 'Paul', 'Jackie', "UMSI", 1, "Stephen", 4.5], 109, "chair", "pizza", "wolverine", 2017, 3.92, 1817, "account", "readings", "papers", 12, "facebook", "twitter", 193.2, "snapchat", "leaders and the best", "social", "1986", 9, 29, "holiday", ["women", "olympics", "gold", "rio", 21, "2016", "men"], "26trombones"]
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(content, ["wolverine", ["women", "olympics", "gold", "rio", 21, "2016", "men"]], "Testing that content has the correct elements assigned.")
-
-   myTests().main()
-
-11. **Challenge** Create a new list, ``newlist``, that is made up of the last 6 elements of ``lst``. Then assign the fourth element of the new list to the variable ``output``. Note: This should work regardless of the length of the list.
-
-.. activecode:: ee_ch9_11
-
-   lst = ["swimming", 2, "water bottle", 44, "lollipop", "shine", "marsh", "winter", "donkey", "rain", ["Rio", "Beijing", "London"], [1,2,3], "gold", "bronze", "silver", "mathematician", "scientist", "actor", "actress", "win", "cell phone", "leg", "running", "horse", "socket", "plug", ["Phelps", "le Clos", "Lochte"], "drink", 22, "happyfeet", "penguins"]
-   
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testElevenA(self):
-         self.assertEqual(newlist, ["plug", ["Phelps", "le Clos", "Lochte"], "drink", 22, "happyfeet", "penguins"], "Testing that newlist value is assigned to correct value.")
-
-      def testElevenB(self):
-         self.assertEqual(output, 22, "Testing that output value is assigned to correct value.")
-
-   myTests().main()
-
-11.1 **Challenge:** Create a new list called ``small_lst`` whose elements are the last five of ``new_lst``. Do this so that it would work, no matter how long new_lst is. Then assign the third element of small_lst to the variable ``third``.
-
-.. activecode:: ee_ch9_111
-   :tags: Sequences/TheSliceOperator.rst, Sequences/AccessingElements.rst
-
-   new_lst = ["computer", "luxurious", "basket", "crime", 0, 2.49, "institution", "slice", "sun", ["water", "air", "fire", "earth"], "games", 2.7, "code", "java", ["birthday", "celebration", 1817, "party", "cake", 5], "rain", "thunderstorm", "top down"]
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(small_lst, new_lst[-5:], "Testing that small_lst has the correct elements assigned.")
-
-      def testTwo(self):
-         self.assertEqual(third, small_lst[2], "Testing that third has the correct element assigned.")
-
-   myTests().main()
-
-12. **Challenge** Remove the whitespace from ``str1`` and assign the new string to variable ``newstring``. Then save the number of characters of ``newstring`` to ``newlength``. Next, split ``newstring`` on every occurrence the letter 'p' and assign to ``output``.
-
-.. activecode:: ee_ch9_12
-
-   str1 = "     peter piper picked a peck of pickled peppers.               "
-   
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testTwelveA(self):
-         self.assertEqual(newstring, "peter piper picked a peck of pickled peppers.", "Testing that newstring value is assigned to correct value.")
-
-      def testTwelveB(self):
-         self.assertEqual(newlength, 45, "Testing that newlength value is assigned to correct value.")
-
-      def testTwelveC(self):
-         self.assertEqual(output, ['', 'eter ', 'i', 'er ', 'icked a ', 'eck of ', 'ickled ', 'e', '', 'ers.'], "Testing that output value is assigned to correct value.")
-
-   myTests().main()
-
-12.1 **Challenge:** Remove the white space in the variable ``full_sent`` and assign that to the variable ``sent``. Then, save the number of characters in sent to a variable called ``char_sent``. Finally, assign to the variable ``word_c``, the value of sent, split on every occurance of the letter c.
-
-.. activecode:: ee_ch_121
-   :tags: Sequences/StringMethods.rst, Sequences/Length.rst, Sequences/SplitandJoin.rst
-
-   full_sent = "     A broken clock is correct at least twice a day.    "
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(sent, full_sent.strip(), "Testing that sent has been correctly assigned.")
-      
-      def testTwo(self): 
-         self.assertEqual(char_sent, len(sent), "Testing that char_sent has been correctly assigned.")
-      
-      def testThree(self):
-         self.assertEqual(word_c, sent.split('c'), "Testing that word_c has been correctly assigned.")
-
-   myTests().main() 

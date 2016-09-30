@@ -304,6 +304,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 6.1 This problem will require you to write two functions. The first function, named ``func1``, should take a number as input, and return that number multiplied by 3. The second function, named ``func2``, should take a number as input, multiply it by 3, and then add 10. You should call on ``func1`` within ``func2`` to accomplish this.
 
 .. activecode:: ee_functions_061
@@ -329,6 +330,10 @@ Extra Exercises
    myTests().main() 
 
 6.2 Write two functions, one called ``addit`` and one called ``mult`` where addit takes one number as an input and adds 5. mult takes one number as an input, and multiplies that input by whatever is returned by addit and returns that mathematical expression.
+=======
+
+6.1 Write two functions, one called ``addit`` and one called ``mult``. ``addit`` takes one number as an input and adds 5. ``mult`` takes one number as an input, and multiplies that input by whatever is returned by ``addit``, and then returns the result.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_functions_062
    :tags: Functions/Returningavaluefromafunction.rst, Functions/Functionscancallotherfunctions.rst
@@ -340,6 +345,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
+<<<<<<< HEAD
          self.assertEqual(mult(1), 6,"Testing the function mult with input 1")
          self.assertEqual(mult(-2), -6, "Testing the function mult with input -2")
          self.assertEqual(mult(0), 0, "Testing the function mult with input 0")
@@ -417,3 +423,16 @@ Extra Exercises
 
 
 
+=======
+         self.assertEqual(mult(1), 6,"Testing the function mult with input 1 (should be 6)")
+         self.assertEqual(mult(-2), -6, "Testing the function mult with input -2 (should be -6)")
+         self.assertEqual(mult(0), 0, "Testing the function mult with input 0 (should be 0)")
+
+      def testTwo(self):
+         self.assertEqual(addit(1), 6, "Testing the function addit with input 1 (should be 6)")
+         self.assertEqual(addit(-2), 3, "Testing the function addit with input -2 (should be 3)")
+         self.assertEqual(addit(0), 5, "Testing the function addit with input 0 (should be 5)")
+
+   myTests().main()
+
+>>>>>>> upstream/106F16

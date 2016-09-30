@@ -20,65 +20,68 @@ We have previously suggested that it's a good idea to first write down comments
 about what your code is supposed to do, before actually writing the code. It is an 
 even better idea to write down some test cases before writing a program. For example,
 before writing a function, write a few test cases that check that it returns an
-object of the right type and that it returns the correct values when invoked on particular
-inputs.
+object of the right type and that it returns the correct values when invoked on particular inputs.
 
-The module ``test`` can be imported in activecode windows. It consists of just
-a single function, ``testEqual``. Below is the code for it.
+You've actually been using test cases throughout this book in some of the activecode windows and almost all of the exercises. The code for them has been hidden, so as not to confuse you and also to avoid giving away the answers. Now it's time to learn how to write code for test cases.
+
+Python provides a built-in module for writing and running test cases, called ``unittest``. As you write larger programs, as part of larger software development teams, you will learn a lot more details about how to structure collections of test cases and learn a discipline for where to collect them and when to run them. This course introduces just a few features of the unittest module.
+
+As with other modules, the first step is to write a statement to import it. Having done that, you can refer to the classes and functions that are defined in the unittest module.
+
+The unittest module defines a class called TestCase. Rather than directly creating instances of this class, the normal way to use this class is to create a subclass of it. Within the subclass, you define one or more methods, following a convention of beginning the name of each method with ``test_``. Each method definition is one test case.
+
+The code defining test case methods can make "assertions", by invoking one of the assertion methods that is defined for the TestCase class. For example, we can write self.assertEqual(x, 3). If the current value of the variable x is 3, the assertion is valid and the test will pass. If it's not, then the test will fail.
+
+In order to run the test cases associated with a subclass you have created, you create an instance of that class and then invoke the method main(). The main() method is inherited from TestCase: you don't need to define it yourself. It invokes on the instance all of the methods that begin with ``test``. The unittest framework also offers a main() function. It will search for all subclasses of TestCase, create one instance of each, and invoke the main() method on each of them, causing them to run all their tests.
+
+For example, the code snippet below, illustrates a set of tests for string methods. It is a simplified version of the code provided in the `python documentation for the unittest module <https://docs.python.org/3/library/unittest.html>`_.
 
 .. sourcecode:: python
 
-    def testEqual(actual, expected):
-        if type(expected) == type(1):
-            # they're integers, so check if exactly the same
-            if actual == expected:
-                print('Pass')
-                return True
-        elif type(expected) == type(1.11):
-            # a float is expected, so just check if it's very close, to allow for
-            # rounding errors
-            if abs(actual-expected) < 0.00001:
-                print('Pass')
-                return True
-        else:
-            # check if they are equal
-            if actual == expected:
-                print('Pass')
-                return True
-        print('Test Failed: expected ' + str(expected) + ' but got ' + str(actual))
-        return False
+    import unittest
 
-Given what you learned in the :ref:`Modules Chapter <modules_chap>`, the way to
-put tests in your code is:
+    class TestStringMethods(unittest.TestCase):
 
-.. activecode:: simple_test_1
+        def test_upper(self):
+            self.assertEqual('foo'.upper(), 'FOO')
 
-    import test
-    test.testEqual(2, 1+1)
-    
-The import statement loads the module. test.testEqual looks up the testEqual
-within the test module and tries to call it (that's what the parentheses after 
-testEqual do). The values 2 and 2 are passed and bound to the formal parameters actual and expected.
-The word pass is printed out. The value True is returned, but in this case that value is ignored.
+        def test_isupper(self):
+            self.assertTrue('FOO'.isupper())
+            self.assertFalse('Foo'.isupper())
 
-Here's an example with test cases for the `blanked` function that you created 
-in the Hangman problem set.
+        def test_split(self):
+            s = 'hello world'
+            self.assertEqual(s.split(), ['hello', 'world'])
+
+    # make an instance, and invoke the main method, which invokes the test methods
+    TestStringMethods().main()
+
+In the online textbook, we use a special module that is built on top of the unittest module. It handles making a nice tabular display of the results of the tests, and putting them into HTML form to display on the web page. To use it, we import the module unittest.gui rather than just unittest, and then we work with the TestCaseGui class rather than the TestCase class.
+
+Here's an example with test cases for the `blanked` function that you created
+in the Hangman problem set. Note that the tests will fail until you fill in a correct definition for the blanked function.
 
 .. activecode:: simple_test_2
 
-      # define the function blanked(). 
-      # It takes a word and a string of letters that have been revealed.
-      # It should return a string with the same number of characters as
-      # the original word, but with the unrevealed characters replaced by _ 
-            
-      def blanked(word, revealed_letters):
-          return word 
-      
-      import test
-      test.testEqual(type(blanked("Hello", "el")), type(""))    # make sure it returns a string
-      test.testEqual(blanked("Hello", "el"), '_ell_')           # check output on particular input
-      test.testEqual(blanked("Hellos", "celxb"), '_ell__')      # check output on particular input
-      test.testEqual(blanked("Goodbye", 'Gwioby'), 'Goo_by_')   # check output on particular input
+    # define the function blanked().
+    # It takes a word and a string of letters that have been revealed.
+    # It should return a string with the same number of characters as
+    # the original word, but with the unrevealed characters replaced by _
+
+    def blanked(word, revealed_letters):
+        return word
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(blanked('hello', 'elj'), "_ell_", "testing blanking of hello when e,l, and j have been guessed.")
+        self.assertEqual(blanked('hello', ''), '_____', "testing blanking of hello when nothing has been guessed.")
+        self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
+        self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
+
+    myTests().main()
 
 **Check your understanding**
 
@@ -86,13 +89,12 @@ in the Hangman problem set.
    :answer_a: True
    :answer_b: False
    :answer_c: It depends
-   :feedback_a: Check the code that defines testEqual
+   :feedback_a: A message is printed out, but the program does not stop executing
    :feedback_b: A message is printed out, but the program does not stop executing
-   :feedback_c: Check the code the defines testEqual
+   :feedback_c: A message is printed out, but the program does not stop executing
    :correct: b
 
-   When test.testEqual is given two values that are not the same, it generates an error and
-   stops execution of the program.
+   When TestCase.assertEqual() is passed two values that are not the same, it generates an error and stops execution of the program.
  
 .. mchoice:: test_questionsimple_test_2
    :answer_a: True

@@ -10,7 +10,11 @@
 Extra Exercises
 ===============
 
+<<<<<<< HEAD
 1. Write code to assign the string "You can apply to SI!" to ``output`` if "SI 106" is in the list ``courses``. If it is not in ``courses``, assign ``output`` to "Take SI 106!"
+=======
+1. Write code to assign the string ``"You can apply to SI!"`` to ``output`` *if* the string ``"SI 106"`` is in the list ``courses``. If it is not in ``courses``, assign the value ``"Take SI 106!"`` to the variable ``output``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_01
    :tags:Selection/ConditionalExecutionBinarySelection.rst
@@ -24,11 +28,19 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
+<<<<<<< HEAD
          self.assertEqual(output, "You can apply to SI!", "Testing that output is assigned to correct values")
 
    myTests().main()
 
 1.1 Write code so that if "STATS 250" is in the list ``schedule`` then the string "You could be in Information Science!" is assigned to the variable ``resp``. Otherwise, the string "That's too bad." is assigned to the variable ``resp``.
+=======
+         self.assertEqual(output, "You can apply to SI!", "Testing that output has the correct value, given the courses list provided")
+
+   myTests().main()
+
+1.1 Write code so that if ``"STATS 250"`` is in the list ``schedule``, then the string ``"You could be in Information Science!"`` is assigned to the variable ``resp``. Otherwise, the string ``"That's too bad."`` should be assigned to the variable ``resp``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_011
    :tags: Selection/ConditionalExecutionBinarySelection.rst
@@ -42,11 +54,19 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
+<<<<<<< HEAD
          self.assertEqual(resp, "You could be in Information Science!", "Testing the value of resp.")
 
    myTests().main()
 
 2. Create another variable, ``b``, and assign it the value of 15. Then, test to see if ``b`` is greater than ``a``. If so, then multiply ``a`` by 2. If ``b`` is less than ``a``, nothing should happen. Finally, create variable ``c`` and assign it the value of the sum of ``a`` and ``b``.
+=======
+         self.assertEqual(resp, "You could be in Information Science!", "Testing the value of resp given the schedule list provided.")
+
+   myTests().main()
+
+2. Create a variable, ``b``, and assign it the value of ``15``. Then, write code to see if the value ``b`` is greater than that of ``a``. If it is, ``a``'s value should be multiplied by 2. If the value of ``b`` is less than or equal to ``a``, nothing should happen. Finally, create variable ``c`` and assign it the value of the sum of ``a`` and ``b``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_02
    :tags:Selection/OmittingtheelseClauseUnarySelection.rst
@@ -60,6 +80,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testTwoA(self):
+<<<<<<< HEAD
          self.assertEqual(a, 20, "Testing that a is assigned to correct value.")
 
       def testTwoB(self):
@@ -68,6 +89,16 @@ Extra Exercises
    myTests().main()
 
 2.2 Create the variable ``z`` whose value is 30. Test to see if z is greater than ``y``,  if so then add 5 to y, otherwise do nothing. Then, multiply z and y, and assign that value to the variable ``x``.
+=======
+         self.assertEqual(a, 20, "Testing that a has the correct value.")
+
+      def testTwoB(self):
+         self.assertEqual(c, 35, "Testing that c has the correct value.")
+
+   myTests().main()
+
+2.2 Create the variable ``z`` whose value is ``30``. Write code to see if ``z`` is greater than ``y``. If so, add 5 to ``y``'s value, otherwise do nothing. Then, multiply ``z`` and ``y``, and assign the resulting value to the variable ``x``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_022
    :tags: Selection/OmittingtheelseClauseUnarySelection.rst
@@ -87,7 +118,11 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 3. Create one conditional to test if "false" is in string ``str1``. If so, assign variable ``output`` to "False. You aren't you?". Otherwise, test if "true" is in string ``str1``. If so, assign variable ``output`` to "True! You are you!". If neither are in ``str1``, assign ``output`` to "Neither true nor false!"
+=======
+3. Create one conditional to find whether "false" is in string ``str1``. If so, assign variable ``output`` to  the string ``"False. You aren't you?".`` Otherwise, if "true" is in string ``str1``. If so, assign variable ``output`` to "True! You are you!". If neither are in ``str1``, assign ``output`` to "Neither true nor false!"
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_03
    :tags:Selection/Chainedconditionals.rst
@@ -101,11 +136,19 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testThree(self):
+<<<<<<< HEAD
          self.assertEqual(output, "True! You are you!", "Testing that action is assigned to correct values.")
 
    myTests().main()
 
 3.1 Create one conditional so that if "Friendly" is in ``w``, then "Friendly is here!" should be assigned to the variable ``wrd``, otherwise if "Friend" is in w, then "Friend is here!" should be assigned to the variable wrd, otherwise "No variation of friend is in here." should be assigned to the variable wrd.
+=======
+         self.assertEqual(output, "True! You are you!", "Testing that output has the correct value, given the str1 provided.")
+
+   myTests().main()
+
+3.1 Create one conditional so that if "Friendly" is in ``w``, then "Friendly is here!" should be assigned to the variable ``wrd``. If it's not, check if "Friend" is in w. If so, the string "Friend is here!" should be assigned to the variable ``wrd``, otherwise "No variation of friend is in here." should be assigned to the variable wrd. (Also consider: does the order of your conditional statements matter for this problem? Why?)
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_031
    :tags: Selection/Chainedconditionals.rst
@@ -124,6 +167,7 @@ Extra Exercises
    myTests().main()
 
 
+<<<<<<< HEAD
 4. **Challenge** For each grade in list ``grades``, if the grade is greater than 90, add "Good job!" to list ``notes``. If less than 90 but greater than 80, add "Keep it up!". If less than 80 but greater than 70, add "Study some more!". If less than 70, add "Try going to office hours!"
 
 .. activecode:: ee_ch11_04
@@ -143,11 +187,18 @@ Extra Exercises
    myTests().main()
 
 4.1 Create an empty list called ``resps``. Using the list ``grades``, for each grade, if it is above 90, add the string 'Congrats!' to resps, otherwise if it is above 80, add the string 'Good work!' to resps, otherwise if it is above 70, add the string 'You can do it!' to resps, otherwise, add the string 'You should try going to office hours.' to resps.
+=======
+4 Create an empty list called ``resps``. Using the list ``percent_rain``, for each percent, if it is above 90, add the string 'Bring an umbrella.' to ``resps``, otherwise if it is above 80, add the string 'Good for the flowers?' to ``resps``, otherwise if it is above 50, add the string 'Watch out for clouds!' to ``resps``, otherwise, add the string 'Nice day!' to ``resps``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_041
    :tags: Selection/Chainedconditionals.rst
 
+<<<<<<< HEAD
    grades = [94.3, 87, 100, 78, 83, 63.5, 79, 86]
+=======
+   percent_rain = [94.3, 45, 100, 78, 16, 5.3, 79, 86]
+>>>>>>> upstream/106F16
 
    =====
 
@@ -156,12 +207,20 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
+<<<<<<< HEAD
          self.assertEqual(resps, ['Congrats!','Good work!','Congrats!','You can do it!',"Good work!",'You should try going to office hours.','You can do it!',"Good work!"], "Testing the value of resps")
+=======
+         self.assertEqual(resps, ['Bring an umbrella.','Nice day!','Bring an umbrella.','Watch out for clouds!',"Nice day!",'Nice day!','Watch out for clouds!',"Good for the flowers?"], "Testing the value of resps")
+>>>>>>> upstream/106F16
 
    myTests().main()
 
 
+<<<<<<< HEAD
 5. For each word in list ``words``, find the number of characters in the string. If the number of characters in each string is greater than 3, add 1 to the variable "num_words" so that num_words should have the total number of words with less than 3 characters.
+=======
+5. For each word in list ``words``, find the number of characters in the string. If the number of characters in each string is greater than 3, add 1 to the variable ``num_words`` so that ``num_words`` should end up with the total number of words with more than 3 characters.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_05
    :tags:Selection/ConditionalExecutionBinarySelection.rst
@@ -175,6 +234,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFive(self):
+<<<<<<< HEAD
          self.assertEqual(num_words, 3, "Testing that num_words is assigned to correct values.")
 
    myTests().main()
@@ -183,6 +243,16 @@ Extra Exercises
 
 .. activecode:: ee_ch11_051
    :tags: Selection/OmittingtheelseClauseUnarySelection.rst
+=======
+         self.assertEqual(num_words, 3, "Testing that num_words has the correct value.")
+
+   myTests().main()
+
+5.1 For each string in ``wrd_lst``, find the number of characters in the string. If the number of characters is less than 6, add 1 to ``accum`` so that in the end, ``accum`` will contain an integer representing the total number of words in the list that have fewer than 6 characters.
+
+.. activecode:: ee_ch11_051
+   :tags:Selection/OmittingtheelseClauseUnarySelection.rst
+>>>>>>> upstream/106F16
 
    wrd_lst = ["Hello", "activecode", "Java", "C#", "Python", "HTML and CSS", "Javascript", "Swift", "php"]
 
@@ -197,7 +267,11 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 6. We have created conditionals for you to use. Find an integer value of x that will output "True" and "None".
+=======
+6. We have created conditionals for you to use. Do not change the provided conditional statements. Find an integer value for ``x`` that will cause ``output`` to hold the values ``True`` and ``None``. (Drawing diagrams or flow charts for yourself may help!)
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_06
    :tags:Selection/Chainedconditionals.rst
@@ -206,16 +280,28 @@ Extra Exercises
    output = []
 
    if x > 63:
+<<<<<<< HEAD
        output.append("True")
    elif x > 55:
        output.append("False")
+=======
+       output.append(True)
+   elif x > 55:
+       output.append(False)
+>>>>>>> upstream/106F16
    else: 
        output.append("Neither")
 
    if x > 67:
+<<<<<<< HEAD
        output.append("True")
    else:
        output.append("None")
+=======
+       output.append(True)
+   else:
+       output.append(None)
+>>>>>>> upstream/106F16
 
    =====
 
@@ -224,6 +310,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testSixA(self):
+<<<<<<< HEAD
          self.assertEqual(output, ["True", "None"], "Testing that output is correct.")
 
       def testSixB(self):
@@ -234,6 +321,17 @@ Extra Exercises
 .. works for 64-67
 
 6.1 We have written conditionals for you to use. Create the variable x and assign it to some integer so that at the end of the code, ``output`` will be assigned the string "Consistently working".
+=======
+         self.assertEqual(output, [True, None], "Testing that value of output is correct.")
+
+      def testSixB(self):
+         self.assertEqual(x in [64, 65, 66, 67], True, "Testing that value of x is reasonable for this problem")
+
+   myTests().main()
+
+
+6.1 We have written conditionals for you to use. Create the variable x and assign it to some integer so that at the end of the code, ``output`` will be assigned the string ``"Consistently working"``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_061
    :tags: Selection/Chainedconditionals.rst
@@ -263,6 +361,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 7. Create a set of conditionals to determine shipping prices. Usually, it will cost you $7 to ship a large package within your state. In this case, ``location`` would be "domestic", the variable ``cost`` would be set to 7, and ``destination`` would be ``0``. If you continue to ship domestically, the cost of shipping for 1 state away is $11. For 2 states away, the cost is $15. For 3 states away, the cost is $19. If the destination is 4 or more states away, the shipping cost is fixed at $25. If you ship international the variable ``i_dest`` is 0 (within your continent), the cost is $30. Anywhere other than your continent ``i_dest`` would be set to 1 and the cost is $45. 
 The variable ``location`` will have either the value "domestic" or "international". If domestic, the variable ``destination`` could have the values 0 (within the state), 1 (1 state away), 2 (2 states away), 3 (3 states away), or 4 and above (4 or more states away). If international, ``i_dest`` will either be 0 (within your continent) or 1 (out of your continent)
 Use nested conditionals to help someone determine the shipping cost. Uncomment each set of variables one at a time to test.
@@ -354,6 +453,13 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
 
 
 8. **Challenge** In XYZ University, upper level math classes are numbered 300 and up. Upper level English classes are numbered 200 and up. Upper level Psychology classes are 400 and up. Create two lists, ``upper`` and ``lower``. Assign each course in ``classes`` to the correct list, upper or lower. As a hint, remember you can convert strings to different types.
+=======
+
+
+
+
+8. **Challenge** In XYZ University, upper level math classes are numbered 300 and up. Upper level English classes are numbered 200 and up. Upper level Psychology classes are 400 and up. Create two lists, ``upper`` and ``lower``. Assign each course in ``classes`` to the correct list, ``upper`` or ``lower``. HINT: remember, you can convert some strings to different types!
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_08
    :tags: Selection/Nestedconditionals.rst
@@ -367,13 +473,20 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
    class myTests(TestCaseGui):
 
       def testEightA(self):
+<<<<<<< HEAD
          self.assertEqual(upper, ['PSYCH 412', 'MATH 300', 'MATH 404', 'ENG 201', 'PSYCH 508', 'ENG 220'], "Testing that u_math is assigned to correct values.")
       def testEightB(self):
          self.assertEqual(lower, ['MATH 150', 'PSYCH 111', 'PSYCH 313', 'MATH 206', 'ENG 100', 'ENG 103', 'ENG 125', 'ENG 124'], "Testing that l_math is assigned to correct values.")
+=======
+         self.assertEqual(upper, ['PSYCH 412', 'MATH 300', 'MATH 404', 'ENG 201', 'PSYCH 508', 'ENG 220'], "Testing that the upper list exists and contains the correct elements.")
+      def testEightB(self):
+         self.assertEqual(lower, ['MATH 150', 'PSYCH 111', 'PSYCH 313', 'MATH 206', 'ENG 100', 'ENG 103', 'ENG 125', 'ENG 124'], "Testing that the lower list exists and contains the correct elements.")
+>>>>>>> upstream/106F16
       
 
    myTests().main()
 
+<<<<<<< HEAD
 8.1 **Challenge:** We're trying to find out if you'll get a ticket or not depending on your speed and where you're driving on the highway. In Michigan, the speed limit is 70, in Hawaii, the speed limit is 60, in Montana the speed limit is 80. Create a list called ``result``. For each element in cases, decide if there should be a ticket given. If their speed is above the speed limit for that state, add "Ticket" to result. Otherwise, add "No Ticket" to result. As a hint, remember that you can convert values to different types.
 
 .. activecode:: ee_ch11_081
@@ -394,6 +507,10 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
    myTests().main()
 
 9. For each word in ``words``, add '-d' to the end of the word if the word ends in "e" to make it past tense. Otherwise, add '-ed' to make it past tense. Save these past tense words to a list called ``past_tense``.
+=======
+
+9. For each word in ``words``, add 'd' to the end of the word if the word ends in "e" to make it past tense. Otherwise, add 'ed' to make it past tense. Save these past tense words to a list called ``past_tense``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch11_09
 
@@ -406,6 +523,7 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
    class myTests(TestCaseGui):
 
       def testNine(self):
+<<<<<<< HEAD
          self.assertEqual(past_tense, ['adopted', 'baked', 'beamed', 'confided', 'grilled', 'planted', 'timed', 'waved', 'wished'], "Testing that past_tense is assigned to correct values.")
 
    myTests().main()
@@ -442,5 +560,12 @@ Use nested conditionals to help someone determine the shipping cost. Uncomment e
 
 
 ​
+=======
+         self.assertEqual(past_tense, ['adopted', 'baked', 'beamed', 'confided', 'grilled', 'planted', 'timed', 'waved', 'wished'], "Testing that the past_tense list is correct.")
+
+   myTests().main()
+
+
+>>>>>>> upstream/106F16
 
 

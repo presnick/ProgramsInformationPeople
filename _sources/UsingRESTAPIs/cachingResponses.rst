@@ -24,16 +24,27 @@ software development using REST APIs:
 - It will make your program run faster. Connections over the Internet can take a few seconds or even tens of seconds if you are requesting a lot of data. It might not seem like much, but debugging is a lot easier when you can make a change in your program, run it, and get an almost instant response.
 - It is harder to debug your processing code if the content that is coming back can change on each run of your code. It's amazing to be able to write programs that fetch real-time data like airport conditions or the latest tweets from Twitter. It can be hard to debug, however, if you are having problems that only occur on certain Tweets (e.g., those in foreign languages). When you encounter problematic data, it's helpful if you save a copy and can debug your program working on that saved, static copy of the data.
 
-In our implementation of the caching pattern, we will use a python dictionary to store the results of the expensive operations (the calls to requests.get). Behind the scenes, when requests.get is executed, it takes the url_path and a parameters dictionary, turns them into a full url, and then fetches data from a website based on that full url. We will use that full url as a key in the caching dictionary, and the returned text from the call to requests.get as the associated value.
+In our implementation of the caching pattern, we will use a python dictionary to store the results of the expensive operations (the calls to requests.get). Behind the scenes, when requests.get is executed, it takes the url_path parameters dictionary, turns them into a full url, and then fetches data from a website based on that full url. We will use that full url as a key in the caching dictionary, and the returned text from the call to requests.get as the associated value.
+
+Note that we have to dive a little deeper into the requests module in order to get just the URL that it would fetch, rather than have it actually fetch for us. In the function ``requestURL`` below, we create an instance of the Request class and then call the prepare() method on it. We could provide the parameters dictionary when creating the Request instance, just as we would when calling requests.get. However, in this case we provide the items from that dictionary as a list of tuples. This allows us to provide them in an order that we control (remember that when we extract the items or keys from a dictionary they might come out in any order). In this case, in the ``canonical_order`` function, we provide a list of the key-value pairs, with the keys in alphabetic order.
+
+.. note::
+
+    The function ``requestURL`` that we define below can be useful in some other situations as well. Notably, when a call to requests.get() fails, and you don't know why, call that function to print out the url to see exactly what it is. You can then copy and paste it into a browser, edit the URL and test that, and thus see what change might be needed to your request parameters.
 
 The code below implements the pattern described above.
 
 .. sourcecode:: python
 
+    def canonical_order(d):
+        alphabetized_keys = sorted(d.keys())
+        return [(k, d[k]) for k in alphabetized_keys]
+
     def requestURL(baseurl, params = {}):
-        req = requests.Request(baseurl, params)
+        req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
         prepped = req.prepare()
         return prepped.url
+
 
     def get_with_caching(base_url, params_diction, cache_diction):
         full_url = requestURL(base_url, params)
@@ -66,8 +77,12 @@ The python module pickle makes it easy to save the dictionary (or any other pyth
     except:
         saved_cache = {}
 
+    def canonical_order(d):
+        alphabetized_keys = sorted(d.keys())
+        return [(k, d[k]) for k in alphabetized_keys]
+
     def requestURL(baseurl, params = {}):
-        req = requests.Request(method = 'GET', url = baseurl, params = params)
+        req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
         prepped = req.prepare()
         return prepped.url
 

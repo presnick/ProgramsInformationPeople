@@ -67,6 +67,7 @@ Simple Python Data
    SimplePythonData/PrecedenceofOperators.rst
    SimplePythonData/Reassignment.rst
    SimplePythonData/UpdatingVariables.rst
+   SimplePythonData/HardCoding.rst
    SimplePythonData/Input.rst
    SimplePythonData/Glossary.rst
    SimplePythonData/Exercises.rst
@@ -313,6 +314,7 @@ Sorting
    Sort/Optionalkeyparameter.rst
    Sort/Anonymousfunctionswithlambdaexpressions.rst
    Sort/SortingaDictionary.rst
+   Sort/StableSorting.rst
    Sort/Glossary.rst
    Sort/Exercises.rst
    Sort/ExtraExercises.rst
@@ -330,6 +332,10 @@ Python Modules
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
    PythonModules/ExtraExercises.rst
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/106F16
 
 Requests
 ::::::::
@@ -379,6 +385,10 @@ String Formatting
    StringFormatting/CSV.rst
    StringFormatting/Exercises.rst
    StringFormatting/ExtraExercises.rst
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/106F16
 
 Using RESTAPIs
 ::::::::::::::
@@ -497,7 +507,6 @@ Test Cases
    :maxdepth: 2
 
    Testing/intro-TestCases.rst
-   Testing/TestCasesRevisited.rst
    Testing/Testingfunctions.rst
    Testing/Testingclasses.rst
    Testing/Glossary.rst
@@ -560,17 +569,35 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-In Class Code Samples
-:::::::::::::::::::::
+Discussion Section Resources (F16)
+::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
+
+   SectionResources/section4_106_f16.rst
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   navhelp.rst
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   ExtraExercises/session4_6925.rst
+   ExtraExercises/session5_7462.rst
+   ExtraExercises/session6_8512.rst
+
 
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
    InClass/OptionalKeywordParams.rst
    InClass/TuplesAndNestedData.rst
+
 
 Indices and tables
 ::::::::::::::::::

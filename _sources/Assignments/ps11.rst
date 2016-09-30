@@ -8,44 +8,21 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. assignment for problem set
+
+.. assignments for lecture waivers
+
+.. assignments for end of lecture exercise sets
+
+.. assignments for reading responses
+
+.. assignment for DYU
+
 .. highlight:: python
     :linenothreshold: 500
 
 
-Activities through 4/3
-=======================
+Activities through 11/31
+========================
 
-**We strongly recommend you attend lecture this week, even if you do not usually. It will make it much easier to learn the material and do the problem set this week!**
-
-* **Before Monday's class:**
-       * Read :ref:`Pyglet<pyglet_chap>` except for the last page, on the **Pong** game, which we'll look at on Wednesday.
-       * Try installing the ``pyglet`` library with ``pip``, and run some of the provided code in your native Python interpreter.
-
-.. usageassignment:: prep_20
-    :subchapters: Pyglet/Pyglet, Pyglet/pygletWindow, Pyglet/eventListener, Pyglet/windowContents, Pyglet/sounds, Pyglet/jinglingSquare, Pyglet/schedulingEvents
-    :assignment_name: Prep a20
-    :deadline: 2016-03-28 21:30:00
-    :pct_required: 80
-    :points: 50
-
-* **Before Tuesday at midnight:**
-    * Read *The Success of Open Source*, Chapter 4
-    * Read about the `Drupal open source community <https://medium.com/@heyrocker/this-article-was-originally-a-keynote-presentation-at-the-pacific-northwest-drupal-summit-in-5e7c7f93131b>`_. Drupal is a "Content Management System" that makes it relatively easy to develop websites that have dynamic content and interactive features like commenting and tagging. (Note: it may be helpful in reading the article to know that "Dries" is `Dries Buytaert <http://buytaert.net/>`_, the person who started Drupal and "webchick" is the username chosen by `Angie Byron <http://www.webchick.net/about>`_, a prominent member of the community.)
-    * Complete `Reading Response 11 <https://umich.instructure.com/courses/48961/assignments/57687>`_ on Canvas.
-
-
-* **Before Wednesday's class:**
-       * Read the Pong subchapter of the :ref:`Pyglet<pyglet_chap>` chapter in the textbook, and review the earlier sections as necessary.
-       * From Canvas, download the code file basepong.py and print out the PDFs basepong.pdf and LecturePongQuestions.pdf
-       * Write down your answers to Questions 1-11 from LecturePongQuestions.pdf before class and bring them with you to class. We will go over answers to those questions and then you will work with others in class to try to answer the rest of them.
-
-.. usageassignment:: prep_21
-    :subchapters: Pyglet/Pong
-    :assignment_name: Prep a21
-    :deadline: 2016-03-30 21:30:00
-    :pct_required: 80
-    :points: 50
-
-* **Before Sunday 4/3 at 5 pm:**
-    * Complete `Problem Set 11 <https://umich.instructure.com/courses/48961/assignments/55805>`_ on Canvas.
-    * **Before 6 pm:** Complete `Demonstrate Understanding 11 <https://umich.instructure.com/courses/48961/assignments/57701>`_ on Canvas.
+TBA

@@ -210,6 +210,7 @@ Extra Exercises
 
    myTests().main() 
 
+<<<<<<< HEAD
 4.2 Write a function called ``check_letts`` that takes a list as its parameter, and contains a while loop that only stops once the element of the list is the string 'no'. What is returned is a list of all of the strings up until it reaches 'no'.
 
 .. activecode:: ee_ch07_042
@@ -227,6 +228,8 @@ Extra Exercises
          self.assertEqual(check_letts(['no', 'aowef', 'wawfefj', 'awofjno', 'a23raf', '23rfad']), [], "Testing that check_letts stops on the correct position with input ['no', 'aowef', 'wawfefj', 'awofjno', 'a23raf', '23rfad']")
 
    myTests().main()
+=======
+>>>>>>> upstream/106F16
 
 5. Below is a for loop that works. Underneath the for loop, rewrite the problem so that it does the same thing, but using a while loop instead of a for loop. Assign the accumulated total in the while loop code to the variable ``sum2``. Once complete, sum2 should equal sum1.
 
@@ -274,6 +277,7 @@ Extra Exercises
 
    myTests().main() 
 
+<<<<<<< HEAD
 5.2 Here is a for loop that works. Underneath, rewrite the problem so that it is done using a while loop, but save the accumulated total to the variable ``total``.
 
 .. activecode:: ee_ch07_052
@@ -314,6 +318,11 @@ Extra Exercises
    myTests().main()
 
 6.1 **Challenge:** Write a function called ``beginning`` that takes a list as input and contains a while loop that only stops once the element of the list is the string 'bye'. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if it stops on the 32nd element, the first 10 are returned. If "bye" is the 5th element, the first 4 are returned.) *If you want to make this even more of a challenge, do this without slicing*
+=======
+
+
+6. **Challenge:** Write a function called ``beginning`` that takes a list as input and contains a while loop that only stops once the element of the list is the string 'bye'. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if it stops on the 32nd element, the first 10 are returned. If "bye" is the 5th element, the first 4 are returned.) *If you want to make this even more of a challenge, do this without slicing*
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_ch07_061
    :tags: IndefiniteIteration/listenerLoop.rst
@@ -332,6 +341,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 6.2 **Ultra Challenge:** Write a function called ``too_big`` that takes a list of numbers as input and produces a new list of numbers as output. Using a while loop, the function should output a list of only even numbers from the list that is passed in. It should stop once there are 5 elements in the new list, OR once the sum of all the numbers in the new list is greater than 30 - whichever comes first. 
 
 .. activecode:: ee_ch7_062
@@ -352,3 +362,5 @@ Extra Exercises
 
 
    myTests().main()   
+=======
+>>>>>>> upstream/106F16

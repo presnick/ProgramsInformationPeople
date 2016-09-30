@@ -12,44 +12,25 @@ Exercises
 
 1.
 
-    .. tabbed:: q1
+Evaluate the following numerical expressions in your head, then use
+the active code window to check your results:
 
-        .. tab:: Question
-            
-            Evaluate the following numerical expressions in your head, then use
-            the active code window to check your results:
+#. ``5 ** 2``
+#. ``9 * 5``
+#. ``15 / 12``
+#. ``12 / 15``
+#. ``15 // 12``
+#. ``12 // 15``
+#. ``5 % 2``
+#. ``9 % 5``
+#. ``15 % 12``
+#. ``12 % 15``
+#. ``6 % 6``
+#. ``0 % 7``
 
-            #. ``5 ** 2``
-            #. ``9 * 5``
-            #. ``15 / 12``
-            #. ``12 / 15``
-            #. ``15 // 12``
-            #. ``12 // 15``
-            #. ``5 % 2``
-            #. ``9 % 5``
-            #. ``15 % 12``
-            #. ``12 % 15``
-            #. ``6 % 6``
-            #. ``0 % 7``
+.. activecode:: ch02_ex1
 
-            .. activecode:: ch02_ex1
-
-               print 5**2
-
-        .. tab:: Answer
-
-            #. ``5 ** 2  = 25``
-            #. ``9 * 5 = 45``
-            #. ``15 / 12 = 1.25``
-            #. ``12 / 15 = 0.8``
-            #. ``15 // 12 = 1``
-            #. ``12 // 15 = 0``
-            #. ``5 % 2 = 1``
-            #. ``9 % 5 = 4``
-            #. ``15 % 12 = 3``
-            #. ``12 % 15 = 12``
-            #. ``6 % 6 = 0``
-            #. ``0 % 7 = 0``
+   print 5**2
 
 
 #. What is the order of the arithmetic operations in the following expression?  Evaluate the expression by hand and then check your

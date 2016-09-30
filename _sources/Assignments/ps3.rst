@@ -8,71 +8,124 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. assignment for problem set
+
+.. assignments for lecture waivers
+.. assignment::
+  :name: lecture6_waiver
+  :deadline: 2016-09-26 18:40
+  :questions: ee_ch11_04 20, ee_ch11_071 20, ee_ch11_081 20, ee_ch11_091 20, ee_files_03 20
+  :assignment_type: lecture_waiver
+  :points: 50
+  :autograde: unittest
+  :threshold: 50
+
+.. assignment::
+  :name: lecture7_waiver
+  :deadline: 2016-09-28 18:40
+  :questions: ee_ch12_04 25, ee_ch12_05 25, ee_ch12_051 25, ee_ch12_052 25
+  :assignment_type: lecture_waiver
+  :points: 50
+  :autograde: unittest
+  :threshold: 50
+
+.. assignments for end of lecture exercise sets
+.. assignment::
+  :name: lec6_attendance
+  :assignment_type: lecture_attendance
+  :questions: lec6_1 25, lec6_2 25, lec6_3 50
+  :deadline: 2016-09-26 21:10
+  :points: 50
+  :autograde: visited
+  :threshold: 1
+
+.. assignment::
+  :name: lec7_attendance
+  :assignment_type: lecture_attendance
+  :questions: lec3_1 25, lec3_2 25
+  :deadline: 2016-09-28 21:10
+  :points: 50
+  :autograde: visited
+  :threshold: 1
+
+.. assignments for reading responses
+.. assignment::
+  :name: response_4
+  :assignment_type: reading_response
+  :questions: rr_4 100
+  :points: 100
+
+.. assignment for DYU
+.. assignment::
+  :name: dyu3
+  :assignment_type: dyu
+  :questions: ps3_dyu 100
+  :points: 100
+
 .. highlight:: python
     :linenothreshold: 500
 
 
-Activities through 1/31
+Activities through 9/30
 =======================
 
 You have the following graded activities:
 
-* **Before Monday's class, 1/25:**
+* **Before Monday's class, 9/26:**
 
-  * Read :ref:`Iteration<iteration_chap>`, and do the exercises in that chapter
-  * Read :ref:`Folders and copying <mkdir_and_cp_sect>` about the Unix commands ``mkdir`` and ``cp``
-
-.. usageassignment:: prep_05
-    :chapters: Iteration
-    :subchapters: Unix/DirectoriesAndCopying
-    :assignment_name: Prep 05
-    :deadline: 2016-01-25 19:40:00
-    :pct_required: 80
-    :points: 50
-
-* **Before Tuesday 1/26 at midnight:**
-
-  * Read Chapter 3 of the Most Human Human
-  * Answer `Reading Response 4 <https://umich.instructure.com/courses/48961/assignments/57679>`_ on Canvas.
-
-* **Before Wednesday's class, 1/27:**
-  
-  * Read :ref:`Conditionals <conditionals_chap>` and do exercises
-  * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or you won't be able to do the last exercise...)
+  * Read :ref:`Conditionals <conditionals_chap>` and try exercises
+  * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or the last exercise will be very confusing...)
   * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
 
-.. usageassignment:: prep_06
-    :chapters: Selection, Files
-    :subchapters: BuildingAProgram/UnderstandingCode
-    :assignment_name: Prep 06
-    :deadline: 2016-01-27 19:40:00
-    :pct_required: 80
-    :points: 50
+  * :ref:`Lecture 6 Waiver<lecture_6_waiver>`
 
-* **Before Sunday evening, 1/31:**
-
-  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and the exercises in :ref:`Unix Problems 3 <unix_pset3>` to Canvas by **5PM**
-  * Upload your **Demonstrate Understanding** assignment to Canvas by **6PM**
+.. usageassignment::
+   :subchapters: BuildingAProgram/UnderstandingCode, Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles
+   :assignment_name: Prep 06
+   :deadline: 2016-09-30 04:00
+   :pct_required: 80
+   :points: 50
 
 
-.. _unix_pset3:
+* **Before Tuesday 9/27 at 11:59 pm:**
 
-Unix Problems
--------------
+  * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <https://umich.instructure.com/courses/105657/assignments/131315>`_ on Canvas.
 
-1. Use the ``mkdir`` command and other Unix commands you've learned to create a folder called ``ps3`` inside your ``106`` folder. Use the ``cp`` command and other Unix commands you've learned as needed to copy ``sample.txt`` from the ``ps2`` folder into the ``ps3`` folder. Then use the ``mkdir`` command to make a sub-directory inside the ``ps3`` folder called ``inside_ps3``. Take a screenshot showing that you typed these commands and that they worked properly (you could use ``ls`` or ``pwd`` to show that they worked!), and upload it to **Unix problems 3** on Canvas.
+* **Before Wednesday's class, 9/28:**
+  
+  * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
 
-2. Use the ``cp`` command to copy all of the individual files inside ``106/ps1`` to your ``106/ps3`` directory. (You can't copy sub-directories without a special flag, but you can copy files! See the chapter you read.) 
+  * :ref:`Lecture 7 Waiver<lecture_7_waiver>`
 
-After this, if you type ``ls`` in the ``ps3`` folder, you should see ``test.txt`` and ``sample.txt`` and the ``inside_ps3`` folder (unless you previously added more files to the ``ps1`` directory, in which case you should see those, too). Take a screenshot to show that you typed these commands and that they were successful. Upload it to **Unix problems 3** on Canvas.
+.. usageassignment:: 
+   :subchapters: Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying
+   :assignment_name: Prep 07
+   :deadline: 2016-09-30 04:00
+   :pct_required: 80
+   :points: 50
 
+
+* **Before Friday 9/30 at 6:30 PM:**
+
+  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas (linked in the problem set).
+
+  * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 5:00 pm.
+
+This Week's Reading Responses
+-----------------------------
+
+.. _reading_response_4:
+
+.. external:: rr_4
+
+  `Reading Response 4 <https://umich.instructure.com/courses/105657/assignments/131315>`_ on Canvas.
 
 .. _problem_set_3:
 
 Problem Set
 -----------
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
+**Instructions:** Write the code you want to save in the provided boxes, and click **run** for each one, which will save what is in the code window. The last code you have saved for each one by the deadline is what will be graded.
 
 .. datafile::  about_programming.txt
    :hide:
@@ -106,32 +159,41 @@ Problem Set
    security clearance). However, representing oneself as a "professional software engineer"
    without a license from an accredited institution is illegal in many parts of the world.
 
-1. Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
 
 .. activecode:: ps_3_1
+   :language: python
+   :autograde: unittest
+   :hidecode:
 
+   **1.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+   ~~~~
    several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
-   ====
+   =====
 
-   print "\n\n---\n"
-   print "(There are no tests for this problem.)"
+   from unittest.gui import TestCaseGui
 
-2. See the comments for directions.
+   class myTests(TestCaseGui):
+
+     def test_output(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+         self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()
 
 .. activecode:: ps_3_2
+   :language: python
+   :autograde: unittest
+   :hidecode:
 
+   **2.** The code provided does not iterate over the words in the English sentence that's stored in the variable ``sent``. Why not? Write a comment in the box below explaining why not. (Hint: Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence?) 
+
+   Then, write code that assigns a variable word_list to hold a LIST of all the WORDS in the string sent. (It's fine if words include punctuation.)
+   ~~~~
    sent = "The magical mystery tour is waiting to take you away."
 
-   # The following code does not iterate over the words in the English sentence we can read that's stored in the variable sent:
    for x in sent:
-       print x
-   # Why not? Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence? Write a comment explaining:
-
-
-   # Write code that assigns a variable word_list to hold a LIST of all the
-   # WORDS in the string sent. It's fine if words include punctuation.
-
+      print x
 
    =====
 
@@ -140,97 +202,126 @@ Problem Set
    class myTests(TestCaseGui):
 
       def testOne(self):
-         print "No tests for the comment, of course -- we can only test stored values!\n"
+         print "No tests for the comment -- we have to read those!\n"
          self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
 
    myTests().main()
 
 
-3. Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
-
-``hello``
-
-``goodbye``
-
-``wonderful``
-
-``I love Python``
-
-(Hint: remember string slicing?)
-
 .. activecode:: ps_3_3
+   :language: python
+   :autograde: unittest
+   :hidecode:
 
+   **3.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+
+   ::
+
+     hello
+     goodbye
+     wonderful
+     I love Python
+
+   (Hint: remember string slicing?)
+   ~~~~
    excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
 
    # Write your code here.
+   =====
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def test_output(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+         self.assertIn("hello\ngoodbye\nwonderful\nI love Python", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+.. activecode:: ps_3_4
+   :language: python
+   :available_files: about_programming.txt
+   :autograde: unittest
+   :hidecode:
+
+   **4.** Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) 
+
+   The result should look like this:
+
+   ::
+
+      Computer programming (often shortened to programming) is a process that leads from an
+
+      original formulation of a computing problem to executable programs. It involves
+
+   **Hint:** Use one of the file methods you've learned to make this easy! Do not print out a list by typing square brackets.
+   ~~~~
+   # Write your code here.
+   # Don't worry about extra blank lines between each of the lines when you print them
+   # (but if you want to get rid of them, you can try out the .strip() method)
 
    ====
 
-   print "\n\n---\n"
-   print "(There are no tests for this problem.)"
+   from unittest.gui import TestCaseGui
 
+   class myTests(TestCaseGui):
 
-4. Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) (Hint: use one of the file methods you've learned to make this easy!) Do not print out a list. 
+      def test_output(self):
+         self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+      def test_outputB(self):
+         self.assertIn("Computer programming (often shortened to programming) is a process that leads from an", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+      def test_outputC(self):
+         self.assertIn("original formulation of a computing problem to executable programs. It involves", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
-The result should look like this:
-
-   Computer programming (often shortened to programming) is a process that leads from an
-  
-   original formulation of a computing problem to executable programs. It involves
-
-.. activecode:: ps_3_4
-      :available_files: about_programming.txt
-
-      # Write your code here.
-      # Don't worry about extra blank lines between each of the lines when you print them
-      # (but if you want to get rid of them, you can try out the .strip() method)
-
-      ====
-
-      print "\n\n---\n"
-      print "There are no tests for this problem."
-
-
-5. Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
+   myTests().main()
 
 .. activecode:: ps_3_5
-      :available_files: about_programming.txt
+   :language: python
+   :available_files: about_programming.txt
+   :autograde: unittest
+   :hidecode:
 
-      # Write your code here.
+   **5.** Write code to open the file ``about_programming.txt`` and assign the **number of lines** in the file to the variable ``file_lines_num``.
+   ~~~~
+   # Write your code here.
 
-      =====
+   =====
 
-      from unittest.gui import TestCaseGui
+   from unittest.gui import TestCaseGui
 
-      class myTests(TestCaseGui):
+   class myTests(TestCaseGui):
 
-         def testOne(self):
-            print "No tests for the comment, of course -- we can only test stored values!\n"
-            self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
+    def testOne(self):
+       self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+       self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
 
-      myTests().main()
+   myTests().main()
 
-
-6. The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
-
-Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
-(HINT: you don't have to make a big change.)
 
 .. activecode:: ps_3_6
+   :language: python
+   :autograde: unittest
+   :hidecode:
 
+   **6.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
+
+   Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
+
+   (HINT: you don't have to make a big change.)
+   ~~~~ 
    #x = 25
    #x = 15
    #x = 5
    #x = -10
 
    if x > 20:
-       y = "yes"
+     y = "yes"
    if x > 10:
-       y = "no"
+     y = "no"
    if x < 0:
-       y = "maybe"
+     y = "maybe"
    else:
-       y = "unknown"
+     y = "unknown"
 
    print "y is " + str(y)
 
@@ -240,79 +331,107 @@ Fix the code so that it passes the test for each different value of x. So when t
 
    class myTests(TestCaseGui):
 
-      def testOne(self):
+     def testOne(self):
          print("No tests for the comment, of course -- we can only test stored values!\n")
          if x == 25:
-            self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
+             self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
          elif x == 15:
-            self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
+             self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
          elif x == 5:
-            self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
+             self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
          elif x == -10:
-            self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
+             self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
          else:
-            print "No tests when value of x is %s" % (x)
+             print "No tests when value of x is %s" % (x)
 
    myTests().main()
 
 
-7. See comments in code for instructions.
-
 .. activecode:: ps_3_7
+   :language: python
+   :autograde: unittest
+   :hidecode:
 
+   **7.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
+
+   The output you get should be:
+
+   :: 
+
+     5
+     13
+     11
+     12
+     3
+     12
+     11
+     6 
+
+   Then, write code to print out each element of list ``lp`` *only if* the length of the element is an even number. Use iteration (a for loop!).
+   ~~~~
    lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
-
-   # How many characters are in each element of list lp?
-   # Write code to print the length (number of characters)
-   # of each element of the list on a separate line.
-   ## (Do not write 8+ lines of code to do this. Use a for loop.)
-
-   # The output you get should be:
-   # 5
-   # 13
-   # 11
-   # 12
-   # 3
-   # 12
-   # 11
-   # 6
-
-   # Now write code to print out each element of
-   # list lp only IF the length of the element is
-   # an even number. Use iteration (a for loop!).
-
    ====
 
-   print "\n---\n\n"
-   print "There are no tests for this problem."
+   from unittest.gui import TestCaseGui
 
+   class myTests(TestCaseGui):
 
-8. Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. HINT 1: Use the accumulation pattern! HINT 2: the ``in`` operator checks whether a letter or substring is present in a string.
+     def test_output(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+     def test_outputB(self):
+         self.assertIn("5\n13\n11\n12\n3\n12\n11\n6", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+     def test_outputB(self):
+         self.assertIn("inspirations\namalgamation\nPython", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()
 
 .. activecode:: ps_3_8
+   :language: python
+   :autograde: unittest
+   :hidecode:
 
+   **8.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
+
+   HINT 1: Use the accumulation pattern! 
+
+   HINT 2: the ``in`` operator checks whether a substring is present in a string.
+   ~~~~
    items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
-
    =====
 
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
 
-      def testOne(self):
+     def testOne(self):
+         self.assertIn('in', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
          self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
 
    myTests().main()
 
-
-9. **Challenge problem (OPTIONAL, much harder):** write code to find the average (mean) number of words in each line of the file ``about_programming.txt``.
-
 .. activecode:: ps_3_9
-   :available_files: about_programming.txt
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **9.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+   ~~~~
+   diction = {"python":"you are awesome","autumn":100}
 
    # Write your code here.
 
    ====
 
-   print "\n\n---\n"
-   print "There are no tests for this problem."
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertIn('you are awesome', self.getOutput(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+
+.. external:: ps3_dyu
+
+  Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.

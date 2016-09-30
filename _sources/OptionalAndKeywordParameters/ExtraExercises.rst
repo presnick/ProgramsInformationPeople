@@ -165,7 +165,13 @@ Extra Exercises
 
    myTests().main()  
 
+<<<<<<< HEAD
 3.2 Write a function called ``checkingIfIn`` that takes three parameters, the first is a required parameter that should be a string, the second is an optional parameter called ``direction`` with a default of True, the third is an optional parameter called ``d`` that is a default of {'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}. Write the function so that when the second parameter is True, it checks to see if the first parameter is a key in the third parameter and if it is, return True, otherwise return False. If the second paramter is False, then it checks to see if the first parameter is not a key of the third. If it's not a key, return True, and if it is, return False.
+=======
+3.2 Write a function called ``checkingIfIn`` that takes three parameters. The first is a required parameter, which should be a string. The second is an optional parameter called ``direction`` with a default value of ``True``. The third is an optional parameter called ``d`` that has a default value of ``{'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}``. Write the function ``checkingIfIn`` so that when the second parameter is ``True``, it checks to see if the first parameter is a key in the third parameter; if it is, return ``True``, otherwise return ``False``. 
+
+But if the second paramter is ``False``, then the function should check to see if the first parameter is *not* a key of the third. If it's *not*, the function should return ``True`` in this case, and if it is, it should return ``False``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_opt_params_032
    :tags: OptionalAndKeywordParameters/KeywordParameters.rst, OptionalAndKeywordParameters/OptionalParameters.rst
@@ -188,6 +194,7 @@ Extra Exercises
 
    myTests().main()
 
+<<<<<<< HEAD
 4. Write a function called ``math``, that takes in three parameters: two numbers and an optional string with the default value "add". If the string value is add, the function should add the two integers. If the string value is "subtract", subtract the second integer from the first integer. If the value is "multiply", multiply the integers and if the value is "divide", divide the first integer by the second integer.
 
 .. activecode:: ee_Opt_Params_04
@@ -231,6 +238,9 @@ Extra Exercises
    myTests().main() 
 
 4.2 Write a function called ``together`` that takes three parameters, the first is a required parameter that is a number (integer or float), the second is a required parameter that is a string, and the third is an optional parameter whose default is " ". What is returned is the first parameter, concatenated with the second, using the third.
+=======
+4. Write a function called ``together`` that takes three parameters, the first is a required parameter that is a number (integer or float), the second is a required parameter that is a string, and the third is an optional parameter whose default is " ". What is returned is the first parameter, concatenated with the second, using the third.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_opt_params_042
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst
@@ -248,6 +258,7 @@ Extra Exercises
          self.assertEqual(together(493.3, 'beans', ' lima '), '493.3 lima beans', "Testing that together returns the correct string on input (493.3, 'beans', 'lima')")
 
    myTests().main()   
+<<<<<<< HEAD
 
 5. Given is below is the function ``test`` from earlier with some modifications. Correctly call the function indicated by the comments below. 
 
@@ -335,6 +346,11 @@ Extra Exercises
    myTests().main() 
 
 5.2 We have provided the fuction from earlier, checkingIfIn with slight variation so that if the first parameter is in the third, then it returns the value. Follow the instructions in the active code window for specific variable assignmemts. 
+=======
+ 
+
+5. We have provided the function ``checkingIfIn`` such that if the first input parameter is in the third, dictionary, input parameter, then the function returns that value, and otherwise, it returns ``False``. Follow the instructions in the active code window for specific variable assignmemts. 
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_opt_params_052
    :tags: OptionalAndKeywordParameters/KeywordParameters.rst, OptionalAndKeywordParameters/OptionalParameters.rst

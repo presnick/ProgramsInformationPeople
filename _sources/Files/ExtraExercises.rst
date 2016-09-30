@@ -147,6 +147,7 @@ Extra Exercises
 
    myTests().main() 
 
+<<<<<<< HEAD
 3. **Challenge** Assign the second word of every line to the list, ``second``.
 
 .. activecode:: ee_files_03
@@ -166,6 +167,10 @@ Extra Exercises
    myTests().main()
 
 3.1 Assign the first 30 characters of ``school_prompt.txt`` as a string to the variable ``beginning_chars``.
+=======
+
+3. Assign the first 30 characters of ``school_prompt.txt`` as a string to the variable ``beginning_chars``.
+>>>>>>> upstream/106F16
 
 .. activecode:: ee_files_031
    :tags: Files/intro-WorkingwithDataFiles.rst
