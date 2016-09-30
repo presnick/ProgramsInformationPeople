@@ -9,6 +9,14 @@
     License".
 
 .. assignment for problem set TODO
+.. assignment::
+  :name: PS02
+  :assignment_type: problem_set
+  :questions: ps_2_1 100, ps_2_2 100, ps_2_3 150, ps_2_4 100, ps_2_5 100, ps_2_6 150, ps_2_7 100, ps_2_8 100
+  :deadline: 2016-09-30 04:00
+  :points: 1000
+  :autograde: unittest
+
 
 .. assignments for reading responses
 
@@ -43,7 +51,7 @@ You have the following graded activities:
 .. usageassignment::
     :subchapters: Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles, Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying, BuildingAProgram/UnderstandingCode
     :assignment_name: Prep 04
-    :deadline: 2016-09-19 21:40
+    :deadline: 2016-09-30 04:00
     :pct_required: 80
     :points: 50
 
@@ -56,7 +64,7 @@ You have the following graded activities:
 .. usageassignment::
     :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
     :assignment_name: Prep 05
-    :deadline: 2016-09-21 21:40
+    :deadline: 2016-09-30 04:00
     :pct_required: 80
     :points: 50
 
