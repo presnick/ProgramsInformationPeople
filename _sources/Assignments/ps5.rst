@@ -227,6 +227,9 @@ Problem Set
             self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
             self.assertEqual(is_prefix('ge', 'Bigger'), False, "Testing whether 'ge' is a prefix of 'Bigger'")
             self.assertEqual(is_prefix('Bigge', "Bigger"), True, "Testing whether 'Bigge' is a prefix of 'Bigger'")
+            self.assertEqual(is_prefix('rid', 'Bridge'), False, "Testing whether 'rid' is a prefix of 'Bridge")
+            self.assertEqual(is_prefix('Bridge', 'Bridge'), True, "Testing whether 'Bridge' is a prefix of 'Bridge'")
+
 
       myTests().main()
 
