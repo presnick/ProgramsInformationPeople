@@ -16,18 +16,18 @@
   :deadline: 2016-09-26 18:40
   :questions: ee_ch11_04 20, ee_ch11_071 20, ee_ch11_081 20, ee_ch11_091 20, ee_files_03 20
   :assignment_type: lecture_waiver
-  :points: 100
+  :points: 50
   :autograde: unittest
-  :threshold: 100
+  :threshold: 50
 
 .. assignment::
   :name: lecture7_waiver
   :deadline: 2016-09-28 18:40
   :questions: ee_ch12_04 25, ee_ch12_05 25, ee_ch12_051 25, ee_ch12_052 25
   :assignment_type: lecture_waiver
-  :points: 100
+  :points: 50
   :autograde: unittest
-  :threshold: 100
+  :threshold: 50
 
 .. assignments for end of lecture exercise sets
 .. assignment::
