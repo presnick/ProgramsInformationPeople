@@ -210,27 +210,6 @@ Extra Exercises
 
    myTests().main() 
 
-<<<<<<< HEAD
-4.2 Write a function called ``check_letts`` that takes a list as its parameter, and contains a while loop that only stops once the element of the list is the string 'no'. What is returned is a list of all of the strings up until it reaches 'no'.
-
-.. activecode:: ee_ch07_042
-   :tags: IndefiniteIteration/listenerLoop.rst
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(check_letts(['hey', 'now', 'you', 'are', 'a', 'rockstar', 'no', 'get', 'your', 'game', 'on']), ['hey', 'now', 'you', 'are', 'a', 'rockstar'], "Testing that check_letts stops on the correct position with input ['hey', 'now', 'you', 'are', 'a', 'rockstar', 'no', 'get', 'your', 'game', 'on']")
-         self.assertEqual(check_letts(['never gonna give you up no', 'never', 'gonna', 'let', 'you', 'no']), ['never gonna give you up no', 'never', 'gonna', 'let', 'you'], "Testing that check_letts stops on the correct position with input ['never gonna give you up no', 'never', 'gonna', 'let', 'you', 'no']")
-         self.assertEqual(check_letts(['no', 'aowef', 'wawfefj', 'awofjno', 'a23raf', '23rfad']), [], "Testing that check_letts stops on the correct position with input ['no', 'aowef', 'wawfefj', 'awofjno', 'a23raf', '23rfad']")
-
-   myTests().main()
-=======
->>>>>>> upstream/106F16
-
 5. Below is a for loop that works. Underneath the for loop, rewrite the problem so that it does the same thing, but using a while loop instead of a for loop. Assign the accumulated total in the while loop code to the variable ``sum2``. Once complete, sum2 should equal sum1.
 
 .. activecode:: ee_ch07_05
@@ -277,52 +256,8 @@ Extra Exercises
 
    myTests().main() 
 
-<<<<<<< HEAD
-5.2 Here is a for loop that works. Underneath, rewrite the problem so that it is done using a while loop, but save the accumulated total to the variable ``total``.
-
-.. activecode:: ee_ch07_052
-   :tags: IndefiniteIteration/ThewhileStatement.rst
-
-   L = [3,9,29,8,48,5,3,8,6,1,2]
-   accum = 0
-   for elem in L:
-       accum += elem
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(total, 122 , "Testing that total has the correct value")
-
-   myTests().main()
-
-6. **Challenge** Create a function called ``first_five`` that takes in a list of numbers. In this function, create a sublist of the inputted list by using a while loop that stops when it reaches the number 0. The function should only return a list of the first five numbers of the sublist, regardless of where the while loop stops. i.e. the sublist [1, 1, 2, 3, 4, 3, 2] will only return [1, 1, 2, 3, 4]. For a challenge, do this without using slicing.
-
-.. activecode:: ee_ch07_06
-   :tags: IndefiniteIteration/listenerLoop.rst
-   
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testSix(self):
-         self.assertEqual(first_five([1, 2, 0]), [1,2], "Testing that first_five([1, 2, 0]) returns [1,2]")
-         self.assertEqual(first_five([1, 2, 3, 4, 3, 2, 5, 0, 3, 4]), [1, 2, 3, 4, 3], "Testing that first_five([1, 2, 3, 4, 3, 2, 5, 0, 3, 4]) returns [1, 2, 3, 4, 3]")
-         self.assertEqual(first_five([0]), [], "Testing that first_five([0]) returns []")
-
-   myTests().main()
-
-6.1 **Challenge:** Write a function called ``beginning`` that takes a list as input and contains a while loop that only stops once the element of the list is the string 'bye'. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if it stops on the 32nd element, the first 10 are returned. If "bye" is the 5th element, the first 4 are returned.) *If you want to make this even more of a challenge, do this without slicing*
-=======
-
 
 6. **Challenge:** Write a function called ``beginning`` that takes a list as input and contains a while loop that only stops once the element of the list is the string 'bye'. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if it stops on the 32nd element, the first 10 are returned. If "bye" is the 5th element, the first 4 are returned.) *If you want to make this even more of a challenge, do this without slicing*
->>>>>>> upstream/106F16
 
 .. activecode:: ee_ch07_061
    :tags: IndefiniteIteration/listenerLoop.rst
@@ -341,26 +276,3 @@ Extra Exercises
 
    myTests().main()
 
-<<<<<<< HEAD
-6.2 **Ultra Challenge:** Write a function called ``too_big`` that takes a list of numbers as input and produces a new list of numbers as output. Using a while loop, the function should output a list of only even numbers from the list that is passed in. It should stop once there are 5 elements in the new list, OR once the sum of all the numbers in the new list is greater than 30 - whichever comes first. 
-
-.. activecode:: ee_ch7_062
-   :tags: IndefiniteIteration/listenerLoop.rst
-
-   def too_big(): 
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(too_big([12, 19, 5, 10, 10, 13, 4, 16]), [12, 10, 10], "Testing the function too_big on the input [12, 19, 5, 10, 10, 13, 4, 16].")
-         self.assertEqual(too_big([2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2]), [2, 4, 2, 2, 2], "Testing the function too_big on the input [2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2].")
-
-
-
-   myTests().main()   
-=======
->>>>>>> upstream/106F16

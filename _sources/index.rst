@@ -332,10 +332,7 @@ Python Modules
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
    PythonModules/ExtraExercises.rst
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/106F16
 
 Requests
 ::::::::
@@ -385,10 +382,7 @@ String Formatting
    StringFormatting/CSV.rst
    StringFormatting/Exercises.rst
    StringFormatting/ExtraExercises.rst
-<<<<<<< HEAD
-=======
 
->>>>>>> upstream/106F16
 
 Using RESTAPIs
 ::::::::::::::

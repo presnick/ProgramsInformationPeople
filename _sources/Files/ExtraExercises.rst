@@ -147,30 +147,7 @@ Extra Exercises
 
    myTests().main() 
 
-<<<<<<< HEAD
-3. **Challenge** Assign the second word of every line to the list, ``second``.
-
-.. activecode:: ee_files_03
-   :tags: Files/intro-WorkingwithDataFiles.rst
-
-   second = []
-   
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testThree(self):
-         self.assertEqual(second, ['summer', 'will', 'Rome', 'Athens', 'London,', 'Paris,', 'Madrid,', 'Vienna', 'will', 'I', 'only'], "Testing that second is assigned to correct value.")
-
-   myTests().main()
-
-3.1 Assign the first 30 characters of ``school_prompt.txt`` as a string to the variable ``beginning_chars``.
-=======
-
 3. Assign the first 30 characters of ``school_prompt.txt`` as a string to the variable ``beginning_chars``.
->>>>>>> upstream/106F16
 
 .. activecode:: ee_files_031
    :tags: Files/intro-WorkingwithDataFiles.rst
