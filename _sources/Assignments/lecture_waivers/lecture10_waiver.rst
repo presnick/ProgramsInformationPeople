@@ -89,6 +89,7 @@ Lecture 10: Waiver Challenge Exercises
    Write a function called ``too_big`` that takes a list of numbers as input and produces a new list of numbers as output. Using a while loop, the function should output a list of all of the numbers in the list *up until* the total is 30 or more. So, if the input to this function is ``[10,20,4,6,7,9]``, it should return the list ``[10,20]``. If the input is ``[10,3,5,6,7,9]``, it should return ``[10,3,5,6,7]``. 
    ~~~~
    def too_big(): 
+      pass # replace this line with your function body
 
    =====
 
