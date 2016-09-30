@@ -24,15 +24,23 @@ object of the right type and that it returns the correct values when invoked on 
 
 You've actually been using test cases throughout this book in some of the activecode windows and almost all of the exercises. The code for them has been hidden, so as not to confuse you and also to avoid giving away the answers. Now it's time to learn how to write code for test cases.
 
-Python provides a built-in module for writing and running test cases, called ``unittest``. As you write larger programs, as part of larger software development teams, you will learn a lot more details about how to structure collections of test cases and learn a discipline for where to collect them and when to run them. This course introduces just a few features of the unittest module.
+Python provides a built-in module for writing and running test cases, called ``unittest``. As you write larger programs, as part of larger software development teams, you will learn a lot more details about how to structure collections of test cases and learn a discipline for where to collect them and when to run them. This course introduces just a few features of the ``unittest`` module.
 
 As with other modules, the first step is to write a statement to import it. Having done that, you can refer to the classes and functions that are defined in the unittest module.
 
-The unittest module defines a class called TestCase. Rather than directly creating instances of this class, the normal way to use this class is to create a subclass of it. Within the subclass, you define one or more methods, following a convention of beginning the name of each method with ``test_``. Each method definition is one test case.
+The unittest module defines a class called ``TestCase``. Rather than directly creating instances of this class, the normal way to use this class is to create a subclass of it. Within the subclass, you define one or more methods. By convention, the name of each method should begin with the word ``test_``. This helps you, and other programmers, keep track of what's going on in your code. Each method that you define in the subclass of ``TestCase`` is one test case.
 
 The code defining test case methods can make "assertions", by invoking one of the assertion methods that is defined for the TestCase class. For example, we can write self.assertEqual(x, 3). If the current value of the variable x is 3, the assertion is valid and the test will pass. If it's not, then the test will fail.
 
-In order to run the test cases associated with a subclass you have created, you create an instance of that class and then invoke the method main(). The main() method is inherited from TestCase: you don't need to define it yourself. It invokes on the instance all of the methods that begin with ``test``. The unittest framework also offers a main() function. It will search for all subclasses of TestCase, create one instance of each, and invoke the main() method on each of them, causing them to run all their tests.
+In order to run the test cases associated with a subclass you have created, you create an instance of that class, and then invoke the method ``main()``. The ``main()`` method is inherited from ``TestCase``: you don't need to define it yourself. It invokes on the instance all of the methods that begin with ``test``. 
+
+The unittest framework also offers a ``main()`` function. It will search for all subclasses of ``TestCase``, create one instance of each, and invoke the ``main()`` method on each of them, causing them to run all their tests.
+
+What you will need to learn is how to import the unittest framework, which you learned about in the modules chapter, and write code to
+
+1. Make a sublcass of ``unittest.TestCase``.
+2. Define methods for test cases.
+3. Use assertion methods inside the methods that you define to test specifics about your code.
 
 For example, the code snippet below, illustrates a set of tests for string methods. It is a simplified version of the code provided in the `python documentation for the unittest module <https://docs.python.org/3/library/unittest.html>`_.
 
@@ -40,23 +48,24 @@ For example, the code snippet below, illustrates a set of tests for string metho
 
     import unittest
 
-    class TestStringMethods(unittest.TestCase):
+    class TestStringMethods(unittest.TestCase): # make a sublcass
 
-        def test_upper(self):
-            self.assertEqual('foo'.upper(), 'FOO')
+        def test_upper(self): # define a method 
+            self.assertEqual('foo'.upper(), 'FOO') # use an assert method to test if something is true
 
         def test_isupper(self):
             self.assertTrue('FOO'.isupper())
             self.assertFalse('Foo'.isupper())
 
-        def test_split(self):
+        def test_split(self): # any name ok
+        # but note the convention that it should start with the word test
             s = 'hello world'
             self.assertEqual(s.split(), ['hello', 'world'])
 
-    # make an instance, and invoke the main method, which invokes the test methods
+    # make an instance, and invoke the main method, which invokes the test methods:
     TestStringMethods().main()
 
-In the online textbook, we use a special module that is built on top of the unittest module. It handles making a nice tabular display of the results of the tests, and putting them into HTML form to display on the web page. To use it, we import the module unittest.gui rather than just unittest, and then we work with the TestCaseGui class rather than the TestCase class.
+In the online textbook, we use a special module that is built on top of the unittest module. It handles making a nice tabular display of the results of the tests, and putting them into HTML form to display on the web page. To use it, we import the module ``unittest.gui`` rather than just unittest, and then we work with the ``TestCaseGui`` class rather than the ``TestCase`` class. In your own code files, you will use the ``TestCase`` class, and get output in your console that does not look quite as neat as the tables you've seen in this textbook.
 
 Here's an example with test cases for the `blanked` function that you created
 in the Hangman problem set. Note that the tests will fail until you fill in a correct definition for the blanked function.
@@ -94,7 +103,7 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
    :feedback_c: A message is printed out, but the program does not stop executing
    :correct: b
 
-   When TestCase.assertEqual() is passed two values that are not the same, it generates an error and stops execution of the program.
+   When ``TestCase.assertEqual()`` is passed two values that are not the same, it generates an error and stops execution of the program.
  
 .. mchoice:: test_questionsimple_test_2
    :answer_a: True
