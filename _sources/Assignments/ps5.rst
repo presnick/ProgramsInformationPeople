@@ -48,7 +48,7 @@ You have the following graded activities:
   * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
 
 .. usageassignment::
-    :subchapters: ndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop, Installation/TextEditor
+    :subchapters: IndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop, Installation/TextEditor
     :assignment_name: Prep 10
     :deadline: 2016-10-10 19:40
     :pct_required: 80

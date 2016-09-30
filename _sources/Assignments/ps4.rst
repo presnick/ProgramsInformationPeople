@@ -11,6 +11,23 @@
 .. assignment for problem set
 
 .. assignments for lecture waivers
+.. assignment::
+  :name: lecture8_waiver
+  :deadline: 2016-10-03 18:40
+  :questions: ee_ch13_051 10, ee_ch13_06 10, ee_ch13_041 10, ee_ch13_012 20
+  :assignment_type: lecture_waiver
+  :points: 50
+  :autograde: unittest
+  :threshold: 50
+
+.. assignment::
+  :name: lecture9_waiver
+  :deadline: 2016-10-05 18:40
+  :questions: ee_functions_061 10, ee_Function_07 10, ee_functions_072 10, ee_functions_08 20 
+  :assignment_type: lecture_waiver
+  :points: 50
+  :autograde: unittest
+  :threshold: 50
 
 .. assignments for end of lecture exercise sets
 
