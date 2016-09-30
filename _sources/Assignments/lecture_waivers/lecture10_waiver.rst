@@ -89,7 +89,7 @@ Lecture 10: Waiver Challenge Exercises
    Write a function called ``too_big`` that takes a list of numbers as input and produces a new list of numbers as output. Using a while loop, the function should output a list of all of the numbers in the list *up until* the total is 30 or more. So, if the input to this function is ``[10,20,4,6,7,9]``, it should return the list ``[10,20]``. If the input is ``[10,3,5,6,7,9]``, it should return ``[10,3,5,6,7]``. 
    ~~~~
    def too_big(): 
-      pass # replace this line with your function body
+       pass # replace this line with your function body
 
    =====
 
@@ -99,6 +99,6 @@ Lecture 10: Waiver Challenge Exercises
 
       def testOne(self):
          self.assertEqual(too_big([12, 19, 5, 10, 10, 13, 4, 16]), [12, 19], "Testing the function too_big on the input [12, 19, 5, 10, 10, 13, 4, 16].")
-         self.assertEqual(too_big([2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2]), 2, 3, 4, 5, 2, 2, 7, 2, 4], "Testing the function too_big on the input [2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2].")
+         self.assertEqual(too_big([2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2]), [2, 3, 4, 5, 2, 2, 7, 2, 4], "Testing the function too_big on the input [2, 3, 4, 5, 2, 2, 7, 2, 4, 19, 6, 5, 4, 2, 2].")
 
    myTests().main()   
