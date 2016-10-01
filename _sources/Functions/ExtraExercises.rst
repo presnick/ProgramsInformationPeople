@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. Write a function called ``int_return`` that takes an integer and returns the same integer.
+1. Write a function called ``int_return`` that takes an integer as input and returns the same integer.
 
 .. activecode:: ee_Functions_01
    :tags: Functions/Returningavaluefromafunction.rst, Functions/FunctionDefinitions.rst

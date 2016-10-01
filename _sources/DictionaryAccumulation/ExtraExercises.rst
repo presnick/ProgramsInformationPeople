@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. The dictionary ``Junior`` shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable ``credits``. Do not hardcode this.
+1. The dictionary ``Junior`` shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable ``credits``. Do not hardcode this -- use dictionary accumulation!
 
 .. activecode:: ee_ch13_01
    :tags: DictionaryAccumulation/AccumulatingResultsFromaDictionary.rst
