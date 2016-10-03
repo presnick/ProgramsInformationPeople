@@ -66,7 +66,7 @@ You have the following graded activities:
   * :ref:`Lecture 11 Waiver <lecture_11_waiver>`
 
 .. usageassignment::
-    :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand.rst
+    :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
     :assignment_name: Prep 11
     :deadline: 2016-10-12 19:40
     :pct_required: 80

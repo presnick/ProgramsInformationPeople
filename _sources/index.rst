@@ -584,6 +584,8 @@ Discussion Section Resources (F16)
    ExtraExercises/session4_6925.rst
    ExtraExercises/session5_7462.rst
    ExtraExercises/session6_8512.rst
+   ExtraExercises/session8_9347.rst
+   ExtraExercises/session9_6473.rst
 
 
    InClass/DictionaryAccum.rst
