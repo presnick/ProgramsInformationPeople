@@ -131,6 +131,7 @@ Problem Set
 .. activecode:: ps_2_1
    :language: python
    :available_files: about_programming.txt
+   :autograde: unittest
    :hidecode:
 
    **1.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
