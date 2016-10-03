@@ -9,6 +9,13 @@
     License".
 
 .. assignment for problem set
+.. assignment::
+  :name: PS03
+  :assignment_type: problem_set
+  :questions: ps_3_1 100, ps_3_2 100, ps_3_3 100, ps_3_4 100, ps_3_5 100, ps_3_6 100, ps_3_7 100, ps_3_8 200, ps_3_9 100
+  :deadline: 2016-10-03 04:00
+  :points: 1000
+  :autograde: unittest
 
 .. assignments for lecture waivers
 .. assignment::
