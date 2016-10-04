@@ -10,7 +10,8 @@
 
 * **Before class Monday 10/10:**
 
-  * Read something
+  * Read [tuples, nested data, nested iteration]
+  * This practice is worth it, super important
 
 .. usageassignment::
 	:subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
@@ -25,7 +26,7 @@
 
 * **Before Wednesday's class, 10/12:**
 
-  * Read something
+  * Read Sorting
   * Read just one section of the Unit Testing chapter: LINK. **We will *not* expect you to know this material yet.** You should just be aware that you will see this material in your provided problem set files, you should not change it, and you'll have a basic idea of what it is doing.
 
 .. usageassignment::
@@ -93,13 +94,27 @@ To find the file, and submit your final assignment on Canvas, go `HERE <linkhere
 
 .. external:: ps_5_5
 
-    5. Define a function called ``grep_in_python``: it should take as input: a string whose default value is the empty string, and a list of strings. It should return a list of only the strings in the list input which include the string input. 
+		5. Nested data problem 1, 3 nested lists or st
 
 .. external:: ps_5_6
+
+		6. Nested data prob 6, a v simple dictionary somethin somethin
+
+.. external:: ps_5_6
+
+		6. A function definition that returns a tuple (and has an optional argument)
+
+.. external:: ps_5_7
+
+		7. Nested data with a complex dictionary (the sanitized FB data probs. include it here as well as in problem set, maybe?) 
+
+.. external:: ps_5_8
 
 		6. Define a function ``sort_nested_lists`` that accepts as input a list of lists of integers, e.g. ``[[2,3],[45,100,2],[536],[103,2,8]]``. It should return a sorted version of that list, sorted by the sum of the integers in each sub-list. For example, if that list were the function's input, the return value should be ``[[536],[45,100,2],[103,2,8][2,3]]``. 
 
 		**Suggestion:** It's a good idea to come up with some sample "test cases" to help yourself work through this, in addition to the tests we have provided in your code file. Come up with sample lists where it's easy to figure out what the correct sorting is, and make invocations to your function using that input, and print out the results. If you get different output than you expect, trace through the process to figure out where it might have gone wrong. Writing out an English plan for this and translating it into code bit by bit may also be a good idea.
+
+
 
 .. external:: ps5_dyu
 
