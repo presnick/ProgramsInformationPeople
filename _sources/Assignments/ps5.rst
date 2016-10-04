@@ -8,18 +8,22 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+Activities through 10/19 (through Fall Break)
+=============================================
+
 * **Before class Monday 10/10:**
 
-  * Read :ref:`Tuples <tuples_chapter>` and try exercises in the sections listed below
-  * Read :ref:`Nested Data and Nested Iteration<nested_data_chapter>` and try exercises in sections listed below
-  * Read just the :ref:`introduction to Unit Testing<>`. You will hear more about this on Monday. You do *not* have to read the rest of this chapter -- we will focus in more depth on this material later in the semester. But this week is the first time you will see it, so we will teach you how to understand the output you get from unit tests when you run problem sets on your own computer.
+  * Read :ref:`Tuples <tuples_chap>` and try exercises in the sections listed below
+  * Read :ref:`Nested Data and Nested Iteration<nested_chap>` and try exercises in sections listed below
+  * Read just the :ref:`introduction to Unit Testing<test_cases_chap>`. (We will discuss this on Monday in lecture! You do *not* have to read the rest of this chapter beyond the introductory section; it addreses material we have not learned yet in this course. We will focus in more depth on that material later in the semester. But this week is the first time you will see the code for Unit Tests, so we will teach you how to understand the output you get from them when you run problem sets on your own computer.)
 
 .. usageassignment::
-	:subchapters: Testing/intro-TestCases, Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems, NestedData/ListswithComplexItems, NestedData/NestedDictionaries, NestedData/NestedIteration, NestedData/DebuggingNestedData
-  :assignment_name: Prep 10
+  :subchapters: Testing/intro-TestCases, Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems, NestedData/ListswithComplexItems, NestedData/NestedDictionaries, NestedData/NestedIteration, NestedData/DebuggingNestedData
+  :assignment_name: Prep 08
   :deadline: 2016-10-10 21:40
   :pct_required: 80
   :points: 50
+
 
 * **Before Tuesday 10/11 at 11:59 PM:**
 
@@ -27,18 +31,22 @@
 
 * **Before Wednesday's class, 10/12:**
 
-  * Read :ref:`Sorting<sort_chapter>` and try the exercises in the sections listed below.
+  * Read :ref:`Sorting<sort_chap>` and try the exercises in the sections listed below.
+  * Read about `Unix diff <http://www.computerhope.com/unix/udiff.htm>`_ and `Unix curl <https://en.wikipedia.org/wiki/CURL#Examples_of_cURL_use_from_command_line>`_ commands. 
+  * NOTE: The latter link about ``curl`` is just one small section of a Wikipedia article that will help you understand what is happening when you use the Unix ``curl`` command. We will unpack this further later on!
 
 .. usageassignment::
-	:subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting
-  :assignment_name: Prep 11
+  :subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting
+  :assignment_name: Prep 08
   :deadline: 2016-10-12 21:40
   :pct_required: 80
   :points: 50
 
 * **Before Sunday 10/16 at 11:59 PM:**
 
-  * Complete all of :ref:`Problem Set 5<problem_set_5>`and the Demonstrate Your Understanding assignment for this week.  
+  * Complete all of :ref:`Problem Set 5 <problem_set_5>` and the Demonstrate Your Understanding assignment for this week.  
+
+* **Note that your midterm is during class time on Wednesday, October 19, in Angell Hall.** See syllabus. We strongly suggest that you look through all Extra Exercises and do practice problems to prepare. Announcements will follow. 
 
 .. note::
 
