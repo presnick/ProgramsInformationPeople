@@ -10,11 +10,12 @@
 
 * **Before class Monday 10/10:**
 
-  * Read [tuples, nested data, nested iteration]
-  * This practice is worth it, super important
+  * Read :ref:`Tuples <tuples_chapter>` and try exercises in the sections listed below
+  * Read :ref:`Nested Data and Nested Iteration<nested_data_chapter>` and try exercises in sections listed below
+  * Read just the :ref:`introduction to Unit Testing<>`. You will hear more about this on Monday. You do *not* have to read the rest of this chapter -- we will focus in more depth on this material later in the semester. But this week is the first time you will see it, so we will teach you how to understand the output you get from unit tests when you run problem sets on your own computer.
 
 .. usageassignment::
-	:subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
+	:subchapters: Testing/intro-TestCases, Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems, NestedData/ListswithComplexItems, NestedData/NestedDictionaries, NestedData/NestedIteration, NestedData/DebuggingNestedData
   :assignment_name: Prep 10
   :deadline: 2016-10-10 21:40
   :pct_required: 80
@@ -22,15 +23,14 @@
 
 * **Before Tuesday 10/11 at 11:59 PM:**
 
-  * Complete :ref:`Reading Response 5<reading_response_5>`.
+  * Complete :ref:`Reading Response 6<reading_response_6>`.
 
 * **Before Wednesday's class, 10/12:**
 
-  * Read Sorting
-  * Read just one section of the Unit Testing chapter: LINK. **We will *not* expect you to know this material yet.** You should just be aware that you will see this material in your provided problem set files, you should not change it, and you'll have a basic idea of what it is doing.
+  * Read :ref:`Sorting<sort_chapter>` and try the exercises in the sections listed below.
 
 .. usageassignment::
-	:subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
+	:subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting
   :assignment_name: Prep 11
   :deadline: 2016-10-12 21:40
   :pct_required: 80
@@ -44,7 +44,11 @@
 
 	Starting this week, your problem sets will be completed in ``.py`` files that you will download from Canvas and edit to add your answers. You will test them and work on them by running them via the command prompt, as you practiced last week. 
 
-	You will submit your final files in Canvas assignments. However, the instructions for each problem on the assignment will be found in the textbook, as usual. You will need to reference the textbook for the instructions for each problem, and in the files we provide you, we will provide whatever code (if any) that we intend you to start with, beneath comments e.g. ``## [PROBLEM 1]``.
+	Note that the test output will look different now -- you won't have the nice box with colors that you have in the textbook. However, you will still have the same information and more power to see what is being tested.
+
+	**You will submit your final files in Canvas assignments.** However, the instructions for each problem on the assignment will be found in the textbook, as usual. You will need to reference the textbook for the instructions for each problem, and in the files we provide you, we will provide whatever code (if any) that we intend you to start with, beneath comments e.g. ``## [PROBLEM 1]``.
+
+	Your problem set grades, once they are complete, will appear in the textbook progress page, just like your other problem sets.
 
 	**Please make sure that you include the "ps#", e.g. ``ps5`` in your problem set file name when you submit it.** (Even better, don't change the file name at all!) That will make the instructional team's lives much easier.
 
@@ -56,7 +60,7 @@ This Week's Reading Responses
 
 .. external:: rr_6
 
-  `Reading Response 6 <linkhere.link>`_ on Canvas.
+  `Reading Response 6 <https://umich.instructure.com/courses/108426/assignments/139267>`_ on Canvas.
 
 
 .. _problem_set_5:
@@ -64,7 +68,7 @@ This Week's Reading Responses
 Problem Set
 -----------
 
-To find the file, and submit your final assignment on Canvas, go `HERE <linkhere.linkhere>`_.
+To find the file for your problem set, and to submit your assignment on Canvas, go `HERE <https://umich.instructure.com/courses/108426/assignments/183945>`_.
 
 .. external:: ps_5_1
 
@@ -88,25 +92,32 @@ To find the file, and submit your final assignment on Canvas, go `HERE <linkhere
 
     4. Write code to generate a list of the 10 highest-scoring words from the Scrabble dictionary that contain the letter 'z'. Save it in the variable ``best_z_words``. You may assume there are no bonuses that double or triple letter values or entire words. The dictionary saved in ``letter_values`` contains the Scrabble score information: its keys are letters, and its values are the scores associated with those letters.
 
-    If you have never played Scrabble before, `here <linkhere.link>`_ is an explanation of what it is. (You do not need that information to solve this problem. All you need to know is that each letter is associated with a number of points, and you want to find the ten words that are associated with the largest point totals.)
+    If you have never played Scrabble before, `here is an explanation <https://en.wikipedia.org/wiki/Scrabble>`_ of what it is. (You do not need that information to solve this problem. All you need to know is that each letter is associated with a number of points, and you want to find the ten words that are associated with the largest point totals.)
 
     **HINT:** In the textbook section on Accumulating Results from a Dictionary, there is code that computes the scrabble score for the entire text of "A Study in Scarlet". You may want to adapt that.
 
 .. external:: ps_5_5
 
-		5. Nested data problem 1, 3 nested lists or st
+		5. We have provided a nested list in the variable ``nl``. Write code to accumulate a list containing the second (as humans count) element of each sub-list and save it in a variable ``second_elems``.
 
 .. external:: ps_5_6
 
-		6. Nested data prob 6, a v simple dictionary somethin somethin
-
-.. external:: ps_5_6
-
-		6. A function definition that returns a tuple (and has an optional argument)
+		6. Define a function ``convert_times``. The function should accept an integer as input, representing a number of hours. It should return a tuple of that number converted to minutes (* 60), and then that number converted to seconds (* 3600). For example, if ``1`` were input into the function, the return value of that invocation should be the tuple ``60, 3600``.
 
 .. external:: ps_5_7
 
-		7. Nested data with a complex dictionary (the sanitized FB data probs. include it here as well as in problem set, maybe?) 
+		7.  We've provided a complex nested dictionary saved in the variable ``fb_data``. This is a lot like real data you'll get from Facebook (but a little bit simpler, and fake data). 
+
+		Here we've also provided some questions to help you. We will not grade, or expect you to write, answers to these questions, but we suggest you think about them and write them in comments to practice understanding this big nested data structure. Test your predictions using print statements in the code file! Questions:
+
+		- What type is the structure saved in the variable ``fb_data``?
+		- What about ``fb_data["data"][1]``?
+		- What about ``fb_data["data"][0]["from"]``?
+		- What about ``fb_data["data"][0]["id"]``?
+
+		Now, write a line of code to assign the value of the first message ("This problem might...") from the big ``fb_data`` data structure to a variable called ``first_message``. (Do not hard-code your answer! That means, write it in terms of fb_data, so that it would work with any content stored in the variable ``fb_data`` that has the same structure as that of the one we gave you.)
+
+		Then write a second line of code to assign the value of the name of the second person who posted ("John Smythe") to a variable called ``second_name``. Do not hard code your answer!
 
 .. external:: ps_5_8
 
@@ -118,4 +129,4 @@ To find the file, and submit your final assignment on Canvas, go `HERE <linkhere
 
 .. external:: ps5_dyu
 
-    Complete this week's `Demonstrate Your Understanding <linkhere.link>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139243>`_ assignment on Canvas.
