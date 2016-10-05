@@ -13,7 +13,10 @@ Activities through 10/28
 
 * **Before class Monday 10/10:**
 
-  * Read :ref:`Tuples <tuples_chap>` and try exercises in the sections listed below
+  * Read :ref:`Python modules <>`
+  * Read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module)
+  * Read :ref:`Fetching data <requests_chap>`
+  * Read :ref:`REST APIs<rest_apis_chap>`
 
 .. usageassignment
 
@@ -23,7 +26,12 @@ Activities through 10/28
 
 * **Before Wednesday's class, 10/12:**
 
-  * Read :ref:`Sorting<sort_chap>` and try the exercises in the sections listed below.
+  * Read :ref:`Try/Except <exceptions_chap>`
+  * Read :ref:`String Formatting<formatting_chap>`
+  * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
+  * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
+  * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
+  * Read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`, which may also be helpful as we move forward. We may add to this (for your use and help; you will not be graded on reading additional material), too!
 
 .. usageassignment
 
@@ -65,7 +73,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_2
 
-	**Encoding query parameters in a URL**
+	**PROBLEM 1: Encoding query parameters in a URL**
 
 	Manually create the dictionary you will need to pass to the params argument when you make a request. The key in the dictionary should be ``'format'``, and its value should be ``'json'``, since this is the only parameter required by the FAA REST API. You could discover this via reading their documentation, but in this case, we're just telling you so. 
 
@@ -73,7 +81,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_3
 	
-	**Making a request**
+	**PROBLEM 2: Making a request and saving a response object**
 
 	Next, write the whole assignment statement to do the following:
 	- make a request to the base url for the FAA api
@@ -91,9 +99,11 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_4
 
-	**Grabbing data off the web**
+	**PROBLEM 3: Grabbing data off the web**
 
-	Put the request you made earlier in a proper try/except clause. Then, use the ``.json()`` method on the response you get back to turn the data into one big Python dictionary. Save the Python dictionary in the variable ``airport_data``. We've provided some space/scaffolding for this in your file, under ``[PROBLEM 4]``. 
+	Put the request you made above in a proper try/except clause. If it doesn't work, your code should print out ``That didn't work``. 
+
+	If the request is successful, your code should use the ``.json()`` method on the response you get back to turn the data into one big Python dictionary. Save the Python dictionary in the variable ``airport_data``.
 
 	If you're wondering what you got back, you can use the ``pretty`` function we provided for you in the code file like so: ``print pretty(airport_data)``. This will show you an easier-to-read version of the data you got. 
 
@@ -101,7 +111,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_5
 
-	**Extracting relevant information from a dictionary**
+	**PROBLEM 4: Extracting relevant information from a dictionary**
 
 	Now you have a JSON-formatted Python dictionary with a bunch of data from the FAA about the airport with code **DTW**.  
 
@@ -124,11 +134,11 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_6
 
-	**Generalizing your code**
+	**PROBLEM 5: Generalizing your code**
 
 	At this point, you'll consider the code you've written so far in your file, and make it generalizable. Which means... FUNCTIONS.
 
-	Define a function called ``get_airport()`` that accepts a three-letter airport code string as input, and returns a Python dictionary (like the one you saved in ``airport_data`` above) with data about that airport. 
+	Define a function called ``get_airport()`` that acPROBLcepts a three-letter airport code string as input, and returns a Python dictionary (like the one you saved in ``airport_data`` above) with data about that airport. 
 
 	This function should work no matter where it is called, with just the input of an airport code like "DTW" or "PDX"! It should *not* depend upon global variables. (So, if you input ``"DTW"`` into your ``get_airport`` function, you should get a different result returned than if you invoke the function with the input ``"LAX"``, and so on.
 
@@ -136,13 +146,13 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_7
 
-	** More code generalization**
+	**PROBLEM 6: More code generalization**
 
 	Now, write another function called ``extract_airport_data()`` that accepts an airport code string as input, like ``"LAX"``, and returns a tuple: of the airport name, status reason, current temp, and recent update. This function should call the ``get_airport()`` function.
 
 .. external:: ps_6_8
 
-	**Create examples of using your newly defined functions**
+	**PROBLEM 7: Create examples of using your newly defined functions**
 
 	Now, iterate over the ``fav_airports`` list we've provided in your code file and print out the abbreviated info for each one, by calling ``extract_airport_data()``.
 
@@ -150,7 +160,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_9
 
-	**Error handling and exceptions**
+	**PROBLEM 8: Error handling and exceptions**
 
 	We have provided an invocation of ``extract_airport_data`` with a bogus airport code in the code file, like so:
 
@@ -162,7 +172,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_10
 
-	**Dealing with real live data**
+	**PROBLEM 9: Dealing with real live data**
 
 	We've provided a list of airport codes in the variable ``possible_airports``, in the problem set code file. But not all of them are valid airports! Write code that iterates over this list and prints out a tuple of the airport data for each one. *But*, if it's not a valid airport code, your code should print ``Failed for airport <whatever the code is that didn't work>``, e.g. ``Failed for airport JAC``. Use a try/except block to do this.
 
