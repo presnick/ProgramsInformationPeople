@@ -570,6 +570,7 @@ Discussion Section Resources (F16)
    :maxdepth: 2
 
    SectionResources/section4_106_f16.rst
+   SectionResources/section5_106.rst
 
 .. toctree::
    :maxdepth: 1
