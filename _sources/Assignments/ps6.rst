@@ -11,31 +11,44 @@
 Activities through 10/28
 ========================
 
-* **Before class Monday 10/10:**
+* **Before class Monday 10/24:**
 
-  * Read :ref:`Python modules <>`
-  * Read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module)
+  * Read :ref:`Python modules <modules_chap>`
+  * Make sure to read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module)
   * Read :ref:`Fetching data <requests_chap>`
   * Read :ref:`REST APIs<rest_apis_chap>`
 
-.. usageassignment
+.. usageassignment::
+	:subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/jsonlib, RESTAPIs/unicode
+  :assignment_name: Prep 12
+  :deadline: 2016-10-24 21:40
+  :pct_required: 80
+  :points: 50
 
-* **Before Tuesday 10/11 at 11:59 PM:**
+
+
+* **Before Tuesday 10/25 at 11:59 PM:**
 
   * Complete :ref:`Reading Response 7<reading_response_7>`.
 
-* **Before Wednesday's class, 10/12:**
+* **Before Wednesday's class, 10/26:**
 
   * Read :ref:`Try/Except <exceptions_chap>`
   * Read :ref:`String Formatting<formatting_chap>`
   * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
   * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
   * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
-  * Read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`, which may also be helpful as we move forward. We may add to this (for your use and help; you will not be graded on reading additional material), too!
+  * Read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`, which may also be helpful as we move forward. We may add to this (for your use and help; you will *not* be graded on reading additional material added later), too!
 
-.. usageassignment
+.. usageassignment::
+	:subchapters: Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/requestsCookbook, UsingRESTAPIs/callingGet, UsingRESTAPIs/extract, UsingRESTAPIs/process, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr,
+	NativeInterpreterGotchas/FixCommonProblems
+  :assignment_name: Prep 13
+  :deadline: 2016-10-26 21:40
+  :pct_required: 80
+  :points: 50
 
-* **Before Sunday 10/16 at 11:59 PM:**
+* **Before Sunday 10/30 at 11:59 PM:**
 
   * Complete all of :ref:`Problem Set 6 <problem_set_6>` and the Demonstrate Your Understanding assignment for this week.
 
@@ -46,14 +59,14 @@ This Week's Reading Responses
 
 .. external:: rr_7
 
-  `Reading Response 7 <linkhere.linkhere>`_ on Canvas.
+  `Reading Response 7 <https://umich.instructure.com/courses/108426/assignments/139268>`_ on Canvas.
 
 .. _problem_set_6:
 
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 6 assignment <linkhere.link>`_, where you can find the file to download and edit and submit files for this assignment.
+Go `HERE to see the Problem Set 6 assignment <https://umich.instructure.com/courses/108426/assignments/184508>`_, where you can find the file to download and edit and submit files for this assignment.
 
 You'll see very abbreviated instructions for each step in the file you download. Here on this page, you'll see extended instructions for each step to complete the problem set.
 
@@ -189,3 +202,9 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 	Open the document in Excel or Google Sheets to make sure that it is properly formatted.
 
 	**You should not upload the CSV file your code creates -- when we run your code, it'll appear!**
+
+
+.. external:: ps5_dyu
+
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139244>`_ assignment on Canvas.
+
