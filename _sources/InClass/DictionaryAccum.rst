@@ -9,6 +9,7 @@
 Dictionary Accumulation In Class Code Samples
 =============================================
 
+
 .. activecode:: session8_0
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
