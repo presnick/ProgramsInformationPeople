@@ -70,6 +70,8 @@ Go `HERE to see the Problem Set 6 assignment <https://umich.instructure.com/cour
 
 You'll see very abbreviated instructions for each step in the file you download. Here on this page, you'll see extended instructions for each step to complete the problem set.
 
+Note especially for this problem set, since you're getting real live data, we cannot test everything. You'll have to both look at our tests and examine your output to ensure that you have the correct results! (We will look at your results and output when we grade the problem set.)
+
 ----
 
 The FAA (Federal Aviation Administration) has put out a REST API for accessing current information about US airports. You'll be using it in the following exercises.
