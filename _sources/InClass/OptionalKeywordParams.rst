@@ -10,22 +10,23 @@
 Optional/Keyword Parameters Examples
 ====================================
 
+.. activecode:: optional_key_free
 
-Session 12 In Class Code Samples: PS 5 Q 8
-------------------------------------------
-
-.. activecode:: session12_free
-    
     # This is provided for your convenience. You can write any code here.
 
-.. activecode:: session12_ps5_8_0
+
+The is_prefix function
+----------------------
+
+
+.. activecode:: is_prefix_0
 
     def is_prefix(s1, s2):
         return s1 == s2[0:len(s1)] 
 
     print is_prefix("he", "hello")
 
-.. activecode:: session12_ps5_8_1
+.. activecode:: is_prefix_1
 
     def is_prefix(s1,s2):
         if s2.find(s1) == 0: #searches for s1 in s2, where s1 starts at index 0
@@ -35,7 +36,7 @@ Session 12 In Class Code Samples: PS 5 Q 8
 
     print is_prefix("hel","hello")
  
-.. activecode:: session12_ps5_8_2
+.. activecode:: is_prefix_2
 
     def is_prefix(s1, s2):
         return s1 == s2[0:len(s1)] 
@@ -43,7 +44,7 @@ Session 12 In Class Code Samples: PS 5 Q 8
     print is_prefix("he", "hello") 
 
 
-.. activecode:: session12_ps5_8_ex
+.. activecode:: is_prefix_ex
 
     def is_prefix(s1,s2):
         return s2.find(s1) == 0
@@ -61,7 +62,7 @@ Session 12 In Class Code Samples: PS 5 Q 8
     print x > 0
 
 
-.. activecode:: session12_ps5_8_3
+.. activecode:: is_prefix_3
 
     def is_prefix(s1, s2):# not quite right; why not?
         return s1 in s2  
@@ -72,7 +73,7 @@ Session 12 In Class Code Samples: PS 5 Q 8
     # Rephrase this problem in English
     # and then translate to code (look stuff up!) 
 
-.. activecode:: session12_ps5_8_4
+.. activecode:: is_prefix_4
 
     # Example using the flag pattern you learned last week
     # Can be used in any kind of iteration, not just indefinite iteration
@@ -86,19 +87,10 @@ Session 12 In Class Code Samples: PS 5 Q 8
      
     print is_prefix("hel", "hello")
 
-
-Review: Rephrasing problems in English
---------------------------------------
-
-.. activecode:: session12_free_grep
-
-    # Space provided for demonstration -- you can write any code here yourself.
-
-
 Optional/Keyword Parameters Examples
 ------------------------------------
 
-.. activecode:: session12_01
+.. activecode:: optional_key_inclass_01
 
     # what should the parameter list for f be?
     def f(): # Fill in the parameter list
@@ -119,7 +111,7 @@ Optional/Keyword Parameters Examples
 
 Here's a function count_vowels that takes a string and counts how many vowels are in it.
 
-.. activecode:: session12_02
+.. activecode:: optional_key_inclass_02
 
     # here is a function count_vowels
     def count_vowels(s):
@@ -136,7 +128,7 @@ Here's a function count_vowels that takes a string and counts how many vowels ar
 
 Now using that as a basis, you should generalise the count_vowels function, to count the occurrences of any subset of letters, not just vowels, but treat vowels as the default if not otherwise specified. Fill in the parameter list and the code.
 
-.. activecode:: session12_03
+.. activecode:: optional_key_inclass_03
 
     # fill in the parameter list and function body
 
