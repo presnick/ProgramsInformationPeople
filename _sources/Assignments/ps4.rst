@@ -12,7 +12,7 @@
 .. assignment::
   :name: PS04
   :assignment_type: problem_set
-  :questions: 
+  :questions: ps_4_01 100, ps_4_02 100, ps_4_03 100, ps_4_04 100, ps_4_05 200, ps_4_06 100, ps_4_07 200, ps_4_08 100
   :deadline: 2016-10-10 04:00
   :points: 1000
   :autograde: unittest
@@ -192,7 +192,6 @@ Problem Set
                self.assertEqual(animals['yak'], 3, "Testing to see that 'yak' is a key in the dictionary animals with the correct value")
            def testThree(self):
                self.assertEqual(animals['dogs'], 2, "Testing that the value of 'dogs' is now 2 in the dictionary animals")
-               self.assertIn("animals['dogs']", self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
        myTests().main()
 
