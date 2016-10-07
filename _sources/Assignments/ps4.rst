@@ -448,6 +448,6 @@ See the flow chart below for a better understanding of what's happening in the c
       main()
 
 
-.. external:: ps6_dyu
+.. external:: ps4_dyu
 
     Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139242>`_ assignment on Canvas.
