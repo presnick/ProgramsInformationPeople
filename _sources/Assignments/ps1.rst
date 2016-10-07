@@ -82,7 +82,7 @@ Activities through 9/16
 .. usageassignment::
     :chapters: SimplePythonData, Debugging, PythonTurtle
     :assignment_name: Prep 03
-    :deadline: 2016-09-12 20:40
+    :deadline: 2016-09-30 04:00
     :pct_required: 80
     :points: 50
 
@@ -100,7 +100,7 @@ Activities through 9/16
 .. usageassignment::
     :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin
     :assignment_name: Prep 02
-    :deadline: 2016-09-14 20:40
+    :deadline: 2016-09-30 04:00
     :pct_required: 80
     :points: 50
 
