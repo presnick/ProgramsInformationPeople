@@ -15,7 +15,7 @@
   :name: PS04
   :assignment_type: problem_set
   :questions: problem_set_4_unix_1 175, ps4_1_a 25, ps4_1_b 25, ps4_1_c 25, ps4_1_d 25, ps4_1_e 25, ps4_1_f 25, ps4_1_g 25, ps4_1_h 25, ps4_1_i 25, ps4_1_j 25, ps4_1_k 25, ps_4_10 200, ps_4_11 200, ps_4_12 150
-  :deadline: 2016-10-09 04:00
+  :deadline: 2016-10-10 04:00
   :points: 1000
   :autograde: unittest
 
