@@ -19,7 +19,7 @@ Activities through 10/19 (through Fall Break)
 
 .. usageassignment::
   :subchapters: Testing/intro-TestCases, Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems, NestedData/ListswithComplexItems, NestedData/NestedDictionaries, NestedData/NestedIteration, NestedData/DebuggingNestedData
-  :assignment_name: Prep 08
+  :assignment_name: Prep 10
   :deadline: 2016-10-10 21:40
   :pct_required: 80
   :points: 50
@@ -37,7 +37,7 @@ Activities through 10/19 (through Fall Break)
 
 .. usageassignment::
   :subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting
-  :assignment_name: Prep 08
+  :assignment_name: Prep 11
   :deadline: 2016-10-12 21:40
   :pct_required: 80
   :points: 50
