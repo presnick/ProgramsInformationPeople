@@ -13,7 +13,7 @@
   :name: PS03
   :assignment_type: problem_set
   :questions: ps_3_1 100, ps_3_2 150, ps_3_3 100, ps_3_4 100, ps_3_5 100, ps_3_6 200, ps_3_7 150
-  :deadline: 2016-09-30 04:00
+  :deadline: 2016-10-03 04:00
   :points: 1000
   :autograde: unittest
 
