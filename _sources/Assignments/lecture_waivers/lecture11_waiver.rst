@@ -33,6 +33,8 @@ If you have submitted the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_
 
         def testOne(self):
         	self.assertIn(" ",self.getEditorText())
+
+    
 	
 
 However, we *strongly* suggest you attend lecture this time. It will be extremely important for the rest of the semester.

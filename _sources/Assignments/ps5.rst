@@ -33,6 +33,24 @@
   :threshold: 50
 
 .. assignments for end of lecture exercise sets
+.. assignment::
+  :name: lecA10_attendance
+  :assignment_type: lecture_attendance
+  :questions: ee_07_01 25, lec10_2
+  :deadline: 2016-10-10 21:10
+  :points: 50
+  :autograde: visited
+  :threshold: 1
+
+.. assignments for end of lecture exercise sets
+.. assignment::
+  :name: lecA11_attendance
+  :assignment_type: lecture_attendance
+  :questions: lec11_1 50
+  :deadline: 2016-10-12 21:10
+  :points: 50
+  :autograde: visited
+  :threshold: 1
 
 .. assignments for reading responses
 .. assignment::
