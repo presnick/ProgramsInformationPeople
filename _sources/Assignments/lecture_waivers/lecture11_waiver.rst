@@ -21,20 +21,20 @@ If you have submitted the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_
 
 .. activecode:: lec11_1
 
-	Write that you assert you have submitted the Unix Exercises on Canvas.
-	~~~~
-	# In a comment. 
+    Write that you assert you have submitted the Unix Exercises on Canvas.
+    ~~~~
+    # In a comment. 
 
-	====
+    ====
 
-	from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
     class myTests(TestCaseGui):
 
         def testOne(self):
-        	self.assertIn(" ",self.getEditorText())
+            self.assertIn(" ",self.getEditorText())
 
     
-	
+    
 
 However, we *strongly* suggest you attend lecture this time. It will be extremely important for the rest of the semester.

@@ -3,7 +3,7 @@ Lecture 11 Exercises
 
 .. activecode:: lec11_att
 
-	Answer the following questions in comments to check your understanding. Try to do so without lookign at notes/textbook before looking it up!
+	Answer the following questions in comments to check your understanding. Try to do so without looking at notes/textbook, before looking it up!
 
 	What Unix command will list all the files and directories inside your current working directory?
 
