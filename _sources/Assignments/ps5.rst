@@ -148,7 +148,7 @@ We are going to begin to move toward executing Python programs on your own compu
    :language: python
    :autograde: unittest
 
-   **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
+   **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Do not hard code! Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
 
    ~~~~
    # Write code here!
@@ -158,9 +158,6 @@ We are going to begin to move toward executing Python programs on your own compu
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
-
-      def testCode(self):
-         self.assertNotIn("the", self.getEditorText(), "Testing code (Don't worry about actual and expected values)")
 
       def testOne(self):
          self.assertEqual(abc, 'the', "testing whether abc is set correctly.")
