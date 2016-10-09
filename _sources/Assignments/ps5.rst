@@ -14,6 +14,14 @@
 
 
 .. assignments for lecture waivers
+.. assignment::
+  :name: lectureA10_waiver
+  :deadline: 2016-10-10 18:40
+  :assignment_type: lecture_waiver
+  :questions: ee_ch07_052 10, ee_ch07_06 10, ee_ch07_042 10, ee_ch7_062 20 
+  :points: 50
+  :autograde: unittest
+  :threshold: 50
 
 .. assignments for end of lecture exercise sets
 
