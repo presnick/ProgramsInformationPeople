@@ -23,6 +23,15 @@
   :autograde: unittest
   :threshold: 50
 
+.. assignment::
+  :name: lectureA11_waiver
+  :deadline: 2016-10-12 18:40
+  :assignment_type: lecture_waiver
+  :questions: lec11_1 50 
+  :points: 50
+  :autograde: unittest
+  :threshold: 50
+
 .. assignments for end of lecture exercise sets
 
 .. assignments for reading responses
@@ -71,7 +80,7 @@ You have the following graded activities:
   * Read :ref:`Unix and the Command Line<unix_chapter>`, and try out the commands you learn -- in Terminal, if you use a mac, or Git Bash, if you use Windows.
   * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
 
-  * :ref:`Lecture 11 Waiver <lecture_11_waiver>`
+  * **now with a new text box you need to complete before lecture** :ref:`Lecture 11 Waiver <lecture_11_waiver>`
 
 .. usageassignment::
     :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
