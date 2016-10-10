@@ -64,7 +64,7 @@ Activities through 10/7
   * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`  and try the exercises in the sections listed below.
 
 .. usageassignment::
-  :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters, OptionalAndKeywordParameters/exercises, OptionalAndKeywordParameters/ExtraExercises
+  :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters
   :assignment_name: Prep 09
   :deadline: 2016-10-05 21:40
   :pct_required: 80
