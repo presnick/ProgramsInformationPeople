@@ -83,7 +83,7 @@ Activities through 9/16
     :chapters: SimplePythonData, Debugging, PythonTurtle
     :assignment_name: Prep 03
     :deadline: 2016-09-30 04:00
-    :pct_required: 80
+    :pct_required: 65
     :points: 50
 
 * **By Tuesday night 11:59, 9/13:**
