@@ -41,9 +41,18 @@
 
 .. assignments for end of lecture exercise sets TODO
 .. assignment::
+  :name: lec4_attendance
+  :assignment_type: lecture_attendance
+  :questions: lec4_1 10, lec4_2 10, lec4_3 10, lec4_4 20
+  :deadline: 2016-09-22 21:40
+  :points: 50
+  :autograde: visited
+  :threshold: 1
+
+.. assignment::
   :name: lecture5_attendance
   :assignment_type: lecture_attendance
-  :questions: lec5_1 50, lec5_2 50
+  :questions: lec5_1 25, lec5_2 25
   :deadline: 2016-09-22 21:40
   :points: 50
   :autograde: visited

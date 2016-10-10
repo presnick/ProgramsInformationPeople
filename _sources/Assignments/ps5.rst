@@ -14,8 +14,43 @@
 
 
 .. assignments for lecture waivers
+.. assignment::
+  :name: lectureA10_waiver
+  :deadline: 2016-10-10 18:40
+  :assignment_type: lecture_waiver
+  :questions: ee_ch07_052 10, ee_ch07_06 10, ee_ch07_042 10, ee_ch7_062 20 
+  :points: 50
+  :autograde: unittest
+  :threshold: 50
+
+.. assignment::
+  :name: lectureA11_waiver
+  :deadline: 2016-10-12 18:40
+  :assignment_type: lecture_waiver
+  :questions: lec11_1 50 
+  :points: 50
+  :autograde: unittest
+  :threshold: 50
 
 .. assignments for end of lecture exercise sets
+.. assignment::
+  :name: lecA10_attendance
+  :assignment_type: lecture_attendance
+  :questions: ee_07_01 25, lec10_2 25
+  :deadline: 2016-10-10 21:10
+  :points: 50
+  :autograde: visited
+  :threshold: 1
+
+.. assignments for end of lecture exercise sets
+.. assignment::
+  :name: lecA11_attendance
+  :assignment_type: lecture_attendance
+  :questions: lec11_att 50
+  :deadline: 2016-10-12 21:10
+  :points: 50
+  :autograde: visited
+  :threshold: 1
 
 .. assignments for reading responses
 .. assignment::
@@ -63,7 +98,7 @@ You have the following graded activities:
   * Read :ref:`Unix and the Command Line<unix_chapter>`, and try out the commands you learn -- in Terminal, if you use a mac, or Git Bash, if you use Windows.
   * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
 
-  * :ref:`Lecture 11 Waiver <lecture_11_waiver>`
+  * **now with a new text box you need to complete before lecture** :ref:`Lecture 11 Waiver <lecture_11_waiver>`
 
 .. usageassignment::
     :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
@@ -148,7 +183,7 @@ We are going to begin to move toward executing Python programs on your own compu
    :language: python
    :autograde: unittest
 
-   **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
+   **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Do not hard code! Save the string that is most common word in the file in the variable ``abc``. (Hint: there was a problem on last week's problem set that is very similar to this one.)
 
    ~~~~
    # Write code here!
@@ -158,9 +193,6 @@ We are going to begin to move toward executing Python programs on your own compu
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
-
-      def testCode(self):
-         self.assertNotIn("the", self.getEditorText(), "Testing code (Don't worry about actual and expected values)")
 
       def testOne(self):
          self.assertEqual(abc, 'the', "testing whether abc is set correctly.")
