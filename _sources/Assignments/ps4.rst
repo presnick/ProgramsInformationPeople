@@ -405,11 +405,9 @@ See the flow chart below for a better understanding of what's happening in the c
 
    In the below code window is all of the code for the hangman program, *except* for the two functions you just defined in problems 1 and 2. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided here for you to copy.)
 
-   Copy your two function definitions, from the last two problems, into a *Python file* on your computer, just like ``prog1.py`` from last week, except much more complicated a program. Save that file as ``hangman.py``.
+   Copy your two function definitions, from the last two problems, into a *Python file* on your computer, just like ``prog1.py`` from last week, except a much more complicated program. Save that file as ``hangman.py``.
 
-   Then copy all the code in the box below into that file, too, underneat the function definitions you just copied in.
-
-   Finally, make one more change to the program: add a little bit of code so that after a user types in a secret word to guess, 27 blank lines are printed. 
+   Then copy all the code in the box below into that file, too, underneath the function definitions you just copied in.
 
    (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
 
