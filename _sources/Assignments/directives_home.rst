@@ -1,3 +1,5 @@
+:orphan:
+
 .. ---This document is home for all assignment directives which do _not_ generate HTML, ordered by week and type.
 
 .. FALL 2016, SI 106

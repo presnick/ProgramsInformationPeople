@@ -577,7 +577,6 @@ Discussion Section Resources (F16)
    :hidden:
 
    navhelp.rst
-   Assignments/directives_home.rst
 
 .. toctree::
    :maxdepth: 2
