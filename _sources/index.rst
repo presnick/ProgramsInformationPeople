@@ -573,10 +573,11 @@ Discussion Section Resources (F16)
    SectionResources/section5_106.rst
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :hidden:
 
    navhelp.rst
+   Assignments/directives_home.rst
 
 .. toctree::
    :maxdepth: 2

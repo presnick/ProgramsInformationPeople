@@ -8,66 +8,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. assignment for problem set
-.. assignment::
-  :name: PS03
-  :assignment_type: problem_set
-  :questions: ps_3_1 100, ps_3_2 100, ps_3_3 100, ps_3_4 100, ps_3_5 100, ps_3_6 100, ps_3_7 100, ps_3_8 200, ps_3_9 100
-  :deadline: 2016-10-03 04:00
-  :points: 1000
-  :autograde: unittest
-
-.. assignments for lecture waivers
-.. assignment::
-  :name: lecture6_waiver
-  :deadline: 2016-09-26 18:40
-  :questions: ee_ch11_04 20, ee_ch11_071 20, ee_ch11_081 20, ee_ch11_091 20, ee_files_03 20
-  :assignment_type: lecture_waiver
-  :points: 50
-  :autograde: unittest
-  :threshold: 50
-
-.. assignment::
-  :name: lecture7_waiver
-  :deadline: 2016-09-28 18:40
-  :questions: ee_ch12_04 25, ee_ch12_05 25, ee_ch12_051 25, ee_ch12_052 25
-  :assignment_type: lecture_waiver
-  :points: 50
-  :autograde: unittest
-  :threshold: 50
-
-.. assignments for end of lecture exercise sets
-.. assignment::
-  :name: lec6_attendance
-  :assignment_type: lecture_attendance
-  :questions: lec6_1 25, lec6_2 25, lec6_3 50
-  :deadline: 2016-09-26 21:10
-  :points: 50
-  :autograde: visited
-  :threshold: 1
-
-.. assignment::
-  :name: lec7_attendance
-  :assignment_type: lecture_attendance
-  :questions: ee_ch12_01 10, ee_ch12_011 10, ee_ch12_012 10, ee_ch12_02 10, ee_ch12_021 5, ee_ch12_022 5
-  :deadline: 2016-09-28 21:10
-  :points: 50
-  :autograde: visited
-  :threshold: 1
-
-.. assignments for reading responses
-.. assignment::
-  :name: response_4
-  :assignment_type: reading_response
-  :questions: rr_4 100
-  :points: 100
-
-.. assignment for DYU
-.. assignment::
-  :name: dyu3
-  :assignment_type: dyu
-  :questions: ps3_dyu 100
-  :points: 100
 
 .. highlight:: python
     :linenothreshold: 500

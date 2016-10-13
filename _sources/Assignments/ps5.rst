@@ -8,63 +8,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. assignment for problem set (make sure it has unix ones too)
-.. ps5_unix has external directives for them, 1-8, e.g. problem_set_5_unix_8
-
-
-
-.. assignments for lecture waivers
-.. assignment::
-  :name: lectureA10_waiver
-  :deadline: 2016-10-10 18:40
-  :assignment_type: lecture_waiver
-  :questions: ee_ch07_052 10, ee_ch07_06 10, ee_ch07_042 10, ee_ch7_062 20 
-  :points: 50
-  :autograde: unittest
-  :threshold: 50
-
-.. assignment::
-  :name: lectureA11_waiver
-  :deadline: 2016-10-12 18:40
-  :assignment_type: lecture_waiver
-  :questions: lec11_1 50 
-  :points: 50
-  :autograde: unittest
-  :threshold: 50
-
-.. assignments for end of lecture exercise sets
-.. assignment::
-  :name: lecA10_attendance
-  :assignment_type: lecture_attendance
-  :questions: ee_07_01 25, lec10_2 25
-  :deadline: 2016-10-10 21:10
-  :points: 50
-  :autograde: visited
-  :threshold: 1
-
-.. assignments for end of lecture exercise sets
-.. assignment::
-  :name: lecA11_attendance
-  :assignment_type: lecture_attendance
-  :questions: lec11_att 50
-  :deadline: 2016-10-12 21:10
-  :points: 50
-  :autograde: visited
-  :threshold: 1
-
-.. assignments for reading responses
-.. assignment::
-  :name: response_6
-  :assignment_type: reading_response
-  :questions: rr_6 100
-  :points: 100
-
-.. assignment for DYU
-.. assignment::
-  :name: dyu5
-  :assignment_type: dyu
-  :questions: ps5_dyu 100
-  :points: 100
 
 .. highlight:: python
     :linenothreshold: 500

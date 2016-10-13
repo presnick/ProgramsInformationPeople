@@ -8,67 +8,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. assignment for problem set
-.. assignment::
-  :name: PS04
-  :assignment_type: problem_set
-  :questions: ps_4_01 100, ps_4_02 100, ps_4_03 100, ps_4_04 100, ps_4_05 200, ps_4_06 100, ps_4_07 200, ps_4_08 100
-  :deadline: 2016-10-10 04:00
-  :points: 1000
-  :autograde: unittest
-
-.. assignments for lecture waivers
-.. assignment::
-  :name: lecture8_waiver
-  :deadline: 2016-10-03 18:40
-  :questions: ee_ch13_051 10, ee_ch13_06 10, ee_ch13_041 10, ee_ch13_012 20
-  :assignment_type: lecture_waiver
-  :points: 50
-  :autograde: unittest
-  :threshold: 50
-
-.. assignment::
-  :name: lecture9_waiver
-  :deadline: 2016-10-05 18:40
-  :questions: ee_functions_061 10, ee_Function_07 10, ee_functions_072 10, ee_functions_08 20 
-  :assignment_type: lecture_waiver
-  :points: 50
-  :autograde: unittest
-  :threshold: 50
-
-.. assignments for end of lecture exercise sets
-.. assignment::
-  :name: lec8_attendance
-  :assignment_type: lecture_attendance
-  :questions: lec8_1 25, lec8_2 25
-  :deadline: 2016-10-03 21:10
-  :points: 50
-  :autograde: visited
-  :threshold: 1
-
-.. assignment::
-  :name: lec9_attendance
-  :assignment_type: lecture_attendance
-  :questions: lec9_1 20, lec9_2 20, lec9_3 10
-  :deadline: 2016-10-05 21:10
-  :points: 50
-  :autograde: visited
-  :threshold: 1
-
-.. assignments for reading responses
-.. assignment::
-  :name: response_5
-  :assignment_type: reading_response
-  :questions: rr_5 100
-  :points: 100
-
-.. assignment for DYU
-.. assignment::
-  :name: dyu4
-  :assignment_type: dyu
-  :questions: ps4_dyu 100
-  :points: 100
-
 .. highlight:: python
     :linenothreshold: 500
 
