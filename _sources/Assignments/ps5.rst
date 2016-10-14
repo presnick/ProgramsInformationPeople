@@ -11,7 +11,13 @@
 .. assignment for problem set (make sure it has unix ones too)
 .. ps5_unix has external directives for them, 1-8, e.g. problem_set_5_unix_8
 
-
+.. assignment::
+  :name: PS05
+  :assignment_type: problem_set
+  :questions: ps_5_1 100, ps_5_2 100, ps_5_3 100, ps_5_4 100, ps_5_9 200, ps_5_6 225, problem_set_5_unix_1 175
+  :deadline: 2016-10-17 04:00
+  :points: 1000
+  :autograde: unittest
 
 .. assignments for lecture waivers
 .. assignment::
