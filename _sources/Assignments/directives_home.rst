@@ -7,7 +7,7 @@
 
 .. problem sets (psets)
 
-..TODO this would be great to change to PS01 in db
+.. TODO this would be great to change to PS01 in db
 .. assignment::
   :name: PS1 
   :assignment_type: problem_set
