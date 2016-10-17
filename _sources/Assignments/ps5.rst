@@ -8,7 +8,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-
 .. highlight:: python
     :linenothreshold: 500
 

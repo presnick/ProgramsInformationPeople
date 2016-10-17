@@ -40,6 +40,14 @@
   :points: 1000
   :autograde: unittest
 
+.. assignment::
+  :name: PS05
+  :assignment_type: problem_set
+  :questions: ps_5_1 100, ps_5_2 100, ps_5_3 100, ps_5_4 100, ps_5_9 200, ps_5_6 225, problem_set_5_unix_1 175
+  :deadline: 2016-10-17 04:00
+  :points: 1000
+  :autograde: unittest
+
 .. reading responses (rrs)
 
 .. assignment::
@@ -285,5 +293,4 @@
   :points: 50
   :autograde: unittest
   :threshold: 50
-
 
