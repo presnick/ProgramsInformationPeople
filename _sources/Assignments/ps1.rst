@@ -9,41 +9,6 @@
     License".
 
 
-.. assignment for problem set
-.. assignment::
-  :name: PS1
-  :assignment_type: problem_set
-  :questions: ps_1_1 100, ps_1_2 50, ps_1_3 150, ps_1_4 100, ps_1_5 100, ps_1_6 100, ps_1_7 150, ps_1_8 100, ps_1_9 100, ps_1_10 0, ps_1_11 50
-  :deadline: 2016-09-30 04:00
-  :points: 1000
-  :autograde: unittest
-
-.. assignments for reading responses
-.. assignment::
-  :name: response_1
-  :assignment_type: reading_response
-  :questions: rr_1 100
-  :points: 100
-
-.. assignment::
-  :name: response_2
-  :assignment_type: reading_response
-  :questions: rr_2 100
-  :points: 100
-
-.. assignment::
-  :name: response_3
-  :assignment_type: reading_response
-  :questions: rr_3 100
-  :points: 100
-
-.. assignment for DYU
-.. assignment::
-  :name: dyu1
-  :assignment_type: dyu
-  :questions: ps1_dyu 100
-  :points: 100
-
 
 .. highlight:: python
     :linenothreshold: 500

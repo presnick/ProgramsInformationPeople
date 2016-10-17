@@ -8,28 +8,6 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. assignment for problem set TODO
-.. assignment::
-  :name: PS03
-  :assignment_type: problem_set
-  :questions: ps_3_1 100, ps_3_2 200, ps_3_3 100, ps_3_4 150, ps_3_5 100, ps_3_6 200, ps_3_7 150
-  :deadline: 2016-10-03 04:00
-  :points: 1000
-  :autograde: unittest
-
-.. assignments for reading responses
-.. assignment::
-  :name: response_4
-  :assignment_type: reading_response
-  :questions: rr_4 100
-  :points: 100
-
-.. assignment for DYU
-.. assignment::
-  :name: dyu3
-  :assignment_type: dyu
-  :questions: ps3_dyu 100
-  :points: 100
 
 .. highlight:: python
     :linenothreshold: 500
