@@ -252,7 +252,7 @@ Problem Set
    myTests().main()
 
 
-.. activecode:: ps_6_5
+.. activecode:: ps_6_hangman_base
    :language: python
 
    **5.** In the next few questions, you’ll build components and then a complete program that lets people play Hangman. Below is an image from the middle of a game...
@@ -327,54 +327,46 @@ Problem Set
        print(feedback)
        print("The word was..." + secret_word)
 
-   import sys #don't worry about this line; you'll understand it next week
+   import sys #don't worry about this line; you'll understand it next week 
    sys.setExecutionLimit(60000)     # let the game take up to a minute, 60 * 1000 milliseconds
    main()
 
+.. activecode:: ps_6_5
 
-.. shortanswer:: ps6_5_a
+   Answer the questions in comments below. (The answers should be a number that corresponds to a line of code in the Hangman game code above!)
+   ~~~~
 
-   What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? 
+   #What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? 
 
-.. shortanswer:: ps6_5_b
 
-   What line(s) of code do what's mentioned in Box 2?
+   #What line(s) of code do what's mentioned in Box 2?
 
-.. shortanswer:: ps6_5_c
 
-   What line(s) of code do what's mentioned in Box 3?
+   #What line(s) of code do what's mentioned in Box 3?
 
-.. shortanswer:: ps6_5_d
  
-   What line(s) of code do what's mentioned in Box 4?
+   #What line(s) of code do what's mentioned in Box 4?
 
-.. shortanswer:: ps6_5_e
 
-   What line(s) of code do what's mentioned in Box 5?
+   #What line(s) of code do what's mentioned in Box 5?
 
-.. shortanswer:: ps6_5_f
 
-   What line(s) of code do what's mentioned in Box 6?
+   #What line(s) of code do what's mentioned in Box 6?
 
-.. shortanswer:: ps6_5_g
 
-   What line(s) of code do what's mentioned in Box 7?
+   #What line(s) of code do what's mentioned in Box 7?
 
-.. shortanswer:: ps6_5_h
 
-   What line(s) of code do what's mentioned in Box 8?
+   #What line(s) of code do what's mentioned in Box 8?
 
-.. shortanswer:: ps6_5_i
 
-   What line(s) of code do what's mentioned in Box 9?
+   #What line(s) of code do what's mentioned in Box 9?
 
-.. shortanswer:: ps6_5_j
 
-   What line(s) of code do what's mentioned in Box 10?
+   #What line(s) of code do what's mentioned in Box 10?
 
-.. shortanswer:: ps6_5_k
 
-   What line(s) of code do what's mentioned in Box 11?
+   #What line(s) of code do what's mentioned in Box 11?
 
 
 .. activecode:: ps_6_6
@@ -453,17 +445,15 @@ Problem Set
 
    You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
 
-   In the below code window is all of the code for the hangman program, *except* for the two functions you just defined in problems 6 and 7. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided here for you to copy.)
+   In the below code window is all of the code for the hangman program, *except* for the two functions you just defined in problems 6 and 7. (It does not include the special lines allowing it to run in the textbook, which won't work on your native machine, and it does not have those function definitions, so this code will not run as expected! It's just provided here for you to copy.)
 
    Copy your two function definitions, from the last two problems, into a *Python file* on your computer, just like ``prog1.py`` from last week, except much more complicated a program. Save that file as ``hangman.py``.
 
    Then copy all the code in the box below into that file, too, underneat the function definitions you just copied in.
 
-   Finally, make one more change to the program: add a little bit of code so that after a user types in a secret word to guess, 27 blank lines are printed. 
+   Finally, make one more change to the program: add a little bit of code so that right after a user types in a secret word to guess, 27 blank lines are printed. (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
 
-   (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
-
-   Save this Python program, and run it with the command line: ``cd`` to the correct directory where you saved the file, and then type ``python hangman.py``, as you learned last week.
+   Save this Python program, and run it using the command line: ``cd`` to the correct directory where you saved the file, and then type ``python hangman.py``, as you learned last week.
 
    **Submit** your python file called hangman.py AND a screenshot of you successfully running the code and playing the game to `Problem 6 Unix Exercises <https://umich.instructure.com/courses/105657/assignments/151663>`_ on Canvas.
 
