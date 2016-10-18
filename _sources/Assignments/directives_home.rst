@@ -48,6 +48,14 @@
   :points: 1000
   :autograde: unittest
 
+.. assignment::
+  :name: PS06
+  :assignment_type: problem_set
+  :questions: ps_6_1 100, ps_6_2 100, ps_6_3 100, ps_6_4 100, ps_6_5 275, ps_6_6 175, ps_6_7 100, problem_set_6_8 50
+  :deadline: 2016-10-31 04:00
+  :points: 1000
+  :autograde: unittest
+
 .. reading responses (rrs)
 
 .. assignment::
