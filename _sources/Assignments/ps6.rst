@@ -27,18 +27,18 @@ Activities through 10/28
 You have the following graded activities:
 
 * **Before Monday's class 10/24:**
-    * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and do the exercises in that chapter
+    * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and try the exercises in that chapter
 
 * **By Tuesday 10/25 11:59 pm:**
     * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below)
     * Read *The Most Human Human*, Chapter 10, p.237-259.
     * Answer `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
 
-    * :ref:`Lecture 12 Waiver <lecture_12_waiver>`
+    * :ref:`Lecture 12 Challenge Exercises <lecture_12_waiver>`
 
 .. usageassignment::
-    :chapters: OptionalAndKeywordParameters
-    :assignment_name: Prep a11
+    :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters
+    :assignment_name: Prep 12
     :deadline: 2016-10-24 19:40
     :pct_required: 80
     :points: 50
@@ -48,11 +48,11 @@ You have the following graded activities:
    * Read :ref:`Tuples<tuples_chap>`, and try the exercises in that chapter
    * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and try the exercises in that chapter
 
-   * :ref:`Lecture 12 Waiver <lecture_12_waiver>`
+   * Challenge problems: TBA
 
 .. usageassignment::
-    :chapters: Tuples, NestedData
-    :assignment_name: Prep a12
+    :subchapters: Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems, NestedData/ListswithComplexItems, NestedData/NestedDictionaries, NestedData/NestedIteration, NestedData/DebuggingNestedData
+    :assignment_name: Prep 13
     :deadline: 2016-10-26 19:40
     :pct_required: 80
     :points: 50
