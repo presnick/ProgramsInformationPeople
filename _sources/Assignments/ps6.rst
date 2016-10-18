@@ -81,7 +81,7 @@ Problem Set
 .. activecode:: ps_6_1
    :language: python
 
-   *1.** Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
+   **1.** Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
 
    ~~~~
    new_tuple_list = [(1,2),(4, "umbrella"),("chair","hello"),("soda",56.2)]
@@ -421,11 +421,11 @@ Problem Set
 
    print health_prompt(3, 7)
    #this statement should produce the output
-   #health: +++----
+   # +++----
 
    print health_prompt(0, 4)
    #this statement should produce the output
-   #health: ----
+   # ----
 
    =====
 

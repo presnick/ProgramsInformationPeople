@@ -94,6 +94,12 @@
   :questions: rr_6 100
   :points: 100
 
+.. assignment::
+  :name: response_7
+  :assignment_type: reading_response
+  :questions: rr_7 100
+  :points: 100
+
 .. demonstrate understanding (dyus)
 
 .. assignment::
@@ -125,6 +131,13 @@
   :assignment_type: dyu
   :questions: ps5_dyu 100
   :points: 100
+
+.. assignment::
+  :name: dyu6
+  :assignment_type: dyu
+  :questions: ps6_dyu 100
+  :points: 100
+
 
 .. discussion section attendance
 
