@@ -46,7 +46,7 @@ Activities through 11/4
 * **By Friday 11/05 at 6:30 PM:**
    * Complete Problem Set 7: :ref:`Problem Set 7 <problem_set_7>` per the instructions below, and submit your ``106_ps7.py`` file on Canvas. (Grace period until Sunday 11/7 at 11:59 PM.)
    * Submit your **Demonstrate Your Understanding** assignment on Canvas (linked in problem set) 
-   * **NOTE:** This problem set is the first one you will complete entirely on your computer and submit via Canvas. You need only submit your completed file. *Make sure that "ps7" is in the file name. Otherwise we can't grade it!* 
+   * **NOTE:** This problem set is the first one you will complete entirely on your computer and submit via Canvas. You need only submit your completed file. **Make sure that "ps7" is in the file name. Otherwise we can't grade it!** 
 
 .. note::
 
