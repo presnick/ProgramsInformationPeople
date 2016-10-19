@@ -59,7 +59,7 @@ You have the following graded activities:
 
 
 * **By Friday 10/28 at 6:30 PM:**
-   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`.
+   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`, including submitting your result for the last question in the **Problem Set 6 Unix Problems** assignment on Canvas!
    * Submit your **Demonstrate Your Understanding** assignment on Canvas (linked in problem set) 
 
 .. _reading_response_7:
