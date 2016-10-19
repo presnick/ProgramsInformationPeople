@@ -48,6 +48,14 @@
   :points: 1000
   :autograde: unittest
 
+.. assignment::
+  :name: PS06
+  :assignment_type: problem_set
+  :questions: ps_6_1 100, ps_6_2 100, ps_6_3 100, ps_6_4 100, ps_6_5 275, ps_6_6 175, ps_6_7 100, problem_set_6_8 50
+  :deadline: 2016-10-31 04:00
+  :points: 1000
+  :autograde: unittest
+
 .. reading responses (rrs)
 
 .. assignment::
@@ -86,6 +94,12 @@
   :questions: rr_6 100
   :points: 100
 
+.. assignment::
+  :name: response_7
+  :assignment_type: reading_response
+  :questions: rr_7 100
+  :points: 100
+
 .. demonstrate understanding (dyus)
 
 .. assignment::
@@ -117,6 +131,13 @@
   :assignment_type: dyu
   :questions: ps5_dyu 100
   :points: 100
+
+.. assignment::
+  :name: dyu6
+  :assignment_type: dyu
+  :questions: ps6_dyu 100
+  :points: 100
+
 
 .. discussion section attendance
 

@@ -12,17 +12,16 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Lecture 12: Waiver Challenge Exercises
-======================================
+Lecture 12: Challenge Exercises
+===============================
 
 .. _lecture_12_waiver:
-.. this needs to be checked to ensure it is correct
 
 .. activecode:: ee_Opt_Params_04
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst
    :autograde: unittest
 
-   Write a function called ``math`` that takes in three parameters: an integer, a second integer, and an *optional* string with the default value "add". If the string value is "add", the function should add the two integers. If the string value is "subtract", subtract the second integer from the first integer. If the value is "multiply", multiply the integers and if the value is "divide", divide the first integer by the second integer.
+   Write a function called ``math`` that takes in three parameters: an integer, a second integer, and an *optional* string with the default value "add". If the string value is "add", the function should add the two integers. If the string value is "subtract", subtract the second integer from the first integer. If the value is "multiply", multiply the integers and if the value is "divide", divide the first integer by the second integer. Return the result of whatever mathematical operation occurs.
    ~~~~
 
    =====
@@ -80,11 +79,11 @@ Lecture 12: Waiver Challenge Exercises
        else:
            return "Bool is false"
 
-   #Call the function with the correct parameters so that the function returns "Bool is false". Save the output to the variable called output.
+   #Call the function with the correct parameters so that the function returns "Bool is false". Save the output to a variable called output.
 
 
 
-   #Call the function with the correct parameters so that the function returns False. Save the output to the variable called output2. 
+   #Call the function with the correct parameters so that the function returns False. Save the output to a variable called output2. 
 
 
    #Now, call the function with parameters such that output will be True. Save the output to a variable called output3. 
