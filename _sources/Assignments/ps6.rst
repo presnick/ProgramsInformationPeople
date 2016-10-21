@@ -27,6 +27,7 @@ Activities through 10/28
 
 
 
+
 * **Before Tuesday 10/25 at 11:59 PM:**
 
   * Complete :ref:`Reading Response 7<reading_response_7>`.
