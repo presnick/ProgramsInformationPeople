@@ -61,52 +61,7 @@ The code below implements the caching pattern described above.
 
 The only problem with the code above is that the cache will disappear at the end of the execution of the python program. In order to preserve the cache between between multiple invocations of our program, we will dump that dictionary to a file and reload from that file.
 
-The python module pickle makes it easy to save the dictionary (or any other python object) in a file. Here's a version that does that.
-
-.. sourcecode:: python
-
-    import requests
-    import json
-    import pickle
-
-    cache_fname = "cached_results.txt"
-    try:
-        fobj = open(cache_fname, 'r')
-        saved_cache = pickle.load(fobj)
-        fobj.close()
-    except:
-        saved_cache = {}
-
-    def canonical_order(d):
-        alphabetized_keys = sorted(d.keys())
-        for k in alphabetized_keys:
-            res.appennd((k, d[k]]))
-        return res
-
-    def requestURL(baseurl, params = {}):
-        req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
-        prepped = req.prepare()
-        return prepped.url
-
-    def get_with_caching(base_url, params_diction, cache_diction, cache_fname):
-        full_url = requestURL(base_url, params_diction)
-        # step 1
-        if full_url in cache_diction:
-            # step 2
-            logging.info("retrieving cached result for " + full_url)
-            return cache_diction[full_url]
-        else:
-            # step 3
-            response = requests.get(base_url, params=params_diction)
-            logging.info("adding cached result for " + full_url)
-            # add to the cache and save it permanently
-            cache_diction[full_url] = response.text
-            fobj = open(cache_fname, "w")
-            pickle.dump(cache_diction, fobj)
-            fobj.close()
-            return response.text
-
-Here's an example of how we could use it with the FAA's REST API. Try saving this code in a file and running it multiple times. The first time, you'll see the logging output telling you the item was retrieved from the FAA; subsequent times it will say that it was retrieved from the cache. If you want to reset the cache to empty, just delete the file "cached_results.txt" from your file system. Or change the variable fname to a different value in the code.
+The python module pickle makes it easy to save the dictionary (or any other python object) in a file. Here's a version that does that, along with an example of how we could use it with the FAA's REST API. Try saving this code in a file and running it multiple times. The first time, you'll see the logging output telling you the item was retrieved from the FAA; subsequent times it will say that it was retrieved from the cache. If you want to reset the cache to empty, just delete the file "cached_results.txt" from your file system. Or change the variable fname to a different value in the code.
 
 .. sourcecode:: python
 
@@ -126,7 +81,7 @@ Here's an example of how we could use it with the FAA's REST API. Try saving thi
         alphabetized_keys = sorted(d.keys())
         res = []
         for k in alphabetized_keys:
-            res.appennd((k, d[k]]))
+            res.append((k, d[k]))
         return res
 
     def requestURL(baseurl, params = {}):
@@ -139,12 +94,12 @@ Here's an example of how we could use it with the FAA's REST API. Try saving thi
         # step 1
         if full_url in cache_diction:
             # step 2
-            logging.info("retrieving cached result for " + full_url)
+            print "retrieving cached result for " + full_url
             return cache_diction[full_url]
         else:
             # step 3
             response = requests.get(base_url, params=params_diction)
-            logging.info("adding cached result for " + full_url)
+            print "adding cached result for " + full_url
             # add to the cache and save it permanently
             cache_diction[full_url] = response.text
             fobj = open(cache_fname, "w")
