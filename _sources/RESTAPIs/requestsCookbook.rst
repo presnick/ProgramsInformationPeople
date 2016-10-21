@@ -11,16 +11,11 @@
 Requests Cookbook
 =================
 
-:ref:`Previously<rest_apis_chap>`, you learned about REST APIs and the mechanics of accessing them using the requests module. This chapter describes a process that you can use for writing programs that use the requests module to access data from REST APIs, a cookbook of sorts.
 
 The basic process involves three steps:
 
-1. Make the appropriate call to requests.get()
-2. Extract content from response object
-3. Process the data data you've extracted
+1. Make the appropriate call to requests.get(). If you have trouble, print out the URL that's generated and work with it in the browser.
+2. Extract content from response object, by accessing the .text attribute and calling json.loads if the string is in json format.
+3. Process the data data you've extracted. Often, when you get back data in json format, it will be a highly nested data structure. You may only need a little of that data. You may want to review the chapter on nested data and nested iteration, especially the section on the cycle of :ref:`Understand. Extract. Repeat.<debug_nested_chap>`
 
 The key to success is to make sure that you debug each of those steps before going on to the next one. This is just a particular case of the :ref:`general advice <debugging_chap>` we gave early in the course: start small and keep it working at every stage, growing the amount that your program does over time.
-
-We cover each of the three steps in its own section.
-
-

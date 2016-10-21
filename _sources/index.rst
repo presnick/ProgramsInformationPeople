@@ -343,9 +343,9 @@ REST APIs
 
    RESTAPIs/intro.rst
    RESTAPIs/RequestURLs.rst
+   RESTAPIs/DebugURLs.rst
    RESTAPIs/jsonlib.rst
    RESTAPIs/unicode.rst
-
 
 Exceptions
 ::::::::::
@@ -373,11 +373,7 @@ Using RESTAPIs
 
 .. toctree::
    :maxdepth: 2
-
-   UsingRESTAPIs/requestsCookbook.rst
-   UsingRESTAPIs/callingGet.rst
-   UsingRESTAPIs/extract.rst
-   UsingRESTAPIs/process.rst
+   
    UsingRESTAPIs/cachingResponses.rst
    UsingRESTAPIs/flickr.rst
 
