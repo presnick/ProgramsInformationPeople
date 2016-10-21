@@ -361,6 +361,7 @@ REST APIs
    RESTAPIs/DebugURLs.rst
    RESTAPIs/jsonlib.rst
    RESTAPIs/unicode.rst
+   RESTAPIs/requestsCookbook.rst
 
 Exceptions
 ::::::::::
