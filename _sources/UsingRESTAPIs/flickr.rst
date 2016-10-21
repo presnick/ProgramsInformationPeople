@@ -43,6 +43,18 @@ Below is some code that queries the flickr API for images that have a particular
 
     def canonical_order(d):
         alphabetized_keys = sorted(d.keys())
+        res = []
+        for k in alphabetized_keys:
+            res.append((k, d[k]))
+        return res
+
+    def requestURL(baseurl, params = {}):
+        req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
+        prepped = req.prepare()
+        return prepped.url
+
+    def canonical_order(d):
+        alphabetized_keys = sorted(d.keys())
         for k in alphabetized_keys:
             res.appennd((k, d[k]]))
         return res

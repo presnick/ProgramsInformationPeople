@@ -31,9 +31,9 @@ The best approach is to look at the URL that is produced and eyeball it to see w
         return prepped.url
 
     print params
-    print requestURL()
+    print requestURL(some_base_url, some_params_dictionary)
 
-If you get a runtime error when you call `requestURL()`, that means that it can't creat a URL at all. Usually, that means that you didn't pass in a string for the baseurl or didn't pass in a dictionary with keys that are strings for the params parameter.
+If you get a runtime error when you call `requestURL()`, that means that it can't create a URL at all. Usually, that means that you didn't pass in a string for the baseurl or didn't pass in a dictionary with keys that are strings for the params parameter.
 
 Assuming ``requestURL()`` does return a URL, match up what you see from the printout of the params dictionary to what you see in the URL that was printed out. If you have a sample of a URL from the API documentation, see if the structure of your URL matches what's there. Perhaps you have misspelled one of the API parameter names or you misspelled the base url.
 
@@ -53,7 +53,7 @@ More importantly, you'll want to print out the contents. Sometimes the text that
     d = <some dictionary>
     resp = requests.get(dest_url, params = d)
     print resp.url
-    print resp.text
+    print resp.text[:200]
 
 Now you try it. Use ``requests.get()`` and/or ``requestURL()`` to generate the following url, ``https://www.google.com/search?tbm=isch&q=%22violins+and+guitars%22``. (Don't look at the previous page of the textbook, at least not yet. If you can't figure it out after 15 minutes of trying the approaches on this page, then look back.)
 
