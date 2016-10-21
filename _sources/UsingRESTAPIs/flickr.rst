@@ -11,9 +11,24 @@
 Searching for tags on flickr
 ============================
 
-Let's put this all together to make a little retrieval tool for flickr images containing particular tags. Of course, in a browser, you can just use flickr's search tool. But doing this through the API opens up other possibilities that you can explore for features not provided on the regular flickr website.
+Consider another service, the image sharing site flickr. People interact with the site using a web browser. An API is available to make it easier for application programs to fetch data from the site and post data to the site. That allows third parties to make applications that integrate elements of flickr. Flickr provides the API as a way to increase the value of its service, and thus attract more customers. You can explore the `official documentation about the site <https://www.flickr.com/services/api/>`_.
 
-Below is some code that queries the flickr API for images that have a particular tag (I have found that searching for "mountains" usually produces beautiful images that are "safe for work", so the example below does that search.)
+Here we will explore some aspects of one endpoint that flickr provides for searching for photos matching certain criteria. Check out the `full documentation <https://www.flickr.com/services/api/flickr.photos.search.html>`_ for details.
+
+The structure of a URL for a photo search on flickr is:
+
+* base URL is ``https://api.flickr.com/services/rest/``
+* ``?``
+* key=value pairs, separate by &s:
+   * One pair is ``method=flickr.photos.search``. This says to do a photo search, rather than one of the many other operations that the API allows. Don't be confused by the word "method" here-- it is not a python method. That's just the name flickr uses to distinguish among the different operations a client application can request.
+   * ``format=json``. This says to return results in JSON format.
+   * ``per_page=10``. This says to return 10 results at a time.
+   * ``tags=mountains``. This says to return photos that are tagged with the word "mountains".
+   * ``api_key=...``. Flickr only lets authorized applications access the API. Each request must include a secret code as a value associated with api_key. Anyone can get a key. See the `documentation for how to get one <https://www.flickr.com/services/api/misc.api_keys.html>`_. We recommend that you get one so that you can test out the sample code in this chapter.
+
+Let's put everything together to make a little retrieval tool for flickr images containing particular tags. Of course, in a browser, you can just use flickr's search tool. But doing this through the API opens up other possibilities that you can explore for features not provided on the regular flickr website.
+
+Below is some code that queries the flickr API for images that have a particular tag (I have found that searching for "mountains", "Switzerland", and "cows" usually produces beautiful images that are "safe for work", so the example below does that search.)
 
 .. note:
 
@@ -25,11 +40,27 @@ Below is some code that queries the flickr API for images that have a particular
     import json
     import pickle
     import webbrowser
-    import logging
-    logging.basicConfig(level=logging.INFO)
+
+    def canonical_order(d):
+        alphabetized_keys = sorted(d.keys())
+        res = []
+        for k in alphabetized_keys:
+            res.append((k, d[k]))
+        return res
 
     def requestURL(baseurl, params = {}):
-        req = requests.Request(method = 'GET', url = baseurl, params = params)
+        req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
+        prepped = req.prepare()
+        return prepped.url
+
+    def canonical_order(d):
+        alphabetized_keys = sorted(d.keys())
+        for k in alphabetized_keys:
+            res.appennd((k, d[k]]))
+        return res
+
+    def requestURL(baseurl, params = {}):
+        req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
         prepped = req.prepare()
         return prepped.url
 
@@ -38,12 +69,12 @@ Below is some code that queries the flickr API for images that have a particular
         # step 1
         if full_url in cache_diction:
             # step 2
-            logging.info("retrieving cached result for " + full_url)
+            print "retrieving cached result for " + full_url
             return cache_diction[full_url]
         else:
             # step 3
             response = requests.get(base_url, params=params_diction)
-            logging.info("adding cached result for " + full_url)
+            print "adding cached result for " + full_url
             # add to the cache and save it permanently
             cache_diction[full_url] = response.text
             fobj = open(cache_fname, "w")
@@ -73,7 +104,7 @@ Below is some code that queries the flickr API for images that have a particular
         resp_text = get_with_caching('https://api.flickr.com/services/rest/', params_diction=params_d, cache_diction = saved_cache, cache_fname = cache_fname)
         parsed_response = json.loads(resp_text[14:-1])
 
-        logging.info(parsed_response)
+        print parsed_response
         photo_ds = parsed_response['photos']['photo']
         for photo in photo_ds:
             owner = photo['owner']
@@ -91,4 +122,4 @@ Finally, we loop through the list of photo dictionaries that were returned, extr
 
 .. note:
 
-    If any of that code is puzzling, try adding some print or logging.info calls or breaking down the complex expressions into a series of shorter statements.
+    If any of that code is puzzling, try adding some print calls or breaking down the complex expressions into a series of shorter statements.

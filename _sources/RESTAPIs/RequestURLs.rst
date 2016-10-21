@@ -29,21 +29,6 @@ Let's pull apart that URL. In this case, the FAA uses a slight variation on the 
    
 All those parts are concatenated together to form the full URL. If you substitute LGA for DTW, you will get the current conditions at New York's LaGuardia airport instead.
 
-Consider another service, the image sharing site flickr. People interact with the site using a web browser. An API is available to make it easier for application programs to fetch data from the site and post data to the site. That allows third parties to make applications that integrate elements of flickr. Flickr provides the API as a way to increase the value of its service, and thus attract more customers. You can explore the `official documentation about the site <https://www.flickr.com/services/api/>`_.
-
-Here we will explore some aspects of one endpoint that flickr provides for searching for photos matching certain criteria. Check out the `full documentation <https://www.flickr.com/services/api/flickr.photos.search.html>`_ for details.
-
-The structure of a URL for a photo search on flickr is:
-
-* base URL is ``https://api.flickr.com/services/rest/``
-* ``?``
-* key=value pairs, separate by &s:
-   * One pair is ``method=flickr.photos.search``. This says to do a photo search, rather than one of the many other operations that the API allows. Don't be confused by the word "method" here-- it is not a python method. That's just the name flickr uses to distinguish among the different operations a client application can request.
-   * ``format=json``. This says to return results in JSON format. 
-   * ``per_page=10``. This says to return 10 results at a time.
-   * ``tags=mountains``. This says to return photos that are tagged with the word "mountains".
-   * ``api_key=...``. Flickr only lets authorized applications access the API. Each request must include a secret code as a value associated with api_key. Anyone can get a key. See the `documentation for how to get one <https://www.flickr.com/services/api/misc.api_keys.html>`_. We recommend that you get one so that you can test out the sample code in this chapter.
-
 Encoding URL Parameters
 -----------------------
       
@@ -74,7 +59,7 @@ For example, in the following, the base url is https://google.com/search. A dict
 
 .. note: 
 
-    If you're ever unsure exactly what url has been produced when calling requests.get and passing a value for params, you can access the .url attribute of the object that is returned. This will be a helpful debugging strategy. You can take that url and plug it into a browser and see what results come back! 
+    If you're ever unsure exactly what url has been produced when calling requests.get and passing a value for params, you can access the .url attribute of the object that is returned. This will be a helpful debugging strategy. You can take that url and plug it into a browser and see what results come back! We will talk about this more in the next section, on debugging calls to ``requests.get()`` when they don't do exactly what you expect.
 
 **Check your understanding**
 
@@ -92,9 +77,5 @@ For example, in the following, the base url is https://google.com/search. A dict
    How would you request the URL ``http://bar.com/goodstuff?greet=hi%3Athere&frosted=no`` using the requests module?
 
 
-Now you try it. Use the pattern above to fetch the page at the following url, and print the .url attribute to make sure that's really the page you're getting.
-``http://bar.com/goodstuff?q=chocolate&frosted=no``
-
-We don't have the requests module in the browser environment, so you'll have to try this on your local computer, by creating a file and then executing it with your native python interpreter.
 
 

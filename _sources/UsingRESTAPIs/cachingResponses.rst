@@ -26,13 +26,13 @@ software development using REST APIs:
 
 In our implementation of the caching pattern, we will use a python dictionary to store the results of the expensive operations (the calls to requests.get). Behind the scenes, when requests.get is executed, it takes the url_path parameters dictionary, turns them into a full url, and then fetches data from a website based on that full url. We will use that full url as a key in the caching dictionary, and the returned text from the call to requests.get as the associated value.
 
-Note that we have to dive a little deeper into the requests module in order to get just the URL that it would fetch, rather than have it actually fetch for us. In the function ``requestURL`` below, we create an instance of the Request class and then call the prepare() method on it. We could provide the parameters dictionary when creating the Request instance, just as we would when calling requests.get. However, in this case we provide the items from that dictionary as a list of tuples. This allows us to provide them in an order that we control (remember that when we extract the items or keys from a dictionary they might come out in any order). In this case, in the ``canonical_order`` function, we provide a list of the key-value pairs, with the keys in alphabetic order.
-
 .. note::
 
-    The function ``requestURL`` that we define below can be useful in some other situations as well. Notably, when a call to requests.get() fails, and you don't know why, call that function to print out the url to see exactly what it is. You can then copy and paste it into a browser, edit the URL and test that, and thus see what change might be needed to your request parameters.
+    In the revised version of the function ``requestURL`` below, we provide the items from the parameters dictionary as a list of tuples. This allows us to provide them in an order that we control (remember that when we extract the items or keys from a dictionary they might come out in any order). In this case, in the ``canonical_order`` function, we provide a list of the key-value pairs, with the keys in alphabetic order.
 
-The code below implements the pattern described above.
+    The function ``requestURL`` can be useful in some other situations as well. Notably, when a call to requests.get() fails, and you don't know why, call that function to print out the url to see exactly what it is. You can then copy and paste it into a browser, edit the URL and test that, and thus see what change might be needed to your request parameters. This was discussed in a :ref:`previous chapter<debug_urls_chap>`.
+
+The code below implements the caching pattern described above.
 
 .. sourcecode:: python
 
@@ -61,7 +61,7 @@ The code below implements the pattern described above.
 
 The only problem with the code above is that the cache will disappear at the end of the execution of the python program. In order to preserve the cache between between multiple invocations of our program, we will dump that dictionary to a file and reload from that file.
 
-The python module pickle makes it easy to save the dictionary (or any other python object) in a file. Here's a version that does that.
+The python module pickle makes it easy to save the dictionary (or any other python object) in a file. Here's a version that does that, along with an example of how we could use it with the FAA's REST API. Try saving this code in a file and running it multiple times. The first time, you'll see the logging output telling you the item was retrieved from the FAA; subsequent times it will say that it was retrieved from the cache. If you want to reset the cache to empty, just delete the file "cached_results.txt" from your file system. Or change the variable fname to a different value in the code.
 
 .. sourcecode:: python
 
@@ -79,7 +79,10 @@ The python module pickle makes it easy to save the dictionary (or any other pyth
 
     def canonical_order(d):
         alphabetized_keys = sorted(d.keys())
-        return [(k, d[k]) for k in alphabetized_keys]
+        res = []
+        for k in alphabetized_keys:
+            res.append((k, d[k]))
+        return res
 
     def requestURL(baseurl, params = {}):
         req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
@@ -91,53 +94,12 @@ The python module pickle makes it easy to save the dictionary (or any other pyth
         # step 1
         if full_url in cache_diction:
             # step 2
-            logging.info("retrieving cached result for " + full_url)
+            print "retrieving cached result for " + full_url
             return cache_diction[full_url]
         else:
             # step 3
             response = requests.get(base_url, params=params_diction)
-            logging.info("adding cached result for " + full_url)
-            # add to the cache and save it permanently
-            cache_diction[full_url] = response.text
-            fobj = open(cache_fname, "w")
-            pickle.dump(cache_diction, fobj)
-            fobj.close()
-            return response.text
-
-Here's an example of how we could use it with the FAA's REST API. Try saving this code in a file and running it multiple times. The first time, you'll see the logging output telling you the item was retrieved from the FAA; subsequent times it will say that it was retrieved from the cache. If you want to reset the cache to empty, just delete the file "cached_results.txt" from your file system. Or change the variable fname to a different value in the code.
-
-.. sourcecode:: python
-
-    import requests
-    import json
-    import pickle
-    import logging
-    logging.basicConfig(level=logging.INFO)
-
-    cache_fname = "cached_results.txt"
-    try:
-        fobj = open(cache_fname, 'r')
-        saved_cache = pickle.load(fobj)
-        fobj.close()
-    except:
-        saved_cache = {}
-
-    def requestURL(baseurl, params = {}):
-        req = requests.Request(method = 'GET', url = baseurl, params = params)
-        prepped = req.prepare()
-        return prepped.url
-
-    def get_with_caching(base_url, params_diction, cache_diction, cache_fname):
-        full_url = requestURL(base_url, params_diction)
-        # step 1
-        if full_url in cache_diction:
-            # step 2
-            logging.info("retrieving cached result for " + full_url)
-            return cache_diction[full_url]
-        else:
-            # step 3
-            response = requests.get(base_url, params=params_diction)
-            logging.info("adding cached result for " + full_url)
+            print "adding cached result for " + full_url
             # add to the cache and save it permanently
             cache_diction[full_url] = response.text
             fobj = open(cache_fname, "w")
