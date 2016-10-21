@@ -11,6 +11,5 @@ Process the Contents
 
 The last step is to process the contents.
 
-Often, when you get back data in json format, it will be a highly nested data structure. You may only need a little of that data. Pulling out what you want is a big topic to warrant an entire chapter of its own, later in the book.
 
-The key lesson for now is to make sure you have received the data you were expecting before you start writing code to extract elements out of that data.
+

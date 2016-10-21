@@ -26,13 +26,13 @@ software development using REST APIs:
 
 In our implementation of the caching pattern, we will use a python dictionary to store the results of the expensive operations (the calls to requests.get). Behind the scenes, when requests.get is executed, it takes the url_path parameters dictionary, turns them into a full url, and then fetches data from a website based on that full url. We will use that full url as a key in the caching dictionary, and the returned text from the call to requests.get as the associated value.
 
-Note that we have to dive a little deeper into the requests module in order to get just the URL that it would fetch, rather than have it actually fetch for us. In the function ``requestURL`` below, we create an instance of the Request class and then call the prepare() method on it. We could provide the parameters dictionary when creating the Request instance, just as we would when calling requests.get. However, in this case we provide the items from that dictionary as a list of tuples. This allows us to provide them in an order that we control (remember that when we extract the items or keys from a dictionary they might come out in any order). In this case, in the ``canonical_order`` function, we provide a list of the key-value pairs, with the keys in alphabetic order.
-
 .. note::
 
-    The function ``requestURL`` that we define below can be useful in some other situations as well. Notably, when a call to requests.get() fails, and you don't know why, call that function to print out the url to see exactly what it is. You can then copy and paste it into a browser, edit the URL and test that, and thus see what change might be needed to your request parameters.
+    In the revised version of the function ``requestURL`` below, we provide the items from the parameters dictionary as a list of tuples. This allows us to provide them in an order that we control (remember that when we extract the items or keys from a dictionary they might come out in any order). In this case, in the ``canonical_order`` function, we provide a list of the key-value pairs, with the keys in alphabetic order.
 
-The code below implements the pattern described above.
+    The function ``requestURL`` can be useful in some other situations as well. Notably, when a call to requests.get() fails, and you don't know why, call that function to print out the url to see exactly what it is. You can then copy and paste it into a browser, edit the URL and test that, and thus see what change might be needed to your request parameters. This was discussed in a :ref:`previous chapter<debug_urls_chap>`.
+
+The code below implements the caching pattern described above.
 
 .. sourcecode:: python
 
@@ -79,7 +79,9 @@ The python module pickle makes it easy to save the dictionary (or any other pyth
 
     def canonical_order(d):
         alphabetized_keys = sorted(d.keys())
-        return [(k, d[k]) for k in alphabetized_keys]
+        for k in alphabetized_keys:
+            res.appennd((k, d[k]]))
+        return res
 
     def requestURL(baseurl, params = {}):
         req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
@@ -111,8 +113,6 @@ Here's an example of how we could use it with the FAA's REST API. Try saving thi
     import requests
     import json
     import pickle
-    import logging
-    logging.basicConfig(level=logging.INFO)
 
     cache_fname = "cached_results.txt"
     try:
@@ -122,8 +122,15 @@ Here's an example of how we could use it with the FAA's REST API. Try saving thi
     except:
         saved_cache = {}
 
+    def canonical_order(d):
+        alphabetized_keys = sorted(d.keys())
+        res = []
+        for k in alphabetized_keys:
+            res.appennd((k, d[k]]))
+        return res
+
     def requestURL(baseurl, params = {}):
-        req = requests.Request(method = 'GET', url = baseurl, params = params)
+        req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
         prepped = req.prepare()
         return prepped.url
 

@@ -12,9 +12,9 @@ Testing classes
 
 To test a user-defined class, you will create test cases that check whether instances are created properly, and you will create test cases for each of the methods as functions, by invoking them on particular instances and seeing whether they produce the correct return values and side effects, especially side effects that change data stored in the instance variables. To illustrate, we will use the Point class that was used in the :ref:`introduction to classes <classes_chap>`.
 
-To test whether the class constructor (the __init__) method is working correctly, create an instance and then make assertions to see whether its instance variables are set correctly.
+To test whether the class constructor (the ``__init__``) method is working correctly, create an instance and then make assertions to see whether its instance variables are set correctly.
 
-A method like distanceFromOrigin does its work by computing a return value, so it needs to be tested with a return value test. A method like move does its work by changing the contents of a mutable object (the point instance has its instance variable changed) so it needs to be tested with a side effect test.
+A method like ``distanceFromOrigin`` in the ``Point`` class you saw does its work by computing a return value, so it needs to be tested with a return value test. A method like ``move`` in the ``Turtle`` class does its work by changing the contents of a mutable object (the point instance has its instance variable changed) so it needs to be tested with a side effect test.
 
 .. activecode:: python
 
@@ -98,6 +98,6 @@ A method like distanceFromOrigin does its work by computing a return value, so i
    :feedback_b: You want to check whether it has the correct side effect, whether it correctly mutates the list.
    :correct: b
       
-   We have usually used the sorted function, which takes a list as input and returns a new list containing the same items, possibly in a different order. There is also a method called sort for lists. It changes the order of the items in the list, and returns the value None. Which kind of test case would you use on the sort method?    
+   We have usually used the ``sorted`` function, which takes a list as input and returns a new list containing the same items, possibly in a different order. There is also a method called ``sort`` for lists (e.g. ``[1,6,2,4].sort()``). It changes the order of the items in the list itself, and it returns the value ``None``. Which kind of test case would you use on the sort method?    
    
 
