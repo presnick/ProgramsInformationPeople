@@ -19,7 +19,7 @@ Activities through 10/28
   * Read :ref:`REST APIs<rest_apis_chap>`
 
 .. usageassignment::
-  :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/jsonlib, RESTAPIs/unicode
+  :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/DebugURLs, RESTAPIs/jsonlib, RESTAPIs/unicode, RESTAPIs/requestsCookbook
   :assignment_name: Prep 12
   :deadline: 2016-10-24 21:40
   :pct_required: 80
@@ -41,7 +41,7 @@ Activities through 10/28
   * Read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`, which may also be helpful as we move forward. We may add to this (for your use and help; you will *not* be graded on reading additional material added later), too!
 
 .. usageassignment::
-  :subchapters: Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/requestsCookbook, UsingRESTAPIs/callingGet, UsingRESTAPIs/extract, UsingRESTAPIs/process, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr,
+  :subchapters: Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr,
     NativeInterpreterGotchas/FixCommonProblems
   :assignment_name: Prep 13
   :deadline: 2016-10-26 21:40
