@@ -45,6 +45,15 @@
   :points: 1000
   :autograde: unittest
 
+.. 10 probs, 100 each, 50 for number 1 and 150 for 6
+.. assignment::
+  :name: PS06
+  :assignment_type: problem_set
+  :questions: ps_6_1 50, ps_6_2 100, ps_6_3 100, ps_6_4 100, ps_6_5 100, ps_6_6 150, ps_6_7 100, ps_6_8 100, ps_6_9 100, ps_6_10 100
+  :deadline: 2016-10-17 04:00
+  :points: 1000
+  :autograde: unittest
+
 .. reading responses
 
 .. assignment::
