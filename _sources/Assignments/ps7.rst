@@ -37,7 +37,8 @@ Activities through 11/4
 
 
 .. usageassignment::
-  :subchapters: Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/jsonlib, RESTAPIs/unicode
+  :subchapters: Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/DebugURLs, RESTAPIs/jsonlib, RESTAPIs/unicode, RESTAPIs/requestsCookbook
+
   :assignment_name: Prep 15
   :deadline: 2016-11-02 21:40
   :pct_required: 80
@@ -116,22 +117,7 @@ To find the file for your problem set, and to submit your assignment on Canvas, 
 
 .. external:: ps_7_7
 
-    7.  We've provided a complex nested dictionary saved in the variable ``fb_data``. This is a lot like real data you'll get from Facebook (but a little bit simpler, and fake data). 
-
-    Here we've also provided some questions to help you. We will not grade, or expect you to write, answers to these questions, but we suggest you think about them and write them in comments to practice understanding this big nested data structure. Test your predictions using print statements in the code file! Questions:
-
-    - What type is the structure saved in the variable ``fb_data``?
-    - What about ``fb_data["data"][1]``?
-    - What about ``fb_data["data"][0]["from"]``?
-    - What about ``fb_data["data"][0]["id"]``?
-
-    Now, write a line of code to assign the value of the first message ("This problem might...") from the big ``fb_data`` data structure to a variable called ``first_message``. (Do not hard-code your answer! That means, write it in terms of fb_data, so that it would work with any content stored in the variable ``fb_data`` that has the same structure as that of the one we gave you.)
-
-    Then write a second line of code to assign the value of the name of the second person who posted ("John Smythe") to a variable called ``second_name``. Do not hard code your answer!
-
-.. external:: ps_7_8
-
-    6. Define a function ``sort_nested_lists`` that accepts as input a list of lists of integers, e.g. ``[[2,3],[45,100,2],[536],[103,2,8]]``. It should return a sorted version of that list, sorted by the sum of the integers in each sub-list. For example, if that list were the function's input, the return value should be ``[[2,3],[103,2,8],[45,100,2],[536]]``. 
+    7. Define a function ``sort_nested_lists`` that accepts as input a list of lists of integers, e.g. ``[[2,3],[45,100,2],[536],[103,2,8]]``. It should return a sorted version of that list, sorted by the sum of the integers in each sub-list. For example, if that list were the function's input, the return value should be ``[[2,3],[103,2,8],[45,100,2],[536]]``. 
 
     **Suggestion:** It's a good idea to come up with some sample "test cases" to help yourself work through this, in addition to the tests we have provided in your code file. Come up with sample lists where it's easy to figure out what the correct sorting is, and make invocations to your function using that input, and print out the results. If you get different output than you expect, trace through the process to figure out where it might have gone wrong. Writing out an English plan for this and translating it into code bit by bit may also be a good idea.
 
