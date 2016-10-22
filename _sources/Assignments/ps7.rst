@@ -38,7 +38,6 @@ Activities through 11/4
 
 .. usageassignment::
   :subchapters: Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/DebugURLs, RESTAPIs/jsonlib, RESTAPIs/unicode, RESTAPIs/requestsCookbook
-
   :assignment_name: Prep 15
   :deadline: 2016-11-02 21:40
   :pct_required: 80
