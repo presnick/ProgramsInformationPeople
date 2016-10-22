@@ -109,6 +109,8 @@ Flickr does something a little weird with its result string. Instead of just sen
 
 Finally, we loop through the list of photo dictionaries that were returned, extracting two fields, owner and pid. Those are used to create new URLs that are in the format flickr expects for displaying a webpage containing a single image. Each of those URLs is passed to the webbrowser.open() function. If all goes well, that should open five browser tabs, each with a picture that some flickr user had tagged with the words "mountains", "Switzerland", and "cows".
 
+Note that if you run exactly this code a second or third time (you should!), you will be getting the *cached* data -- not brand new live data. You should see evidence of that printed out in the console!
+
 .. note:
 
     If any of that code is puzzling, try adding some print calls or breaking down the complex expressions into a series of shorter statements.
