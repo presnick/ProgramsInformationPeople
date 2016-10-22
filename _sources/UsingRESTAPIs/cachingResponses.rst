@@ -32,7 +32,7 @@ In our implementation of the caching pattern, we will use a python dictionary to
 
     The function ``requestURL`` can be useful in some other situations as well. Notably, when a call to requests.get() fails, and you don't know why, call that function to print out the url to see exactly what it is. You can then copy and paste it into a browser, edit the URL and test that, and thus see what change might be needed to your request parameters. This was discussed in a :ref:`previous chapter<debug_urls_chap>`.
 
-The code below implements the caching pattern described above. You should look through it and ensure that you have an understanding of what is happening in it.
+The code below implements the caching pattern described above. You should look through it and ensure that you have an understanding of what is happening in it. (Don't worry about understanding all the details of the code -- it uses some patterns and details that you have not learned about yet, in order to make API requests easier for you. But you should be able to describe its purpose in a couple sentences, and understand why we want to use it.)
 
 .. sourcecode:: python
 
@@ -66,7 +66,7 @@ The code below implements the caching pattern described above. You should look t
             return response.text
 
 
-The only problem with the code above is that the cache will disappear at the end of the execution of the python program. In order to preserve the cache between between multiple invocations of our program, we will dump that dictionary to a file and reload from that file.
+Now, the only problem with the code above is that the cache will disappear at the end of the execution of the python program. In order to preserve the cache between between multiple invocations of our program, we will dump that dictionary to a file and reload from that file.
 
 The python module ``pickle`` makes it easy to save the dictionary (or any other python object) in a file. (If you're interested, you can read more about it in the formal Python documentation `here<https://docs.python.org/2/library/pickle.html>`_.)
 
@@ -74,7 +74,9 @@ The python module ``pickle`` makes it easy to save the dictionary (or any other 
 
     Data that has been *pickled* and saved to a file is saved in a specific format that makes it easy to *unpickle* and reuse in a Python program. So it's important that you *don't* edit ``cached_data.txt`` (or any file you save pickled data in) in a text editor, because that can lead you to problems in the code that relies on the *pickled* object.
 
-Here's a version of the above code that uses the ``pickle`` module, along with an example of how we could use it with the FAA's REST API. Try saving this code in a file and running it multiple times. The first time, you'll see the logging output telling you the item was retrieved from the FAA; subsequent times, it will say that it was retrieved from the cache. If you want to reset the cache to empty, so that you will have not have cached API data saved on your computer, just delete the file "cached_results.txt" from your file system. Or change the variable ``fname`` to a different value in the code, which will cause this code to cache your data in a different file. If you run this code with a different URL or params dictionary, it will save a new key-value pair in your pickled cache dictionary!
+Here's a version of the above code that uses the ``pickle`` module, along with an example of how we could use it with the FAA's REST API. This is the format for caching that you should always use for getting complex data from a REST API.
+
+Try saving this code in a file and running it multiple times. The first time, you'll see the logging output telling you the item was retrieved from the FAA; subsequent times, it will say that it was retrieved from the cache. If you want to reset the cache to empty, so that you will have not have cached API data saved on your computer, just delete the file "cached_results.txt" from your file system. Or change the variable ``fname`` to a different value in the code, which will cause this code to cache your data in a different file. And if you run this code with a different URL, it will save a new key-value pair in your pickled cache dictionary!
 
 .. sourcecode:: python
 
