@@ -15,13 +15,13 @@ The first thing that might go wrong is that you get a runtime error when you cal
 
 The first possibility is that the variable dest_url is either not bound to a string, or is bound to a string that isn't a valid URL. For example, it might be bound to the string ``"http://foo.bar/bat"``. foo.bar is not a valid domain name that can be resolved to an ip address, so there's no server to contact. That will yield an error of type requests.exceptions.ConnectionError. Here's a complete error message:
 
-.. sourcecode:: python
+::
 
     requests.exceptions.ConnectionError: HTTPConnectionPool(host='foo.bar', port=80): Max retries exceeded with url: /bat?key=val (Caused by <class 'socket.gaierror'>: [Errno 11004] getaddrinfo failed)
 
 A second possibility is that the value provided for the params parameter is not a valid dictionary or doesn't have key-value pairs that can be converted into text strings suitable for putting into a URL. For example, if you execute ``requests.get("http://github.com", params = [0,1])``, [0,1] is a list rather than a dictionary and the python interpreter generates the error, ``TypeError: 'int' object is not iterable``.
 
-The best approach is to look at the URL that is produced and eyeball it to see whether it matches what the documentation of the particular API suggests the url should look like. To check the url, the first step is to print it out. Unfortunately, there's no way to force the requests.get() invocation to print out the url that it has constructed from the parameters that were passed to it. Instead, we've provided a little function ``requestURL()`` that takes the same parameters as requests.get() and returns the url that requests.get() is generating from those parameters. The function reaches a little into the internals of the requests module, so don't worry about understanding the function if you don't want to. If you do want to, check the documentation of the requests module: Request is a class in the requests module and prepare is a method defined for that class which creates a url.
+The best approach is to look at the URL that is produced and eyeball it to see whether it matches what the documentation of the particular API suggests the url should look like. To check the url, the first step is to print it out. Unfortunately, there's no way to force the ``requests.get()`` invocation to print out the url that it has constructed from the parameters that were passed to it. Instead, we've provided a little function ``requestURL()`` for you that takes the same parameters as ``requests.get()``, and returns the url that ``requests.get()`` is generating from those parameters. The function reaches a little into the internals of the requests module, so don't worry about understanding the function if you don't want to. If you do want to, check the documentation of the requests module: Request is a class in the requests module and prepare is a method defined for that class which creates a url.
 
 .. sourcecode:: python
 
