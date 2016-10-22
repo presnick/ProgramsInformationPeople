@@ -32,7 +32,7 @@ In our implementation of the caching pattern, we will use a python dictionary to
 
     The function ``requestURL`` can be useful in some other situations as well. Notably, when a call to requests.get() fails, and you don't know why, call that function to print out the url to see exactly what it is. You can then copy and paste it into a browser, edit the URL and test that, and thus see what change might be needed to your request parameters. This was discussed in a :ref:`previous chapter<debug_urls_chap>`.
 
-The code below implements the caching pattern described above. You should look through it and ensure that you have an understanding of what is happening in it. (Don't worry about understanding all the details of the code -- it uses some patterns and details that you have not learned about yet, in order to make API requests easier for you. But you should be able to describe its purpose in a couple sentences, and understand why we want to use it.)
+The code below implements the caching pattern described above. You should look through it and ensure that you have a high-level understanding of it. Don't worry about understanding all the details of the code -- it uses some patterns and details that you have not learned about yet, in order to make API requests easier for you. But you should be able to describe its purpose in a couple sentences, and understand why it will be useful.
 
 .. sourcecode:: python
 
@@ -66,7 +66,7 @@ The code below implements the caching pattern described above. You should look t
             return response.text
 
 
-Now, the only problem with the code above is that the cache will disappear at the end of the execution of the python program. In order to preserve the cache between between multiple invocations of our program, we will dump that dictionary to a file and reload from that file.
+Now, the only problem with the code above is that the cache will disappear at the end of the execution of the python program in which we invoke ``get_with_caching``. In order to preserve the cache between between multiple invocations of our program, we will dump that dictionary to a file and reload from that file.
 
 The python module ``pickle`` makes it easy to save the dictionary (or any other python object) in a file. (If you're interested, you can read more about it in the formal Python documentation `here<https://docs.python.org/2/library/pickle.html>`_.)
 
