@@ -26,6 +26,9 @@ The best approach is to look at the URL that is produced and eyeball it to see w
 .. sourcecode:: python
 
     def requestURL(baseurl, params = {}):
+        # This function accepts a URL path and a params diction as inputs.
+        # It calls requests.get() with those inputs,
+        # and returns the full URL of the data you want to get.
         req = requests.Request(method = 'GET', url = baseurl, params = params)
         prepped = req.prepare()
         return prepped.url
@@ -43,7 +46,7 @@ If requests.get() executes without generating a runtime error, you are still not
 
 Fortunately, the response object returned by requests.get() has the ``.url`` attribute, which will help you with debugging. It's a good practice during program development to have your program print it out. This is easier than calling ``requestURL()`` but is only available to you if ``requests.get()`` succeeds in returning a Response object.
 
-More importantly, you'll want to print out the contents. Sometimes the text that's retrieved is an error message that you can read. In other cases, it's just obviously the wrong data. Print out the first couple hundred characters of the response text to see if it makes sense.
+More importantly, you'll want to print out the contents. Sometimes the text that's retrieved is an error message that you can read, such as ``{"request empty": "There is no data that corresponds to your search."}``. In other cases, it's just obviously the wrong data. Print out the first couple hundred characters of the response text to see if it makes sense.
 
 .. sourcecode:: python
 
