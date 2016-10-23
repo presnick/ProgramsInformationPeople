@@ -74,7 +74,7 @@ For example, in the following, the base url is https://google.com/search. A dict
    :feedback_d: The ? and & are added automatically, and the space in hi there is automatically encoded as %3A.
    :correct: d
 
-   How would you request the URL ``http://bar.com/goodstuff?greet=hi%3Athere&frosted=no`` using the requests module?
+   How would you request the URL ``http://bar.com/goodstuff?greet=hi+there&frosted=no`` using the requests module?
 
 
 
