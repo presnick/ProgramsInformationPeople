@@ -24,7 +24,7 @@ software development using REST APIs:
 - It will make your program run faster. Connections over the Internet can take a few seconds, or even tens of seconds, if you are requesting a lot of data. It might not seem like much, but debugging is a lot easier when you can make a change in your program, run it, and get an almost instant response.
 - It is harder to debug the code that processes complicated data if the content that is coming back can change on each run of your code. It's amazing to be able to write programs that fetch real-time data like airport conditions or the latest tweets from Twitter. But it can be hard to debug that code if you are having problems that only occur on certain Tweets (e.g. those in foreign languages). When you encounter problematic data, it's helpful if you save a copy and can debug your program working on that saved, static copy of the data.
 
-In our implementation of the caching pattern, we will use a python dictionary to store the results of expensive operations (the calls to ``requests.get``). Behind the scenes, when ``requests.get`` is executed, it takes the url_path (the first argument to the ``requests.get`` function) and the parameters dictionary (the ``params`` argument to the ``requests.get`` function), turns them into a full url, and then fetches data from a website based on that full url. We will use that full url that gets created as a *key* in our caching dictionary, and the returned text from the call to ``requests.get`` as the associated value.
+In our implementation of the caching pattern, we will use a python dictionary to store the results of expensive operations (the calls to ``requests.get()``). Behind the scenes, when ``requests.get()`` is executed, it takes the url_path (the first argument to the ``requests.get`` function) and the parameters dictionary (the ``params`` argument to the ``requests.get`` function), turns them into a full url, and then fetches data from a website based on that full url. We will use that full url that gets created as a *key* in our caching dictionary, and the returned text from the call to ``requests.get()`` as the associated value.
 
 .. note::
 
@@ -32,19 +32,23 @@ In our implementation of the caching pattern, we will use a python dictionary to
 
     The function ``requestURL`` can be useful in some other situations as well. Notably, when a call to requests.get() fails, and you don't know why, call that function to print out the url to see exactly what it is. You can then copy and paste it into a browser, edit the URL and test that, and thus see what change might be needed to your request parameters. This was discussed in a :ref:`previous chapter<debug_urls_chap>`.
 
-The code below implements the caching pattern described above. You should look through it and ensure that you have a high-level understanding of it. Don't worry about understanding all the details of the code -- it uses some patterns and details that you have not learned about yet, in order to make API requests easier for you. But you should be able to describe its purpose in a couple sentences, and understand why it will be useful.
+The code below implements the caching pattern described above.
 
 .. sourcecode:: python
 
     def canonical_order(d):
         # This function accepts a dictionary as input and returns a sorted list of tuples that represent its key-value pairs.
         alphabetized_keys = sorted(d.keys())
-        return [(k, d[k]) for k in alphabetized_keys] # You will learn this pattern for creating a list later.
+        # accumulate key-value pairs, in order of alphabetized keys
+        res = []
+        for k in alphabetized_keys:
+            res.append((k, d[k]))
+        return res
 
     def requestURL(baseurl, params = {}):
         # This function accepts a URL path and a params diction as inputs.
-        # It calls ``requests.get`` with those inputs,
-        # organizes the keys in a canonical order using the fxn above,
+        # It calls requests.get() with those inputs,
+        # organizes the keys in a canonical order using the function above,
         # and returns the full URL of the data you want to get.
         req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
         prepped = req.prepare()
@@ -66,9 +70,9 @@ The code below implements the caching pattern described above. You should look t
             return response.text
 
 
-Now, the only problem with the code above is that the cache will disappear at the end of the execution of the python program in which we invoke ``get_with_caching``. In order to preserve the cache between between multiple invocations of our program, we will dump that dictionary to a file and reload from that file.
+Now, the only problem with the code above is that the cache will disappear at the end of the execution of the python program in which we invoke ``get_with_caching()``. In order to preserve the cache between between multiple invocations of our program, we will dump that dictionary to a file and reload from that file.
 
-The python module ``pickle`` makes it easy to save the dictionary (or any other python object) in a file. (If you're interested, you can read more about it in the formal Python documentation `here<https://docs.python.org/2/library/pickle.html>`_.)
+The python module ``pickle`` makes it easy to save the dictionary (or any other python object) in a file. (If you're interested, you can read more about it in the formal Python documentation `here <https://docs.python.org/2/library/pickle.html>`_.)
 
 .. note::
 
