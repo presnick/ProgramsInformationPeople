@@ -48,7 +48,7 @@ You have the following graded activities:
    * Read :ref:`Tuples<tuples_chap>`, and try the exercises in that chapter
    * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and try the exercises in that chapter
 
-   * Challenge problems: TBA
+   * Challenge problems: TBA. No lecture waiver for this lecture. Everyone will get credit. But we strongly encourage attendance for this one.
 
 .. usageassignment::
     :subchapters: Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems, NestedData/ListswithComplexItems, NestedData/NestedDictionaries, NestedData/NestedIteration, NestedData/DebuggingNestedData
@@ -451,7 +451,7 @@ Problem Set
 
    Then copy all the code in the box below into that file, too, underneat the function definitions you just copied in.
 
-   Finally, make one more change to the program: add a little bit of code so that right after a user types in a secret word to guess, 27 blank lines are printed. (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
+   Finally, make one more change to the program: add a little bit of code so that after you enter the secret word to guess, print 27 new empty lines, such that the secret word will be pushed up out of your screen and the person who guesses the word will not be able to see it.
 
    Save this Python program, and run it using the command line: ``cd`` to the correct directory where you saved the file, and then type ``python hangman.py``, as you learned last week.
 
