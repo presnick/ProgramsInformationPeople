@@ -11,15 +11,6 @@
 .. highlight:: python
     :linenothreshold: 500
 
-.. assignment for problem set
-
-.. assignments for lecture waivers
-
-.. assignments for end of lecture exercise sets
-
-.. assignments for reading responses
-
-.. assignment for DYU
 
 Activities through 10/28
 ========================
@@ -127,14 +118,15 @@ Problem Set
    class myTests(TestCaseGui):
 
       def testCode(self):
-         self.assertNotIn("Hello, SI106!!!", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertNotIn("Hello, world!!!", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         print "\n----The following tests are to ensure that you are not hard-coding the values.\n"
+         self.assertNotIn("Hello, SI106!!!", self.getEditorText(), "Testing to see if you've put Hello, SI106!!! in your code to hard-code.")
+         self.assertNotIn("Hello, world!!!", self.getEditorText(), "Testing to see if you've put Hello, world!!! in your code to hard-code.")
          self.assertNotIn("Hey, everybody!", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("print", self.getEditorText(), "Testing to see if you've put Hey, everybody! in your code to hard-code.")
       def testOutput(self):
-         self.assertNotIn("Hello, SI106!!!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
-         self.assertNotIn("Hello, world!!!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
-         self.assertNotIn("Hey, everybody!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+         self.assertIn("Hello, SI106!!!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+         self.assertIn("Hello, world!!!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+         self.assertIn("Hey, everybody!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
 
    myTests().main()
 
