@@ -29,19 +29,19 @@ You have the following graded activities:
 * **Before Monday's class 10/24:**
     * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and try the exercises in that chapter
 
-* **By Tuesday 10/25 11:59 pm:**
-    * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below)
-    * Read *The Most Human Human*, Chapter 10, p.237-259.
-    * Answer `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
-
-    * :ref:`Lecture 12 Challenge Exercises <lecture_12_waiver>`
-
 .. usageassignment::
     :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters
     :assignment_name: Prep 12
     :deadline: 2016-10-24 19:40
     :pct_required: 80
     :points: 50
+
+* **By Tuesday 10/25 11:59 pm:**
+    * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below)
+    * Read *The Most Human Human*, Chapter 10, p.237-259.
+    * Answer `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
+
+    * :ref:`Lecture 12 Challenge Exercises <lecture_12_waiver>`
 
 
 * **Before Wednesday's class 10/26:**
