@@ -277,7 +277,7 @@ Problem Set
            res = res + "Guesses so far: " + guesses.upper() + "\n"
        else:
            res = res + "No guesses so far" + "\n"
-           res = res + "Word: " + blanked(word, guesses) + "\n"
+       res = res + "Word: " + blanked(word, guesses) + "\n"
 
        return(res)
 
