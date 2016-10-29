@@ -208,7 +208,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
     **You should not upload the CSV file your code creates -- when we run your code, it'll appear!**
 
 
-.. external:: ps5_dyu
+.. external:: ps6_dyu
 
     Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139244>`_ assignment on Canvas.
 
