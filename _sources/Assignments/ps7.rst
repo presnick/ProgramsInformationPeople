@@ -14,7 +14,7 @@ Activities through 11/4
 * **Before class Monday 10/31:**
 
   * You may want to review the :ref:`Flickr API<flickr_api_chap>` and :ref:`Caching Responses <caching_responses>` from last week (we are not grading this, of course, just a suggestion)
-  * We have posted a file on Canvas in Files > Code Samples that shows code to access the Flickr API which is commented thoroughly. You may want to download this, look at it, and try it out!
+  * We are posting a file on Canvas in Files > Code Samples that shows code to access the Flickr API which is commented thoroughly. You may want to download this, look at it, and try it out!
   * Read the sections listed below from the :ref:`Classes <chap_constructor>` chapter, and try the exercises in those sections.
 
 .. usageassignment::
@@ -156,13 +156,13 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 .. external:: ps_7_6
 
-	Sort all the tags in descending order, based on how often they were used in the 50 photos. Save the sorted list in a variable called ``sorted_tags``. 
+	6. Sort all the tags in descending order, based on how often they were used in the 50 photos. Save the sorted list in a variable called ``sorted_tags``. 
 
 	Break any ties alphabetically, so that if "alpha" and "bravo" both have a count of 5, "alpha" will appear first in the sort order, and if "alpha" and "Alpha" both have a count of 5, "Alpha" will appear first.
 
 .. external:: ps_7_7
 
-	Save the 5 most common tags (*besides* "mountains") in a list called ``most_common_tags``.
+	7. Save the 5 most common tags (*besides* "mountains") in a list called ``most_common_tags``.
 
 	Then print, for the user to see, the five tags (other than the searched on tag, **mountains**) that were used most frequently!
 
