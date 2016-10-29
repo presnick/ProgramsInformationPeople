@@ -137,11 +137,13 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 .. external:: ps_7_4
 
-	4. Now, get a list of photo ids from the nested dictionary. Then, get information from FlickR about each photo id in the list. Create an instance of the ``Photo2`` class you defined earlier in the problem set for each of the photo ids, and accumulate all the instances into a list called ``photo_instances``. 
+	4. Now, get a list of photo ids from the nested dictionary. Save it in a variable called ``photo_ids_list``.
+
+	Then, get information from FlickR about each photo id in the list. Create an instance of the ``Photo2`` class you defined earlier in the problem set for each of the photo ids, and accumulate all the instances into a list called ``photo_instances``. 
 
 	To do this, follow these steps:
 
-	(a) Accumulate a list of photo ids from the big nested dictionary that you saved in the ``flickr_info`` variable.
+	(a) Accumulate a list of photo ids from the big nested dictionary that you saved in the ``flickr_info`` variable into ``photo_ids_list``.
 
 	(b) Make a request to the flickr API, but instead of using the ``flickr.photos.search`` method that you see in the example of getting tags from FlickR, use the method ``flickr.photos.getInfo``. There is documentation about how to use that method at this URL: ``https://www.flickr.com/services/api/flickr.photos.getInfo.html``, where you can find out what extra parameters you need.
 
