@@ -129,7 +129,11 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 .. external:: ps_7_3
 
-	3. The function ``get_with_caching`` returns a the **text** attribute of a response from FlickR. Now, write code to load that text data as a Python object (hint: you'll need to invoke the ``json.loads`` function). Save it in a variable ``flickr_info``.
+	3. The function ``get_with_caching`` returns a the **text** attribute of a response from FlickR. Now, write code to load that text data as a Python object. 
+
+	We've provided code to give you the baseurl and the url parameters dictionary. You just need to invoke ``get_with_caching`` properly and invoke ``json.loads`` properly.
+
+	Save it in a variable ``flickr_info``.
 
 .. external:: ps_7_4
 
