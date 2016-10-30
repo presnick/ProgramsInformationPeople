@@ -114,7 +114,7 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 	We have provided a few things to help you with the remainder of this problem set:
 
 	* A bunch of code that can be used to get a response from a REST API and cache it in a file, and/or retrieve data that has already been saved (cached) so that you can process it. This code is almost exactly the same as the code you saw in the Caching Responses subchapter in the textbook, but it has a bunch of annotations to help you understand it, and some small additions to help you with this problem set. The Section 7 caching code handout (you can find this on Canvas) includes questions that may also help you understand it!
-	* A file, ``cached_results.txt`` that has data from FlickR which represents a search for 50 photos with the tag "mountains"
+	* A file, ``cached_results.txt`` that has data from FlickR which represents a search for 50 photos with the tag "sunset"
 
 	If you run the ``506_ps7.py`` program, you'll see output describing what's happening in the code. We'd suggest that you do this before attempting to go further in the problem set!
 
@@ -129,11 +129,11 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 .. external:: ps_7_3
 
-	3. The function ``get_with_caching`` returns a the **text** attribute of a response from FlickR. Now, write code to load that text data as a Python object. 
+	3. The function ``get_with_caching`` returns the **text** attribute of a response from an API when you pass in the correct information to make a request. Now, you should write code to make a request to Flickr for 50 photos which are tagged with the key "sunset", and write code to load the text data you get back as a Python object. 
 
-	We've provided code to give you the baseurl and the url parameters dictionary. You just need to invoke ``get_with_caching`` properly and invoke ``json.loads`` properly.
+	Remember that for FlickR data, you have to index the ``.text`` attribute ``[14:-1]`` in order to get nicely formatted JSON data you can use ``json.loads`` on.
 
-	Save it in a variable ``flickr_info``.
+	Save it in a variable ``search_result_diction``.
 
 .. external:: ps_7_4
 
@@ -156,7 +156,7 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 	5. Accumulate frequencies of related tags.
 
-	You started out with data about 50 different photos, including the tags that the photo owners used to describe the photos. They all have the tag 'mountains', since that's the tag we searched for, but some have additional tags, like 'river' and 'nature' and others. Accumulate a dictionary of counts for each of those tags; call the dictionary ``counts_diction``. 
+	You started out with data about 50 different photos, including the tags that the photo owners used to describe the photos. They all have the tag 'sunset', since that's the tag we searched for, but some have additional tags, like 'river' and 'nature' and others. Accumulate a dictionary of counts for each of those tags; call the dictionary ``counts_diction``. 
 
 	(See :ref:`Dictionary Accumulation<dictionary_accum_chap>` for reminders/examples. You'll also probably need to do nested data investigation to access the tags in the nested data, just like you practiced during the past couple weeks.)
 
@@ -168,13 +168,13 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 .. external:: ps_7_7
 
-	7. Save the 5 most common tags (*besides* "mountains") in a list called ``most_common_tags``.
+	7. Save the 5 most common tags (*besides* "sunset") in a list called ``most_common_tags``.
 
-	Then print, for the user to see, the five tags (other than the searched on tag, **mountains**) that were used most frequently!
+	Then print, for the user to see, the five tags (other than the searched on tag, **sunset**) that were used most frequently!
 
 	HINT 1: Take a slice of the sorted list.
 
-	HINT 2: Depending on how you wrote the code to do earlier steps, you'll probably need to skip the first element in the sorted list. That will almost certainly be "mountains", since *all* the photos have that tag.
+	HINT 2: Depending on how you wrote the code to do earlier steps, you'll probably need to skip the first element in the sorted list. That will almost certainly be "sunset", since *all* the photos have that tag.
 
 .. external:: ps_7_end
 
