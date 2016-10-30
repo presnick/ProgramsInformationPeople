@@ -151,6 +151,8 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 	(d) Accumulate the instance that you create into a list called ``photo_instances``.
 
+	**Note** that this can take quite a long time to run on all 50 photos. You may want to test your process on a small slice of the list (5 photos), and then, once you know it works (if you're getting output from print statements that you expect), then run it on all 50 to see if you pass the tests!
+
 
 .. external:: ps_7_5
 
