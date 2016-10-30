@@ -145,7 +145,9 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 	(a) Accumulate a list of photo ids from the big nested dictionary that you saved in the ``flickr_info`` variable into ``photo_ids_list``.
 
-	(b) Make a request to the flickr API, but instead of using the ``flickr.photos.search`` method that you see in the example of getting tags from FlickR, use the method ``flickr.photos.getInfo``. There is documentation about how to use that method at this URL: ``https://www.flickr.com/services/api/flickr.photos.getInfo.html``, where you can find out what extra parameters you need.
+	(b) Make a request to the flickr API, but instead of using the ``flickr.photos.search`` method that you see in the example of getting tags from FlickR, use the method ``flickr.photos.getInfo``. There is documentation about how to use that method at this URL: ``https://www.flickr.com/services/api/flickr.photos.getInfo.html``, where you can find out what extra parameters you need. 
+
+	You should wrap this request in a try/except clause -- what if that photo's been deleted from Flickr? You don't want your whole program to break, you just want to go on to the next one.
 
 	(c) Get a Python dictionary from the response for each request, and pass that dictionary you get from each to a new instance of ``Photo2`` (see problems 1 and 2 and the Classes chapter)
 
