@@ -56,7 +56,7 @@ This Week's Reading Responses
 
 .. external:: rr_8
 
-  `Reading Response 8 <lhttps://umich.instructure.com/courses/108426/assignments/139269>`_ on Canvas.
+  `Reading Response 8 <https://umich.instructure.com/courses/108426/assignments/139269>`_ on Canvas.
 
 .. _problem_set_7:
 
