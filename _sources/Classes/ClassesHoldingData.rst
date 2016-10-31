@@ -6,6 +6,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
+.. _classes_rep_data:
 
 Defining Classes with Data from the Internet
 --------------------------------------------
