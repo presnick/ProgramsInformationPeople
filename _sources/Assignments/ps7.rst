@@ -13,7 +13,7 @@ Activities through 11/4
 
 * **Before class Monday 10/31:**
 
-  * You may want to review the :ref:`Flickr API<flickr_api_chap>` and :ref:`Caching Responses <caching_responses>` from last week (we are not grading this, of course, just a suggestion)
+  * You may want to review the :ref:`Flickr API<flickr_api_chap>` and :ref:`Caching Responses<caching_responses>` from last week (we are not grading this, of course, just a suggestion)
   * We are posting a file on Canvas in Files > Code Samples that shows code to access the Flickr API which is commented thoroughly. You may want to download this, look at it, and try it out!
   * Read the sections listed below from the :ref:`Classes <chap_constructor>` chapter, and try the exercises in those sections.
 
@@ -100,7 +100,7 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 	The structure of the dictionary that your ``Photo2`` class should accept is the same as the way the FlickR API returns data about photos. We have provided a sample dictionary representing 1 FlickR photo in the same format that Flickr returns it. We've read that data in from a file (``sample_diction.txt`` contains a nested Python dictionary with information from searching for photos by tags ``"mountains,rivers"`` on Flickr), so there is a sample dictionary that you could pass in as input to your ``Photo2`` class saved in the variable ``sample_diction``.
 
-	Feel free to add some print statements and other investigative code to understand the structure of ``sample_diction``. You may also find it useful to open the file "sample_diction.txt" in a text editor, or copy and paste its contents into ``http://www.jsoneditoronline.org/``. Also see the :ref:`Classes representing data <classes_rep_data>` sub-chapter for an example of writing and reading code like the code you'll need to produce to do this. 
+	Feel free to add some print statements and other investigative code to understand the structure of ``sample_diction``. You may also find it useful to open the file "sample_diction.txt" in a text editor, or copy and paste its contents into ``http://www.jsoneditoronline.org/``. Also see the :ref:`Classes representing data<classes_rep_data>` sub-chapter for an example of writing and reading code like the code you'll need to produce to do this. 
 
 	**NOTE** that in the dictionary that represents a photo from FlickR, there are two keys with plausible associated values to extract for each tag, ``'raw'`` and ``'_content'``; the only difference between their values is capitalization. Please extract the data from the ``'raw'`` key for each tag.
 
