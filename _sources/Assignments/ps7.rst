@@ -143,7 +143,7 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 	To do this, follow these steps:
 
-	(a) Accumulate a list of photo ids from the big nested dictionary that you saved in the ``flickr_info`` variable into ``photo_ids_list``.
+	(a) Accumulate a list of photo ids from the big nested dictionary that you saved in the ``search_result_diction`` variable into ``photo_ids_list``.
 
 	(b) Make a request to the flickr API, but instead of using the ``flickr.photos.search`` method that you see in the example of getting tags from FlickR, use the method ``flickr.photos.getInfo``. There is documentation about how to use that method at this URL: ``https://www.flickr.com/services/api/flickr.photos.getInfo.html``, where you can find out what extra parameters you need. 
 
