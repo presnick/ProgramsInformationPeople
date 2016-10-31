@@ -252,7 +252,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFive(self):
-         self.assertEqual(response, ['Your 3 pepperoni pizzas will be delievered in 20 minutes', 'Come pick up your 4 cheese pizzas in 10 minutes', 'Come pick up your 2 combo pizzas in 5 minutes', 'Your 10 cheese pizzas will be delievered in 15 minutes', 'Your 1 supreme pizzas will be delievered in 60 minutes'], "Testing if response is assigned to correct values")
+         self.assertEqual(response, ['Your 3 pepperoni pizzas will be delivered in 20 minutes', 'Come pick up your 4 cheese pizzas in 10 minutes', 'Come pick up your 2 combo pizzas in 5 minutes', 'Your 10 cheese pizzas will be delievered in 15 minutes', 'Your 1 supreme pizzas will be delievered in 60 minutes'], "Testing if response is assigned to correct values")
 
    myTests().main()
 
