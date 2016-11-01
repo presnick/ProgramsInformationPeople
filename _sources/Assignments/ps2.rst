@@ -46,7 +46,7 @@ You have the following graded activities:
     :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
     :assignment_name: Prep 05
     :deadline: 2016-09-30 04:00
-    :pct_required: 80
+    :pct_required: 70
     :points: 50
 
 * By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
