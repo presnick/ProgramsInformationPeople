@@ -16,24 +16,6 @@
 Activities through 11/11
 ========================
 
-:orphan:
-
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
-    and/or modify this document under the terms of the GNU Free Documentation
-    License, Version 1.3 or any later version published by the Free Software
-    Foundation; with Invariant Sections being Forward, Prefaces, and
-    Contributor List, no Front-Cover Texts, and no Back-Cover Texts.  A copy of
-    the license is included in the section entitled "GNU Free Documentation
-    License".
-
-
-.. highlight:: python
-    :linenothreshold: 500
-
-
-Activities through 11/4
-=======================
-
 * **Before Monday's class 11/7:**
     * Read :ref:`Python modules <modules_chap>`, and if you haven't already, make sure to read about the :ref:`pip module installer <pip_chap>`
     * Read :ref:`Try/Except <exceptions_chap>` and :ref:`String Formatting<formatting_chap>`
@@ -54,8 +36,7 @@ Activities through 11/4
     * Complete :ref:`Reading Response 9<reading_response_9>`.
 
 * **Before Wednesday's class, 11/9:**
-    * You may want to review the :ref:`Flickr API<flickr_api_chap>` and :ref:`Caching Responses<caching_responses>` from last week (we are not grading this again, just a suggestion)
-    * We will post a file on Canvas in Files > Code Samples that shows code to access the Flickr API, which is commented thoroughly. You may want to download this, look at it, and try it out!
+    * We will post a file on Canvas in Files > Code Samples that shows code to access the Flickr API, which is commented thoroughly. You may want to download this, look at it, and try it out! (This goes back to the information from the :ref:`Using REST APIs chapter<using_RESTAPIs_chap>` you read for Monday.)
     * Read the sections listed below from the :ref:`Classes<chap_constructor>` chapter, and try the exercises in those sections.
 
 .. usageassignment::
@@ -66,8 +47,8 @@ Activities through 11/4
   :points: 50
 
 
-* **Before Sunday 10/30 at 11:59 PM:**
-  * Complete all of :ref:`Problem Set 8 <problem_set_8>` and the Demonstrate Your Understanding assignment for this week.
+* **Before Sunday 11/13 at 11:59 PM:**
+  * Complete all of :ref:`Problem Set 8 <problem_set_8>` and the Demonstrate Your Understanding assignment for this week (linked below).
 
 
 This Week's Reading Responses
