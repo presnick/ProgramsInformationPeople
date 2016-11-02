@@ -35,7 +35,7 @@ Activities through 11/4
 =======================
 
 * **Before Monday's class 11/7:**
-	* Read :ref:`Python modules <modules_chap>`, and if you haven't already, make sure to read about the :ref:`pip module installer <pip_chap>`
+    * Read :ref:`Python modules <modules_chap>`, and if you haven't already, make sure to read about the :ref:`pip module installer <pip_chap>`
     * Read :ref:`Try/Except <exceptions_chap>` and :ref:`String Formatting<formatting_chap>`
     * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
     * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
@@ -51,17 +51,17 @@ Activities through 11/4
   :points: 50
 
 * **Before Tuesday 11/8 at 11:59 PM:**
-  	* Complete :ref:`Reading Response 9<reading_response_9>`.
+    * Complete :ref:`Reading Response 9<reading_response_9>`.
 
 * **Before Wednesday's class, 11/9:**
-  	* You may want to review the :ref:`Flickr API<flickr_api_chap>` and :ref:`Caching Responses<caching_responses>` from last week (we are not grading this again, just a suggestion)
-    * We will post a file on Canvas in **Files > Code Samples** that shows code to access the Flickr API, which is commented thoroughly. You may want to download this, look at it, and try it out!
-    * Read the sections listed below from the :ref:`Classes <chap_constructor>` chapter, and try the exercises in those sections.
+    * You may want to review the :ref:`Flickr API<flickr_api_chap>` and :ref:`Caching Responses<caching_responses>` from last week (we are not grading this again, just a suggestion)
+    * We will post a file on Canvas in Files > Code Samples that shows code to access the Flickr API, which is commented thoroughly. You may want to download this, look at it, and try it out!
+    * Read the sections listed below from the :ref:`Classes<chap_constructor>` chapter, and try the exercises in those sections.
 
 .. usageassignment::
   :subchapters: Classes/intro-ClassesandObjectstheBasics, Classes/ObjectsRevisited, Classes/UserDefinedClasses, Classes/ImprovingourConstructor, Classes/AddingOtherMethodstoourClass,   Classes/ObjectsasArgumentsandParameters, Classes/ConvertinganObjecttoaString, Classes/InstancesasReturnValues, Classes/sorting_instances, Classes/ClassVariablesInstanceVariables, Classes/ThinkingAboutClasses, Classes/ClassesHoldingData, Classes/Tamagotchi
   :assignment_name: Prep 17
-  :deadline: 2016-11-09:40
+  :deadline: 2016-11-09 18:40
   :pct_required: 80
   :points: 50
 
