@@ -102,7 +102,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 	* When the ``shout`` method is called for the ``Programming_Student`` class, the phrase ``"Also, Python is pretty cool."`` should print after the phrase to shout. You should be calling the parent ``shout`` method to make this happen.
 
-	* The printed representation of an instance of ``Programming_Student`` should look something like ``"My name is Julie, I've been at UMich for about 100 years, and I have written 90 programs while here."``
+	* The printed representation of an instance of ``Programming_Student`` should look something like ``"My name is Julie, I've been at UMich for about 100 years, and I have written 90 programs while here."`` Override the Student ``__str__`` method for the Programming_Student class to make that happen.
 
 .. external:: ps_8_01_test
 
