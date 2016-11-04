@@ -13,6 +13,7 @@ Class Assignments
    Assignments/ps5.rst
    Assignments/ps6.rst
    Assignments/ps7.rst
+   Assignments/ps8.rst
 
 
 
