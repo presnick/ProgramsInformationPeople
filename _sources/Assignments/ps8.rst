@@ -13,20 +13,30 @@ Activities through 11/11
 
 * **Before class Monday 11/7:**
 
-  * Read :ref:`Advanced Accumulation <>` and try any activities in the listed sub-chapters
+  * Read :ref:`Advanced Accumulation <list_comp_chap>` and try any activities in the listed sub-chapters
 
-..usageassignment
+.. usageassignment::
+  :subchapters: AdvancedAccumulation/intro, AdvancedAccumulation/map, AdvancedAccumulation/filter, AdvancedAccumulation/listcomp, AdvancedAccumulation/reduce, AdvancedAccumulation/zip
+  :assignment_name: Prep 16
+  :deadline: 2016-11-07 21:40
+  :pct_required: 80
+  :points: 50
 
 * **Before class Wednesday 11/9:**
 
-  * Read :ref:`Unittest Framework <>` and try any activities in the listed sub-chapters
+  * Read :ref:`Testing <test_cases_chap>` and try any activities in the listed sub-chapters
   * We strongly suggest you also try writing some of these Unit Test examples in your own code files!
 
-..usageassignment
+.. usageassignment::
+  :subchapters: Testing/intro-TestCases, Testing/Testingfunctions, Testing/Testingclasses
+  :assignment_name: Prep 17
+  :deadline: 2016-11-09 21:40
+  :pct_required: 80
+  :points: 50
 
 * **Before Sunday 11/13 at 11:59 PM:**
 
-  * Complete and submit your :ref:`Problem Set 9 <problem_set_9>`, and save an answer to your Demonstrate Understanding for this week (linked below).
+  * Complete and submit your :ref:`Problem Set 8 <problem_set_8>`, and save an answer to your Demonstrate Understanding for this week (linked below).
   * Complete :ref:`Reading Response 9 <reading_response_9>`.
 
 This Week's Reading Responses
@@ -36,7 +46,7 @@ This Week's Reading Responses
 
 .. external:: rr_9
 
-  `Reading Response 9 <linkhere.linkhere>`_ on Canvas.
+  `Reading Response 9 <https://umich.instructure.com/courses/108426/assignments/139270>`_ on Canvas.
 
 
 .. _problem_set_8:
@@ -44,15 +54,15 @@ This Week's Reading Responses
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 8 assignment <linkhere.linkhere>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
+Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/courses/108426/assignments/139256>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
 
 .. note::
 
-	Note that each problem on this problem set has two parts: solving the problem, and writing Unit Tests for that problem that check that you have solved it per the instructions! We have separated each part into a separate question on this page.
+	Note that each problem on this problem set has two parts: solving the problem, and writing Unit Tests for that problem that check that you have solved it per the instructions! 
 	
 	It may be easier to write the Unit Tests for each problem first, and then solve the problems themselves (this is known as test-driven development).
 
-	You should include, as the third argument to each of your tests, a brief, clear English description of what the test is checking for! e.g. ``"Testing whether the first element of the list student_tups is type tuple"``.
+	You should include, as the third argument to each of your tests, a brief, clear English description of what the test is checking for! e.g. "Testing whether the first element of the list student_tups is type tuple".
 
 .. note::
 
@@ -82,13 +92,17 @@ Go `HERE to see the Problem Set 8 assignment <linkhere.linkhere>`_, where you ca
 		    def year_at_umich(this_Student):
 		        return this_Student.years_UM
 
-		You should define a subclass of ``Student``, ``Programming_Student``.
+	You should define a subclass of ``Student``, ``Programming_Student``.
 
-		- The ``Programming_Student`` class should have an instance variable called ``number_programs_written``, whose initial value is ``0``.
-		- The ``Programming_Student`` class should also have a method called ``write_programs``. The ``write_programs`` method accepts an optional parameter called ``progs``, which should be an integer representing the number of programs the ``Programming_Student`` will write. Its default value is ``1``. When the ``write_programs`` method is called on an instance of ``Programming_Student``, the ``progs`` number is added to the instance's ``number_programs_written``.
-		- The ``Programming_Student`` class should also have a method called ``productivity``. The ``productivity`` method should return the average number of programs that the programming_student has written per year (that is, divide the its ``number_programs_written`` by its ``years_UM`` -- using float division, not integer divison, so you can get a decimal in your answer).
-		- When the ``shout`` method is called for the ``Programming_Student`` class, the phrase ``"Also, Python is pretty cool."`` should print after the phrase to shout. You should be calling the parent ``shout`` method to make this happen.
-		- The printed representation of an instance of ``Programming_Student`` should look something like ``"My name is Julie, I've been at UMich for about 100 years, and I have written 90 programs while here."``
+	* The ``Programming_Student`` class should have an instance variable called ``number_programs_written``, whose initial value is ``0``.
+
+	* The ``Programming_Student`` class should also have a method called ``write_programs``. The ``write_programs`` method accepts an optional parameter called ``progs``, which should be an integer representing the number of programs the Programming_Student will write. Its default value is ``1``. When the write_programs method is called on an instance of Programming_Student, the ``progs`` number should be added to the instance's ``number_programs_written``.
+
+	* The ``Programming_Student`` class should also have a method called ``productivity``. The productivity method should return the average number of programs that the Programming_Student has written per year (that is, divide its ``number_programs_written`` by its ``years_UM`` -- using float division, not integer divison, so you can get a decimal in your answer).
+
+	* When the ``shout`` method is called for the ``Programming_Student`` class, the phrase ``"Also, Python is pretty cool."`` should print after the phrase to shout. You should be calling the parent ``shout`` method to make this happen.
+
+	* The printed representation of an instance of ``Programming_Student`` should look something like ``"My name is Julie, I've been at UMich for about 100 years, and I have written 90 programs while here."``
 
 .. external:: ps_8_01_test
 
@@ -141,7 +155,7 @@ Go `HERE to see the Problem Set 8 assignment <linkhere.linkhere>`_, where you ca
 
 	Use the Python ``map`` function on the ``programmers`` list you just created, in order to create a list of numbers representing the **productivity** of each student. 
 
-	Save the new list in a variable called ``productivities``. (The first couple of values should be ``10/1`` and ``500/5``...) 
+	Save the new list in a variable called ``productivities``. (The first couple of values should be the equivalent of ``10.0/1`` and ``500.0/5``...) 
 
 	Be sure to make use of the ``productivity`` method that you defined for the ``Programming_Student`` class.
 
@@ -224,3 +238,7 @@ Go `HERE to see the Problem Set 8 assignment <linkhere.linkhere>`_, where you ca
     Finally, in your code file, write unit tests for the good_cards function. Make sure you consider edge cases. What if ``L`` does not have enough values in the list to get to 21, will the function work correctly? What if the sum of the values in ``L`` is exactly 21? What if it takes a lot of "cards" to get to 21? What if it takes very few values from the input list ``L`` to add up to 21? etc. 
 
     (You may assume that all values in the function's input list ``L`` will be in the range of 1 - 10 and will be integers; you do not need to test for that. Here, you should not write tests that deal with bad input to the ``good_cards`` function, only tests that check whether the function will work properly, per the description above, for a variety of different inputs.)
+
+.. external:: ps7_dyu
+
+    Complete this week's `Demonstrate Your Understanding <linkhere.linkhere>`_ assignment on Canvas.
