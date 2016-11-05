@@ -169,7 +169,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 	Use a list comprehension on the list ``programmers`` that you created above, in order to create a list of tuples wherein each tuple has a student's name as the first element and the student's productivity value as the second element. 
 
-	Save the list of tuples in a variable called ``names_and_productivities``. The first tuple should be ``("Albert", 10)`` and the second should be ``("Bisi", 100)``, and so on.
+	Save the list of tuples in a variable called ``names_and_productivities``. The first tuple should be ``("Albert", 10.0)`` and the second should be ``("Bisi", 100.0)``, and so on.
 
 .. external:: ps_8_05_test
 
