@@ -25,9 +25,9 @@ Activities through 11/4
   :points: 50
 
 
-* **Before Tuesday 11/1 at 11:59 PM:**
+* **Before Tuesday 11/1 at 11:59 PM:** 
 
-  * Complete :ref:`Reading Response 8<reading_response_8>`.
+  * **Reading Response 8 Deadline has been extended to Sunday Nov 6 at 11:59 PM**
 
 
 * **Before Wednesday's class, 11/2:**
@@ -48,6 +48,7 @@ Activities through 11/4
 * **Before Sunday 11/6 at 11:59 PM:**
 
   * Complete all of :ref:`Problem Set 7 <problem_set_7>` and submit the Demonstrate Your Understanding assignment for this week on Canvas (linked in Problem Set below).
+  * Complete :ref:`Reading Response 8<reading_response_8>`.
 
 This Week's Reading Responses
 -----------------------------
