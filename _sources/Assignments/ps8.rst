@@ -106,7 +106,9 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 .. external:: ps_8_01_test
 
-	Write unit tests in your file below your ``Programming_Student`` class definition that ensure that your code does what the instructions say. You should write at least 1 test for each bulletpoint of instructions. 
+	Write unit tests in your file below your ``Programming_Student`` class definition that ensure that your code does what the instructions say. You should write at least 3 unit tests. 
+
+	Hint: You'll need to create an instance of your Programming_Student class in order to test your code: see the **Testing Classes** section of the textbook!
 
 	(You can include each test in the same subclass of ``unittest.TestCase``, or you can create multiple subclasses of ``unittest.TestCase``. However, each unique ``assert`` statement should be in its own method. See the bottom of the files of your ``506_ps7.py`` and ``506_ps6.py``, as well as the textbook chapters, for examples!) 
 
