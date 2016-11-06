@@ -94,7 +94,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 	You should define a subclass of ``Student``, ``Programming_Student``.
 
-	* The ``Programming_Student`` class should have an instance variable called ``number_programs_written``, whose initial value is ``0``.
+	* The ``Programming_Student`` class should have an instance variable called ``number_programs_written`` whose value gets passed into the Programming_Student constructor after the ``years_at_umich``. The default value for the ``number_programs_written`` instance variable should be 0.
 
 	* The ``Programming_Student`` class should also have a method called ``write_programs``. The ``write_programs`` method accepts an optional parameter called ``progs``, which should be an integer representing the number of programs the Programming_Student will write. Its default value is ``1``. When the write_programs method is called on an instance of Programming_Student, the ``progs`` number should be added to the instance's ``number_programs_written``.
 
