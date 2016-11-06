@@ -98,7 +98,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 	* The ``Programming_Student`` class should also have a method called ``write_programs``. The ``write_programs`` method accepts an optional parameter called ``progs``, which should be an integer representing the number of programs the Programming_Student will write. Its default value is ``1``. When the write_programs method is called on an instance of Programming_Student, the ``progs`` number should be added to the instance's ``number_programs_written``.
 
-	* The ``Programming_Student`` class should also have a method called ``productivity``. The productivity method should return the average number of programs that the Programming_Student has written per year (that is, divide its ``number_programs_written`` by its ``years_UM`` -- using float division, not integer divison, so you can get a decimal in your answer).
+	* The ``Programming_Student`` class should also have a method called ``productivity``. The productivity method should return the average number of programs that the Programming_Student has written per year (that is, divide its ``years_UM`` by its ``number_programs_written``  -- using float division, not integer divison, so you can get a decimal in your answer).
 
 	* When the ``shout`` method is called for the ``Programming_Student`` class, the phrase ``"Also, Python is pretty cool."`` should print after the phrase to shout. You should be calling the parent ``shout`` method to make this happen.
 
