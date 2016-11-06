@@ -32,9 +32,8 @@ Activities through 11/11
   :pct_required: 80
   :points: 50
 
-* **Before Tuesday 11/8 at 11:59 PM:**
-    * Complete :ref:`Reading Response 9<reading_response_9>`.
-
+* Note that your reading responses will from now onbe due on **Sunday nights**, at the same time as your Problem Sets. Of course, you can always turn them in early!
+    
 * **Before Wednesday's class, 11/9:**
     * We will post a file on Canvas in Files > Code Samples that shows code to access the Flickr API, which is commented thoroughly. You may want to download this, look at it, and try it out! (This goes back to the information from the :ref:`Using REST APIs chapter<using_RESTAPIs_chap>` you read for Monday.)
     * Read the sections listed below from the :ref:`Classes<chap_constructor>` chapter, and try the exercises in those sections.
@@ -48,7 +47,9 @@ Activities through 11/11
 
 
 * **Before Sunday 11/13 at 11:59 PM:**
-  * Complete all of :ref:`Problem Set 8 <problem_set_8>` and the Demonstrate Your Understanding assignment for this week (linked below).
+
+  * Complete all of :ref:`Problem Set 8 <problem_set_8>` and the Demonstrate Your Understanding assignment for this week (linked below), and submit each on Canvas.
+  * Complete :ref:`Reading Response 9<reading_response_9>`.
 
 
 This Week's Reading Responses

@@ -22,7 +22,7 @@ Activities through 11/4
     * Read the single listed subsection about Unit Testing. (You will learn more about Unit Testing later in this course. For now, you just need to be familiar with the idea and the output, because this is your first week submitting a problem set that you run completely on your computer. We will discuss this further in lecture!)
 
 * **Before Tuesday 11/1 11:59 PM:**
-    * Complete `RR 8 <https://umich.instructure.com/courses/105657/assignments/131319>`_ on Canvas.
+    * **Reading Response 8 deadline has been extended until Sunday Nov 6 at 11:59 PM, same as the problem set**
 
 .. usageassignment::
   :subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting, PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Testing/intro-TestCases
@@ -47,6 +47,9 @@ Activities through 11/4
    * Complete Problem Set 7: :ref:`Problem Set 7 <problem_set_7>` per the instructions below, and submit your ``106_ps7.py`` file on Canvas. (Grace period until Sunday 11/6 at 11:59 PM.)
    * Submit your **Demonstrate Your Understanding** assignment on Canvas (linked in problem set) 
    * **NOTE:** This problem set is the first one you will complete entirely on your computer and submit via Canvas. You need only submit your completed file. **Make sure that "ps7" is in the file name. Otherwise we can't grade it!** 
+
+* **By Sunday 11/06 at 11:59 PM:**
+  * Complete `RR 8 <https://umich.instructure.com/courses/105657/assignments/131319>`_ on Canvas.
 
 .. note::
 
