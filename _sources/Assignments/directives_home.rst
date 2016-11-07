@@ -50,7 +50,6 @@
   :name: PS06
   :assignment_type: problem_set
   :questions: ps_6_1 50, ps_6_2 100, ps_6_3 100, ps_6_4 100, ps_6_5 100, ps_6_6 150, ps_6_7 100, ps_6_8 100, ps_6_9 100, ps_6_10 100
-  :deadline: 2016-10-17 04:00
   :points: 1000
   :autograde: unittest
 
@@ -58,7 +57,6 @@
   :name: PS07
   :assignment_type: problem_set
   :questions: ps_7_1 100, ps_7_2 100, ps_7_3 200, ps_7_4 200, ps_7_5 200, ps_7_6 100, ps_7_7 100
-  :deadline: 2016-10-17 04:00
   :points: 1000
   :autograde: unittest
 
