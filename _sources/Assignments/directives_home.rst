@@ -54,6 +54,14 @@
   :points: 1000
   :autograde: unittest
 
+.. assignment::
+  :name: PS07
+  :assignment_type: problem_set
+  :questions: ps_7_1 100, ps_7_2 100, ps_7_3 200, ps_7_4 200, ps_7_5 200, ps_7_6 100, ps_7_7 100
+  :deadline: 2016-10-17 04:00
+  :points: 1000
+  :autograde: unittest
+
 .. reading responses
 
 .. assignment::
@@ -98,6 +106,13 @@
   :questions: rr_7 100
   :points: 100
 
+.. assignment::
+  :name: response_8
+  :assignment_type: reading_response
+  :questions: rr_8 100
+  :points: 100
+
+
 .. demonstrate understanding (dyus)
 
 .. assignment::
@@ -135,6 +150,13 @@
   :assignment_type: dyu
   :questions: ps6_dyu 100
   :points: 100
+
+.. assignment::
+  :name: dyu7
+  :assignment_type: dyu
+  :questions: ps7_dyu 100
+  :points: 100
+
 
 .. discussion section attendance
 .. TODO post mass uploader
