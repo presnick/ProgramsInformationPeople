@@ -94,11 +94,11 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 	You should define a subclass of ``Student``, ``Programming_Student``.
 
-	* The ``Programming_Student`` class should have an instance variable called ``number_programs_written``, whose initial value is ``0``.
+	* The ``Programming_Student`` class should have an instance variable called ``number_programs_written`` whose value gets passed into the Programming_Student constructor after the ``years_at_umich``. The default value for the ``number_programs_written`` instance variable should be 0.
 
 	* The ``Programming_Student`` class should also have a method called ``write_programs``. The ``write_programs`` method accepts an optional parameter called ``progs``, which should be an integer representing the number of programs the Programming_Student will write. Its default value is ``1``. When the write_programs method is called on an instance of Programming_Student, the ``progs`` number should be added to the instance's ``number_programs_written``.
 
-	* The ``Programming_Student`` class should also have a method called ``productivity``. The productivity method should return the average number of programs that the Programming_Student has written per year (that is, divide its ``number_programs_written`` by its ``years_UM`` -- using float division, not integer divison, so you can get a decimal in your answer).
+	* The ``Programming_Student`` class should also have a method called ``productivity``. The productivity method should return the average number of programs that the Programming_Student has written per year (that is, divide its ``number_programs_written`` by its ``years_UM``  -- using float division, not integer divison, so you can get a decimal in your answer).
 
 	* When the ``shout`` method is called for the ``Programming_Student`` class, the phrase ``"Also, Python is pretty cool."`` should print after the phrase to shout. You should be calling the parent ``shout`` method to make this happen.
 
@@ -106,7 +106,9 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 .. external:: ps_8_01_test
 
-	Write unit tests in your file below your ``Programming_Student`` class definition that ensure that your code does what the instructions say. You should write at least 1 test for each bulletpoint of instructions. 
+	Write unit tests in your file below your ``Programming_Student`` class definition that ensure that your code does what the instructions say. You should write at least 3 unit tests. 
+
+	Hint: You'll need to create an instance of your Programming_Student class in order to test your code: see the **Testing Classes** section of the textbook!
 
 	(You can include each test in the same subclass of ``unittest.TestCase``, or you can create multiple subclasses of ``unittest.TestCase``. However, each unique ``assert`` statement should be in its own method. See the bottom of the files of your ``506_ps7.py`` and ``506_ps6.py``, as well as the textbook chapters, for examples!) 
 
