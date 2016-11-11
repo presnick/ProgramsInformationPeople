@@ -102,7 +102,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 	* When the ``shout`` method is called for the ``Programming_Student`` class, the phrase ``"Also, Python is pretty cool."`` should print after the phrase to shout. You should be calling the parent ``shout`` method to make this happen.
 
-	* The printed representation of an instance of ``Programming_Student`` should look something like ``"My name is Julie, I've been at UMich for about 100 years, and I have written 90 programs while here."`` Override the Student ``__str__`` method for the Programming_Student class to make that happen.
+	* The printed representation of an instance of ``Programming_Student`` should look something like ``"My name is Julie, I've been at UMich for about 100 years, and I have written 90 programs while here."``, where **Julie**, **100**, and **90** are in the place of the instance variable values for each instance you create. Override the Student ``__str__`` method for the Programming_Student class to make that happen.
 
 .. external:: ps_8_01_test
 
@@ -191,7 +191,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 	**PROBLEM 7**
 
-	Use a list comprehension to generate a list of strings: **just the names**  of the ``Programming_Student`` instances whose names are longer than their seniority (i.e., ``["Albert", "Cai", "Dinesh", "Eujin"]``). Assign the result list to a variable called ``names_with_not_too_much_seniority``.
+	Use a list comprehension to generate a list of strings: **just the names**  of the ``Programming_Student`` instances where the lengths of their names are longer than the number of years they've been at UM (i.e., ``["Albert", "Cai", "Dinesh", "Eujin"]``). Assign the result list to a variable called ``names_with_not_too_much_seniority``.
 
 .. external:: ps_8_07_test
 
@@ -207,9 +207,9 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
 	The function simulates a blackjack game (a type of poker game): the function is supposed to return an integer which represents a *count* of how many values ('cards') from the input list ``L`` can be accepted before the sum of the accepted values becomes greater than 21. 
 
-	(In blackjack, if the sum of cards is over 21, the player is "busted" and loses that game.) 
+	(In blackjack, if the sum of cards is over 21, the player is "busted" and loses that game. For those familiar with special Blackjack game rules, in this function, the integer value ``1`` should always count as just ``1``, not as ``11``. For those who do not know the game, you need only pay attention to the description of what this function ought to do to write good tests for it!) 
 
-	If the list of all the values in ``L`` do not add up to 21, the ``good_cards`` function should return the total length of the input list ``L``.  The code is as shown, also provided in your problem set Python file:
+	If the list of all the values in the input list ``L`` do not add up to 21, the ``good_cards`` function should return the total length of the input list ``L``. Otherwise, the function should return the number of values in input list ``L`` it took to reach a sum of 21. The code we've written for the function is as shown here, also provided in your problem set Python file:
 
 	.. sourcecode:: python
 
