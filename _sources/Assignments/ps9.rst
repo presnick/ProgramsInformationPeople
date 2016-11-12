@@ -44,7 +44,7 @@ Activities through 11/18
     * Complete Reading Response 10 (below)
 
 
-**ASSIGNMENT INSTRUCTIONS TBA SHORTLY*
+**ASSIGNMENT INSTRUCTIONS TBA SHORTLY**
 
 
 
