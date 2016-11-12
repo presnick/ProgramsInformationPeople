@@ -73,8 +73,8 @@ Caching the combined results can be especially useful when dealing with Twitter.
     # print pretty(collected_tweets)
 
     # cache the data we got back and collected
-    fr = open("paging_nested.txt","w")
-    fr.write(json.dumps(collected_tweets))
+    fr = open("paging_nested.txt","w") # Choose a file to save my data in
+    fr.write(json.dumps(collected_tweets)) # Use json.dumps to put the Python object into a nice string that I can write to a file, and then write it to a file
     fr.close()
 
     # Now, can investigate using this data that got cached.
