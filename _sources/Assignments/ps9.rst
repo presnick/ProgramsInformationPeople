@@ -52,7 +52,7 @@ This Week's Reading Responses
 
 .. external:: rr_10
 
-  `Reading Response 9 <linkhere.linkhere>`_ on Canvas.
+  `Reading Response 10 <https://umich.instructure.com/courses/105657/assignments/131309>`_ on Canvas.
 
 
 .. _problem_set_9:
@@ -60,7 +60,7 @@ This Week's Reading Responses
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 9 assignment <linkhere.linkhere>`_, where you can find the location of the file to download and edit, and where you can submit your Python file for this assignment. 
+Go `HERE to see the Problem Set 9 assignment <https://umich.instructure.com/courses/105657/assignments/131301>`_, where you can find the location of the file to download and edit, and where you can submit your Python file for this assignment. 
 
 **Files you will need to have downloaded and saved in the same directory in order to run this problem set:**
 
@@ -202,4 +202,4 @@ Go `HERE to see the Problem Set 9 assignment <linkhere.linkhere>`_, where you ca
 
 .. external:: ps9_dyu
 
-    Complete this week's `Demonstrate Your Understanding <linkhere.linkhere>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131292>`_ assignment on Canvas.
