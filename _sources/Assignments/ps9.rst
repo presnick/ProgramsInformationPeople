@@ -41,7 +41,7 @@ Activities through 11/18
 
 * **Before Sunday 11/20 at 11:59 PM:**
     * Complete all of :ref:`Problem Set 9 <problem_set_9>` and the Demonstrate Your Understanding assignment for this week (linked below), and submit each on Canvas.
-  * Complete :ref:`Reading Response 10<reading_response_10>`.
+    * Complete :ref:`Reading Response 10 <reading_response_10>`.
 
 
 
