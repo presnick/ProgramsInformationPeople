@@ -104,7 +104,9 @@ Go `HERE to see the Problem Set 9 assignment <https://umich.instructure.com/cour
 
     ``negative`` should return the number of words in the message that are in the list of negative words called ``neg_ws`` (provided in our code)
 
-    ``emo_score`` should return an integer: the difference between the positive and negative scores for that post
+    ``emo_score`` should return an integer: the difference between the positive and negative scores for that post. 
+
+    (Careful: "disgusting" and "disgust", for example, are 2 different words -- so if the word "disgust" is in a message, it should only get 1 negative count for that, not two.)
 
 .. activecode:: ps_9_02
 
