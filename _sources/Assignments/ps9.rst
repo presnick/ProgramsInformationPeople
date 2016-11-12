@@ -27,7 +27,7 @@ Activities through 11/18
 
 * **Before Wednesday's class 11/16:**
     * Read :ref:`Testing <test_cases_chap>` and try the exercises in the below listed sections.
-    * Read `this overview of Git version control <https://swcarpentry.github.io/git-novice/01-basics/>`_.
+    * Read `this overview of Git version control <https://swcarpentry.github.io/git-novice/01-basics/>`_. (This is the first page of a whole lesson on Git. You need only read this page, but you may find the resources interesting!)
     * Read this tutorial on GitHub. (You will not need to create or use a GitHub repository for this course, but these readings will help prepare you for the reading and reading response upcoming, and some later chapters in the Weber book.)
          * `Part I of tutorial <http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1>`_
          * `Part II of tutorial <http://readwrite.com/2013/10/02/github-for-beginners-part-2>`_
