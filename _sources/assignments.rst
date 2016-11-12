@@ -14,6 +14,7 @@ Class Assignments
    Assignments/ps6.rst
    Assignments/ps7.rst
    Assignments/ps8.rst
+   Assignments/ps9.rst
 
 
 
