@@ -438,7 +438,7 @@ Inheritance
    Inheritance/InvokingSuperMethods.rst
    Inheritance/TamagotchiRevisited.rst
    Inheritance/Exercises.rst
-   Inheritance/ExtraExercises.rst
+
 
 More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
