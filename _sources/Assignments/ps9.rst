@@ -147,30 +147,34 @@ Go `HERE to see the Problem Set 9 assignment <linkhere.linkhere>`_, where you ca
 	The function ``get_with_caching`` returns the **text** attribute of a response from an API when you pass in the correct information to make a request.
 
 	Remember, this function takes four parameters as input:
-	* A base url
-	* A URL parameters dictionary
-	* The name of a variable for a dictionary to save cached data in
-	* The name of a file for the cached data to be saved in on your computer
+		* A base url
+		* A URL parameters dictionary
+		* The name of a variable for a dictionary to save cached data in
+		* The name of a file where the cached data should be saved in on your computer
 
-	We have provided you the correct base url and the correct parameters dictionary to make a request to the Flickr API, searching for 50 photos tagged with "sunset". (See the code samples in the textbook Flickr chapter and ``flickr_demo.py`` on Canvas for more explanation of the Flickr API!) 
+	When the function gets what it needs to make a request, it checks in the cache dictionary: 'do I have a key that is the same as the URL that the programmer is asking for?' If it does, it returns data that has *already* been retrieved for that request (and prints out *retrieving data that you had already saved that goes along with the request for URL:* ...). 
 
-	We have also provided you with pre-cached data for a request to the Flickr API. It's important that you do this Flickr data work with the data we provide, not brand new live data, that saved in ``cached_results.txt``, in order that we can accurately grade your work and you can easily see whether or not your code is working properly!
+	If it does not have that URL as a key, it actually does make a request to the API to get new data, and saves the new data in your cache.
+
+	We have provided you the correct base url and the correct parameters dictionary to make a request to the Flickr API that searches for 50 photos tagged with "sunset". (See the code samples in the textbook Flickr chapter and ``flickr_demo.py`` on Canvas for more explanation of the Flickr API!) 
+
+	We have also provided you with pre-cached data for a request to the Flickr API. Since we have provided you some data already, when you give ``get_with_caching`` the correct input, it will return to you the text output that we already saved! That is what you want to use. It's important that you do this Flickr data work with the data we provide, saved in ``cached_results.txt``, not brand new live data, so that we can accurately grade your work, and you can easily see whether or not your code is working properly!
 
 	In this problem set, the dictionary that should hold all of your cached data is saved in a variable called ``saved_cache``. We have already set that up as well, inside the caching pattern code we have provided.
 
-	**To complete this problem,** you should read these instructions and understand what they are doing -- talk about them with a classmate or a another friend, think about a way to explain what you are doing in this problem in your own words!
+	**To complete this problem,** you should write an invocation to the ``get_with_caching`` function that retrieves the data about sunset-tagged photos that we have provided you: invoke ``get_with_caching`` with the proper parameters. Then, write code to load the text data that gets returned from ``get_with_caching`` as a Python object. Save that Python object in a variable called ``search_result_diction``.
 
-	**Then,** write an invocation to the ``get_with_caching`` function that retrieves the data about sunset-tagged photos that we have provided you: invoke ``get_with_caching`` with the proper parameters.
+	You only need to write 2 lines of code to do this (you can do it in 1, but it's probably easier to do it in 2).
 
-	Write code to load the text data that gets returned from ``get_with_caching`` as a Python object. Save that Python object in a variable called ``search_result_diction``.
+	**Before you do that,** you should read all these instructions and try to understand them, and read the code we have provided for you and try to make sure you have a a high-level sense for what it does! What does ``get_with_caching`` return? How would you explain it to someone else? Why should you use a function like this? Talk about this with a classmate or a another friend, and think about a way to explain what you want to be doing in this problem in your own words!
 
-	Remember that for FlickR data, you have to index the ``.text`` attribute ``[14:-1]`` in order to get nicely formatted JSON data you can use ``json.loads`` on.
+	Also remember that for FlickR data, you have to index the ``.text`` attribute ``[14:-1]`` in order to get nicely formatted JSON data you can use ``json.loads`` on.
 
 .. external:: ps_9_5
 
 	**PROBLEM 5**
 
-	Now, accumulate a list of **photo ids** from the nested dictionary. Save it in a variable called ``photo_ids_list``.
+	Now, accumulate a list of **photo ids** from the nested dictionary saved in ``search_result_diction``. Save the list of photo ids in a variable called ``photo_ids_list``.
 
 
 .. external:: ps_9_6
