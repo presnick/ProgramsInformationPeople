@@ -587,6 +587,8 @@ Discussion Section Resources (F16)
    ExtraExercises/session10_9486.rst
    ExtraExercises/session11_5379.rst
 
+   Inheritance/ExtraExercises.rst
+
 
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
