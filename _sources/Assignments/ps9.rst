@@ -63,6 +63,10 @@ Go `HERE to see the Problem Set 9 assignment <https://umich.instructure.com/cour
 
     Reminder: we do not debug code when grading, so we cannot grade code that does not run! Make sure your code runs before submitting it -- you should comment out any code that does not.
 
+.. note::
+
+    There are a few things in this problem set that cannot be tested: you'll have to examine your output and how your problems work to be 100% sure they work correctly, but passing the tests will give you good guidance about whether or not your code is doing what it should!
+
 .. external:: ps_9_01
     
     **PROBLEM 1**
