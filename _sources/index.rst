@@ -438,7 +438,7 @@ Inheritance
    Inheritance/InvokingSuperMethods.rst
    Inheritance/TamagotchiRevisited.rst
    Inheritance/Exercises.rst
-   Inheritance/ExtraExercises.rst
+
 
 More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -586,6 +586,8 @@ Discussion Section Resources (F16)
    ExtraExercises/session9_6473.rst
    ExtraExercises/session10_9486.rst
    ExtraExercises/session11_5379.rst
+
+   Inheritance/ExtraExercises.rst
 
 
    InClass/DictionaryAccum.rst

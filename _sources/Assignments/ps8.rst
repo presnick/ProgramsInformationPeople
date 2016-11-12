@@ -28,7 +28,7 @@ Activities through 11/11
 .. usageassignment::
   :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr
   :assignment_name: Prep 16
-  :deadline: 2016-11-07 19:40
+  :deadline: 2016-11-07 20:40
   :pct_required: 80
   :points: 50
 
@@ -41,7 +41,7 @@ Activities through 11/11
 .. usageassignment::
   :subchapters: Classes/intro-ClassesandObjectstheBasics, Classes/ObjectsRevisited, Classes/UserDefinedClasses, Classes/ImprovingourConstructor, Classes/AddingOtherMethodstoourClass,   Classes/ObjectsasArgumentsandParameters, Classes/ConvertinganObjecttoaString, Classes/InstancesasReturnValues, Classes/sorting_instances, Classes/ClassVariablesInstanceVariables, Classes/ThinkingAboutClasses, Classes/ClassesHoldingData, Classes/Tamagotchi
   :assignment_name: Prep 17
-  :deadline: 2016-11-09 18:40
+  :deadline: 2016-11-09 20:40
   :pct_required: 80
   :points: 50
 
