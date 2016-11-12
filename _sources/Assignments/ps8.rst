@@ -18,7 +18,7 @@ Activities through 11/11
 .. usageassignment::
   :subchapters: AdvancedAccumulation/intro, AdvancedAccumulation/map, AdvancedAccumulation/filter, AdvancedAccumulation/listcomp, AdvancedAccumulation/reduce, AdvancedAccumulation/zip
   :assignment_name: Prep 16
-  :deadline: 2016-11-07 21:40
+  :deadline: 2016-11-07 22:40
   :pct_required: 80
   :points: 50
 
@@ -30,7 +30,7 @@ Activities through 11/11
 .. usageassignment::
   :subchapters: Testing/intro-TestCases, Testing/Testingfunctions, Testing/Testingclasses
   :assignment_name: Prep 17
-  :deadline: 2016-11-09 21:40
+  :deadline: 2016-11-09 22:40
   :pct_required: 80
   :points: 50
 
@@ -241,6 +241,6 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
     (You may assume that all values in the function's input list ``L`` will be in the range of 1 - 10 and will be integers; you do not need to test for that. Here, you should not write tests that deal with bad input to the ``good_cards`` function, only tests that check whether the function will work properly, per the description above, for a variety of different inputs.)
 
-.. external:: ps7_dyu
+.. external:: ps8_dyu
 
-    Complete this week's `Demonstrate Your Understanding <linkhere.linkhere>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139246>`_ assignment on Canvas.
