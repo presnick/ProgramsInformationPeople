@@ -64,6 +64,13 @@
   :points: 1000
   :autograde: unittest
 
+.. assignment::
+  :name: PS08
+  :assignment_type: problem_set
+  :questions: ps_8_01 50, ps_8_02 100, ps_8_03 100, ps_8_04 100, ps_8_05 100, ps_8_06 150, ps_8_07 100, ps_8_08 100, ps_8_09 100, ps_8_10 100
+  :points: 1000
+  :autograde: unittest
+
 .. reading responses (rrs)
 
 .. assignment::
@@ -114,6 +121,12 @@
   :questions: rr_8 100
   :points: 100
 
+.. assignment::
+  :name: response_9
+  :assignment_type: reading_response
+  :questions: rr_9 100
+  :points: 100
+
 .. demonstrate understanding (dyus)
 
 .. assignment::
@@ -156,6 +169,12 @@
   :name: dyu7
   :assignment_type: dyu
   :questions: ps7_dyu 100
+  :points: 100
+
+.. assignment::
+  :name: dyu8
+  :assignment_type: dyu
+  :questions: ps8_dyu 100
   :points: 100
 
 .. discussion section attendance
