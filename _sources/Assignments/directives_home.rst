@@ -63,7 +63,7 @@
 .. assignment::
   :name: PS08
   :assignment_type: problem_set
-  :questions: ps_8_01 300, ps_8_02 100, ps_8_03 100, ps_8_04 100, ps_8_05 100, ps_8_06 100, ps_8_07 100, ps_8_08 100
+  :questions: ps_8_01 200, ps_8_02 100, ps_8_03 100, ps_8_04 100, ps_8_05 100, ps_8_06 100, ps_8_07 100, ps_8_08 200
   :points: 1000
   :autograde: unittest
 
