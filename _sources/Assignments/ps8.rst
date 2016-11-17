@@ -235,7 +235,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
    **Ungraded, but helpful for Problem 8:** To write unit tests for this function ``good_cards``, should you create return-value tests, side-effect tests, or both? 
 
-.. external:: description_for_ps_8_08
+.. external:: ps_8_08
 
     Finally, in your code file, write unit tests for the good_cards function. Make sure you consider edge cases. What if ``L`` does not have enough values in the list to get to 21, will the function work correctly? What if the sum of the values in ``L`` is exactly 21? What if it takes a lot of "cards" to get to 21? What if it takes very few values from the input list ``L`` to add up to 21? etc. 
 
