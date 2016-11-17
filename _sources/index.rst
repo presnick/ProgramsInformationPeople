@@ -546,7 +546,8 @@ In Class Code Samples
 
 .. toctree::
    :maxdepth: 2
-   
+   :hidden:
+
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
