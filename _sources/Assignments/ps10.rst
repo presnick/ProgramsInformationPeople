@@ -19,13 +19,13 @@ Activities through 11/27 (through T-Giving Break)
 
   * Read about the :ref:`Facebook API <fb_api_exercises>` and check out the slides on Canvas > Files > Lecture Slides > FB Graph API (especially slide #16!)
   * Take a look at the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
-  * Read the following listed sections of :ref:`APIs with OAuth <requests_oauthlib>`
-  * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!). Note that if you don't use Facebook normally, you can get data from our SI 106 group. Check out the problem set for the Facebook group ID.
-  * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**. Don't worry if you don't understand all of this -- this is to give you an idea of what the possibilities are.
-  * We will not go over the Twitter API or paging in detail in this class, *but*, we have provided some sample code that accesses the Twitter API and discusses paging on Facebook and on Twitter, in case you are interested. The Twitter API requires ``requests_oauthlib``, which you'll read about in the above chapter, and you need to do a little bit of code setup in order to make an easy request to the API. See ``sample_twitter.py`` on Canvas > Code Samples if you are interested in investigating that!
+  * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!). 
+  * Note that if you don't use Facebook normally, you can get data from our SI 106 Facebook group by replacing ``me`` with the 106 Facebook group ID. Check out the problem set to find the 106 group ID! (We are not displaying it here because this page is publicly available, and our group is private to the class.)
+  * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**. Don't worry if you don't understand all of this -- this is to give you an idea of what the possibilities are. There is an example of code that uses Facebook paging which you can look at in the ``fbapi.py`` code on Canvas.
+
 
 .. usageassignment::
-  :subchapters: FacebookAPI/FBAPI, APIsWithOAuth/RequestsOAuthLib, APIsWithOAuth/TwitterAPI, APIsWithOAuth/Paging 
+  :subchapters: FacebookAPI/FBAPI
   :assignment_name: Prep 20
   :deadline: 2016-11-21 18:40
   :pct_required: 50
