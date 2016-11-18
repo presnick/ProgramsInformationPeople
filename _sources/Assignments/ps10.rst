@@ -15,14 +15,21 @@
 Activities through 11/27 (through T-Giving Break)
 =================================================
 
-* **Before class Monday 11/14:**
+* **Before class Monday 11/21:**
 
   * Read about the :ref:`Facebook API <fb_api_exercises>`.
   * Take a look at the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
   * Read the following listed sections of :ref:`APIs with OAuth <requests_oauthlib>`
   * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!). Note that if you don't use Facebook normally, you can get data from our SI 106 group. Check out the problem set for the Facebook group ID.
   * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**. Don't worry if you don't understand all of this -- this is to give you an idea of what the possibilities are.
-  * We will not go over the Twitter API in this class, *but*, we have provided some sample code that accesses it in case you are interested. The Twitter API requires ``requests_oauthlib``, and you need to do some setup in order to make an easy request to the API. See ``sample_twitter.py`` on Canvas > Code Samples if you are interested in investigating that yourself.
+  * We will not go over the Twitter API or paging in detail in this class, *but*, we have provided some sample code that accesses the Twitter API and discusses paging on Facebook and on Twitter, in case you are interested. The Twitter API requires ``requests_oauthlib``, which you'll read about in the above chapter, and you need to do a little bit of code setup in order to make an easy request to the API. See ``sample_twitter.py`` on Canvas > Code Samples if you are interested in investigating that!
+
+.. usageassignment::
+  :subchapters: FacebookAPI/FBAPI, APIsWithOAuth/RequestsOAuthLib, APIsWithOAuth/TwitterAPI, APIsWithOAuth/Paging 
+  :assignment_name: Prep 20
+  :deadline: 2016-11-21 18:40
+  :pct_required: 50
+  :points: 50
 
 * **Wednesday's lecture will be time to work on problem sets, with a few staff members around.** We will not have discussion section this week. We will not have office hours during Thanksgiving break, but we will be online on the Facebook group when we can be! Happy Thanksgiving break.
 
@@ -55,7 +62,9 @@ Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/cou
 
 .. note::
 
-    For some of the problems on this Problem Set, you'll have to write your own tests, which should check whether the problems follow the instructions! We suggest reading through the whole PSet first, and writing Unit Tests for each problem for which you need to do so, and *then* solving the problems themselves (test-driven development!).
+    For some of the problems on this Problem Set, you'll have to write your own tests, which should check whether the problems follow the instructions! 
+
+    We suggest reading through the whole PSet first, and writing Unit Tests for each problem for which you need to do so, and *then* solving the problems themselves (test-driven development!).
 
     It's a good idea to include, as the last argument to each of your tests, a brief, clear English description of what the test is checking for! e.g. "Testing whether the value of fb_data is a Python dictionary".
 
@@ -63,7 +72,7 @@ Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/cou
     
     **PROBLEM 1**
 
-    We've provided a file ``samplepost.txt`` that contains a sample of data representing a Facebook post. Using this for data investigation (try copying and pasting it into jsoneditoronline.org!), fill in the definition of the class ``Post`` to hold information about one post on Facebook.
+    We've provided a file ``samplepost.txt`` that contains a sample of data representing a Facebook post. (It's a little simpler than the posts you'll see from your own Facebook feed, but the only difference is that your posts will have a little bit *more* data.) Using this for data investigation (try copying and pasting it into jsoneditoronline.org!), fill in the definition of the class ``Post`` to hold information about one post on Facebook.
 
     We've provided a skeleton of the ``Post`` class with some code:
 
@@ -104,13 +113,15 @@ Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/cou
 
     (Careful: "disgusting" and "disgust", for example, are 2 different words -- so if the word "disgust" is in a message, it should only get 1 negative count for that, not two.)
 
+    **Also note** that our tests for this problem do not include punctuation, but for you to do analysis on your own feed, "beautiful!" is a different word from "beautiful", as far as Python can tell. So if you want very accurate analysis, you should keep this in mind -- for data analysis in your future, this is a good idea! You do not have to worry about accounting for punctuation for the sake of the problem set, however.
+
     We have provided tests for this problem.
 
 .. activecode:: ps_10_02
 
     **PROBLEM 2**
 
-    We've provided the following code in your ``506_ps9.py`` file, where you'll need it for the problem set. In this code window, add comments that describe what these lines of code do.
+    We've provided the following code in your ``106_ps9.py`` file, where you'll need it for the remainder of the problem set, including our tests. (Don't change it!) In this code window, add comments that describe what these lines of code do.
     ~~~~
     sample = open('samplepost.txt').read()
     sample_post_dict = json.loads(sample)
@@ -135,28 +146,29 @@ Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/cou
         url_params = {}
         url_params["access_token"] = access_token
         url_params["fields"] = "comments{comments{like_count,from,message,created_time},like_count,from,message,created_time},likes,message,created_time,from"
+        url_params["limit"] = 100
 
     (This will get you pretty complex data -- but you've seen data similar to it before, when we first did nested data investigation.)
 
 
 .. external:: ps_10_03_test
 
-    Write at least one unit test for Problem 3 in your file. 
+    Write at least one unit test for Problem 3. 
 
-    You can write it just beneath the space for your code, or you can add your new tests to the other ``unittest.TestCase`` subclasses near the bottom of the problem set that we've already provided for Problems 1 and 6. We recommend doing the latter -- model your tests off the tests you already see there and the ones you see in previous problem sets!
+    You can write it just beneath the space for your code, or you can add your new tests to the other ``unittest.TestCase`` subclasses near the bottom of the problem set that we've already provided for a couple problems. We recommend putting your tests at the bottom of the file, and modeling your tests off the tests you already see there and the ones you see in previous problem sets!
 
   
 .. external:: ps_10_04
     
     **PROBLEM 4**
 
-    Given all this Facebook data you have, use a list comprehension to create a list of instances of class ``Post``. Save that list of Post instances in a variable called ``post_insts``.
+    Given all this Facebook data you have, create a list of instances of class ``Post``. Save that list of Post instances in a variable called ``post_insts``.
 
-    **NOTE:** This requires understanding -- but only one line of code, given the code you have already written above!
+    **NOTE:** This requires understanding -- but the code pattern is an accumulation pattern just like the many list accumulations you've already written this semester, and the code to create an instance is just calling the constructor of ``Post`` like you did for ``Photo`` and ``Photo2`` last week!
 
 .. external:: ps_10_04_test
 
-    Write at least 2 tests for Problem 4. (**Hint:** One of those tests should be checking to make sure that some of the elements are instances of class ``Post``!)
+    Write at least 2 tests for Problem 4. (**Hint:** One of those tests should be checking to make sure that at least one of the elements is an instance of class ``Post``! You may want to look at the material on testing for a value's type, to help with this.)
 
 .. external:: ps_10_05
     
@@ -170,9 +182,11 @@ Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/cou
 
 .. external:: ps_10_05_test
 
-  Write at least 2 unit tests for Problem 5. 
+  We have provided 1 test for Problem 5. Add at least 2 more methods to the ``Problem5`` test class to test the code for Problem 5.
 
-  Note that you may not be able to test *whose* names should be in the list. Think: what DO you know about the values ``top_commenters`` and ``top_likers`` ought to end up with that you could check in a test?
+  Note that you may not be able to test *whose* names should be in the lists. Think: what DO you know about the values ``top_commenters`` and ``top_likers`` ought to end up with, which you could check in a test?
+
+  Also note that the strings you get back from web data are **unicode** strings -- that's why we're testing for unicode strings in the one test that is already there. (Check it out!)
 
 .. external:: ps_10_06
     
@@ -194,7 +208,7 @@ Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/cou
 
     We have provided a unit test in the ``Problem6`` class at the bottom of the file that checks whether ``unique_facebookers`` is working correctly, but it's only one test.
 
-    Add another test method to the ``Problem6`` class to test something else about the ``unique_facebookers`` function. 
+    Add at least 1 more test method to the ``Problem6`` class to test something else about the ``unique_facebookers`` function. 
 
     **Hint:** What type should it return? What could go wrong with it? (There's no single correct answer, anything that works properly is fine, but this test does not need to be complex.) 
 
