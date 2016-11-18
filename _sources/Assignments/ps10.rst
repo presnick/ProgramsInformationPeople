@@ -17,7 +17,7 @@ Activities through 11/27 (through T-Giving Break)
 
 * **Before class Monday 11/21:**
 
-  * Read about the :ref:`Facebook API <fb_api_exercises>`.
+  * Read about the :ref:`Facebook API <fb_api_exercises>` and check out the slides on Canvas > Files > Lecture Slides > FB Graph API (especially slide #16!)
   * Take a look at the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
   * Read the following listed sections of :ref:`APIs with OAuth <requests_oauthlib>`
   * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!). Note that if you don't use Facebook normally, you can get data from our SI 106 group. Check out the problem set for the Facebook group ID.
