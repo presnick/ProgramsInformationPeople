@@ -22,6 +22,7 @@ Activities through 11/27 (through T-Giving Break)
   * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!). 
   * Note that if you don't use Facebook normally, you can get data from our SI 106 Facebook group by replacing ``me`` with the 106 Facebook group ID. Check out the problem set to find the 106 group ID! (We are not displaying it here because this page is publicly available, and our group is private to the class.)
   * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**. Don't worry if you don't understand all of this -- this is to give you an idea of what the possibilities are. There is an example of code that uses Facebook paging which you can look at in the ``fbapi.py`` code on Canvas.
+  * By Monday 11/21, we'll have available on Canvas a possible solution for the challenge problem on last week's Problem Set -- code for a Flickr tag recommender.
 
 
 .. usageassignment::
