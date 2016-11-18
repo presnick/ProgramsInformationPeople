@@ -72,7 +72,7 @@ Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/cou
     
     **PROBLEM 1**
 
-    We've provided a file ``samplepost.txt`` that contains a sample of data representing a Facebook post. (It's a little simpler than the posts you'll see from your own Facebook feed, but the only difference is that your posts will have a little bit *more* data.) Using this for data investigation (try copying and pasting it into jsoneditoronline.org!), fill in the definition of the class ``Post`` to hold information about one post on Facebook.
+    We've provided a file ``samplepost.txt`` that contains a sample of data representing a Facebook post. (It won't have the same data that your Facebook posts have, of course, but it will have a very similar structure!) Using this for data investigation (try copying and pasting it into jsoneditoronline.org!), fill in the definition of the class ``Post`` to hold information about one post on Facebook.
 
     We've provided a skeleton of the ``Post`` class with some code:
 
