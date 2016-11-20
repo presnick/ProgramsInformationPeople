@@ -13,27 +13,27 @@ Activities through 11/27 (Through T-Giving Break)
 
 * **By Monday 11/21:**
 
-  * Read the :ref:`Recursion <>` chapter and try the included exercises
+  * Read the :ref:`Recursion <recursion_chap>` chapter and try the included exercises
   * We are not grading your having read this before Monday but *strongly suggest* that you do. This concept is the kind of thing that just has to settle in for a while for most people, but once it clicks, it's very useful. We'll discuss it it Monday and you'll have 2 weeks to work on the problem set.
-  * You may want to review :ref:`Importing modules <>` (not graded, just potentially useful)
+  * You may want to review :ref:`Python modules <modules_chap>` (not graded, just potentially useful)
 
-* **No class Wednesday.** Also no discussion section this week, and no office hours during Thanksgiving break, although staff will be online intermittently to post on the FB group and so on!
+* **No class Wednesday 11/23.** Also no discussion section this week, and no office hours during Thanksgiving break, although staff will be online intermittently to post on the FB group and so on!
 
-* **Before class Monday 11/28, after Thanksgiving break:** Turn in your `Final Project plan <>`_ on Canvas!
+* **Before class Monday 11/28, after Thanksgiving break:** Turn in your `Final Project plan <https://umich.instructure.com/courses/108426/assignments/139250>`_ on Canvas!
 
-* **IMPORTANT SCHEDULING NOTES:** PS 10, on Recursion, is not due Sunday 11/27, it is due **Sunday, 12/4** at 11:59 PM. 
-  * Next week, we will release another problem set, which will be *optional.* You'll learn more about that soon. That will also be due (if you choose to do it) on **Sunday, 12/4**.
-  * Your next Reading Response will also be due Sunday 12/4 at 11:59 PM.
-  * Your next DYU will *also* be due Sunday 12/4 at 11:59 PM.
 
-* In other words, the only assignment due immediately after Thanksgiving break is your Final Project plan. However, it is probably a good idea to look at this problem set as soon as you can so you can prepare/arrange your next two weeks of work for this class!
+* PS 10, on Recursion, is not due Sunday 11/27, it is due **Sunday, 12/4** at 11:59 PM. 
+* Next week, we will release another problem set, which will be *optional.* You'll learn more about that soon. That will also be due (if you choose to do it) on **Sunday, 12/4**.
+* Your next Reading Response will also be due Sunday 12/4 at 11:59 PM. Your next DYU will *also* be due Sunday 12/4 at 11:59 PM. You can look ahead on Canvas to do these if you wish, and we will also be posting the *following* week of material shortly.
+
+* **The only assignment due immediately after Thanksgiving break is your Final Project plan.** However, it is probably a good idea to look at this problem set as soon as you can so you can prepare/arrange your next two weeks of work for this class!
 
 .. _problem_set_10:
 
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 10 assignment <linkhere.linkhere>`_, where you can find direction to the files you need to download and edit, and where you can submit your file for this assignment.
+Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/courses/108426/assignments/139251>`_, where you can find direction to the files you need to download and edit, and where you can submit your file for this assignment.
 
 .. note::
 
@@ -93,6 +93,15 @@ Go `HERE to see the Problem Set 10 assignment <linkhere.linkhere>`_, where you c
   **PROBLEM 2**
 
   We've provided a dictionary ``extension_types``: 
+
+  .. sourcecode:: python
+
+    extensionTypes = {
+    'movie': ['.mp4','.mov'],
+    'image': ['.jpg','.jpeg','.png','.bmp','.svg'],
+    'document': ['.docx','.pdf','.txt'],
+    'code': ['.py','.python','.java','.js']
+    }
 
   The keys in ``extensionTypes`` are broad media categories that could be on a computer. The values associated with those keys are *lists* of strings: file extensions that fall under those media categories.
 
