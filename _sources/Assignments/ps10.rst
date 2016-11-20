@@ -26,6 +26,11 @@ Activities through 11/27 (Through T-Giving Break)
 
 * **No class Wednesday 11/23.** Also no discussion section this week, and no office hours during Thanksgiving break, although staff will be online intermittently to post on the FB group and so on!
 
+* **Before Sunday 11/20 at 11:59 PM:**
+
+  * Complete and submit your :ref:`Problem Set 9 <problem_set_9>`, and save an answer to your Demonstrate Understanding for this week (linked below).
+  * Complete :ref:`Reading Response 11 <reading_response_11>`.
+
 * **Before class Monday 11/28, after Thanksgiving break:** Turn in your `Final Project plan <https://umich.instructure.com/courses/108426/assignments/139250>`_ on Canvas!
 
 
@@ -33,7 +38,17 @@ Activities through 11/27 (Through T-Giving Break)
 * Next week, we will release another problem set, which will be *optional.* It will be especially interesting for HCI-oriented students who want to understand the architecture of how event-driven interactive GUIs are programmed. You'll learn more about that soon. That will also be due (if you choose to do it) on **Sunday, 12/4**.
 * Your next Reading Response will also be due Sunday 12/4 at 11:59 PM. Your next DYU will *also* be due Sunday 12/4 at 11:59 PM. You can look ahead on Canvas to do these if you wish, and we will also be posting the *following* week of material shortly, on event-drive interactive GUIs.
 
-* **The only assignment due immediately after Thanksgiving break is your Final Project plan.** However, it is probably a good idea to look at this problem set as soon as you can so you can prepare/arrange your next two weeks of work for this class!
+* **The only assignments due immediately after Thanksgiving break are your Final Project plan and a reading response.** However, it is probably a good idea to look at this problem set as soon as you can so you can prepare/arrange your next two weeks of work for this class!
+
+This Week's Reading Responses
+-----------------------------
+
+.. _reading_response_11:
+
+.. external:: rr_11
+
+  `Reading Response 11 <https://umich.instructure.com/courses/108426/assignments/139260>`_ on Canvas.
+
 
 .. _problem_set_10:
 
