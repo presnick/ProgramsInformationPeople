@@ -14,7 +14,6 @@ Activities through 11/27 (Through T-Giving Break)
 * **By Monday 11/21:**
 
   * Read the :ref:`Recursion <recursion_chap>` chapter and try the included exercises
-  * We are not grading your having read this before Monday but *strongly suggest* that you do. This concept is the kind of thing that just has to settle in for a while for most people, but once it clicks, it's very useful. We'll discuss it it Monday and you'll have 2 weeks to work on the problem set.
   * You may want to review :ref:`Python modules <modules_chap>` (not graded, just potentially useful)
 
 * **No class Wednesday 11/23.** Also no discussion section this week, and no office hours during Thanksgiving break, although staff will be online intermittently to post on the FB group and so on!
