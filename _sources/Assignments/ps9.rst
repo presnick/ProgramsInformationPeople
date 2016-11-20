@@ -22,7 +22,7 @@ Activities through 11/18
   :subchapters: FacebookAPI/FBAPI
   :assignment_name: Prep 18
   :deadline: 2016-11-14 22:40
-  :pct_required: 1
+  :pct_required: 50
   :points: 50
 
 * **Before class Wednesday 11/16:**
