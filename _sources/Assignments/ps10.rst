@@ -11,13 +11,150 @@
 Activities through 11/27 (Through T-Giving Break)
 =================================================
 
-* **Before class Monday 11/21:**
+* **By Monday 11/21:**
 
-  * Read :ref:`Recursion <>` and try the included exercises
+  * Read the :ref:`Recursion <>` chapter and try the included exercises
+  * We are not grading your having read this before Monday but *strongly suggest* that you do. This concept is the kind of thing that just has to settle in for a while for most people, but once it clicks, it's very useful. We'll discuss it it Monday and you'll have 2 weeks to work on the problem set.
+  * You may want to review :ref:`Importing modules <>` (not graded, just potentially useful)
 
-.. usageassignment::
-  :subchapters: FacebookAPI/FBAPI
-  :assignment_name: Prep 20
-  :deadline: 2016-11-21 22:40
-  :pct_required: 65
-  :points: 50
+* **No class Wednesday.** Also no discussion section this week, and no office hours during Thanksgiving break, although staff will be online intermittently to post on the FB group and so on!
+
+* **Before class Monday 11/28, after Thanksgiving break:** Turn in your `Final Project plan <>`_ on Canvas!
+
+* **IMPORTANT SCHEDULING NOTES:** PS 10, on Recursion, is not due Sunday 11/27, it is due **Sunday, 12/4** at 11:59 PM. 
+  * Next week, we will release another problem set, which will be *optional.* You'll learn more about that soon. That will also be due (if you choose to do it) on **Sunday, 12/4**.
+  * Your next Reading Response will also be due Sunday 12/4 at 11:59 PM.
+  * Your next DYU will *also* be due Sunday 12/4 at 11:59 PM.
+
+* In other words, the only assignment due immediately after Thanksgiving break is your Final Project plan. However, it is probably a good idea to look at this problem set as soon as you can so you can prepare/arrange your next two weeks of work for this class!
+
+.. _problem_set_10:
+
+Problem Set
+-----------
+
+Go `HERE to see the Problem Set 10 assignment <linkhere.linkhere>`_, where you can find direction to the files you need to download and edit, and where you can submit your file for this assignment.
+
+.. note::
+
+  Reminder: we do not debug code when grading, so we cannot grade code that does not run! Make sure your code runs before submitting it -- you should comment out any code that does not.
+
+.. external:: ps_10_preamble
+
+  **IMPORTANT PREAMBLE**
+
+  For this problem set, we have provided 2 files: ``506_ps10.py``, your usual code file to edit, and ``os_506.py``. (A bunch of this assignment is reading and understanding, not a ton of code writing, and understanding what tools you have at your disposal is part of that.)
+
+  ``os_506`` is an external module you'll be using in your problem set -- you can see that your code file imports ``os_506`` at the top. But it's one you'll save in the same directory, rather than one you install with pip. 
+
+  This module provides a 'fake file system' for you to run the code on your problem set with. You'll be writing code that can actually get information about your computer's file system, *but* in order to test it, make the problem set easy, make sure everyone's answers are the same, and ensure that you can't hurt your computer while you try stuff out, we're using **os_506** instead of the raw **os** module which allows you to interact with the files on your computer (though you can do that as well, especially at the end of the problem set!).
+
+  These are the functions that ``os_506`` provides, which may be useful to examine in the ``os_506.py`` file and may be useful to use. But this is all the information about them you need to know to use them:
+
+  **You should not change ANY code in the os_506 file. It's very important that it stay exactly as you download it, the problem set depends on it! You also should not submit it to Canvas -- we will already have it when we run your submitted problem set.**
+
+  In order to invoke any of these functions inside your problem set file, you'll need to have saved ``os_506.py`` in the same directory, and precede the invocations with that name, e.g. ``os_506.getHome()``.
+
+  There is a ``fake_filesystem`` object inside the module that your problem set depends on as well as the following functions.
+
+  ``getHome()`` - returns the string representing home directory of the current computer user (takes no input)
+
+  ``__isRoot(path)`` - returns True or False, answering the question "is this the root directory of the current file system?"
+
+  ``__isHidden(path)`` - returns True or False, about whether the path input is a path to a hidden file (something that won't show up e.g. in Finder or My Computer) [you won't need to use this, but other functions in the module do use this, and you may find it interesting]
+
+  ``getCwd()`` - returns the string representing the current working directory for the computer user
+
+  ``__fake_nav(path, recurse_level = 0)`` - a function to support using the fake file system in ``os_506`` (you don't need to worry about using this, but it is a nice illustrative recursive function!)
+
+  ``join`` - takes two parts of a path and joins them according to OS conventions. example: ``join('/users/soney', 'myProg.py')`` -> ``'/users/soney/myProg.py'``
+
+  ``splittext`` - will separate an extension from a file name. For example, the invocation ``os.path.splitext('/usr/soney/file.txt')`` returns ``('/usr/soney/file', '.txt')``
+
+  ``listdir(path,includeHidden=False)`` - returns a list of all the filenames in a directory, given a string representing a path to a directory
+
+  ``isfile(path)`` - returns True if the given path points to a file (not a directory)
+
+  ``isdir(path)`` - returns True if the given path points to a directory
+
+  ``getsize(path)`` - returns the numeric size (in bytes) of a file
+
+  ``listRecursive(path=getCwd(),recursionLevel=0,indentChar='    ')`` - this is provided for your reference; you should look at its definition in the ``os_506.py`` file; it may be helpful! It provides code to recursively navigate through a directory.
+
+
+.. external:: ps_10_01
+  
+  **PROBLEM 1**
+
+  Fill in the definition of the ``sum`` function. It should accept a list of numbers, and return their sum.Your implementation may or may not be recursive (but it should not use the built in ``sum`` function in Python).
+
+.. external:: ps_10_02
+  
+  **PROBLEM 2**
+
+  We've provided a dictionary ``extension_types``: 
+
+  The keys in ``extensionTypes`` are broad media categories that could be on a computer. The values associated with those keys are *lists* of strings: file extensions that fall under those media categories.
+
+  In this problem, you should complete a definition of the ``getFileType`` function, which accepts as input a ``path`` string, which should be a full path to a *file* (not a directory), and returns the string representing the media category that that file falls into (based on the ``extensionTypes`` declared above). Your implementation need not be recursive -- this function is a tool for the recursive function you will write later.
+
+  Note that the ``os_506.splittext`` function will separate an extension from a file name. For example, the invocation ``os.path.splitext('/usr/soney/file.txt')`` returns ``('/usr/soney/file', '.txt')`` -- this may be useful to you here! 
+
+  We've provided some code that uses this to start out your function definition with, as follows:
+
+  .. sourcecode:: python
+
+    def getFileType(path):
+        filename,extension = os_506.splitext(path)
+
+        # TODO: Fill this in!
+
+        # If we can't find a matching category, return 'unknown' as a default
+        return 'unknown'
+
+
+.. external:: ps_10_03
+  
+  **PROBLEM 3**
+
+  Now, finish the definition of a ``getSize`` function that accepts a string ``path`` as a full path to a file OR directory, whose default value is your current working directory, and returns the numeric **size** (the number of bytes) of that file or directory, including all subdirectories. 
+
+  This function should be recursive.
+
+  The base case is where the path is to a single file, in which case you return its size.
+
+  The recursive case occurs when the input path is to a directory, in which case you'll need to get the sizes of all files and subdirectories inside that directory, and add them up.
+
+  **Hint:** the function provided in our ``os_506`` module, ``os_506.getsize``, which returns the number of bytes a file contains, is useful here, as may be the ``sum`` function you defined earlier.
+
+  We have provided the code for the base case -- you just need to fill in the code for the recursive case beneath the line ``elif os_506.isdir(path): # recursive case``.
+
+  Another hint: the code should include iteration, and it should be beneath the list comprehension in the **try** block. 
+
+  You do not have to use the list comprehension we've provided, but it may make things easier!
+
+
+.. external:: ps_10_04
+  
+  **PROBLEM 4**
+
+  Write a `getCategorySizes` function that accepts 'path' as a full path to a file OR directory and returns a dictionary whose keys are file types that appear (use ``getFileType`` to find those!) and whose values are the **total size** of files of that file type.
+
+  For example,
+  ``getCategorySizes('/Users/steve')`` might return ``{'movie': 140000, 'image': 1800, 'code': 210}``.
+
+  We have provided some code AND some English for you. You'll need to translate the English into code inside the function definition in order to complete it. Some general hints about writing this function:
+
+  Accumulate a dictionary called bins as you recursively visit all the files in the directory and subdirectories. Each key in the ``bins`` dictionary will be one file type. The associated value for each key will be the sum of the filesizes of all files of that type. (Don't forget to pass the ``bins`` dictionary on each recursive call to ``getCategorySizes``!)
+
+.. external:: ps_10_05
+  
+  **PROBLEM 5 (OPTIONAL, not graded!)**
+  
+  All our tests use a "fake" filesystem, provided in the ``os_506`` module. Now that you have your code working, you can have some fun running on your actual filesystem.
+
+  Uncomment the line (provided in the code file): ``os_506.USE_REAL_FILESTYSTEM = True``.
+
+  Call ``getCategorySizes`` and/or ``getSize`` on some of your directory paths, and print out the results! Suggestion: *don't* call ``getSize('/')`` unless you are prepared to wait a long time for the answer!
+
+  **Note:** if you have a directory with a really large number of files, and you implemented the sum function recursively, you may get an error when you run ``getSize`` on that directory. If that happens, try a directory with fewer files.
