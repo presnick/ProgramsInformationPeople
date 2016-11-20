@@ -104,7 +104,7 @@ Go `HERE to see the Problem Set 9 assignment <https://umich.instructure.com/cour
 
 	**NOTE** that in the dictionary that represents a photo from FlickR, there are two keys with plausible associated values to extract for each tag, ``'raw'`` and ``'_content'``; the only difference between their values is capitalization. Please extract the data from the ``'raw'`` key for each tag.
 
-.. external:: ps_8_03
+.. external:: ps_9_3
 	
 	**PROBLEM 3**
 

@@ -71,6 +71,20 @@
   :points: 1000
   :autograde: unittest
 
+.. assignment::
+  :name: PS09
+  :assignment_type: problem_set
+  :questions: ps_9_1 200, ps_9_2 300, ps_9_3 100, ps_9_4 200, ps_9_5 200
+  :points: 1000
+  :autograde: unittest
+
+.. assignment::
+  :name: PS10
+  :assignment_type: problem_set
+  :questions: ps_10_01 300, ps_10_02 100, ps_10_03 100, ps_10_04 100, ps_10_05 200, ps_10_06 100, ps_10_07 100
+  :points: 1000
+  :autograde: unittest
+
 .. reading responses (rrs)
 
 .. assignment::
