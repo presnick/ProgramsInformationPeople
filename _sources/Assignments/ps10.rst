@@ -78,7 +78,7 @@ You do not have to read the code in ``os_506.py``, though you are welcome to loo
 
 -  ``join`` - takes two parts of a file system path and joins them according to the operating system's conventions. example: ``join('/users/soney', 'myProg.py')`` -> ``'/users/soney/myProg.py'``. On Windows, it might use ``\`` or ``\\`` instead of ``/`` as the character in between the two joined parts.
 
-- ``splittext`` - will separate an extension from a file name. For example, the invocation ``os.path.splitext('/usr/soney/file.txt')`` returns ``('/usr/soney/file', '.txt')``
+- ``splitext`` - will separate an extension from a file name. For example, the invocation ``os.path.splitext('/usr/soney/file.txt')`` returns ``('/usr/soney/file', '.txt')``
 
 - ``listdir(path)`` - returns a list of all the filenames in a directory, given a string representing a path to a directory.
 
@@ -160,7 +160,7 @@ Below you can see the directory and file structure in the fake (simulated) file 
 
   In this problem, you should complete a definition of the ``getFileType`` function, which accepts as input a ``path`` string, which should be a full path to a *file* (not a directory), and returns the string representing the media category that that file falls into (based on the ``extensionTypes`` declared above). Your implementation should not be recursive -- this function is a tool for the recursive function you will write later.
 
-  Note that the ``os_506.splittext`` function will separate an extension from a file name. For example, the invocation ``os.path.splitext('/usr/soney/file.txt')`` returns ``('/usr/soney/file', '.txt')`` -- this may be useful to you here! 
+  Note that the ``os_506.splitext`` function will separate an extension from a file name. For example, the invocation ``os.path.splitext('/usr/soney/file.txt')`` returns ``('/usr/soney/file', '.txt')`` -- this may be useful to you here!
 
   We've provided some code that uses this to start out your function definition with, as follows:
 
