@@ -35,7 +35,7 @@ Activities through 11/27 (Through T-Giving Break)
 
 * PS 10, on Recursion, is not due Sunday 11/27, it is due **Sunday, 12/4** at 11:59 PM. 
 * Next week, we will release another problem set, which will be *optional.* It will be especially interesting for HCI-oriented students who want to understand the architecture of how event-driven interactive GUIs are programmed. You'll learn more about that soon. That will also be due (if you choose to do it) on **Sunday, 12/4**.
-* Your next Reading Response will also be due Sunday 12/4 at 11:59 PM. Your next DYU will *also* be due Sunday 12/4 at 11:59 PM. You can look ahead on Canvas to do these if you wish, and we will also be posting the *following* week of material shortly, on event-drive interactive GUIs.
+* Your next DYU will *also* be due Sunday 12/4 at 11:59 PM. You can look ahead on Canvas to do these if you wish, and we will also be posting the *following* week of material shortly, on event-drive interactive GUIs.
 
 * **The only assignments due immediately after Thanksgiving break are your Final Project plan and a reading response.** However, it is probably a good idea to look at this problem set as soon as you can so you can prepare/arrange your next two weeks of work for this class!
 
