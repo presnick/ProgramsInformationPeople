@@ -96,7 +96,7 @@ Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/cou
             def emo_score(self):
                 return None
 
-    Add to that code in your ``506_ps9.py`` file so that it fulfills the following instructions.
+    Add to that code in your ``106_ps10.py`` file so that it fulfills the following instructions.
 
     If the post dictionary has a ``'comments'`` key, set an instance variable ``self.comments`` to hold the list of comment dictionaries you extract from ``post_dict``. Otherwise, set ``self.comments`` to be an empty list: ``[]``.
 
