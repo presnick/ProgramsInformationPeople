@@ -85,6 +85,13 @@
   :points: 1000
   :autograde: unittest
 
+.. assignment::
+  :name: PS11
+  :assignment_type: problem_set
+  :questions: ps_11_01 200, ps_11_02 300, ps_11_03 300, ps_11_04 200
+  :points: 1000
+
+
 .. reading responses (rrs)
 
 .. assignment::
