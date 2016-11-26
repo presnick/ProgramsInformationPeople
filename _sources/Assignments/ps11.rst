@@ -77,9 +77,9 @@ Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/cou
 
     It may help to think back to the questions from lecture and from section about how to alter the Pong game in different ways!
 
-    To run this problem set, you will need to download all of the files in the folder Files > Problem Sets > PS12. 
+    To run this problem set, you will need to download all of the files in the folder Files > Problem Sets > PS11. 
 
-    You should edit and submit the ``106_ps12.py`` file, which should run if it is in a directory with all the other files we provided.
+    You should edit and submit the ``106_ps11.py`` file, which should run if it is in a directory with all the other files we provided.
 
 .. external:: ps_11_01
 
