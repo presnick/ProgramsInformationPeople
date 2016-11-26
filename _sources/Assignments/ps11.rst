@@ -81,11 +81,15 @@ Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/cou
 
     You should edit and submit the ``106_ps11.py`` file, which should run if it is in a directory with all the other files we provided.
 
+    **Also note:** don't worry about the score in the upper right-hand corner if it does not work for you. On a number of computers we have found that it does not work. You are welcome to play around with it; it will not affect your grade.
+
 .. external:: ps_11_01
 
 	**PROBLEM 1**
 
-	First, make a 1-player Pong game: a game where the right-most wall just reflects the ball back instead of scoring a point. 
+	First, run the code as is! Convince yourself that it works, and think at a high-level how it works! What questions do you have that make you feel like you can't do these problems? Talk about those, ask them on the Facebook group, ask them in section, in office hours.
+
+	Now, for the first problem, make a 1-player Pong game: a game where the right-most wall just reflects the ball back instead of scoring a point. 
 
 	We have already changed the ball's starting position and angle in the code we provided. **You'll only need to make changes to Game.__init__() to solve this.**   
 
