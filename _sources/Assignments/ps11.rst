@@ -90,7 +90,7 @@ Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/cou
 
     To run this problem set, you will need to download all of the files in the folder Files > Problem Sets > PS11. 
 
-    You should edit and submit the ``106_ps11.py`` file, which should run if it is in a directory with all the other files we provided.
+    You should edit and submit the ``506_ps11.py`` file, which should run if it is in a directory with all the other files we provided.
 
     **Also note:** don't worry about the score in the upper right-hand corner if it does not work for you. On a number of computers we have found that it does not work. You are welcome to play around with it; it will not affect your grade.
 
