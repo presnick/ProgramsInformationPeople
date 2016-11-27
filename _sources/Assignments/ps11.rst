@@ -90,7 +90,7 @@ Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/cou
 
     To run this problem set, you will need to download all of the files in the folder Files > Problem Sets > PS11. 
 
-    You should edit and submit the ``106_ps11.py`` file, which should run if it is in a directory with all the other files we provided.
+    You should edit and submit the ``506_ps11.py`` file, which should run if it is in a directory with all the other files we provided.
 
     **Also note:** don't worry about the score in the upper right-hand corner if it does not work for you. On a number of computers we have found that it does not work. You are welcome to play around with it; it will not affect your grade.
 
@@ -138,7 +138,9 @@ Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/cou
 
 	Hints on how to do this:   
 	(a) Make the Brick subclass of BallDeflector 
-	(b) Make the bricks be instances of the new Brick class instead of the BallDeflector class (call the Brick constructo instead of the BallDeflector constructor)   
+
+	(b) Make the bricks be instances of the new Brick class instead of the BallDeflector class (call the Brick constructor instead of the BallDeflector constructor) 
+    
 	(c) In the Brick class, override the ``deflect_ball()`` method: call the parent class' ``deflect_ball()`` method, so that the balls deflects normally, but also remove the brick from game instance's list of ``game_objects`` after that. 
 
 	That way, when the game tells all of it's game_objects to display themselves, this brick won't display. Also, when the ball tries to see if it's collided with any other game objects, it won't check with this brick any more.
