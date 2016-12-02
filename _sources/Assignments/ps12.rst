@@ -48,7 +48,7 @@ Activities through 12/13
 	* Complete your :ref:`final semester DYU<final_semester_dyu>` on Canvas (linked below)
 
 * **Before Tuesday, December 13 at 11:59 PM (last day of classes):**
-	* Submit your `Final Project <linkhere.linkhere>`_ on Canvas!
+	* Submit your `Final Project <https://umich.instructure.com/courses/108426/assignments/139249>`_ on Canvas!
 
 * **Your final exam for this course is December 21st, 8:00 am - 10:00 am.** 
 	* Dates/times/locations of further review sessions and more exam info are upcoming. 
@@ -62,7 +62,7 @@ This Week's Reading Responses
 
 .. external:: rr_13
 
-  `Reading Response 13 <linkhere.linkhere>`_ on Canvas.
+  `Reading Response 13 <https://umich.instructure.com/courses/108426/assignments/139262>`_ on Canvas.
 
 Other Assignments
 -----------------
@@ -71,8 +71,8 @@ Other Assignments
 
 .. external:: ps12_dyu
 
-    Complete your last `Demonstrate Your Understanding <linkhere.linkhere>`_ assignment on Canvas. It is due Sunday December 11 at 11:59 PM, and may refer to any material from the last few weeks!
+    Complete your last `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/212961>`_ assignment on Canvas. It is due Sunday December 11 at 11:59 PM, and may refer to any material from the last few weeks!
 
 .. external:: final_project
 
-	Complete your `Final Project submission <https://umich.instructure.com/courses/105657/assignments/131294>`_ by December 13th at 11:59 PM.
+	Complete your `Final Project submission <https://umich.instructure.com/courses/108426/assignments/139249>`_ by December 13th at 11:59 PM.
