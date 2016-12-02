@@ -15,44 +15,44 @@ Activities through 12/13
 ========================
 
 * **For class Monday, 12/5:**
-	* Lecture will consist of review of REST APIs and getting data from the internet and discussion of Reading Response material.
-	* If you have been having difficulty with APIs, you should be here today! 
-	* You are not required to read anything, but we strongly suggest you review :ref:`REST APIs<rest_apis_chap>`, :ref:`Using REST APIs<caching_responses>`.
-	* You may also want to review :ref:`PS 7<problem_set_7>`, :ref:`PS 8<problem_set_8>` and :ref:`PS 9<problem_set_9>`.
+    * Lecture will consist of review of REST APIs and getting data from the internet and discussion of Reading Response material.
+    * If you have been having difficulty with APIs, you should be here today! 
+    * You are not required to read anything, but we strongly suggest you review :ref:`REST APIs<rest_apis_chap>`, :ref:`Using REST APIs<caching_responses>`.
+    * You may also want to review :ref:`PS 7<problem_set_7>`, :ref:`PS 8<problem_set_8>` and :ref:`PS 9<problem_set_9>`.
 
 * **For class Wednesday, 12/7:**
-	* Lecture will also be further review (specifics TBD) and time to work. 
-	
+    * Lecture will also be further review (specifics TBD) and time to work. 
+    
 * **Section this week will be structured time to work on projects.** More info TBA.
 
 .. note:: **Schedule Your Project Work Time**
 
-	We also strongly suggest you spend time each day this week, even if it is just a few minutes, working on your project! Here's a suggested order of tasks:
+    We also strongly suggest you spend time each day this week, even if it is just a few minutes, working on your project! Here's a suggested order of tasks:
 
-		1.  Make sure you can grab data from both your sources and deal with it in Python, and cache the data, like in your project plan. 
+        1.  Make sure you can grab data from both your sources and deal with it in Python, and cache the data, like in your project plan. 
 
-		2. Write out English descriptions of everything you think you'll need to do for your project to get the clear output you plan on and fulfill all of the requirements. (You may change your English descriptions along the way, as you work, of course -- that's OK, it'll give you a good start.) Try writing some pieces of code, like your class definitions (Problem #1 in PS9 is a good model for how to plan a class definition). And talk to staff about anything that was brought up in the feedback on your project plan, on the Facebook Group or otherwise!
+        2. Write out English descriptions of everything you think you'll need to do for your project to get the clear output you plan on and fulfill all of the requirements. (You may change your English descriptions along the way, as you work, of course -- that's OK, it'll give you a good start.) Try writing some pieces of code, like your class definitions (Problem #1 in PS9 is a good model for how to plan a class definition). And talk to staff about anything that was brought up in the feedback on your project plan, on the Facebook Group or otherwise!
 
-		3. Write some unit tests that test for things you know you'll need your project to do: should the ``twitter_data`` variable you plan to use contain something that is a Python dictionary type? Write that unit test. Etc. 
+        3. Write some unit tests that test for things you know you'll need your project to do: should the ``twitter_data`` variable you plan to use contain something that is a Python dictionary type? Write that unit test. Etc. 
 
-		4. Check through the English plan you've written for yourself. e.g. perhaps it begins like, *"Get the last 500 posts from the University of Michigan Facebook page, and save it in a variable ``fb_umich_data``. Cache the data in a file."* And then, *"Define a class FacebookPost which should have the following instance variables and methods..."*, and so on...
+        4. Check through the English plan you've written for yourself. e.g. perhaps it begins like, *"Get the last 500 posts from the University of Michigan Facebook page, and save it in a variable ``fb_umich_data``. Cache the data in a file."* And then, *"Define a class FacebookPost which should have the following instance variables and methods..."*, and so on...
 
-		5. Proceed through translating your English into code, one piece at a time, running your file every time you finish more code, to make sure it's working and checking whether you pass your unit tests.
+        5. Proceed through translating your English into code, one piece at a time, running your file every time you finish more code, to make sure it's working and checking whether you pass your unit tests.
 
-	The Facebook problem set (PS 9) is a good structure to base your project on, and the Flickr problem set (PS 8) may also be especially useful to look back at!
+    The Facebook problem set (PS 9) is a good structure to base your project on, and the Flickr problem set (PS 8) may also be especially useful to look back at!
 
 * **Sunday, December 11, 1 PM - 6 PM** is project work time at North Quad! Specifics TBA.
 
 * **Before Sunday, December 11 at 11:59 PM:**
-	* Complete :ref:`RR 13<reading_response_13>` on Canvas (linked below)
-	* Complete your :ref:`final semester DYU<final_semester_dyu>` on Canvas (linked below)
+    * Complete :ref:`RR 13<reading_response_13>` on Canvas (linked below)
+    * Complete your :ref:`final semester DYU<final_semester_dyu>` on Canvas (linked below)
 
 * **Before Tuesday, December 13 at 11:59 PM (last day of classes):**
-	* Submit your `Final Project <https://umich.instructure.com/courses/108426/assignments/139249>`_ on Canvas!
+    * Submit your `Final Project <https://umich.instructure.com/courses/108426/assignments/139249>`_ on Canvas!
 
 * **Your final exam for this course is December 21st, 8:00 am - 10:00 am.** 
-	* Dates/times/locations of further review sessions and more exam info are upcoming. 
-	* Just like for the midterms, you may bring one 8.5x11 double-sided sheet of notes with anything you like on it to the exam.
+    * Dates/times/locations of further review sessions and more exam info are upcoming. 
+    * Just like for the midterms, you may bring one 8.5x11 double-sided sheet of notes with anything you like on it to the exam.
 
 
 This Week's Reading Responses
@@ -75,4 +75,4 @@ Other Assignments
 
 .. external:: final_project
 
-	Complete your `Final Project submission <https://umich.instructure.com/courses/108426/assignments/139249>`_ by December 13th at 11:59 PM.
+    Complete your `Final Project submission <https://umich.instructure.com/courses/108426/assignments/139249>`_ by December 13th at 11:59 PM.
