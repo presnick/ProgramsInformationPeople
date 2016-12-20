@@ -8,7 +8,7 @@
     License".
 
 
-.. _folders_and_paths_sect:
+
 
 Directories and Paths
 ---------------------

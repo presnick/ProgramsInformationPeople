@@ -72,26 +72,26 @@ max-so-far.
       
       a = 0
       for c in d:
-         <what code goes here?>
+        # <what code goes here? See below options>
          
       print "max value is " + a
 
 
    .. code-block:: python
 
-      I.
+      # I.
       if c > a:
          a = c
     
-      II.
+      # II.
       if d[c] > a:
          d[a] = c
          
-      III.
+      # III.
       if d[c] > a:
          a = d[c]
          
-      IV.
+      # IV.
       if d[c] > a:
          a = c
 

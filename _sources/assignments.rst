@@ -18,6 +18,6 @@ Class Assignments
    Assignments/ps10.rst
    Assignments/ps11.rst
    Assignments/ps12.rst
-   Assignments/ps13.rst
-   Assignments/ps14.rst
+
+
 

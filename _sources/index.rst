@@ -148,6 +148,7 @@ Iteration
    Iteration/TheAccumulatorPatternwithStrings.rst
    Iteration/Glossary.rst
    Iteration/Exercises.rst
+   Iteration/ExtraExercises.rst
 
 Conditionals
 ::::::::::::
@@ -161,6 +162,7 @@ Conditionals
    Selection/Chainedconditionals.rst
    Selection/Glossary.rst
    Selection/Exercises.rst
+   Selection/ExtraExercises.rst
 
 Files
 :::::
@@ -177,6 +179,7 @@ Files
    Files/WritingTextFiles.rst
    Files/Glossary.rst
    Files/Exercises.rst
+   Files/ExtraExercises.rst
 
 Understanding Code
 ::::::::::::::::::
@@ -200,6 +203,7 @@ Dictionaries
    Dictionaries/Aliasingandcopying.rst
    Dictionaries/Glossary.rst
    Dictionaries/Exercises.rst
+   Dictionaries/ExtraExercises.rst
 
 
 Accumulating Results in Dictionaries
@@ -213,6 +217,7 @@ Accumulating Results in Dictionaries
    DictionaryAccumulation/AccumulatingaMaximumValue.rst
    DictionaryAccumulation/AccumulatingtheBestKey.rst
    DictionaryAccumulation/Exercises.rst
+   DictionaryAccumulation/ExtraExercises.rst
 
 Building Programs
 :::::::::::::::::
@@ -244,6 +249,7 @@ Functions
    Functions/PassingMutableObjects.rst
    Functions/SideEffects.rst
    Functions/Glossary.rst
+   Functions/ExtraExercises.rst
 
 
 While Loops
@@ -255,6 +261,7 @@ While Loops
    IndefiniteIteration/intro-indefiniteiteration.rst
    IndefiniteIteration/ThewhileStatement.rst
    IndefiniteIteration/listenerLoop.rst
+   IndefiniteIteration/ExtraExercises.rst
 
 Optional and Keyword Parameters
 :::::::::::::::::::::::::::::::
@@ -265,6 +272,7 @@ Optional and Keyword Parameters
    OptionalAndKeywordParameters/OptionalParameters.rst
    OptionalAndKeywordParameters/KeywordParameters.rst
    OptionalAndKeywordParameters/exercises.rst
+   OptionalAndKeywordParameters/ExtraExercises.rst
 
 Tuples
 ::::::
@@ -279,6 +287,7 @@ Tuples
    Tuples/UnpackingDictionaryItems.rst
    Tuples/Glossary.rst
    Tuples/Exercises.rst
+   Tuples/ExtraExercises.rst
 
 
 Nested Data and Nested Iteration
@@ -291,6 +300,7 @@ Nested Data and Nested Iteration
    NestedData/NestedDictionaries.rst
    NestedData/NestedIteration.rst
    NestedData/DebuggingNestedData.rst
+   NestedData/ExtraExercises.rst
 
 
 Sorting
@@ -307,6 +317,7 @@ Sorting
    Sort/StableSorting.rst
    Sort/Glossary.rst
    Sort/Exercises.rst
+   Sort/ExtraExercises.rst
 
 
 Python Modules
@@ -320,6 +331,8 @@ Python Modules
    Installation/pip.rst
    PythonModules/Glossary.rst
    PythonModules/Exercises.rst
+   PythonModules/ExtraExercises.rst
+
 
 Requests
 ::::::::
@@ -356,6 +369,7 @@ Exceptions
 
    Exceptions/intro-exceptions.rst
    Exceptions/using-exceptions.rst
+   Exceptions/ExtraExercises.rst
 
 
 String Formatting
@@ -368,6 +382,8 @@ String Formatting
    StringFormatting/Interpolation.rst
    StringFormatting/CSV.rst
    StringFormatting/Exercises.rst
+   StringFormatting/ExtraExercises.rst
+
 
 Using RESTAPIs
 ::::::::::::::
@@ -408,6 +424,7 @@ Classes
    Classes/Tamagotchi.rst
    Classes/Glossary.rst
    Classes/Exercises.rst
+   Classes/ExtraExercises.rst
 
 Inheritance
 :::::::::::
@@ -422,6 +439,7 @@ Inheritance
    Inheritance/TamagotchiRevisited.rst
    Inheritance/Exercises.rst
 
+
 More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -435,6 +453,7 @@ More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
    AdvancedAccumulation/reduce.rst
    AdvancedAccumulation/zip.rst
    AdvancedAccumulation/exercises.rst
+   AdvancedAccumulation/ExtraExercises.rst
 
 The FaceBook Graph API
 ::::::::::::::::::::::
@@ -541,18 +560,24 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-In Class Code Samples
-:::::::::::::::::::::
+Discussion Section Resources (F16)
+::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
    :hidden:
+
+   navhelp.rst
+
+.. toctree::
+   :maxdepth: 2
 
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
    InClass/OptionalKeywordParams.rst
    InClass/TuplesAndNestedData.rst
+
 
 Indices and tables
 ::::::::::::::::::
