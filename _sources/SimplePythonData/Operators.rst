@@ -39,28 +39,20 @@ Remember that if we want to see the results of the computation, the program need
     (5 + 9) * (15 - 7)
     print 7 + 5
 
-In Python 2.7, which we will be using, the division operator ``/`` produces a floating point result
-if either of the operands is  of type **float**. If both are of type **int**, then
-it performs **integer division**, which truncates its result down to the next smallest integer.
-
+In Python 3, which we will be using, the division operator ``/`` produces a floating point result if the result is not an integer (e.g., ``1/2``). If you want truncated division, you can use the ``//`` operator.
 
 .. activecode:: ch02_16
     :nocanvas:
 
-   print 9 / 5
-   print 9.0 / 5
-   print 9 / 5.0
-   print 5/9
+    print 9 / 5
+    print 9.0 / 5
+    print 9 / 5.0
+    print 5/9
+    print 9//5
 
-Pay particular attention to the examples above. Note that it truncates, rather than rounding, so ``9/5`` is ` and ``5/9`` is 0.
+Pay particular attention to the examples above. Note that ``9//5`` truncates rather than rounding, so it produces the value 1 rather 2.
 
-Take care that you choose
-the correct flavor of the division operator.  If you want a truncated integer output,
-make both of your operands integers. If you want a floating point result, make
-one or both of your operands into floats.
-
-If you want to be sure to get integer division, even on floating point operands,
-you can use the operator ``//``.
+The integer division operator, ``//``, also works on floating point numbers.
 
 .. activecode:: ch02_16a
    :nocanvas:
@@ -138,12 +130,12 @@ Similarly ``x % 100`` yields the last two digits.
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :feedback_a: - The // operator does integer division, not exact divisions
-   :feedback_b: - Integer division results in truncation, not rounding up.
-   :feedback_c: - The // operator does integer division, but it yields a float when one of the operands is a float/
-   :feedback_d: - The // operator does integer division, and  it yields a float when one of the operands is a float.
+   :feedback_a: - The / operator does exact divisions.
+   :feedback_b: - Neither / nor // leads to rounding up
+   :feedback_c: - The // operator does integer division, but / does not
+   :feedback_d: - The / operator does exact divisions, not truncation
    :feedback_e: - / does division. Perhaps you were thinking of %, which computes the remainder?
-   :correct: d
+   :correct: a
 
    What value is printed when the following statement executes?
 
