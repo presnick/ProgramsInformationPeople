@@ -196,17 +196,17 @@ We are going to begin to move toward executing Python programs on your own compu
    # Remember, these won't work at all until you have defined a function called is_prefix
 
    =====
-
+   class myTests(TestCaseGui):
    from unittest.gui import TestCaseGui
 
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(is_prefix("Big", "Bigger"), True, "Testing whether 'Big' is a prefix of 'Bigger'")
-         self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
-         self.assertEqual(is_prefix('ge', 'Bigger'), False, "Testing whether 'ge' is a prefix of 'Bigger'")
-         self.assertEqual(is_prefix('Bigge', "Bigger"), True, "Testing whether 'Bigge' is a prefix of 'Bigger'")
-
+         def testOne(self):
+            self.assertEqual(is_prefix("Big", "Bigger"), True, "Testing whether 'Big' is a prefix of 'Bigger'")
+            self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
+            self.assertEqual(is_prefix('ge', 'Bigger'), False, "Testing whether 'ge' is a prefix of 'Bigger'")
+            self.assertEqual(is_prefix('Bigge', "Bigger"), True, "Testing whether 'Bigge' is a prefix of 'Bigger'")
+            self.assertEqual(is_prefix('rid', 'Bridge'), False, "Testing whether 'rid' is a prefix of 'Bridge")
+            self.assertEqual(is_prefix('Bridge', 'Bridge'), True, "Testing whether 'Bridge' is a prefix of 'Bridge'")
+            
    myTests().main()
 
 

@@ -304,7 +304,6 @@ Extra Exercises
 
    myTests().main()
 
-
 6.1 Write two functions, one called ``addit`` and one called ``mult``. ``addit`` takes one number as an input and adds 5. ``mult`` takes one number as an input, and multiplies that input by whatever is returned by ``addit``, and then returns the result.
 
 .. activecode:: ee_functions_062

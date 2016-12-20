@@ -152,7 +152,6 @@ Extra Exercises
 
    myTests().main()
 
-
 4. Create a list of the countries that are in the dictionary ``golds``, and assign that list to the variable name ``countries``. Do not hard code this. 
 
 .. activecode:: ee_ch12_041
@@ -207,7 +206,6 @@ Extra Exercises
 
    myTests().main()
 
-
 6.1 The dictionary ``total_golds`` contains the total number of gold medals that countries have won over the course of history. Use dictionary mechanics to find the number of golds Chile has won, and assign that number to the variable name ``chile_golds``. Do not hard code this!  
 
 .. activecode:: ee_ch12_061
@@ -240,7 +238,6 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(fencing_value, US_medals.get("Fencing"), "Testing that fencing_value was set correctly.")
-         
+         self.assertEqual(fencing_value, US_medals.get("Fencing"), "Testing that fencing_value was set correctly.")        
 
    myTests().main()

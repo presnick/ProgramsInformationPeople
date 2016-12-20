@@ -233,8 +233,6 @@ Extra Exercises
 
    myTests().main()
 
-
-
 5.2 Create a dictionary called ``d`` that keeps track of all the characters in the string ``placement`` and notes how many times each character was seen. Then, find the key with the lowest value in this dictionary and assign that key to ``min_value``.
 
 .. activecode:: ee_ch13_052
@@ -256,8 +254,6 @@ Extra Exercises
 
 
    myTests().main()
-
-
 
 6.1 Create a dictionary named ``letter_counts`` that contains each letter and the number of times it occurs in ``string1``. **Challenge:** Letters should not be counted separately as upper-case and lower-case. 
 

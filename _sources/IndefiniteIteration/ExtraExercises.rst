@@ -210,7 +210,6 @@ Extra Exercises
 
    myTests().main() 
 
-
 5. Below is a for loop that works. Underneath the for loop, rewrite the problem so that it does the same thing, but using a while loop instead of a for loop. Assign the accumulated total in the while loop code to the variable ``sum2``. Once complete, sum2 should equal sum1.
 
 .. activecode:: ee_ch07_05
@@ -256,7 +255,6 @@ Extra Exercises
          self.assertEqual(accum, 42, "Testing that accum has the correct value.")
 
    myTests().main() 
-
 
 
 6. **Challenge:** Write a function called ``beginning`` that takes a list as input and contains a while loop that only stops once the element of the list is the string 'bye'. What is returned is a list that contains up to the first 10 strings, regardless of where the loop stops. (i.e., if it stops on the 32nd element, the first 10 are returned. If "bye" is the 5th element, the first 4 are returned.) *If you want to make this even more of a challenge, do this without slicing*

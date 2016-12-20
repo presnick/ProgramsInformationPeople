@@ -147,7 +147,6 @@ Extra Exercises
 
    myTests().main() 
 
-
 3. Assign the first 30 characters of ``school_prompt.txt`` as a string to the variable ``beginning_chars``.
 
 .. activecode:: ee_files_031

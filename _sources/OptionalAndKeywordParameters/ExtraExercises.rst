@@ -208,7 +208,6 @@ But if the second paramter is ``False``, then the function should check to see i
          self.assertEqual(together(493.3, 'beans', ' lima '), '493.3 lima beans', "Testing that together returns the correct string on input (493.3, 'beans', 'lima')")
 
    myTests().main()   
- 
 
 5. We have provided the function ``checkingIfIn`` such that if the first input parameter is in the third, dictionary, input parameter, then the function returns that value, and otherwise, it returns ``False``. Follow the instructions in the active code window for specific variable assignmemts. 
 
