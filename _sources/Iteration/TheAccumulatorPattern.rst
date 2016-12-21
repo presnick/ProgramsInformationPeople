@@ -20,7 +20,7 @@ For example, consider the following code, which computes the sum of the numbers 
    accum = 0
    for w in nums:
        accum = accum + w
-   print accum
+   print(accum)
 
 In the program above, notice that the variable ``accum`` starts out with a value of 0.  
 Next, the iteration is performed 10 times.  Inside the for loop, the update occurs. 
@@ -40,8 +40,8 @@ Here is the same program in codelens.  Step thru the function and watch the "run
    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    accum = 0
    for w in nums:
-       accum = accum + w
-   print accum
+      accum = accum + w
+   print(accum)
 
 
 .. note::
@@ -68,7 +68,7 @@ Here is the same program in codelens.  Step thru the function and watch the "run
       for w in nums:
          accum = 0
          accum = accum + w
-      print accum
+      print(accum)
    
    What happens if you put the initialization of accum inside the for loop as the first
    instruction in the loop?
@@ -87,5 +87,5 @@ Here is the same program in codelens.  Step thru the function and watch the "run
       thesum = thesum + oddnumber
       oddnumber = oddnumber + 2
    =====
-   print thesum
+   print(thesum)
 

@@ -54,7 +54,7 @@ Here's the original Pet class again.
             return state
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))]
+            print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
         def teach(self, word):
@@ -85,7 +85,7 @@ There's another way to invoke a superclass's method that is preferred by python 
 
         def feed(self):
             Pet.feed(self)
-            print "Arf! Thanks!"
+            print("Arf! Thanks!")
 
     d1 = Dog("Astro")
 
@@ -108,7 +108,7 @@ Let's say we want to create a subclass of ``Pet``, called ``Bird``, and we want 
 
         def hi(self):
             for i in range(self.chirp_number):
-                print self.sounds[randrange(len(self.sounds))]
+                print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
     b1 = Bird('tweety', 5)
@@ -122,13 +122,13 @@ Let's say we want to create a subclass of ``Pet``, called ``Bird``, and we want 
    :answer_b: ["Mrrp"]
    :answer_c: ["chirp"]
    :answer_d: Error
-   :feedback_a: This would print if the code was print b1.chirp_number. 
+   :feedback_a: This would print if the code was print(b1.chirp_number).
    :feedback_b: We set b1 to be Bird('tweety', 5) above.  Bird is a subclass of Pet, which has ["Mrrp"] for sounds, but Bird has a different value for that class variable. The interpreter looks in the subclass first.
    :feedback_c: The interpeter finds the value in the class variable for the class Bird.
    :feedback_d: We ran set b1 to be Bird('tweety', 5) above.  Bird has a value set for the attribute sounds.
    :correct: c
 
-   What will print when ``print b1.sounds`` is run?
+   What will print when ``print(b1.sounds)`` is run?
 
 .. mchoice:: question_inheritance_5
    :answer_a: Error when invoked

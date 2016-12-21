@@ -42,7 +42,7 @@ but you'll learn more if you try to write it yourself first.
              # bigger than the value associated with the best_key_so_far
              # if so, save the current key as the best so far
             
-         print "key " + best_key_so_far + " has the highest value, " + str(d[best_key_so_far])
+         print("key " + best_key_so_far + " has the highest value, " + str(d[best_key_so_far]))
    
    .. tab:: Answer 
    
@@ -56,6 +56,6 @@ but you'll learn more if you try to write it yourself first.
              if d[k] > d[best_key_so_far]:
                  best_key_so_far = k
             
-         print "key " + best_key_so_far + " has the highest value, " + str(d[best_key_so_far])
+         print("key " + best_key_so_far + " has the highest value, " + str(d[best_key_so_far]))
          
 

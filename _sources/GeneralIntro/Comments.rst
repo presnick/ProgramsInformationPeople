@@ -29,7 +29,7 @@ Here is a new version of *Hello, World!*.
     # Anyone may freely copy or modify this program.
     #---------------------------------------------------
 
-    print "Hello, World!"     # Isn't this easy!
+    print("Hello, World!")     # Isn't this easy!
 
 Notice that when you run this program, it still only prints the phrase Hello, World!  None of the comments appear.
 You'll also notice that we've left a blank line in the program.  Blank lines

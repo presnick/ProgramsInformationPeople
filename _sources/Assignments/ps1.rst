@@ -210,7 +210,6 @@ Problem Set
 
     new_var = 824
 
-    ====
 
     from unittest.gui import TestCaseGui
 
@@ -282,15 +281,15 @@ Problem Set
     # make sure to be very clear and detailed about the following line of code
     orange = square(b)
 
-    print a
+    print(a)
 
-    print b
+    print(b)
 
-    print orange
+    print(orange)
 
     pear = square
 
-    print pear
+    print(pear)
 
     =====
 
@@ -311,16 +310,14 @@ Problem Set
     Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
     ~~~~
     # For example
-    print greeting("Jackie")
-    print greeting("everybody")
-    print greeting("sdgadgsal")
-     
+    print(greeting("Jackie"))
+    print(greeting("everybody"))
+    print(greeting("sdgadgsal"))
+
     # Try running all this code more than once, so you can see how calling the function
     # random_digit works.
-    print random_digit()
-    print random_digit()
-
-    # Write code that assigns the variables as mentioned in the instructions.
+    print(random_digit())
+    print(random_digit())
 
 
     =====
@@ -329,14 +326,14 @@ Problem Set
 
     class myTests(TestCaseGui):
 
-        def testOne(self): 
+        def testOne(self):
             self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
         def testTwo(self):
             self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
         def testThree(self):
             self.assertEqual(type(digit_func), type(random_digit), "Testing that digit_func is same type as random_digit")
 
-    myTests().main()
+   myTests().main()
 
 
 .. activecode:: ps_1_8
@@ -346,11 +343,6 @@ Problem Set
 
     **8.** Now write code that assigns the variable ``newval`` to hold the **return value** of ``greeting("everyone in class")``.
     ~~~~
-
-  
-     
-
-    =====
 
     from unittest.gui import TestCaseGui
 

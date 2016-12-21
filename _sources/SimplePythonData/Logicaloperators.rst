@@ -31,10 +31,10 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
 .. activecode:: chp05_3
 
     x = 5
-    print x>0 and x<10
+    print(x>0 and x<10)
 
     n = 25
-    print n%2 == 0 or n%3 == 0
+    print(n%2 == 0 or n%3 == 0)
 
 
 .. admonition:: Common Mistake!
@@ -63,6 +63,4 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
    :correct: d
 
    What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5.
-
-
 

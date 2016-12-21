@@ -22,7 +22,7 @@ consider again the ``square`` function:
         return y
 
     z = square(10)
-    print y
+    print(y)
 
 
 Try running this in Codelens. If you press the 'last >>' button you will see an error message. When we try to use ``y`` on line 6 (outside the function) Python looks for a global variable named ``y`` but does not find one.  This results in the

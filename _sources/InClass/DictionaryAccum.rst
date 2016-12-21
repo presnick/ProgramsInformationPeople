@@ -19,13 +19,13 @@ Dictionary Accumulation In Class Code Samples
     for letter in str2:
         if letter == 'i':
             icount += 1
-    print icount
+    print(icount)
 
     icount = 0
     for letter in "team":
         if letter == 'i':
             icount += 1
-    print icount
+    print(icount)
 
 .. activecode:: session8_1
 
@@ -39,7 +39,7 @@ Dictionary Accumulation In Class Code Samples
         if letter in vowels:
             vcounts[vowels.index(letter)] += 1
     for vowel in vowels:
-        print vowel + ": " + str(vcounts[vowels.index(vowel)])
+        print(vowel + ": " + str(vcounts[vowels.index(vowel)]))
 
 .. activecode:: session8_2
 
@@ -67,7 +67,7 @@ Dictionary Accumulation In Class Code Samples
             d[letter] += 1
 
     for vowel in vowels:
-        print vowel + ": " + str(d[vowel])
+        print(vowel + ": " + str(d[vowel]))
 
 .. activecode:: session8_3
 
@@ -95,7 +95,7 @@ Dictionary Accumulation In Class Code Samples
             d[letter] += 1
 
     for vowel in vowels:
-        print vowel + ": " + str(d[vowel])
+        print(vowel + ": " + str(d[vowel]))
 
 .. activecode:: session8_4
 
@@ -113,8 +113,8 @@ Dictionary Accumulation In Class Code Samples
 
     for vowel in vowels:
         if vowel in d:
-            print vowel + ": " + str(d[vowel])
-    print d
+            print(vowel + ": " + str(d[vowel]))
+    print(d)
 
 .. activecode:: session8_5
 
@@ -134,7 +134,7 @@ Dictionary Accumulation In Class Code Samples
     for letter in d.keys():
         if letter in vowels:
             tot += d[letter]
-    print tot
+    print(tot)
 
 .. activecode:: session8_6
 
@@ -156,7 +156,7 @@ Dictionary Accumulation In Class Code Samples
     for letter in d: # same as iterating over d.keys()
         tot = tot + letter_values[letter] * d[letter]
 
-    print tot
+    print(tot)
 
 .. activecode:: session8_7
 
@@ -178,4 +178,4 @@ Dictionary Accumulation In Class Code Samples
         if d[let] > d[best_letter_so_far]:
             best_letter_so_far = let
 
-    print best_letter_so_far + " has the highest value, " + str(d[best_letter_so_far])
+    print(best_letter_so_far + " has the highest value, " + str(d[best_letter_so_far]))

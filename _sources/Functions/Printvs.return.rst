@@ -13,7 +13,7 @@ Print vs. return
 Many beginning programmers find the distinction between print and return very
 confusing, especially since most of the illustrations of return values in intro
 texts like this one show the returned value from a function call by printing it, as
-in ``print square(g(2))``.
+in ``print(square(g(2)))``.
 
 The print statement is fairly easy to understand. It takes a python object and 
 outputs a printed representation of it in the output window. You can think of
@@ -52,7 +52,7 @@ three possibilities.
     text square(3) in that invocation, so it becomes `square(9 + 7) -5`.
 
 #. Print it for human consumption. 
-    For example, `print square(3)` outputs 9 to the
+    For example, `print(square(3))` outputs 9 to the
     output area. Note that, unless the return value is first  saved as in possibility 1, it will be available
     only to the humans watching the output area, not to the program as it continues executing.
 
@@ -62,10 +62,10 @@ function definition and not bother to return anything from the function (the val
 In that case, invoke the function without a print statement. For example, you can have an entire line of code
 that reads ``f(3)``. That will run the function f and throw away the return value. Of course,
 if square doesn't print anything out or have any side effects, it's useless to call it and do 
-nothting with the return value. But with a function that has print statements inside it, 
+nothing with the return value. But with a function that has print statements inside it, 
 it can be quite useful.
 
-The other possibility is to return a value from the function and print it, as in ``print f(3)``. As 
+The other possibility is to return a value from the function and print it, as in ``print(f(3))``. As 
 you start to write larger, more complex programs, this will be more typical. Indeed the print statement
 will usually only be a temporary measure while you're developing the program. Eventually, you'll end
 up calling f and saving the return value or using it as part of a more complex expression.
@@ -82,7 +82,7 @@ until it makes sense to you!
    :answer_c: 7
    :answer_d: 25
    :answer_e: Error: y has a value but x is an unbound variable inside the square function
-   :feedback_a: 2 is the input; the value returned from h is what will be printed
+   :feedback_a: 2 is the input; the value returned from h is what will be printed.
    :feedback_b: Don't forget that 2 gets squared.
    :feedback_c: First square 2, then add 3.
    :feedback_d: 3 is added to the result of squaring 2
@@ -102,7 +102,7 @@ until it makes sense to you!
        def h(y):
            return square(y) + 3
            
-       print h(2)
+       print(h(2))
 
 
 .. mchoice:: test_questionfunctions_4_2
@@ -114,8 +114,8 @@ until it makes sense to you!
    :feedback_a: Better read the section above one more time.
    :feedback_b: Better read the section above one more time.
    :feedback_c: That's h(2), but it is passed to g.
-   :feedback_d: h(2) returns 7, so y is bound to 7 when g is invoked 
-   :feedback_e: Ah, but you can next function calls.
+   :feedback_d: h(2) returns 7, so y is bound to 7 when g is invoked.
+   :feedback_e: Ah, but you can nest function calls.
    :correct: d
    
    What will the following code output?
@@ -131,5 +131,5 @@ until it makes sense to you!
        def h(y):
            return square(y) + 3
            
-       print g(h(2))
+       print((g(h(2)))
 

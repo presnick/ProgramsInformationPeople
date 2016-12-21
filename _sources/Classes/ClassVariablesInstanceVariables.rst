@@ -51,9 +51,9 @@ Note that there is an assignment to the variable printed_rep on line 4. It is no
 
     p1 = Point(2, 3)
     p2 = Point(3, 12)
-    print p1.graph()
-    print
-    print p2.graph()
+    print(p1.graph())
+    print()
+    print(p2.graph())
 
 To be able to reason about class variables and instance variables, it is helpful to know the rules that the python interpreter uses. That way, you can mentally simulate what the interpreter does.
 

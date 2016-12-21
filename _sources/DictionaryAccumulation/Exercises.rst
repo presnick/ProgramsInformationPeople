@@ -43,7 +43,7 @@ Exercises
                             if d[k] > d[most_used]:
                                 most_used = k
 
-                        print "The most used word is '"+most_used+"', which is used "+str(d[most_used])+" times"
+                        print("The most used word is '"+most_used+"', which is used "+str(d[most_used])+" times")
     
    
 

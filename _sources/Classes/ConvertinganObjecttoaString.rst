@@ -35,7 +35,7 @@ Consider the example below.
 
     
     p = Point(7,6)
-    print p
+    print(p)
 
 The ``print`` function shown above produces a string representation of the Point ``p``.  The default functionality provided by
 Python tells you that ``p`` is an object of type ``Point``.  However, it does not tell you anything about the specific
@@ -75,7 +75,7 @@ Take a look at the code below.
             return "x = {}, y = {}".format(self.x, self.y)
 
     p = Point(7,6)
-    print p
+    print(p)
 
 
 When we run the program above you can see that the ``print`` function now shows the string that we chose.

@@ -20,7 +20,7 @@ but if you set it to True, the list will be sorted in reverse order.
 .. activecode:: sort_3
 
     L2 = ["Cherry", "Apple", "Blueberry"]
-    print sorted(L2, reverse = True)
+    print(sorted(L2, reverse = True))
     
 .. note::
 

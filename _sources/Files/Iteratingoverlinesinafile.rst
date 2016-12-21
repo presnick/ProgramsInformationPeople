@@ -48,7 +48,7 @@ construct a simple sentence.
 
     for aline in qbfile.readlines():
         values = aline.split()
-        print 'QB ', values[0], values[1], 'had a rating of ', values[10]
+        print('QB ', values[0], values[1], 'had a rating of ', values[10])
 
     qbfile.close()
 
@@ -60,7 +60,7 @@ To make the code a little simpler, and to allow for more efficient processing, P
 
     for aline in qbfile:
         values = aline.split()
-        print 'QB ', values[0], values[1], 'had a rating of ', values[10]
+        print('QB ', values[0], values[1], 'had a rating of ', values[10])
 
     qbfile.close()
  

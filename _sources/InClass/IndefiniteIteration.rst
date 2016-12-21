@@ -20,7 +20,7 @@ Indefinite Iteration In Class Code Samples
     while sum <= 10:
         n = int(raw_input("Please enter a number to add to the sum. When you reach a sum larger than ten, the total sum will print out. Your number: "))
         sum = sum + n
-    print sum
+    print(sum)
 
 
 .. activecode:: session10_2
@@ -30,9 +30,9 @@ Indefinite Iteration In Class Code Samples
         n = int(raw_input("Please enter a number to add to the list of numbers: "))
         all_nums_entered.append(n)
 
-    print "You entered 10 numbers! Here they are: "
+    print("You entered 10 numbers! Here they are: ")
     for num in all_nums_entered:
-        print num
+        print(num)
 
 
 Listener loop pattern, example
@@ -45,7 +45,7 @@ Listener loop pattern, example
         x = int(raw_input("Next number to add up (enter 0 if you want to stop): "))
         theSum = theSum + x
 
-    print theSum
+    print(theSum)
 
 
 
@@ -59,11 +59,11 @@ The flag pattern, examples
 
     while x:
         entered = int(raw_input("Enter a number: "))
-        print entered
+        print(entered)
         if entered % 2 == 0:
             x = False
             # Any code under here will execute
-            print "Sorry, you entered an even number. The loop is over now!"
+            print("Sorry, you entered an even number. The loop is over now!")
 
 
     # This is a flag for whether an even number has been entered
@@ -83,10 +83,10 @@ The flag pattern, examples
         entered = raw_input("Enter a single letter: ")
         if entered in special_letters:
             fl = False
-            print "You guessed one of the special letters. You guessed:", entered
-            print "The special letters were: "
+            print("You guessed one of the special letters. You guessed:", entered)
+            print("The special letters were: ")
             for ch in special_letters:
-                print ch
+                print(ch)
 
 
 Control flow structures with while loops
@@ -104,7 +104,7 @@ Control flow structures with while loops
             continue
         odd_nums_lst.append(n)
 
-    print "List of odd numbers you entered:", odd_nums_lst
+    print("List of odd numbers you entered:", odd_nums_lst)
 
 
 .. activecode:: session10_6
@@ -119,21 +119,21 @@ Control flow structures with while loops
         if entered == "quit":
             break
         elif len(entered) > 1:
-            print "You broke the rules! Try again."
+            print("You broke the rules! Try again.")
             continue
         elif entered in special_letters:
             fl = False
-            print "You guessed one of the special letters. You guessed:", entered
-            print "The special letters were:"
+            print("You guessed one of the special letters. You guessed:", entered)
+            print("The special letters were:")
             for ch in special_letters:
-                print ch
+                print(ch)
 
 
 Fix an error in the listener loop pattern:
 
 .. activecode:: session10_1
 
-    print "Enter even numbers. When you enter anything that is not an even number, the loop will stop."
+    print("Enter even numbers. When you enter anything that is not an even number, the loop will stop.")
 
     # This code as is will give you an error.
     # What line of code should you add to keep you from getting an error?
@@ -141,4 +141,4 @@ Fix an error in the listener loop pattern:
     while first_num % 2 == 0:
         first_num = int(raw_input("Enter an even number: "))
 
-    print "all done!"
+    print("all done!")

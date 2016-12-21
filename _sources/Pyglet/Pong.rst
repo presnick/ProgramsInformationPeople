@@ -124,7 +124,7 @@ We provide the complete code listing below.
     class EndLine(BallDeflector):
 
         def deflect_ball(self, ball, side_hit):
-            print "hit an endline"
+            print("hit an endline")
             if side_hit == 'LEFT':
                 # ball approached from the left to right wall
                 self.game.reset()
@@ -461,7 +461,7 @@ We provide the complete code listing below.
         :return:
         '''
         if debug:
-            print string
+            print(string)
 
     def main():
         debug_print("Initializing window...")

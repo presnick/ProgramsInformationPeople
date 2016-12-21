@@ -37,18 +37,19 @@ Remember that if we want to see the results of the computation, the program need
     20 + 32
     5 ** 2
     (5 + 9) * (15 - 7)
-    print 7 + 5
+    print(7 + 5)
 
 In Python 3, which we will be using, the division operator ``/`` produces a floating point result if the result is not an integer (e.g., ``1/2``). If you want truncated division, you can use the ``//`` operator.
 
 .. activecode:: ch02_16
     :nocanvas:
 
-    print 9 / 5
-    print 9.0 / 5
-    print 9 / 5.0
-    print 5/9
-    print 9//5
+   print(9 / 5)
+   print(9.0 / 5)
+   print(9 / 5.0)
+   print(5/9)
+
+Pay particular attention to the examples above. Note that it truncates, rather than rounding, so ``9/5`` is ` and ``5/9`` is 0.
 
 Pay particular attention to the examples above. Note that ``9//5`` truncates rather than rounding, so it produces the value 1 rather 2.
 
@@ -57,8 +58,8 @@ The integer division operator, ``//``, also works on floating point numbers.
 .. activecode:: ch02_16a
    :nocanvas:
 
-   print 7.0 / 3.0
-   print 7.0 // 3.0
+   print(7.0 / 3.0)
+   print(7.0 // 3.0)
 
 .. index:: modulus
 
@@ -70,8 +71,8 @@ operators.
 .. activecode:: ch02_18
     :nocanvas:
 
-    print 7 // 3     # This is the integer division operator
-    print 7 % 3      # This is the remainder or modulus operator
+    print(7 // 3)    # This is the integer division operator
+    print(7 % 3)     # This is the remainder or modulus operator
 
 In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1.
 
@@ -102,7 +103,7 @@ Similarly ``x % 100`` yields the last two digits.
 
    .. code-block:: python
 
-      print 18 / 4
+      print(18 / 4)
 
 .. mchoice:: test_question2_6_1
    :answer_a: 4.5
@@ -121,8 +122,7 @@ Similarly ``x % 100`` yields the last two digits.
 
    .. code-block:: python
 
-      print 18.0 / 4
-
+      print(18.0 / 4)
 
 .. mchoice:: test_question2_6_2
    :answer_a: 4.5
@@ -141,7 +141,7 @@ Similarly ``x % 100`` yields the last two digits.
 
    .. code-block:: python
 
-      print 18.0 // 4
+      print(18.0 // 4)
 
 
 .. mchoice:: test_question2_6_3
@@ -159,7 +159,7 @@ Similarly ``x % 100`` yields the last two digits.
 
    .. code-block:: python
 
-      print 18 % 4
+      print(18 % 4)
 
 
 .. index:: input, input dialog

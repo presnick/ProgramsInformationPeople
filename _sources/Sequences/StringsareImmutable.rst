@@ -18,7 +18,7 @@ with the intention of changing a character in a string.  For example, in the fol
     
     greeting = "Hello, world!"
     greeting[0] = 'J'            # ERROR!
-    print greeting
+    print(greeting)
 
 Instead of producing the output ``Jello, world!``, this code produces the
 runtime error ``TypeError: 'str' object does not support item assignment``.
@@ -30,8 +30,8 @@ best you can do is create a new string that is a variation on the original.
     
     greeting = "Hello, world!"
     newGreeting = 'J' + greeting[1:]
-    print newGreeting
-    print greeting           # same as it was
+    print(newGreeting)
+    print(greeting)          # same as it was
 
 The solution here is to concatenate a new first letter onto a slice of
 ``greeting``. This operation has no effect on the original string.
@@ -53,8 +53,7 @@ The solution here is to concatenate a new first letter onto a slice of
 
       s = "Ball"
       s[0] = "C"
-      print s
-
+      print(s)
 
 .. index::
     single: in operator

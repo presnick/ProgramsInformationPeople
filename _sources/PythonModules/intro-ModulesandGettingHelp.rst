@@ -23,15 +23,15 @@ A **module** is a file containing Python definitions and statements intended for
 use in other Python programs. There are many Python modules that come with
 Python as part of the **standard library**. 
 
-The  `Python Documentation <http://docs.python.org/2/>`_ site for Python version
-2.7 is an extremely useful reference for all aspects of Python. The site
+The  `Python Documentation <https://docs.python.org/3.4/>`_ site for Python version
+3.4 is an extremely useful reference for all aspects of Python. The site
 contains a listing of all the standard modules that are available with Python
-(see `Global Module Index <http://docs.python.org/2/py-modindex.html>`_). You
+(see `Global Module Index <https://docs.python.org/3.4/py-modindex.html>`_). You
 will also see that there is a
-`Standard Library Reference <http://docs.python.org/2/library/index.html>`_
+`Standard Library Reference <https://docs.python.org/3.4/library/index.html>`_
 (Next week, there will be a chapter explaining how to read the language
 reference documentation) and a
-`Tutorial <http://docs.python.org/2/tutorial/index.html>`_, as well as
+`Tutorial <https://docs.python.org/3.4/tutorial/index.html>`_, as well as
 installation instructions, how-tos, and frequently asked questions.  We
 encourage you to become familiar with this site and to use it often.
 
@@ -76,7 +76,7 @@ Syntax for Importing Modules and Functionality
 
 When you see imported modules in a Python program, there are a few variations that have slightly different consequences.
 
-1. The most common is  ``import morecode``. That imports everything in morecode.py. To invoke a function f1 that is defined in morecode.py, you would write ``morecode.f1()``. Note that you have to explicitly mention morecode again, to specify that you want the f1 function from morecode namespace. If you just write ``f1()``, python will look for an f1 that was defined in the current file, rather than in morecode.py.
+1. The most common is ``import morecode``. That imports everything in morecode.py. To invoke a function f1 that is defined in morecode.py, you would write ``morecode.f1()``. Note that you have to explicitly mention morecode again, to specify that you want the f1 function from morecode namespace. If you just write ``f1()``, python will look for an f1 that was defined in the current file, rather than in morecode.py.
 
 2. You can also give the imported module an alias (a different name, just for when you use it in your program). For example, after executing ``import morecode as mc``, you would invoke ``f1`` as ``mc.f1()``. You have now given the ``morecode`` module the alias ``mc``. Programmers often do this to make code easier to type.
 
@@ -104,7 +104,7 @@ When you see imported modules in a Python program, there are a few variations th
    :answer_d: A file that contains documentation about functions in Python.
    :feedback_a: A module can be reused in different programs.
    :feedback_b: While a module is separate block of code, it is separate from a program.
-   :feedback_c: The call to a feature within a module may be one line of code, but modules are usually multiple lines of code separate from the program
+   :feedback_c: The call to a feature within a module may be one line of code, but modules are usually multiple lines of code separate from the program.
    :feedback_d: Each module has its own documentation, but the module itself is more than just documentation.
    :correct: a
 

@@ -37,10 +37,10 @@ The keys method returns a list of the keys, not necessarily in the same order th
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}  
   
     for akey in inventory.keys():     # the order in which we get the keys is not defined
-        print "Got key", akey, "which maps to value", inventory[akey]     
+        print("Got key", akey, "which maps to value", inventory[akey])     
        
     ks = list(inventory.keys())
-    print ks
+    print(ks)
 
     
 It's so common to iterate over the keys in a dictionary that you can
@@ -52,7 +52,7 @@ a dictionary implicitly iterates over its keys.
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}  
     
     for k in inventory:     
-        print "Got key", k
+        print("Got key", k)
 
  
 The ``values`` and ``items`` methods are similar to ``keys``. They return lists of objects which can be iterated over.  Note that the item objects are tuples containing the key and the associated value.
@@ -61,11 +61,11 @@ The ``values`` and ``items`` methods are similar to ``keys``. They return lists 
     
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}  
     
-    print list(inventory.values())
-    print list(inventory.items())
+    print(list(inventory.values()))
+    print(list(inventory.items()))
 
     for k in inventory:
-        print "Got",k,"that maps to",inventory[k]
+        print("Got",k,"that maps to",inventory[k])
     
     
 The ``in`` and ``not in`` operators can test if a key is in the dictionary:
@@ -73,13 +73,13 @@ The ``in`` and ``not in`` operators can test if a key is in the dictionary:
 .. activecode:: chp12_dict9
     
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
-    print 'apples' in inventory
-    print 'cherries' in inventory
+    print('apples' in inventory)
+    print('cherries' in inventory)
 
     if 'bananas' in inventory:
-        print inventory['bananas']
+        print(inventory['bananas'])
     else:
-        print "We have no bananas"
+        print("We have no bananas")
      
 
 This operator can be very useful since looking up a non-existent key in a
@@ -94,10 +94,10 @@ in the case where the key is not present.  This can be seen in the final example
     
     inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
     
-    print inventory.get("apples")
-    print inventory.get("cherries")
+    print(inventory.get("apples"))
+    print(inventory.get("cherries"))
 
-    print inventory.get("cherries",0)
+    print(inventory.get("cherries",0))
 
 
 
@@ -111,7 +111,6 @@ in the case where the key is not present.  This can be seen in the final example
 
 **Check your understanding**
 
-   
 .. mchoice:: test_question11_3_2
    :answer_a: 2
    :answer_b: 0.5
@@ -123,15 +122,13 @@ in the case where the key is not present.  This can be seen in the final example
    :feedback_d: The integer division operator is being used on the values returned from the get method, not on the dictionary.
    :correct: a
    
-   
    What is printed by the following statements?
    
    .. sourcecode:: python
 
      mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
      answer = mydict.get("cat")//mydict.get("dog")
-     print answer
-
+     print(answer)
    
    
 .. mchoice:: test_question11_3_3
@@ -146,8 +143,7 @@ in the case where the key is not present.  This can be seen in the final example
    .. sourcecode:: python
 
      mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
-     print "dog" in mydict
-
+     print("dog" in mydict)
 
 
 .. mchoice:: test_question11_3_4
@@ -162,8 +158,7 @@ in the case where the key is not present.  This can be seen in the final example
    .. sourcecode:: python
 
       mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
-      print 23 in mydict
-
+      print(23 in mydict)
 
 
 .. mchoice:: test_question11_3_5
@@ -177,7 +172,6 @@ in the case where the key is not present.  This can be seen in the final example
    :feedback_d: Not all the values are added together.  The if statement only chooses some of them.
    :correct: b
    
-   
    What is printed by the following statements?
    
    .. sourcecode:: python
@@ -187,8 +181,7 @@ in the case where the key is not present.  This can be seen in the final example
       for akey in mydict:
          if len(akey) > 3:
             total = total + mydict[akey]
-      print total
-   
+      print(total)
 
 
 .. index:: aliases

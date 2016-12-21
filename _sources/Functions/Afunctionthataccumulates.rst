@@ -29,10 +29,8 @@ and our implementation may not be a very good one.
            c = c + 1   # increment the counter for each item in x
        return c
       
-   print mylen("hello")
-   print mylen([1, 2, 7]) 
-
-
+   print(mylen("hello"))
+   print(mylen([1, 2, 7]))
 
 
 .. parsonsprob:: functions_6a
@@ -42,14 +40,14 @@ and our implementation may not be a very good one.
    -----
    def mylen(x):
    =====
-      c = 0 # initialize count variable to 0
+       c = 0 # initialize count variable to 0
    =====
-      for y in x:
+       for y in x:
    =====
-         c = c + 1   # increment the counter for each item in x
+           c = c + 1   # increment the counter for each item in x
    =====
-      return c
+       return c
    =====      
-   print mylen("hello")
-   print mylen([1, 2, 7]) 
+   print(mylen("hello"))
+   print(mylen([1, 2, 7]))
 

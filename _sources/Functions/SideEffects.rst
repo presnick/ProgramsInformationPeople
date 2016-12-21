@@ -22,7 +22,7 @@ you have seen above, we could make double have a side effect on the global varia
    
    y = 5
    double(y)
-   print y
+   print(y)
 
 Side effects are sometimes convenient. For example, it may be convenient to have
 a single dictionary that accumulates information, and pass it around to various
@@ -46,7 +46,7 @@ above.
    
    y = 5
    y = double(y)
-   print y
+   print(y)
 
 You can use the same coding pattern to avoid confusing side effects with sharing
 of mutable objects. To do that, explicitly make a copy of an object and pass the
@@ -65,8 +65,8 @@ to get a copy of the dictionary back as a return value.
       
    mylst = ['106', 'students', 'are', 'awesome']
    newlst = changeit(list(mylst))
-   print mylst
-   print newlst
+   print(mylst)
+   print(newlst)
 
 In general, any lasting effect that occurs in a function, not through its return value,  is called a side effect. There are three ways to have side effects:
 

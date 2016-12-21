@@ -45,9 +45,9 @@ This is pretty intuitive -- Facebook is likely to have a lot of personal data ac
     url_params["fields"] = "message,comments,likes"
     baseurl = "https://graph.facebook.com/{}/feed".format(group_id)
     r = requests.get(baseurl ,params=url_params)
-    print r.url
+    print(r.url)
     d = json.loads(r.text)
-    print d.keys()
+    print(d.keys())
 
 
 To see more about the Facebook Graph API and other options it allows, you can look at the URL: ``https://developers.facebook.com/docs/graph-api/reference``, and to try out API requests, you can play with the `Graph API Explorer <https://developers.facebook.com/tools/explorer>`_. We're going to largely focus on the individual and group feeds, and the posts: who each post is from, each post's comments, and each post's likes. (As we write this, Facebook Reactions were recently rolled out -- but the API allows us to get data just about *likes*, which we'll do for this course.)
@@ -68,7 +68,6 @@ You can see that this already gives you a very complicated structure of data! Bu
    
    Use the same setup to run a GET request on me?fields=locale. In the results, what is the value associated with the "locale" key?
      
-   
 .. mchoice:: fb_api_4
    :multiple_answers:
    :answer_a: You would like your code to be compressed so that it uses less space on your file system

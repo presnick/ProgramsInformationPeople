@@ -17,11 +17,11 @@ update one of the list items.
 .. activecode:: ch09_7
     
     fruit = ["banana", "apple", "cherry"]
-    print fruit
+    print(fruit)
 
     fruit[0] = "pear"
     fruit[-1] = "orange"
-    print fruit
+    print(fruit)
 
 
 An
@@ -44,7 +44,7 @@ By combining assignment with the slice operator we can update several elements a
     
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     alist[1:3] = ['x', 'y']
-    print alist
+    print(alist)
 
 We can also remove elements from a list by assigning the empty list to them.
 
@@ -52,7 +52,7 @@ We can also remove elements from a list by assigning the empty list to them.
     
     alist = ['a', 'b', 'c', 'd', 'e', 'f']
     alist[1:3] = []
-    print alist
+    print(alist)
 
 We can even insert elements into a list by squeezing them into an empty slice at the
 desired location.
@@ -61,9 +61,9 @@ desired location.
     
     alist = ['a', 'd', 'f']
     alist[1:1] = ['b', 'c']
-    print alist
+    print(alist)
     alist[4:4] = ['e']
-    print alist
+    print(alist)
 
 
 **Check your understanding**
@@ -83,7 +83,7 @@ desired location.
 
      alist = [4,2,8,6,5]
      alist[2] = True
-     print alist
+     print(alist)
 
 
 .. index:: del statement, statement; del

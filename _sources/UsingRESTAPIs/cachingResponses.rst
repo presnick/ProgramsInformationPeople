@@ -131,4 +131,4 @@ Try saving this code in a file and running it multiple times. The first time, yo
     dest_url = 'http://services.faa.gov/airport/status/DTW'
     d = {'format': 'json'}
     result_text = get_with_caching(dest_url, d, saved_cache, cache_fname)
-    print json.loads(result_text)
+    print(json.loads(result_text))

@@ -28,15 +28,15 @@ The print statement is also a good way to make a computed value visible to peopl
 .. activecode:: values_1
     :nocanvas:
 
-    print 3.2
-    print "Hello, World!"
+    print(3.2)
+    print("Hello, World!")
 
 As you will learn in more detail later, there are some special characters, like the tab character ``\t`` and the newline character ``\n`` whose internal and external representations are different.
 
 .. activecode:: values_2
     :nocanvas:
 
-    print "Two tabs after this\tand then newlines\n\nand that's all"
+    print("Two tabs after this\tand then newlines\n\nand that's all")
 
 Numbers with a decimal point belong to a class
 called **float**, because these numbers are represented in a format called

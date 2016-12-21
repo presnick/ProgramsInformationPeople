@@ -41,10 +41,10 @@ it.
     import random
 
     prob = random.random()
-    print prob
+    print(prob)
 
     diceThrow = random.randrange(1,7)       # return an int, one of 1,2,3,4,5,6
-    print diceThrow
+    print(diceThrow)
 
 Press the run button a number of times.  Note that the values change each time.
 These are random numbers.
@@ -75,7 +75,7 @@ random values between 0.0 and up to but not including 5.0.
 
     prob = random.random()
     result = prob * 5
-    print result
+    print(result)
 
 .. index:: deterministic algorithm,  algorithm; deterministic, unit tests
 
@@ -91,7 +91,6 @@ likely get random behavior each time you execute.
 
 
 **Check your understanding**
-
 
 .. mchoice:: randmodule_1
    :answer_a: prob = random.randrange(1, 101)

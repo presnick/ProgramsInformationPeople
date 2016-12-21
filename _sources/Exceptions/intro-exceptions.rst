@@ -63,11 +63,11 @@ Let's see what happens if we wrap some of this problematic code in a try/except 
    try:
        items = ['a', 'b']
        third = items[2]
-       print "This won't print"
+       print("This won't print")
    except Exception:
-       print "got an error"
+       print("got an error")
    
-   print "continuing"
+   print("continuing")
 
  
 If we catch only IndexEror, and we actually have a divide by zero error, the program does stop executing.   
@@ -78,21 +78,21 @@ If we catch only IndexEror, and we actually have a divide by zero error, the pro
    try:
        items = ['a', 'b']
        third = items[2]
-       print "This won't print"
+       print("This won't print")
    except IndexError:
-       print "error 1"
+       print("error 1")
       
-   print "continuing"
+   print("continuing")
    
    try:
        x = 5
        y = x/0
-       print "This won't print, either"
+       print("This won't print, either")
    except IndexError:
-       print "error 2"
+       print("error 2")
        
        
-   print "continuing again"
+   print("continuing again")
    
    
 There's one other useful feature. The exception code can access a variable that contains information about exactly what the error was. Thus, for example, in the except clause you could print out the information that would normally be printed as an error message but continue on with execution of the rest of the program. To do that, you specify a variable name after the exception class that's being handled. The exception clause code can refer to that variable name.
@@ -103,12 +103,12 @@ There's one other useful feature. The exception code can access a variable that 
    try:
        items = ['a', 'b']
        third = items[2]
-       print "This won't print"
+       print("This won't print")
    except Exception, e:
-       print "got an error"
-       print e
+       print("got an error")
+       print(e)
    
-   print "continuing"
+   print("continuing")
 
 
 **Check your understanding**
@@ -162,8 +162,8 @@ There's one other useful feature. The exception code can access a variable that 
    
       try:
           for i in range(5):
-              print 1.0 / (3-i)
+              print(1.0 / (3-i))
       except Exception, error_inst:
-          print "Got an error", error_inst
+          print("Got an error", error_inst)
 
 

@@ -69,7 +69,7 @@ Translating your English description of a step into code may be the most challen
     <some code in for block>
     a = <new_value>
     <other code in for block>
-  print a
+  print(a)
 
 
 Finally, you may be reminded of a snippet of code somewhere in the textbook that did something similar to what you want to do. Now is the time to copy and edit that code. **But wait!** Before you start editing that code snippet, make sure you understand it. See the section below on understanding code.

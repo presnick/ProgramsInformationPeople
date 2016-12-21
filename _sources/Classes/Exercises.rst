@@ -108,6 +108,6 @@ Exercises
 
 
                 p = Point(7,6)
-                print p
+                print(p)
                 p.move(5,10)
-                print p
+                print(p)

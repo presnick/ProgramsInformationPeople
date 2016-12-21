@@ -41,7 +41,7 @@ Here we give one example, a simple little game that lets the player move a white
             '''
 
             if symbol == pyglet.window.key.Q or symbol == pyglet.window.key.ESCAPE:
-                print 'Exit key detected. Exiting game...'
+                print('Exit key detected. Exiting game...')
                 exit(0)
             elif symbol == pyglet.window.key.SPACE:
                 self.make_sound()

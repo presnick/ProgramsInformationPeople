@@ -50,7 +50,7 @@ Here's *all* the code we just saw for our new and improved game, with a few addi
             return state
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))]
+            print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
         def teach(self, word):
@@ -84,7 +84,7 @@ Here's *all* the code we just saw for our new and improved game, with a few addi
 
         def hi(self):
             for i in range(self.meow_count):
-                print self.sounds[randrange(len(self.sounds))]
+                print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
         def mood(self):
@@ -100,14 +100,14 @@ Here's *all* the code we just saw for our new and improved game, with a few addi
             return "I found the tennis ball!"
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))] + self.fetch()
+            print(self.sounds[randrange(len(self.sounds))] + self.fetch())
 
     class Poodle(Dog):
         def dance(self):
             return "Dancin' in circles like poodles do."
 
         def hi(self):
-            print self.dance()
+            print(self.dance())
             Dog.hi(self)
 
     class Bird(Pet):
@@ -119,7 +119,7 @@ Here's *all* the code we just saw for our new and improved game, with a few addi
 
         def hi(self):
             for i in range(self.chirp_number):
-                print self.sounds[randrange(len(self.sounds))]
+                print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
 
@@ -172,7 +172,7 @@ Here's *all* the code we just saw for our new and improved game, with a few addi
                 pet = whichone(animals, words[1])
                 if not pet:
                     feedback += "I didn't recognize that pet name. Please try again.\n"
-                    print
+                    print()
                 else:
                     pet.hi()
             elif command == "Teach" and len(words) > 2:

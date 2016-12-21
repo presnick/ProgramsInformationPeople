@@ -30,7 +30,7 @@ and in this case assigned to the variable `n`.  Run this example a few times and
 .. activecode:: inputfun
 
     n = raw_input("Please enter your name: ")
-    print "Hello", n
+    print("Hello", n)
 
 It is very important to note that the ``raw_input`` function returns a string value.  Even if you asked the user to enter their age, you would get back a string like
 ``"17"``.  It would be your job, as the programmer, to convert that string into
@@ -49,7 +49,7 @@ Here's is a program that turns a number of seconds into more human readable coun
     minutes =  secs_still_remaining // 60
     secs_finally_remaining = secs_still_remaining  % 60
 
-    print "Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining
+    print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
 
 
 The variable ``str_seconds`` will refer to the string that is entered by the user. As we said above, even though this string may be ``7684``, it is still a string and not a number.  To convert it to an integer, we use the ``int`` function.
@@ -74,7 +74,7 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
 
      n = raw_input("Please enter your age: ")
      # user types in 18
-     print  type(n)
+     print(type(n))
 
 
 .. index:: order of operations, rules of precedence

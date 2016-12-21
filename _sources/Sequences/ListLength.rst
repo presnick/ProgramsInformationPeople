@@ -17,8 +17,8 @@ it important to note that ``len`` only returns the top-most length.
 .. activecode:: chp09_01a
 
     alist =  ["hello", 2.0, 5]
-    print len(alist)
-    print len(alist[0])
+    print(len(alist))
+    print(len(alist[0]))
 
 Note that ``alist[0]`` is the string ``"hello"``, which has length 5. 
 
@@ -36,7 +36,7 @@ Note that ``alist[0]`` is the string ``"hello"``, which has length 5.
    .. code-block:: python
 
      alist = [3, 67, "cat", 3.14, False]
-     print len(alist)
+     print(len(alist))
     
         
 .. mchoice:: test_question9_2_2 
@@ -55,4 +55,4 @@ Note that ``alist[0]`` is the string ``"hello"``, which has length 5.
    .. code-block:: python
 
      L = [0.34, '6', 'SI106', 'Python', -2]
-     print len(L[1:-1])    
+     print(len(L[1:-1]))   

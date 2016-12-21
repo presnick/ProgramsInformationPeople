@@ -49,7 +49,7 @@ practices.
    :answer_d: there is no difference between them.
    :feedback_a: Programming is the writing of the source code and debugging is the process of finding and correcting all the errors within the program until it is correct.
    :feedback_b: Programming can be creative, but it also follows a process and debugging can involve creativity in how you find the errors.
-   :feedback_c: Some people think that debugging is actually more fun than programming (they usually become good software testers).  Debugging is much like solving puzzles, which some people think is fun!
+   :feedback_c: Some people think that debugging is actually more fun than programming (they usually become good software testers). Debugging is much like solving puzzles, which some people think is fun!
    :feedback_d: You cannot debug without first having a program, meaning that someone had to do the programming first.
    :correct: a
 
