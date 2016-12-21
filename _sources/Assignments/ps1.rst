@@ -310,14 +310,16 @@ Problem Set
     Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
     ~~~~
     # For example
-    print(greeting("Jackie"))
-    print(greeting("everybody"))
-    print(greeting("sdgadgsal"))
+    print greeting("Jackie")
+    print greeting("everybody")
+    print greeting("sdgadgsal")
 
     # Try running all this code more than once, so you can see how calling the function
     # random_digit works.
-    print(random_digit())
-    print(random_digit())
+    print random_digit()
+    print random_digit()
+
+    # Write code that assigns the variables as mentioned in the instructions.
 
 
     =====
@@ -333,7 +335,7 @@ Problem Set
         def testThree(self):
             self.assertEqual(type(digit_func), type(random_digit), "Testing that digit_func is same type as random_digit")
 
-   myTests().main()
+    myTests().main()
 
 
 .. activecode:: ps_1_8
