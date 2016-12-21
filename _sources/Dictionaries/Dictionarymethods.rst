@@ -66,7 +66,10 @@ The ``values`` and ``items`` methods are similar to ``keys``. They return lists 
 
     for k in inventory:
         print("Got",k,"that maps to",inventory[k])
-    
+
+.. note::
+
+    Technically, .keys(), .values(), and .items() don't return actual lists. Like the range function described previously, in python 3 they return objects that produce the items one at a time, rather than producing and storing all of them in advance as a list. Unless the dictionary has a whole lot of keys, this won't make a difference for performance. In any case, as with the range function, it is safe for you to think of them as returning lists. For the python interpreter built into this textbook, they actually do produce lists. In a native python interpreter, if you print out ``type(inventory.keys())``, you will find that it is something other than an actual list.
     
 The ``in`` and ``not in`` operators can test if a key is in the dictionary:
 
@@ -98,15 +101,6 @@ in the case where the key is not present.  This can be seen in the final example
     print(inventory.get("cherries"))
 
     print(inventory.get("cherries",0))
-
-
-
-
-.. note::
-
-    This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.
-
-    .. activecode:: scratch_11_02
 
 
 **Check your understanding**
