@@ -64,7 +64,7 @@ the active code window to check your results:
             #. False
 
 
-#.  Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
+#.  Give the **logical opposites** of these conditions, meaning an expression that would produce False whenever this expression produces True, and vice versa.  You are not allowed to use the ``not`` operator.
 
     #.  ``a > b``
     #.  ``a >= b``
@@ -149,8 +149,8 @@ the active code window to check your results:
                 word9 = "dull"
                 word10 = "boy."
 
-                print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
-        
+                print(word1 + ' ' +  word2 + ' ' + word3 + ' ' +  word4 + ' ' +  word5 + ' ' +  word6 + ' ' +  word7 + ' ' +  word8 + ' ' +  word9 + ' ' +  word10)
+
 
 
 #. Add parentheses to the expression ``6 * 1 - 2`` to change its value

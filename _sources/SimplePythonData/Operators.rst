@@ -44,16 +44,13 @@ In Python 3, which we will be using, the division operator ``/`` produces a floa
 .. activecode:: ch02_16
     :nocanvas:
 
-   print(9 / 5)
-   print(9.0 / 5)
-   print(9 / 5.0)
-   print(5/9)
-
-Pay particular attention to the examples above. Note that it truncates, rather than rounding, so ``9/5`` is ` and ``5/9`` is 0.
+    print(9 / 5)
+    print(5 / 9)
+    print(9 // 5)
 
 Pay particular attention to the examples above. Note that ``9//5`` truncates rather than rounding, so it produces the value 1 rather 2.
 
-The integer division operator, ``//``, also works on floating point numbers.
+The integer division operator, ``//``, also works on floating point numbers. It truncates to the nearest integer, but still produces a floating point result. Thus ``7.0 // 3.0`` is ``2.0``.
 
 .. activecode:: ch02_16a
    :nocanvas:
@@ -86,18 +83,18 @@ Similarly ``x % 100`` yields the last two digits.
 
 **Check your understanding**
 
-.. mchoice:: test_question2_6_1a
+.. mchoice:: test_question2_6_1
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :feedback_a: Because 18 and 4 are ints, / does integer division.
-   :feedback_b: Integer division results in truncation, not rounding up.
-   :feedback_c: Because 18 and 4 are ints, / does integer division.
-   :feedback_d: Because 18 and 4 are ints, / does integer division and produces an integer.
+   :feedback_a: Because the result is not an integer, a floating point answer is produced.
+   :feedback_b: Even if // were used, it would still truncate, not round
+   :feedback_c: Perhaps you are thinking of the integer division operator, //
+   :feedback_d: / performs exact division, without truncation
    :feedback_e: / does division. Perhaps you were thinking of %, which computes the remainder?
-   :correct: c
+   :correct: a
 
    What value is printed when the following statement executes?
 
@@ -105,37 +102,18 @@ Similarly ``x % 100`` yields the last two digits.
 
       print(18 / 4)
 
-.. mchoice:: test_question2_6_1
-   :answer_a: 4.5
-   :answer_b: 5
-   :answer_c: 4
-   :answer_d: 4.0
-   :answer_e: 2
-   :feedback_a: Because 18.0 is a float, / does exact division.
-   :feedback_b: Because 18.0 is a float, / does exact division.
-   :feedback_c: Because 18.0 is a float, / does exact division.
-   :feedback_d: Because 18.0 is a float, / does exact division.
-   :feedback_e: / does division. Perhaps you were thinking of %, which computes the remainder?
-   :correct: a
-
-   What value is printed when the following statement executes?
-
-   .. code-block:: python
-
-      print(18.0 / 4)
-
 .. mchoice:: test_question2_6_2
    :answer_a: 4.5
    :answer_b: 5
    :answer_c: 4
    :answer_d: 4.0
    :answer_e: 2
-   :feedback_a: - The / operator does exact divisions.
+   :feedback_a: - // does truncated division.
    :feedback_b: - Neither / nor // leads to rounding up
-   :feedback_c: - The // operator does integer division, but / does not
-   :feedback_d: - The / operator does exact divisions, not truncation
+   :feedback_c: - Even though it truncates, it produces a floating point result
+   :feedback_d: - Yes, even though it truncates, it produces a floating point result because 18.0 is a float
    :feedback_e: - / does division. Perhaps you were thinking of %, which computes the remainder?
-   :correct: a
+   :correct: d
 
    What value is printed when the following statement executes?
 
