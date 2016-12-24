@@ -11,9 +11,8 @@ Optional reverse parameter
 --------------------------
 
 The sorted function takes some optional parameters (see :ref:`Optional parameters <optional_params_chap>`).
-The first one is a comparison function. We will not be using it in this course (indeed, in python 3, 
-this parameter is not even available any longer). The second optional parameter is a key function, which 
-will be described in the next section. The third optional parameter is a Boolean value which 
+The first optional parameter is a key function, which
+will be described in the next section. The second optional parameter is a Boolean value which
 determines whether to sort the items in reverse order. By default, it is False,
 but if you set it to True, the list will be sorted in reverse order.
 
@@ -24,4 +23,4 @@ but if you set it to True, the list will be sorted in reverse order.
     
 .. note::
 
-    This is a situation where it is convenient to use the keyword mechanism for providing optional parameters. It is possible to provide the value True for the reverse parameter without naming that parameter, but then we would have to provide values for the second and third parameters as well rather than allowing the default parameters to be used. We would have had to write ``sorted(L2, None, None, True)``. That's a lot harder for humans to read and understand.
+    This is a situation where it is convenient to use the keyword mechanism for providing optional parameters. It is possible to provide the value True for the reverse parameter without naming that parameter, but then we would have to provide a value for the second parameter as well, rather than allowing the default parameter value to be used. We would have had to write ``sorted(L2, None, True)``. That's a lot harder for humans to read and understand.
