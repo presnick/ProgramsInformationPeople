@@ -54,8 +54,8 @@ Below is an example of the class definition we just described. (You can't run th
 
         def __init__(self, song_dictionary):
 
-            self.title = song_dictionary[u"trackName"]
-            self.artist = song_dictionary[u"artistName"]
+            self.title = song_dictionary["trackName"]
+            self.artist = song_dictionary["artistName"]
 
         def get_song_artist(self):
             return self.artist
