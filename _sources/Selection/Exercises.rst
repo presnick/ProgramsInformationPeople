@@ -42,7 +42,7 @@ Exercises
 
             .. activecode:: ans_6_3
             
-               sc = raw_input("Enter a score from 0 to 100 (decimal points are allowed)")
+               sc = input("Enter a score from 0 to 100 (decimal points are allowed)")
                fl_sc = float(sc)
                
                if fl_sc < 60:

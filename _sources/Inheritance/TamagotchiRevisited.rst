@@ -148,7 +148,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
             Choice: """
         feedback = ""
         while True:
-            action = raw_input(feedback + "\n" + base_prompt)
+            action = input(feedback + "\n" + base_prompt)
             feedback = ""
             words = action.split()
             if len(words) > 0:

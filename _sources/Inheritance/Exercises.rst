@@ -147,7 +147,7 @@ Here's *all* the code we just saw for our new and improved game, with a few addi
             Choice: """
         feedback = ""
         while True:
-            action = raw_input(feedback + "\n" + base_prompt)
+            action = input(feedback + "\n" + base_prompt)
             feedback = ""
             words = action.split()
             if len(words) > 0:

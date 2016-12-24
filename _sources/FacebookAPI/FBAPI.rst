@@ -37,9 +37,9 @@ This is pretty intuitive -- Facebook is likely to have a lot of personal data ac
     access_token = None
     group_id = None
     if access_token is None:
-        access_token = raw_input("\nCopy and paste token from https://developers.facebook.com/tools/explorer\n>  ")
+        access_token = input("\nCopy and paste token from https://developers.facebook.com/tools/explorer\n>  ")
     if group_id is None:
-        group_id = raw_input("\nCopy and paste your userid or FB group id: ")
+        group_id = input("\nCopy and paste your userid or FB group id: ")
     url_params = {}
     url_params["access_token"] = access_token
     url_params["fields"] = "message,comments,likes"

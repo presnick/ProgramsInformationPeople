@@ -15,7 +15,7 @@ isn't particularly useful for data processing, but we will see more useful thing
 
 .. activecode:: ch08_acc1
     
-   s = raw_input("Enter some text")
+   s = input("Enter some text")
    ac = ""
    for c in s:
        ac = ac + c + "-" + c + "-"

@@ -105,10 +105,10 @@ The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier t
         # User will have to cut and paste the verifier or the whole redirect url
 
         # version where the website provides a verifier
-        verifier = raw_input('Please input the verifier>>> ')
+        verifier = input('Please input the verifier>>> ')
 
         # version where the website provides the entire redirect url
-        # redirect_response = raw_input('Paste the full redirect URL here: ')
+        # redirect_response = input('Paste the full redirect URL here: ')
         # oauth_response = oauth.parse_authorization_response(redirect_response)
         # get back something like this
         #{

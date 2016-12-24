@@ -284,7 +284,7 @@ Problem Set
    def main():
        max_health = 3
        health = max_health
-       secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+       secret_word = input("What's the word to guess? (Don't let the player see it!)")
        secret_word = secret_word.upper() # everything in all capitals to avoid confusion
        guesses_so_far = ""
        game_over = False
@@ -294,7 +294,7 @@ Problem Set
        # Now interactively ask the user to guess
        while not game_over:
            prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
-           next_guess = raw_input(prompt)
+           next_guess = input(prompt)
            next_guess = next_guess.upper()
            feedback = ""
            if len(next_guess) != 1:
@@ -465,7 +465,7 @@ Problem Set
       def main():
           max_health = 3
           health = max_health
-          secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+          secret_word = input("What's the word to guess? (Don't let the player see it!)")
           secret_word = secret_word.upper() # everything in all capitals to avoid confusion
           guesses_so_far = ""
           game_over = False
@@ -475,7 +475,7 @@ Problem Set
           # Now interactively ask the user to guess
           while not game_over:
               prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
-              next_guess = raw_input(prompt)
+              next_guess = input(prompt)
               next_guess = next_guess.upper()
               feedback = ""
               if len(next_guess) != 1:

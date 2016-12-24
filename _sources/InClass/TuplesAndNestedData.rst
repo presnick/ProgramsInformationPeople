@@ -142,7 +142,7 @@ Tuples
         tot = 0
         list_of_nums = []
         while tot < limit_number:
-            num = int(raw_input("Enter a number:"))
+            num = int(input("Enter a number:"))
             tot = tot + num
             list_of_nums.append(num)
         return limit_number, tot, len(list_of_nums)

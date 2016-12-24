@@ -139,7 +139,7 @@ No matter what the user does, with each command entered, the clock ticks for all
             Choice: """
         feedback = ""
         while True:
-            action = raw_input(feedback + "\n" + base_prompt)
+            action = input(feedback + "\n" + base_prompt)
             feedback = ""
             words = action.split()
             if len(words) > 0:
