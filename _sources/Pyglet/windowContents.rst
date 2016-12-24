@@ -142,7 +142,7 @@ This is probably hard to understand, so here is some code that draws various kin
     class ShapeWindow(pyglet.window.Window):
 
         def __init__(self,*args,**kwargs):
-            super(ShapeWindow,self).__init__(*args,**kwargs)
+            pyglet.window.Window.__init__(self, *args,**kwargs)
 
         def on_draw(self):
             print('The window was drawn!')

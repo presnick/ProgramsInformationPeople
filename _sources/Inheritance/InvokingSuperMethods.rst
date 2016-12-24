@@ -70,9 +70,7 @@ Here's the original Pet class again.
         def reduce_boredom(self):
             self.boredom = max(0, self.boredom - self.boredom_decrement)
 
-And here's a subclass that overrides feed() by invoking the the parent class's feed() method and then also executing an extra line of code. Note the somewhat inelegant way of invoking the parent class' method. We explicitly refer to Pet.feed to get the method/function object. We invoke it with parentheses. However, since we are not invoking the method the normal way, with <obj>.methodname, we have to explicitly pass an instance as the first parameter. In this case, the variable self in Dog.feed() will be bound to an instance of Dog, and so we can just pass self: ``Pet.feed(self)``.
-
-There's another way to invoke a superclass's method that is preferred by python afficionados. Unfortunately, the implementation of python in our ActiveCode windows doesn't support it, so we aren't using it here. In that alternative method, we would call ``super(Dog, self).feed()``.  If you want to try to sort through details of that approach, check out the `official documentation <https://docs.python.org/2/library/functions.html#super>`_.
+And here's a subclass that overrides feed() by invoking the the parent class's feed() method; it then also executes an extra line of code. Note the somewhat inelegant way of invoking the parent class' method. We explicitly refer to Pet.feed to get the method/function object. We invoke it with parentheses. However, since we are not invoking the method the normal way, with <obj>.methodname, we have to explicitly pass an instance as the first parameter. In this case, the variable self in Dog.feed() will be bound to an instance of Dog, and so we can just pass self: ``Pet.feed(self)``.
 
 .. activecode:: feed_me_example
     :nocanvas:
@@ -90,6 +88,10 @@ There's another way to invoke a superclass's method that is preferred by python 
     d1 = Dog("Astro")
 
     d1.feed()
+
+.. note::
+
+    There's a better way to invoke a superclass's method. Unfortunately, the implementation of python in our ActiveCode windows doesn't support it, so we aren't using it here. In that alternative method, we would call ``super().feed()``. This is nice because it's easier to read, and also because it puts the specification of the class that Dog inherits from in just one place, ``class Dog(Pet)``. Elsewhere, you just refer to ``super()`` and python takes care of looking up that the parent (super) class of Dog is Pet.
 
 This technique is very often used with the ``__init__`` method for a subclass. Suppose that some extra instance variables are defined for the subclass. When you invoke the constructor, you pass all the regular parameters for the parent class, plus the extra ones for the subclass. The subclass' ``__init__`` method then stores the extra parameters in instance variables and calls the parent class'   ``__init__`` method to store the common parameters in instance variables and do any other initialization that it normally does.
 
