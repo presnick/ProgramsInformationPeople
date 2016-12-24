@@ -80,3 +80,7 @@ Of course, once we get used to using the map function, it's no longer necessary 
    # or all on one line
    print(map((lambda value: 5*value), [1, 2, 3]))
 
+
+.. note::
+
+    Technically, in a proper python 3 interpreter, the map function produces an "iterator", which is like a list but produces the items as they are needed. Most places in python where you can use a list (e.g., in a for loop) you can use an "iterator" as if it was actually a list. So you probably won't ever notice the difference. If you ever really need a list, you can explicitly turn the output of map into a list: ``list(map(...))``.

@@ -37,7 +37,7 @@ These particular operations, counting and summing, are so commonly performed tha
    print(len(nums))
    print(sum(nums))
  
-There's also a built-in function ``max`` that works analogously, aggreating a list of numbers by keeping the largest one.
+There's also a built-in function ``max`` that works analogously, aggregating a list of numbers by keeping the largest one.
   
 Another common accumulation that combines all the elements is to take a list of strings and concatenate them all together, separating them with some separator such as a comma or, in the example below, --.
 
@@ -59,7 +59,7 @@ Again, this way of combining lists of strings is so common that python has a bui
    print("--".join(strings))
    print(", ".join(strings))
    
-More generally, python provides a function ``reduce`` which takes a list and produces a combined value from all the elements. Check out the `documentation <http://docs.python.org/2.7/library/functions.html#reduce>`_. The first parameter is a function that combines a result-so-far with the next element of a list, producing a new result-so-far. The second parameter is the list to be aggregated. An optional third parameter is the initial value for the accumulator variable. If it's not provided, the first element of the list is used as the intitial value.
+More generally, python provides a function ``reduce`` in the the ``functools`` module, which takes a list and produces a combined value from all the elements. Check out the `documentation <https://docs.python.org/3/library/functools.html#functools.reduce>`_. The first parameter is a function that combines a result-so-far with the next element of a list, producing a new result-so-far. The second parameter is the list to be aggregated. An optional third parameter is the initial value for the accumulator variable. If it's not provided, the first element of the list is used as the intitial value.
 
 All of the specific accumulations that you've seen before can be expressed compactly using the ``reduce`` function, though it may take a little decoding to understand exactly what they do.
 
@@ -115,3 +115,10 @@ Of course, it's easier to understand code using the more specific functions ``le
    nums = [3, 4, 6, -7, 0, 1]
    print(maxabs(nums))
    print(maxabs2(nums))
+
+
+.. note::
+
+    Most programmers find that the more general use of reduce (as opposed to special cases like max, sum, and join) is hard to read and write. Because of that, in python 3 the reduce function is no longer built into python; it has been moved to a module called functools. The code above, which runs correctly in python 2 and in the textbook's python interpreter, would have to be amended to run in a full python 3 interpreter. You would need to add ``import functools`` and where there is a call to reduce it would become ``functools.reduce(...)``.
+
+    We have included reduce in this textbook because map and reduce can be efficiently run in parallel on data that has been split over multiple servers. Thus, they form the basis of the `map-reduce <https://en.wikipedia.org/wiki/MapReduce>`_ programming style. If you ever do programming on a Hadoop cluster, you will use this style of programming.

@@ -29,7 +29,7 @@ You have seen this idea :ref:`previously <for_by_index>` for iterating through t
 
 Can't we do something similar with pairs of lists? It turns out we can.
 
-The zip function takes multiple lists and turns them into a list of tuples, pairing up all the first items as one tuple, all the second items as a tuple, and so on. Then we can iterate through those tuples, and perform some operation on all the first items, all the second items, and so on.
+The zip function takes multiple lists and turns them into a list of tuples (actually, an iterator, but they work like lists for most practical purposes), pairing up all the first items as one tuple, all the second items as a tuple, and so on. Then we can iterate through those tuples, and perform some operation on all the first items, all the second items, and so on.
 
 .. activecode:: zip_2
 
