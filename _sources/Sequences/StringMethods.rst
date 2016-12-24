@@ -51,7 +51,7 @@ split       item                Splits a string into a list based on specified c
 
 You should experiment with these
 methods so that you understand what they do.  Note once again that the methods that return strings do not
-change the original.  You can also consult the `Python documentation for strings <http://docs.python.org/2.7/library/stdtypes.html#string-methods>`_.
+change the original.  You can also consult the `Python documentation for strings <http://docs.python.org/3/library/stdtypes.html#string-methods>`_.
 
 .. activecode:: ch08_methods1
 

@@ -70,8 +70,7 @@ and the interpreter immediately shows the result.  The example below shows the P
 ::
 
    $ python
-   Python 2.7.3 (default, Aug  1 2012, 05:16:07) 
-   [GCC 4.6.3] on linux2
+   Python 3.5.2
    Type "help", "copyright", "credits" or "license" for more information.
    >>> 2 + 3
    5
@@ -89,7 +88,7 @@ help you work out problems.
 Alternatively, you can write an entire program by placing lines of Python instructions
 in a file and then use the interpreter to
 execute the contents of the file as a whole. Such a file is often referred to as **source code**.  For
-example, we used a text editor to create a source code file named ``firstprogram.py`` with
+example, we will use a text editor to create a source code file named ``firstprogram.py`` with
 the following contents:
 
 .. sourcecode:: python
@@ -111,6 +110,10 @@ programs identify a file as containing python code.
 These examples show Python being run from a Unix command line. In other
 development environments, the details of executing programs may differ. Also,
 most programs are more interesting than this one.
+
+.. note::
+
+    In this textbook, we will not make use of the interactive python shell. We have found that it is quite confusing to students because the interactive shell shows the value of expressions, which are not normally revealed during a program's execution unless the print function is invoked. This textbook reinforces the notion that there is a difference between the internal state of a program during execution, and visible outputs, which are caused by invocations of the print function.
 
 .. admonition:: Want to learn more about Python?
 

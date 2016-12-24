@@ -112,7 +112,7 @@ formal languages are strict, the notation is concise, and even the smallest
 change might mean something quite different from what you intended.
 
 .. note::
-   The examples in this online text describe how print works in Python 3. If you install Python 2.7 on your machine, it will work slightly differently. One difference is that print is not called as a function, without parentheses around the values to be printed.
+   The examples in this online text describe how print works in Python 3. If you install Python 2.7 on your machine, it will work slightly differently. One difference is that print is not called as a function, so there are no parentheses around the values to be printed.
 
 **Check your understanding**
 
