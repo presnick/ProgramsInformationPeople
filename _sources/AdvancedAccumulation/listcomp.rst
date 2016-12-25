@@ -27,7 +27,7 @@ The expression is ``value * 2``. The item variable is ``value`` and the sequence
 
 Just as in a regular for loop, the part of the statement ``for value in things`` says to execute some code once for each item in things. Each time that code is executed, ``value`` is bound to one item from ``things``. The code that is executed each time is the expression at the beginning, ``value * 2``, rather than a block of code indented underneath the for statement. The other difference from a regular for loop is that each time the expression is evaluated, the resulting value is appended to a list. That happens automatically, without the programmer explicitly initializing an empty list or appending each item.
 
-The ``if`` clause of a list comprehension can be used to do a filter operation. To perform a pure filter operation, the expression can be simply the variable that is bound to each item. For example, the following list comprehension will keep only the positive numbers from the original list.
+The ``if`` clause of a list comprehension can be used to do a filter operation. To perform a pure filter operation, the expression can be simply the variable that is bound to each item. For example, the following list comprehension will keep only the even numbers from the original list.
 
 .. activecode:: listcomp_8
 

@@ -565,30 +565,12 @@ Discussion Section Resources (F16)
 
 .. toctree::
    :maxdepth: 2
-
-   SectionResources/section4_106_f16.rst
-   SectionResources/section5_106.rst
-
-.. toctree::
-   :maxdepth: 2
    :hidden:
 
    navhelp.rst
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
-
-   ExtraExercises/session4_6925.rst
-   ExtraExercises/session5_7462.rst
-   ExtraExercises/session6_8512.rst
-   ExtraExercises/session8_9347.rst
-   ExtraExercises/session9_6473.rst
-   ExtraExercises/session10_9486.rst
-   ExtraExercises/session11_5379.rst
-
-   Inheritance/ExtraExercises.rst
-
 
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst

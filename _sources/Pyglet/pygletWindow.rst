@@ -45,7 +45,7 @@ This line creates the window that showed up in the screen shot. But, and this is
 
 But first let's pull apart ``pyglet.window.Window()``, to understand how it works to use imported modules and to reinforce how classes work.
     * The python interpreter looks up the word ``pyglet`` and finds that it is bound to a *module* object that was created by the previous ``import pyglet`` line. Think of the module object as being an instance of a class called Module.
-    * ``.pyglet`` says to look up the attribute named pyglet in the module instance. That turns out to also be a module object, a submodule of pyglet.
+    * ``.window`` says to look up the attribute named window in the module instance. That turns out to also be a module object, a submodule of pyglet.
     * ``.Window`` says to look up the Window attribute in that submodule. It's value is the Window class object.
     * ``()`` says to treat the previous object as an executable. If it were a function, it would call the function. Since it's a class, it creates an instance of the class and invokes the constructor on it. It returns the new instance of the Window class. If all that terminology doesn't sound familiar, recheck the textbook section on :ref:`Classes and Constructors <chap_constructor>`.
 

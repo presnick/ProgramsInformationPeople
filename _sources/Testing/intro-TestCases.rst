@@ -32,17 +32,15 @@ The unittest module defines a class called ``TestCase``. Rather than directly cr
 
 The code defining test case methods can make "assertions", by invoking one of the assertion methods that is defined for the TestCase class. For example, we can write self.assertEqual(x, 3). If the current value of the variable x is 3, the assertion is valid and the test will pass. If it's not, then the test will fail.
 
-In order to run the test cases associated with a subclass you have created, you create an instance of that class, and then invoke the method ``main()``. The ``main()`` method is inherited from ``TestCase``: you don't need to define it yourself. It invokes on the instance all of the methods that begin with ``test``. 
+The unittest module uses classes in a way that's a little bit non-intuitive. You will never write code that explicitly invokes your subclass of TestCase to make an instance of it. Instead, that will happen behind the scenes in a function called ``main()`` that is defined in the unittest module. It will search for all subclasses of ``TestCase``. With each subclass, it searches for every method of that class that begins with the prfeix ``test``. With each method, it then creates an instance of the class and calls the method to run the tests.
 
-The unittest framework also offers a ``main()`` function. It will search for all subclasses of ``TestCase``, create one instance of each, and invoke the ``main()`` method on each of them, causing them to run all their tests.
+What you will need to learn is how to import the unittest framework, which you learned about in the modules chapter, and write code to:
 
-What you will need to learn is how to import the unittest framework, which you learned about in the modules chapter, and write code to
-
-1. Make a sublcass of ``unittest.TestCase``.
+1. Make a subclass of ``unittest.TestCase``.
 2. Define methods for test cases.
 3. Use assertion methods inside the methods that you define to test specifics about your code.
 
-For example, the code snippet below, illustrates a set of tests for string methods. It is a simplified version of the code provided in the `python documentation for the unittest module <https://docs.python.org/3/library/unittest.html>`_.
+For example, the code snippet below, illustrates a set of tests for string methods. It is a simplified version of the code provided in the `python documentation for the unittest module <https://docs.python.org/3/library/unittest.html>`_. The full unittest module can do a lot more than we've shown here, including automatically running a setUp method before running each test in a TestCase subclass.
 
 .. sourcecode:: python
 
@@ -62,10 +60,11 @@ For example, the code snippet below, illustrates a set of tests for string metho
             s = 'hello world'
             self.assertEqual(s.split(), ['hello', 'world'])
 
-    # make an instance, and invoke the main method, which invokes the test methods:
-    TestStringMethods().main()
+    # invoke the main() function from the unittest module, which runs all the tests
+    unittest.main(verbosity=2)
 
-In the online textbook, we use a special module that is built on top of the unittest module. It handles making a nice tabular display of the results of the tests, and putting them into HTML form to display on the web page. To use it, we import the module ``unittest.gui`` rather than just unittest, and then we work with the ``TestCaseGui`` class rather than the ``TestCase`` class. In your own code files, you will use the ``TestCase`` class, and get output in your console that does not look quite as neat as the tables you've seen in this textbook.
+
+In the online textbook, we use a special module that is built on top of the unittest module. This one, however, handles making a nice tabular display of the results of the tests, and putting them into HTML form to display on the web page. To use it, we import the module ``unittest.gui`` rather than just unittest, and then we work with the ``TestCaseGui`` class rather than the ``TestCase`` class. TestCaseGui includes a main() method that does pretty much what the unittest.main function does. In your own code files, you will use the ``TestCase`` class, and get output in your console that does not look quite as neat as the tables you've seen in this textbook.
 
 Here's an example with test cases for the `blanked` function that you created
 in the Hangman problem set. Note that the tests will fail until you fill in a correct definition for the blanked function.
@@ -84,11 +83,11 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
 
     class myTests(TestCaseGui):
 
-    def testOne(self):
-        self.assertEqual(blanked('hello', 'elj'), "_ell_", "testing blanking of hello when e,l, and j have been guessed.")
-        self.assertEqual(blanked('hello', ''), '_____', "testing blanking of hello when nothing has been guessed.")
-        self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
-        self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
+        def testOne(self):
+            self.assertEqual(blanked('hello', 'elj'), "_ell_", "testing blanking of hello when e,l, and j have been guessed.")
+            self.assertEqual(blanked('hello', ''), '_____', "testing blanking of hello when nothing has been guessed.")
+            self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
+            self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
 
     myTests().main()
 
