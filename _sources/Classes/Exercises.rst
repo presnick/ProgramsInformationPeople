@@ -70,9 +70,7 @@ Exercises
                     def distanceFromOrigin(self):
                         return ((self.x ** 2) + (self.y ** 2)) ** 0.5
                     
-                    def move(self, dx, dy):
-                        self.x = self.x + dx
-                        self.y = self.y + dy
+                    # Put your new method here
                         
                     def __str__(self):
                         return str(self.x)+","+str(self.y)
