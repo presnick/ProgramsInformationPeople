@@ -55,5 +55,87 @@ It's important to understand your end goal with this pattern of caching response
 
 A cache file made with a program like this will eventually contain a JSON-formatted string which represents data from a big, complicated Python dictionary. This dictionary's keys will be strings, each of which represent a request. For example, a string that represents "a request for data about 50 photos tagged with the word 'mountains'". The value corresponding to that key will be a dictionary or list that comes from making specifically that request (e.g. a request for data about 50 photos on Flickr tagged with the word 'mountains').
 
+The code that you saw earlier makes that happen.
+
+The next thing you need in order to create a process where such a file can be created is a function that will reliably create a string that is that unique identifier of a particular request to a REST API.
+
+This function should accept two required arguments: the base url for a REST API, the dictionary of query parameters and their values that you would pass to ``requests.get``, and a third optional argument: list of any query parameters needed for the request that contain private information you would not want to share, even if you shared your data (e.g. the ``api_key`` for a request to Flickr). The function should return a string that represents a **unique identifier** of a specific API request, which, given the same input to the function, will *always* be the same. 
+
+We've provided such a function you can use, called ``params_unique_combination``:
+
+.. sourcecode::
+	
+	def params_unique_combination(baseurl, params_d, private_keys=["api_key"]):
+	    alphabetized_keys = sorted(params_d.keys())
+	    res = []
+	    for k in alphabetized_keys:
+	        if k not in private_keys:
+	            res.append("{}-{}".format(k, params_d[k]))
+	    return baseurl + "_".join(res)
+
+For example, with this base url: `` ``
+And this parameters dictionary: `` ``
+
+An invocation of ``params_unique_combination`` like so: ``params_unique_combination(baseurl_datamuse, datamuse_params)`` would return a string that looks like this: 
+
+``URL HERE``
+
+When you use some more complicated processes for requesting data from APIs, there are some additional layers of complication, but for what we've seen so far, this will always work if you're careful.
+
+**Check your understanding**
+
+.. mchoice:: restapis_1
+   :answer_a: Because when requests.get encodes URL parameters, the params might be in any order, which would make it hard to compare one URL to another later on, and you could cache the same data multiple times.
+   :answer_b: Because otherwise, it's too much data in the same function, and the program will not run.
+   :answer_c: You don't, actually. This function is just a fancy way of calling requests.get.
+   :answer_d: Because the params_unique_combination function as written here is what saves the cache data file so you have it later!
+   :feedback_a: Comparing the strings "rowling&harry+potter" and "harry+potter&rowling", they are different as far as Python is concerned, but they are the same as far as meaning to a REST API is concerned! That's why we need to manipulate these strings carefully for the cache dictionary.
+   :feedback_b: There's no such thing as too much in a function to run, even though sometimes it's a good idea to break functionality up into multiple functions for clarity and ease.
+   :feedback_c: This function has nothing to do with calling requests.get. It only formulates information into a unique string.
+   :feedback_d: This function does not save a cache file at all. It only formulates information into a unique string.
+   :correct: a
+
+   Why is it important to use a function like the params_unique_combination function in this caching pattern?
 
 
+Finally, you'll need to write the function to request and cache data from an API. Here, we'll write a function requesting data from the datamuse API about words that rhyme with a certain word.
+
+You'll need to:
+
+* As always, set up your function input, base url, and paramaters dictionary in the function body, like you did in functions before.
+* Check if the unique identifier created using the ``params_unique_combination`` function is in the cache dictionary already.
+* Then, if it is, great -- you don't even need to make a request. Grab the data in the cache corresponding to that unique request, and return it (or manipulate it in some way to return what you want)
+
+Otherwise, if the unique identifier is *not* in the cache dictionary yet, that's fine. 
+
+* Make a request to the internet, using the base url and the params dictionary with ``requests.get``, and get a resopnse back. P
+* Pull the text data out of that response, and load it into a Python object.
+* Add a key-value pair to the ``CACHE_DICTION`` cache dictionary, where the key is the unique identifier string representing the request, and the value is that Python object that represents the data you got back from the request.
+* Dump the *whole* ``CACHE_DICTION`` cache dictionary to a string.
+* Open the ``CACHE_FNAME`` file for *writing* and write the string version of the cache dictionary to that file. Then, close the file.
+* Return the data (or manipulate it in some way to return what you want)
+
+Here's an example of such a function:
+
+.. sourcecode::
+
+	def get_from_datamuse_caching(rhymes_with):
+        baseurl = "https://api.datamuse.com/words"
+        params_diction = {}
+        params_diction["rel_rhy"] = rhymes_with
+        unique_ident = params_unique_combination(baseurl,params_diction)
+        if unique_ident in CACHE_DICTION:
+            return CACHE_DICTION[unique_ident]
+        else:
+            resp = requests.get(baseurl, params_diction)
+            CACHE_DICTION[unique_ident] = json.loads(resp.text)
+            dumped_json_cache = json.dumps(CACHE_DICTION)
+            fw = open(CACHE_FNAME,"w")
+            fw.write(dumped_json_cache)
+            fw.close() # Close the open file
+            return CACHE_DICTION[unique_ident]
+
+
+The same way you can write a function to get data from many REST APIs using the function structure you've seen before, you can write functions to get and cache data by following this pattern. 
+
+This gives you a lot of power, and allows you to use and process a lot of data, repeatedly, that you get from REST APIs -- but you don't have to worry about e.g. not having an internet connection, the data changing in some surprising way midway through your work, or running into "rate limits" for the REST API (restrictions for how many times you can make requests to an API on the same internet connection). 
