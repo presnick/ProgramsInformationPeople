@@ -361,6 +361,7 @@ REST APIs
    RESTAPIs/jsonlib.rst
    RESTAPIs/unicode.rst
    RESTAPIs/requestsCookbook.rst
+   RESTAPIs/functionswithrestapis.rst
 
 Exceptions
 ::::::::::
@@ -392,8 +393,9 @@ Using RESTAPIs
 .. toctree::
    :maxdepth: 2
    
-   UsingRESTAPIs/cachingResponses.rst
    UsingRESTAPIs/flickr.rst
+   UsingRESTAPIs/cachingResponses.rst
+   UsingRESTAPIs/cachingPattern.rst
 
 Native Interpreter Gotchas
 ::::::::::::::::::::::::::
