@@ -81,8 +81,10 @@ Below is an example of the caching pattern setup and a function that uses the ca
         params_diction["rel_rhy"] = rhymes_with
         unique_ident = params_unique_combination(baseurl,params_diction)
         if unique_ident in CACHE_DICTION:
+            print("Getting cached data...")
             return CACHE_DICTION[unique_ident]
         else:
+            print("Making a request for new data...")
             # Make the request and cache the new data
             resp = requests.get(baseurl, params_diction)
             CACHE_DICTION[unique_ident] = json.loads(resp.text)
