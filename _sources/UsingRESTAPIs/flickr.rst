@@ -30,6 +30,8 @@ Let's put everything together to make a little retrieval tool for flickr images 
 
 Below is some code that queries the flickr API for images that have a particular tag (I have found that searching for "mountains", "Switzerland", and "cows" usually produces beautiful images that are "safe for work", so the example below does that search.)
 
+## TODO: integrate with the other changes I had made to flickr code and make this specifically about functions, not about caching
+
 .. note:
 
     To run this code, you will need to copy it to a file on your local machine (not an activecode window), and **paste in an api_key that you get from flickr**.
