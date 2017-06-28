@@ -41,6 +41,8 @@ Customize the git bash display
 There are a couple more configuration changes that I highly recommend. You don't absolutely have to do these, but they're very useful. Most importantly, they will allow you to cut
 and paste in the git bash window.
 
+Depending upon what version of Git Bash you download, you may not be able to complete each of these steps in exactly this way. Don't worry! You can google or reach out for help with changing things about your Git Bash installation. Even if you don't complete these steps, you can still run Python programs and use the Unix commands we discuss in this book.
+
 #. Close the git bash window if you haven't already.
 
 #. In the Windows menu, right click on git bash and choose "Run as Administrator". This will allow you to change some of the configurations.
