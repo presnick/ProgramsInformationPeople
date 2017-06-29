@@ -14,18 +14,18 @@ Let's put this all together. You know the process of making requests to REST API
 
 **Check your understanding**
 
-.. mchoice:: functionsapis_1
-   :multiple_answer:
+.. mchoice:: test_question9_20_1
    :answer_a: Because that means you have to write less repeated code if you want to make a request to the same API more than once in the same program.
-   :answer_b: Because writing functions to complete a complex process in your code makes it easier to read and to fix later. 
+   :answer_b: Because writing functions to complete a complex process in your code makes it easier to read and easier to fix later.
    :answer_c: Because a lot of things stay the same among different requests to the same API.
    :answer_d: Because it's the only way to make a request to a REST API for data!
-   :correct: a,b,c
-   :feedback_a: Yes -- see the functions chapter for more info on this!
-   :feedback_b: Yes, definitely.
+   :feedback_a: See the functions chapter for more info on this!
+   :feedback_b: Definitely.
    :feedback_c: Yes, many things are the same between different requests. For example, the base URL is often the same, but perhaps you want a query parameter to have a different value for a new request. A function can help with that.
    :feedback_d: Check out other parts of this chapter -- you can certainly write code to request data from a REST API without writing a function, but if you have to do it multiple times, it may be less neat and may become a pain for you as the programmer!
-
+   :multiple_answer:
+   :correct: a,b,c
+   
    Why would you define a function in order to make a request to a REST API for data?
 
 
@@ -44,9 +44,9 @@ Let's take a look at a function, for example, that accesses data from the `datam
 
 The following commented code is a definition of a function that will return data about words that rhyme with some input word. 
 
-Remember, in order to get to this code, a bunch of debugging and investigation might be necessary! (Check out the chapter on Requests, and the chapter on debugging strategies.)
+Remember, in order to get to this code, a bunch of debugging and investigation might be necessary! 
 
-.. sourcecode::
+.. sourcecode:: python
     
     # import statements for necessary Python modules
     import json
@@ -66,7 +66,7 @@ Consider, when you're writing a function like this: what will need to change fro
 
 Here's a couple example invocations to this ``get_from_datamuse`` function:
 
-.. sourcecode::
+.. sourcecode:: python
 
     datamuse_rain_data = get_from_datamuse("rain")
 

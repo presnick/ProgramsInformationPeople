@@ -48,24 +48,21 @@ In order to make this happen, we'll use a couple pieces of code:
 
 Below is an example of the caching pattern setup and a function that uses the caching pattern to get data from the Datamuse API. In the next section, we'll break down what this code is doing.
 
-.. sourcecode::
-
+.. sourcecode:: python
     
     import requests
     import json
 
-    ## This you need for the whole program. It should go at the top. It sets up the whole caching scenario.
-    CACHE_FNAME = 'cache_file_name.json' # String for your file. We want the JSON file type, bcause that way, we can easily get the information into a Python dictionary!
+    CACHE_FNAME = 'cache_file_name.json' 
     try:
-        cache_file = open(CACHE_FNAME, 'r') # Try to read the data from the file
-        cache_contents = cache_file.read() # If it's there, get it into a string
-        CACHE_DICTION = json.loads(cache_contents) # And then load it into a dictionary
-        cache_file.close() # Close the file: we're all set, we got the data in a dictionary.
+        cache_file = open(CACHE_FNAME, 'r') 
+        cache_contents = cache_file.read()
+        CACHE_DICTION = json.loads(cache_contents) 
+        cache_file.close() 
     except: # But if anything doesn't work,
-        CACHE_DICTION = {} # If there wasn't any data, then the dictionary should be empty. We're gonna rely on this dictionary existing to check if we have any data saved yet. 
+        CACHE_DICTION = {}
 
-
-    # A helper function that accepts 3 parameters and returns a string that represents the request    
+    # A helper function that accepts 3 parameters, 2 required, and returns a string that uniquely represents the request that could be made with this info   
     def params_unique_combination(baseurl, params_d, private_keys=["api_key"]):
         alphabetized_keys = sorted(params_d.keys())
         res = []

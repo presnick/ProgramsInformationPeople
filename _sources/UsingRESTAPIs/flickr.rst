@@ -30,7 +30,7 @@ Let's put everything together to make a little retrieval tool for flickr images 
 
 Below is some code that queries the flickr API for images that have a particular tag (I have found that searching for "mountains" and "rivers" usually produces beautiful images that are "safe for work", so the example below does that search.)
 
-.. sourcecode::
+.. sourcecode:: python
 
     # import statements
     import requests
@@ -44,7 +44,7 @@ Below is some code that queries the flickr API for images that have a particular
     def get_flickr_data(tags_string):
         baseurl = "https://api.flickr.com/services/rest/"
         params_diction = {}
-        params_diction["api_key"] = "" # paste from flickr inside the quotes
+        params_diction["api_key"] = flickr_key # from the above global variable
         params_diction["tags"] = tags_string # Input must follow some rules in order to work properly
         params_diction["tag_mode"] = "all"
         params_diction["method"] = "flickr.photos.search"
