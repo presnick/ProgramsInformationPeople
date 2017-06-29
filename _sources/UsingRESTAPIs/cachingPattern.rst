@@ -33,7 +33,7 @@ During the program, you'll add key-value pairs to it... and each time, you'll du
 
 This code does that:
 
-.. sourcecode::
+.. sourcecode:: python
 
 	CACHE_FNAME = 'cache_file_name.json' 
     try:
@@ -63,7 +63,7 @@ This function should accept two required arguments: the base url for a REST API,
 
 We've provided such a function you can use, called ``params_unique_combination``:
 
-.. sourcecode::
+.. sourcecode:: python
 	
 	def params_unique_combination(baseurl, params_d, private_keys=["api_key"]):
 	    alphabetized_keys = sorted(params_d.keys())
@@ -73,14 +73,16 @@ We've provided such a function you can use, called ``params_unique_combination``
 	            res.append("{}-{}".format(k, params_d[k]))
 	    return baseurl + "_".join(res)
 
-For example, with this base url: `` ``
-And this parameters dictionary: `` ``
+For example, with this base url: ``https://api.datamuse.com/words``
+And this parameters dictionary: ``{"rel_rhy":"rain"}``
 
-An invocation of ``params_unique_combination`` like so: ``params_unique_combination(baseurl_datamuse, datamuse_params)`` would return a string that looks like this: 
+An invocation of ``params_unique_combination`` like so: ``params_unique_combination("https://api.datamuse.com/words",{"rel_rhy":"rain"})`` would return a string that looks like this: 
 
-``URL HERE``
+``https://api.datamuse.com/wordsrel_rhy-rain``
 
-When you use some more complicated processes for requesting data from APIs, there are some additional layers of complication, but for what we've seen so far, this will always work if you're careful.
+That's pretty simple, because there's only one query parameter and its associated value. But this is pretty useful when you have a complicated set of query parameters and values. (Check out the section of the book about searching for tags on Flickr!)
+
+When you use some more complicated processes for requesting data from APIs, there are some additional layers of complication in order to cache data, but for what we've seen so far, this pattern and this helper function ``params_unique_combination`` will always work if you're careful.
 
 **Check your understanding**
 
