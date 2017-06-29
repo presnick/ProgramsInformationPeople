@@ -119,7 +119,7 @@ Otherwise, if the unique identifier is *not* in the cache dictionary yet, that's
 
 Here's an example of such a function:
 
-.. sourcecode::
+.. sourcecode:: python
 
 	def get_from_datamuse_caching(rhymes_with):
         baseurl = "https://api.datamuse.com/words"
