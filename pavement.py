@@ -5,7 +5,7 @@ paver.setuputils.install_distutils_tasks()
 
 
 ######## CHANGE THIS ##########
-project_name = "pip2"
+project_name = "publicpy3"
 ###############################
 
 master_url = 'http://127.0.0.1:8000'
@@ -25,13 +25,13 @@ options(
         project_name = project_name,
         template_args = {
             'course_id':project_name,
-            'login_required':'true',
+            'login_required':'false',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
             'use_services': 'true',
-            'python3': 'false',
-            'basecourse':'pip2'
+            'python3': 'true',
+            'basecourse':'publicpy3'
         }
     )
 )
