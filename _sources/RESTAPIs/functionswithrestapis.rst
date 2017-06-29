@@ -23,7 +23,7 @@ Let's put this all together. You know the process of making requests to REST API
    :feedback_b: Definitely.
    :feedback_c: Yes, many things are the same between different requests. For example, the base URL is often the same, but perhaps you want a query parameter to have a different value for a new request. A function can help with that.
    :feedback_d: Check out other parts of this chapter -- you can certainly write code to request data from a REST API without writing a function, but if you have to do it multiple times, it may be less neat and may become a pain for you as the programmer!
-   :multiple_answer:
+   :multiple_answers:
    :correct: a,b,c
    
    Why would you define a function in order to make a request to a REST API for data?
