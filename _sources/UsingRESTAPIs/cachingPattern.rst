@@ -35,7 +35,7 @@ This code does that:
 
 .. sourcecode:: python
 
-	CACHE_FNAME = 'cache_file_name.json' 
+    CACHE_FNAME = 'cache_file_name.json' 
     try:
         cache_file = open(CACHE_FNAME, 'r')
         cache_contents = cache_file.read()
@@ -121,7 +121,7 @@ Here's an example of such a function:
 
 .. sourcecode:: python
 
-	def get_from_datamuse_caching(rhymes_with):
+    def get_from_datamuse_caching(rhymes_with):
         baseurl = "https://api.datamuse.com/words"
         params_diction = {}
         params_diction["rel_rhy"] = rhymes_with
