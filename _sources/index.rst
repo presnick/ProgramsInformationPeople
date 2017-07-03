@@ -360,7 +360,9 @@ REST APIs
    RESTAPIs/DebugURLs.rst
    RESTAPIs/jsonlib.rst
    RESTAPIs/unicode.rst
+   RESTAPIs/functionswithrestapis.rst
    RESTAPIs/requestsCookbook.rst
+   
 
 Exceptions
 ::::::::::
@@ -371,6 +373,17 @@ Exceptions
    Exceptions/intro-exceptions.rst
    Exceptions/using-exceptions.rst
    Exceptions/ExtraExercises.rst
+   
+
+Using RESTAPIs
+::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+   
+   UsingRESTAPIs/flickr.rst
+   UsingRESTAPIs/cachingResponses.rst
+   UsingRESTAPIs/cachingPattern.rst
 
 
 String Formatting
@@ -385,15 +398,6 @@ String Formatting
    StringFormatting/Exercises.rst
    StringFormatting/ExtraExercises.rst
 
-
-Using RESTAPIs
-::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-   
-   UsingRESTAPIs/cachingResponses.rst
-   UsingRESTAPIs/flickr.rst
 
 Native Interpreter Gotchas
 ::::::::::::::::::::::::::
