@@ -15,6 +15,8 @@ Consider another service, the image sharing site flickr. People interact with th
 
 Here we will explore some aspects of one endpoint that flickr provides for searching for photos matching certain criteria. Check out the `full documentation <https://www.flickr.com/services/api/flickr.photos.search.html>`_ for details.
 
+This API is more complex than the APIs you examined in previous subchapters. Though it is not as complicated as others you may see, the Flickr API is a good introduction to some of the trickeries of REST APIs you'll encounter in the wild, and provides good practice for composing a function that deals with a complex REST API. Plus, photo data is pretty interesting to examine.
+
 The structure of a URL for a photo search on flickr is:
 
 * base URL is ``https://api.flickr.com/services/rest/``
