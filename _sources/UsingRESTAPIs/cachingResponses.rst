@@ -95,3 +95,51 @@ Below is an example of the caching pattern setup and a function that uses the ca
 In the next section, we'll break this code down, step by step.
 
 As an extra challenge, it's also worth noting that even supposing the exact same caching structure and setup, there are a number of different versions of that ``get_from_datamuse_caching`` function you could write. Can you think of some small ways to change the structure of that code so that the input and return value, and the data saved in the cache file, would all remain exactly the same?
+
+Here's an example of a differently structured function, called ``get_from_datamuse_caching2``, that does *exactly* the same thing. It's almost the same, but notice how there are different variable assignments, but there is only one return statement, rather than two.
+
+This is important to keep in mind because it is the overall *pattern* of gathering data and caching it that is important in this chapter, and it is important to understand that different programmers may write code for exactly the same functionality in different ways. (You'll see examples of that elsewhere in this book, too.)
+
+.. sourcecode:: python
+    
+    import requests
+    import json
+
+    CACHE_FNAME = 'cache_file_name.json' 
+    try:
+        cache_file = open(CACHE_FNAME, 'r') 
+        cache_contents = cache_file.read()
+        CACHE_DICTION = json.loads(cache_contents) 
+        cache_file.close() 
+    except: # But if anything doesn't work,
+        CACHE_DICTION = {}
+
+    # A helper function that accepts 3 parameters, 2 required, and returns a string that uniquely represents the request that could be made with this info   
+    def params_unique_combination(baseurl, params_d, private_keys=["api_key"]):
+        alphabetized_keys = sorted(params_d.keys())
+        res = []
+        for k in alphabetized_keys:
+            if k not in private_keys:
+                res.append("{}-{}".format(k, params_d[k]))
+        return baseurl + "_".join(res)
+
+    # Function to get data from the datamuse API, using this caching pattern
+    def get_from_datamuse_caching2(rhymes_with):
+        baseurl = "https://api.datamuse.com/words"
+        params_diction = {}
+        params_diction["rel_rhy"] = rhymes_with
+        unique_ident = params_unique_combination(baseurl,params_diction)
+        if unique_ident in CACHE_DICTION:
+            print("Getting cached data...")
+            result_data = CACHE_DICTION[unique_ident]
+        else:
+            print("Making a request for new data...")
+            # Make the request and cache the new data
+            resp = requests.get(baseurl, params_diction)
+            result_data = json.loads(resp.text)
+            CACHE_DICTION[unique_ident] = result_data
+            dumped_json_cache = json.dumps(CACHE_DICTION)
+            fw = open(CACHE_FNAME,"w")
+            fw.write(dumped_json_cache)
+            fw.close() # Close the open file
+        return result_data
