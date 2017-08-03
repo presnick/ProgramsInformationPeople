@@ -1,4 +1,4 @@
-..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
+..  Copyright (C)  Lauren Murphy, Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
     Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. Create a class called Bike that contains two instance variables, color and price. Assign to the variable testOne, an instance of Bike whose color is blue and price is 89.99. Assign to the variable testTwo, an instance of Bike whose color is purple and price is 25. 
+1. Define a class called Bike that accepts a string and a float as input, and assigns those inputs respectively to two instance variables, ``color`` and ``price``. Assign to the variable ``testOne`` an instance of ``Bike`` whose color is **blue** and whose price is **89.99**. Assign to the variable ``testTwo`` an instance of Bike whose color is **purple** and whose price is **25.0**. 
 
 .. activecode:: ee_ch13_01
    :tags: Classes/ImprovingourConstructor.rst
@@ -28,11 +28,11 @@ Extra Exercises
 
       def testTwo(self):
          self.assertEqual(testTwo.color, "purple", "Testing that testTwo has the correct color assigned.")
-         self.assertEqual(testTwo.price, 25, "Testing that testTwo has the correct color assigned.")
+         self.assertEqual(testTwo.price, 25.0, "Testing that testTwo has the correct color assigned.")
 
    myTests().main()
 
-1.1 Create a class called ``inst_var`` that defines two instance variables: ``num1`` and ``num2``. Then, create an instance where num1 is 6 and num2 is 10 and save this instance to the variable ``t``. 
+1.1 Create a class called ``NumberSet`` that accepts 2 integers as input, and defines two instance variables: ``num1`` and ``num2``, which hold each of the input integers. Then, create an instance of  ``NumberSet`` where its num1 is 6 and its num2 is 10. Save this instance to a variable ``t``. 
 
 .. activecode:: ee_ch13_011
    :tags:Classes/ImprovingourConstructor.rst
@@ -51,48 +51,10 @@ Extra Exercises
 
    myTests().main()
 
-1.2 Create a class called House that has three instance variables: color, rooms, and price. To the variable name ``houseOne``, assign an instance of House whose color is white, has 3 rooms, and costs 50000. To the variable name ``houseTwo``, assign an instance of House whose color is red, has 9 rooms, and costs 1000000. 
 
-.. activecode:: ee_ch13_012
-   :tags: Classes/ImprovingourConstructor.rst
+2. Create a class called ``AppleBasket`` whose constructor accepts two inputs: a string reprsenting a color, and a number representing a quantity of apples. The constructor should initialize 2 instance variables: ``apple_color`` and ``apple_quantity``.  Write a class method called ``increase`` that increases the quantity by 1 each time it is invoked. You should also write a string method for this class that returns a string of the format: **A basket of QUANTITY# COLOR apples.** e.g. *A basket of 4 red apples.* or *A basket of 50 blue apples.* (Writing some test code that creates instances and assigns values to variables may help you solve this problem!)
 
 
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(houseOne.color, "white", "Testing that houseOne has the correct color assigned.")
-         self.assertEqual(houseOne.rooms, 3, "Testing that houseOne was assigned the correct number of rooms.")
-         self.assertEqual(houseOne.price, 50000, "Testing that houseOne was assigned the correct price.")
-
-      def testTwo(self):
-         self.assertEqual(houseTwo.color, "red", "Testing that houseTwo has the correct color assigned.")
-         self.assertEqual(houseTwo.rooms, 9, "Testing that houseTwo was assigned the correct number of rooms.")
-         self.assertEqual(houseTwo.price, 1000000, "Testing that houseTwo was assigned the correct price.")
-
-   myTests().main()
-
-2. Create a class called ``math_op`` with one instance variable and a method. The instance variable should be ``numb``. The method should be called ``squared`` and return the instance variable squared. Create an instance of this class with an initial number of 8. Assign to the variable ``output`` the value of numb without hardcoding. Call the method so that the value is 64. 
-
-.. activecode:: ee_ch13_02
-   :tags: Classes/AddingOtherMethodstoourClass.rst, Classes/ImprovingourConstructor.rst
-
-      
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(output, 64, "Testing that output has correct value assigned.")
-
-   myTests().main()
-
-2.1 Create a class called Apple that contains one instance variable, quantity. Write a class method called ``increase`` that increases the quantity by 1 each time it is run. Assign to the variable tester, an instance of Apple that has an initial quantity of 4. Assign to the variable ``initial_quantity`` the value of tester's quantity without hardcoding. Call the method four times. 
 
 .. activecode:: ee_ch13_021
    :tags: Classes/ImprovingourConstructor.rst, Classes/AddingOtherMethodstoourClass.rst
@@ -104,14 +66,20 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(tester.quantity, 8, "Testing that testOne has the correct value assigned.")
+         tester = AppleBasket("red",4)
+         self.assertEqual(tester.apple_quantity, 4, "Testing the initialization of the apple_quantity inst var.")
       def testTwo(self):   
-         self.assertEqual(initial_quantity, 4, "Testing that initial_quantity has the correct value assigned.")
+         tester = AppleBasket("red",4)
+         tester.increase()
+         self.assertEqual(tester.apple_quantity, 5, "Testing the increase method")
+      def testThree(self):
+         tester = AppleBasket("green",17)
+         self.assertEqual(tester.__str__(),"A basket of 17 green apples.")
 
 
    myTests().main()
 
-2.2 Create a class called Animal that has two instance variables: arms and legs. Create a class method called limbs that, when called, returns the total number of limbs the animal has. To the variable name ``spider``, assign an instance of Animal that has 4 arms and 4 legs. Call the limbs method on ``spider`` and save the result to the variable name ``spidlimbs``. 
+2.1 Create a class called Animal that accepts two numbers as inputs and assigns them respevtively to two instance variables: ``arms`` and ``legs``. Create a class method called ``limbs`` that, when called, returns the total number of limbs the animal has. To the variable name ``spider``, assign an instance of ``Animal`` that has 4 arms and 4 legs. Call the limbs method on the ``spider`` instance and save the result to the variable name ``spidlimbs``. 
 
 .. activecode:: ee_ch13_022
    :tags: Classes/ImprovingourConstructor.rst, Classes/AddingOtherMethodstoourClass.rs
@@ -131,7 +99,7 @@ Extra Exercises
    myTests().main()    
 
 
-3. Create a class called ``bank`` that contains two instance variables, ``name`` and ``amt``. Add the instance method that allows you to customize the message returned when you print the instance so that it says "Your account, [name goes here], has [start_amt goes here] dollars." Create an instance of this class with "Bob" as the name and 100 as the amount. Save this to the variable ``t1``.
+3. Define a class called ``Bank`` that accepts the name you want associated with your bank account in a string, and a float that represents the amount of money in the account. The constructor should initialize two instance variables from those inputs: ``name`` and ``amt``. Add a string method so that when you print an instance of ``Bank``, you see "Your account, [name goes here], has [start_amt goes here] dollars." Create an instance of this class with ``"Bob"`` as the name and ``100.0`` as the amount. Save this to the variable ``t1``.
 
 .. activecode:: ee_ch13_03
    :tags: Classes/AddingOtherMethodstoourClass.rst, Classes/ImprovingourConstructor.rst, Classes/ConvertinganObjecttoaString.rst
@@ -145,30 +113,12 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(t1.__str__(), "Your account, Bob, has 100 dollars.", "Testing that t1 is assigned to correct value")
+         self.assertEqual(t1.__str__(), "Your account, Bob, has 100.0 dollars.", "Testing that t1 is assigned to correct value")
 
    myTests().main()
 
-3.1 Create a class called Sports that contains 2 instance variables, name and number_of_players. Add the instance method that allows you to customize the message returned when you print the instance so that it says "The name of this sport is [name goes here] and [number_of_players goes here] people create one team!" Create two instances of the class, one assigned to the variable football_info and one called quidditch_info. The first uses football as the name and has 11 players, the second uses quidditch as the name and has 7 players.
 
-.. activecode:: ee_ch13_031
-   :tags: Classes/ImprovingourConstructor.rst, Classes/AddingOtherMethodstoourClass.rst, Classes/ConvertinganObjecttoaString.rst
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(football_info.__str__(), "The name of the sport is football and 11 people create one team!", "Testing that football_info has the correct value assigned.")
-      def testTwo(self):   
-         self.assertEqual(quidditch_info.__str__(), 'The name of the sport is quidditch and 7 people create one team!', "Testing that quidditch_info has the correct value assigned.")
-
-
-   myTests().main()
-
-3.2 Create a class called Cereal that has three instance variables: name, brand, and fiber. When an instance of Cereal is printed, the user should see the following: "[name] cereal is produced by [brand] and has [fiber] grams of fiber in every serving!" To the variable name ``c1``, assign an instance of Cereal whose name is Corn Flakes, brand is Kellogg's, and fiber is 2. To the variable name ``c2``, assign an instance of Cereal whose name is Honey Nut Cheerios, brand is General Mills, and fiber is 3. Practice printing both! 
+3.1. Create a class called Cereal that accepts three inputs: 2 strings and 1 integer, and assigns them to 3 instance variables in the constructor: ``name``, ``brand``, and ``fiber``. When an instance of ``Cereal`` is printed, the user should see the following: "[name] cereal is produced by [brand] and has [fiber integer] grams of fiber in every serving!" To the variable name ``c1``, assign an instance of ``Cereal`` whose name is ``"Corn Flakes"``, brand is ``"Kellogg's"``, and fiber is ``2``. To the variable name ``c2``, assign an instance of ``Cereal`` whose name is ``"Honey Nut Cheerios"``, brand is ``"General Mills"``, and fiber is ``3``. Practice printing both! 
 
 .. activecode:: ee_ch13_032
    :tags: Classes/ImprovingourConstructor.rst, Classes/AddingOtherMethodstoourClass.rst, Classes/ConvertinganObjecttoaString.rst
