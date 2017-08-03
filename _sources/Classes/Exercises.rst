@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Exercises
----------
+Extra Exercises
+---------------
 
 #. Add a method ``reflect_x`` to Point which returns a new Point, one which is the 
    reflection of the point about the x-axis.  For example, 
