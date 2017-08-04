@@ -1,4 +1,4 @@
-..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
+..  Copyright (C) Lauren Murphy, Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
     Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. The module "keyword" determines if a string is a keyword. keyword.iskeyword(s) where s is the string will return either True or False depending on whether or not the string is a Python keyword. Import this module and test to see if the words in list ``test`` are keywords. Save the answers in the list, ``keyword_test``.
+1. The module "keyword" determines if a string is a keyword. e.g. ``keyword.iskeyword(s)`` where ``s`` is a string will return either ``True`` or ``False``, depending on whether or not the string is a Python keyword. Import the **keyword** module and test to see whether each of the words in list ``test`` are keywords. Save the respective answers in a list, ``keyword_test``.
 
 .. activecode:: ee_mod_01
    :tags:Inheritance/inheritVarsAndMethods.rst
@@ -30,7 +30,7 @@ Extra Exercises
    myTests().main()
 
 
-1.1 Import the module called ``keyword`` and use the method called iskeyword that takes one string as input and returns True or False in order to check if certain words are keywords in python. Follow instructions in the comments for specific assignment statements.
+1.1 Import the module called ``keyword`` and use the method called ``iskeyword``. Follow instructions in the comments for specific assignment statements.
 
 .. activecode:: ee_mod_011
    :tags: PythonModules/intro-ModulesandGettingHelp.rst
@@ -78,7 +78,7 @@ Extra Exercises
 
    myTests().main()
 
-2. The module "operator" exports functions that correspond to operators of Python. operator.lt(a,b) is one example that is equivalent to a < b. Another example is operator.neg(a) which returns -a. Import this module and use its functions to find the negative values of ``x`` and ``y`` and compare the values to see if the negative value of y is greater than the negative value of x. Save the response to the variable ``output``.
+2. The module "operator" exports functions that correspond to operators of Python. ``operator.lt(a,b)`` is one example that is equivalent to ``a < b``. Another example is ``operator.neg(a)`` which returns ``-a``. Import this module and use its functions to find the negatives of the values of ``x`` and ``y`` and use the another function in the module to compare the values to see if the negative value of y is greater than the negative value of x. Save the response (the boolean value ``True`` or ``False``) to the variable ``output``.
 
 .. activecode:: ee_mod_02
    :tags:Inheritance/inheritVarsAndMethods.rst,Inheritance/OverrideMethods.rst
@@ -97,7 +97,7 @@ Extra Exercises
   
    myTests().main()
 
-2.1 Provided are two variables, ``a`` and ``c``. Import the module ``operator`` and assign to the variable ``adding``, the result of using the method .add, which takes two numbers as its input. Assign to the variable ``multi`` the result of using the method .mul, which takes two numbers as its input. In both cases, use a and c as their input.
+2.1 Provided are two variables, ``a`` and ``c``. Import the module ``operator`` and assign to the variable ``adding`` the result of using the method ``.add``, which takes two numbers as its inputs and returns the two numbers added together. Assign to the variable ``multi`` the result of using the method .mul, which takes two numbers as its input. In both cases, use the variable names ``a`` and ``c`` as the0 inputs.
 
 .. activecode:: ee_mod_021
    :tags: PythonModules/intro-ModulesandGettingHelp.rst
@@ -194,7 +194,7 @@ Extra Exercises
 
    myTests().main()
 
-4. The module "string" provides several constants, such as ascii_letters which returns all lowercase and uppercase letters, and digits, which returns the numbers 0-9. Using these constants and the string module, go through the string, ``str1``, and determine whether each element is a number or a letter. If it is a number, the string "number" should return. If it is a letter, the string "letter" should return. Save your responses in the list, ``resp``.
+4. The module "string" provides several constants, such as ``ascii_letters``, which returns all lowercase and uppercase letters, and digits, which returns the numbers 0-9. Using these constants and the string module, go through the string, ``str1``, and determine whether each element is a number or a letter. If it is a number, the string "number" should return. If it is a letter, the string "letter" should return. Save your responses in the list, ``resp``.
 
 .. activecode:: ee_mod_04
    :tags:Inheritance/inheritVarsAndMethods.rst,Inheritance/InvokingSuperMethods.rst,Inheritance/OverrideMethods.rst
