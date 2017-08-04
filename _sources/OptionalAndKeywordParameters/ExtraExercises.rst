@@ -10,7 +10,7 @@
 Extra Exercises
 ===============
 
-1. Write a function called ``str_mult`` that takes in a required string parameter and an optional integer parameter. The default value for the integer parameter should be 3. The function will return the string multiplied by the integer parameter. 
+1. Write a function called ``str_mult`` that takes in a required string parameter and an optional integer parameter. The default value for the integer parameter should be 3. The function should return the string multiplied by the integer parameter. 
 
 .. activecode:: ee_Opt_Params_01
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst
@@ -125,7 +125,7 @@ Extra Exercises
 
    myTests().main()
 
-3. Write a function, ``test``, that takes in three parameters: a required integer, an optional boolean whose default value is True, and an optional dictionary whose default value is {2:3, 4:5, 6:8}. If the boolean parameter is True, the function should test to see if the integer is a key in the dictionary. The value of that key should then be returned. If the boolean parameter is False, return the boolean value "False". If the boolean parameter is False, the function should return "None".
+3. Write a function, ``test``, that takes in three parameters: a required integer, an optional boolean whose default value is ``True``, and an optional dictionary whose default value is ``{2:3, 4:5, 6:8}``. If the boolean parameter is True, the function should test to see if the integer is a key in the dictionary. The value of that key should then be returned. If the boolean parameter is False, return the boolean value "False". If the boolean parameter is False, the function should return "None".
 
 .. activecode:: ee_Opt_Params_03
    :tags: OptionalAndKeywordParameters/OptionalParameters.rst
