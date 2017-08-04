@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Exercises
----------
+Extra Exercises
+---------------
 
 You're going to write a function that takes a string as a parameter and returns a list of the five
 most frequent characters in the string. Eventually, you will be able to do this sort of problem without a lot of coaching. But we're going to step you through it as a series of exercises.

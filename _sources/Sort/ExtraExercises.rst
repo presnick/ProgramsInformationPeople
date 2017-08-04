@@ -1,4 +1,4 @@
-..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
+..  Copyright (C)  Lauren Murphy, Susan Doong, Haley Yaremych, Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
     Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
@@ -7,10 +7,10 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Extra Exercises
-===============
+Exercises
+=========
 
-1. Sort the following string alphabetically, from z to a and assign it to the variable ``sorted_letters``.
+1. Sort the following string alphabetically, **from z to a**, and assign it to the variable ``sorted_letters``.
 
 .. activecode:: ee_sort_01
    :tags: Sort/Optionalkeyparameter.rst, Sort/Optionalreverseparameter.rst, Sort/intro-SortingwithSortandSorted.rst
@@ -28,7 +28,7 @@ Extra Exercises
 
    myTests().main()
 
-1.1 Sort the list, ``lst``, from largest to smallest. Save this new list to the variable ``lst_sorted``.
+1.1 Sort the list, ``lst`` from largest to smallest. Save this new list to the variable ``lst_sorted``.
 
 .. activecode:: ee_sort_011
    :tags: Sort/intro-SortingwithSortandSorted.rst, Sort/Optionalkeyparameter.rst, Sort/Optionalreverseparameter.rst, 
@@ -46,7 +46,7 @@ Extra Exercises
 
    myTests().main()
 
-1.2 Sort the list below, ``animals``, into alphabetical order. Save the new list as ``animals_sorted``. 
+1.2 Sort the list below, ``animals``, into alphabetical order, a-z. Save the new list as ``animals_sorted``. 
 
 .. activecode:: ee_sort_012
    :tags: Sort/intro-SortingwithSortandSorted.rst
