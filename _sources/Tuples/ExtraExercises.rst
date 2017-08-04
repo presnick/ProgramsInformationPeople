@@ -26,7 +26,7 @@ Extra Exercises
 
    myTests().main()
 
-1.1 Create a tuple called ``practice`` that has four elements, 'y', 'h', 'z', and 'x'.
+1.1 Create a tuple called ``practice`` that has four elements: 'y', 'h', 'z', and 'x'.
 
 .. activecode:: ee_ch09_011
    :tags: Tuples/Tuples.rst
