@@ -566,8 +566,7 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-Discussion Section Resources (F16)
-::::::::::::::::::::::::::::::::::
+
 
 .. toctree::
    :maxdepth: 2
@@ -577,6 +576,7 @@ Discussion Section Resources (F16)
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
