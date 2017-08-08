@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Exercises
----------
+Extra Exercises
+---------------
 
 
 #. Predict what will print out from the following code.

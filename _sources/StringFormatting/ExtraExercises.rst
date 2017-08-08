@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Exercises
----------
+Extra Exercises
+---------------
   
 1. Fill in the variable t so that it it prints out: ``You have $4.99 in your pocket``
 

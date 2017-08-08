@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Extra Exercises
-===============
+Exercises
+=========
 
 1. Using string interpolation, fill out the parameters so that "I go to UM and I am in SI 306" is assigned to ``str1``.
 

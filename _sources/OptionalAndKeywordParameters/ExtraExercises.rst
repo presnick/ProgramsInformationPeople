@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Exercises
----------
+Extra Exercises
+---------------
 
 1. Fill in the parameter list for g so that the invocations of g yield the return values specified
 

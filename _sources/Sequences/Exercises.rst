@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Extra Exercises
-===============
+Exercises
+=========
 
 1. Assign the value of the 34th element of ``lst`` to the variable ``output``.
 

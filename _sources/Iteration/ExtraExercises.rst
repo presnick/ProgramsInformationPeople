@@ -1,5 +1,5 @@
-Exercises
-=========
+Extra Exercises
+===============
 
 
 1. (You'll work on on this one in class. Feel free to start thinking about it.) In Robert McCloskey's
