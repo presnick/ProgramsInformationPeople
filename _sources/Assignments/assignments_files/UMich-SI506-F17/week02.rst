@@ -12,8 +12,8 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Activities through 1/22
-=======================
+Activities: Week 2
+==================
 
 You have the following graded activities:
 
