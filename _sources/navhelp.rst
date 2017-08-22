@@ -94,7 +94,7 @@ correct number as well as the feedback for each.
 
 
 .. mchoice:: question1_2
-
+   :multiple_answers:
    :answer_a: red
    :answer_b: yellow
    :answer_c: black
