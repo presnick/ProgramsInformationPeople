@@ -10,7 +10,7 @@ project_name = "pip2"
 
 # master_url = 'http://127.0.0.1:8000'
 # master_url = 'https://www.programsinformationpeople.org'
-master_url = '/'
+master_url = 'https://localhost:5002'
 master_app = 'runestone'
 serving_dir = "./build/" + project_name
 dest = "../../static"
