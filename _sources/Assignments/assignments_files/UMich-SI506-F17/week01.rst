@@ -30,6 +30,7 @@ Activities: Week 1
   * Read :ref:`General Intro <the_way_of_the_program>`, :ref:`Simple Python Data<simple_python_data>`, and :ref:`Objects and Turtle Graphics<turtles_chap>`.
   * When reading, run the activecodes and answer the multiple choice questions. There may also be exercises at the end of each chapter. These are optional (though trying them is recommended, trying all of those is not required, and getting them correct is also *not required*).
   * We are starting out with a *lot* of material. That is because we are going to speed through a lot of the beginning foundational material, and slow down in a couple weeks -- this stuff is the basis of everything else we'll do, so it is important to absorb and review as we go -- you can always come back to this! When you have questions about this stuff, you should ask them, come to office hours, post on Piazza!
+  * Places like this list are where you'll generally find your readings and any links to stuff needed for the week in class.
   
   * Read :ref:`Debugging tips<debugging_chap>` and :ref:`Sequences<sequences_chap>`.
 
