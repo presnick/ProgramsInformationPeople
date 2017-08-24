@@ -8,8 +8,7 @@ paver.setuputils.install_distutils_tasks()
 project_name = "publicpy3"
 ###############################
 
-master_url = 'http://127.0.0.1:8000'
-master_url = 'https://www.programsinformationpeople.org'
+master_url = 'https://onramp.programsinformationpeople.org'
 master_app = 'runestone'
 serving_dir = "./build/" + project_name
 dest = "../../static"
