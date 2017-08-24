@@ -214,7 +214,6 @@
   :deadline: 2016-09-12 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. assignment::
   :name: lec3_attendance
@@ -223,7 +222,6 @@
   :deadline: 2016-09-14 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. assignment::
   :name: lec4_attendance
@@ -232,7 +230,6 @@
   :deadline: 2016-09-22 21:40
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. assignment::
   :name: lecture5_attendance
@@ -241,7 +238,6 @@
   :deadline: 2016-09-22 21:40
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. assignment::
   :name: lec6_attendance
@@ -250,7 +246,6 @@
   :deadline: 2016-09-26 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. assignment::
   :name: lec7_attendance
@@ -259,7 +254,6 @@
   :deadline: 2016-09-28 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. assignment::
   :name: lec8_attendance
@@ -268,7 +262,6 @@
   :deadline: 2016-10-03 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. everyone gets credit on this, though
 .. assignment::
@@ -278,7 +271,6 @@
   :deadline: 2016-10-05 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. assignment::
   :name: lecA10_attendance
@@ -287,7 +279,6 @@
   :deadline: 2016-10-10 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. everyone gets credit on this, though
 .. assignment::
@@ -297,7 +288,6 @@
   :deadline: 2016-10-12 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 
 .. lecture waiver || TODO remove or alter grading schema?
@@ -309,7 +299,6 @@
   :assignment_type: lecture_waiver
   :points: 50
   :autograde: unittest
-  :threshold: 50
 
 .. assignment::
   :name: lecture5_waiver
@@ -318,7 +307,6 @@
   :deadline: 2016-09-21 18:40
   :points: 50
   :autograde: unittest
-  :threshold: 50
 
 .. assignment::
   :name: lecture6_waiver
@@ -327,7 +315,6 @@
   :assignment_type: lecture_waiver
   :points: 50
   :autograde: unittest
-  :threshold: 50
 
 .. assignment::
   :name: lecture7_waiver
@@ -336,7 +323,6 @@
   :assignment_type: lecture_waiver
   :points: 50
   :autograde: unittest
-  :threshold: 50
 
 .. assignment::
   :name: lecture8_waiver
@@ -345,7 +331,6 @@
   :assignment_type: lecture_waiver
   :points: 50
   :autograde: unittest
-  :threshold: 50
 
 .. assignment::
   :name: lecture9_waiver
@@ -354,7 +339,6 @@
   :assignment_type: lecture_waiver
   :points: 50
   :autograde: unittest
-  :threshold: 50
 
 .. assignment::
   :name: lectureA10_waiver
@@ -363,7 +347,6 @@
   :questions: ee_ch07_052 10, ee_ch07_06 10, ee_ch07_042 10, ee_ch7_062 20 
   :points: 50
   :autograde: unittest
-  :threshold: 50
 
 .. assignment::
   :name: lectureA11_waiver
@@ -372,5 +355,4 @@
   :questions: lec11_1 50 
   :points: 50
   :autograde: unittest
-  :threshold: 50
 
