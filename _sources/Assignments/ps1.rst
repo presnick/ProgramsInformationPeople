@@ -29,7 +29,6 @@
   :deadline: 2016-09-12 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 
 .. assignment::
@@ -39,7 +38,6 @@
   :deadline: 2016-09-14 21:10
   :points: 50
   :autograde: visited
-  :threshold: 1
 
 .. assignments for reading responses
 .. assignment::
