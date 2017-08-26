@@ -31,7 +31,7 @@ options(
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'true',
-            'basecourse':'publicpy3'
+            'basecourse':'pip2'
         }
     )
 )
