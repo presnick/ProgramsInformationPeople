@@ -15,13 +15,11 @@
 Table of Contents
 :::::::::::::::::
 
-Assignments
-:::::::::::
+.. raw:: html
 
-.. toctree::
-   :maxdepth: 1
-
-   assignments.rst
+   <ul>
+   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
+   </ul>
 
 General Introduction
 ::::::::::::::::::::
