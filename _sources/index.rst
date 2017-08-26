@@ -443,6 +443,7 @@ Inheritance
    Inheritance/InvokingSuperMethods.rst
    Inheritance/TamagotchiRevisited.rst
    Inheritance/Exercises.rst
+   Inheritance/ExtraExercises.rst
 
 
 More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
@@ -565,8 +566,7 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-Discussion Section Resources (F16)
-::::::::::::::::::::::::::::::::::
+
 
 .. toctree::
    :maxdepth: 2
@@ -576,12 +576,24 @@ Discussion Section Resources (F16)
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
    InClass/OptionalKeywordParams.rst
    InClass/TuplesAndNestedData.rst
+   SectionResources/section4_106_f16.rst 
+   SectionResources/section5_106.rst
+   ExtraExercises/session10_9486.rst   
+   ExtraExercises/session3_5698.rst 
+   ExtraExercises/session6_8512.rst
+   ExtraExercises/session11_5379.rst
+   ExtraExercises/session4_6925.rst 
+   ExtraExercises/session8_9347.rst
+   ExtraExercises/session2_3921.rst 
+   ExtraExercises/session5_7462.rst 
+   ExtraExercises/session9_6473.rst
 
 
 Indices and tables

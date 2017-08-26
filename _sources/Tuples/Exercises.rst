@@ -24,7 +24,7 @@ Exercises
     print("area is " + str(area))
     print("circumference is " + str(circ))
 
-#. Use a for loop to print out the last name, year of birth, and city for each of the people
+#. Use a for loop to print out the last name, year of birth, and city for each of the people. (There are multiple ways you could do this. Try out some code and see what happens!)
 
 .. actex:: ex_tuples_2
 
