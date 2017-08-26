@@ -11,8 +11,10 @@ Statements and Expressions
 --------------------------
 
 A **statement** is an instruction that the Python interpreter can execute. We
-have only seen the assignment statement and the print statement so far .  Some other kinds of statements
-that we'll see shortly are ``while`` statements, ``for`` statements, ``if``
+have only seen the assignment statement and the print statement so far. Assignment statements are when a value is assigned to a variable with the assignment operator, ``=``. Print statements are when a call to the function ``print`` occurs. ``print`` is a special function because it has special rules. The most important, for now, is that ``print`` only works if it is the first thing on that particular line. For example, you will get an error from trying to run code like this: ``x = print(3)``. (Later in this book, you'll learn more about why that is!)
+
+Some other kinds of statements
+that you'll see shortly are ``while`` statements, ``for`` statements, ``if``
 statements,  and ``import`` statements.  (There are other kinds too!)
 
 
