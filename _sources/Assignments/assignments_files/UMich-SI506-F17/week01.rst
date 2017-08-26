@@ -23,23 +23,31 @@ Activities: Week 1
   * Fill out `this google form assignment <TBALINK.com>`_
   * Check out our Piazza forums on the Canvas site.
   * Read `this piece, called Coding Magic <http://marieflanagan.com/coding-magic/>`_ by Marie LeBlanc Flanagan
+  * Watch `this introductory video <https://www.youtube.com/watch?v=rPAg44k6LxA>`_. You'll notice it says "SI 106", which is an undergraduate course similar to this one. That's okay -- pretend it says "506" instead of "106". (We'll provide more from this video series as the semester goes on, for which the same goes -- pretend 106 is 506, unless of course it's a number we're doing math on!)
 
 
 * **Before class 9/7:**
 
   * Read :ref:`General Intro <the_way_of_the_program>`, :ref:`Simple Python Data<simple_python_data>`, and :ref:`Objects and Turtle Graphics<turtles_chap>`.
+  * Read :ref:`Debugging tips<debugging_chap>` and :ref:`Sequences<sequences_chap>`.
+  * There are also some video resources for a bunch of these topics. If you find these helpful, I strongly suggest watching them. Each is a few minutes long: 
+
+    * `Expressions <https://www.youtube.com/watch?v=e-FSJQ02bQk>`_, 
+    * `Variables <https://www.youtube.com/watch?v=KcWQG6geZ_0>`_, 
+    * `Data Types <https://www.youtube.com/watch?v=54hFgo1OAQA>`_,
+    * `Print and Input <https://www.youtube.com/watch?v=j_xlOtEDl_c>`_,
+    * `Comments in programming <https://www.youtube.com/watch?v=PdkAvKKptb8>`_,
+    * `Sequences <https://www.youtube.com/watch?v=Exm2PL7jks8>`_,
+    * `Errors <https://www.youtube.com/watch?v=F8pL4qoaTYU>`_
   * When reading, run the activecodes and answer the multiple choice questions. There may also be exercises at the end of each chapter. These are optional (though trying them is recommended, trying all of those is not required, and getting them correct is also *not required*).
   * We are starting out with a *lot* of material. That is because we are going to speed through a lot of the beginning foundational material, and slow down in a couple weeks -- this stuff is the basis of everything else we'll do, so it is important to absorb and review as we go -- you can always come back to this! When you have questions about this stuff, you should ask them, come to office hours, post on Piazza!
-  * Places like this list are where you'll generally find your readings and any links to stuff needed for the week in class.
-  
-  * Read :ref:`Debugging tips<debugging_chap>` and :ref:`Sequences<sequences_chap>`.
 
 
 * Go to your discussion section this week, Wednesday or Thursday afternoon
 
 * **By Sunday 9/10 at 11:59 PM:** 
 
-  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231785>`_ (DYU), also linked below in the problem set.
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <updatelink.com>`_ (DYU), also linked below in the problem set.
 
 .. _problem_set_1:
 
