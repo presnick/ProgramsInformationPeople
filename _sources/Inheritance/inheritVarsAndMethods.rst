@@ -63,7 +63,7 @@ For reference, here's the original Tamagotchi code
             return state
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))]
+            print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
         def teach(self, word):
@@ -100,22 +100,22 @@ In the original Tamagotchi game in the last chapter, you saw code that created i
     :include: inheritance_cat_example
 
     p1 = Pet("Fido")
-    print p1 # we've seen this stuff before!
+    print(p1) # we've seen this stuff before!
 
     p1.feed()
     p1.hi()
-    print p1
+    print(p1)
 
     cat1 = Cat("Fluffy")
-    print cat1 # this uses the same __str__ method as the Pets do
+    print(cat1) # this uses the same __str__ method as the Pets do
 
     cat1.feed() # Totally fine, because the cat class inherits from the Pet class!
     cat1.hi()
-    print cat1
+    print(cat1)
 
-    print cat1.chasing_rats() 
+    print(cat1.chasing_rats()) 
 
-    #print p1.chasing_rats() # This line will give us an error. The Pet class doesn't have this method!
+    #print(p1.chasing_rats()) # This line will give us an error. The Pet class doesn't have this method!
 
 And you can continue the inheritance tree. We inherited ``Cat`` from ``Pet``. Now say we want a subclass of ``Cat`` called ``Cheshire``. A Cheshire cat should inherit everything from ``Cat``, which means it inherits everything that ``Cat`` inherits from ``Pet``, too. But the ``Cheshire`` class has its own special method, ``smile``.
 
@@ -126,15 +126,15 @@ And you can continue the inheritance tree. We inherited ``Cat`` from ``Pet``. No
     class Cheshire(Cat): # this inherits from Cat, which inherits from Pet
 
         def smile(self): # this method is specific to instances of Cheshire
-            print ":D :D :D"
+            print(":D :D :D")
 
     # Let's try it with instances.
     cat1 = Cat("Fluffy")
     cat1.feed() # Totally fine, because the cat class inherits from the Pet class!
     cat1.hi() # Uses the special Cat hello.
-    print cat1
+    print(cat1)
 
-    print cat1.chasing_rats() 
+    print(cat1.chasing_rats())
 
     new_cat = Cheshire("Pumpkin") # create a Cheshire cat instance with name "Pumpkin"
     new_cat.hi() # same as Cat!
@@ -170,7 +170,7 @@ Say you write the lines:
 .. code:: python
 
     new_cat = Cheshire("Pumpkin")
-    print new_cat.name
+    print(new_cat.name)
 
 In the second line, after the instance is created, Python looks for the instance variable ``name`` in the ``new_cat`` instance.  In this case, it exists. The name on this instance of ``Cheshire`` is ``Pumpkin``. There you go!
 
@@ -229,7 +229,7 @@ The Python interpreter looks for an instance variable or method called ``chasing
      new_cat = Cheshire("Pumpkin”)
      class Siamese(Cat):
        def song(self):
-         print "We are Siamese if you please. We are Siamese if you don’t please."
+         print("We are Siamese if you please. We are Siamese if you don’t please.")
      another_cat = Siamese("Lady")
      another_cat.song()
 
@@ -252,7 +252,7 @@ The Python interpreter looks for an instance variable or method called ``chasing
      new_cat = Cheshire("Pumpkin”)
      class Siamese(Cat):
        def song(self):
-         print "We are Siamese if you please. We are Siamese if you don’t please."
+         print("We are Siamese if you please. We are Siamese if you don’t please.")
      another_cat = Siamese("Lady")
      new_cat.song()
 

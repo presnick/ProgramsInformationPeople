@@ -28,10 +28,10 @@ Note that the character at index 6 (or -8) is the blank character.
     
     school = "Luther College"
     m = school[2]
-    print m
+    print(m)
     
     lastchar = school[-1]
-    print lastchar
+    print(lastchar)
 
 The expression ``school[2]`` selects the character at index 2 from ``school``, and creates a new
 string containing just this one character. The variable ``m`` refers to the result. 
@@ -68,8 +68,7 @@ It is just a string of length 1.
    .. code-block:: python
    
       s = "python rocks"
-      print s[3]
-
+      print(s[3])
 
 .. mchoice:: test_question8_2_2
    :answer_a: tr
@@ -89,7 +88,7 @@ It is just a string of length 1.
    .. code-block:: python
    
       s = "python rocks"
-      print s[2] + s[-4]
+      print(s[2] + s[-4])
 
 
 .. note::

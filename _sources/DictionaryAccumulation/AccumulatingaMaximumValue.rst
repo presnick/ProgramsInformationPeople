@@ -29,7 +29,7 @@ Step through the execution of this code to get a feel for how it works.
    for x in L[1:]:
       if x > a:
          a = x
-   print a
+   print(a)
 
 Now, you may notice that this code will break if there isn't more than one item in L. 
 You would get an error on line 4 for trying to access item L[1], which is the second
@@ -44,7 +44,7 @@ item. If we assume that L will have only numbers >= 0, we can initialize the max
    for x in L:
       if x > a:
          a = x
-   print a
+   print(a)
 
 
 We can do a similar thing with a dictionary to find the maximum value. You can loop
@@ -74,7 +74,7 @@ max-so-far.
       for c in d:
         # <what code goes here? See below options>
          
-      print "max value is " + a
+      print("max value is " + a)
 
 
    .. code-block:: python

@@ -45,7 +45,7 @@ distance between two points.
     
     p = Point(4,3)
     q = Point(0,0)
-    print distance(p,q)
+    print(distance(p,q))
 
 
 ``distance`` takes two points and returns the distance between them.  Note that ``distance`` is **not** a method of the Point class.  You can see this by looking at the indentation pattern.  It is not inside the class definition.  The other way we
@@ -83,6 +83,6 @@ We *could have* made distance be a method of the Point class. Then, we would hav
     
     p = Point(4,3)
     q = Point(0,0)
-    print p.distance(q)
+    print(p.distance(q))
 
 

@@ -30,11 +30,11 @@ An important pair of functions to know are ``pyglet.clock.schedule_interval()`` 
         print_count += 1
 
         if print_count <= 5:
-            print 'First printing function. Count: ' + str(print_count)
-            print '\tIt has been ' + str(interval) +' seconds since the last time this function was called.'
+            print('First printing function. Count: ' + str(print_count))
+            print('\tIt has been ' + str(interval) +' seconds since the last time this function was called.')
 
         else:
-            print 'Unscheduling first printing function and scheduling second printing function'
+            print('Unscheduling first printing function and scheduling second printing function')
             pyglet.clock.unschedule(print_1)
             pyglet.clock.schedule_interval(print_2,1.0)
 
@@ -43,16 +43,16 @@ An important pair of functions to know are ``pyglet.clock.schedule_interval()`` 
         global print_count
         print_count += 1
         if print_count <= 10:
-            print 'Second printing function. Count: ' + str(print_count)
-            print '\tIt has been ' + str(interval) +' seconds since the last time this function was called.'
+            print('Second printing function. Count: ' + str(print_count))
+            print('\tIt has been ' + str(interval) +' seconds since the last time this function was called.')
 
         else:
-            print 'Exiting Pyglet event loop'
+            print('Exiting Pyglet event loop')
             pyglet.app.exit()
 
-    print 'Scheduling first printing function'
+    print('Scheduling first printing function')
     pyglet.clock.schedule_interval(print_1,1.0)
-    print 'Starting up game loop'
+    print('Starting up game loop')
     pyglet.app.run()
 
 If you were to run this code, you'd see some output, printed at a 1-second interval:

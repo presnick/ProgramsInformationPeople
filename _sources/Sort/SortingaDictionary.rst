@@ -25,7 +25,7 @@ For example, the following code counts the frequencies of different numbers in t
         else:
             d[x] = 1
     for x in d.keys():
-        print str(x) + " appears " + str(d[x]) + " times"
+        print(str(x) + " appears " + str(d[x]) + " times")
 
 The dictionary's keys are not sorted in any particular order. In fact, you
 may get a different order of output than someone else running the same
@@ -44,12 +44,12 @@ sorting the keys.
             d[x] = 1
     y = sorted(d.keys())
     for x in y:
-        print str(x) + " appears " + str(d[x]) + " times"
+        print(str(x) + " appears " + str(d[x]) + " times")
 
     # or in reverse order
-    print "---------" 
+    print("---------")
     for x in sorted(d.keys(), None, None, True):
-         print str(x) + " appears " + str(d[x]) + " times"
+         print(str(x) + " appears " + str(d[x]) + " times")
     
 
 With a dictionary that's maintaining counts or some other kind of score,
@@ -74,7 +74,7 @@ Here's the first way, using a lambda expression.
     items = d.items();
     sorted_items = sorted(items, key = lambda x: x[1], reverse=True)
     for x in sorted_items:
-        print str(x[0]) + " appears " + str(x[1]) + " times"
+        print(str(x[0]) + " appears " + str(x[1]) + " times")
 
 Here's that same way of doing it, using a named function instead of a lambda expression that produces an anonymous function.
 
@@ -95,7 +95,7 @@ Here's that same way of doing it, using a named function instead of a lambda exp
     items = d.items();
     sorted_items = sorted(items, key=g, reverse=True)
     for x in sorted_items:
-        print str(x[0]) + " appears " + str(x[1]) + " times"
+        print(str(x[0]) + " appears " + str(x[1]) + " times")
 
 
 Most python programmers would never sort the items (the key, value pairs) from
@@ -123,7 +123,7 @@ Here's a version based on sorting the keys rather than the complete items, using
     
     # now loop through the keys
     for k in y:
-        print str(k) + " appears " + str(d[k]) + " times"
+        print(str(k) + " appears " + str(d[k]) + " times")
 
 And here's a version of that using a named function. 
 
@@ -142,11 +142,11 @@ And here's a version of that using a named function.
         return d[k]
 
     # just sort the keys, not the key-value pairs        
-    y = sorted(d.keys(), key=g, reverse=True)
+    y =(sorted(d.keys(), key=g, reverse=True))
     
     # now loop through the keys
     for k in y:
-        print str(k) + " appears " + str(d[k]) + " times"
+        print(str(k) + " appears " + str(d[k]) + " times")
 
 .. note::
 
@@ -170,7 +170,7 @@ that is expecting a list, its the same as passing the list of keys.
       
   # now loop through the sorted keys
   for k in sorted(d, key=lambda k: d[k], reverse=True):
-      print str(k) + " appears " + str(d[k]) + " times"
+      print(str(k) + " appears " + str(d[k]) + " times")
 
 Eventually, you will be able to read code like that above and immediately know
 what it's doing. For now, when you come across something confusing, like line 11,
@@ -184,8 +184,8 @@ dictionary d. The last parameter, True, says to sort in reverse order.
    :answer_a: sorted(ks, key=g) 
    :answer_b: sorted(ks, key=lambda x: g(x, d))
    :answer_c: sorted(ks, key=lambda x: d[x])
-   :feedback_a: g is a function that takes two parameters. The key function passed to sorted must always take just one parameter 
-   :feedback_b: The lambda function takes just one parameter, and calls g with two parameters. 
+   :feedback_a: g is a function that takes two parameters. The key function passed to sorted must always take just one parameter.
+   :feedback_b: The lambda function takes just one parameter, and calls g with two parameters.
    :feedback_c: The lambda function looks up the value of x in d.
    :correct: b,c
 

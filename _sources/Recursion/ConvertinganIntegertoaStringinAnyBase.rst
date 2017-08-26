@@ -152,7 +152,7 @@ we get the result in the proper order.
 
       def isPal(s):
           return False
-      
+
       class myTests(TestCaseGui):
 
           def testOne(self):
@@ -164,4 +164,5 @@ we get the result in the proper order.
               self.assertEqual(isPal(removeWhite("madam i'm adam")), True)
 
       myTests().main()
+      
 

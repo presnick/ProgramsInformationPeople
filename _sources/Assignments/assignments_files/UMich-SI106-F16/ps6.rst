@@ -118,7 +118,7 @@ Problem Set
    class myTests(TestCaseGui):
 
       def testCode(self):
-         print "\n----The following tests are to ensure that you are not hard-coding the values.\n"
+         print("\n----The following tests are to ensure that you are not hard-coding the values.\n")
          self.assertNotIn("Hello, SI106!!!", self.getEditorText(), "Testing to see if you've put Hello, SI106!!! in your code to hard-code.")
          self.assertNotIn("Hello, world!!!", self.getEditorText(), "Testing to see if you've put Hello, world!!! in your code to hard-code.")
          self.assertNotIn("Hey, everybody!", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
@@ -167,7 +167,7 @@ Problem Set
 
    **FIRST,** look through the data structure saved in the variable ``fb_data`` to get a sense for it. 
 
-   Here are some questions to consider. We won't grade your answers to these questions, but we suggest that you write them in the code as comments. They may help you think through this big nested data structure. You can test your answers using print statements. e.g. ``print type(fb_data["data"])``
+   Here are some questions to consider. We won't grade your answers to these questions, but we suggest that you write them in the code as comments. They may help you think through this big nested data structure. You can test your answers using print statements. e.g. ``print(type(fb_data["data"]))``
       
    * What type is the structure saved in the variable ``fb_data``?
    * What type does the expression ``fb_data["data"]`` evaluate to?
@@ -284,7 +284,7 @@ Problem Set
    def main():
        max_health = 3
        health = max_health
-       secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+       secret_word = input("What's the word to guess? (Don't let the player see it!)")
        secret_word = secret_word.upper() # everything in all capitals to avoid confusion
        guesses_so_far = ""
        game_over = False
@@ -294,7 +294,7 @@ Problem Set
        # Now interactively ask the user to guess
        while not game_over:
            prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
-           next_guess = raw_input(prompt)
+           next_guess = input(prompt)
            next_guess = next_guess.upper()
            feedback = ""
            if len(next_guess) != 1:
@@ -373,9 +373,9 @@ Problem Set
    ~~~~       
    # Sample calls to this function
    # (Remember, these won't work until you define the function blanked)
-   print blanked("hello", "elj")
+   print(blanked("hello", "elj"))
    #should output _ell_
-   print blanked("almost","amsvr")
+   print(blanked("almost","amsvr"))
    # should output a_m_s_ 
 
 
@@ -411,11 +411,11 @@ Problem Set
 
    # Sample invocations of the function.
 
-   print health_prompt(3, 7)
+   print(health_prompt(3, 7))
    #this statement should produce the output
    # +++----
 
-   print health_prompt(0, 4)
+   print(health_prompt(0, 4))
    #this statement should produce the output
    # ----
 
@@ -465,7 +465,7 @@ Problem Set
       def main():
           max_health = 3
           health = max_health
-          secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+          secret_word = input("What's the word to guess? (Don't let the player see it!)")
           secret_word = secret_word.upper() # everything in all capitals to avoid confusion
           guesses_so_far = ""
           game_over = False
@@ -475,7 +475,7 @@ Problem Set
           # Now interactively ask the user to guess
           while not game_over:
               prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
-              next_guess = raw_input(prompt)
+              next_guess = input(prompt)
               next_guess = next_guess.upper()
               feedback = ""
               if len(next_guess) != 1:

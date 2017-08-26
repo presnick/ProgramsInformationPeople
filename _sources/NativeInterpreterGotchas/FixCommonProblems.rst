@@ -13,7 +13,7 @@ Common Problems
 
 As you run programs in your native Python interpreter, and use the :ref:`pip module installer <pip_chap>` to install modules, you're likely to run into common problems, which may come about due to typos, confusion, or just the unpredicatability of dealing with a lot of interacting systems and files. This chapter is intended to help you sort out these gotchas. (More may be added!)
 
-with your native Python interpreter (all systems)
+With your native Python interpreter (all systems)
 -------------------------------------------------
 
 **Wrong directory problems**
@@ -34,8 +34,7 @@ Related to the wrong-directory-problem is the common problem of executing a file
 
 .. admonition:: Warning. 
 
-   This textbook deals with Python version **2.7**. Any version of 2.7 is OK for *most* code in this textbook, although some requires that it be later than 2.7.9 (more about this below). Python 2.6 and earlier acts a little bit differently in some cases, and Python 3.0 and later versions are quite different. You can read about Python 3.0 -- it has many syntactic differences that also affect some things about how the Python 3.0+ interpreters work.
-
+   This textbook deals with Python version **3**. Any version of 3.x is OK for *most* code in this textbook. Python 2.7 and earlier act a bit differently in some cases though it will still be recognizable to you. The most obvious difference is that in Python 2.7 print was a statement rather than a function call, and so parentheses were not needed around the expression whose value was to be printed.
 
 .. admonition:: Careful!
 
@@ -73,13 +72,7 @@ You may run into an error that looks like the following (especially, in this cur
 
 .. image:: Figures/insecureplatformwarning.png
 
-This probably means that you don't have the right version of Python installed. For many things we do in this course, it won't be a problem. If you see an Insecure Platform Warning error and you *also* run into a surprising error in your code, like this:
-
-
-.. image:: Figures/ipwarning_error2.png
-
-
-then, you'll need to upgrade your Python version to at least ``2.7.10``, which you can do `here <https://www.python.org/downloads/release/python-2710/>`_ .
+This probably means that you don't have the right version of Python installed. This was mostly a problem with earlier versions of python, before 2.7.10. We are now using version 3.x, so hopefully you will not get this warning.
 
 
 with your native Python interpreter (WINDOWS)

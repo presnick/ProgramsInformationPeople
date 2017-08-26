@@ -21,7 +21,7 @@ where the if clause is optional.  For example,
 
     yourlist = [value * 2 for value in things]
 
-    print yourlist
+    print(yourlist)
 
 The expression is ``value * 2``. The item variable is ``value`` and the sequence is ``things``. This is an alternative way to perform a mapping operation. As with ``map``, each item in the sequence is transformed into an item in the new list. Instead of the iteration happening automatically, however, we have adopted the syntax of the for loop which may make it easier to understand. 
 
@@ -35,7 +35,7 @@ The ``if`` clause of a list comprehension can be used to do a filter operation. 
        new_list = [num for num in nums if num % 2 == 0]
        return new_list
       
-   print keep_evens([3, 4, 6, 7, 0, 1])
+   print(keep_evens([3, 4, 6, 7, 0, 1]))
 
 You can also combine map and filter operations by chaining them together, or with a single list comprehension.
 
@@ -45,10 +45,10 @@ You can also combine map and filter operations by chaining them together, or wit
    #chaining together filter and map:
    # first, filter to keep only the even numbers
    # double each of them
-   print map(lambda x: x*2, filter(lambda y: y % 2 == 0, things))
+   print(map(lambda x: x*2, filter(lambda y: y % 2 == 0, things)))
    
    # equivalent version using list comprehension
-   print [x*2 for x in things if x % 2 == 0]
+   print([x*2 for x in things if x % 2 == 0])
 
 
 **Check your understanding**
@@ -70,4 +70,4 @@ You can also combine map and filter operations by chaining them together, or wit
 
      alist = [4,2,8,6,5]
      blist = [num*2 for num in alist if num%2==1]
-     print blist
+     print(blist)

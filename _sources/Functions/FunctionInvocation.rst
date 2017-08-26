@@ -24,14 +24,14 @@ statements will be executed each time we call it.
 .. codelens:: functions_2
 
    def hello():
-      print "Hello"
-      print "Glad to meet you"
+      print("Hello")
+      print("Glad to meet you")
    
-   print type(hello)
-   print type("hello")
+   print(type(hello))
+   print(type("hello"))
       
    hello()
-   print "Hey, that just printed two lines with one line of code!"
+   print("Hey, that just printed two lines with one line of code!")
    hello()  # do it again, just because we can...
 
 Let's take a closer look at what happens when you define a function and when
@@ -109,8 +109,8 @@ executed a second time.
    .. code-block:: python
 
       def hello():
-         print "Hello"
-         print "Glad to meet you"
+         print("Hello")
+         print("Glad to meet you")
 
 
 .. mchoice:: test_questionfunctions_1_2b
@@ -131,11 +131,11 @@ executed a second time.
    .. code-block:: python
 
       def hello():
-         print "Hello"
-         print "Glad to meet you"
+         print("Hello")
+         print("Glad to meet you")
          
       hello()
-      print "It works"
+      print("It works")
       hello()
       hello()
 

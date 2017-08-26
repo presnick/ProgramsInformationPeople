@@ -15,7 +15,7 @@ writing the function, you won't care *how it does it*.
 
 For example, here is a summary of some functions we have seen already.
 
-* ``raw_input`` takes one parameter, a string. It is displayed to the user.
+* ``input`` takes one parameter, a string. It is displayed to the user.
   Whatever the user types is returned, as a string.
 
 * ``int`` takes one parameter. It can be of any type that can be converted

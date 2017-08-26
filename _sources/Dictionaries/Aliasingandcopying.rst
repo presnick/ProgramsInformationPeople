@@ -20,10 +20,10 @@ of opposites.
     opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
     alias = opposites
 
-    print alias is opposites
+    print(alias is opposites)
 
     alias['right'] = 'left'
-    print opposites['right']
+    print(opposites['right'])
     
 
 
@@ -57,7 +57,7 @@ If you want to modify a dictionary and keep a copy of the original, use the dict
      mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
      yourdict = mydict
      yourdict["elephant"] = 999
-     print mydict["elephant"]
+     print(mydict["elephant"])
 
 
 .. index:: matrix

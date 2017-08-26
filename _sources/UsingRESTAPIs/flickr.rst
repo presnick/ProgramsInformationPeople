@@ -15,6 +15,8 @@ Consider another service, the image sharing site flickr. People interact with th
 
 Here we will explore some aspects of one endpoint that flickr provides for searching for photos matching certain criteria. Check out the `full documentation <https://www.flickr.com/services/api/flickr.photos.search.html>`_ for details.
 
+This API is more complex than the APIs you examined in previous subchapters. Though it is not as complicated as others you may see, the Flickr API is a good introduction to some of the trickeries of REST APIs you'll encounter in the wild, and provides good practice for composing a function that deals with a complex REST API. Plus, photo data is pretty interesting to examine.
+
 The structure of a URL for a photo search on flickr is:
 
 * base URL is ``https://api.flickr.com/services/rest/``
@@ -28,88 +30,71 @@ The structure of a URL for a photo search on flickr is:
 
 Let's put everything together to make a little retrieval tool for flickr images containing particular tags. Of course, in a browser, you can just use flickr's search tool. But doing this through the API opens up other possibilities that you can explore for features not provided on the regular flickr website.
 
-Below is some code that queries the flickr API for images that have a particular tag (I have found that searching for "mountains", "Switzerland", and "cows" usually produces beautiful images that are "safe for work", so the example below does that search.)
-
-.. note:
-
-    To run this code, you will need to copy it to a file on your local machine (not an activecode window), and **paste in an api_key that you get from flickr**.
+Below is some code that queries the flickr API for images that have a particular tag (I have found that searching for "mountains" and "rivers" usually produces beautiful images that are "safe for work", so the example below does that search.)
 
 .. sourcecode:: python
 
+    # import statements
     import requests
     import json
-    import pickle
     import webbrowser
-
-    def canonical_order(d):
-        alphabetized_keys = sorted(d.keys())
-        res = []
-        for k in alphabetized_keys:
-            res.append((k, d[k]))
-        return res
-
-    def requestURL(baseurl, params = {}):
-        req = requests.Request(method = 'GET', url = baseurl, params = canonical_order(params))
-        prepped = req.prepare()
-        return prepped.url
-
-    def get_with_caching(base_url, params_diction, cache_diction, cache_fname):
-        full_url = requestURL(base_url, params_diction)
-        # step 1
-        if full_url in cache_diction:
-            # step 2
-            print "retrieving cached result for " + full_url
-            return cache_diction[full_url]
-        else:
-            # step 3
-            response = requests.get(base_url, params=params_diction)
-            print "adding cached result for " + full_url
-            # add to the cache and save it permanently
-            cache_diction[full_url] = response.text
-            fobj = open(cache_fname, "w")
-            pickle.dump(cache_diction, fobj)
-            fobj.close()
-            return response.text
-
+    
     # apply for a flickr authentication key at http://www.flickr.com/services/apps/create/apply/?
     # paste the key (not the secret) as the value of the variable flickr_key
-    flickr_key = 'paste your key here'
+    flickr_key = 'yourkeyhere'
 
-    def flickrdemo(cache_fname):
-        params_d = {}
-        params_d['method'] = 'flickr.photos.search'
-        params_d['api_key'] = flickr_key
-        params_d['format'] = 'json'
-        params_d['tags'] = ['mountains, Switzerland, cows']
-        params_d['tag_mode'] = 'all'
-        params_d['per_page'] = 5
+    def get_flickr_data(tags_string):
+        baseurl = "https://api.flickr.com/services/rest/"
+        params_diction = {}
+        params_diction["api_key"] = flickr_key # from the above global variable
+        params_diction["tags"] = tags_string # Input must follow some rules in order to work properly
+        params_diction["tag_mode"] = "all"
+        params_diction["method"] = "flickr.photos.search"
+        params_diction["per_page"] = 3
+        params_diction["media"] = "photos"
+        params_diction["format"] = "json"
+        flickr_resp = requests.get(baseurl, params = d)
+        # Useful for debugging: print the url! Uncomment the below line to do so.
+        #print(flickr_resp.url) # Paste the result into the browser to check it out...
+        flickr_text = flickr_resp.text # Access the text attribute of the response object
+        # Then, chop off part of the text string that makes it invalid JSON format
+        flickr_text_fixed = flickr_text[14:-1]
+        # Then, transform it into a Python object, once you have valid JSON formatted text
+        flickr_data_obj = json.loads(flickr_text_fixed)
+        return flickr_data_obj # And return it
 
+    # A few different invocations to the get_flickr_data function
+    result_sunset_mountains = get_flickr_data("mountains, sunset")
+    result_river_mts = get_flickr_data("river,mountains")
+    result_just_mountains = get_flickr_data("mountains")
+
+    # And try printing one out to see what it's like... lots of data
+    # (Recall the nested data and nested iteration chapter!)
+
+    print(result_just_mountains)
+    
+    # Some code to open up a few photos that are tagged with the mountains and river tags...
+
+    photos = result_river_mts['photos']['photo']
+    for photo in photos:
+        owner = photo['owner']
+        photo_id = photo['id']
+        url = 'https://www.flickr.com/photos/{}/{}'.format(owner, photo_id)
         try:
-            fobj = open(cache_fname, 'r')
-            saved_cache = pickle.load(fobj)
-            fobj.close()
-        except:
-            saved_cache = {}
-        resp_text = get_with_caching('https://api.flickr.com/services/rest/', params_diction=params_d, cache_diction = saved_cache, cache_fname = cache_fname)
-        parsed_response = json.loads(resp_text[14:-1])
-
-        print parsed_response
-        photo_ds = parsed_response['photos']['photo']
-        for photo in photo_ds:
-            owner = photo['owner']
-            pid = photo['id']
-            url = 'https://www.flickr.com/photos/{}/{}'.format(owner, pid)
             webbrowser.open(url)
+        except:
+            print("Error -- perhaps that photo has been deleted? Check it out.")
 
-    flickrdemo("cache_file.txt")
 
-For documentation on how to do a flickr search for a particular tag, see the official documentation at https://www.flickr.com/services/api/flickr.photos.search.html. Based on that documentation, we set the parameters method, api_key, format, tags, tag_mode, and per_page. Note that in the code below, we have printed out the full url that is generated by requests.get. Try pasting it into a browser window and then editing the URL manually to try to change the search.
+For documentation on how to do a flickr search for a particular tag, see the official documentation at https://www.flickr.com/services/api/flickr.photos.search.html. 
+
+Based on that documentation, we set the parameters ``method``, ``api_key``, ``format``, ``tags``, ``tag_mode``, and ``per_page``. Note that you can print out the full url that is generated by ``requests.get`` if you uncomment the line that does so in the code above. Try pasting that URL into a browser window and then editing the URL manually to try to change the search.
 
 Flickr does something a little weird with its result string. Instead of just sending back a JSON-formatted dictionary, it sends back a string that begins with 14 extra characters-- ``"jsonFlickrApi("`` -- and ends with an extra close parentheses character ``)`` at the end. So we use the slice operator to strip out those extra characters. That is loaded into a python dictionary using ``json.loads()``.
 
-Finally, we loop through the list of photo dictionaries that were returned, extracting two fields, owner and pid. Those are used to create new URLs that are in the format flickr expects for displaying a webpage containing a single image. Each of those URLs is passed to the webbrowser.open() function. If all goes well, that should open five browser tabs, each with a picture that some flickr user had tagged with the words "mountains", "Switzerland", and "cows".
+Finally, we loop through the list of photo dictionaries that were returned, extracting two fields, ``owner`` and ``photo_id``. Those are used to create new URLs that are in the format flickr expects for displaying a webpage containing a single image. Each of those URLs is passed to the ``webbrowser.open()`` function (webbrowser is a module built in to Python that can help open URLs in your default web browser). Web If all goes well, that should open five browser tabs, each with a picture that some flickr user had tagged with the words "mountains" and "rivers".
 
-Note that if you run exactly this code a second or third time (you should!), you will be getting the *cached* data -- not brand new live data. You should see evidence of that printed out in the console!
+Because we specified ``"all"`` as the value for the ``"tag_mode"`` query parameter, we'll only get photos that are tagged with *both* "mountains" and "river". Of course, you could also try out some variations on this code to see photos that have different tags. 
 
 .. note:
 

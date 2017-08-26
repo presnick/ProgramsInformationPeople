@@ -30,7 +30,7 @@ Don't worry about that. It's stable enough for our use. Do choose a "featured" d
 
 When you download this, you're also installing a bunch of other software, some of which we'll talk about a little later in the course. All of it can be helpful for software development in various ways, but most of it isn't relevant for us now. 
 
-However, this software will allow everyone in class, whether they use a Mac operating system, a Windows oeprating system, or a Linux operating system, to use identical (or in some cases almost identical) Unix commands, since the way you navigate your file system (more about this in the Unix chapter) using git bash is the same as the way Mac users will use their Terminal application.
+However, this software will allow everyone in class, whether they use a Mac operating system, a Windows operating system, or a Linux operating system, to use identical (or in some cases almost identical) Unix commands, since the way you navigate your file system (more about this in the Unix chapter) using git bash is the same as the way Mac users will use their Terminal application.
 
 To launch Git Bash, just choose it in the usual way that you launch other programs in Windows.
 
@@ -40,6 +40,8 @@ Customize the git bash display
 
 There are a couple more configuration changes that I highly recommend. You don't absolutely have to do these, but they're very useful. Most importantly, they will allow you to cut
 and paste in the git bash window.
+
+Depending upon what version of Git Bash you download, you may not be able to complete each of these steps in exactly this way. Don't worry! You can google or reach out for help with changing things about your Git Bash installation. Even if you don't complete these steps, you can still run Python programs and use the Unix commands we discuss in this book.
 
 #. Close the git bash window if you haven't already.
 

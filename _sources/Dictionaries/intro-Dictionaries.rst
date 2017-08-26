@@ -37,7 +37,7 @@ One way to create a dictionary is to start with the empty dictionary and add
     eng2sp['one'] = 'uno'
     eng2sp['two'] = 'dos'
     eng2sp['three'] = 'tres'
-    print eng2sp
+    print(eng2sp)
 
 
 The first assignment creates an empty dictionary named ``eng2sp``.  The other
@@ -59,7 +59,7 @@ using the same syntax as the previous output.
     
     
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
-    print eng2sp
+    print(eng2sp)
 
 It doesn't matter what order we write the pairs. The values in a dictionary are
 accessed with keys, not with indices, so there is no need to care about
@@ -73,8 +73,8 @@ Here is how we use a key to look up the corresponding value.
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
 
     value = eng2sp['two']
-    print value
-    print eng2sp['one']
+    print(value)
+    print(eng2sp['one'])
 
 The key ``'two'`` yields the value ``'dos'``. The key ``one`` yields the value ``uno``.
 
@@ -109,14 +109,13 @@ The key ``'two'`` yields the value ``'dos'``. The key ``one`` yields the value `
    :feedback_c: 23 is associated with the key elephant.
    :feedback_d: The [ ] operator, when used with a dictionary, will look up a value based on its key.
    :correct: b
-   
-   
+
    What is printed by the following statements?
    
    .. sourcecode:: python
 
      mydict = {"cat":12, "dog":6, "elephant":23}
-     print mydict["dog"]
+     print(mydict["dog"])
 
 
 .. index:: del statement, statement; del

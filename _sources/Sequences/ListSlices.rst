@@ -18,10 +18,10 @@ end of the sequence.
 .. activecode:: chp09_6
     
     a_list = ['a', 'b', 'c', 'd', 'e', 'f']
-    print a_list[1:3]
-    print a_list[:4]
-    print a_list[3:]
-    print a_list[:]
+    print(a_list[1:3])
+    print(a_list[:4])
+    print(a_list[3:])
+    print(a_list[:])
 
 **Check your understanding**
 
@@ -39,7 +39,7 @@ end of the sequence.
    .. code-block:: python
    
      alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
-     print alist[4:]
+     print(alist[4:])
 
 
 

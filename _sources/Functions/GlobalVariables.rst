@@ -30,7 +30,7 @@ Look at the following, nonsensical variation of the square function.
 
     power = 2
     result = badsquare(10)
-    print result
+    print(result)
 
 
 Although the ``badsquare`` function works, it is silly and poorly written.  We have done it here to illustrate
@@ -56,7 +56,7 @@ codelens example:
 
     power = 3
     result = powerof(10,2)
-    print result
+    print(result)
 
 Now step through the code.  What do you notice about the values of variable ``power``
 in the local scope compared to the variable ``power`` in the global scope?
@@ -87,8 +87,8 @@ to cement your understanding of how python works.
 
     power = 3
     result = powerof(10,2)
-    print result
-    print power
+    print(result)
+    print(power)
 
 To cement all of these ideas even further lets look at one final example.
 Inside the ``square`` function we are going to make an assignment to the
@@ -110,7 +110,7 @@ But this example demonstrates that that is clearly not how Python operates.
 
     x = 2
     z = square(x)
-    print z
+    print(z)
 
 
 **Check your understanding**

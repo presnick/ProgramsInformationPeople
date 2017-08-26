@@ -16,7 +16,7 @@ looks like this.
 
 .. sourcecode:: python
 
-    print "Hello, World!"
+    print("Hello, World!")
 
 This is an example of using the **print statement**, which doesn't actually
 print anything on paper. It displays a value on the screen. In this case, the result is the phrase:
@@ -29,7 +29,7 @@ Here is the example in activecode.  Give it a try!
 
 .. activecode:: ch01_2
 
-    print "Hello, World!"
+    print("Hello, World!")
 
 The quotation marks in the program mark the beginning and end of the value.
 They don't appear in the result. You'll learn more about why in the next chapter.

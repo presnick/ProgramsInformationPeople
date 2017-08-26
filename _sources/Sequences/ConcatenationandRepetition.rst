@@ -16,10 +16,10 @@ Similarly, the ``*`` operator repeats the items in a list a given number of time
 .. activecode:: chp09_5
 
     fruit = ["apple","orange","banana","cherry"]
-    print [1,2] + [3,4]
-    print fruit+[6,7,8,9]
+    print([1,2] + [3,4])
+    print(fruit+[6,7,8,9])
 
-    print [0] * 4
+    print([0] * 4)
 
 
 It is important to see that these operators create new lists from the elements of the operand lists.  
@@ -63,8 +63,9 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
 
      alist = [1,3,5]
      blist = [2,4,6]
-     print alist + blist
-   
+     print(alist + blist)
+
+
    
 .. mchoice:: test_question9_5_2
    :answer_a: 9
@@ -82,6 +83,6 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
    .. code-block:: python
 
      alist = [1,3,5]
-     print alist * 3
+     print(alist * 3)
 
    

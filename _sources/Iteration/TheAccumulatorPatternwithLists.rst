@@ -21,7 +21,7 @@ Consider, for example, the following program which transforms a list into a new 
    for w in nums:
        x = w**2
        accum.append(x)
-   print accum
+   print(accum)
 
 Here, we **initialize** the accumulator variable to be an empty list, on line 2.
 
@@ -54,7 +54,7 @@ Note how this differs from mutating the original list, as you saw in a :ref:`pre
      blist = [ ]
      for item in alist:
         blist.append(item+5)
-     print blist
+     print(blist)
 
 
 .. mchoice:: test_question_iter_accum_1
@@ -76,4 +76,4 @@ Note how this differs from mutating the original list, as you saw in a :ref:`pre
      new_list=[]
      for i in range(len(list)):
         new_list.append(list[i]+5)
-     print new_list
+     print(new_list)

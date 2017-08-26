@@ -31,7 +31,7 @@ Each instance can have attributes, sometimes called **instance variables**. Thes
 
    alex.price = 500
    tess.price = 600
-   print alex.price + tess.price
+   print(alex.price + tess.price)
 
 
 Methods

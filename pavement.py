@@ -25,13 +25,13 @@ options(
         project_name = project_name,
         template_args = {
             'course_id':project_name,
-            'login_required':'true',
+            'login_required':'false',
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
             'use_services': 'true',
-            'python3': 'false',
-            'basecourse':'pip2'
+            'python3': 'true',
+            'basecourse':'publicpy3'
         }
     )
 )

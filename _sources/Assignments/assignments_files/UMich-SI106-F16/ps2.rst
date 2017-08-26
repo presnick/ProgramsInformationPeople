@@ -177,7 +177,6 @@ Problem Set
     from unittest.gui import TestCaseGui
 
     class myTests(TestCaseGui):
-
         def testOne(self):
            self.assertEqual(third_elem, num_lst[2], "Testing that third_elem has been set to the third element of num_lst")
         def testTwo(self):

@@ -38,7 +38,7 @@ the sum of three numbers that have been squared.
     b = 2
     c = 10
     result = sum_of_squares(a,b,c)
-    print result
+    print(result)
 
 
 Even though this is a pretty simple idea, in practice this example

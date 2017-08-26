@@ -30,8 +30,7 @@ the active code window to check your results:
 
 .. activecode:: ch02_ex1
 
-   print 5**2
-
+   print(5**2)
 
 #. What is the order of the arithmetic operations in the following expression?  Evaluate the expression by hand and then check your
      work.
@@ -65,7 +64,7 @@ the active code window to check your results:
             #. False
 
 
-#.  Give the **logical opposites** of these conditions.  You are not allowed to use the ``not`` operator.
+#.  Give the **logical opposites** of these conditions, meaning an expression that would produce False whenever this expression produces True, and vice versa.  You are not allowed to use the ``not`` operator.
 
     #.  ``a > b``
     #.  ``a >= b``
@@ -106,7 +105,7 @@ the active code window to check your results:
 
                 timeofday = hours % 24
 
-                print timeofday
+                print(timeofday)
 
 
 #. It is possible to name the days 0 thru 6 where day 0 is Sunday and day 6 is Saturday.  If you go on a wonderful holiday
@@ -150,8 +149,8 @@ the active code window to check your results:
                 word9 = "dull"
                 word10 = "boy."
 
-                print word1, word2, word3, word4, word5, word6, word7, word8, word9, word10
-        
+                print(word1 + ' ' +  word2 + ' ' + word3 + ' ' +  word4 + ' ' +  word5 + ' ' +  word6 + ' ' +  word7 + ' ' +  word8 + ' ' +  word9 + ' ' +  word10)
+
 
 
 #. Add parentheses to the expression ``6 * 1 - 2`` to change its value
@@ -159,7 +158,7 @@ the active code window to check your results:
 
    .. actex:: ex_2_6
       
-      print 6 * 1 -2
+      print(6 * 1 -2)
 
   
 #.
@@ -203,7 +202,7 @@ the active code window to check your results:
 
                 final = P * ( ((1 + (r/n)) ** (n * t)) )
 
-                print "The final amount after", t, "years is", final
+                print("The final amount after", t, "years is", final)
 
     
   
@@ -236,7 +235,7 @@ the active code window to check your results:
 
                 area = width * height
 
-                print "The area of the rectangle is", area
+                print("The area of the rectangle is", area)
 
 
   
@@ -268,7 +267,7 @@ the active code window to check your results:
                 # formula to convert C to F is: (degrees Celcius) times (9/5) plus (32)
                 deg_f = deg_c * (9 / 5) + 32
 
-                print  deg_c, " degrees Celsius is", deg_f, " degrees Farenheit."
+                print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
 
         .. tab:: Discussion
 

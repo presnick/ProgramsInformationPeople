@@ -55,7 +55,7 @@ For example, in the following, the base url is https://google.com/search. A dict
 
     d = {'q': 'violins and guitars', 'tbm': 'isch'}
     results = requests.get("https://google.com/search", params=d)
-    print results.url
+    print(results.url)
 
 .. note: 
 

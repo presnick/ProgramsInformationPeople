@@ -34,11 +34,11 @@ in a minute.)
         else:
             return -x
             
-    print absolute(3)
-    print absolute(-119)
+    print(absolute(3))
+    print(absolute(-119))
     
     for y in L1:
-        print absolute(y)
+        print(absolute(y))
         
 
 Now, we can pass the absolute function to L1 in order to specify that we want
@@ -56,10 +56,10 @@ their actual value.
             return -x
             
     L2 = sorted(L1, key=absolute)
-    print L2
+    print(L2)
     
     #or in reverse order
-    print sorted(L1, reverse = True, key = absolute) 
+    print(sorted(L1, reverse = True, key = absolute))
      
 What's really going on there? We've done something pretty strange. Before, all the
 values we have passed as parameters have been pretty easy to understand: numbers, strings,
@@ -85,16 +85,16 @@ of sorted, I have added some print statements into the code.
     L1 = [1, 7, 4, -2, 3]
      
     def absolute(x):
-        print "--- figuring out what to write on the post-it note for " + str(x)
+        print("--- figuring out what to write on the post-it note for " + str(x))
         if x >= 0:
             return x
         else:
             return -x
     
-    print "About to call sorted"
+    print("About to call sorted")
     L2 = sorted(L1, None, absolute)
-    print "Finished execution of sorted"
-    print L2
+    print("Finished execution of sorted")
+    print(L2)
 
 Note that this code never explicitly calls the absolute function at all. It passes
 the absolute function as a parameter value to the sorted function. Inside the 

@@ -25,13 +25,13 @@ have omitted the parentheses when first assigning a tuple to the variable julia.
 
 .. mchoice:: test_questiontuples_1
    :multiple_answers:
-   :answer_a: print julia['city']
-   :answer_b: print julia[-1]
-   :answer_c: print julia(-1)
-   :answer_d: print julia(6)
-   :answer_e: print julia[7]
-   :feedback_a: julia is a tuple, not a dictionary; indexes must be integers
-   :feedback_b: [-1] picks out the last item in the sequence
+   :answer_a: print(julia['city'])
+   :answer_b: print(julia[-1])
+   :answer_c: print(julia(-1))
+   :answer_d: print(julia(6))
+   :answer_e: print(julia[7])
+   :feedback_a: julia is a tuple, not a dictionary; indexes must be integers.
+   :feedback_b: [-1] picks out the last item in the sequence.
    :feedback_c: Index into tuples using square brackets. julia(-1) will try to treat julia as a function call, with -1 as the parameter value.
    :feedback_d: Index into tuples using square brackets. julia(-1) will try to treat julia as a function call, with -1 as the parameter value.
    :feedback_e: Indexing starts at 0. You want the seventh item, which is julia[6]

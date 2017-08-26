@@ -62,7 +62,7 @@ You could implement this by making instance variable for the pet type and dispat
             return state
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))]
+            print(self.sounds[randrange(len(self.sounds))])
             self.reduce_boredom()
 
         def teach(self, word):

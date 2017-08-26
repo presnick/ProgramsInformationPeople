@@ -42,7 +42,7 @@ in a count variable.
    for c in txt:
        if c == 't':
            t_count = t_count + 1   #increment the counter
-   print "t: " + str(t_count) + " occurrences"   
+   print("t: " + str(t_count) + " occurrences")  
 
 We can accumulate counts for more than one character as we traverse the text.
 Suppose, for example, we wanted to compare the counts of 't' and 's' in the text.
@@ -59,8 +59,8 @@ Suppose, for example, we wanted to compare the counts of 't' and 's' in the text
            t_count = t_count + 1   #increment the t counter
        elif c == 's':
            s_count = s_count + 1
-   print "t: " + str(t_count) + " occurrences"  
-   print "s: " + str(s_count) + " occurrences"  
+   print("t: " + str(t_count) + " occurrences") 
+   print("s: " + str(s_count) + " occurrences")
    
 OK, but you can see this is going to get tedious if we try to accumulate counts
 for all the letters. We will have to initialize a lot of accumulators, and there will
@@ -84,8 +84,8 @@ many times that letter has occurred.
        elif c == 's':
            x['s'] = x['s'] + 1  # increment the s counter
 
-   print "t: " + str(x['t']) + " occurrences"  
-   print "s: " + str(x['s']) + " occurrences"   
+   print("t: " + str(x['t']) + " occurrences")
+   print("s: " + str(x['s']) + " occurrences")
 
 This hasn't really improved things yet, but look closely at lines 8-11 in the code above.
 Whichever character we're seeing, t or s, we're incrementing the counter for that 
@@ -105,8 +105,8 @@ character. So lines 9 and 11 could really be the same.
        elif c == 's':
            x[c] = x[c] + 1   # increment the s counter
 
-   print "t: " + str(x['t']) + " occurrences"  
-   print "s: " + str(x['s']) + " occurrences"   
+   print("t: " + str(x['t']) + " occurrences")
+   print("s: " + str(x['s']) + " occurrences")
 
 Lines 9 and 11 above may seem a little confusing at first. Previously, our assignment 
 statements referred directly to keys, with ``x['s']`` and ``x['t']``. Here we 
@@ -152,8 +152,8 @@ start keeping count of.
        #whether we've seen it before or not, increment its counter
        x[c] = x[c] + 1
 
-   print "t: " + str(x['t']) + " occurrences"  
-   print "s: " + str(x['s']) + " occurrences"   
+   print("t: " + str(x['t']) + " occurrences")
+   print("s: " + str(x['s']) + " occurrences")
 
 Notice that in the for loop, we no longer need to explicitly ask whether the current
 letter is an 's' or 't'. The increment step on line 11 works for the counter
@@ -180,7 +180,6 @@ counts for all letters, not just 's' and 't'.
    already run.)
 
 
-
 Note that the print statements at the end pick out the specific keys 't' and 's'. We
 can generalize that, too, to print out the occurrence counts for all of
 the characters, using a for loop to iterate through the keys in x.  
@@ -200,7 +199,7 @@ the characters, using a for loop to iterate through the keys in x.
        x[c] = x[c] + 1
 
    for c in x.keys():
-       print c + ": " + str(x[c]) + " occurrences"
+       print(c + ": " + str(x[c]) + " occurrences")
    
 Note that only those letters that actually occur in the text are shown. Some
 punctuation marks that are possible in English, but were never used in the 
@@ -215,8 +214,8 @@ test that hypothesis.
    txt_lines = f.readlines()
    # now txt_lines is a list, where each item is one
    # line of text from the story
-   print len(txt_lines)
-   print txt_lines[70:85]
+   print(len(txt_lines))
+   print(txt_lines[70:85])
 
 .. datafile::  scarlet.txt
    :hide:

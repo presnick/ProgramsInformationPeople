@@ -57,7 +57,7 @@ level language, called **byte code**, and then interpreted by a program called
 a **virtual machine**. Python uses both processes, but because of the way
 programmers interact with it, it is usually considered an interpreted language.
 
-In this book, and for the first half of this course, you will not need to instal
+In this book, and for the first half of this course, you will not need to install
 or run python natively on your computer. Instead, you'll be writing simple
 programs and executing them right in your browser. About midway through
 the course, you will install python, and then the next few paragraphs will
@@ -70,8 +70,7 @@ and the interpreter immediately shows the result.  The example below shows the P
 ::
 
    $ python
-   Python 2.7.3 (default, Aug  1 2012, 05:16:07) 
-   [GCC 4.6.3] on linux2
+   Python 3.5.2
    Type "help", "copyright", "credits" or "license" for more information.
    >>> 2 + 3
    5
@@ -89,13 +88,13 @@ help you work out problems.
 Alternatively, you can write an entire program by placing lines of Python instructions
 in a file and then use the interpreter to
 execute the contents of the file as a whole. Such a file is often referred to as **source code**.  For
-example, we used a text editor to create a source code file named ``firstprogram.py`` with
+example, we will use a text editor to create a source code file named ``firstprogram.py`` with
 the following contents:
 
 .. sourcecode:: python
 
-    print "My first program adds two numbers, 2 and 3:"
-    print 2 + 3
+    print("My first program adds two numbers, 2 and 3:")
+    print(2 + 3)
 
 
 By convention, files that contain Python programs have names that end with
@@ -111,6 +110,10 @@ programs identify a file as containing python code.
 These examples show Python being run from a Unix command line. In other
 development environments, the details of executing programs may differ. Also,
 most programs are more interesting than this one.
+
+.. note::
+
+    In this textbook, we will not make use of the interactive python shell. We have found that it is quite confusing to students because the interactive shell shows the value of expressions, which are not normally revealed during a program's execution unless the print function is invoked. This textbook reinforces the notion that there is a difference between the internal state of a program during execution, and visible outputs, which are caused by invocations of the print function.
 
 .. admonition:: Want to learn more about Python?
 
@@ -148,19 +151,4 @@ most programs are more interesting than this one.
    :feedback_d: While it is true that it is generally easier to program in a high-level language and programs written in a high-level language are usually shorter, this is not always the case.
    :correct: c
 
-
    What is the difference between a high-level programming language and a low-level programming language?
-
-.. mchoice:: question1_2_3
-   :answer_a: 1 = a process, 2 = a function
-   :answer_b: 1 = translating an entire book, 2 = translating a line at a time
-   :answer_c: 1 = software, 2 = hardware
-   :answer_d: 1 = object code, 2 = byte code
-   :feedback_a: Compiling is a software process, and running the interpreter is invoking a function, but how is a process different than a function?
-   :feedback_b: Compilers take the entire source code and produce object code or the executable and interpreters execute the code line by line.
-   :feedback_c: Both compilers and interpreters are software.
-   :feedback_d: Compilers can produce object code or byte code depending on the language.  An interpreter produces neither.
-   :correct: b
-
-   Pick the best replacements for 1 and 2 in the following sentence: When comparing compilers and interpreters, a compiler is like 1 while an interpreter is like 2.
-

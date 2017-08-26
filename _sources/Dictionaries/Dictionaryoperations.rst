@@ -50,8 +50,6 @@ Notice that there are now 512 bananas---the dictionary has been modified.  Note 
 of key-value pairs.
 
 
-
-
 **Check your understanding**
 
 .. mchoice:: test_question11_2_1
@@ -64,15 +62,14 @@ of key-value pairs.
    :feedback_c: Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.
    :feedback_d: Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.
    :correct: c
-   
-   
+
    What is printed by the following statements?
    
    .. sourcecode:: python
 
      mydict = {"cat":12, "dog":6, "elephant":23}
      mydict["mouse"] = mydict["cat"] + mydict["dog"]
-     print mydict["mouse"]
+     print(mydict["mouse"])
 
 
 
