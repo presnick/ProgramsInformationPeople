@@ -71,7 +71,7 @@ Problem Set 3
 
      def test_output(self):
          self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-         self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+         self.assertIn("<type 'str'>\n<class 'int'>\n<type 'int'>\n<class 'float'>\n<ckass 'float'>\n<class 'int'>\n<class 'str'>\n<class 'str'>\n<class 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
    myTests().main()
 
@@ -87,14 +87,15 @@ Problem Set 3
    sent = "The magical mystery tour is waiting to take you away."
 
    for x in sent:
-      print x
+      print(x)
 
    =====
 
+   from unittest.gui import TestCaseGui
    class myTests(TestCaseGui):
 
       def testOne(self):
-         print "No tests for the comment -- we have to read those!\n"
+         print("No tests for the comment -- we have to read those!\n")
          self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
 
    myTests().main()
@@ -215,7 +216,7 @@ Problem Set 3
    else:
      y = "unknown"
 
-   print "y is " + str(y)
+   print ("y is " + str(y))
 
    =====
 
@@ -234,7 +235,7 @@ Problem Set 3
          elif x == -10:
              self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
          else:
-             print "No tests when value of x is %s" % (x)
+             print("No tests when value of x is %s" % (x))
 
    myTests().main()
 

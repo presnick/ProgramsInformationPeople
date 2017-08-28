@@ -92,7 +92,7 @@ Problem Set 4
            23 345
            well spring
 
-       **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
+       **Hint:** Printing things with a comma, e.g. ``print ("hello", "everyone")`` will print out those things on the same line with  a space in between them: ``hello everyone``.
 
        Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
 
@@ -195,7 +195,7 @@ Problem Set 4
        **6.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
        ~~~~
        def subtract_five(inp):
-           print inp - 5
+           print(inp - 5)
            return None
 
        y = subtract_five(9) - 6

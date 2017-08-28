@@ -194,7 +194,7 @@ Problem Set 2
 
     ====
 
-    print "\n\nThere are no tests for this problem"
+    print("\n\nThere are no tests for this problem")
 
 
 .. activecode:: ps_2_5

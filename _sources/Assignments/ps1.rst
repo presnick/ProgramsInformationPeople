@@ -80,7 +80,7 @@ Problem Set 1
     class myTests(TestCaseGui):
         def testOne(self):
             self.assertIn('print', self.getEditorText(), "Testing that 'print' is in the code. (Don't worry about Actual and Expected Values.)")
-            self.assertIn('type', self.getOutput(), "Testing output. (Don't worry about Actual and Expected Values.)")           
+            self.assertIn('class', self.getOutput(), "Testing output. (Don't worry about Actual and Expected Values.)")
 
     myTests().main()
     
@@ -157,7 +157,7 @@ Problem Set 1
 
     =====
 
-    print "\n\nThere are no tests for this problem. We have to read your comments.\n"
+    print("\n\nThere are no tests for this problem. We have to read your comments.\n")
 
 
 .. activecode:: ps_1_7
@@ -174,14 +174,14 @@ Problem Set 1
     Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
     ~~~~
     # For example
-    print greeting("Jackie")
-    print greeting("everybody")
-    print greeting("sdgadgsal")
+    print(greeting("Jackie"))
+    print(greeting("everybody"))
+    print(greeting("sdgadgsal"))
 
     # Try running all this code more than once, so you can see how calling the function
     # random_digit works.
-    print random_digit()
-    print random_digit()
+    print(random_digit())
+    print(random_digit())
 
     # Write code that assigns the variables as mentioned in the instructions.
 
