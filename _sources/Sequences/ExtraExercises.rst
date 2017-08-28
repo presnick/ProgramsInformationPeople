@@ -36,10 +36,11 @@ Extra Exercises
    .. tabbed:: q2
    
       .. tab:: Question
-   
-         Write code that asks the user to type something and deletes all occurrences of the word "like".
-         
+
          .. actex:: ex_3_1
+
+            Write code that asks the user to type something and deletes all occurrences of the word "like".
+            ~~~~
          
       .. tab:: Answer
       
@@ -55,9 +56,11 @@ Extra Exercises
    
       .. tab:: Question
 
-         Write code that asks the user to type something and removes all the vowels from it, then prints it out.
-
          .. actex:: ex_3_2
+
+            Write code that asks the user to type something and removes all the vowels from it, then prints it out.
+            ~~~~
+
 
 
 #.  
@@ -65,10 +68,10 @@ Extra Exercises
 
       .. tab:: Question
       
-         Write code that transforms the list ``[3, 6, 9]`` into the list ``[3, 0, 9]`` and then prints it out
-   
          .. actex:: ex_3_3
 
+            Write code that transforms the list ``[3, 6, 9]`` into the list ``[3, 0, 9]`` and then prints it out
+            ~~~~
             w = [3, 6, 9]
             # add code that changes w
          
