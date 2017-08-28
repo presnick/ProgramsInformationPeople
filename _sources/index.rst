@@ -594,6 +594,14 @@ Unix
    ExtraExercises/session9_6473.rst
 
 
+Sample Problem Sets
+:::::::::::::::::::
+.. toctree::
+   :maxdepth: 1
+
+   assignments.rst
+
+
 Indices and tables
 ::::::::::::::::::
 
