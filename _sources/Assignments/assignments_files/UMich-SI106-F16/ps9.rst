@@ -12,53 +12,10 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Activities through 11/18
-========================
-
-* **Before Monday's class 11/14:**
-    * Read :ref:`Class Inheritance <inheritance_chap>` and try all the exercises in the below listed sections.
-
-.. usageassignment::
-  :subchapters: Inheritance/intro, Inheritance/inheritVarsAndMethods, Inheritance/OverrideMethods, Inheritance/InvokingSuperMethods,  Inheritance/TamagotchiRevisited
-  :assignment_name: Prep 18
-  :deadline: 2016-11-14 20:40
-  :pct_required: 80
-  :points: 50
-
-* **Before Wednesday's class 11/16:**
-    * Read :ref:`Testing <test_cases_chap>` and try the exercises in the below listed sections.
-    * Read `this overview of Git version control <https://swcarpentry.github.io/git-novice/01-basics/>`_. (This is the first page of a whole lesson on Git. You need only read this page, but you may find the resources interesting!)
-    * Read this tutorial on GitHub. (You will not need to create or use a GitHub repository for this course, but these readings will help prepare you for the reading and reading response upcoming, and some later chapters in the Weber book.)
-         * `Part I of tutorial <http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1>`_
-         * `Part II of tutorial <http://readwrite.com/2013/10/02/github-for-beginners-part-2>`_
-
-.. usageassignment::
-  :subchapters: Testing/intro-TestCases, Testing/Testingfunctions, Testing/Testingclasses
-  :assignment_name: Prep 19
-  :deadline: 2016-11-16 20:40
-  :pct_required: 80
-  :points: 50
-
-* **Before Sunday 11/20 at 11:59 PM:**
-    * Complete all of :ref:`Problem Set 9 <problem_set_9>` and the Demonstrate Your Understanding assignment for this week (linked below), and submit each on Canvas.
-    * Complete :ref:`Reading Response 10 <reading_response_10>`.
-
-
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_10:
-
-.. external:: rr_10
-
-  `Reading Response 10 <https://umich.instructure.com/courses/105657/assignments/131309>`_ on Canvas.
-
-
 .. _problem_set_9:
 
-Problem Set
------------
+Problem Set 9
+-------------
 
 Go `HERE to see the Problem Set 9 assignment <https://umich.instructure.com/courses/105657/assignments/131301>`_, where you can find the location of the file to download and edit, and where you can submit your Python file for this assignment. 
 

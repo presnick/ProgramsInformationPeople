@@ -11,64 +11,10 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Activities through 9/23
-=======================
-
-You have the following graded activities:
-
-* **By Sunday 9/18 at 11:59 pm:** 
-
-  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ .
-
-* **Before class Monday 9/19:**
-
-  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. (You should try all the exercises **in the Sequences** sections that are listed below**. There are also additional exercises for practice! You may try these any time and we may discuss them in lecture. They may help you understand the material better! You do *not* need to do them for Lecture Prep.)
-
-  * **To get credit for lecture attendance for Monday's lecture** (thus making attendance at Monday's lecture optional), complete the :ref:`Lecture 4 Waiver <lecture_4_waiver>` *before* Monday's lecture and pass all of the tests. (We encourage you to try these, regardless!)
-
-.. usageassignment:: 
-  :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin
-  :assignment_name: Prep 04
-  :deadline: 2016-09-30 04:00
-  :pct_required: 80
-  :points: 50
-
-
-* **Before Wednesday's class 9/21:**
-
-  * :ref:`Lecture 5 Waiver<lecture_5_waiver>`
-
-  * Read :ref:`Iteration<iteration_chap>`, and try the exercises in that chapter. 
-
-.. usageassignment:: 
-  :subchapters: Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings
-  :assignment_name: Prep 05
-  :deadline: 2016-09-30 04:00
-  :pct_required: 80
-  :points: 50
-
-  
-
-* By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
-
-  * Complete each of the problem set problems.
-  * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
-
-* Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 11:59 PM. 
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_3:
-
-.. external:: rr_3
-    
-    `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ on Canvas.
-
 .. _problem_set_2:
 
-Problem Set
------------
+Problem Set 2
+-------------
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save & run** for each one. The last code you have saved for each one by the deadline is what will be graded.
 

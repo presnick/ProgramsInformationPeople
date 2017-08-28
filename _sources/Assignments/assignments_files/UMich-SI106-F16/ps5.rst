@@ -11,78 +11,10 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Activities through 10/19 (through Fall Break)
-=============================================
-
-You have the following graded activities:
-
-* **Before Monday's class 10/10:**
-    
-  * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
-  * *If you use a Windows computer,* read and do the installation in the (:ref:`instructions for installing git bash <install_git_bash>`). 
-  * Read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python. Try to do the exercises and installations. You will address any installation problems you have (hopefully none! Fingers crossed) in section this week. 
-
-  * :ref:`Lecture 10 Waiver <lecture_10_waiver>`
-
-.. usageassignment::
-    :subchapters: IndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop, Installation/TextEditor
-    :assignment_name: Prep 10
-    :deadline: 2016-10-10 19:40
-    :pct_required: 80
-    :points: 50
-  
-* **By Tuesday 10/11 11:59 pm:**
-    * Read *The Most Human Human*, Chapter 10, p.219-237.
-    * Answer `Reading Response 6 <https://umich.instructure.com/courses/105657/assignments/131317>`_ on Canvas.
-
-* **Before Wednesday's class 10/12:**
-    
-  * Read :ref:`Unix and the Command Line<unix_chapter>`, and try out the commands you learn -- in Terminal, if you use a mac, or Git Bash, if you use Windows.
-  * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
-
-  * **now with a new text box you need to complete before lecture** :ref:`Lecture 11 Waiver <lecture_11_waiver>`
-
-.. usageassignment::
-    :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
-    :assignment_name: Prep 11
-    :deadline: 2016-10-12 19:40
-    :pct_required: 80
-    :points: 50
-
-
-* By Friday 10/14 at 6:30 PM:
-   * Save answers to the code exercises in Problem Set 5: :ref:`Problem Set 5 <problem_set_5>` (Half of the problem set, which is just like the usual ones, but shorter)
-   * Complete the :ref:`Unix Exercises for Problem Set 5 <problem_set_5_unix>`. (Half the problem set, which you will also find at the botton of this page)
-   
-   * Submit your **Demonstrate Understanding** assignment on Canvas
-
-* **By Wednesday 10/19, after fall break:**
-   * Be ready for the midterm exam, see syllabus.
-
-   * Updated study materials will be announced via Canvas.
-
-   * Suggested practice for making best use of the problem sets for review
-      * Go through all the problem sets, looking at your answers and fixing them if they weren't correct.
-      * Then make another pass through the problem sets. This time, don't look at your past answer or any solution set. Write new answers from scratch. See how quickly you can solve them. Make a note of any problems that take you a long time to solve.
-      * Repeat as necessary. On later iterations of this process, only redo the problems that you did not solve immediately on the previous iteration.
-
-   * There are practice problems in all chapters under ExtraExercises, and some additional ones at the bottom of this page. Some have solutions. They are *not* required, but may be helpful if you are looking for more study material. Try writing your answers out on paper and checking them here!
-
-.. _reading_response_6:
-
-This Week's Reading Responses
------------------------------
-
-.. external:: rr_6
-
-  `Reading Response 6 <https://umich.instructure.com/courses/105657/assignments/131317>`_ on Canvas.
-
 .. _problem_set_5:
 
-Problem Set
------------
-
-**Problem Set 5 is in DRAFT form. You may save answers to the problems and try them out, but until we remove this notification, we cannot guarantee there will not be small changes. It will not change dramatically.**
+Problem Set 5
+-------------
 
 
 .. datafile:: timely_file.txt

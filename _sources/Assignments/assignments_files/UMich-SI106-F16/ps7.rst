@@ -13,73 +13,10 @@
     :linenothreshold: 500
 
 
-Activities through 11/4
-=======================
-
-* **Before Monday's class 10/31:**
-    * Read :ref:`Sorting and anonymous functions<sort_chap>` and try the exercises in the sections listed below.
-    * Read the chapter about the ``pip`` module and installation (almost the same for Windows and Mac, one small difference, which you'll see in the chapter). If you have trouble, check out :ref:`Native Interpreter Gotchas<gotchas_chap>`.
-    * Read the single listed subsection about Unit Testing. (You will learn more about Unit Testing later in this course. For now, you just need to be familiar with the idea and the output, because this is your first week submitting a problem set that you run completely on your computer. We will discuss this further in lecture!)
-
-* **Before Tuesday 11/1 11:59 PM:**
-    * **Reading Response 8 deadline has been extended until Sunday Nov 6 at 11:59 PM, same as the problem set**
-
-.. usageassignment::
-  :subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting, PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Testing/intro-TestCases
-  :assignment_name: Prep 14
-  :deadline: 2016-10-31 21:40
-  :pct_required: 80
-  :points: 50
-
-* **Before Wednesday's class 11/2:**
-    * Read the below listed sections about REST APIs, unicode, and how the internet works, and try any exercises in those sections.
-    * Read this brief snippet about `Unix curl <https://en.wikipedia.org/wiki/CURL#Examples_of_cURL_use_from_command_line>`_  commands. 
-
-
-.. usageassignment::
-  :subchapters: Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/DebugURLs, RESTAPIs/jsonlib, RESTAPIs/unicode, RESTAPIs/requestsCookbook
-  :assignment_name: Prep 15
-  :deadline: 2016-11-02 21:40
-  :pct_required: 80
-  :points: 50
-
-* **By Friday 11/04 at 6:30 PM:**
-   * Complete Problem Set 7: :ref:`Problem Set 7 <problem_set_7>` per the instructions below, and submit your ``106_ps7.py`` file on Canvas. (Grace period until Sunday 11/6 at 11:59 PM.)
-   * Submit your **Demonstrate Your Understanding** assignment on Canvas (linked in problem set) 
-   * **NOTE:** This problem set is the first one you will complete entirely on your computer and submit via Canvas. You need only submit your completed file. **Make sure that "ps7" is in the file name. Otherwise we can't grade it!** 
-
-* **By Sunday 11/06 at 11:59 PM:**
-  * Complete `RR 8 <https://umich.instructure.com/courses/105657/assignments/131319>`_ on Canvas.
-
-.. note::
-
-    **We do not give points for problem set code that does not run!** Just like in the textbook, we grade your code by running it, and we will not fix anything in the middle of your code to get it to run. You should check to be absolutely sure your problem set runs before submitting it.
-
-.. note::
-
-    Starting this week, your problem sets will be completed in ``.py`` files that you will download from Canvas and edit to add your answers. You will test them and work on them by running them via the command prompt, as you practiced last week and the week before. 
-
-    Note that the test output will look different now -- you won't have the nice box with colors that you have in the textbook. However, you will still have the same information and more power to see what is being tested.
-
-    **You will submit your final files in Canvas assignments.** However, the instructions for each problem on the assignment will be found in the textbook, as usual. You will need to reference the textbook for the instructions for each problem, and in the files we provide you, we will provide whatever code (if any) that we intend you to start with, beneath comments e.g. ``## [PROBLEM 1]``.
-
-    Your problem set grades, once they are complete, will appear in the textbook progress page, just like your other problem sets.
-
-
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_8:
-
-.. external:: rr_8
-
-  `Reading Response 8 <https://umich.instructure.com/courses/105657/assignments/131319>`_ on Canvas.
-
 .. _problem_set_7:
 
-Problem Set
------------
+Problem Set 7
+-------------
 
 To find the file for your problem set, and to submit your assignment on Canvas, go `HERE <https://umich.instructure.com/courses/105657/assignments/131299>`_.
 

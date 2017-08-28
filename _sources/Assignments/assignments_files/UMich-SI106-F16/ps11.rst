@@ -12,53 +12,10 @@
     :linenothreshold: 500
 
 
-Activities through 12/01
-========================
-
-* **Before class Monday 11/28:**
-
-  * Read the below listed sections of :ref:`Pyglet <pyglet_chap>` (all except for the last subchapter on the Pong game), and install the ``pyglet`` library with the pip installer.
-  * Download the `Pyglet Materials <https://umich.instructure.com/courses/105657/files/folder/Pyglet%20Materials>`_ folder from Canvas and try out some of the code.
-
-.. usageassignment::
-  :subchapters: Pyglet/Pyglet, Pyglet/pygletWindow, Pyglet/eventListener, Pyglet/windowContents, Pyglet/sounds, Pyglet/jinglingSquare, Pyglet/schedulingEvents
-  :assignment_name: Prep 21
-  :deadline: 2016-11-30 18:40
-  :pct_required: 80
-  :points: 50
-
-* **Before class Wednesday 11/30:**
-
-  * Read the **Pong** subchapter of :ref:`Pyglet <pyglet_chap>`, and review the earlier sections as necessary. You may want to check out the ``basepong.py`` file in the Pyglet Materials folder you downloaded.
-  * Inside the Canvas **Pyglet Materials** folder (Files > Pyglet Materials) that you downloaded for Monday, there is a PDF called **LecturePongQuestions.pdf**. Try to answer questions 1-11 before class Wednesday, and bring a printed copy of the questions. (They are for you, you do not have to turn them in!) We will go over answers to those questions in class, and work on answering more of questions during lecture.
-
-.. usageassignment::
-  :subchapters: Pyglet/Pong
-  :assignment_name: Prep 21
-  :deadline: 2016-11-30 18:40
-  :pct_required: 50
-  :points: 50
-
-* **Before Sunday 12/04 at 11:59 PM:**
-
-  * Complete and submit your :ref:`Problem Set 11 <problem_set_11>`, and save an answer to your Demonstrate Understanding for this week (linked below).
-  * Complete :ref:`Reading Response 12 <reading_response_12>`.
-
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_12:
-
-.. external:: rr_12
-
-  `Reading Response 12 <https://umich.instructure.com/courses/105657/assignments/131311>`_ on Canvas.
-
-
 .. _problem_set_11:
 
-Problem Set
------------
+Problem Set 11
+--------------
 
 Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/courses/105657/assignments/131297>`_, where you can find the files you need to download, and where you can submit your completed problem set file for this assignment.
 

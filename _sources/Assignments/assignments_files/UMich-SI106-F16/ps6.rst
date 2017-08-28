@@ -12,59 +12,9 @@
     :linenothreshold: 500
 
 
-Activities through 10/28
-========================
 
-You have the following graded activities:
-
-* **Before Monday's class 10/24:**
-    * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`, and try the exercises in that chapter
-
-.. usageassignment::
-    :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters
-    :assignment_name: Prep 12
-    :deadline: 2016-10-24 19:40
-    :pct_required: 80
-    :points: 50
-
-* **By Tuesday 10/25 11:59 pm:**
-    * Read `Tutorial on unix diff <http://www.computerhope.com/unix/udiff.htm>`_ (This will help you understand the section of "The Most Human Human" below)
-    * Read *The Most Human Human*, Chapter 10, p.237-259.
-    * Answer `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
-
-    * :ref:`Lecture 12 Challenge Exercises <lecture_12_waiver>`
-
-
-* **Before Wednesday's class 10/26:**
-   * Read :ref:`Tuples<tuples_chap>`, and try the exercises in that chapter
-   * Read :ref:`Nested Data Structures and Nested Iteration<nested_chap>`, and try the exercises in that chapter
-
-   * Challenge problems: TBA. No lecture waiver for this lecture. Everyone will get credit. But we strongly encourage attendance for this one.
-
-.. usageassignment::
-    :subchapters: Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems, NestedData/ListswithComplexItems, NestedData/NestedDictionaries, NestedData/NestedIteration, NestedData/DebuggingNestedData
-    :assignment_name: Prep 13
-    :deadline: 2016-10-26 19:40
-    :pct_required: 80
-    :points: 50
-
-
-* **By Friday 10/28 at 6:30 PM:**
-   * Save answers to the exercises in Problem Set 6: :ref:`Problem Set 6 <problem_set_6>`, including submitting your result for the last question in the **Problem Set 6 Unix Problems** assignment on Canvas!
-   * Submit your **Demonstrate Your Understanding** assignment on Canvas (linked in problem set) 
-
-.. _reading_response_7:
-
-This Week's Reading Responses
------------------------------
-
-.. external:: rr_7
-
-    `Reading Response 7 <https://umich.instructure.com/courses/105657/assignments/131318>`_ on Canvas.
-
-
-Problem Set
------------
+Problem Set 6
+-------------
 
 .. _problem_set_6:
 

@@ -13,59 +13,10 @@
     :linenothreshold: 500
 
 
-Activities through 11/11
-========================
-
-* **Before Monday's class 11/7:**
-    * Read :ref:`Python modules <modules_chap>`, and if you haven't already, make sure to read about the :ref:`pip module installer <pip_chap>`
-    * Read :ref:`Try/Except <exceptions_chap>` and :ref:`String Formatting<formatting_chap>`
-    * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
-    * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
-    * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
-    * We suggest you read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`, which may also be helpful as we move forward. (Not graded, but very useful.)
-    * You may want to review :ref:`REST APIs<rest_apis_chap>` (not graded this week, just a suggestion)
-
-.. usageassignment::
-  :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr
-  :assignment_name: Prep 16
-  :deadline: 2016-11-07 20:40
-  :pct_required: 80
-  :points: 50
-
-* Note that your reading responses will from now onbe due on **Sunday nights**, at the same time as your Problem Sets. Of course, you can always turn them in early!
-    
-* **Before Wednesday's class, 11/9:**
-    * We will post a file on Canvas in Files > Code Samples that shows code to access the Flickr API, which is commented thoroughly. You may want to download this, look at it, and try it out! (This goes back to the information from the :ref:`Using REST APIs chapter<using_RESTAPIs_chap>` you read for Monday.)
-    * Read the sections listed below from the :ref:`Classes<chap_constructor>` chapter, and try the exercises in those sections.
-
-.. usageassignment::
-  :subchapters: Classes/intro-ClassesandObjectstheBasics, Classes/ObjectsRevisited, Classes/UserDefinedClasses, Classes/ImprovingourConstructor, Classes/AddingOtherMethodstoourClass,   Classes/ObjectsasArgumentsandParameters, Classes/ConvertinganObjecttoaString, Classes/InstancesasReturnValues, Classes/sorting_instances, Classes/ClassVariablesInstanceVariables, Classes/ThinkingAboutClasses, Classes/ClassesHoldingData, Classes/Tamagotchi
-  :assignment_name: Prep 17
-  :deadline: 2016-11-09 20:40
-  :pct_required: 80
-  :points: 50
-
-
-* **Before Sunday 11/13 at 11:59 PM:**
-
-  * Complete all of :ref:`Problem Set 8 <problem_set_8>` and the Demonstrate Your Understanding assignment for this week (linked below), and submit each on Canvas.
-  * Complete :ref:`Reading Response 9<reading_response_9>`.
-
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_9:
-
-.. external:: rr_9
-
-  `Reading Response 9 <https://umich.instructure.com/courses/105657/assignments/131320>`_ on Canvas.
-
-
 .. _problem_set_8:
 
-Problem Set
------------
+Problem Set 8
+-------------
 
 Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/courses/105657/assignments/131300>`_, where you can find the location of the file to download and edit, where you can submit your Python file for this assignment.
 
