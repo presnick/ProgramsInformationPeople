@@ -23,14 +23,15 @@ Activities: Week 4
   * Read :ref:`Tuples<tuples_chap>`
   * Read the :ref:`Unix<unix_chapter>` chapter and try the exercises in that chapter on your computer
   * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
-  * Read :ref:`Installing a text editor<text_editor_installation>` section for background, and make sure you have a text editor installed. (You can leave the rest of the installation chapter aside; it may contain some outdated information!) We recommend `Atom<updateurl.com>`_ or `Sublime Text<updateurl.com>`_. **Microsoft Word or NotePad will not work for programs! You must install a Text Editor program that works for writing Python code.**
+  * Read :ref:`Installing a text editor<text_editor_installation>` section for background, and make sure you have a text editor installed. (You can leave the rest of the installation chapter aside; it may contain some outdated information!) We recommend `Atom <https://atom.io/>`_, which is only available for Mac, or `Sublime Text <https://www.sublimetext.com/>`_, which is available for Windows OR Mac. **Microsoft Word or NotePad will not work for programs! You must install a Text Editor program that works for writing Python code.**
   * Read the `Python installation instructions <https://umich.instructure.com/courses/172984/assignments/329369>`_ on Canvas.
 
 
 * **Before Sunday 2/05 at 11:59 PM:**
 
   * Complete all of the below :ref:`Problem Set 4<problem_set_4>` and the Demonstrate Your Understanding assignment for this week.
-  * *Compete the :ref:`Unix Exercises<problem_set_4_unix>` and submit screenshots to Canvas. Clicking that link will bring you to the instructions.
+  * Complete the :ref:`Unix Exercises<problem_set_4_unix>` and submit screenshots to Canvas. Clicking that link will bring you to the instructions.
+
 
 .. note::
 

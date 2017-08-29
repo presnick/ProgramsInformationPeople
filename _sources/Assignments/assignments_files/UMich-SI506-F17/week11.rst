@@ -31,7 +31,9 @@ Activities: Week 11
 * **By Sunday at 11:59 PM:**
 
 	* Submit your Problem Set 10 and your DYU 10 to Canvas
-  * NOTE: This is the last DYU that is required! However, if you missed any DYUs along the way, you have 1 more opportunity to submit DYUs pertaining to material we cover during the remainder of the semester, and/or material you come to new confusion / new understanding of during the process of completing the final project. More on this in class & announcement!
+  * **NOTE:** This is the last DYU that is required! However, if you missed any DYUs along the way, you have 1 more opportunity to submit DYUs pertaining to material we cover during the remainder of the semester, and/or material you come to new confusion / new understanding of during the process of completing the final project. More on this in class & announcement!
+
+  
 
 
 .. _problem_set_10:
