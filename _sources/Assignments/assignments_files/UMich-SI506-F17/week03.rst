@@ -32,7 +32,7 @@ You have the following graded activities:
 
 * **Before Sunday at 11:59 PM:**
 
-  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas (linked in the problem set).
+  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas.
 
 
 Problem Set
@@ -95,9 +95,9 @@ Problem Set
    # Some function calls and lines that print out the results
    l = [3,46,6]
    b = [4,"hi",10,"12",12,123,"whoa!"]
-   print list_end_with_string([1,2])
-   print list_end_with_string(l)
-   print list_end_with_string(b)
+   print(list_end_with_string([1,2]))
+   print(list_end_with_string(l))
+   print(list_end_with_string(b))
 
    # Now write a couple invocations of this function yourself below this line.
 
@@ -136,7 +136,7 @@ Problem Set
    **4.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
    ~~~~
    def subtract_five(inp):
-       print inp - 5
+       print(inp - 5)
        return None
 
    y = subtract_five(9) - 6
@@ -188,12 +188,12 @@ Problem Set
 
    # Here's a couple example function calls, printing the return value
    # to show you what it is.
-   print is_prefix("He","Hello") # should print True
-   print is_prefix("Hello","He") # should print False
-   print is_prefix("Hi","Hello") # should print False
-   print is_prefix("lo","Hello") # should print False
-   print is_prefix("Hel","Hello") # should print True
-   print is_prefix("Hello","Hello") # should print True
+   print(is_prefix("He","Hello")) # should print True
+   print(is_prefix("Hello","He")) # should print False
+   print(is_prefix("Hi","Hello")) # should print False
+   print(is_prefix("lo","Hello")) # should print False
+   print(is_prefix("Hel","Hello")) # should print True
+   print(is_prefix("Hello","Hello")) # should print True
    # Remember, these won't work at all until you have defined a function called is_prefix
 
    =====
@@ -219,7 +219,3 @@ Problem Set
 
    myTests().main()
 
-
-.. external:: ps3_dyu
-
-   Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231778>`_ for this week on Canvas.

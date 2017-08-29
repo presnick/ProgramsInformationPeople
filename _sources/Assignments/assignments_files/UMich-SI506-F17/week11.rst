@@ -31,6 +31,7 @@ Activities: Week 11
 * **By Sunday at 11:59 PM:**
 
 	* Submit your Problem Set 10 and your DYU 10 to Canvas
+  * NOTE: This is the last DYU that is required! However, if you missed any DYUs along the way, you have 1 more opportunity to submit DYUs pertaining to material we cover during the remainder of the semester, and/or material you come to new confusion / new understanding of during the process of completing the final project. More on this in class & announcement!
 
 
 .. _problem_set_10:
@@ -50,8 +51,6 @@ Problem Set
 * Use existing class definitions to create instances
 * Write unit tests for code based on descriptions we give you, and find bugs in code we've provided by writing tests!
 
-.. external:: ps10_dyu
 
-    Complete this week's `Demonstrate Your Understanding <updatelink.com>`_ assignment on Canvas.
 
-    This is the last DYU that is required! However, if you missed any DYUs along the way, you have 2 more opportunities to submit DYUs pertaining to material we cover during the remainder of the semester and/or material you come to new confusion or new understanding of in the process of completing the final project. More on this later!
+    

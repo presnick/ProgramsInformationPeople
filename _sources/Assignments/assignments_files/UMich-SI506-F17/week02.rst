@@ -34,7 +34,7 @@ You have the following graded activities:
 * By **Sunday at 11:59PM**, save answers to the exercises in **Problem Set 2**:
 
   * Complete each of the problem set problems.
-  * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
+  * Submit your Demonstrate Your Understanding assignment.
 
 .. _problem_set_2:
 
@@ -141,7 +141,7 @@ Problem Set
    else:
      y = "unknown"
 
-   print "y is " + str(y)
+   print("y is " + str(y))
 
    =====
 
@@ -160,7 +160,7 @@ Problem Set
          elif x == -10:
              self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
          else:
-             print "No tests when value of x is %s" % (x)
+             print("No tests when value of x is %s" % (x))
 
    myTests().main()
 
@@ -260,7 +260,7 @@ Problem Set
      23 345
      well spring
 
-   **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
+   **Hint:** Printing things with a comma, e.g. ``print("hello", "everyone")`` will print out those things on the same line with  a space in between them: ``hello everyone``.
 
    **PART 2**
    Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
@@ -309,8 +309,3 @@ Problem Set
        self.assertIn('for', self.getEditorText(), "Testing that there is a for inside your code (Don't worry about actual and expected values).")
 
    myTests().main()
-
-
-.. external:: ps2_dyu
-
-    Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231777>`_ for this week on Canvas.

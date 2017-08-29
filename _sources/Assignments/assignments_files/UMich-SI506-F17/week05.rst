@@ -100,9 +100,6 @@ To find the file for your problem set, and to submit your assignment on Canvas, 
 
     **Suggestion:** It's a good idea to come up with some sample "test cases" to help yourself work through this, in addition to the tests we have provided in your code file. Come up with sample lists where it's easy to figure out what the correct sorting is, and make invocations to your function using that input, and print out the results. If you get different output than you expect, trace through the process to figure out where it might have gone wrong. Writing out an English plan for this and translating it into code bit by bit may also be a good idea.
 
-.. external:: ps5_dyu
-
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231780>`_ assignment on Canvas.
 
 
 

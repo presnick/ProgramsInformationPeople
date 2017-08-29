@@ -47,7 +47,7 @@ Activities: Week 1
 
 * **By Sunday 9/10 at 11:59 PM:** 
 
-  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <updatelink.com>`_ (DYU), also linked below in the problem set.
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/172984/assignments/329347>`_ that goes with the readings.
 
 .. _problem_set_1:
 
@@ -127,15 +127,15 @@ Problem Set
     # make sure to be very clear and detailed about the following line of code
     orange = square(b)
 
-    print a
+    print(a)
 
-    print b
+    print(b)
 
-    print orange
+    print(orange)
 
     pear = square
 
-    print pear
+    print(pear)
 
 .. activecode:: ps_1_04
     :language: python
@@ -171,14 +171,14 @@ Problem Set
     Then, write code that assigns to the variable ``digit_func`` the **function** ``random_digit`` (without executing the function).
     ~~~~
     # For example
-    print greeting("Jackie")
-    print greeting("everybody")
-    print greeting("sdgadgsal")
+    print(greeting("Jackie"))
+    print(greeting("everybody"))
+    print(greeting("sdgadgsal"))
      
     # Try running all this code more than once, so you can see how calling the function
     # random_digit works.
-    print random_digit()
-    print random_digit()
+    print(random_digit())
+    print(random_digit())
 
     # Write code that assigns the variables as mentioned in the instructions.
 
@@ -257,7 +257,7 @@ Problem Set
     #####################   
      
     # Write a comment explaining each of the following, after each question.
-    # Don't forget to press **run** to save!
+    # Don't forget to press **run** to save once you've done this!
      
     # What is square? 
      
@@ -378,10 +378,6 @@ Problem Set
     import turtle
 
 
-.. external:: ps1_dyu
-
-    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231785>`_ for this week.
-    
 
 That's the end of the problem set. In the hidden code below, you will find the definitions of functions that were used elsewhere in the problem set. They're hidden because you don't yet need to understand how function definitions work. But if you want a preview, feel free to click on Show/Hide Code.
 

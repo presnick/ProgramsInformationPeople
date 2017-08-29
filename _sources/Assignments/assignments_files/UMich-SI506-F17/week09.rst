@@ -35,6 +35,3 @@ Much like the last couple weeks, you'll see instructions and provided code for e
 
 Remember that we do not grade files which do not run, so make sure that your file runs and shows test output before submitting it. Comment out any code that causes an error!
 
-.. external:: ps8_dyu
-
-    Complete this week's `Demonstrate Your Understanding <updatelink.com>`_ assignment on Canvas.

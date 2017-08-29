@@ -50,6 +50,3 @@ Problem Set
 * Store data from Facebook in class instances
 * Do further data manipulation and write results to a CSV file
 
-.. external:: ps9_dyu
-
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231784>`_ assignment on Canvas.

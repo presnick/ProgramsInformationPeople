@@ -24,7 +24,7 @@ Activities: Week 4
   * Read the :ref:`Unix<unix_chapter>` chapter and try the exercises in that chapter on your computer
   * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
   * Read :ref:`Installing a text editor<text_editor_installation>` section for background, and make sure you have a text editor installed. (You can leave the rest of the installation chapter aside; it may contain some outdated information!) We recommend `Atom<updateurl.com>`_ or `Sublime Text<updateurl.com>`_. **Microsoft Word or NotePad will not work for programs! You must install a Text Editor program that works for writing Python code.**
-  * Read the `Python installation instructions <UPDATELINK.com>`_ on Canvas.
+  * Read the `Python installation instructions <https://umich.instructure.com/courses/172984/assignments/329369>`_ on Canvas.
 
 
 * **Before Sunday 2/05 at 11:59 PM:**
@@ -195,9 +195,9 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 
    # Sample calls to this function
    # (Remember, these won't work until you define the function blanked)
-   print blanked("hello", "elj")
+   print(blanked("hello", "elj"))
    #should output _ell_
-   print blanked("almost","amsvr")
+   print(blanked("almost","amsvr"))
    # should output a_m_s_ 
 
 
@@ -230,11 +230,11 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 
     # Sample invocations of the function.
 
-    print health_prompt(3, 7)
+    print(health_prompt(3, 7))
     #this statement should produce the output
     #health: +++----
 
-    print health_prompt(0, 4)
+    print(health_prompt(0, 4))
     #this statement should produce the output
     #health: ----
 
@@ -255,9 +255,7 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 
 In class, you'll see these things all put together. Soon, you'll put these together yourself and run your completed hangman program on your own computer, instead of in the textbook.
 
-.. external:: ps4_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231779>`_ assignment on Canvas.
 
 
 
@@ -266,7 +264,7 @@ In class, you'll see these things all put together. Soon, you'll put these toget
 Problem Set 4: Unix Exercises
 -----------------------------
 
-For each step of the Unix part of this problem set, please take a screenshot that shows us the command(s) you typed and the results. Save the screenshots as ``step1.jpg`` (or ``.png``), ``step2.jpg``, etc. Upload them all to `the Unix Exercises <updatelinkorcanvas.com>`_ assignment on Canvas.
+For each step of the Unix part of this problem set, please take a screenshot that shows us the command(s) you typed and the results. Save the screenshots as ``step1.jpg`` (or ``.png``), ``step2.jpg``, etc. Upload them all to `the Unix Exercises <https://umich.instructure.com/courses/172984/assignments/329372>`_ assignment on Canvas.
 
 Following the Unix exercises, there are a few Activecode windows and directions for Python exercises which comprise the second part of this problem set.
 
@@ -280,7 +278,7 @@ Following the Unix exercises, there are a few Activecode windows and directions 
 
     .. sourcecode:: python
 
-        print "hello world"
+        print("hello world")
 
     Save the file as ``prog1.py``. You've now saved a Python program on your computer.
 
@@ -293,7 +291,7 @@ Following the Unix exercises, there are a few Activecode windows and directions 
         def greeting(x):
             return "hello " + x
 
-        print greeting("there")
+        print(greeting("there"))
 
     Save this file as ``prog2.py``.
     

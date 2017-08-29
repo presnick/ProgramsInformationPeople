@@ -78,6 +78,4 @@ Check out the `Flickr Photo Info API documentation <https://www.flickr.com/servi
 
 We will discuss the challenge in more detail later on in class. 
 
-.. external:: ps7_dyu
 
-    Complete this week's `Demonstrate Your Understanding <updatelink.com>`_ assignment on Canvas.

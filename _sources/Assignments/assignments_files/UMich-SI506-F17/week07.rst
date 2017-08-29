@@ -96,10 +96,10 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
     .. sourcecode:: python
 
-        print airport_code
-        print status_reason
-        print current_temp
-        print recent_update
+        print(airport_code)
+        print(status_reason)
+        print(current_temp)
+        print(recent_update)
 
     See further detailed instructions in your file!
 
@@ -147,7 +147,5 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
     Open the document in Excel or in Google Drive to make sure that it is properly formatted.
 
-.. external:: ps6_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231781>`_ assignment on Canvas.
 
