@@ -137,25 +137,6 @@ Problem Set
 
     print(pear)
 
-.. activecode:: ps_1_04
-    :language: python
-    :autograde: unittest
-
-    **4.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
-    ~~~~
-    several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-
-      def test_output(self):
-          self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-          self.assertIn("<class 'str'>\n<class 'int'>\n<class 'int'>\n<class 'float'>\n<class 'float'>\n<class 'int'>\n<class 'str'>\n<class 'str'>\n<class 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-
-    myTests().main()
 
 .. activecode:: ps_1_05
     :include: addl_functions
