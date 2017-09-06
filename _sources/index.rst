@@ -22,10 +22,6 @@ Table of Contents
    </ul>
 
 
-.. toctree::
-   :maxdepth: 1
-
-   assignments.rst
 
 General Introduction
 ::::::::::::::::::::
@@ -606,6 +602,12 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   assignments.rst
 
 
 
