@@ -19,7 +19,7 @@ Activities: Week 1
 
 * **As soon as you can / after class 9/5:**
 
-  * Read `the course syllabus <TBALINK.com>`_ 
+  * Read `the course syllabus <TBALINK.com>`_
   * Fill out `this google form assignment <TBALINK.com>`_
   * Check out our Piazza forums on the Canvas site.
   * Read `this piece, called Coding Magic <http://marieflanagan.com/coding-magic/>`_ by Marie LeBlanc Flanagan
@@ -30,10 +30,10 @@ Activities: Week 1
 
   * Read :ref:`General Intro <the_way_of_the_program>`, :ref:`Simple Python Data<simple_python_data>`, and :ref:`Objects and Turtle Graphics<turtles_chap>`.
   * Read :ref:`Debugging tips<debugging_chap>` and :ref:`Sequences<sequences_chap>`.
-  * There are also some video resources for a bunch of these topics. If you find these helpful, I strongly suggest watching them. Each is a few minutes long: 
+  * There are also some video resources for a bunch of these topics. If you find these helpful, I strongly suggest watching them. Each is a few minutes long:
 
-    * `Expressions <https://www.youtube.com/watch?v=e-FSJQ02bQk>`_, 
-    * `Variables <https://www.youtube.com/watch?v=KcWQG6geZ_0>`_, 
+    * `Expressions <https://www.youtube.com/watch?v=e-FSJQ02bQk>`_,
+    * `Variables <https://www.youtube.com/watch?v=KcWQG6geZ_0>`_,
     * `Data Types <https://www.youtube.com/watch?v=54hFgo1OAQA>`_,
     * `Print and Input <https://www.youtube.com/watch?v=j_xlOtEDl_c>`_,
     * `Comments in programming <https://www.youtube.com/watch?v=PdkAvKKptb8>`_,
@@ -45,7 +45,7 @@ Activities: Week 1
 
 * Go to your discussion section this week, Wednesday or Thursday afternoon
 
-* **By Sunday 9/10 at 11:59 PM:** 
+* **By Sunday 9/10 at 11:59 PM:**
 
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/172984/assignments/329347>`_ that goes with the readings.
 
@@ -84,8 +84,8 @@ Problem Set
            self.assertEqual(num_words, len(rv.split()), "Testing that num_words has been set to the number of words in rv")
 
     myTests().main()
-   
-    
+
+
 .. activecode:: ps_1_02
     :include: addl_functions
     :language: python
@@ -94,7 +94,7 @@ Problem Set
     **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
     xyz = ""
-      
+
     =====
 
     from unittest.gui import TestCaseGui
@@ -137,6 +137,7 @@ Problem Set
 
     print(pear)
 
+.. activecode:: ps_1_04
 
 .. activecode:: ps_1_05
     :include: addl_functions
@@ -145,7 +146,7 @@ Problem Set
 
     **5.** There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
 
-    Write code that assigns to the variable ``func_var`` the **function** ``greeting`` (without executing the function). 
+    Write code that assigns to the variable ``func_var`` the **function** ``greeting`` (without executing the function).
 
     Then, write code that assigns to the variable ``new_digit`` the **return value** from executing the function ``random_digit``.
 
@@ -155,7 +156,7 @@ Problem Set
     print(greeting("Jackie"))
     print(greeting("everybody"))
     print(greeting("sdgadgsal"))
-     
+
     # Try running all this code more than once, so you can see how calling the function
     # random_digit works.
     print(random_digit())
@@ -170,7 +171,7 @@ Problem Set
 
     class myTests(TestCaseGui):
 
-        def testOne(self): 
+        def testOne(self):
            self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
         def testTwo(self):
            self.assertEqual(type(new_digit), type(1), "Testing that new_digit's value is an integer")
@@ -212,50 +213,50 @@ Problem Set
     :include: addl_functions
     :language: python
 
-    **7.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
+    **7.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set.
 
     Now, take a look at the following code and related questions, in this code window.
     ~~~~
     new_str = "'Twas brillig"
-     
+
     y = add_lengths("receipt","receive")
-     
+
     x = random_digit()
-     
+
     z = new_str.find('b')
-     
+
     l = new_str.find("'")
-     
+
     # notice that this line of code is made up of a lot of different expressions
     fin_value = square(len(new_str)) + (z - l) + (x * random_digit())
-     
+
     # DO NOT CHANGE ANY CODE ABOVE THIS LINE
     # But below here, putting print statements and running the code may help you!
-     
-    # The following questions are based on that code. All refer to the types of the 
+
+    # The following questions are based on that code. All refer to the types of the
     #variables and/or expressions after the above code is run.
-     
-    #####################   
-     
+
+    #####################
+
     # Write a comment explaining each of the following, after each question.
     # Don't forget to press **run** to save once you've done this!
-     
-    # What is square? 
-     
+
+    # What is square?
+
     # What type of object does the expression square(len(new_str)) evaluate to?
-     
+
     # What type is z?
-     
+
     # What type is l?
-     
+
     # What type is the expression z-l?
-     
+
     # What type is x?
-     
+
     # What is random_digit? How many inputs does it take?
-     
+
     # What type does the expression x * random_digit() evaluate to?
-     
+
     # Given all this information, what type will fin_value hold once all this code is run?
 
     ====
@@ -326,7 +327,7 @@ Problem Set
 
 
      ella.move(square(x*ella.speed))
-  
+
 .. parsonsprob:: ps_1_09
 
    Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code.
