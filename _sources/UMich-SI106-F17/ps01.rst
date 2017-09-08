@@ -174,7 +174,7 @@ Problem Set 1
     :language: python
     :hidecode:
 
-    **8.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set.
+    **7.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set.
 
     Next, **answer the following code and related questions, in this code window**.
     ~~~~
@@ -230,7 +230,7 @@ Problem Set 1
     :autograde: unittest
     :hidecode:
 
-    **9.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
+    **8.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
 
     Assign the value of the sixth element of ``num_lst`` to a variable called ``elem_sixth``.
 
