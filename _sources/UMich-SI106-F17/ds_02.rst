@@ -23,10 +23,12 @@ Week 2 Discussion Section
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertAlmostEqual(c, 5.0, "Testing that c has the correct value")
-            self.assertIn('sqrt', self.getEditorText(), "Testing that 'sqrt' is in your code. (Don't worry about Actual and Expected Values.)")
+            self.assertAlmostEqual(c, 5.0, 7, "Testing that c has the correct value")
+        def testTwo(self):
+            self.assertIn('sqrt', self.getEditorText(), "Testing that sqrt is in your code. (Don't worry about Actual and Expected Values.)")
 
     myTests().main()
+
 
 .. activecode:: ds_02_02
     :language: python
@@ -50,12 +52,13 @@ Week 2 Discussion Section
 
     myTests().main()
 
+
 .. activecode:: ds_02_03
     :language: python
     :autograde: unittest
     :hidecode:
 
-    **3.** Write code that asks the user to enter a temperature in Fahrenheit and prints that temperature in Celsius. The formula to convert Fahrenheit to Celsius is: C = (F-32)*5/9
+    **3.** Write code that asks the user to enter a temperature in Fahrenheit and prints that temperature in Celsius. The formula to convert Fahrenheit to Celsius is: C = (F-32)*5/9. For example, if the user enters 90, your program should output 32.222. If the user enters -20, your code should output -28.888.
     ~~~~
 
     # Write your code here!
@@ -72,7 +75,8 @@ Week 2 Discussion Section
 
     myTests().main()
 
-    **4.** Here's a complicated expression, using the Turtle framework. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
+
+**4.** Here's a complicated expression, using the Turtle framework. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
 
     .. sourcecode:: python
 
@@ -106,7 +110,8 @@ Week 2 Discussion Section
        =====
        Call the method .move of the Turtle ella on its input integer
 
-    **5.** Here's another complicated expression. Arrange these sentences in the order they are executed in the following code.
+
+**5.** Here's another complicated expression. Arrange these sentences in the order they are executed in the following code.
 
     .. sourcecode:: python
 
@@ -141,6 +146,7 @@ Week 2 Discussion Section
        =====
        run the square function, again, on input 7, returning the value 49
 
+
 .. activecode:: ds_02_06
     :language: python
     :autograde: unittest
@@ -158,11 +164,11 @@ Week 2 Discussion Section
     from unittest.gui import TestCaseGui
 
     class myTests(TestCaseGui):
-
         def testOne(self):
             self.assertEqual(last_elem, "gh", "Testing that last_elem is assigned to 'gh'")
 
     myTests().main()
+
 
 .. activecode:: sqrt_fn
     :language: python
