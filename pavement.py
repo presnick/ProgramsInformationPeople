@@ -8,9 +8,9 @@ paver.setuputils.install_distutils_tasks()
 project_name = "pip2"
 ###############################
 
-# master_url = 'http://127.0.0.1:8000'
+master_url = 'http://127.0.0.1:8000'
 # master_url = 'https://www.programsinformationpeople.org'
-master_url = 'https://106f17.learningpython.today'
+# master_url = 'https://106f17.learningpython.today'
 master_app = 'runestone'
 serving_dir = "./build/" + project_name
 dest = "../../static"

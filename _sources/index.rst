@@ -595,6 +595,13 @@ Unix
    ExtraExercises/session5_7462.rst
    ExtraExercises/session9_6473.rst
 
+Discussion Section Exercises
+::::::::::::::::::::::::::::
+.. toctree::
+   :maxdepth: 2
+
+   UMich-SI106-F17/ds_02.rst
+
 
 Indices and tables
 ::::::::::::::::::
@@ -608,7 +615,3 @@ Indices and tables
    :hidden:
 
    assignments.rst
-
-
-
-
