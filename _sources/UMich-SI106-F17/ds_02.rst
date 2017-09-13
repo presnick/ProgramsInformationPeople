@@ -76,83 +76,79 @@ Week 2 Discussion Section
     myTests().main()
 
 
-**4.** Here's a complicated expression, using the Turtle framework. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
+.. **4.** Here's a complicated expression, using the Turtle framework. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
+..
+..     .. sourcecode:: python
+..
+..          import turtle
+..
+..          ella = turtle.Turtle()
+..          x = "hello class".find("o") - 1
+..          ella.speed = 3
+..
+..
+..          ella.move(square(x*ella.speed))
+..
+..     .. parsonsprob:: ds_02_04
+..
+..        Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code.
+..
+..        -----
+..        Look up the variable ella and find that it is an instance of a Turtle object
+..        =====
+..        Look up the attribute move of the Turtle ella and find that it's a method object
+..        =====
+..        Look up the function square
+..        =====
+..        Look up the value of the variable x and find that it is an integer
+..        =====
+..        Look up the value of the attribute speed of the instance ella and find that it is an integer
+..        =====
+..        Evaluate the expression x * ella.speed to one integer
+..        =====
+..        Call the function square on an integer value
+..        =====
+..        Call the method .move of the Turtle ella on its input integer
+..
+
+**4.** Here's another complicated expression. Arrange these sentences in the order they are executed in the following code.
 
     .. sourcecode:: python
 
-         import turtle
-
-         ella = turtle.Turtle()
-         x = "hello class".find("o") - 1
-         ella.speed = 3
-
-
-         ella.move(square(x*ella.speed))
+        x = 1
+        y = 2
+        square(x + square(y))
 
     .. parsonsprob:: ds_02_04
 
-       Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code.
+       Order the code fragments in the order in which the Python interpreter would evaluate them.
 
        -----
-       Look up the variable ella and find that it is an instance of a Turtle object
+       assign x to 1
        =====
-       Look up the attribute move of the Turtle ella and find that it's a method object
+       assign y to 2
        =====
-       Look up the function square
-       =====
-       Look up the value of the variable x and find that it is an integer
-       =====
-       Look up the value of the attribute speed of the instance ella and find that it is an integer
-       =====
-       Evaluate the expression x * ella.speed to one integer
-       =====
-       Call the function square on an integer value
-       =====
-       Call the method .move of the Turtle ella on its input integer
-
-
-**5.** Here's another complicated expression. Arrange these sentences in the order they are executed in the following code.
-
-    .. sourcecode:: python
-
-        x = 2
-        y = 3
-        square(x + sub(square(y), 2*x))
-
-    .. parsonsprob:: ds_02_05
-
-       Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code.
-
-       -----
        look up the variable square to get the function object
        =====
-       look up the variable x to get 2
-       =====
-       look up the variable sub to get the function object
+       look up the variable x to get 1
        =====
        look up square, again, to get the function object
        =====
-       look up the variable y to get 3
+       look up the variable y to get 2
        =====
-       run the square function on input 3, returning the value 9
+       run the square function on input 2, returning the value 4
        =====
-       look up the variable x again, to get 2
+       add 1 and 4 to get 5
        =====
-       multiply 2 * 2 to get 4
-       =====
-       run the sub function, passing inputs 9 and 4, returning the value 5
-       =====
-       add 2 and 5 to get 7
-       =====
-       run the square function, again, on input 7, returning the value 49
+       run the square function, again, on input 5, returning the value 25
 
 
-.. activecode:: ds_02_06
+.. activecode:: ds_02_05
     :language: python
     :autograde: unittest
     :hidecode:
 
-    **6.** Write code that assigns ``last_elem`` to the **last** element of the sequence ``S``. Don't hard-code your answer (in other words, if we changed ``S``, your answer should still be valid)
+    **5.** Write code that assigns ``last_elem`` to the **last** element of the sequence ``S``. Don't hard-code your answer (in other words, if we changed ``S``, your answer should still be valid)
     ~~~~
     S = ["ab", "cd", "ef", "gh"]
 
@@ -166,6 +162,50 @@ Week 2 Discussion Section
     class myTests(TestCaseGui):
         def testOne(self):
             self.assertEqual(last_elem, "gh", "Testing that last_elem is assigned to 'gh'")
+
+    myTests().main()
+
+.. activecode:: ds_02_06
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **6.** Write code that assigns ``last_letter_first_word`` to the *last letter of the first word* of the sentence ``S``. Do not hard-code your answer.
+    ~~~~
+    S = "this is a sentence"
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(last_letter_first_word, "s", "Testing that last_letter_first_word is assigned to 's'")
+
+    myTests().main()
+
+.. activecode:: ds_02_07
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **7.** Write code that asks the user to enter a sentence and then prints out the *number of words in that sentence*.
+    ~~~~
+    S = input("Enter a sentence: ")
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('split', self.getEditorText(), "Testing that split is in your code. (Don't worry about Actual and Expected Values.)")
 
     myTests().main()
 
