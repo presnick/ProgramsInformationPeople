@@ -601,6 +601,7 @@ Discussion Section Exercises
    :maxdepth: 2
 
    UMich-SI106-F17/ds_02.rst
+   UMich-SI106-F17/ds_03.rst
 
 
 Indices and tables
