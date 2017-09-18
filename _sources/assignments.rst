@@ -6,3 +6,4 @@ Class Assignments
    :maxdepth: 1
 
    UMich-SI106-F17/ps01.rst
+   UMich-SI106-F17/ps02.rst
