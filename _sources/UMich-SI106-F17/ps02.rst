@@ -45,7 +45,9 @@ Problem Set 2
 
       def test_output(self):
           self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-          self.assertIn("hello\n2\n4\n6.0\n7.5\n234352354\nthe end\n\n99\n<class 'str'>\n<class 'int'>\n<class 'int'>\n<class 'float'>\n<class 'float'>\n<class 'int'>\n<class 'str'>\n<class 'str'>\n<class 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+          str1 = "hello\n2\n4\n6.0\n7.5\n234352354\nthe end\n\n99\n<class 'str'>\n<class 'int'>\n<class 'int'>\n<class 'float'>\n<class 'float'>\n<class 'int'>\n<class 'str'>\n<class 'str'>\n<class 'int'>"
+          str2 = "hello\n2\n4\n6.0\n7.5\n234352354\nthe end\n\n99\n<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>"
+          self.assertTrue(str1 in self.getOutput() or str2 in self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
     myTests().main()
 
