@@ -170,7 +170,7 @@ Week 4 Discussion Section
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(sorted(golds20),sorted(['USA', 'China', 'Canada', 'England']) , "Testing that golds20 has been created correctly.")
+            self.assertEqual(sorted(gold20),sorted(['USA', 'China', 'Canada', 'England']) , "Testing that gold20 has been created correctly.")
 
     myTests().main()
 
