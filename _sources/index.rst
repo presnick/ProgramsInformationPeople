@@ -15,12 +15,11 @@
 Table of Contents
 :::::::::::::::::
 
-.. raw:: html
 
-   <ul>
-   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
-   </ul>
+.. toctree::
+   :maxdepth: 1
 
+   assignments.rst
 
 
 General Introduction
@@ -268,7 +267,7 @@ Optional and Keyword Parameters
 :::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 2['USA', 'China', 'Canada', 'England']
 
    OptionalAndKeywordParameters/OptionalParameters.rst
    OptionalAndKeywordParameters/KeywordParameters.rst
@@ -595,6 +594,7 @@ Unix
    ExtraExercises/session5_7462.rst
    ExtraExercises/session9_6473.rst
 
+
 Discussion Section Exercises
 ::::::::::::::::::::::::::::
 .. toctree::
@@ -602,6 +602,14 @@ Discussion Section Exercises
 
    UMich-SI106-F17/ds_02.rst
    UMich-SI106-F17/ds_03.rst
+   UMich-SI106-F17/ds_04.rst
+   
+.. raw:: html
+
+   <ul>
+   <li><a href="../../assignments/chooseAssignment.html">(Graded Problem Sets)</a></li>
+   </ul>
+
 
 
 Indices and tables
@@ -610,9 +618,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   assignments.rst
