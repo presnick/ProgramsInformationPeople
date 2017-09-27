@@ -35,7 +35,7 @@ Problem Set 3
     **2.** The variable ``sentence`` stores a string. Write code to determine how many words in ``sentence`` start and end with the same letter, including one-letter words.
     Store the result in the variable ``same_letter_count``.
 
-    
+
     Hard-coded answers will receive no credit.
     ~~~~
     sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
@@ -107,7 +107,7 @@ Problem Set 3
     :language: python
     :autograde: unittest
 
-    **5.** The dictionary ``Junior`` shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable ``credits``. Do not hardcode this -- use dictionary accumulation!
+    **5.** The dictionary ``Junior`` shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable ``credits``. Do not hardcode this -- use the accumulation pattern!
     ~~~~
     courses = {'SI 206':4, 'SI 310':4, 'BL 300':3, 'TO 313':3, 'BCOM 350':1, 'MO 300':3}
     =====
@@ -127,7 +127,7 @@ Problem Set 3
     :autograde: unittest
 
     **6.** The dictionary ``umSchools`` maps the names of schools at Michigan to the year they were founded.
-    Write code that assigns the year that the School of Information was founded to the variable ``si_founded``.
+    Write code that assigns the year that the School of Information was founded to the variable ``si_founded`` (so ``si_founded`` should end up with the value ``1969``).
 
     Hard-coded answers will receive no credit.
     ~~~~

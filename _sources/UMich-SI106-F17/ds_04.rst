@@ -7,7 +7,49 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
 
-    **1.** Write code that counts the number of a's in ``word`` and store the result in the variable ``a_count``.
+    **1.** The code below creates a random number between 1 and 10 and then asks the user to guess the number. Write code that will give the user feedback on their guess:
+
+    - If ``userGuess`` is smaller than ``randNum``, print ``"too low"``
+    - If ``userGuess`` is larger than ``randNum``, print ``"too high"``
+    - If ``userGuess`` is equal to ``randNum``, print ``"correct!"``
+
+    You should use ``if``, ``elif``, and ``else``.
+
+    ~~~~
+    import random # Allows us to use the "random" module
+    randNum = random.randint(1,10) # Creates a random number between 1 and 10
+    userGuess = int(input("Guess the random number: ")) # Ask the user to enter their guess
+    # do not alter the code above
+
+    # if they guesed UNDER,     print "too low"
+    # if they guesed OVER,      print "too high"
+    # if they guesed CORRECTLY, print "correct!"
+
+    # do not alter the code below
+    if userGuess != randNum:
+        print("The correct answer was " + str(randNum))
+    =====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('if', self.getEditorText(), "Testing that you used an if (Don't worry about actual and expected values).")
+            self.assertIn('elif', self.getEditorText(), "Testing that you used an elif (Don't worry about actual and expected values).")
+            self.assertIn('else', self.getEditorText(), "Testing that you used an else (Don't worry about actual and expected values).")
+
+            if(userGuess == randNum): correctFeedback = "correct!"
+            elif(userGuess < randNum): correctFeedback = "too low"
+            else: correctFeedback = "too high"
+
+            self.assertIn(correctFeedback, self.getOutput(), "Testing that your code gave the user the correct feedback.")
+
+    myTests().main()
+
+.. activecode:: ds_04_02
+    :language: python
+    :autograde: unittest
+
+    **2.** Write code that counts the number of a's in ``word`` and store the result in the variable ``a_count``.
 
     ~~~~
     word = 'supercalifragilisticexpialidocious'
@@ -21,11 +63,11 @@ Week 4 Discussion Section
 
     myTests().main()
 
-.. activecode:: ds_04_02
+.. activecode:: ds_04_03
     :language: python
     :autograde: unittest
 
-    **2.** The variable ``sentence`` stores a string.Write code to determine the number of words that contain the letter "c". Store the result in ``num_words_with_c``.
+    **3.** The variable ``sentence`` stores a string.Write code to determine the number of words that contain the letter "c". Store the result in ``num_words_with_c``.
     ~~~~
     sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
 
@@ -43,11 +85,11 @@ Week 4 Discussion Section
     myTests().main()
 
 
-.. activecode:: ds_04_03
+.. activecode:: ds_04_04
     :language: python
     :autograde: unittest
 
-    **3.** The variable ``sentence`` stores a string. Write code to determine the number of words that contain the letter "c" **or** are more than 5 characters long. Store the result in ``c_or_long``.
+    **4.** The variable ``sentence`` stores a string. Write code to determine the number of words that contain the letter "c" **or** are more than 5 characters long. Store the result in ``c_or_long``.
     ~~~~
     sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
 
@@ -64,11 +106,11 @@ Week 4 Discussion Section
     myTests().main()
 
 
-.. activecode:: ds_04_04
+.. activecode:: ds_04_05
     :language: python
     :autograde: unittest
 
-    **4.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+    **5.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
 
     ~~~~
     diction = {"python":"you are awesome","autumn":100}
@@ -86,11 +128,11 @@ Week 4 Discussion Section
     myTests().main()
 
 
-.. activecode:: ds_04_05
+.. activecode:: ds_04_06
     :language: python
     :autograde: unittest
 
-    **5.** Here's a dictionary, ``d``.
+    **6.** Here's a dictionary, ``d``.
 
 
     **PART 1**
@@ -130,11 +172,11 @@ Week 4 Discussion Section
     myTests().main()
 
 
-.. activecode:: ds_04_06
+.. activecode:: ds_04_07
     :language: python
     :autograde: unittest
 
-    **6.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+    **7.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
     ~~~~
     nums = {}
     num_words = ["two","three","four","seventeen","eight","not_a_number"]
@@ -157,11 +199,11 @@ Week 4 Discussion Section
     myTests().main()
 
 
-.. activecode:: ds_04_07
+.. activecode:: ds_04_08
     :language: python
     :autograde: unittest
 
-    **7.** Suppose the dictionary ``golds`` maps countries to the number of gold medals they won in the 2016 olympics. Write code to store the names of countries that won more than 20 gold medals into the variable ``gold20``.
+    **8.** Suppose the dictionary ``golds`` maps countries to the number of gold medals they won in the 2016 olympics. Write code to store the names of countries that won more than 20 gold medals into the variable ``gold20``.
     ~~~~
     golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
 
@@ -175,11 +217,11 @@ Week 4 Discussion Section
     myTests().main()
 
 
-.. activecode:: ds_04_08
+.. activecode:: ds_04_09
     :language: python
     :autograde: unittest
 
-    **8.** Suppose the dictionary ``golds`` maps countries to the number of gold medals they won in the 2016 olympics. Write code to compute the name of the country that won the most gold medals. Store the result in the variable ``most_golds``
+    **9.** Suppose the dictionary ``golds`` maps countries to the number of gold medals they won in the 2016 olympics. Write code to compute the name of the country that won the most gold medals. Store the result in the variable ``most_golds``
     ~~~~
     golds = {"Italy": 12, "USA": 33, "Brazil": 15, "China": 27, "Spain": 19, "Canada": 22, "Argentina": 8, "England": 29}
 
