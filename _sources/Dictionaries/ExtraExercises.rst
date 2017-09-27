@@ -65,7 +65,7 @@ Extra Exercises
 .. activecode:: ee_ch12_02
    :tags:Dictionaries/intro-Dictionaries.rst
 
-   swimmers = {'Manuel':4, Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4}
+   swimmers = {'Manuel':4, 'Lochte':12, 'Adrian':7, 'Ledecky':5, 'Dirado':4}
 
    =====
 
