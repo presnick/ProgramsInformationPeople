@@ -9,6 +9,7 @@ Problem Set 3
 .. activecode:: ps_03_01
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **1.** ``rainfall_mi`` is a string that contains the average number of inches of rainfall in Michigan for every month (in inches) with every month separated by a comma.
     Write code to compute the number of months that have more than 3 inches of rainfall. Store the result in the variable ``num_rainy_months``.
@@ -31,6 +32,7 @@ Problem Set 3
 .. activecode:: ps_03_02
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **2.** The variable ``sentence`` stores a string. Write code to determine how many words in ``sentence`` start and end with the same letter, including one-letter words.
     Store the result in the variable ``same_letter_count``.
@@ -55,6 +57,7 @@ Problem Set 3
 .. activecode:: ps_03_03
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **3.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``.
 
@@ -79,6 +82,7 @@ Problem Set 3
 .. activecode:: ps_03_04
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **4.** Write code that counts the number of words in ``sentence`` that contain *either* an "a" or an "e". Store the result in the variable ``num_a_or_e``.
 
@@ -106,6 +110,7 @@ Problem Set 3
 .. activecode:: ps_03_05
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **5.** The dictionary ``Junior`` shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable ``credits``. Do not hardcode this -- use the accumulation pattern!
     ~~~~
@@ -125,6 +130,7 @@ Problem Set 3
 .. activecode:: ps_03_06
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **6.** The dictionary ``umSchools`` maps the names of schools at Michigan to the year they were founded.
     Write code that assigns the year that the School of Information was founded to the variable ``si_founded`` (so ``si_founded`` should end up with the value ``1969``).
@@ -165,6 +171,7 @@ Problem Set 3
 .. activecode:: ps_03_07
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **7.** The dictionary ``umSchools`` maps the names of schools at Michigan to the year they were founded.
     Write code to add the name of every school that was founded in the 20th century (after 1900) into a list ``newer_schools``.
@@ -205,6 +212,7 @@ Problem Set 3
 .. activecode:: ps_03_08
     :language: python
     :autograde: unittest
+    :hidecode:
 
     **8.** The dictionary ``umSchools`` maps the names of schools at Michigan to the year they were founded.
     Write code that determines which school is the oldest and store the name of the school into the variable ``oldest_school``.
