@@ -605,11 +605,12 @@ Week 5 Discussion Section
 
    ====
    from unittest.gui import TestCaseGui
-	class myTests(TestCaseGui):
-		def testOne(self):
-			self.assertEqual(numWords(''), 0, "Testing numWords for an empty string")
-			self.assertEqual(numWords('hello'), 1, "Testing numWords for an one-word string")
-			self.assertEqual(numWords('this is a sentence.'), 4, "Testing numWords for an four-word string")
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(numWords(''), 0, "Testing numWords for an empty string")
+         self.assertEqual(numWords('hello'), 1, "Testing numWords for an one-word string")
+         self.assertEqual(numWords('this is a sentence.'), 4, "Testing numWords for an four-word string")
+   myTests().main()
 
 .. activecode:: ds_05_11
    :language: python
@@ -621,10 +622,11 @@ Week 5 Discussion Section
    ~~~~
    ====
    from unittest.gui import TestCaseGui
-	class myTests(TestCaseGui):
-		def testOne(self):
-			self.assertEqual(longestWord('x'), 'x', "Testing longestWord for a one-word string")
-			self.assertEqual(longestWord('this is a sentence'), 'sentence', "Testing longestWord for a four-word string")
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(longestWord('x'), 'x', "Testing longestWord for a one-word string")
+         self.assertEqual(longestWord('this is a sentence'), 'sentence', "Testing longestWord for a four-word string")
+   myTests().main()
 
 
 .. activecode:: ds_05_12
@@ -637,8 +639,9 @@ Week 5 Discussion Section
    ~~~~
    ====
    from unittest.gui import TestCaseGui
-	class myTests(TestCaseGui):
-		def testOne(self):
-			self.assertEqual(mostCommonWord('x'), 'x', "testing mostCommonWord with a one-word sentence")
-			self.assertEqual(mostCommonWord('x y y z'), 'y', "testing mostCommonWord with a four-word sentence")
-			self.assertEqual(mostCommonWord('this is a a a sentence'), 'a', "testing mostCommonWord with a sentence")
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(mostCommonWord('x'), 'x', "testing mostCommonWord with a one-word sentence")
+         self.assertEqual(mostCommonWord('x y y z'), 'y', "testing mostCommonWord with a four-word sentence")
+         self.assertEqual(mostCommonWord('this is a a a sentence'), 'a', "testing mostCommonWord with a sentence")
+   myTests().main()
