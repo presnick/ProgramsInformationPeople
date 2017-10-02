@@ -216,7 +216,7 @@ Problem Set 4
 	:autograde: unittest
 	:hidecode:
 
-	**7.** The code below contains a string ``january_temp_data`` with the same format as before, but with more data (see the "COLUMNS" comment at the beginning of the code). This time, write code that will determine which year had most **precipitation + snowfall** and store that year as an integer in the variable ``most_water_year``. You will get zero credit if you hard code your answer.
+	**7.** The code below contains a string ``january_temp_data`` with the same format as before, but with more data (see the "COLUMNS" comment at the beginning of the code). This time, write code that will determine which year had most **precipitation + snowfall** and store that year as an integer in the variable ``most_water_year``. You will get zero credit if you hard code your answer. Note: use the ``float()`` function to cast a string to a float.
 	~~~~
 	# COLUMNS:
 	#  0: year

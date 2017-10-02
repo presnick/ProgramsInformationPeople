@@ -30,8 +30,107 @@ Week 5 Discussion Section
       def testFour(self):
          self.assertEqual(letter_counts['a'], 17, "Testing that the letter 'a' has the correct value.")
 
+   myTests().main()
+
+.. activecode:: ds_05_08
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **2.** Define a function called ``timesTwo`` that takes one integer as input and returns that integer multiplied by 2.
+   ~~~~
+   # We've started you off with the first line...
+   def timesTwo(num_here):
+       pass # delete this line and put in your own code for the body of the function.
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(timesTwo(0), 0, "Testing if timesTwo(0) equals 0")
+         self.assertEqual(timesTwo(-10), -20, "Testing if timesTwo(-10) equals -20")
+         self.assertEqual(timesTwo(12), 24, "Testing if timesTwo(12) equals 24")
+
+   myTests().main()
 
 
+.. activecode:: ds_05_09
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **3.** Write a function, ``lengthStr``, that takes in a list as the input. If the length of the list is greater than or equal to 5, return "Longer than 5". If the length is less than 5, return "Less than 5".
+
+   ~~~~
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testFive(self):
+         self.assertEqual(lengthStr([]), "Less than 5", "Tests that lengthStr([]) returns 'Less than 5'")
+         self.assertEqual(lengthStr([2, 2]), "Less than 5", "Tests that lengthStr([2, 2]) returns 'Less than 5'")
+         self.assertEqual(lengthStr([4, 4, 4, 3, 5, 6, 7, 8, 9]), "Longer than 5", "Tests that lengthStr([4, 4, 4, 3, 5, 6, 7, 8, 9]) returns 'Less than 5'")
+         self.assertEqual(lengthStr([1, 1, 1, 1, 1]), "Longer than 5", "Tests that lengthStr([1, 1, 1, 1, 1]) returns 'Longer than 5'")
+
+   myTests().main()
+
+
+.. activecode:: ds_05_10
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **4.** Define a function ``numWords`` that accepts a string as an argument and returns the number of words in that string.
+
+   ~~~~
+
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(numWords(''), 0, "Testing numWords for an empty string")
+         self.assertEqual(numWords('hello'), 1, "Testing numWords for an one-word string")
+         self.assertEqual(numWords('this is a sentence.'), 4, "Testing numWords for an four-word string")
+   myTests().main()
+
+.. activecode:: ds_05_11
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **5.** Define a function ``longestWord`` that accepts a string as an argument and returns the longest word in that string (the word itself; not its length).
+
+   ~~~~
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(longestWord('x'), 'x', "Testing longestWord for a one-word string")
+         self.assertEqual(longestWord('this is a sentence'), 'sentence', "Testing longestWord for a four-word string")
+   myTests().main()
+
+
+.. activecode:: ds_05_12
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **6.** Define a function ``mostCommonWord`` that accepts a string as an argument and returns the word that appears the most frequently in that string (the word itself; not its frequency).
+
+   ~~~~
+   ====
+   from unittest.gui import TestCaseGui
+   class myTests(TestCaseGui):
+      def testOne(self):
+         self.assertEqual(mostCommonWord('x'), 'x', "testing mostCommonWord with a one-word sentence")
+         self.assertEqual(mostCommonWord('x y y z'), 'y', "testing mostCommonWord with a four-word sentence")
+         self.assertEqual(mostCommonWord('this is a a a sentence'), 'a', "testing mostCommonWord with a sentence")
    myTests().main()
 
 .. activecode:: ds_05_02
@@ -39,7 +138,7 @@ Week 5 Discussion Section
    :autograde: unittest
    :hidecode:
 
-   **2.** The string ``state_data`` contains a specially formatted string that contains population information for various states. Every state is on a different line. There are four "columns": state name, abbreviation, region, and population. Every column is separated by a comma. Use a ``for`` loop to loop through every line of ``state_data`` and print out each line.
+   **7.** The string ``state_data`` contains a specially formatted string that contains population information for various states. Every state is on a different line. There are four "columns": state name, abbreviation, region, and population. Every column is separated by a comma. Use a ``for`` loop to loop through every line of ``state_data`` and print out each line.
 
 
    Hint: use ``.split('\n')`` to split the lines of ``state_data`` into a list.
@@ -125,7 +224,7 @@ Week 5 Discussion Section
    :autograde: unittest
    :hidecode:
 
-   **3.** We have ``state_data`` from before, but this time for every state, only print the state abbreviation (for example, **MI** for Michigan). You may use your code from the previous problem. Your output should contain "AL" on one line, "AK" on the next, etc.
+   **8.** We have ``state_data`` from before, but this time for every state, only print the state abbreviation (for example, **MI** for Michigan). You may use your code from the previous problem. Your output should contain "AL" on one line, "AK" on the next, etc.
 
    Hint: use ``.split(',')`` to split a given line of ``state_data`` by commas. You may use ``.strip()`` on any string to remove left and right whitespace.
    ~~~~
@@ -210,7 +309,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
-   **4.** We have ``state_data`` from before. This time, create a **dictionary** called ``state_abbreviations`` that maps state abbreviations to their names. For example, ``"MI"`` should be mapped to ``"Michigan"``.
+   **9.** We have ``state_data`` from before. This time, create a **dictionary** called ``state_abbreviations`` that maps state abbreviations to their names. For example, ``"MI"`` should be mapped to ``"Michigan"``.
    ~~~~
       state_data = """Alabama,AL,South,4849377
       Alaska,AK,West,736732
@@ -295,9 +394,9 @@ Week 5 Discussion Section
    :autograde: unittest
    :hidecode:
 
-   **5.** We have ``state_data`` from before. This time, use **accumulation** to find the **least** populous state. Assign that state's name to the variable ``least_pop``.
+   **10.** We have ``state_data`` from before. This time, use **accumulation** to find the **least** populous state. Assign that state's name to the variable ``least_pop``.
 
-   Hint: You don't need to use a dictionary to do this.
+   Hint: First create a dictionary that maps state names to populations
    Hint: Use ``int()`` to cast the population as an integer
    ~~~~
    state_data = """Alabama,AL,South,4849377
@@ -379,7 +478,7 @@ Week 5 Discussion Section
    :autograde: unittest
    :hidecode:
 
-   **6.** We have ``state_data`` from before. This time, use **dictionary accumulation** to create a dictionary called ``region_pop`` that maps *regions* (e.g. Midwest) to the total population for that region. Then, use the max accumulation pattern to find the **most** populous region and store it in ``high_region_pop``.
+   **11.** We have ``state_data`` from before. This time, use **dictionary accumulation** to create a dictionary called ``region_pop`` that maps *regions* (e.g. Midwest) to the total population for that region. Then, use the max accumulation pattern to find the **most** populous region and store it in ``high_region_pop``.
 
    Hint: Use ``int()`` to cast strings to integers.
    ~~~~
@@ -473,7 +572,7 @@ Week 5 Discussion Section
    :autograde: unittest
    :hidecode:
 
-   **7.** We have ``state_data`` from before. Assign ``most_pop_midwest`` to the name of the state whose region is ``"Midwest"`` with the highest population.
+   **12.** We have ``state_data`` from before. Assign ``most_pop_midwest`` to the name of the state whose region is ``"Midwest"`` with the highest population.
 
    ~~~~
    # COLUMNS:
@@ -547,101 +646,4 @@ Week 5 Discussion Section
       def testOneA(self):
          self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-   myTests().main()
-
-.. activecode:: ds_05_08
-   :language: python
-   :autograde: unittest
-   :hidecode:
-
-   **8.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
-   ~~~~
-   # We've started you off with the first line...
-   def change_amounts(num_here):
-       pass # delete this line and put in your own code for the body of the function.
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
-         self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
-
-   myTests().main()
-
-.. activecode:: ds_05_09
-   :language: python
-   :autograde: unittest
-   :hidecode:
-   **9.** Write a function, ``lengthStr``, that takes in a list as the input. If the length of the list is greater than or equal to 5, return "Longer than 5". If the length is less than 5, return "Less than 5".
-
-   ~~~~
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testFive(self):
-         self.assertEqual(lengthStr([]), "Less than 5", "Tests that lengthStr([]) returns 'Less than 5'")
-         self.assertEqual(lengthStr([2, 2]), "Less than 5", "Tests that lengthStr([2, 2]) returns 'Less than 5'")
-         self.assertEqual(lengthStr([4, 4, 4, 3, 5, 6, 7, 8, 9]), "Longer than 5", "Tests that lengthStr([4, 4, 4, 3, 5, 6, 7, 8, 9]) returns 'Less than 5'")
-         self.assertEqual(lengthStr([1, 1, 1, 1, 1]), "Longer than 5", "Tests that lengthStr([1, 1, 1, 1, 1]) returns 'Longer than 5'")
-
-   myTests().main()
-
-.. activecode:: ds_05_10
-   :language: python
-   :autograde: unittest
-   :hidecode:
-
-   **10.** Define a function ``numWords`` that accepts a string as an argument and returns the number of words in that string.
-
-   ~~~~
-
-   ====
-   from unittest.gui import TestCaseGui
-   class myTests(TestCaseGui):
-      def testOne(self):
-         self.assertEqual(numWords(''), 0, "Testing numWords for an empty string")
-         self.assertEqual(numWords('hello'), 1, "Testing numWords for an one-word string")
-         self.assertEqual(numWords('this is a sentence.'), 4, "Testing numWords for an four-word string")
-   myTests().main()
-
-.. activecode:: ds_05_11
-   :language: python
-   :autograde: unittest
-   :hidecode:
-
-   **11.** Define a function ``longestWord`` that accepts a string as an argument and returns the longest word in that string (the word itself; not its length).
-
-   ~~~~
-   ====
-   from unittest.gui import TestCaseGui
-   class myTests(TestCaseGui):
-      def testOne(self):
-         self.assertEqual(longestWord('x'), 'x', "Testing longestWord for a one-word string")
-         self.assertEqual(longestWord('this is a sentence'), 'sentence', "Testing longestWord for a four-word string")
-   myTests().main()
-
-
-.. activecode:: ds_05_12
-   :language: python
-   :autograde: unittest
-   :hidecode:
-
-   **12.** Define a function ``mostCommonWord`` that accepts a string as an argument and returns the word that appears the most frequently in that string (the word itself; not its frequency).
-
-   ~~~~
-   ====
-   from unittest.gui import TestCaseGui
-   class myTests(TestCaseGui):
-      def testOne(self):
-         self.assertEqual(mostCommonWord('x'), 'x', "testing mostCommonWord with a one-word sentence")
-         self.assertEqual(mostCommonWord('x y y z'), 'y', "testing mostCommonWord with a four-word sentence")
-         self.assertEqual(mostCommonWord('this is a a a sentence'), 'a', "testing mostCommonWord with a sentence")
    myTests().main()
