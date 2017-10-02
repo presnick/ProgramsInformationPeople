@@ -603,7 +603,8 @@ Discussion Section Exercises
    UMich-SI106-F17/ds_02.rst
    UMich-SI106-F17/ds_03.rst
    UMich-SI106-F17/ds_04.rst
-   
+   UMich-SI106-F17/ds_05.rst
+
 .. raw:: html
 
    <ul>
