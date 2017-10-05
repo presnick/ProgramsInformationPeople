@@ -10,6 +10,12 @@
    :description: An interactive version of How to Think Like a Computer Scientist, edited for use in the course Programs, Information, and People at the University of Michigan.  Learn to program in Python using this online textbook.
    :keywords: python, informatics
 
+.. activecode:: playground
+    :hidecode:
+    :chatcodes:
+
+    print("Hello, 106!")
+
 .. _t_o_c:
 
 Table of Contents

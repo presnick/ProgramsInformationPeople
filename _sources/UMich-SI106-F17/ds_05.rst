@@ -7,6 +7,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **1.** Create a dictionary named ``letter_counts`` that contains each letter and the number of times it occurs in ``string1``.
    ~~~~
@@ -36,6 +37,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **2.** Define a function called ``timesTwo`` that takes one integer as input and returns that integer multiplied by 2.
    ~~~~
@@ -61,6 +63,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **3.** Write a function, ``lengthStr``, that takes in a list as the input. If the length of the list is greater than or equal to 5, return "Longer than 5". If the length is less than 5, return "Less than 5".
 
@@ -85,6 +88,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **4.** Define a function ``numWords`` that accepts a string as an argument and returns the number of words in that string.
 
@@ -103,6 +107,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **5.** Define a function ``longestWord`` that accepts a string as an argument and returns the longest word in that string (the word itself; not its length).
 
@@ -120,6 +125,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **6.** Define a function ``mostCommonWord`` that accepts a string as an argument and returns the word that appears the most frequently in that string (the word itself; not its frequency).
 
@@ -137,6 +143,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **7.** The string ``state_data`` contains a specially formatted string that contains population information for various states. Every state is on a different line. There are four "columns": state name, abbreviation, region, and population. Every column is separated by a comma. Use a ``for`` loop to loop through every line of ``state_data`` and print out each line.
 
@@ -223,6 +230,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **8.** We have ``state_data`` from before, but this time for every state, only print the state abbreviation (for example, **MI** for Michigan). You may use your code from the previous problem. Your output should contain "AL" on one line, "AK" on the next, etc.
 
@@ -309,6 +317,8 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
+
    **9.** We have ``state_data`` from before. This time, create a **dictionary** called ``state_abbreviations`` that maps state abbreviations to their names. For example, ``"MI"`` should be mapped to ``"Michigan"``.
    ~~~~
       state_data = """Alabama,AL,South,4849377
@@ -393,6 +403,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **10.** We have ``state_data`` from before. This time, use **accumulation** to find the **least** populous state. Assign that state's name to the variable ``least_pop``.
 
@@ -477,6 +488,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **11.** We have ``state_data`` from before. This time, use **dictionary accumulation** to create a dictionary called ``region_pop`` that maps *regions* (e.g. Midwest) to the total population for that region. Then, use the max accumulation pattern to find the **most** populous region and store it in ``high_region_pop``.
 
@@ -571,6 +583,7 @@ Week 5 Discussion Section
    :language: python
    :autograde: unittest
    :hidecode:
+   :chatcodes:
 
    **12.** We have ``state_data`` from before. Assign ``most_pop_midwest`` to the name of the state whose region is ``"Midwest"`` with the highest population.
 
