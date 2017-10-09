@@ -39,37 +39,7 @@ Problem Set 5
     :chatcodes:
     :hidecode:
 
-    **2.** Define a function called ``circle_metrics`` whose input is a float representing a circle's radius, ``r``. Your function should return a tuple where the first item represents the circle's circumference (computed by ``2*pi*r``) and whose second item represents the circle's area (computed by ``pi*r*r``).
-
-    ~~~~
-    pi = 3.141592653589793
-
-    def circle_metrics(r):
-        # Write your code here
-        print r
-
-    circumference, area = circle_metrics(10)
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-
-        def testCode(self):
-            c,a = circle_metrics(100)
-            self.assertTrue(abs(c-2*pi*100) < 0.0001, "Testing for example input")
-            self.assertTrue(abs(a-pi*(100*100)) < 0.0001, "Testing for example input")
-
-    myTests().main()
-
-.. activecode:: ps_05_03
-    :language: python
-    :autograde: unittest
-    :chatcodes:
-    :hidecode:
-
-    **3.** Define a function called ``max_and_min`` that returns a tuple containing the maximum and minimum numbers in a list. If the list is empty, your function should return ``(False, False)``
+    **2.** Define a function called ``max_and_min`` that returns a tuple containing the maximum and minimum numbers in a list. If the list is empty, your function should return ``(False, False)``
     ~~~~
     def max_and_min(L):
         # Write your code here
@@ -87,42 +57,13 @@ Problem Set 5
 
     myTests().main()
 
-.. activecode:: ps_05_04
+.. activecode:: ps_05_03
     :language: python
     :autograde: unittest
     :chatcodes:
     :hidecode:
 
-    **4.** Define a function called ``my_map`` that accepts two arguments: a list ``L`` and a function ``fn``. Your function should "map" ``fn`` onto ``L``, meaning that it should call ``fn`` on each individual element of ``L`` and return a list whose values are ``fn`` called on each element.
-
-    In other words, given a list ``L == [{a},{b},{c}, ... {z}]``, ``my_map(fn,L)`` should return ``[fn({a}), fn({b}), fn({c}), ... fn({z})]``.
-
-    ~~~~
-    def my_map(fn, l):
-        pass
-
-    print my_map(lambda x: x*2, [1,2,3]) # should be [2,4,6]
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-
-        def testCode(self):
-            self.assertEqual(my_map(lambda x: x, [1,2,3]), [1,2,3], "Example input")
-            self.assertEqual(my_map(lambda x: x, []), [], "Example input")
-            self.assertEqual(my_map(lambda x: x*5, [10, 20]), [50, 100], "Example input")
-            self.assertEqual(my_map(lambda c: c+'x', ["A", "B"]), ["Ax", "Bx"], "Example input")
-
-    myTests().main()
-
-.. activecode:: ps_05_05
-    :language: python
-    :autograde: unittest
-    :chatcodes:
-    :hidecode:
-
-    **5.** Write code to sort the list ``fall_list`` in reverse alphabetical order. Assign the result of the sorted list to the variable ``sorted_fall_list``.
+    **3.** Write code to sort the list ``fall_list`` in reverse alphabetical order. Assign the result of the sorted list to the variable ``sorted_fall_list``.
 
     ~~~~
     fall_list = ["leaves","apples","autumn","bicycles","pumpkin","squash","excellent"]
@@ -138,13 +79,13 @@ Problem Set 5
             self.assertEqual(sorted_fall_list, ['squash', 'pumpkin', 'leaves', 'excellent', 'bicycles', 'autumn', 'apples'], "sorted_fall_list is not accurately sorted")
     myTests().main()
 
-.. activecode:: ps_05_06
+.. activecode:: ps_05_04
     :language: python
     :autograde: unittest
     :chatcodes:
     :hidecode:
 
-    **6.** First, write code to sort the list ``food_amounts`` by the key ``sugar_grams``, from lowest to highest. Assign that sorted list to the variable ``sorted_sugar``. Next, write code to sort the list ``food_amounts`` by the value of the key ``'carbohydrate'`` minus the value of the key ``'fiber'`` in each one, from lowest difference to highest. Assign this sorted list to a variable ``raw_carb_sort``.
+    **4.** First, write code to sort the list ``food_amounts`` by the key ``sugar_grams``, from lowest to highest. Assign that sorted list to the variable ``sorted_sugar``. Next, write code to sort the list ``food_amounts`` by the value of the key ``'carbohydrate'`` minus the value of the key ``'fiber'`` in each one, from lowest difference to highest. Assign this sorted list to a variable ``raw_carb_sort``.
 
     ~~~~
     food_amounts = [{"sugar_grams":245,"carbohydrate":83,"fiber":67},{"carbohydrate":74,"sugar_grams":52,"fiber":26},{"fiber":47,"carbohydrate":93,"sugar_grams":6}]
@@ -161,41 +102,14 @@ Problem Set 5
             self.assertEqual(raw_carb_sort,[{'carbohydrate': 83, 'fiber': 67, 'sugar_grams': 245}, {'carbohydrate': 93, 'fiber': 47, 'sugar_grams': 6}, {'carbohydrate': 74, 'fiber': 26, 'sugar_grams': 52}])
     myTests().main()
 
-.. activecode:: ps_05_07
+
+.. activecode:: ps_05_05
     :language: python
     :autograde: unittest
     :chatcodes:
     :hidecode:
 
-    **7.** Define a function ``trimWords`` that accepts one required argument, ``s`` and two optional integer arguments: ``fromStart`` (default: ``1``) and ``fromEnd`` (default: ``1``). ``trimWords`` should return a new string where *every word* of ``s`` removes ``fromStart`` characters from the start of the word and ``fromEnd`` characters from the end of the word. Note that words whose length is *less than or equal to* ``fromStart+fromEnd`` should be filtered out.
-
-    For example: ``trimWords('this is a sentence', fromStart=1, fromEnd=1)`` should yield ``'hi entenc'``
-
-    Hint: Using ``' '.join()`` and a list comprehension, the body of ``trimWords`` could be just one line
-
-
-    ~~~~
-
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-            self.assertEqual(trimWords('hello my world'), 'ell orl')
-            self.assertEqual(trimWords('this is a sentence', fromStart=0, fromEnd=1), 'thi i sentenc')
-            self.assertEqual(trimWords('', fromStart=10, fromEnd=10), '')
-            self.assertEqual(trimWords('this is a sentence', fromStart=3, fromEnd=2), 'ten')
-    myTests().main()
-
-.. activecode:: ps_05_08
-    :language: python
-    :autograde: unittest
-    :chatcodes:
-    :hidecode:
-
-    **8.** Write a function ``best_three_words`` that accepts a string and returns a list of the 3 highest-scoring words in a given sentence. You may assume there are no bonuses that double or triple letter values or entire words. The dictionary saved in ``letter_values`` in the body of ``computeScrabbleScore`` contains the Scrabble score information: its keys are letters, and its values are the scores associated with those letters.
+    **5.** Write a function ``best_three_words`` that accepts a string and returns a list of the 3 highest-scoring words in a given sentence. You may assume there are no bonuses that double or triple letter values or entire words. The dictionary saved in ``letter_values`` in the body of ``computeScrabbleScore`` contains the Scrabble score information: its keys are letters, and its values are the scores associated with those letters.
 
     If you have never played Scrabble before, `here is an explanation <https://en.wikipedia.org/wiki/Scrabble>`_ of what it is. (You do not need that information to solve this problem. All you need to know is that each letter is associated with a number of points, and you want to find the ten words that are associated with the largest point totals.)
 
@@ -223,57 +137,15 @@ Problem Set 5
             self.assertEqual(best_three_words('zebras are so cool'), ['zebras', 'cool', 'are'])
     myTests().main()
 
-.. activecode:: ps_05_09
+
+
+.. activecode:: ps_05_06
     :language: python
     :autograde: unittest
     :chatcodes:
     :hidecode:
 
-    **9.** We have provided a nested list in the variable ``nl``. Use a list comprehension to accumulate a list containing the second (as humans count) element of each sub-list and save it in a variable ``second_elems``.
-
-    ~~~~
-    nl = [["nested","data","is"],["really","fun"],[11,["hooray","hooray"],"yay"]]
-
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-            self.assertEqual(second_elems, ['data', 'fun', ['hooray', 'hooray']], "second_elems does not have the correct value")
-    myTests().main()
-
-.. activecode:: ps_05_10
-    :language: python
-    :autograde: unittest
-    :chatcodes:
-    :hidecode:
-
-    **10.** Define a function ``convert_nums``. The function should accept an integer as input, representing a number of hours. It should return a tuple of that number converted to minutes (* 60), and then that number converted to seconds (* 3600). For example, if ``1`` were input into the function, the return value of that invocation should be the tuple ``60, 3600``.
-
-    ~~~~
-    # your definition of convert_nums
-
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-            self.assertEqual(convert_nums(1),(60,3600),"incorrect output of function with input 1")
-            self.assertEqual(convert_nums(50),(60*50,3600*50), "incorrect output of function with input 50")
-            self.assertEqual(convert_nums(0), (0,0), "incorrect output of function with input 0")
-    myTests().main()
-
-.. activecode:: ps_05_11
-    :language: python
-    :autograde: unittest
-    :chatcodes:
-    :hidecode:
-
-    **11.** Define a function ``sort_nested_lists`` that accepts as input a list of lists of integers, e.g. ``[[2,3],[45,100,2],[536],[103,2,8]]``. It should return a sorted version of that list, sorted by the sum of the integers in each sub-list. For example, if that list were the function's input, the return value should be ``[[2,3],[103,2,8],[45,100,2],[536]]``.
+    **6.** Define a function ``sort_nested_lists`` that accepts as input a list of lists of integers, e.g. ``[[2,3],[45,100,2],[536],[103,2,8]]``. It should return a sorted version of that list, sorted by the sum of the integers in each sub-list. For example, if that list were the function's input, the return value should be ``[[2,3],[103,2,8],[45,100,2],[536]]``.
 
     **Suggestion:** It's a good idea to come up with some sample "test cases" to help yourself work through this, in addition to the tests we have provided in your code file. Come up with sample lists where it's easy to figure out what the correct sorting is, and make invocations to your function using that input, and print out the results. If you get different output than you expect, trace through the process to figure out where it might have gone wrong. Writing out an English plan for this and translating it into code bit by bit may also be a good idea.
 
@@ -293,13 +165,13 @@ Problem Set 5
             self.assertEqual(sort_nested_lists([[0],[-4,-5,-7],[-56,4]]),[[-56,4],[-4,-5,-7],[0]],"testing a case of a sorted nested list -- check out your function output")
     myTests().main()
 
-.. activecode:: ps_05_12
+.. activecode:: ps_05_07
     :language: python
     :autograde: unittest
     :chatcodes:
     :hidecode:
 
-    **12.** Define a function ``nthMostCommon`` that accepts a string ``s`` and an integer ``n`` and returns the "nth" most common word. For example, to find the most common word, ``n==1``. To find the second most common word, ``n==2``. If ``n`` is greater than the number of unique words, your function should return ``False``.
+    **7.** Define a function ``nthMostCommon`` that accepts a string ``s`` and an integer ``n`` and returns the "nth" most common word. For example, to find the most common word, ``n==1``. To find the second most common word, ``n==2``. If ``n`` is greater than the number of unique words, your function should return ``False``.
 
     **Hint:** You *don't* want to use max value accumulation here. You *do* want to use sorting.
     **Note:** Remember that sequences in Python are 0-indexed, but this problem is "1-indexed"
@@ -323,48 +195,14 @@ Problem Set 5
             self.assertEqual(nthMostCommon('A A A B B C', 3), 'C')
     myTests().main()
 
-.. activecode:: ps_05_13
-    :language: python
-    :autograde: unittest
-    :chatcodes:
-    :hidecode:
-
-    **13.** Define a function ``onlyEvenWords`` that accepts a string and **uses list comprehension** and ``join`` to return a new string that only contains words where the length of the word is even. The body of ``onlyEvenWords`` should only be 2 lines or fewer.
-
-
-    ~~~~
-    def onlyEvenWords(s):
-        # your definition of onlyEvenWords
-        pass
-
-
-    =====
-
-    from unittest.gui import TestCaseGui
-
-    class myTests(TestCaseGui):
-        def testOne(self):
-            self.assertEqual(onlyEvenWords('this is an example of a sentence'), 'this is an of sentence')
-            self.assertEqual(onlyEvenWords('s by sw'), 'by sw')
-            self.assertEqual(onlyEvenWords('x'), '')
-            self.assertEqual(onlyEvenWords(''), '')
-    myTests().main()
-
-MacOS, Unbuntu, and GNU/Linux Users
------------------------------------
-
+**MacOS, Ubuntu, and GNU/Linux Users.**
 You already have a command line. Just find and open the Terminal application
 
-Windows Users
-_____________
-
+**Windows Users.**
 Install and/or run the `Power Shell <https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-5.1>`_
-.. Install `Git Bash <https://git-for-windows.github.io>`_
-.. (download Git-2XX.exe: try 64 bit if your machine supports it)
 
 
-Check if you have Python 3
------------------------------
+**Check if you have Python 3.**
 We use Python 3 in this class.
 
 In your terminal, type:
@@ -378,20 +216,17 @@ and press `<enter>` to see your python version. If you see:
 then you are fine.
 
 
-If you don’t have Python 3
---------------------------
+**If you don’t have Python 3.**
 Install it from the `official Python distribution site <https://www.python.org>`_
 
 **Yes, uploading this screenshot is a required part of this problem set. The version must be Python 3.6.x**
 You should not need to download any special screen capturing software to take a screenshot.
 
 
-.. activecode:: ps_05_14
+.. activecode:: ps_05_08
     :hidecode:
 
-    **14.** Follow the installation instructions below to install and run a terminal and Python. Then, **on Canvas under 106->Assignments->Problem Set 05, upload a screenshot of your terminal running two commands:**.
-
-    Note:
+    **8.** Follow the installation instructions below to install and run a terminal and Python. Then, **on Canvas under 106->Assignments->Problem Set 05, upload a screenshot of your terminal running two commands:**.
 
     * ``python -V``
     * ``python -c "print('{YOUR NAME}')"``
