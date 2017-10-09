@@ -273,7 +273,7 @@ Optional and Keyword Parameters
 :::::::::::::::::::::::::::::::
 
 .. toctree::
-   :maxdepth: 2['USA', 'China', 'Canada', 'England']
+   :maxdepth: 2
 
    OptionalAndKeywordParameters/OptionalParameters.rst
    OptionalAndKeywordParameters/KeywordParameters.rst
