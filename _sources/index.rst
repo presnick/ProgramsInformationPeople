@@ -18,8 +18,18 @@ Table of Contents
 .. raw:: html
 
    <ul>
-   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
+   <li><a href="../../assignments/chooseAssignment.html">Assignments for OnRamp</a></li>
    </ul>
+
+
+Sample Problem Sets from 106 Fall 2016
+::::::::::::::::::::::::::::::::::::::
+.. toctree::
+   :maxdepth: 1
+
+   assignments.rst
+
+
 
 General Introduction
 ::::::::::::::::::::
@@ -593,13 +603,6 @@ Unix
    ExtraExercises/session5_7462.rst 
    ExtraExercises/session9_6473.rst
 
-
-Sample Problem Sets
-:::::::::::::::::::
-.. toctree::
-   :maxdepth: 1
-
-   assignments.rst
 
 
 Indices and tables
