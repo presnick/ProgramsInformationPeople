@@ -67,9 +67,6 @@ Problem Set 5
 
     ~~~~
     fall_list = ["leaves","apples","autumn","bicycles","pumpkin","squash","excellent"]
-
-
-
     =====
 
     from unittest.gui import TestCaseGui
@@ -89,9 +86,6 @@ Problem Set 5
 
     ~~~~
     food_amounts = [{"sugar_grams":245,"carbohydrate":83,"fiber":67},{"carbohydrate":74,"sugar_grams":52,"fiber":26},{"fiber":47,"carbohydrate":93,"sugar_grams":6}]
-
-
-
     =====
 
     from unittest.gui import TestCaseGui
@@ -114,8 +108,6 @@ Problem Set 5
     If you have never played Scrabble before, `here is an explanation <https://en.wikipedia.org/wiki/Scrabble>`_ of what it is. (You do not need that information to solve this problem. All you need to know is that each letter is associated with a number of points, and you want to find the ten words that are associated with the largest point totals.)
 
     HINT: In the textbook section on Accumulating Results from a Dictionary, there is code that computes the scrabble score for the entire text of “A Study in Scarlet”. You may want to adapt that.
-
-
     ~~~~
     def computeScrabbleScore(word):
         # fill this in
@@ -124,7 +116,6 @@ Problem Set 5
     def best_three_words(s):
         # return the three best words in s (by scrabble score)
         pass
-
 
     =====
 
@@ -152,7 +143,6 @@ Problem Set 5
     ~~~~
     # your definition of sort_nested_lists
 
-
     =====
 
     from unittest.gui import TestCaseGui
@@ -176,12 +166,10 @@ Problem Set 5
     **Hint:** You *don't* want to use max value accumulation here. You *do* want to use sorting.
     **Note:** Remember that sequences in Python are 0-indexed, but this problem is "1-indexed"
 
-
     ~~~~
     def nthMostCommon(s, n):
         # your definition of nthMostCommon
         pass
-
 
     =====
 
@@ -235,7 +223,6 @@ You should not need to download any special screen capturing software to take a 
     Example:
 
     .. image:: Figures/terminal.png
-
 
     ~~~~
     #upload on Canvas. no need to do anything here
