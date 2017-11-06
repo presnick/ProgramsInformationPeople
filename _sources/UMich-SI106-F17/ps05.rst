@@ -207,11 +207,11 @@ We use Python 3 in this class.
 
 In your terminal, type:
 ::
-    python -V
+python -V
 
 and press `<enter>` to see your python version. If you see:
 ::
-    Python 3.6.XX
+Python 3.6.XX
 
 then you are fine.
 
