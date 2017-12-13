@@ -41,7 +41,7 @@ black-box diagram with the Python code following.
 
     toSquare = 10
     result = square(toSquare)
-    print "The result of " + str(toSquare) + " squared is " + str(result)
+    print("The result of " + str(toSquare) + " squared is " + str(result))
 
 
 The **return** statement is followed by an expression which is evaluated.  Its
@@ -86,11 +86,11 @@ function is over.
 
     def square(x):
         y = x * x
-        print y   # Bad! This is confusing! Should use return instead!
+        print(y)   # Bad! This is confusing! Should use return instead!
 
     toSquare = 10
     squareResult = square(toSquare)
-    print "The result of " + str(toSquare) + " squared is " + str(squareResult)
+    print("The result of " + str(toSquare) + " squared is " + str(squareResult))
 
 The problem with this function is that even though it prints the value of the squared input, 
 that value will not be returned to the place
@@ -107,20 +107,20 @@ it to make sure you understand why "there" and 10 never print out.
 .. activecode:: functions_5a
 
   def weird():
-      print "here"
+      print("here")
       return 5
-      print "there"
+      print("there")
       return 10
       
   x = weird()
-  print x
+  print(x)
 
 
 The fact that a return statement immediately ends execution of the code block inside a function is important to understand for writing complex programs, and it can also be very useful. The following example is a situation where you can use this to your advantage -- and understanding this will help you understand other people's code better, and be able to walk through code more confidently.
 
 Consider a situation where you want to write a function to find out, from a class attendance list, whether anyone's first name is longer than five letters, called ``longer_than_five``. If there is anyone in class whose first name is longer than 5 letters, the function should return ``True``. Otherwise, it should return ``False``. 
 
-In this case, you'll be using conditional statements in the code that exists in the **function body**, the code block indented underneath the function definition statement (just like the code that starts with the line ``print "here"`` in the example above -- that's the body of the function ``weird``, above).
+In this case, you'll be using conditional statements in the code that exists in the **function body**, the code block indented underneath the function definition statement (just like the code that starts with the line ``print("here")`` in the example above -- that's the body of the function ``weird``, above).
 
 **Bonus challenge for studying:** After you look at the explanation below, stop looking at the code -- just the description of the function above it, and try to write the code yourself! Then test it on different lists and make sure that it works. But read the explanation first, so you can be sure you have a solid grasp on these function mechanics.
 
@@ -149,8 +149,8 @@ Now, the code:
   list1 = ["Sam","Tera","Sal","Paul"]
   list2 = ["Rey","Ayo","Lauren","Natalie"]
 
-  print longer_than_five(list1)
-  print longer_than_five(list2)
+  print(longer_than_five(list1))
+  print(longer_than_five(list2))
 
 
 So far, we have just seen return values being assigned to variables. For example, 
@@ -196,7 +196,7 @@ interpreter does these steps:
 
      def addEm(x, y, z):
          return x+y+z
-         print 'the answer is', x+y+z
+         print('the answer is', x+y+z)
 
 
 .. mchoice:: test_questionfunctions_2_2
@@ -213,7 +213,7 @@ interpreter does these steps:
    .. code-block:: python
 
     def addEm(x, y, z):
-        print x+y+z
+        print(x+y+z)
 
 .. mchoice:: test_questionfunctions_2_3
    :answer_a: 25
@@ -224,7 +224,7 @@ interpreter does these steps:
    :feedback_c: The two results are substituted into the expression and then it is evaluated. The returned values are integers in this case, not strings.
    :correct: b
    
-   
+
    What will the following code output?
    
    .. code-block:: python
@@ -233,7 +233,7 @@ interpreter does these steps:
            y = x * x
            return y
            
-       print square(5) + square(5)
+       print(square(5) + square(5))
 
 .. mchoice:: test_questionfunctions_2_4
    :answer_a: 8
@@ -242,8 +242,8 @@ interpreter does these steps:
    :feedback_a: It squares 2, yielding the value 4. But that doesn't mean the next value multiplies 2 and 4.
    :feedback_b: It squares 2, yielding the value 4. 4 is then passed as a value to square again, yeilding 16.
    :feedback_c: This is a more complicated expression, but still valid. The expression square(2) is evaluated, and the return value 4 substitutes for square(2) in the expression.
-   :correct: b   
-   
+   :correct: b
+
    What will the following code output?
    
    .. code-block:: python 
@@ -252,7 +252,7 @@ interpreter does these steps:
            y = x * x
            return y
            
-       print square(square(2))
+       print(square(square(2)))
 
 .. mchoice:: test_questionfunctions_2_5
    :answer_a: 1
@@ -278,9 +278,9 @@ interpreter does these steps:
            
        z = cyu2("Yes", "no")
        if z > 0:
-           print "First one was longer"
+           print("First one was longer")
        else:
-           print "Second one was at least as long"
+           print("Second one was at least as long")
  
 .. mchoice:: test_questionfunctions_2_6
    :answer_a: square
@@ -288,22 +288,22 @@ interpreter does these steps:
    :answer_c: a number
    :feedback_a: Before executing square, it has to figure out what value to pass in, so g is executed first
    :feedback_b: g has to be executed and return a value in order to know what paramater value to provide to x.
-   :feedback_c: square and g both have to execute before the number is printed. 
+   :feedback_c: square and g both have to execute before the number is printed.
    :correct: b  
-   
+
    Which will print out first, square, g, or a number?
    
    .. code-block:: python 
 
        def square(x):
-           print "square"
+           print("square")
            return x*x
            
        def g(y):
-           print "g"
+           print("g")
            return y + 3
            
-       print square(g(2))
+       print(square(g(2)))
 
 .. mchoice:: test_questionfunctions_2_7
    :answer_a: 3
@@ -319,12 +319,12 @@ interpreter does these steps:
    .. code-block:: python
 
        def show_me_numbers(list_of_ints):
-           print 10
-           print "Next we'll accumulate the sum"
+           print(10)
+           print("Next we'll accumulate the sum")
            accum = 0
            for num in list_of_ints:
                accum = accum + num
            return accum
-           print "All done with accumulation!"
+           print("All done with accumulation!")
 
        show_me_numbers([4,2,3])

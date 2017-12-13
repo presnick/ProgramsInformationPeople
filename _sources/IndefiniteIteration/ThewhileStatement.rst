@@ -45,9 +45,9 @@ Here is a new version of the summation program that uses a while statement.
             aNumber = aNumber + 1
         return theSum
 
-    print sumTo(4)
+    print(sumTo(4))
 
-    print sumTo(1000)
+    print(sumTo(1000))
 
 
 
@@ -69,7 +69,7 @@ The same program in codelens will allow you to observe the flow of execution.
             aNumber = aNumber + 1
         return theSum
 
-    print sumTo(4)
+    print(sumTo(4))
 
 
 
@@ -148,7 +148,7 @@ terminates. That also makes a while loop harder to read and understand than the 
      while ( n > 0 ):
        answer = answer + n
        n = n + 1
-     print answer
+     print(answer)
 
 .. mchoice:: test_question7_3_1
    :answer_a: a for-loop or a while-loop

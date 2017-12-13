@@ -118,6 +118,7 @@ Problem Set
 
    =====
 
+
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
@@ -133,7 +134,7 @@ Problem Set
    :autograde: unittest
    :hidecode:
 
-   **2.** The code provided does not iterate over the words in the English sentence that's stored in the variable ``sent``. Why not? Write a comment in the box below explaining why not. (Hint: Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence?) 
+   **2.** The code provided does not iterate over the words in the English sentence that's stored in the variable ``sent``. Why not? Write a comment in the box below explaining why not. (Hint: Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence?)
 
    Then, write code that assigns a variable word_list to hold a LIST of all the WORDS in the string sent. (It's fine if words include punctuation.)
    ~~~~
@@ -143,8 +144,6 @@ Problem Set
       print x
 
    =====
-
-   from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
 
@@ -191,7 +190,7 @@ Problem Set
    :autograde: unittest
    :hidecode:
 
-   **4.** Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.) 
+   **4.** Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.)
 
    The result should look like this:
 
@@ -238,7 +237,7 @@ Problem Set
 
    class myTests(TestCaseGui):
 
-    def testOne(self):
+     def testOne(self):
        self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
        self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
 
@@ -339,7 +338,7 @@ Problem Set
 
    **8.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
 
-   HINT 1: Use the accumulation pattern! 
+   HINT 1: Use the accumulation pattern!
 
    HINT 2: the ``in`` operator checks whether a substring is present in a string.
    ~~~~

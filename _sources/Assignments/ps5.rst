@@ -114,7 +114,7 @@ We are going to begin to move toward executing Python programs on your own compu
       def testCode(self):
          self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
          self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
 
    myTests().main()
 
@@ -167,9 +167,9 @@ We are going to begin to move toward executing Python programs on your own compu
    # Some function calls and lines that print out the results
    l = [3,46,6]
    b = [4,"hi",10,"12",12,123,"whoa!"]
-   print list_end_with_string([1,2])
-   print list_end_with_string(l)
-   print list_end_with_string(b)
+   print(list_end_with_string([1,2]))
+   print(list_end_with_string(l))
+   print(list_end_with_string(b))
 
    # Now write a couple invocations of this function yourself below this line.
 
@@ -188,11 +188,11 @@ We are going to begin to move toward executing Python programs on your own compu
 
    # Here's a couple example function calls, printing the return value
    # to show you what it is.
-   print is_prefix("He","Hello") # should print True
-   print is_prefix("Hello","He") # should print False
-   print is_prefix("Hi","Hello") # should print False
-   print is_prefix("lo","Hello") # should print False
-   print is_prefix("Hel","Hello") # should print True
+   print(is_prefix("He","Hello")) # should print True
+   print(is_prefix("Hello","He")) # should print False
+   print(is_prefix("Hi","Hello")) # should print False
+   print(is_prefix("lo","Hello")) # should print False
+   print(is_prefix("Hel","Hello")) # should print True
    # Remember, these won't work at all until you have defined a function called is_prefix
 
    =====
@@ -257,7 +257,7 @@ We are going to begin to move toward executing Python programs on your own compu
          self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
          self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
          self.assertIn("+", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
 
    myTests().main()
 
@@ -280,10 +280,9 @@ For each step of this assignment, please take a screenshot that shows us the com
 
     .. sourcecode:: python
 
-        print "hello world"
+        print("hello world")
 
     Save the file as ``prog1.py``. You've now saved a Python program on your computer!
-
 
 
     **In the second file,** put the following:
@@ -293,7 +292,7 @@ For each step of this assignment, please take a screenshot that shows us the com
         def greeting(x):
             return "hello " + x
 
-        print greeting("there")
+        print(greeting("there"))
 
     Save this file as ``prog2.py``.
     
@@ -375,7 +374,4 @@ You're done with the Unix part of the problem set. Again, `here <https://umich.i
 .. external:: ps5_dyu
 
    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131288>`_ assignment on Canvas.
-
-
-
 

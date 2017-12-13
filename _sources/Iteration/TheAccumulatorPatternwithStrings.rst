@@ -15,12 +15,12 @@ isn't particularly useful for data processing, but we will see more useful thing
 
 .. activecode:: ch08_acc1
     
-   s = raw_input("Enter some text")
+   s = input("Enter some text")
    ac = ""
    for c in s:
        ac = ac + c + "-" + c + "-"
        
-   print ac
+   print(ac)
  
 Look carefully at line 4 in the above program (``ac = ac + c + "-" + c + "-"``).  
 In words, it says that the new value of ``ac`` will be the old value of ``ac`` concatenated with the current character, a dash, then the current character and a dash again.
@@ -51,7 +51,7 @@ everywhere in the above code).
       r = ""
       for item in s:
          r = item.upper() + r
-      print r
+      print(r)
 
 
 .. note::

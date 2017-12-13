@@ -24,9 +24,9 @@ In the code below, we implement a guesser function and a list of two rules. The 
 
    rules = [(lambda x: x[-1] == "Q", "UAI"),
             (lambda x: True, alphabet)]
-   print guesser(" ", rules)
-   print guesser(" THE Q", rules)
-   print guesser(" THE QUALIT", rules)
+   print(guesser(" ", rules))
+   print(guesser(" THE Q", rules))
+   print(guesser(" THE QUALIT", rules))
 
 
 Let's simplify that a little. Notice that in the above, the first rule considers only the very last letter in prev_txt (the most recent letter that was revealed). Suppose we restrict ourselves to guessing rules that consider only the last letter or last few letters in prev_txt. Then we don't need the first element of a rule to be a function that takes prev_txt as an input. Instead, the first part of the rule can just be a string to compare against the ending of prev_txt.
@@ -146,14 +146,14 @@ Let's see whether having that extra rule makes us any better at playing the Shan
             # c has now been revealed, so add it to prev_txt
             prev_txt += c
         # done with the for loop; print the overall performance
-        print "%d characters to guess\t%d guesses\t%.2f guesses per character, on average\n" % (len(txt) -1, tot, float(tot)/(len(txt) -1))
+        print("%d characters to guess\t%d guesses\t%.2f guesses per character, on average\n" % (len(txt) -1, tot, float(tot)/(len(txt) -1)))
 
 
 
-    print "Without the U after Q rule"
+    print("Without the U after Q rule")
     performance(test_txt, [(None, alphabet)])
 
-    print "With the U after Q rule"
+    print("With the U after Q rule")
     performance(test_txt, [('Q', ['U']), (None, alphabet)])
 
 Claude Shannon originally devised this game as a way to estimate the *entropy* of the English language. Suppose we had the very best guesser possible (perhaps some combination of a human who understands English and a computer program that does all kinds of statistical and computational wizardry.) Rather than just counting the total number of guesses it makes, as our performance function did, we could keep track of how often it took one guess, two guesses, three guesses, and so on. From those frequencies, we can infer probabilities (the fraction of all letters that required that many guesses). Then, a lower bound on the entropy of English can be computed from those probabilities, as argued in his classic paper: ``Shannon, Claude E. "Prediction and entropy of printed English." Bell system technical journal 30.1 (1951): 50-64.``
@@ -176,7 +176,7 @@ We can see below that guessing in alphabetic order yields an estimate of 4.85 bi
                 guess_frequencies[guess_count] = 1
             prev_txt += c
 
-        print "guess_frequencies:", guess_frequencies
+        print("guess_frequencies:", guess_frequencies)
         # from frequencies, compute entropy
         acc = 0.0
         for i in range(len(guess_frequencies.keys())):
@@ -189,7 +189,7 @@ We can see below that guessing in alphabetic order yields an estimate of 4.85 bi
                 next_probability = 0
             acc += guess_count * (probability-next_probability) * math.log(guess_count, 2)
 
-        print "entropy:", acc
+        print("entropy:", acc)
         return acc
 
 

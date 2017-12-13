@@ -17,10 +17,10 @@ Try the following program.
 .. activecode:: chp08_upper
 
     ss = "Hello, World"
-    print ss.upper()
+    print(ss.upper())
 
     tt = ss.lower()
-    print tt
+    print(tt)
 
 
 In this example, ``upper`` is a method that can be invoked on any string object 
@@ -51,36 +51,36 @@ split       item                Splits a string into a list based on specified c
 
 You should experiment with these
 methods so that you understand what they do.  Note once again that the methods that return strings do not
-change the original.  You can also consult the `Python documentation for strings <http://docs.python.org/2.7/library/stdtypes.html#string-methods>`_.
+change the original.  You can also consult the `Python documentation for strings <http://docs.python.org/3/library/stdtypes.html#string-methods>`_.
 
 .. activecode:: ch08_methods1
 
     ss = "    Hello, World    "
 
     els = ss.count("l")
-    print els
+    print(els)
 
-    print "***"+ss.strip()+"***"
+    print("***"+ss.strip()+"***")
 
     news = ss.replace("o", "***")
-    print news
+    print(news)
 
 
 .. activecode:: ch08_methods2
 
 
     food = "banana bread"
-    print food.upper()
+    print(food.upper())
 
-    print food.find("e")
-    print food.find("na")
-    print food.find("b")
+    print(food.find("e"))
+    print(food.find("na"))
+    print(food.find("b"))
 
-    print food.rfind("e")
-    print food.rfind("na")
-    print food.rfind("b")
+    print(food.rfind("e"))
+    print(food.rfind("na"))
+    print(food.rfind("b"))
 
-    print food.index("e")
+    print(food.index("e"))
 
 
 **Check your understanding**
@@ -99,8 +99,7 @@ change the original.  You can also consult the `Python documentation for strings
    .. code-block:: python
    
       s = "python rocks"
-      print s.count("o") + s.count("p")
-
+      print(s.count("o") + s.count("p"))
 
 .. mchoice:: test_question8_3_2
    :answer_a: yyyyy
@@ -118,7 +117,7 @@ change the original.  You can also consult the `Python documentation for strings
    .. code-block:: python
    
       s = "python rocks"
-      print s[1]*s.index("n")
+      print(s[1]*s.index("n"))
 
 
 .. index::

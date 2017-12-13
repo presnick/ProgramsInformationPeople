@@ -17,7 +17,7 @@ variables refer to the same object:
     
     a = [81, 82, 83]
     b = a
-    print a is b
+    print(a is b)
     
 In this case, the reference diagram looks like this:
 
@@ -35,15 +35,15 @@ to the same list after executing the assignment statement ``b = a``.
     a = [81,82,83]
     b = [81,82,83]
 
-    print a == b
-    print a is b
+    print(a == b)
+    print(a is b)
 
     b = a
-    print a == b
-    print a is b
+    print(a == b)
+    print(a is b)
 
     b[0] = 5
-    print a
+    print(a)
     
 
 
@@ -69,7 +69,7 @@ economize.
      alist = [4,2,8,6,5]
      blist = alist
      blist[3] = 999
-     print alist
+     print(alist)
 
 
 .. index:: clone

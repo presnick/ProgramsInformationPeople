@@ -16,9 +16,9 @@ selecting a character:
 .. activecode:: chp08_slice1
     
     singers = "Peter, Paul, and Mary"
-    print singers[0:5]
-    print singers[7:11]
-    print singers[17:21]
+    print(singers[0:5])
+    print(singers[7:11])
+    print(singers[17:21])
     
 
 The `slice` operator ``[n:m]`` returns the part of the string from the n'th character
@@ -33,8 +33,8 @@ end of the string.
 .. activecode:: chp08_slice2
     
     fruit = "banana"
-    print fruit[:3]
-    print fruit[3:]
+    print(fruit[:3])
+    print(fruit[3:])
 
 What do you think ``fruit[:]`` means?
 
@@ -51,14 +51,12 @@ What do you think ``fruit[:]`` means?
    :feedback_d: This is called slicing, not indexing.  It requires a start and an end.
    :correct: c
 
-
    What is printed by the following statements?
    
    .. code-block:: python
 
       s = "python rocks"
-      print s[3:8]
-
+      print(s[3:8])
 
 .. mchoice:: test_question8_5_2
    :answer_a: rockrockrock
@@ -76,8 +74,7 @@ What do you think ``fruit[:]`` means?
    .. code-block:: python
 
       s = "python rocks"
-      print s[7:11]*3
-
+      print(s[7:11]*3)
 
 .. note::
 

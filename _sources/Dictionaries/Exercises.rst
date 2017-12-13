@@ -19,18 +19,18 @@ If a line causes a run-time error, comment it out and see whether the rest of yo
 .. actex:: dict_q1
 
    d = {'apples': 15, 'grapes': 12, 'bananas': 35}
-   print d['banana']
+   print(d['banana'])
    d['oranges'] = 20
-   print len(d)
-   print 'grapes' in d
-   print d['pears']
-   print d.get('pears', 0)
+   print(len(d))
+   print('grapes' in d)
+   print(d['pears'])
+   print(d.get('pears', 0))
    fruits = d.keys()
-   print fruits
+   print(fruits)
    fruits.sort()
-   print fruits
+   print(fruits)
    del d['apples']
-   print 'apples' in d         
+   print('apples' in d)        
       
 
    
@@ -93,6 +93,6 @@ If a line causes a run-time error, comment it out and see whether the rest of yo
                     else:
                         psentence.append(aword)
                     
-                print " ".join(psentence)
+                print(" ".join(psentence))
             
 

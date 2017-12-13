@@ -20,7 +20,7 @@ Now consider another common pattern: going through a list and keeping only those
                new_list.append(num)
        return new_list
       
-   print keep_evens([3, 4, 6, 7, 0, 1])
+   print(keep_evens([3, 4, 6, 7, 0, 1]))
 
 Again, this pattern of computation is so common that python offers a more compact and general way to do it, the ``filter`` function. filter takes two arguments, a function and a sequence. The function takes one item and return True if the item should. It is automatically called for each item in the sequence. You don't have to initialize an accumulator or iterate with a for loop.
 
@@ -30,8 +30,7 @@ Again, this pattern of computation is so common that python offers a more compac
        new_list = filter(lambda num: num % 2 == 1, nums)
        return new_list
       
-   print keep_odds([3, 4, 6, 7, 0, 1])
+   print(keep_odds([3, 4, 6, 7, 0, 1]))
 
-Exercises
----------
+.. Exercises
 

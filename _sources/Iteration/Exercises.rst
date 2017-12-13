@@ -12,7 +12,7 @@ Exercises
    suffix = "ack"
 
    for p in prefixes:
-       print p + suffix
+       print(p + suffix)
 
 
 Of course, that's not quite right because Ouack and Quack are misspelled.

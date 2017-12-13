@@ -30,7 +30,7 @@ joining the two operands by linking them end-to-end. For example:
 
     fruit = "banana"
     bakedGood = " nut bread"
-    print fruit + bakedGood
+    print(fruit + bakedGood)
 
 The output of this program is ``banana nut bread``. The space before the word
 ``nut`` is part of the string and is necessary to produce the space between
@@ -43,14 +43,14 @@ other has to be an integer.
 .. activecode:: ch08_mult
     :nocanvas:
 
-    print "Go"*6
+    print("Go"*6)
 
     x = "Blue"
-    print x * 3
+    print(x * 3)
 
-    print "Go" * 3 + x
+    print("Go" * 3 + x)
 
-    print ("Go " + x + "  ") * 3
+    print(("Go " + x + "  ") * 3)
 
 This interpretation of ``+`` and ``*`` makes sense by analogy with
 addition and multiplication. Just as ``4*3`` is equivalent to ``4+4+4``, we
@@ -78,8 +78,7 @@ done first, you will need to use parentheses.
 
       s = "python"
       t = "rocks"
-      print s+t
-
+      print(s+t)
 
 .. mchoice:: test_question8_1_2
    :answer_a: python!!!
@@ -98,5 +97,5 @@ done first, you will need to use parentheses.
  
       s = "python"
       excl = "!"
-      print s+excl*3
+      print(s+excl*3)
 

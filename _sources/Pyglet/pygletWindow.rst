@@ -64,7 +64,7 @@ By default, the loop ends when all windows are closed. What that means is that w
     import pyglet
     window = pyglet.window.Window()
     pyglet.app.run()
-    print 'I made a window and ran the Pyglet event loop!'
+    print('I made a window and ran the Pyglet event loop!')
 
 ...you'll find that you **do** see that print statement in the console, but not until you close the Pyglet window.
 

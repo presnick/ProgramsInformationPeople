@@ -19,7 +19,7 @@ Write equivalent code using map instead of the manual accumulation below
    accum = []
    for thing in things:
        accum.append(thing+1)
-   print accum
+   print(accum)
    
 Use manual accumulation to define the lengths function below.
  
@@ -39,8 +39,7 @@ Use manual accumulation to define the lengths function below.
       def testOne(self):
          self.assertEqual(lengths(["Hello", "hi", "bye"]), [5, 2, 3], "Testing whether lengths has been correctly defined.")
 
-   myTests().main() 
-  
+   myTests().main()
   
 Now define lengths using map instead.
  
@@ -50,7 +49,7 @@ Now define lengths using map instead.
        """lengths takes a list of strings as input and returns a list of numbers that are the lengths
        of strings in the input list. Use map!"""
        # fill in this function's definition to make the test pass.
-   
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -106,7 +105,7 @@ Now define lengths using a list comprehension instead.
    def longwords(strings):
        """Return a shorter list of strings containing only the strings with more than four characters. Use manual accumulation."""
        # write your code here
-              
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -125,7 +124,7 @@ Now define lengths using a list comprehension instead.
    def longwords(strings):
        """Return a shorter list of strings containing only the strings with more than four characters. Use the filter function."""
        # write your code here
-              
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -163,7 +162,7 @@ Now combine lengths with longwords to make a function that returns the lengths o
 
    def longlengths(strings):
        return None
-       
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -174,7 +173,7 @@ Now combine lengths with longwords to make a function that returns the lengths o
          self.assertEqual(longlengths(["Hello", "hi", "bye", "wonderful"]), [5, 9], "Testing whether longlengths has been correctly defined.")
 
    myTests().main()
-   
+
 Now try doing it using map and filter.
 
 .. activecode:: listcomp_exercise_4
@@ -192,8 +191,7 @@ Now try doing it using map and filter.
          self.assertEqual(longlengths(["Hello", "hi", "bye", "wonderful"]), [5, 9], "Testing whether longlengths has been correctly defined.")
 
    myTests().main()
-  
-  
+
 Write a function that takes a list of numbers and returns the sum of the squares of all the numbers. First try it using an accumulator pattern.
 
 .. activecode:: reduce_exercise_2
@@ -213,7 +211,7 @@ Write a function that takes a list of numbers and returns the sum of the squares
          self.assertEqual(sumSquares(nums), 19, "Testing whether sumSquares has been correctly defined.")
 
    myTests().main()
-   
+
 Now, try it using map and sum 
 
 .. activecode:: reduce_exercise_3
@@ -275,7 +273,7 @@ Use the zip function to take the lists below and turn them into a list of tuples
          self.assertEqual(tups, [(1, 4, 0), (2, 3, 5), (3, 2, 0), (4, 3, 5)], "Testing whether tups has been correctly defined.")
 
    myTests().main()
-   
+
 Use zip and map or a list comprehension to make a list consisting the maximum value for each position.
 
 .. activecode:: zip_exercise_2

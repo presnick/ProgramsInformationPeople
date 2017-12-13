@@ -37,10 +37,10 @@ Here, we have created a subclass of ``pyglet.window.Window`` that we call ``Resp
 
     class ResponsiveWindow(pyglet.window.Window):
         def on_key_press(self, symbol, modifiers):
-            print 'You pressed a key! '
-            print '\tThe code number for that key is: ' + str(symbol)
-            print '\tThe name of the key you pressed is: '+ str(pyglet.window.key.symbol_string(symbol))
-            print '---'
+            print('You pressed a key! ')
+            print('\tThe code number for that key is: ' + str(symbol))
+            print('\tThe name of the key you pressed is: '+ str(pyglet.window.key.symbol_string(symbol)))
+            print('---')
             sys.stdout.flush()
 
     responsive_window = ResponsiveWindow()
@@ -98,38 +98,38 @@ Below is a version of the ResponsiveWindow class which has an overwritten method
 
     class ResponsiveWindow(pyglet.window.Window):
         def on_key_press(self, symbol, modifiers):
-            print 'You pressed a key! '
-            print '\tThe code number for that key is: ' + str(symbol)
-            print '\tThe name of the key you pressed is: '+ str(pyglet.window.key.symbol_string(symbol))
+            print('You pressed a key! ')
+            print('\tThe code number for that key is: ' + str(symbol))
+            print('\tThe name of the key you pressed is: '+ str(pyglet.window.key.symbol_string(symbol)))
 
             sys.stdout.flush()
 
         def on_key_release(self, symbol, modifiers):
-            print 'You released a key! '
-            print '\tThe code number for that key is: ' + str(symbol)
-            print '\tThe name of the key you pressed is: '+ str(pyglet.window.key.symbol_string(symbol))
+            print('You released a key! ')
+            print('\tThe code number for that key is: ' + str(symbol))
+            print('\tThe name of the key you pressed is: '+ str(pyglet.window.key.symbol_string(symbol)))
             sys.stdout.flush()
 
         def on_draw(self):
-            print 'The window was drawn!'
+            print('The window was drawn!')
             sys.stdout.flush()
 
         def on_mouse_press(self,x, y, button, modifiers):
-            print 'You clicked the mouse!'
-            print '\tYou clicked mouse button #'+str(button)
-            print '\tYou clicked at coordinates: (' +str(x) + ',' + str(y) + ')'
+            print('You clicked the mouse!')
+            print('\tYou clicked mouse button #'+str(button))
+            print('\tYou clicked at coordinates: (' +str(x) + ',' + str(y) + ')')
             sys.stdout.flush()
 
         def on_mouse_drag(self,x, y, dx, dy, button, modifiers):
-            print 'You dragged the mouse!'
-            print '\tYou dragged mouse button #'+str(button)
-            print '\tYou clicked at coordinates: (' +str(x) + ',' + str(y) + ')'
-            print '\t...and dragged the cursor ' +str(x) + ' units horizontally and ' + str(y) + ' units vertically'
+            print('You dragged the mouse!')
+            print('\tYou dragged mouse button #'+str(button))
+            print('\tYou clicked at coordinates: (' +str(x) + ',' + str(y) + ')')
+            print('\t...and dragged the cursor ' +str(x) + ' units horizontally and ' + str(y) + ' units vertically')
             sys.stdout.flush()
 
         def on_text(self,text):
-            print 'You entered some text!'
-            print '\tThe text you entered was: "'+text+'"'
+            print('You entered some text!')
+            print('\tThe text you entered was: "'+text+'"')
 
 
 

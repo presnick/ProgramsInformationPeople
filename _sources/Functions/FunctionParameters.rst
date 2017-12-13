@@ -49,8 +49,8 @@ to greet is specified by the parameter.
 .. codelens:: functions_3
 
    def hello2(s):
-       print "Hello " + s
-       print "Glad to meet you"
+      print("Hello " + s)
+      print("Glad to meet you")
          
    hello2("Nick")
    hello2("Jackie")
@@ -75,8 +75,8 @@ Try some of your own, too.
 .. activecode:: functions_4
 
    def hello2(s):
-       print "Hello " + s
-       print "Glad to meet you"
+       print("Hello " + s)
+       print("Glad to meet you")
          
    hello2("Nick" + " and Jackie")
    hello2("Class " * 3)
@@ -87,7 +87,7 @@ a parameter that controls how many times the greeting will be printed.
 .. codelens:: functions_5
 
    def hello3(s, n):
-      print (" hello " + s)*n
+      print((" hello " + s)*n)
          
    hello3("world", 4)
    hello3("", 1)
@@ -123,7 +123,7 @@ provided. The second parameter name is bound to the second value provided. And s
    :answer_d: Print out string x, y times.
    :feedback_a: This line is the complete function header (except for the semi-colon) which includes the name as well as several other components.
    :feedback_b: Yes, the name of the function is given after the keyword def and before the list of parameters.
-   :feedback_c: This includes the function name and its parameters.
+   :feedback_c: This includes the function name and its parameters
    :feedback_d: This is a comment stating what the function does.
    :correct: b
 
@@ -134,8 +134,7 @@ provided. The second parameter name is bound to the second value provided. And s
      def print_many(x, y):
          """Print out string x, y times."""
          for i in range(y):
-             print x
-
+             print(x)
 
 
 .. mchoice:: test_questionfunctions_1_5
@@ -156,7 +155,7 @@ provided. The second parameter name is bound to the second value provided. And s
      def print_many(x, y):
          """Print out string x, y times."""
          for i in range(y):
-             print x
+             print(x)
 
 
 
@@ -180,7 +179,7 @@ provided. The second parameter name is bound to the second value provided. And s
       def print_many(x, y):
          """Print out string x, y times."""
          for i in range(y):
-             print x
+             print(x)
 
       z = 3
 
@@ -210,9 +209,9 @@ provided. The second parameter name is bound to the second value provided. And s
 
       def cyu(s1, s2):
          if len(s1) > len(s2):
-            print s1
+            print(s1)
          else:
-            print s2
+            print(s2)
             
       cyu("Hello", "Goodbye")
       

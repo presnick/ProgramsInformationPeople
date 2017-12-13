@@ -52,7 +52,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
             return state
 
         def hi(self):
-            print self.sounds[randrange(len(self.sounds))]
+            print(self.sounds[randrange(len(self.sounds))])
             self.update_boredom()
 
         def teach(self, word):
@@ -94,7 +94,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
 
         def feed(self):
             Pet.feed(self)
-            print "Arf! Thanks!"
+            print("Arf! Thanks!")
 
     class Bird(Pet):
         sounds = ["chirp"]
@@ -105,7 +105,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
 
         def hi(self):
             for i in range(self.chirp_number):
-                print self.sounds[randrange(len(self.sounds))]
+                print(self.sounds[randrange(len(self.sounds))])
             self.update_boredom()
 
     class Lab(Dog):
@@ -113,15 +113,15 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
             return "I found the tennis ball!"
 
         def hi(self):
-            print self.fetch()
-            print self.sounds[randrange(len(self.sounds))]
+            print(self.fetch())
+            print(self.sounds[randrange(len(self.sounds))])
 
     class Poodle(Dog):
         def dance(self):
             return "Dancin' in circles like poodles do."
 
         def hi(self):
-            print self.dance()
+            print(self.dance())
             Dog.hi(self)
 
     def whichone(petlist, name):
@@ -148,7 +148,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
             Choice: """
         feedback = ""
         while True:
-            action = raw_input(feedback + "\n" + base_prompt)
+            action = input(feedback + "\n" + base_prompt)
             feedback = ""
             words = action.split()
             if len(words) > 0:
@@ -173,7 +173,7 @@ And now we can play the Tamagotchi game with some small changes, such that we ca
                 pet = whichone(animals, words[1])
                 if not pet:
                     feedback += "I didn't recognize that pet name. Please try again.\n"
-                    print
+                    print()
                 else:
                     pet.hi()
             elif command == "Teach" and len(words) > 2:

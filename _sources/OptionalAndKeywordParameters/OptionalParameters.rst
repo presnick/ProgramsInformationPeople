@@ -40,9 +40,9 @@ supplying a different value.
 
 .. activecode:: opt_params_1
 
-    print int("100")
-    print int("100", 10)   # same thing, 10 is the default value for the base
-    print int("100", 8)     # now the base is 8, so the result is 1*64 = 64
+    print(int("100"))
+    print(int("100", 10))   # same thing, 10 is the default value for the base
+    print(int("100", 8))     # now the base is 8, so the result is 1*64 = 64
 
 .. note:: Tom Lehrer's New Math
 
@@ -63,7 +63,7 @@ Consider the following code, for example.
 
     initial = 7
     def f(x, y =3, z=initial):
-        print "x, y, z, are: " + str(x) + ", " + str(y) + ", " + str(z)
+        print("x, y, z, are: " + str(x) + ", " + str(y) + ", " + str(z))
         
     f(2)
     f(2, 5)
@@ -94,7 +94,7 @@ when f is invoked without specifying a value for z.
 
     initial = 7
     def f(x, y =3, z=initial):
-        print "x, y, z, are: " + str(x) + ", " + str(y) + ", " + str(z)
+        print("x, y, z, are: " + str(x) + ", " + str(y) + ", " + str(z))
         
     initial = 10
     f(2)
@@ -109,11 +109,11 @@ of the function. This can get very confusing, so I suggest that you never set a 
         L.append(a)
         return L
     
-    print f(1)
-    print f(2)
-    print f(3)
-    print f(4, ["Hello"])
-    print f(5, ["Hello"])
+    print(f(1))
+    print(f(2))
+    print(f(3))
+    print(f(4, ["Hello"]))
+    print(f(5, ["Hello"]))
     
 When the default value is used, the same list is shared. But on lines 8 and 9
 two different copies of the list ["Hello"] are provided, so the 4 that is
@@ -126,7 +126,7 @@ appended is not present in the list that is printed on line 9.
    :answer_a: 0
    :answer_b: 1
    :answer_c: None
-   :answer_d: Runtime error since no parameters are passed in the call to f
+   :answer_d: Runtime error since no parameters are passed in the call to f.
    :feedback_a: Since no parameters are specified, x is 0 and y is 1, so 0 is returned.
    :feedback_b: 0 * 1 is 0.
    :feedback_c: The function does return a value.
@@ -140,15 +140,15 @@ appended is not present in the list that is printed on line 9.
        def f(x = 0, y = 1):
            return x * y
            
-       print f()
+       print(f())
 
 .. mchoice:: test_questionopt_params_2
    :answer_a: 0
    :answer_b: 1
    :answer_c: None
-   :answer_d: Runtime error since the second parameter value is missing
-   :feedback_a: Since one parameter value is specified, it is bound to x; y gets the default value of 1
-   :feedback_b: Since one parameter value is specified, it is bound to x; y gets the default value of 1
+   :answer_d: Runtime error since the second parameter value is missing.
+   :feedback_a: Since one parameter value is specified, it is bound to x; y gets the default value of 1.
+   :feedback_b: Since one parameter value is specified, it is bound to x; y gets the default value of 1.
    :feedback_c: The function does return a value.
    :feedback_d: Because both parameters have default values specified in the definition, they are both optional.
    :correct: b
@@ -160,6 +160,6 @@ appended is not present in the list that is printed on line 9.
        def f(x = 0, y = 1):
            return x * y
            
-       print f(1)
+       print(f(1))
 
 

@@ -14,7 +14,7 @@ Writing Text Files
 
 One of the most commonly performed data processing tasks is to read data from a file, manipulate it in some way, and then write the resulting data out to a new data file to be used for other purposes later.  
 To accomplish this, the ``open`` function discussed above can also be used to create a new file prepared for writing.  
-Note in :ref:`Table 1<filemethods1a>` above that the only difference between opening a file for writing and  opening a file for reading is the use of the ``'w'`` flag instead of the ``'r'`` flag as the second parameter.  
+Note in :ref:`Table 1<filemethods1a>` above that the only difference between opening a file for writing and opening a file for reading is the use of the ``'w'`` flag instead of the ``'r'`` flag as the second parameter.  
 When we open a file for writing, a new, empty file with that name is created and made ready to accept our data. As before, the function returns a reference to the new file object.
 
 :ref:`Table 2 <filemethods2a>` above shows one additional file method that we have not used thus far.  
@@ -41,7 +41,7 @@ The program below solves part of the problem.  Notice that it reads the data and
     for aline in infile.readlines():
         items = aline.split()
         dataline = items[1] + ',' + items[0]
-        print dataline
+        print(dataline)
     #    aline = infile.readline()
 
     infile.close()
@@ -67,7 +67,7 @@ The complete program is shown below.
     infile = open("qbdata.txt","r")
     outfile = open("qbnames.txt","w")
 
-    # note: I have rewrittent the code to iterate using a for loop instead of a while loop; it's much simpler that way!
+    # note: I have rewritten the code to iterate using a for loop instead of a while loop; it's much simpler that way!
     # aline = infile.readline()
     # while aline:
     for aline in infile:

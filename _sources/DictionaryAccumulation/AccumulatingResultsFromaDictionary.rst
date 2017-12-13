@@ -42,7 +42,7 @@ punctuation, capital letters, etc.), we add to the total score.
        if y in letter_values:
            tot = tot + letter_values[y] * x[y]
 
-   print tot
+   print(tot)
 
 Line 18 is the tricky one. We are updating the variable tot to have its old number plus the score for the current letter times the number of occurrences of that letter.
 Try changing some of the letter values and see how it affects the total. Try changing txt to be just a single word that you might play in Scrabble.

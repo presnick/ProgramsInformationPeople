@@ -13,7 +13,7 @@
 Run a Python Code File
 ======================
 
-Finally, you are ready to run a python program! At the terminal window, type ``python secondprog.py``. This will invoke the python interpreter, executing the code in file secondprog.py. That file just contains the line ``print "hello world"``, so *hello world* is output to the console. Notice that the console is just the area in the terminal window underneath where you entered the command that invoked python.
+Finally, you are ready to run a python program! At the terminal window, type ``python secondprog.py``. This will invoke the python interpreter, executing the code in file secondprog.py. That file just contains the line ``print("hello world")``, so *hello world* is output to the console. Notice that the console is just the area in the terminal window underneath where you entered the command that invoked python.
 
 .. image:: Figures/secondprog1.JPG
 

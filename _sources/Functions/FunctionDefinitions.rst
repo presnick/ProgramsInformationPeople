@@ -77,8 +77,8 @@ Here's the definition of a simple function, hello.
 
     def hello():
         """This function says hello and greets you"""
-        print "Hello"
-        print "Glad to meet you"
+        print("Hello")
+        print("Glad to meet you")
 
 .. admonition::  docstrings
 

@@ -43,7 +43,7 @@ operator.  The *is* operator will return true if the two references are to the s
     a = "banana"
     b = "banana"
 
-    print a is b
+    print(a is b)
 
 The answer is ``True``.  This tells us that both ``a`` and ``b`` refer to the same object, and that it
 is the second of the two reference diagrams that describes the relationship. 
@@ -57,9 +57,9 @@ This is not the case with lists.  Consider the following example.  Here, ``a`` a
     a = [81,82,83]
     b = [81,82,83]
 
-    print a is b
+    print(a is b)
 
-    print a == b  
+    print(a == b)
 
 The reference diagram for this example looks like this:
 
@@ -78,7 +78,7 @@ Here is the example in codelens.  Pay particular attention to the `id` values.
     a = [81,82,83]
     b = [81,82,83]
 
-    print a is b
-    print a == b
+    print(a is b)
+    print(a == b)
 
 .. index:: aliases

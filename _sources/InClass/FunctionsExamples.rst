@@ -38,17 +38,17 @@ For each of the following code samples, answer these questions:
 
     get_last_letter(original_str)
     # in a print statement
-    print get_last_letter(original_str)
+    print(get_last_letter(original_str))
     # in an assignment statement
     lett = get_last_letter(another_str)
-    print lett
+    print(lett)
 
 
 .. activecode:: session9_1
     
     def show_key_val_pairs(diction):
         for key in diction:
-            print key, diction[key]
+            print(key, diction[key])
         return None
     
     # example invocation of the show_key_val_pairs function
@@ -57,11 +57,11 @@ For each of the following code samples, answer these questions:
 
     # predict what will print out here before you try it!
     show_key_val_pairs(animals)
-    print show_key_val_pairs(animals)
+    print(show_key_val_pairs(animals))
 
     show_key_val_pairs(new_diction)
     res = show_key_val_pairs(new_diction)
-    print res
+    print(res)
 
 
 .. activecode:: session9_2
@@ -74,14 +74,14 @@ For each of the following code samples, answer these questions:
     new_L = ["106","206","330","334","110"]
 
     n = find_list_element(L,3)
-    print n
+    print(n)
 
     b = find_list_element(L,-2)
-    print b
+    print(b)
 
-    print find_list_element(new_L,1)
+    print(find_list_element(new_L,1))
 
-    print "I am in the class with the number", find_list_element(new_L,0)
+    print("I am in the class with the number", find_list_element(new_L,0))
 
 
 .. activecode:: session9_3
@@ -94,9 +94,9 @@ For each of the following code samples, answer these questions:
 
     # example invocations
     words = ["PRAY", "YOU", "TOOK", "HER", "ONLY", "NEEDLE"]
-    print get_acronym(words)
+    print(get_acronym(words))
  
-    print get_acronym(["YO","IS","KRAZY-GLUE","EVEN","SURPRISING"])
+    print(get_acronym(["YO","IS","KRAZY-GLUE","EVEN","SURPRISING"]))
 
 
 .. activecode:: session9_4
@@ -111,9 +111,9 @@ For each of the following code samples, answer these questions:
     # example invocations
     li = [2,5,7,4,10,12,3]
 
-    print get_list_of_even_nums(li)
+    print(get_list_of_even_nums(li))
 
-    print get_list_of_even_nums([3,3,7])
+    print(get_list_of_even_nums([3,3,7]))
 
 
 Multiple function calls in the same expression!
@@ -128,7 +128,7 @@ Multiple function calls in the same expression!
     def student_function(z):
         return z * 2
 
-    print prof_resnick_function(jackie_function(student_function(2)))
+    print(prof_resnick_function(jackie_function(student_function(2))))
 
 
 Local and global scope: BE CAREFUL.
@@ -145,7 +145,7 @@ Local and global scope: BE CAREFUL.
     def student_function(x):
         return x * 2
 
-    print prof_resnick_function(jackie_function(student_function(2)))
+    print(prof_resnick_function(jackie_function(student_function(2))))
 
 
 
@@ -176,11 +176,11 @@ Local and global scope: BE CAREFUL.
     s2 = "when you come to a fork in the road, take it"
     s3 = "small example"
 
-    print how_many_letter('a', s1)
-    print how_many_letter('x', s3)
+    print(how_many_letter('a', s1))
+    print(how_many_letter('x', s3))
 
-    print better('a', s1)
-    print better('x', s3)
+    print(better('a', s1))
+    print(better('x', s3))
 
 
 ``return`` ends the execution, even if there's more code
@@ -192,9 +192,9 @@ Local and global scope: BE CAREFUL.
         for num in nums:
             accum += num
             return accum
-        print "all done"
+        print("all done")
 
-    print f([2, 4, 6, 8])
+    print(f([2, 4, 6, 8]))
 
 Without a ``return`` statement, the function returns None, when it runs out of code to execute (at the bottom of the function).
 
@@ -204,9 +204,9 @@ Without a ``return`` statement, the function returns None, when it runs out of c
         accum = 0
         for num in nums:
             accum += num
-        print "all done"
+        print("all done")
 
-    print f([2, 4, 6, 8])
+    print(f([2, 4, 6, 8]))
 
 You have to do something with returned values, else they get discarded
 

@@ -29,8 +29,8 @@ Take a look at the activecode interpreter in action.  If we use the Python code 
 
 .. activecode:: ch01_1
 
-   print "My first program adds two numbers, 2 and 3:"
-   print 2 + 3
+   print("My first program adds two numbers, 2 and 3:")
+   print(2 + 3)
 
 
 Now try modifying the activecode program shown above.  First, modify the string in the first print statement
@@ -52,8 +52,8 @@ When we do, think of it as an encouragement to use the codelens features to step
 .. codelens:: firstexample
     :showoutput:
 
-    print "My first program adds two numbers, 2 and 3:"
-    print 2 + 3
+    print("My first program adds two numbers, 2 and 3:")
+    print(2 + 3)
 
 
 

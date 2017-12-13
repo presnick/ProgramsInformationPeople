@@ -297,7 +297,7 @@ Problem Set
            n = yp - 4
            return n * 7
 
-       print yp
+       print(yp)
 
        ====
 

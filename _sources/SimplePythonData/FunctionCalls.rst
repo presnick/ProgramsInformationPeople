@@ -35,10 +35,10 @@ We've defined two functions above. The code is hidden so as not to bother you (y
    :nocanvas:
 
 
-   print square(3)
+   print(square(3))
    square(5)
-   print sub(6, 4)
-   print sub(5, 9)
+   print(sub(6, 4))
+   print(sub(5, 9))
 
 
 Notice that when a function takes more than one input parameter, the inputs are separated by a comma. Also notice that the order of the inputs matters. The value before the comma is treated as the first input, the value after it as the second input.
@@ -52,8 +52,8 @@ Remember the note that some kinds of python objects don't have a nice printed re
    :nocanvas:
 
 
-   print square
-   print sub
+   print(square)
+   print(sub)
 
 .. mchoice:: exercise_functionCalls_1
       :answer_a: sub(5, 8)
@@ -70,7 +70,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
 
       .. code-block:: python
 
-         print sub(5, 8)
+         print(sub(5, 8))
 
 .. mchoice:: exercise_functionCalls_2
       :answer_a: sub(5, 8)
@@ -87,7 +87,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
 
       .. code-block:: python
 
-         print "sub(5, 8)"
+         print("sub(5, 8)")
 
 .. mchoice:: exercise_functionCalls_3
       :answer_a: sub(5, 8)

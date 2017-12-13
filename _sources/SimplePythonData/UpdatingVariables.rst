@@ -27,9 +27,9 @@ statement makes sure that there is no confusion as to the result.
 .. activecode:: ch07_update1
 
     x = 6        # initialize x
-    print x
+    print(x)
     x = x + 1    # update x
-    print x
+    print(x)
 
 
 If you try to update a variable that doesn't exist, you get an error because
@@ -46,11 +46,11 @@ Incrementing and decrementing are such common operations that programming langua
 .. activecode:: ch07_update2
 
     x = 6        # initialize x
-    print x
+    print(x)
     x += 3       # increment x by 3; same as x = x + 3
-    print x
+    print(x)
     x -= 1       # decrement x by 1
-    print x
+    print(x)
 
 
 
@@ -73,7 +73,7 @@ Incrementing and decrementing are such common operations that programming langua
 
      x = 12
      x = x - 1
-     print x
+     print(x)
 
 .. mchoice:: test_question2_10_2
    :answer_a: 12
@@ -94,7 +94,7 @@ Incrementing and decrementing are such common operations that programming langua
      x = x - 3
      x = x + 5
      x = x + 1
-     print x
+     print(x)
 
 .. parsonsprob:: question2_10_3
 
@@ -102,7 +102,7 @@ Incrementing and decrementing are such common operations that programming langua
    -----
    mybankbalance = 100
    mybankbalance = mybankbalance + 34
-   print mybankbalance
+   print(mybankbalance)
 
 .. mchoice:: test_question2_10_3
    :multiple_answers:
@@ -117,7 +117,6 @@ Incrementing and decrementing are such common operations that programming langua
    :feedback_d: x is updated to be the old value of x plus the value of y.
    :feedback_e: ++ is not a syntax that means anything in python.
    :correct: a,d
-
 
    Which of the following statements are equivalent?
  

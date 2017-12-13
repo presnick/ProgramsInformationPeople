@@ -45,9 +45,9 @@ Exercises
       
          .. activecode:: q2_answer
             
-            x = raw_input("Enter some text that overuses the word like")
+            x = input("Enter some text that overuses the word like")
             y = x.replace("like", "")
-            print y
+            print(y)
 
 
 #.  

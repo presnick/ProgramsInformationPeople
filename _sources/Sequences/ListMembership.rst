@@ -17,8 +17,8 @@ used them previously with strings and they also work here.
     
     fruit = ["apple","orange","banana","cherry"]
 
-    print "apple" in fruit
-    print "pear" in fruit 
+    print("apple" in fruit)
+    print("pear" in fruit)
 
 **Check your understanding**
 
@@ -28,13 +28,13 @@ used them previously with strings and they also work here.
    :feedback_a: Yes, 'cat' is an item in the list alist.
    :feedback_b: There are 5 items in the list, 'cat' is one of them.
    :correct: a
-   
+
    What is printed by the following statements?
    
    .. code-block:: python
 
      alist = [3, 67, "cat", 3.14, False]
-     print "cat" in alist
+     print("cat" in alist)
 
 
 .. mchoice:: test_question9_4_2
@@ -49,6 +49,6 @@ used them previously with strings and they also work here.
    .. code-block:: python
 
      alist = [3, 67, "cat", 3.14, False]
-     print "at" in alist
+     print("at" in alist)
 
 

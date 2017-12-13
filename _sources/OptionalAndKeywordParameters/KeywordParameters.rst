@@ -34,10 +34,10 @@ To make it easier to follow the details of the examples in the official python t
 .. codelens:: keyword_params_1
 
    def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
-       print "-- This parrot wouldn't", action,
-       print "if you put", voltage, "volts through it."
-       print "-- Lovely plumage, the", type
-       print "-- It's", state, "!"
+       print("-- This parrot wouldn't" + action,)
+       print("if you put" + str(voltage) + "volts through it.")
+       print("-- Lovely plumage, the" +  type)
+       print("-- It's " + state + "!")
        
    parrot(1000)                                          # 1 positional argument
    parrot(voltage=1000)                                  # 1 keyword argument
@@ -73,7 +73,7 @@ As you step through it, each time the function is invoked, make a prediction abo
 
       initial = 7
       def f(x, y = 3, z = initial):
-          print "x, y, z are:", x, y, z
+          print("x, y, z are:", x, y, z)
       
       f(2, 5) 
          
@@ -96,7 +96,7 @@ As you step through it, each time the function is invoked, make a prediction abo
 
       initial = 7
       def f(x, y = 3, z = initial):
-          print "x, y, z are:", x, y, z
+          print("x, y, z are:", x, y, z)
       
       f(2, z = 10)
            
@@ -105,12 +105,12 @@ As you step through it, each time the function is invoked, make a prediction abo
    :answer_b: 3
    :answer_c: 5
    :answer_d: 7
-   :answer_e: Runtime error since two different values are provided for x.
-   :feedback_a: 2 is bound to x since it's the first value, but so is 5, based on keyword
+   :answer_e: Runtime error since two different values are provided for x
+   :feedback_a: 2 is bound to x since it's the first value, but so is 5, based on keyword.
    :feedback_b: 
    :feedback_c: 5 is bound to x by keyword, but 2 is also bound to it by virtue of being the value and not having a keyword. In the online environment, it actually allows this, but not in a proper python interpreter.
    :feedback_d: 
-   :feedback_e: 2 is bound to x since it's the first value, but so is 5, based on keyword
+   :feedback_e: 2 is bound to x since it's the first value, but so is 5, based on keyword.
    :correct: e
 
    What value will be printed for x?
@@ -119,7 +119,7 @@ As you step through it, each time the function is invoked, make a prediction abo
 
       initial = 7
       def f(x, y = 3, z = initial):
-          print "x, y, z are:", x, y, z
+          print("x, y, z are:", x, y, z)
       
       f(2, x=5) 
    
@@ -128,7 +128,7 @@ As you step through it, each time the function is invoked, make a prediction abo
    :answer_b: 7
    :answer_c: 0
    :answer_d: Runtime error since two different values are provided for initial.
-   :feedback_a: 2 is bound to x, not z.
+   :feedback_a: 2 is bound to x, no z
    :feedback_b: the default value for z is determined at the time the function is defined; at that time initial has the value 0.
    :feedback_c: the default value for z is determined at the time the function is defined, not when it is invoked.
    :feedback_d: there's nothing wrong with reassigning the value of a variable at a later time.

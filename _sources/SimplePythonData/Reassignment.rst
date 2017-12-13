@@ -17,9 +17,9 @@ same variable. A new assignment makes an existing variable refer to a new value
 .. activecode:: ch07_reassign1
 
     bruce = 5
-    print bruce
+    print(bruce)
     bruce = 7
-    print bruce
+    print(bruce)
 
 
 The first time ``bruce`` is
@@ -42,9 +42,9 @@ they don't have to stay that way:
 
     a = 5
     b = a    # after executing this line, a and b are now equal
-    print a,b
+    print(a,b)
     a = 3    # after executing this line, a and b are no longer equal
-    print a,b
+    print(a,b)
 
 Line 4 changes the value of ``a`` but does not change the value of
 ``b``, so they are no longer equal. We will have much more to say about equality in a later chapter.
@@ -56,9 +56,9 @@ You can step through the code and see how the variable assignments change below.
 
     a = 5
     b = a    # after executing this line, a and b are now equal
-    print a,b 
+    print(a,b)
     a = 3    # after executing this line, a and b are no longer equal
-    print a,b
+    print(a,b)
 
 .. note::
 
@@ -81,7 +81,6 @@ You can step through the code and see how the variable assignments change below.
    :feedback_c: Look at the last assignment statement, which reassigns x, and not y.
    :feedback_d: Yes, x has the value 22 and y the value 15.
    :correct: d
-
 
    After the following statements, what are the values of x and y?
 

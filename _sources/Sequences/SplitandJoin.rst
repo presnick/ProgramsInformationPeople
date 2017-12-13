@@ -10,7 +10,7 @@ default, any number of whitespace characters is considered a word boundary.
     
     song = "The rain in Spain..."
     wds = song.split()
-    print wds 
+    print(wds) 
 
 An optional argument called a **delimiter** can be used to specify which
 characters to use as word boundaries. The following example uses the string
@@ -20,7 +20,7 @@ characters to use as word boundaries. The following example uses the string
     
     song = "The rain in Spain..."
     wds = song.split('ai')
-    print wds 
+    print(wds)
 
 Notice that the delimiter doesn't appear in the result.
 
@@ -33,11 +33,11 @@ and join the list with the glue between each of the elements.
     wds = ["red", "blue", "green"]
     glue = ';'
     s = glue.join(wds)
-    print s
-    print wds
+    print(s)
+    print(wds)
 
-    print "***".join(wds)
-    print "".join(wds)
+    print("***".join(wds))
+    print("".join(wds))
 
 
 The list that you glue together (``wds`` in this example) is not modified.  Also, 
