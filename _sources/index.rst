@@ -15,13 +15,21 @@
 Table of Contents
 :::::::::::::::::
 
-Assignments
-:::::::::::
+.. raw:: html
 
+   <ul>
+   <li><a href="../../assignments/chooseAssignment.html">Assignments for OnRamp</a></li>
+   </ul>
+
+
+Sample Problem Sets from 106 Fall 2016
+::::::::::::::::::::::::::::::::::::::
 .. toctree::
    :maxdepth: 1
 
    assignments.rst
+
+
 
 General Introduction
 ::::::::::::::::::::
@@ -360,7 +368,9 @@ REST APIs
    RESTAPIs/DebugURLs.rst
    RESTAPIs/jsonlib.rst
    RESTAPIs/unicode.rst
+   RESTAPIs/functionswithrestapis.rst
    RESTAPIs/requestsCookbook.rst
+   
 
 Exceptions
 ::::::::::
@@ -371,6 +381,17 @@ Exceptions
    Exceptions/intro-exceptions.rst
    Exceptions/using-exceptions.rst
    Exceptions/ExtraExercises.rst
+   
+
+Using RESTAPIs
+::::::::::::::
+
+.. toctree::
+   :maxdepth: 2
+   
+   UsingRESTAPIs/flickr.rst
+   UsingRESTAPIs/cachingResponses.rst
+   UsingRESTAPIs/cachingPattern.rst
 
 
 String Formatting
@@ -385,15 +406,6 @@ String Formatting
    StringFormatting/Exercises.rst
    StringFormatting/ExtraExercises.rst
 
-
-Using RESTAPIs
-::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-   
-   UsingRESTAPIs/cachingResponses.rst
-   UsingRESTAPIs/flickr.rst
 
 Native Interpreter Gotchas
 ::::::::::::::::::::::::::
@@ -439,6 +451,7 @@ Inheritance
    Inheritance/InvokingSuperMethods.rst
    Inheritance/TamagotchiRevisited.rst
    Inheritance/Exercises.rst
+   Inheritance/ExtraExercises.rst
 
 
 More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
@@ -561,8 +574,7 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-Discussion Section Resources (F16)
-::::::::::::::::::::::::::::::::::
+
 
 .. toctree::
    :maxdepth: 2
@@ -572,12 +584,25 @@ Discussion Section Resources (F16)
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
    InClass/OptionalKeywordParams.rst
    InClass/TuplesAndNestedData.rst
+   SectionResources/section4_106_f16.rst 
+   SectionResources/section5_106.rst
+   ExtraExercises/session10_9486.rst   
+   ExtraExercises/session3_5698.rst 
+   ExtraExercises/session6_8512.rst
+   ExtraExercises/session11_5379.rst
+   ExtraExercises/session4_6925.rst 
+   ExtraExercises/session8_9347.rst
+   ExtraExercises/session2_3921.rst 
+   ExtraExercises/session5_7462.rst 
+   ExtraExercises/session9_6473.rst
+
 
 
 Indices and tables

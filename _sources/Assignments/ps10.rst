@@ -12,48 +12,10 @@
     :linenothreshold: 500
 
 
-Activities through 11/27 (through T-Giving Break)
-=================================================
-
-* **Before class Monday 11/21:**
-
-  * Read about the :ref:`Facebook API <fb_api_exercises>` and check out the slides on Canvas > Files > Lecture Slides > FB Graph API (especially slide #16!)
-  * Take a look at the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
-  * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!). 
-  * Note that if you don't use Facebook normally, you can get data from our SI 106 Facebook group by replacing ``me`` with the 106 Facebook group ID. Check out the problem set to find the 106 group ID! (We are not displaying it here because this page is publicly available, and our group is private to the class.)
-  * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**. Don't worry if you don't understand all of this -- this is to give you an idea of what the possibilities are. There is an example of code that uses Facebook paging which you can look at in the ``fbapi.py`` code on Canvas.
-  * By Monday 11/21, we'll have available on Canvas a possible solution for the challenge problem on last week's Problem Set -- code for a Flickr tag recommender.
-
-
-.. usageassignment::
-  :subchapters: FacebookAPI/FBAPI
-  :assignment_name: Prep 20
-  :deadline: 2016-11-21 18:40
-  :pct_required: 50
-  :points: 50
-
-* **Wednesday's lecture will be time to work on problem sets, with a few staff members around.** We will not have discussion section this week. We will not have office hours during Thanksgiving break, but we will be online on the Facebook group when we can be! Happy Thanksgiving break.
-
-* **Before Sunday 11/27 at 11:59 PM:**
-
-  * Complete and submit your :ref:`Problem Set 10 <problem_set_10>`, and save an answer to your Demonstrate Understanding for this week (linked below).
-  * Complete :ref:`Reading Response 11 <reading_response_11>`.
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_11:
-
-.. external:: rr_11
-
-  `Reading Response 11 <https://umich.instructure.com/courses/105657/assignments/131310>`_ on Canvas.
-
-
-
 .. _problem_set_10:
 
-Problem Set
------------
+Problem Set 10
+--------------
 
 Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/courses/105657/assignments/131296>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
 

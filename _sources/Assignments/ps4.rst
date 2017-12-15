@@ -11,65 +11,10 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Activities through 10/7
-=======================
-
-You have the following graded activities:
-
-* **Before Monday's class, 10/3:**
-
-  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the following exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
-
-  * Read :ref:`Strategy for building programs <build_program_chap>`
-
-  * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
-
-.. usageassignment::
-    :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
-    :assignment_name: Prep 08
-    :deadline: 2016-10-03 19:40
-    :pct_required: 80
-    :points: 50
-
-  
-* **By Tuesday 10/4 11:59 pm:**
-
-  * Read chapter 5 of The Most Human Human and answer `Reading Response 5 <https://umich.instructure.com/courses/105657/assignments/131316>`_ on Canvas.
-
-* **Before Wednesday's class, 10/5:**
-
-  * Read :ref:`Defining Functions<functions_chap>`, and try the following exercises in that chapter
-
-  * :ref:`Lecture 9 Waiver<lecture_9_waiver>`
-  
-.. usageassignment::
-    :subchapters: Functions/FunctionDefinitions,Functions/FunctionInvocation,Functions/FunctionParameters,Functions/Returningavaluefromafunction,Functions/Afunctionthataccumulates,Functions/DecodingaFunction,Functions/MethodInvocations,Functions/Variablesandparametersarelocal,Functions/GlobalVariables,Functions/Functionscancallotherfunctions,Functions/FlowofExecutionSummary,Functions/Printvs.return,Functions/PassingMutableObjects,Functions/SideEffects
-    :assignment_name: Prep 09
-    :deadline: 2016-10-05 19:40
-    :pct_required: 80
-    :points: 50
-
-
-* **By Friday, 10/7 at 6:30 pm:**
-  
-  * Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>` and  submit your **Demonstrate Understanding** assignment to Canvas
-
-  * Note that you have a grace period for the PSet and DYU until Sunday 10/9 at 5:00 PM
-
-.. _reading_response_5:
-
-This Week's Reading Responses
------------------------------
-
-.. external:: rr_5
-
-  `Reading Response 5 <https://umich.instructure.com/courses/105657/assignments/131316>`_ on Canvas.  
-
-
 .. _problem_set_4:
 
-Problem Set
------------
+Problem Set 4
+-------------
 
 .. datafile::  about_programming.txt
    :hide:
@@ -147,7 +92,7 @@ Problem Set
            23 345
            well spring
 
-       **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
+       **Hint:** Printing things with a comma, e.g. ``print ("hello", "everyone")`` will print out those things on the same line with  a space in between them: ``hello everyone``.
 
        Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
 
@@ -250,7 +195,7 @@ Problem Set
        **6.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
        ~~~~
        def subtract_five(inp):
-           print inp - 5
+           print(inp - 5)
            return None
 
        y = subtract_five(9) - 6

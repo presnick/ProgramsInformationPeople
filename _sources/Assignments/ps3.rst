@@ -13,64 +13,10 @@
     :linenothreshold: 500
 
 
-Activities through 9/30
-=======================
-
-You have the following graded activities:
-
-* **Before Monday's class, 9/26:**
-
-  * Read :ref:`Conditionals <conditionals_chap>` and try exercises
-  * Read :ref:`File Input/Output <files_chap>` (read the Selection/Conditionals chapter first, or the last exercise will be very confusing...)
-  * Read :ref:`Understanding Code <understand_code_chap>` and do exercises
-
-  * :ref:`Lecture 6 Waiver<lecture_6_waiver>`
-
-.. usageassignment::
-   :subchapters: BuildingAProgram/UnderstandingCode, Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles
-   :assignment_name: Prep 06
-   :deadline: 2016-09-30 04:00
-   :pct_required: 80
-   :points: 50
-
-
-* **Before Tuesday 9/27 at 11:59 pm:**
-
-  * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <https://umich.instructure.com/courses/105657/assignments/131315>`_ on Canvas.
-
-* **Before Wednesday's class, 9/28:**
-  
-  * Read :ref:`Dictionaries<dictionaries_chap>`, and try the exercises in that chapter
-
-  * :ref:`Lecture 7 Waiver<lecture_7_waiver>`
-
-.. usageassignment:: 
-   :subchapters: Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying
-   :assignment_name: Prep 07
-   :deadline: 2016-09-30 04:00
-   :pct_required: 80
-   :points: 50
-
-
-* **Before Friday 9/30 at 6:30 PM:**
-
-  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas (linked in the problem set).
-
-  * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 5:00 pm.
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_4:
-
-.. external:: rr_4
-
-  `Reading Response 4 <https://umich.instructure.com/courses/105657/assignments/131315>`_ on Canvas.
-
 .. _problem_set_3:
 
-Problem Set
------------
+Problem Set 3
+-------------
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **run** for each one, which will save what is in the code window. The last code you have saved for each one by the deadline is what will be graded.
 
@@ -125,7 +71,7 @@ Problem Set
 
      def test_output(self):
          self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-         self.assertIn("<type 'str'>\n<type 'int'>\n<type 'int'>\n<type 'float'>\n<type 'float'>\n<type 'int'>\n<type 'str'>\n<type 'str'>\n<type 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+         self.assertIn("<type 'str'>\n<class 'int'>\n<type 'int'>\n<class 'float'>\n<ckass 'float'>\n<class 'int'>\n<class 'str'>\n<class 'str'>\n<class 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
    myTests().main()
 
@@ -141,14 +87,15 @@ Problem Set
    sent = "The magical mystery tour is waiting to take you away."
 
    for x in sent:
-      print x
+      print(x)
 
    =====
 
+   from unittest.gui import TestCaseGui
    class myTests(TestCaseGui):
 
       def testOne(self):
-         print "No tests for the comment -- we have to read those!\n"
+         print("No tests for the comment -- we have to read those!\n")
          self.assertEqual(word_list, sent.split(), "Testing that word_list has been set to a list of all the words in sent")
 
    myTests().main()
@@ -269,7 +216,7 @@ Problem Set
    else:
      y = "unknown"
 
-   print "y is " + str(y)
+   print ("y is " + str(y))
 
    =====
 
@@ -288,7 +235,7 @@ Problem Set
          elif x == -10:
              self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
          else:
-             print "No tests when value of x is %s" % (x)
+             print("No tests when value of x is %s" % (x))
 
    myTests().main()
 
