@@ -43,9 +43,43 @@ We've defined two functions above. The code is hidden so as not to bother you (y
 
 Notice that when a function takes more than one input parameter, the inputs are separated by a comma. Also notice that the order of the inputs matters. The value before the comma is treated as the first input, the value after it as the second input.
 
-Again, remember that when python performs computations, the results are only show in the output window if there's a print statement that says to do that.
+Again, remember that when python performs computations, the results are only shown in the output window if there's a print statement that says to do that.
 
-Remember the note that some kinds of python objects don't have a nice printed representation? Functions are themselves just objects. If you tell python to print the function object, rather than printing the results of invoking the function object, you'll get one of those not-so-nice printed representations. Just stating the name of the function refers to the function. The name of the function followed by parentheses ``()`` invokes the function.
+Function calls as part of complex expressions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Anywhere in an expression that you can write a literal like a number, you can also write a function invocation that produces a number.
+
+For example:
+
+.. activecode:: functionCalls_2a
+   :include: functionCalls_1
+   :nocanvas:
+
+
+   print(square(3) + 2)
+   print(sub(square(3), square(1+1)))
+
+
+Let's take a look at how that last execution unfolds.
+
+.. showeval:: se_functionCalls_2a
+   :trace_mode: true
+
+   Notice that we always have to resolve the expression inside the innermost parentheses first, in order to determine what input to provide when calling the functions.
+   ~~~~
+   print(sub({{square(3)}}{{9}}, square(1+1)))
+   print(sub(9, square({{1+1}}{{2}})))
+   print(sub(9, {{square(2)}}{{4}}))
+   print(sub(9, 5))
+   print(4)
+
+
+
+Functions are objects; parentheses invoke functions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Remember the earlier mention that some kinds of python objects don't have a nice printed representation? Functions are themselves just objects. If you tell python to print the function object, rather than printing the results of invoking the function object, you'll get one of those not-so-nice printed representations. Just stating the name of the function refers to the function. The name of the function followed by parentheses ``()`` invokes the function.
 
 .. activecode:: functionCalls_3
    :include: functionCalls_1
