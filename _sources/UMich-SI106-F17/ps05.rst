@@ -1,0 +1,228 @@
+.. _problem_set_05:
+
+Problem Set 5
+-------------
+
+**Instructions:** Write the code you want to save in the provided boxes, and click **Save & Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
+
+
+.. activecode:: ps_05_01
+    :language: python
+    :autograde: unittest
+    :chatcodes:
+    :hidecode:
+
+    **1.** Define a function called ``mult_both`` whose input is two integers, whose default parameter values are the integers 3 and 4. The function's return value should be the two input integers multiplied together.
+
+    ~~~~
+    # Write your code here
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testCode(self):
+            self.assertIn("3", self.getEditorText(), "Testing code. (Don't worry about actual and expected output)")
+            self.assertIn("4", self.getEditorText(), "Testing code. (Don't worry about actual and expected output)")
+
+        def testOne(self):
+            self.assertEqual(mult_both(), 12, "Testing whether your function works as expected (calling the function mult_both)")
+            self.assertEqual(mult_both(5,10), 50, "Testing whether your function works as expected (calling the function mult_both)")
+
+    myTests().main()
+
+.. activecode:: ps_05_02
+    :language: python
+    :autograde: unittest
+    :chatcodes:
+    :hidecode:
+
+    **2.** Define a function called ``max_and_min`` that returns a tuple containing the maximum and minimum numbers in a list. If the list is empty, your function should return ``(False, False)``
+    ~~~~
+    def max_and_min(L):
+        # Write your code here
+        pass
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testCode(self):
+            self.assertEqual(max_and_min([1,2,3]), (3,1), "Testing for [1,2,3]")
+            self.assertEqual(max_and_min([5]), (5,5), "Testing for [5]")
+            self.assertEqual(max_and_min([]), (False,False), "Testing for []")
+
+    myTests().main()
+
+.. activecode:: ps_05_03
+    :language: python
+    :autograde: unittest
+    :chatcodes:
+    :hidecode:
+
+    **3.** Write code to sort the list ``fall_list`` in reverse alphabetical order. Assign the result of the sorted list to the variable ``sorted_fall_list``.
+
+    ~~~~
+    fall_list = ["leaves","apples","autumn","bicycles","pumpkin","squash","excellent"]
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(sorted_fall_list, ['squash', 'pumpkin', 'leaves', 'excellent', 'bicycles', 'autumn', 'apples'], "sorted_fall_list is not accurately sorted")
+    myTests().main()
+
+.. activecode:: ps_05_04
+    :language: python
+    :autograde: unittest
+    :chatcodes:
+    :hidecode:
+
+    **4.** First, write code to sort the list ``food_amounts`` by the key ``sugar_grams``, from lowest to highest. Assign that sorted list to the variable ``sorted_sugar``. Next, write code to sort the list ``food_amounts`` by the value of the key ``'carbohydrate'`` minus the value of the key ``'fiber'`` in each one, from lowest difference to highest. Assign this sorted list to a variable ``raw_carb_sort``.
+
+    ~~~~
+    food_amounts = [{"sugar_grams":245,"carbohydrate":83,"fiber":67},{"carbohydrate":74,"sugar_grams":52,"fiber":26},{"fiber":47,"carbohydrate":93,"sugar_grams":6}]
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(sorted_sugar,[{'carbohydrate': 93, 'fiber': 47, 'sugar_grams': 6}, {'carbohydrate': 74, 'fiber': 26, 'sugar_grams': 52}, {'carbohydrate': 83, 'fiber': 67, 'sugar_grams': 245}])
+            self.assertEqual(raw_carb_sort,[{'carbohydrate': 83, 'fiber': 67, 'sugar_grams': 245}, {'carbohydrate': 93, 'fiber': 47, 'sugar_grams': 6}, {'carbohydrate': 74, 'fiber': 26, 'sugar_grams': 52}])
+    myTests().main()
+
+
+.. activecode:: ps_05_05
+    :language: python
+    :autograde: unittest
+    :chatcodes:
+    :hidecode:
+
+    **5.** Write a function ``best_three_words`` that accepts a string and returns a list of the 3 highest-scoring words in a given sentence. You may assume there are no bonuses that double or triple letter values or entire words. The dictionary saved in ``letter_values`` in the body of ``computeScrabbleScore`` contains the Scrabble score information: its keys are letters, and its values are the scores associated with those letters.
+
+    If you have never played Scrabble before, `here is an explanation <https://en.wikipedia.org/wiki/Scrabble>`_ of what it is. (You do not need that information to solve this problem. All you need to know is that each letter is associated with a number of points, and you want to find the ten words that are associated with the largest point totals.)
+
+    HINT: In the textbook section on Accumulating Results from a Dictionary, there is code that computes the scrabble score for the entire text of “A Study in Scarlet”. You may want to adapt that.
+    ~~~~
+    def computeScrabbleScore(word):
+        # fill this in
+        letter_values = {'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f':4, 'g': 2, 'h':4, 'i':1, 'j':8, 'k':5, 'l':1, 'm':3, 'n':1, 'o':1, 'p':3, 'q':10, 'r':1, 's':1, 't':1, 'u':1, 'v':8, 'w':4, 'x':8, 'y':4, 'z':10}
+
+    def best_three_words(s):
+        # return the three best words in s (by scrabble score)
+        pass
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(best_three_words('working with scrabble scores is fun'), ['working', 'scrabble', 'with'])
+            self.assertEqual(best_three_words('not enough'), ['enough', 'not'])
+            self.assertEqual(best_three_words('zebras are so cool'), ['zebras', 'cool', 'are'])
+    myTests().main()
+
+
+
+.. activecode:: ps_05_06
+    :language: python
+    :autograde: unittest
+    :chatcodes:
+    :hidecode:
+
+    **6.** Define a function ``sort_nested_lists`` that accepts as input a list of lists of integers, e.g. ``[[2,3],[45,100,2],[536],[103,2,8]]``. It should return a sorted version of that list, sorted by the sum of the integers in each sub-list. For example, if that list were the function's input, the return value should be ``[[2,3],[103,2,8],[45,100,2],[536]]``.
+
+    **Suggestion:** It's a good idea to come up with some sample "test cases" to help yourself work through this, in addition to the tests we have provided in your code file. Come up with sample lists where it's easy to figure out what the correct sorting is, and make invocations to your function using that input, and print out the results. If you get different output than you expect, trace through the process to figure out where it might have gone wrong. Writing out an English plan for this and translating it into code bit by bit may also be a good idea.
+
+    ~~~~
+    # your definition of sort_nested_lists
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(sort_nested_lists([[2,3],[45,100,2],[536],[103,2,8]]),[[2,3],[103,2,8],[45,100,2],[536]],"testing a case of a sorted nested list -- check out your function output")
+            self.assertEqual(sort_nested_lists([[1],[50],[6]]),[[1],[6],[50]],"testing a case of a sorted nested list -- check out your function output")
+            self.assertEqual(sort_nested_lists([[],[1]]),[[],[1]],"testing a case of a sorted nested list -- check out your function output")
+            self.assertEqual(sort_nested_lists([[0],[-4,-5,-7],[-56,4]]),[[-56,4],[-4,-5,-7],[0]],"testing a case of a sorted nested list -- check out your function output")
+    myTests().main()
+
+.. activecode:: ps_05_07
+    :language: python
+    :autograde: unittest
+    :chatcodes:
+    :hidecode:
+
+    **7.** Define a function ``nthMostCommon`` that accepts a string ``s`` and an integer ``n`` and returns the "nth" most common word. For example, to find the most common word, ``n==1``. To find the second most common word, ``n==2``. If ``n`` is greater than the number of unique words, your function should return ``False``.
+
+    **Hint:** You *don't* want to use max value accumulation here. You *do* want to use sorting.
+    **Note:** Remember that sequences in Python are 0-indexed, but this problem is "1-indexed"
+
+    ~~~~
+    def nthMostCommon(s, n):
+        # your definition of nthMostCommon
+        pass
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(nthMostCommon('peter piper piper', 2), 'peter')
+            self.assertEqual(nthMostCommon('peter piper piper', 1), 'piper')
+            self.assertEqual(nthMostCommon('peter piper piper', 3), False)
+            self.assertEqual(nthMostCommon('A A A B B C', 3), 'C')
+    myTests().main()
+
+**MacOS, Ubuntu, and GNU/Linux Users.**
+You already have a command line. Just find and open the Terminal application
+
+**Windows Users.**
+Install and/or run the `Power Shell <https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-5.1>`_
+
+
+**Check if you have Python 3.**
+We use Python 3 in this class.
+
+In your terminal, type:
+::
+python -V
+
+and press `<enter>` to see your python version. If you see:
+::
+Python 3.6.XX
+
+then you are fine.
+
+
+**If you don’t have Python 3.**
+Install it from the `official Python distribution site <https://www.python.org>`_
+
+**Yes, uploading this screenshot is a required part of this problem set. The version must be Python 3.6.x**
+You should not need to download any special screen capturing software to take a screenshot.
+
+
+.. activecode:: ps_05_08
+    :hidecode:
+
+    **8.** Follow the installation instructions below to install and run a terminal and Python. Then, **on Canvas under 106->Assignments->Problem Set 05, upload a screenshot of your terminal running two commands:**.
+
+    * ``python -V``
+    * ``python -c "print('{YOUR NAME}')"``
+        * (replace ``{YOUR NAME}`` with your first and last name)
+
+    Example:
+
+    .. image:: Figures/terminal.png
+
+    ~~~~
+    #upload on Canvas. no need to do anything here
