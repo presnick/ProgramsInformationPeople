@@ -5,12 +5,13 @@ paver.setuputils.install_distutils_tasks()
 
 
 ######## CHANGE THIS ##########
-project_name = "UMSI106"
+project_name = "WCCw18"
 ###############################
 
-# master_url = 'http://127.0.0.1:8000'
-master_url = 'https://106w18.learningpython.today'
-master_app = 'runestone'
+#master_url = 'http://127.0.0.1:8000'
+#master_url = 'https://a1a367b4.ngrok.io'
+#master_url = 'https://106w18.learningpython.today'
+master_app = 'https://wccw18.learningpython.today'
 serving_dir = "./build/" + project_name
 dest = "../../static"
 
