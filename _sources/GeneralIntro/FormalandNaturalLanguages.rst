@@ -120,6 +120,7 @@ natural languages, can make a big difference in a formal language.
    :feedback_c: There are several differences between the two but they are also similar.
    :feedback_d: These are the similarities between the two.
    :correct: b
+   :practice: T
 
    The differences between natural and formal languages include:
 
@@ -129,6 +130,7 @@ natural languages, can make a big difference in a formal language.
    :feedback_a: It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
    :feedback_b: It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
    :correct: b
+   :practice: T
 
    True or False:  Reading a program is like reading other kinds of text.
 

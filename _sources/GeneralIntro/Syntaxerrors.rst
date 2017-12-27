@@ -35,6 +35,7 @@ experience, you will make fewer errors and you will also be able to find your er
    :feedback_b: This is a problem with the formal structure of the program.  Python knows where colons are required and can detect when one is missing simply by looking at the code without running it.
    :feedback_c: This will produce the wrong answer, but Python will not consider it an error at all.  The programmer is the one who understands that the answer produced is wrong.
    :correct: b
+   :practice: T
 
    Which of the following is a syntax error?
 
@@ -49,6 +50,7 @@ experience, you will make fewer errors and you will also be able to find your er
    :feedback_c: Well, sort of.  But it is a special thing in the computer that does it.  The stand alone computer without this additional piece can not do it.
    :feedback_d: Your teacher and instructor may be able to find most of your syntax errors, but only because they have experience looking at code and possibly writing code.  With experience syntax errors are easier to find.  But we also have an automated way of finding these types of errors.
    :correct: b
+   :practice: T
 
    Who or what typically finds syntax errors?
 

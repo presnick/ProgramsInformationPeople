@@ -81,6 +81,7 @@ You can step through the code and see how the variable assignments change below.
    :feedback_c: Look at the last assignment statement, which reassigns x, and not y.
    :feedback_d: Yes, x has the value 22 and y the value 15.
    :correct: d
+   :practice: T
 
    After the following statements, what are the values of x and y?
 

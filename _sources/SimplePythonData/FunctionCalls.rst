@@ -65,6 +65,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :feedback_c: The second is subtracted from the first
       :feedback_d: The print statement makes the results print
       :correct: b
+      :practice: T
 
       What will the output be from this code?
 
@@ -82,6 +83,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :feedback_c: The character sting is treated as a literal and printed out, without executing.
       :feedback_d: The character sting is treated as a literal and printed out, without executing.
       :correct: a
+      :practice: T
 
       What will the output be from this code?
 
@@ -99,6 +101,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :feedback_c: There is no print statement
       :feedback_d: There is no print statement
       :correct: d
+      :practice: T
 
       What will the output be from this code?
 
@@ -116,6 +119,7 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :feedback_c: There is no print statement
       :feedback_d: There is no print statement
       :correct: d
+      :practice: T
 
       What will the output be from this code?
 

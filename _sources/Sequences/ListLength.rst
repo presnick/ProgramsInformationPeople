@@ -30,6 +30,7 @@ Note that ``alist[0]`` is the string ``"hello"``, which has length 5.
    :feedback_a: len returns the actual number of items in the list, not the maximum index value.
    :feedback_b: Yes, there are 5 items in this list.
    :correct: b
+   :practice: T
 
    What is printed by the following statements?
    
@@ -49,6 +50,7 @@ Note that ``alist[0]`` is the string ``"hello"``, which has length 5.
    :feedback_c: The list begins with the second item of L and includes everything up to but not including the last item.
    :feedback_d: The list begins with the second item of L and includes everything up to but not including the last item.
    :correct: b
+   :practice: T
 
    What is printed by the following statements?
    

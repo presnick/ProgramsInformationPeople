@@ -25,7 +25,7 @@ First, you can write, modify, and execute programs using a unique **activecode**
 in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent
 environment for learning a programming language like Python since you can experiment with the language as you are reading.
 
-Take a look at the activecode interpreter in action.  If we use the Python code from the previous example and make it active, you will see that it can be executed directly by pressing the *run* button.   Try pressing the *run* button below.
+Take a look at the activecode interpreter in action.  If we use the Python code from the previous example and make it active, you will see that it can be executed directly by pressing the *Save & Run* button.   Try pressing the *Save & Run* button below.
 
 .. activecode:: ch01_1
 
@@ -36,10 +36,10 @@ Take a look at the activecode interpreter in action.  If we use the Python code 
 Now try modifying the activecode program shown above.  First, modify the string in the first print statement
 by changing the word *adds* to the word *multiplies*.  Now press *run*.  You can see that the result of the program
 has changed.  However, it still prints "5" as the answer.  Modify the second print statement by changing the
-addition symbol, the "+", to the multiplication symbol, "*".  Press *run* to see the new results.
+addition symbol, the "+", to the multiplication symbol, "*".  Press *Save & Run* to see the new results.
 
 If you are logged in, you can also make changes and save them for reloading later. 
-*Save* and *Load* allow you to keep one copy of the program you are working on.  For example, press the *Save* button now.  You have just saved the current contents of the activecode window.  Now make a few changes and press the *Run* button.  You have changed the current program.
+*Save* and *Load* allow you to keep one copy of the program you are working on.  For example, press the *Save & Run* button now.  You have just saved the current contents of the activecode window.  Now make a few changes and press the *Run* button.  You have changed the current program.
 Press *Load* to return your program to its previously saved state.
 
 In addition to activecode, you can also execute Python code with the assistance of a unique visualization tool.  This tool, known as **codelens**, allows you to control the step by step execution of a program.  It also lets you see the values of
@@ -71,6 +71,7 @@ When we do, think of it as an encouragement to use the codelens features to step
    :feedback_c: The activecode interpreter will allow you type Python code into the textbox and then you can see it execute as the interpreter interprets and executes the source code.
    :feedback_d: Although you can (and should) verify that your code is correct by examining its output, activecode will not directly tell you whether you have correctly implemented your program.
    :correct: a,b,c
+   :practice: T
 
    The activecode interpreter allows you to (select all that apply):
 
@@ -85,6 +86,7 @@ When we do, think of it as an encouragement to use the codelens features to step
    :feedback_c: Codelens works only for the pre-programmed examples.
    :feedback_d: By stepping forward through the Python code in codelens, you are executing the Python program.
    :correct: b,d
+   :practice: T
 
    Codelens allows you to (select all that apply):
 

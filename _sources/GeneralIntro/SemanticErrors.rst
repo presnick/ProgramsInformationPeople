@@ -30,6 +30,7 @@ looking at the output of the program and trying to figure out what it is doing.
    :feedback_b: A semantic error is an error in logic. In this case the program does not produce the correct output because the code can not be processed by the compiler or interpreter. This would be considered a syntax error.
    :feedback_c: This will produce the wrong answer because the programmer implemented the solution incorrectly.  This is a semantic error.
    :correct: c
+   :practice: T
 
    Which of the following is a semantic error?
 

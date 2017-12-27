@@ -52,6 +52,7 @@ practices.
    :feedback_c: Some people think that debugging is actually more fun than programming (they usually become good software testers). Debugging is much like solving puzzles, which some people think is fun!
    :feedback_d: You cannot debug without first having a program, meaning that someone had to do the programming first.
    :correct: a
+   :practice: T
 
    The difference between programming and debugging is:
 

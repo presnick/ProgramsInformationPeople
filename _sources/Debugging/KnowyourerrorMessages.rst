@@ -49,6 +49,7 @@ Aha!  Now we have an error message that might be useful.  The name error tells u
    :feedback_b: Yes.  Variables must already have values in order to be used on the right hand side.
    :feedback_c: No, No, No!
    :correct: b
+   :practice: T
 
    Which of the following explains why ``wait_time_int = int(wait_time_int)`` is an error.
 
@@ -174,6 +175,7 @@ you put the cursor to the left of ``(``. But check what happens if the ``(`` has
    :feedback_b: Sounds like you tried it on a left paren that did have a matching right paren.
    :feedback_c: This color coding is your friend and can help you notice and fix parenthesis errors.
    :correct: c
+   :practice: T
 
    In an ActiveCode window, what happens when you put the cursor left of a left parenthesis ``(`` that has no matching right parenthesis ``)``?
 

@@ -28,6 +28,7 @@ chapters, so it might be a while before you encounter one.
    :feedback_b: This is a problem with the formal structure of the program.  Python knows where colons are required and can detect when one is missing simply by looking at the code without running it.
    :feedback_c: This will produce the wrong answer, but Python will not consider it an error at all.  The programmer is the one who understands that the answer produced is wrong.
    :correct: a
+   :practice: T
 
    Which of the following is a run-time error?
 

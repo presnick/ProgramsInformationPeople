@@ -66,6 +66,7 @@ Incrementing and decrementing are such common operations that programming langua
    :feedback_c: Yes, this statement sets the value of x equal to the current value minus 1.
    :feedback_d: Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
    :correct: c
+   :practice: T
 
    What is printed when the following statements execute?
 
@@ -85,6 +86,7 @@ Incrementing and decrementing are such common operations that programming langua
    :feedback_c: Yes, starting with 12, subtract 3, than add 5, and finally add 1.
    :feedback_d: Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
    :correct: c
+   :practice: T
 
    What is printed when the following statements execute?
 
@@ -97,6 +99,7 @@ Incrementing and decrementing are such common operations that programming langua
      print(x)
 
 .. parsonsprob:: question2_10_3
+   :practice: T
 
    Construct the code that will result in the value 134 being printed.
    -----
@@ -117,6 +120,7 @@ Incrementing and decrementing are such common operations that programming langua
    :feedback_d: x is updated to be the old value of x plus the value of y.
    :feedback_e: ++ is not a syntax that means anything in python.
    :correct: a,d
+   :practice: T
 
    Which of the following statements are equivalent?
  
