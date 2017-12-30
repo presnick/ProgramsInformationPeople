@@ -21,17 +21,11 @@
 Table of Contents
 :::::::::::::::::
 
-<<<<<<< HEAD
 .. raw:: html
 
    <ul>
    <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
    </ul>
-=======
->>>>>>> soney-106F17
-
-
-
 
 General Introduction
 ::::::::::::::::::::
@@ -606,38 +600,25 @@ Unix
    ExtraExercises/session9_6473.rst
 
 
-<<<<<<< HEAD
-Static Problem Set Files (Don't
-::::::::::::::::::::::::::::::::::::::
+Static Problem Set Files (Don't use these)
+::::::::::::::::::::::::::::::::::::::::::
 .. toctree::
    :maxdepth: 1
 
    assignments.rst
 
 
-
-Indices and tables
-::::::::::::::::::
-=======
 Discussion Section Exercises
 ::::::::::::::::::::::::::::
 .. toctree::
    :maxdepth: 2
->>>>>>> soney-106F17
+
 
    UMich-SI106-F17/ds_02.rst
    UMich-SI106-F17/ds_03.rst
    UMich-SI106-F17/ds_04.rst
    UMich-SI106-F17/ds_05.rst
    UMich-SI106-F17/ds_06.rst
-
-.. raw:: html
-
-   <ul>
-   <li><a href="../../assignments/chooseAssignment.html">(Graded Problem Sets)</a></li>
-   </ul>
-
-
 
 Indices and tables
 ::::::::::::::::::

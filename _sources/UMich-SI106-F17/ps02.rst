@@ -33,7 +33,7 @@ Problem Set 2
     :autograde: unittest
     :hidecode:
 
-    **2.** Write one for loop to print out each element of the list ``several_things``. Then, write *another* for loop to print out the TYPE of each element of the list called ``several_things``. To complete this problem you should have written two different for loops, each of which iterates over the list ``several_things``, but each of those 2 for loops should have a different result.
+    **2.** Write one for loop to print out each element of the list ``several_things``. Then, write *another* for loop to print out the TYPE of each element of the list ``several_things``. To complete this problem you should have written two different for loops, each of which iterates over the list ``several_things``, but each of those 2 for loops should have a different result.
     ~~~~
     several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
@@ -75,7 +75,7 @@ Problem Set 2
 
     class myTests(TestCaseGui):
         def test_output(self):
-            self.assertIn("for", self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+            self.assertIn("for", self.getEditorText(), "Testing whether you used a for loop (Don't worry about actual and expected values).")
             self.assertIn("5\n0\n7\n9\n13", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
     myTests().main()
@@ -160,7 +160,7 @@ Problem Set 2
     :autograde: unittest
     :hidecode:
 
-    **8.** ``temps_f`` is a string with a list of fahrenheit temperatures separated by the ``,`` sign. Write code that uses the accumulation pattern to compute the **average** (sum divided by number of items) and assigns it to ``avg_temp``. Do not hard code your answer (either the sum or the number of items in ``week_temps_f``) (You should use the ``.split(",")`` function to split by ``","`` and ``float()`` to cast to a float).
+    **8.** ``temps_f`` is a string with a list of fahrenheit temperatures separated by the ``,`` sign. Write code that uses the accumulation pattern to compute the **average** (sum divided by number of items) and assigns it to ``avg_temp``. Do not hard code your answer (i.e., make your code compute both the sum or the number of items in ``week_temps_f``) (You should use the ``.split(",")`` function to split by ``","`` and ``float()`` to cast to a float).
 
     ~~~~
     week_temps_f = "75.1,77.7,83.2,82.5,81.0,79.5,85.7"
@@ -176,3 +176,15 @@ Problem Set 2
             self.assertAlmostEqual(avg_temp, 80.67142857142858, 7, "Testing that avg_temp has the correct value")
 
     myTests().main()
+
+.. activecode:: ps_02_09
+    :language: python
+
+    **9.** Write code and/or a python comment that demonstrates your understanding of the material in this problem set. Be sure to click "Run" even if it's just a comment, because that's what will save it so that we can grade it. This assignment requires effort and demonstration of true understanding and will be evaluated carefully (this does not mean it needs to be long, just clear and accurate. In fact, it should be brief; ideally just 2-3 sentences!).
+
+    Your submission must be your own work (i.e., don't collaborate with other students on this problem even if you've been collaborating with them on the rest of the problems), and you must credit any resources you reference (you do not need to reference any).
+
+    After grading, you will receive a response, in a comment, from an instructor, which will be visible on this assignment page. If you do not receive full credit for this problem, you may update your answer to this question (and only this question). If you do that, please start with a statement `print("please regrade revised version")` so that the instructional team will know to look at it again.
+
+    ~~~~
+
