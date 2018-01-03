@@ -53,6 +53,7 @@ practices.
    :feedback_d: You cannot debug without first having a program, meaning that someone had to do the programming first.
    :correct: a
    :practice: T
+   :topics: Debugging
 
    The difference between programming and debugging is:
 
