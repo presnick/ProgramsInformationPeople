@@ -49,6 +49,7 @@ programs much easier for humans to parse.  Use them liberally!
    :feedback_d: Even small programs benefit from comments.
    :correct: b
    :practice: T
+   :topics: Comments
 
    What are comments for?
 
