@@ -30,6 +30,7 @@ since. For more about this historic event, see `first bug <http://en.wikipedia.o
    :feedback_d: This is partially correct.  But, debugging is more than just fixing the bugs. What do you need to do before you can fix them?
    :correct: a
    :practice: T
+   :topics: Debugging
 
    Debugging is:
 
