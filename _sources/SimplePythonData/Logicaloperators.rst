@@ -62,6 +62,7 @@ is true if ``x > y`` is false, that is, if ``x`` is less than or equal to
    :feedback_d: Yes, with an `and` keyword both expressions must be true so the number must be greater than 0 an less than 5 for this expression to be true.
    :correct: d
    :practice: T
+   :topics: Logical Operators
 
    What is the correct Python expression for checking to see if a number stored in a variable x is between 0 and 5.
 
