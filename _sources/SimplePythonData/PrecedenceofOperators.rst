@@ -41,6 +41,7 @@ Level     Category        Operators
    :feedback_d: This grouping assumes that &quot;and&quot; has a higher precedence than ==, which is not true.
    :correct: a
    :practice: T
+   :topics: Order of Operations
 
    Which of the following properly expresses the  precedence of operators (using parentheses) in the following expression: 5*3 > 10 and 4+6==11
 
