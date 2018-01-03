@@ -81,3 +81,16 @@ rules for its mathematical operators that mathematics does.
 
       16 - 2 * 5 // 3 + 1
 
+
+Here is an animation for the above expression:
+
+.. showeval:: se_tq281
+   :trace_mode: true
+
+   16 - 2 * 5 // 3 + 1
+   ~~~~
+   16 - {{2 * 5}}{{10}} // 3 + 1
+   16 - {{10 // 3}}{{3}} + 1
+   {{16 - 3}}{{13}} + 1
+   {{13 + 1}}{{14}}
+

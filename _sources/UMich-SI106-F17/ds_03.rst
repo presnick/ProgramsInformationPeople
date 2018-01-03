@@ -1,0 +1,187 @@
+.. _discussion_section_03:
+
+Week 3 Discussion Section
+-------------------------
+
+.. activecode:: ds_03_01
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **1.** Write code that will print out every **character** of ``sentence`` on a separate line
+    ~~~~
+    sentence = "Go blue!"
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('for', self.getEditorText(), "Testing that for is in your code. (Don't worry about Actual and Expected Values.)")
+            self.assertIn("G\no\n \nb\nl\nu\ne\n!", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+    myTests().main()
+.. activecode:: ds_03_02
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **2.** Write code that will print out every **word** of ``sentence`` on a separate line
+    ~~~~
+    sentence = "With this regard their currents turn awry"
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('for', self.getEditorText(), "Testing that for is in your code. (Don't worry about Actual and Expected Values.)")
+            self.assertIn("With\nthis\nregard\ntheir\ncurrents\nturn\nawry", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+    myTests().main()
+
+.. activecode:: ds_03_03
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **3.** Write code that will print out **the first character** of every word of ``sentence`` on a separate line.
+    ~~~~
+    sentence = "With this regard their currents turn awry"
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('for', self.getEditorText(), "Testing that for is in your code. (Don't worry about Actual and Expected Values.)")
+            self.assertIn("W\nt\nr\nt\nc\nt\na", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+    myTests().main()
+
+.. activecode:: ds_03_04
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **4.** ``nums`` is a list of numbers. Write code that computes the sum of ``nums`` and put that sum into the variable ``sum_nums``.
+    ~~~~
+    nums = [0, 3, 2, 5]
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('for', self.getEditorText(), "Testing that for is in your code. (Don't worry about Actual and Expected Values.)")
+            self.assertEqual(sum_nums, 10, "Testing sum_nums")
+
+    myTests().main()
+
+.. activecode:: ds_03_05
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **5.** ``nums`` is a list of numbers. Write code that creates a new list, ``nums_squared``, that contains the square of every item in ``nums``. (Note: You can use either ``n*n`` or ``n**2`` to take the square of ``n``)
+    ~~~~
+    nums = [0, 3, 2, 5]
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('for', self.getEditorText(), "Testing that for is in your code. (Don't worry about Actual and Expected Values.)")
+            self.assertEqual(nums_squared, [0, 9, 4, 25], "Testing nums_squared")
+
+    myTests().main()
+
+.. activecode:: ds_03_06
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **6.** ``nums`` is a list of numbers. Write code to compute the average of every number in ``nums`` (the sum of every number divided by the number of items). Store your answer in ``avg_nums`` Your result should be a float. Do not hard code your answer (and do not hard code the number of items in ``nums``)
+    ~~~~
+    nums = [10, 20, 30, 50]
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('for', self.getEditorText(), "Testing that for is in your code. (Don't worry about Actual and Expected Values.)")
+            self.assertAlmostEqual(avg_nums, 27.5, 7, "Testing that avg_nums has the correct value")
+
+    myTests().main()
+
+.. activecode:: ds_03_07
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **7.** ``rainfall_mi`` is a string that contains the average number of inches of rainfall in Michigan for every month (in inches) with every month separated by a comma. Write code to compute the total rainfall (by adding the value for every month) by taking the sum of every number of ``rainfall_mi``. Store the total rainfall in the variable ``yearly_rainfall_mi``.
+    The, write code to compute the monthly rainfall by computing the average of every number of ``rainfall_mi``. Store that average in the variable ``monthly_rainfall_mi``. Do not hard-code your answer.
+    ~~~~
+    rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertIn('for', self.getEditorText(), "Testing that for is in your code. (Don't worry about Actual and Expected Values.)")
+            self.assertAlmostEqual(yearly_rainfall_mi, 31.73, 7, "Testing that yearly_rainfall_mi has the correct value")
+            self.assertAlmostEqual(monthly_rainfall_mi, 2.6441666666666666, 7, "Testing that monthly_rainfall_mi has the correct value")
+
+    myTests().main()
+
+.. activecode:: ds_03_08
+    :language: python
+    :hidecode:
+
+    **8.** Write code that uses the turtle framework to draw the following, using a for loop:
+
+    .. image:: Figures/turtle_spirograph.gif
+
+    In order to draw this, repeat the following steps 12 times. You should need fewer than 15 lines of code to do this.
+
+    .. image:: Figures/turtle_spirograph_steps.png
+
+    ~~~~
+    import turtle
+    wn = turtle.Screen()      # creates a graphics window
+    wn.setup(width=600,height=650) # set the width and height of the screen
+    timmy = turtle.Turtle()   # create a turtle named timmy
+    timmy.back(250)           # start from the left side of the screen
+
+    # Write your code here!
