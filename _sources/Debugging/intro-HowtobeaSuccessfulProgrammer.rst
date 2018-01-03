@@ -66,6 +66,7 @@ Hmm, when you run that example you see that something funny has happened.
    :feedback_c: Yes!  Remember that input returns a string.  Now we will need to convert the string to an integer
    :correct: c
    :practice: T
+   :topics: Debugging
 
    Which of the following best describes what is wrong with the previous example?
 
