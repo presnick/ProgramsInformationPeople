@@ -64,6 +64,7 @@ The result is referred to by ``total_secs``.  Now, each time you run the program
    :feedback_d: 18 is the value of what the user typed, not the type of the data.
    :correct: a
    :practice: T
+   :topics: Input
 
    What is printed when the following statements execute?
 
