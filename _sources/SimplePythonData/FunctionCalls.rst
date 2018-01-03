@@ -66,10 +66,14 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :feedback_d: The print statement makes the results print
       :correct: b
       :practice: T
+      :topics: Function Calls
 
       What will the output be from this code?
 
       .. code-block:: python
+
+         def sub(x, y):
+            return x - y
 
          print(sub(5, 8))
 
@@ -84,10 +88,14 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :feedback_d: The character sting is treated as a literal and printed out, without executing.
       :correct: a
       :practice: T
+      :topics: Function Calls
 
       What will the output be from this code?
 
       .. code-block:: python
+
+         def sub(x, y):
+            return x - y
 
          print("sub(5, 8)")
 
@@ -102,10 +110,14 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :feedback_d: There is no print statement
       :correct: d
       :practice: T
+      :topics: Function Calls
 
       What will the output be from this code?
 
       .. code-block:: python
+
+         def sub(x, y):
+            return x - y
 
          sub(5, 8)
 
@@ -120,9 +132,13 @@ Remember the note that some kinds of python objects don't have a nice printed re
       :feedback_d: There is no print statement
       :correct: d
       :practice: T
+      :topics: Function Calls
 
       What will the output be from this code?
 
       .. code-block:: python
+
+         def sub(x, y):
+            return x - y
 
          "sub(5, 8)"
