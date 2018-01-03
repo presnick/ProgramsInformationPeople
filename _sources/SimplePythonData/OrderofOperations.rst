@@ -73,6 +73,7 @@ rules for its mathematical operators that mathematics does.
    :feedback_d: Remember that // does integer division.
    :correct: a
    :practice: T
+   :topics: Order of Operations
 
    What is the value of the following expression:
 
