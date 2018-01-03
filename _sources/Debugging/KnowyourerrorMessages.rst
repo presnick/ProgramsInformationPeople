@@ -49,7 +49,6 @@ Aha!  Now we have an error message that might be useful.  The name error tells u
    :feedback_b: Yes.  Variables must already have values in order to be used on the right hand side.
    :feedback_c: No, No, No!
    :correct: b
-   :practice: T
 
    Which of the following explains why ``wait_time_int = int(wait_time_int)`` is an error.
 
@@ -160,24 +159,6 @@ Here are a couple examples of Parse errors in the example program we have been u
 **Finding Clues**  If you follow the same advice as for the last problem, comment out line one, you will immediately get a different error message.  Here's where you need to be very careful and not panic.  The error message you get now is: ``NameError: name 'current_time_str' is not defined on line 4``.  You might be very tempted to think that this is somehow related to the earlier problem and immediately conclude that there is something wrong with the variable name ``current_time_str`` but if you reflect for a minute  You will see that by commenting out line one you have caused a new and unrelated error.  That is, you have commented out the creation of the name ``current_time_str``.  So of course when you want to convert it to an ``int`` you will get the NameError.  Yes, this can be confusing, but it will become much easier with experience.  It's also important to keep calm, and evaluate each new clue carefully so you don't waste time chasing problems that are not really there.  
 
 Uncomment line 1 and you are back to the ParseError.  Another track is to eliminate a possible source of error.  Rather than commenting out the entire line you might just try to assign ``current_time_str`` to a constant value.  For example you might make line one look like this:  ``current_time_str = "10"  #input("what is the "current time" (in hours 0-23)?")``.  Now you have assigned ``current_time_str`` to the string 10, and commented out the input statement.  And now the program works!  So you conclude that the problem must have something to do with the input function.
-
-The color coding that happens automatically in ActiveCode windows can help with identifying some kinds of syntax errors.
-For example, in original code for the exercise above, notice that "What is the" is in one color, and current time is in another color. That's
-your clue that it thinks the string ends after the word the (because there's a closing double-quote). Also, notice that
-when you put your cursor to left of a ``)``, it changes the color of that parenthesis and its matching ``(``. And similarly if
-you put the cursor to the left of ``(``. But check what happens if the ``(`` has no matching ``)``.
-
-.. mchoice:: db_qex33
-   :answer_a: Nothing. The program has a syntax error and can't run.
-   :answer_b: The left parenthesis turns green.
-   :answer_c: The left parenthesis turns red.
-   :feedback_a: You may be reading too fast and not trying to test your understanding using an ActiveCode window.
-   :feedback_b: Sounds like you tried it on a left paren that did have a matching right paren.
-   :feedback_c: This color coding is your friend and can help you notice and fix parenthesis errors.
-   :correct: c
-   :practice: T
-
-   In an ActiveCode window, what happens when you put the cursor left of a left parenthesis ``(`` that has no matching right parenthesis ``)``?
 
 
 TypeError
