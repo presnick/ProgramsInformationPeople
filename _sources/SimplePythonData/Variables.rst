@@ -143,6 +143,7 @@ For example, we can find out the data type of the current value of a variable by
    :feedback_d: The variable day will contain the last value assigned to it when it is printed.
    :correct: d
    :practice: T
+   :topics: Variables
 
    What is printed when the following statements execute?
 
