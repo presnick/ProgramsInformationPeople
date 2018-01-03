@@ -30,6 +30,7 @@ These programs are written in **programming languages**.
    :feedback_d: Algorithmic thinking and mathematical thinking are in some ways similar. Practice at mathematical thinking will probably help in learning to program. But the content itself is different. You do not have to know a lot of math to be a good programmer.
    :correct: c
    :practice: T
+   :topics: Intro. to Computing
 
    What is the most important skill for a programmer?
 
@@ -44,6 +45,7 @@ These programs are written in **programming languages**.
    :feedback_d: Programmers sometimes use a special notation to illustrate or document an algorithm, but this is not the definition of an algorithm.
    :correct: b
    :practice: T
+   :topics: Intro. to Computing, Algorithms
 
    An algorithm is:
 
