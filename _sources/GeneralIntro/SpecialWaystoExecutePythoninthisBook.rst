@@ -72,6 +72,7 @@ When we do, think of it as an encouragement to use the codelens features to step
    :feedback_d: Although you can (and should) verify that your code is correct by examining its output, activecode will not directly tell you whether you have correctly implemented your program.
    :correct: a,b,c
    :practice: T
+   :topics: Intro. to RuneStone
 
    The activecode interpreter allows you to (select all that apply):
 
@@ -87,6 +88,7 @@ When we do, think of it as an encouragement to use the codelens features to step
    :feedback_d: By stepping forward through the Python code in codelens, you are executing the Python program.
    :correct: b,d
    :practice: T
+   :topics: Intro. to RuneStone
 
    Codelens allows you to (select all that apply):
 
