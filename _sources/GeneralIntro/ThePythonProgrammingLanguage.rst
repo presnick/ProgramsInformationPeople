@@ -138,6 +138,7 @@ most programs are more interesting than this one.
    :feedback_d: There is no such number that you must type in at the start of your program.
    :correct: a
    :practice: T
+   :topics: Intro. to Programming & Python
 
    Source code is another name for:
 
@@ -152,5 +153,6 @@ most programs are more interesting than this one.
    :feedback_d: While it is true that it is generally easier to program in a high-level language and programs written in a high-level language are usually shorter, this is not always the case.
    :correct: c
    :practice: T
+   :topics: Intro. to Programming & Python
 
    What is the difference between a high-level programming language and a low-level programming language?
