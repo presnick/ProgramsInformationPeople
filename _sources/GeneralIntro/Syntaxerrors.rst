@@ -36,6 +36,7 @@ experience, you will make fewer errors and you will also be able to find your er
    :feedback_c: This will produce the wrong answer, but Python will not consider it an error at all.  The programmer is the one who understands that the answer produced is wrong.
    :correct: b
    :practice: T
+   :topics: Syntax Errors
 
    Which of the following is a syntax error?
 
@@ -51,6 +52,7 @@ experience, you will make fewer errors and you will also be able to find your er
    :feedback_d: Your teacher and instructor may be able to find most of your syntax errors, but only because they have experience looking at code and possibly writing code.  With experience syntax errors are easier to find.  But we also have an automated way of finding these types of errors.
    :correct: b
    :practice: T
+   :topics: Syntax Errors
 
    Who or what typically finds syntax errors?
 
