@@ -127,6 +127,7 @@ change might mean something quite different from what you intended.
    :feedback_d: In Python variables are not declared. Values, not variables, have types in Python. A variable can even take on values with different types during a program's execution.
    :correct: b
    :practice: T
+   :topics: Data Types
 
    How can you determine the type of a variable?
 
@@ -141,6 +142,7 @@ change might mean something quite different from what you intended.
    :feedback_d: Strings can be enclosed in single quotes.
    :correct: d
    :practice: T
+   :topics: Data Types
 
    What is the data type of 'this is what kind of data'?
 
