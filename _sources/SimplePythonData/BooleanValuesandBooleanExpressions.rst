@@ -115,6 +115,7 @@ is legal and ``7 = a`` is not. (Can you explain why?)
    :feedback_e: With the double quotes surrounding it, False is interpreted as a string, not a Boolean value.  If the quotes had not been included, False alone is in fact a Boolean value.
    :correct: a,b,d
    :practice: T
+   :topics: Boolean Values & Expressions
 
    Which of the following is a Boolean expression?  Select all that apply.
 
