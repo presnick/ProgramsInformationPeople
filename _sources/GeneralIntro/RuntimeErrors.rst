@@ -29,7 +29,7 @@ chapters, so it might be a while before you encounter one.
    :feedback_c: This will produce the wrong answer, but Python will not consider it an error at all.  The programmer is the one who understands that the answer produced is wrong.
    :correct: a
    :practice: T
-   :topics: Runtime Errors
+   :topics: GeneralIntro/RuntimeErrors
 
    Which of the following is a run-time error?
 

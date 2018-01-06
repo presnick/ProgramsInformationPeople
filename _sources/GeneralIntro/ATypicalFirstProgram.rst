@@ -51,7 +51,7 @@ possible.
    :feedback_d: That would be nice! But no...
    :correct: b
    :practice: T
-   :topics: print()
+   :topics: GeneralIntro/ATypicalFirstProgram
 
    The print statement:
 

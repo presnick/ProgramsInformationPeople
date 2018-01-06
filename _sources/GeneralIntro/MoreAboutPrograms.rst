@@ -59,7 +59,7 @@ instructions.
    :feedback_d: Programs often implement algorithms, but they are not the same thing.  An algorithm is a step by step list of instructions, but those instructions are not necessarily precise enough for a computer to follow.  A program must be written in a programming language that the computer knows how to interpret.
    :correct: a
    :practice: T
-   :topics: Intro. to Programming & Python
+   :topics: GeneralIntro/MoreAboutPrograms
 
    A program is:
 

@@ -31,7 +31,7 @@ looking at the output of the program and trying to figure out what it is doing.
    :feedback_c: This will produce the wrong answer because the programmer implemented the solution incorrectly.  This is a semantic error.
    :correct: c
    :practice: T
-   :topics: Semantic Errors
+   :topics: GeneralIntro/SemanticErrors
 
    Which of the following is a semantic error?
 

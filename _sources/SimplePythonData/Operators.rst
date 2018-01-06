@@ -96,7 +96,7 @@ Similarly ``x % 100`` yields the last two digits.
    :feedback_e: / does division. Perhaps you were thinking of %, which computes the remainder?
    :correct: a
    :practice: T
-   :topics: Operators & Operands
+   :topics: SimplePythonData/Operators
 
    What value is printed when the following statement executes?
 
@@ -117,7 +117,7 @@ Similarly ``x % 100`` yields the last two digits.
    :feedback_e: - / does division. Perhaps you were thinking of %, which computes the remainder?
    :correct: d
    :practice: T
-   :topics: Operators & Operands
+   :topics: SimplePythonData/Operators
 
    What value is printed when the following statement executes?
 
@@ -137,7 +137,7 @@ Similarly ``x % 100`` yields the last two digits.
    :feedback_d: The % operator returns the remainder after division.
    :correct: d
    :practice: T
-   :topics: Operators & Operands
+   :topics: SimplePythonData/Operators
 
    What value is printed when the following statement executes?
 

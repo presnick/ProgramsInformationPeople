@@ -100,7 +100,7 @@ Remember the earlier mention that some kinds of python objects don't have a nice
       :feedback_d: The print statement makes the results print
       :correct: b
       :practice: T
-      :topics: Function Calls
+      :topics: SimplePythonData/FunctionCalls
 
       What will the output be from this code?
 
@@ -122,7 +122,7 @@ Remember the earlier mention that some kinds of python objects don't have a nice
       :feedback_d: The character sting is treated as a literal and printed out, without executing.
       :correct: a
       :practice: T
-      :topics: Function Calls
+      :topics: SimplePythonData/FunctionCalls
 
       What will the output be from this code?
 
@@ -144,7 +144,7 @@ Remember the earlier mention that some kinds of python objects don't have a nice
       :feedback_d: There is no print statement
       :correct: d
       :practice: T
-      :topics: Function Calls
+      :topics: SimplePythonData/FunctionCalls
 
       What will the output be from this code?
 
@@ -166,7 +166,7 @@ Remember the earlier mention that some kinds of python objects don't have a nice
       :feedback_d: There is no print statement
       :correct: d
       :practice: T
-      :topics: Function Calls
+      :topics: SimplePythonData/FunctionCalls
 
       What will the output be from this code?
 
