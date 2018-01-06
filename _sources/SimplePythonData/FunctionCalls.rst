@@ -71,9 +71,7 @@ Let's take a look at how that last execution unfolds.
    print(sub({{square(3)}}{{9}}, square(1+1)))
    print(sub(9, square({{1+1}}{{2}})))
    print(sub(9, {{square(2)}}{{4}}))
-   print(sub(9, 5))
-   print(4)
-
+   print({{sub(9, 4)}}, 5)
 
 
 Functions are objects; parentheses invoke functions
