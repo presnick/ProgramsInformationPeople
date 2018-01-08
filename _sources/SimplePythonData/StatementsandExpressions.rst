@@ -10,9 +10,9 @@
 Statements and Expressions
 --------------------------
 
-A **statement** is an instruction that the Python interpreter can execute. We
+A **statement** is an instruction that the Python interpreter can execute. You
 have only seen the assignment statement so far .  Some other kinds of statements
-that we'll see shortly are ``while`` statements, ``for`` statements, ``if``
+that you'll see shortly are ``while`` statements, ``for`` statements, ``if``
 statements,  and ``import`` statements.  (There are other kinds too!)
 
 
