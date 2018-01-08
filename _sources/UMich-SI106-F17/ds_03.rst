@@ -3,6 +3,30 @@
 Week 3 Discussion Section
 -------------------------
 
+.. activecode:: ds_03_000
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    Write code that assigns ``last_elem`` to the **last** element of the sequence ``S``. Don't hard-code your answer (in other words, if we changed ``S``, your answer should still be valid)
+    ~~~~
+    S = ["ab", "cd", "ef", "gh"]
+
+    # Write your code here!
+
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(last_elem, "gh", "Testing that last_elem is assigned to 'gh'")
+
+    myTests().main()
+
+
+
 .. activecode:: ds_03_01
     :language: python
     :autograde: unittest

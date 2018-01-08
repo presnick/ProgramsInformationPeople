@@ -143,6 +143,22 @@ Week 2 Discussion Section
        run the square function, again, on input 5, returning the value 25
 
 
+
+.. activecode:: ds_02_08
+    :language: python
+    :hidecode:
+
+    Add comments to the following code. In particular, which line creates a turtle object, and which line or lines invoke methods on the turtle. For method invocations, what is the name of the method, what causes the method to be invoked, and what are the arguments passed to it.
+
+    ~~~~
+    import turtle             # allows us to use the turtles library
+    wn = turtle.Screen()      # creates a graphics window
+    alex = turtle.Turtle()
+    alex.forward(150)
+    alex.left(90)
+    alex.forward(75)
+
+
 .. activecode:: ds_02_05
     :language: python
     :autograde: unittest
@@ -210,6 +226,8 @@ Week 2 Discussion Section
     myTests().main()
 
 
+
+
 .. activecode:: sqrt_fn
     :language: python
     :nopre:
@@ -221,3 +239,5 @@ Week 2 Discussion Section
 
     def sqrt(num):
         return num**0.5
+
+

@@ -122,6 +122,7 @@ Sequences
    Sequences/ListMembership.rst
    Sequences/ConcatenationandRepetition.rst
    Sequences/ListSlices.rst
+   Sequences/SplitandJoin.rst
    Sequences/ListsareMutable.rst
    Sequences/ListDeletion.rst
    Sequences/ObjectsandReferences.rst
@@ -129,7 +130,6 @@ Sequences
    Sequences/CloningLists.rst
    Sequences/ListMethods.rst
    Sequences/AppendversusConcatenate.rst
-   Sequences/SplitandJoin.rst
    Sequences/Glossary.rst
    Sequences/Exercises.rst
    Sequences/ExtraExercises.rst
