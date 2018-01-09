@@ -36,6 +36,7 @@ Once inside the iteration, it is required that you update the accumulator.
 Here is the same program in codelens.  Step thru the function and watch the "running total" accumulate the result.
 
 .. codelens:: iter_accum2
+   :python: py3
 
    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    accum = 0

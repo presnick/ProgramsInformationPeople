@@ -20,6 +20,7 @@ Taking any slice of ``a`` creates a new list. In this case the slice happens to
 consist of the whole list.
 
 .. codelens:: chp09_is4
+    :python: py3
     :showoutput:
     
     a = [81,82,83]

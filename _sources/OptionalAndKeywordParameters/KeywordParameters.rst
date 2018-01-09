@@ -32,6 +32,7 @@ The basic idea of passing arguments by keyword is very simple. When invoking a f
 To make it easier to follow the details of the examples in the official python tutorial, you can step through them in CodeLens.
 
 .. codelens:: keyword_params_1
+   :python: py3
 
    def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
        print("-- This parrot wouldn't" + action,)

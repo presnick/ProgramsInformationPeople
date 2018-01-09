@@ -38,6 +38,7 @@ Conveniently, we can use the ``range`` function to automatically generate the in
 Consider the following codelens example.
 
 .. codelens:: ch08_7
+    :python: py3
 
     fruit = "apple"
     x = range(5)
@@ -64,6 +65,7 @@ You may also note that iteration by position allows the programmer to control th
 traversal by changing the sequence of index values.
 
 .. codelens:: ch08_8
+    :python: py3
 
     fruit = "apple"
     for idx in [0, 2, 4, 3, 1]:

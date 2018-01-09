@@ -67,6 +67,7 @@ In each case the result is the value of the variable.
 To see this in even more detail, we can run the program using codelens.
 
 .. codelens:: ch02_9_codelens
+    :python: py3
     :showoutput:
 
     message = "What's up, Doc?"
@@ -97,6 +98,7 @@ You'll notice we change the value of `day` three times, and on the third
 assignment we even give it a value that is of a different type.
 
 .. codelens:: ch02_11
+    :python: py3
     :showoutput:
 
     day = "Thursday"

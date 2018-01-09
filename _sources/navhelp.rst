@@ -60,6 +60,7 @@ In addition to ActiveCode, you can also execute Python code with the assistance 
 all variables as they are created and modified.  The following example shows CodeLens in action on the same simple program as we saw above.  Remember that in ActiveCode, the source code executes from beginning to end and you can see the final result.  In Codelens you can see and control the step by step progress.  Try clicking on the *Forward* button below.
 
 .. codelens:: firstexample
+    :python: py3
     :showoutput:
 
     print "My first program adds two numbers, 2 and 3:"

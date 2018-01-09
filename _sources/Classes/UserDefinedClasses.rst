@@ -144,7 +144,8 @@ to the factory default settings" is called **instantiation**.
 To get a clearer understanding of what happens when instantiating a new instance, examine the previous code using CodeLens.
 
 .. codelens:: chp13_classes2a
-    
+    :python: py3
+
     class Point:
         """ Point class for representing and manipulating x,y coordinates. """
         

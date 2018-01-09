@@ -38,6 +38,7 @@ works with the for loop.  Try stepping forward and backward through the program 
 the buttons.  You can see the value of ``name`` change as the loop iterates thru the list of friends.
 
 .. codelens:: vtest
+    :python: py3
 
     for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
         print("Hi ", name, "  Please come to my party on Saturday!")

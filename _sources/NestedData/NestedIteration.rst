@@ -25,6 +25,7 @@ Line 3 executes once for each top-level list, three times in all. With each sub-
 line 5 executes once for each item in the sub-list. Try stepping through it in Codelens to make sure you understand what the nested iteration does.
 
 .. codelens:: nested_data_11
+    :python: py3
 
     nested1 = [['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
     for x in nested1:

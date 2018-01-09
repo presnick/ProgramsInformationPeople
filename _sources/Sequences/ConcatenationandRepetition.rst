@@ -35,6 +35,7 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
 
 
 .. codelens:: chp09_concatid
+    :python: py3
 
     fruit = ["apple","orange","banana","cherry"]
     numlist = [6,7]

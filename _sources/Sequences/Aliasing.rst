@@ -30,6 +30,7 @@ to the same list after executing the assignment statement ``b = a``.
 
 
 .. codelens:: chp09_is3
+    :python: py3
     :showoutput:
     
     a = [81,82,83]

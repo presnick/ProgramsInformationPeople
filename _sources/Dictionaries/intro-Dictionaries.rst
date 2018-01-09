@@ -32,7 +32,7 @@ One way to create a dictionary is to start with the empty dictionary and add
 **key-value pairs**. The empty dictionary is denoted ``{}``
 
 .. codelens:: chp12_dict1
-    
+    :python: py3
     eng2sp = {}
     eng2sp['one'] = 'uno'
     eng2sp['two'] = 'dos'
@@ -56,7 +56,7 @@ Another way to create a dictionary is to provide a bunch of key-value pairs
 using the same syntax as the previous output.
 
 .. codelens:: chp12_dict2
-    
+    :python: py3
     
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
     print(eng2sp)
@@ -68,7 +68,7 @@ ordering.
 Here is how we use a key to look up the corresponding value.
 
 .. codelens:: chp12_dict3
-    
+    :python: py3
 
     eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
 

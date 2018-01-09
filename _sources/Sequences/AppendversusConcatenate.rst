@@ -15,6 +15,7 @@ The ``append`` method adds a new item to the end of a list.  It is also possible
 Consider the following example.  The original list has 3 integers.  We want to add the word "cat" to the end of the list.
 
 .. codelens:: appcon1
+    :python: py3
 
     origlist = [45,32,88]
 
@@ -29,6 +30,7 @@ Here we have used ``append`` which simply modifies the list.  In order to use co
 Note that the word "cat" needs to be placed in a list since the concatenation operator needs two lists to do its work.
 
 .. codelens:: appcon2
+    :python: py3
 
     origlist = [45,32,88]
 
@@ -41,6 +43,7 @@ On the other hand, with concatenation, an entirely new list is created.  This ca
 accumulator pattern.
 
 .. codelens:: appcon3
+    :python: py3
 
     origlist = [45,32,88]
 

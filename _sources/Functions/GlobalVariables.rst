@@ -48,6 +48,7 @@ change variables defined outside the function.  Consider the following
 codelens example:
 
 .. codelens::  functions2_4
+    :python: py3
 
     def powerof(x,p):
         power = p   # Another dumb mistake
@@ -78,6 +79,7 @@ below. Again, you should *not* do this in your code. The example is here only
 to cement your understanding of how python works.
 
 .. codelens::  functions2_4a
+    :python: py3
 
     def powerof(x,p):
         global power  # a really... 
@@ -102,6 +104,7 @@ used as the actual parameter, especially when the two share the same name.
 But this example demonstrates that that is clearly not how Python operates.
 
 .. codelens:: function2_5
+    :python: py3
 
     def square(x):
         y = x * x

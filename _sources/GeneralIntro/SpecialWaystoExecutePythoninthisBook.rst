@@ -50,6 +50,7 @@ Sometimes, we will present code examples explicitly in a codelens window, as bel
 When we do, think of it as an encouragement to use the codelens features to step through the execution of the program.
 
 .. codelens:: firstexample
+    :python: py3
     :showoutput:
 
     print("My first program adds two numbers, 2 and 3:")
