@@ -62,6 +62,7 @@ two lines of code from above.
    :feedback_a: The blank space counts as a character.
    :feedback_b: Yes, there are 12 characters in the string.
    :correct: b
+   :practice: T
 
    What is printed by the following statements?
    

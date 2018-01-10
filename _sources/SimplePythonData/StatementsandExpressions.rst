@@ -98,9 +98,12 @@ If a function call expression is a sub-expression of some more complicated expre
 
 To start giving you some practice in reading and understanding complicated expressions, try doing the Parsons problem below. Be careful not to indent any of the lines of code; that's something that will come later in the course.
 
-Your job is to order the code fragments in the order in which the Python interpreter would evaluate them. x is 2 and y is 3. Now the interpreter is executing ``square(x + sub(square(y), 2 *x))``.
 
 .. parsonsprob:: ch02_14c
+   :practice: T
+   :topics: UMSI106/SimplePythonData/StatementsandExpressions
+
+   Please order the code fragments in the order in which the Python interpreter would evaluate them. x is 2 and y is 3. Now the interpreter is executing ``square(x + sub(square(y), 2 *x))``.
 
    -----
    look up the variable square to get the function object

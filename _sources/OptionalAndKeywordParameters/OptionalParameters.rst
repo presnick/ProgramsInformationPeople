@@ -60,6 +60,7 @@ The way to specify a default value is with an assignment statement inside the pa
 Consider the following code, for example.
 
 .. codelens:: opt_params_2
+    :python: py3
 
     initial = 7
     def f(x, y =3, z=initial):
@@ -91,6 +92,7 @@ invoking f. See what happens in the code below, where z still gets the value 7
 when f is invoked without specifying a value for z.
 
 .. codelens:: opt_params_3
+    :python: py3
 
     initial = 7
     def f(x, y =3, z=initial):
@@ -104,6 +106,7 @@ such as a list or a dictionary, that object will be shared in all invocations
 of the function. This can get very confusing, so I suggest that you never set a default value that is a mutable object. For example, follow the exceution of this one carefully.
 
 .. codelens:: opt_params_4
+    :python: py3
 
     def f(a, L=[]):
         L.append(a)

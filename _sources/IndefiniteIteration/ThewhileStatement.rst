@@ -58,6 +58,7 @@ the body, each time, update ``theSum`` using the accumulator pattern and increme
 The same program in codelens will allow you to observe the flow of execution.
 
 .. codelens:: ch07_while2
+    :python: py3
 
     def sumTo(aBound):
         """ Return the sum of 1+2+3 ... n """

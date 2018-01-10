@@ -50,6 +50,8 @@ possible.
    :feedback_c: The format of the information is called its font and has nothing to do with the print statement.
    :feedback_d: That would be nice! But no...
    :correct: b
+   :practice: T
+   :topics: GeneralIntro/ATypicalFirstProgram
 
    The print statement:
 

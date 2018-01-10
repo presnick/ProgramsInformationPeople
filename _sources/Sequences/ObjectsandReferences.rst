@@ -73,6 +73,7 @@ There is one other important thing to notice about this reference diagram.  The 
 Here is the example in codelens.  Pay particular attention to the `id` values.
 
 .. codelens:: chp09_istrace
+    :python: py3
     :showoutput:
     
     a = [81,82,83]

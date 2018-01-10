@@ -85,6 +85,8 @@ remember, what the variable is used for.
    :feedback_a: -  The + character is not allowed in variable names.
    :feedback_b: -  The + character is not allowed in variable names (everything else in this name is fine).
    :correct: b
+   :practice: T
+   :topics: SimplePythonData/VariableNamesandKeywords
 
    True or False:  the following is a legal variable name in Python:   A_good_grade_is_A+
 
