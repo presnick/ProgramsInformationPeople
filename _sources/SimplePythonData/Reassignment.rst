@@ -99,7 +99,7 @@ You can step through the code and see how the variable assignments change below.
    :feedback_d: Yes, x has the value 22 and y the value 15.
    :correct: d
    :practice: T
-   :topics: Reassignment
+   :topics: SimplePythonData/Reassignment
 
    After the following statements, what are the values of x and y?
 

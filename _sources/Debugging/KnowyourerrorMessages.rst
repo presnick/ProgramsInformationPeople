@@ -164,7 +164,7 @@ Uncomment line 1 and you are back to the ParseError.  Another track is to elimin
 TypeError
 ^^^^^^^^^
 
-TypeErrors occur when you you try to combine two objects that are not compatible.  For example you try to add together an integer and a string.  Usually type errors can be isolated to lines that are using mathematical operators, and usually the line number given by the error message is an accurate indication of the line.
+TypeErrors occur when you try to combine two objects that are not compatible.  For example you try to add together an integer and a string.  Usually type errors can be isolated to lines that are using mathematical operators, and usually the line number given by the error message is an accurate indication of the line.
 
 Here's an example of a type error created by a Polish learner.  See if you can find and fix the error.
 
@@ -255,8 +255,8 @@ And one last bit of code to fix.
 
 .. activecode:: db_ex3_11
 
-    present_time = input("enter the present timein hours:")
-    set_alarm = input("set the hours for alarm:")
+    present_time = input("Enter the present time in hours:")
+    set_alarm = input("Set the hours for alarm:")
     int (present_time,set_time,alarm_time)
     alarm_time = present_time + set_alarm
     print(alarm_time)
@@ -298,7 +298,7 @@ Value errors occur when you pass a parameter to a function and the function is e
    current_time_int = int(current_time_str)
 
    wait_time_str = input("How many hours do you want to wait")
-   wait_time_int = int(wait_time_int)
+   wait_time_int = int(wait_time_str)
 
    final_time_int = current_time_int + wait_time_int
    print(final_time_int)

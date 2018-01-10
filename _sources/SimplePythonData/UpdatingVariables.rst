@@ -79,7 +79,7 @@ Incrementing and decrementing are such common operations that programming langua
    :feedback_d: Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
    :correct: c
    :practice: T
-   :topics: Updating Variables
+   :topics: SimplePythonData/UpdatingVariables
 
    What is printed when the following statements execute?
 
@@ -100,7 +100,7 @@ Incrementing and decrementing are such common operations that programming langua
    :feedback_d: Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
    :correct: c
    :practice: T
-   :topics: Updating Variables
+   :topics: SimplePythonData/UpdatingVariables
 
    What is printed when the following statements execute?
 
@@ -113,6 +113,8 @@ Incrementing and decrementing are such common operations that programming langua
      print(x)
 
 .. parsonsprob:: question2_10_3
+   :practice: T
+   :topics: SimplePythonData/UpdatingVariables
 
    Construct the code that will result in the value 134 being printed.
    -----
@@ -134,7 +136,7 @@ Incrementing and decrementing are such common operations that programming langua
    :feedback_e: ++ is not a syntax that means anything in python.
    :correct: a,d
    :practice: T
-   :topics: Updating Variables
+   :topics: SimplePythonData/UpdatingVariables
 
    Which of the following statements are equivalent?
  

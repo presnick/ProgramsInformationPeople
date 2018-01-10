@@ -33,6 +33,7 @@ One way to create a dictionary is to start with the empty dictionary and add
 
 .. codelens:: chp12_dict1
     :python: py3
+
     eng2sp = {}
     eng2sp['one'] = 'uno'
     eng2sp['two'] = 'dos'
