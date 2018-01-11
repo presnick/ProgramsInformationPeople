@@ -9,7 +9,7 @@ project_name = "UMSI106"
 ###############################
 
 master_url = 'http://127.0.0.1:8000'
-# master_url = 'https://106w18.learningpython.today'
+master_url = 'https://106w18.learningpython.today'
 master_app = 'runestone'
 serving_dir = "./build/" + project_name
 dest = "../../static"
