@@ -113,34 +113,34 @@ Week 2 Discussion Section
 
 **4.** Here's another complicated expression. Arrange these sentences in the order they are executed in the following code.
 
-    .. sourcecode:: python
+.. sourcecode:: python
 
-        x = 1
-        y = 2
-        square(x + square(y))
+    x = 1
+    y = 2
+    square(x + square(y))
 
-    .. parsonsprob:: ds_02_04
+.. parsonsprob:: ds_02_04
 
-       Order the code fragments in the order in which the Python interpreter would evaluate them.
+   Order the code fragments in the order in which the Python interpreter would evaluate them.
 
-       -----
-       assign x to 1
-       =====
-       assign y to 2
-       =====
-       look up the variable square to get the function object
-       =====
-       look up the variable x to get 1
-       =====
-       look up square, again, to get the function object
-       =====
-       look up the variable y to get 2
-       =====
-       run the square function on input 2, returning the value 4
-       =====
-       add 1 and 4 to get 5
-       =====
-       run the square function, again, on input 5, returning the value 25
+   -----
+   assign x to 1
+   =====
+   assign y to 2
+   =====
+   look up the variable square to get the function object
+   =====
+   look up the variable x to get 1
+   =====
+   look up square, again, to get the function object
+   =====
+   look up the variable y to get 2
+   =====
+   run the square function on input 2, returning the value 4
+   =====
+   add 1 and 4 to get 5
+   =====
+   run the square function, again, on input 5, returning the value 25
 
 
 
