@@ -32,8 +32,7 @@ the active code window to check your results:
 
    print(5**2)
 
-#. What is the order of the arithmetic operations in the following expression?  Evaluate the expression by hand and then check your
-     work.
+#. What is the order of the arithmetic operations in the following expression?  Evaluate the expression by hand and then check your work.
 
       2 + (3 - 1) * 10 / 5 * (2 + 3)
 

@@ -48,6 +48,8 @@ programs much easier for humans to parse.  Use them liberally!
    :feedback_c: Comments can provide much needed information for anyone reading the program.
    :feedback_d: Even small programs benefit from comments.
    :correct: b
+   :practice: T
+   :topics: GeneralIntro/Comments
 
    What are comments for?
 

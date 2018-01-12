@@ -30,6 +30,7 @@ to the same list after executing the assignment statement ``b = a``.
 
 
 .. codelens:: chp09_is3
+    :python: py3
     :showoutput:
     
     a = [81,82,83]
@@ -61,7 +62,8 @@ economize.
    :feedback_a: blist is not a copy of alist, it is a reference to the list alist refers to.
    :feedback_b: Yes, since alist and blist both reference the same list, changes to one also change the other.
    :correct: b
-   
+   :practice: T
+
    What is printed by the following statements?
    
    .. code-block:: python

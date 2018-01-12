@@ -67,6 +67,7 @@ In each case the result is the value of the variable.
 To see this in even more detail, we can run the program using codelens.
 
 .. codelens:: ch02_9_codelens
+    :python: py3
     :showoutput:
 
     message = "What's up, Doc?"
@@ -97,6 +98,7 @@ You'll notice we change the value of `day` three times, and on the third
 assignment we even give it a value that is of a different type.
 
 .. codelens:: ch02_11
+    :python: py3
     :showoutput:
 
     day = "Thursday"
@@ -142,6 +144,8 @@ For example, we can find out the data type of the current value of a variable by
    :feedback_c: This is the second value assigned to the variable day, but the next statement reassigns that variable to a new value.
    :feedback_d: The variable day will contain the last value assigned to it when it is printed.
    :correct: d
+   :practice: T
+   :topics: SimplePythonData/Variables
 
    What is printed when the following statements execute?
 

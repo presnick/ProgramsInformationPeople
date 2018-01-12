@@ -62,6 +62,7 @@ It is just a string of length 1.
    :feedback_c: s[-3] would return c, counting from right to left.
    :feedback_d: [ ] is the index operator.
    :correct: b
+   :practice: T
 
    What is printed by the following statements?
       
@@ -82,6 +83,7 @@ It is just a string of length 1.
    :feedback_d: n is at location 5, not 2.
    :feedback_e: [ ] operator returns a string that can be concatenated with another string.
    :correct: b
+   :practice: T
 
    What is printed by the following statements?
    

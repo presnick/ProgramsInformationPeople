@@ -32,6 +32,7 @@ As you would expect, we can also assign list values to variables and pass lists 
    :feedback_a: Yes, unlike strings, lists can consist of any type of Python data.
    :feedback_b: Lists are heterogeneous, meaning they can have different types of data.
    :correct: a
+   :practice: T
 
    A list can contain only integer items.
 

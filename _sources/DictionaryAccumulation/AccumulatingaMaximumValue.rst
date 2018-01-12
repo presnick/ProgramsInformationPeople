@@ -22,6 +22,7 @@ replace the accumulator variable's value with the value of the current item.
 Step through the execution of this code to get a feel for how it works. 
 
 .. codelens:: dict_accum_9
+   :python: py3
 
    L = [3, 6, 2, 5, 39, 7, 5]
    
@@ -37,6 +38,7 @@ item. If we assume that L will have only numbers >= 0, we can initialize the max
 0 and loop through *all* of the items in L.
 
 .. codelens:: dict_accum_10
+   :python: py3
 
    L = [3, 6, 2, 5, 39, 7, 5]
    

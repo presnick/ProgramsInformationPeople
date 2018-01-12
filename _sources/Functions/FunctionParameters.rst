@@ -47,6 +47,7 @@ one parameter. The revised hello function personalizes the greeting: the person
 to greet is specified by the parameter. 
 
 .. codelens:: functions_3
+   :python: py3
 
    def hello2(s):
       print("Hello " + s)
@@ -85,6 +86,7 @@ Now let's consider a function with two parameters. This version of hello takes
 a parameter that controls how many times the greeting will be printed.
 
 .. codelens:: functions_5
+   :python: py3
 
    def hello3(s, n):
       print((" hello " + s)*n)

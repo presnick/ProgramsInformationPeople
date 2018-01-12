@@ -95,6 +95,8 @@ Similarly ``x % 100`` yields the last two digits.
    :feedback_d: / performs exact division, without truncation
    :feedback_e: / does division. Perhaps you were thinking of %, which computes the remainder?
    :correct: a
+   :practice: T
+   :topics: SimplePythonData/Operators
 
    What value is printed when the following statement executes?
 
@@ -114,6 +116,8 @@ Similarly ``x % 100`` yields the last two digits.
    :feedback_d: - Yes, even though it truncates, it produces a floating point result because 18.0 is a float
    :feedback_e: - / does division. Perhaps you were thinking of %, which computes the remainder?
    :correct: d
+   :practice: T
+   :topics: SimplePythonData/Operators
 
    What value is printed when the following statement executes?
 
@@ -132,6 +136,8 @@ Similarly ``x % 100`` yields the last two digits.
    :feedback_c: The % operator returns the remainder after division.
    :feedback_d: The % operator returns the remainder after division.
    :correct: d
+   :practice: T
+   :topics: SimplePythonData/Operators
 
    What value is printed when the following statement executes?
 

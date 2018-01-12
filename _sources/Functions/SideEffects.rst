@@ -15,7 +15,8 @@ Global variables are another way to have side effects. For example, similar to e
 you have seen above, we could make double have a side effect on the global variable y.
 
 .. codelens:: function2_9
-   
+   :python: py3
+
    def double(n):
       global y
       y = 2 * n
@@ -40,7 +41,8 @@ from the function. For example, the following is a better version of the code
 above.
 
 .. codelens:: function2_10
-   
+   :python: py3
+
    def double(n):
       return 2 * n
    
@@ -57,7 +59,8 @@ list. For dictionaries, you can similarly call the ``dict`` function, passing in
 to get a copy of the dictionary back as a return value.
 
 .. codelens:: function2_11
-      
+   :python: py3
+
    def changeit(lst):
       lst[0] = "Michigan"
       lst[1] = "Wolverines"

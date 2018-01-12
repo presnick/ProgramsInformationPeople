@@ -22,6 +22,7 @@ the function hello, we won't need to put anything inside the parentheses when we
 statements will be executed each time we call it.  
 
 .. codelens:: functions_2
+   :python: py3
 
    def hello():
       print("Hello")
