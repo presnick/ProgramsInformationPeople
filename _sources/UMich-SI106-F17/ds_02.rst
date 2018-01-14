@@ -13,10 +13,6 @@ Week 2 Discussion Section
 
     **1.** Suppose the ``sqrt()`` function returns the square root of its arguments. Write a statement that will assign the square root of ``a`` squared plus the value of ``b`` squared (Pythagorean theorem) to a variable ``c``.
     ~~~~
-    def sqrt(num):
-        return num**0.5
-
-
     a = 3.0
     b = 4.0
 
