@@ -11,7 +11,7 @@ Week 2 Discussion Section
     :practice: T
     :topics: SimplePythonData/FunctionCalls
 
-    **1.** Suppose the ``sqrt()`` function returns the square root of its arguments. Write a statement that will assign a variable ``c`` to the square root of ``a`` squared plus the value of ``b`` squared (Pythagorean theorem).
+    **1.** Suppose the ``sqrt()`` function returns the square root of its arguments. Write a statement that will assign the square root of ``a`` squared plus the value of ``b`` squared (Pythagorean theorem) to a variable ``c``.
     ~~~~
     def sqrt(num):
         return num**0.5
@@ -136,9 +136,9 @@ Week 2 Discussion Section
     Order the code fragments in the order in which the Python interpreter would evaluate them.
 
     -----
-    assign x to 1
+    assign 1 to x
     =====
-    assign y to 2
+    assign 2 to y
     =====
     look up the variable square to get the function object
     =====
@@ -162,7 +162,7 @@ Week 2 Discussion Section
     :practice: T
     :topics: Sequences/IndexOperatorWorkingwiththeCharactersofaString
 
-    **5.** Write code that assigns ``last_elem`` to the **last** element of the sequence ``S``. Don't hard-code your answer (in other words, if we changed ``S``, your answer should still be valid)
+    **5.** Write code that assigns the **last** element of the sequence ``S`` to ``last_elem``. Don't hard-code your answer (in other words, if we changed ``S``, your answer should still be valid)
     ~~~~
     S = ["ab", "cd", "ef", "gh"]
 
@@ -175,7 +175,7 @@ Week 2 Discussion Section
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(last_elem, "gh", "Testing that last_elem is assigned to 'gh'")
+            self.assertEqual(last_elem, "gh", "Testing that 'gh' is assigned to last_elem.")
 
     myTests().main()
 
@@ -186,7 +186,7 @@ Week 2 Discussion Section
     :practice: T
     :topics: Sequences/SplitandJoin
 
-    **6.** Write code that assigns ``last_letter_first_word`` to the *last letter of the first word* of the sentence ``S``. Do not hard-code your answer.
+    **6.** Write code that assigns the *last letter of the first word* of the sentence ``S`` to ``last_letter_first_word``. Do not hard-code your answer.
     ~~~~
     S = "this is a sentence"
 
@@ -199,7 +199,7 @@ Week 2 Discussion Section
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(last_letter_first_word, "s", "Testing that last_letter_first_word is assigned to 's'")
+            self.assertEqual(last_letter_first_word, "s", "Testing that 's' is assigned to last_letter_first_word.")
 
     myTests().main()
 
