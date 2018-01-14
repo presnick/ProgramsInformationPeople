@@ -13,6 +13,10 @@ Week 2 Discussion Section
 
     **1.** Suppose the ``sqrt()`` function returns the square root of its arguments. Write a statement that will assign a variable ``c`` to the square root of ``a`` squared plus the value of ``b`` squared (Pythagorean theorem).
     ~~~~
+    def sqrt(num):
+        return num**0.5
+
+
     a = 3.0
     b = 4.0
 
@@ -37,7 +41,7 @@ Week 2 Discussion Section
     :autograde: unittest
     :hidecode:
     :practice: T
-    :topics: SimplePythonData/Input
+    :topics: Sequences/OperationsonStrings
 
     **2.** Write code that asks the user to enter their name and then prints out ``"Hello, <name>!"``.
     ~~~~
@@ -155,6 +159,8 @@ Week 2 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Sequences/IndexOperatorWorkingwiththeCharactersofaString
 
     **5.** Write code that assigns ``last_elem`` to the **last** element of the sequence ``S``. Don't hard-code your answer (in other words, if we changed ``S``, your answer should still be valid)
     ~~~~
@@ -177,6 +183,8 @@ Week 2 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Sequences/SplitandJoin
 
     **6.** Write code that assigns ``last_letter_first_word`` to the *last letter of the first word* of the sentence ``S``. Do not hard-code your answer.
     ~~~~
@@ -199,6 +207,8 @@ Week 2 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Sequences/SplitandJoin
 
     **7.** Write code that asks the user to enter a sentence and then prints out the *number of words in that sentence*.
     ~~~~
