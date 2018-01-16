@@ -59,6 +59,7 @@ accumulator pattern.
    :feedback_b: Yes, in order to perform concatenation you would need to write alist+[999].  You must have two lists.
    :correct: b
    :practice: T
+   :topics: Sequences/AppendversusConcatenate
 
    What is printed by the following statements?
    

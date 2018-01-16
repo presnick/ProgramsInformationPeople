@@ -29,6 +29,7 @@ used them previously with strings and they also work here.
    :feedback_b: There are 5 items in the list, 'cat' is one of them.
    :correct: a
    :practice: T
+   :topics: Sequences/ListMembership
 
    What is printed by the following statements?
    
@@ -45,6 +46,7 @@ used them previously with strings and they also work here.
    :feedback_b: Yes, "at" is not in the top level item, alist.  It is in one of the elements of alist.
    :correct: b
    :practice: T
+   :topics: Sequences/ListMembership
 
    What is printed by the following statements?
    

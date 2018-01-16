@@ -34,6 +34,7 @@ end of the sequence.
    :feedback_c: Index values start at 0.
    :correct: a
    :practice: T
+   :topics: Sequences/ListSlices
 
    What is printed by the following statements?
    

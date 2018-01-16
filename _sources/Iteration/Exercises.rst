@@ -10,10 +10,16 @@
 Exercises
 =========
 
-1. Write code to create a list of integers from 0 through 52 and assign that list to the variable ``numbers``. You should use a special Python function -- do not type out the whole list yourself. HINT: You can do this in one line of code!
-
 .. activecode:: ee_ch10_01
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
+
+   1. Write code to create a list of integers from 0 through 52 and assign that list to the variable ``numbers``. You should use a special Python function -- do not type out the whole list yourself. HINT: You can do this in one line of code!
+   ~~~~
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -25,9 +31,16 @@ Exercises
 
    myTests().main()
 
-1.1 Write code to create a list of numbers from 0 to 67 and assign that list to the variable ``nums``. Do not hard code the list.
 
 .. activecode:: ee_ch10_011
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
+
+   1.1 Write code to create a list of numbers from 0 to 67 and assign that list to the variable ``nums``. Do not hard code the list.
+   ~~~~
 
    =====
 
@@ -40,12 +53,18 @@ Exercises
 
    myTests().main()
 
+
 .. Iteration/TraversalandtheforLoopByIndex.rst, Iteration/TheAccumulatorPatternwithStrings.rst
 
-2. For each character in the string already saved in the variable ``str1``, append each character to a list called ``chars``. 
-
 .. activecode:: ee_ch10_02
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithStrings
 
+   2. For each character in the string already saved in the variable ``str1``, append each character to a list called ``chars``.
+   ~~~~
    str1 = "I love python"
    # HINT: what's the accumulator? That should go here.
       
@@ -60,10 +79,16 @@ Exercises
 
    myTests().main()
 
-2.1 For each character in the string saved in ``ael``, append that character to a list that should be saved in a variable ``app``.
 
 .. activecode:: ee_ch10_022
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithStrings
 
+   2.1 For each character in the string saved in ``ael``, append that character to a list that should be saved in a variable ``app``.
+   ~~~~
    ael = "python!"
 
    =====
@@ -79,10 +104,17 @@ Exercises
 
 .. Iteration/Stringsandforloops.rst, Iteration/TheAccumulatorPatternwithStrings.rst
 
-3. Assign an empty string to the variable ``output``. Using the ``range`` function, write code to make it so that the variable ``output`` has 35 ``a`` s inside it (like ``"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"``). Hint: use the accumulation pattern!
 
 .. activecode:: ee_ch10_03
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithStrings
+
+   3. Assign an empty string to the variable ``output``. Using the ``range`` function, write code to make it so that the variable ``output`` has 35 ``a`` s inside it (like ``"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"``). Hint: use the accumulation pattern!
+   ~~~~
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -94,9 +126,16 @@ Exercises
 
    myTests().main()
 
-3.1 Create an empty string and assign it to the variable ``lett``. Then using range, write code such that when your code is run, lett has 7 b's (``"bbbbbbb"``).
 
 .. activecode:: ee_ch10_031
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithStrings
+
+   3.1 Create an empty string and assign it to the variable ``lett``. Then using range, write code such that when your code is run, lett has 7 b's (``"bbbbbbb"``).
+   ~~~~
 
    =====
 
@@ -109,12 +148,18 @@ Exercises
 
    myTests().main()
 
+
 .. Iteration/TraversalandtheforLoopByIndex.rst, Iteration/TheAccumulatorPatternwithStrings.rst
 
-4. Given the list of numbers, ``numbs``, create a new list of those same numbers increased by 5. Save this new list to the variable ``newlist``. 
-
 .. activecode:: ee_ch10_04
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
+
+   4. Given the list of numbers, ``numbs``, create a new list of those same numbers increased by 5. Save this new list to the variable ``newlist``.
+   ~~~~
    numbs = [5, 10, 15, 20, 25]
 
    =====
@@ -128,10 +173,16 @@ Exercises
 
    myTests().main()
 
-4.1 For each number in ``lst_nums``, multiply that number by 2 and append it to a new list called ``larger_nums``. 
 
 .. activecode:: ee_ch10_041
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
 
+   4.1 For each number in ``lst_nums``, multiply that number by 2 and append it to a new list called ``larger_nums``.
+   ~~~~
    lst_nums = [4, 29, 5.3, 10, 2, 1817, 1967, 9, 31.32]
 
    =====
@@ -145,10 +196,16 @@ Exercises
 
    myTests().main()
 
-5. **Challenge** Now do the same as in problem 4, but do not create a new list. Overwrite the list ``numbs`` so that each of the original numbers are increased by 5.
 
 .. activecode:: ee_ch10_05
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
+
+   5. **Challenge** Now do the same as in problem 4, but do not create a new list. Overwrite the list ``numbs`` so that each of the original numbers are increased by 5.
+   ~~~~
    numbs = [5, 10, 15, 20, 25]
 
    =====
@@ -163,10 +220,16 @@ Exercises
    myTests().main()
 
 
-6. For each word in the list ``verbs``, add an -ing ending. Save this new list in a new list, ``ing``.
 
 .. activecode:: ee_ch10_06
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
+
+   6. For each word in the list ``verbs``, add an -ing ending. Save this new list in a new list, ``ing``.
+   ~~~~
    verbs = ["kayak", "cry", "walk", "eat", "drink", "fly"]
 
    =====
@@ -181,10 +244,16 @@ Exercises
    myTests().main()
 
 
-6.1 **Challenge** Do the same as above, but do not create a new list. Instead, overwrite the old list so that ``verbs`` has the same words with ``ing`` at the end of each one. 
 
 .. activecode:: ee_ch10_07
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
+
+   6.1 **Challenge** Do the same as above, but do not create a new list. Instead, overwrite the old list so that ``verbs`` has the same words with ``ing`` at the end of each one.
+   ~~~~
    verbs = ["kayak", "cry", "walk", "eat", "drink", "fly"]
 
    =====
@@ -198,10 +267,16 @@ Exercises
 
    myTests().main()
 
-7. For each string in ``wrds``, add 'ed' to the end of the word (to make the word past tense). Save these past tense words to a list called ``past_wrds``.
 
 .. activecode:: ee_ch10_061
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
 
+   7. For each string in ``wrds``, add 'ed' to the end of the word (to make the word past tense). Save these past tense words to a list called ``past_wrds``.
+   ~~~~
    wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
    =====
 
@@ -215,10 +290,16 @@ Exercises
    myTests().main()
 
 
-8. Count the number of characters in string ``str1``. Do not use ``len()``. Save the number in variable ``numbs``.
 
 .. activecode:: ee_ch10_08
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithStrings
+
+   8. Count the number of characters in string ``str1``. Do not use ``len()``. Save the number in variable ``numbs``.
+   ~~~~
    str1 = "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living."
 
    =====
@@ -232,10 +313,17 @@ Exercises
 
    myTests().main()
 
-9. Create a list of numbers 0 through 40 and assign this list to the variable ``numbers``. Then, accumulate the total of the list's values and assign that sum to the variable ``sum1``. 
 
 .. activecode:: ee_ch10_09
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Iteration/Listsandforloops
+
+   9. Create a list of numbers 0 through 40 and assign this list to the variable ``numbers``. Then, accumulate the total of the list's values and assign that sum to the variable ``sum1``.
+   ~~~~
+
    =====
 
    from unittest.gui import TestCaseGui

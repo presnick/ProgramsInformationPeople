@@ -58,6 +58,7 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
    :feedback_d: Concatenation does not add the individual items.
    :correct: c
    :practice: T
+   :topics: Sequences/ConcatenationandRepetition
 
    What is printed by the following statements?
    
@@ -80,6 +81,7 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
    :feedback_d: Repetition does not multiply the individual items.
    :correct: c
    :practice: T
+   :topics: Sequences/ConcatenationandRepetition
 
    What is printed by the following statements?
    

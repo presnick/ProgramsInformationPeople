@@ -86,6 +86,8 @@ traversal by changing the sequence of index values.
    :feedback_d: idx % 2 is 0 whenever idx is even
    :feedback_e: idx % 2 is 0 whenever idx is even
    :correct: d
+   :practice: T
+   :topics: Iteration/TraversalandtheforLoopByIndex
 
    How many times is the letter p printed by the following statements?
    

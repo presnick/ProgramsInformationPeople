@@ -51,6 +51,7 @@ What do you think ``fruit[:]`` means?
    :feedback_d: This is called slicing, not indexing.  It requires a start and an end.
    :correct: c
    :practice: T
+   :topics: Sequences/TheSliceOperator
 
    What is printed by the following statements?
    
@@ -70,6 +71,7 @@ What do you think ``fruit[:]`` means?
    :feedback_d: The slice will happen first, then the repetition.  So it is ok.
    :correct: a
    :practice: T
+   :topics: Sequences/TheSliceOperator
 
    What is printed by the following statements?
    

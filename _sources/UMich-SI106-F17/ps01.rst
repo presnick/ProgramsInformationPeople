@@ -43,7 +43,6 @@ Problem Set 1
     :language: python
     :autograde: unittest
     :hidecode:
-    :practice: T
     :topics: SimplePythonData/FunctionCalls
 
     **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
@@ -141,7 +140,6 @@ Problem Set 1
     :language: python
     :autograde: unittest
     :hidecode:
-    :practice: T
     :topics: SimplePythonData/FunctionCalls
 
     **6.** There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
@@ -244,7 +242,7 @@ Problem Set 1
     :autograde: unittest
     :hidecode:
     :practice: T
-    :topics: Sequences/IndexOperatorWorkingwiththeCharactersofaString
+    :topics: Sequences/AccessingElements
 
     **8.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
 

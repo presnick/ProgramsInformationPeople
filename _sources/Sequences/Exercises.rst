@@ -14,6 +14,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
+   :topics: Sequences/AccessingElements
 
    **1.** Assign the value of the 34th element of ``lst`` to the variable ``output``.
    ~~~~
@@ -35,7 +36,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
-   :tags: Sequences/AccessingElements.rst
+   :topics: Sequences/AccessingElements
    
    **2.** Assign the value of the 23rd element of ``lst`` to the variable ``checking``.
    ~~~~
@@ -57,6 +58,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
+   :topics: Sequences/ListLength
 
    **3.** Assign the number of elements in ``lst`` to the variable ``output``.
    ~~~~
@@ -78,7 +80,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
-   :tags: Sequences/Length.rst
+   :topics: Sequences/ListLength
    
    **4.** Assign the number of elements in ``lst`` to the variable ``num_lst``.
    ~~~~
@@ -100,6 +102,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
+   :topics: Sequences/AccessingElements
 
    **5.** Assign the value of the last element of ``lst`` to the variable ``output``. Do this so that the length of lst doesn't matter.
    ~~~~
@@ -121,7 +124,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
-   :tags: Sequences/AccessingElements.rst
+   :topics: Sequences/AccessingElements
    
    **6.** Assign the last element of ``lst`` to the variable ``end_elem``. Do this so that it works no matter how long lst is.
    ~~~~
@@ -143,6 +146,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
+   :topics: Sequences/ListSlices
 
    **7.** Create a new list of the 6th through 13th elements of ``lst`` (eight items in all) and assign it to the variable ``output``.
    ~~~~
@@ -164,7 +168,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
-   :tags: Sequences/TheSliceOperator.rst
+   :topics: Sequences/ListSlices
 
    **8.** Create a new list using the 9th through 12th elements (four items in all) of ``new_lst`` and assign it to the variable``sub_lst``.
    ~~~~
@@ -186,6 +190,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
+   :topics: Sequences/StringMethods
 
    **9.** Create a new string from ``str1`` that is all lower case, and assign it to the variable ``output``. Do not hard code this: use a python string method to convert ``str1`` to lower case.
    ~~~~
@@ -207,7 +212,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
-   :tags: Sequences/StringMethods.rst
+   :topics: Sequences/StringMethods
 
    **10.** Create a variable called ``low_stri`` and assign it the value of stri, but lowercased. Do not hard code this: use a python string method to convert str1 to lower case.
    ~~~~
@@ -229,6 +234,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
+   :topics: Sequences/SplitandJoin
 
    **11.** Create a variable ``output`` and assign it to a list whose elements are the words in the string ``str1``.
    ~~~~
@@ -250,7 +256,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
-   :tags: Sequences/SplitandJoin.rst
+   :topics: Sequences/SplitandJoin
 
    **12.** Create a variable called ``wrds`` and assign to it a list whose elements are the words in the string ``sent``. Do not worry about punctuation.
    ~~~~
@@ -272,6 +278,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
+   :topics: Sequences/AppendversusConcatenate
 
    **13.** Add the pet "goldfish" to the end of the list of pets, ``pets``. Do this using a list method.
    ~~~~
@@ -293,7 +300,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
-   :tags: Sequences/AppendversusConcatenate.rst
+   :topics: Sequences/AppendversusConcatenate
 
    **14.** Add the string "dogs" to the end of the list ``pets``. Do this using a list method.
    ~~~~
@@ -315,6 +322,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
+   :topics: Sequences/ListDeletion
 
    **15.** Get rid of all values of 7 from the list, ``numbers``.
    ~~~~
@@ -336,7 +344,7 @@ Exercises
    :language: python
    :autograde: unittest
    :practice: T
-   :tags: Sequences/ListDeletion.rst
+   :topics: Sequences/ListDeletion
 
    **16.** Please get rid of the e's from this list.
    ~~~~

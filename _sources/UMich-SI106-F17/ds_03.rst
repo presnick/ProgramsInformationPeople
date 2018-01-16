@@ -7,8 +7,10 @@ Week 3 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Iteration/Stringsandforloops
 
-    **1.** Write code that will print out every **character** of ``sentence`` on a separate line
+    **1.** Write code that will print out every **character** of ``sentence`` on a separate line.
     ~~~~
     sentence = "Go blue!"
 
@@ -25,12 +27,16 @@ Week 3 Discussion Section
             self.assertIn("G\no\n \nb\nl\nu\ne\n!", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
     myTests().main()
+
+
 .. activecode:: ds_03_02
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Iteration/Listsandforloops
 
-    **2.** Write code that will print out every **word** of ``sentence`` on a separate line
+    **2.** Write code that will print out every **word** of ``sentence`` on a separate line.
     ~~~~
     sentence = "With this regard their currents turn awry"
 
@@ -48,10 +54,13 @@ Week 3 Discussion Section
 
     myTests().main()
 
+
 .. activecode:: ds_03_03
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Iteration/Listsandforloops
 
     **3.** Write code that will print out **the first character** of every word of ``sentence`` on a separate line.
     ~~~~
@@ -71,10 +80,13 @@ Week 3 Discussion Section
 
     myTests().main()
 
+
 .. activecode:: ds_03_04
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Iteration/TheAccumulatorPatternwithLists
 
     **4.** ``nums`` is a list of numbers. Write code that computes the sum of ``nums`` and put that sum into the variable ``sum_nums``.
     ~~~~
@@ -94,10 +106,13 @@ Week 3 Discussion Section
 
     myTests().main()
 
+
 .. activecode:: ds_03_05
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Iteration/TheAccumulatorPatternwithLists
 
     **5.** ``nums`` is a list of numbers. Write code that creates a new list, ``nums_squared``, that contains the square of every item in ``nums``. (Note: You can use either ``n*n`` or ``n**2`` to take the square of ``n``)
     ~~~~
@@ -117,10 +132,13 @@ Week 3 Discussion Section
 
     myTests().main()
 
+
 .. activecode:: ds_03_06
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Iteration/TheAccumulatorPatternwithLists
 
     **6.** ``nums`` is a list of numbers. Write code to compute the average of every number in ``nums`` (the sum of every number divided by the number of items). Store your answer in ``avg_nums`` Your result should be a float. Do not hard code your answer (and do not hard code the number of items in ``nums``)
     ~~~~
@@ -140,13 +158,16 @@ Week 3 Discussion Section
 
     myTests().main()
 
+
 .. activecode:: ds_03_07
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Iteration/TheAccumulatorPatternwithLists
 
     **7.** ``rainfall_mi`` is a string that contains the average number of inches of rainfall in Michigan for every month (in inches) with every month separated by a comma. Write code to compute the total rainfall (by adding the value for every month) by taking the sum of every number of ``rainfall_mi``. Store the total rainfall in the variable ``yearly_rainfall_mi``.
-    The, write code to compute the monthly rainfall by computing the average of every number of ``rainfall_mi``. Store that average in the variable ``monthly_rainfall_mi``. Do not hard-code your answer.
+    Then, write code to compute the monthly rainfall by computing the average of every number of ``rainfall_mi``. Store that average in the variable ``monthly_rainfall_mi``. Do not hard-code your answer.
     ~~~~
     rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"
 
@@ -165,9 +186,11 @@ Week 3 Discussion Section
 
     myTests().main()
 
+
 .. activecode:: ds_03_08
     :language: python
     :hidecode:
+    :topics: Iteration/Listsandforloops
 
     **8.** Write code that uses the turtle framework to draw the following, using a for loop:
 

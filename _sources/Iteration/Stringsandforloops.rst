@@ -36,6 +36,8 @@ Note that the for loop processes the characters in a string or items in a sequen
    :feedback_c: Yes, there are 12 characters, including the blank.
    :feedback_d: The for statement can iterate over a sequence item by item.
    :correct: c
+   :practice: T
+   :topics: Iteration/Stringsandforloops
 
    How many times is the word HELLO printed by the following statements?
    
@@ -56,6 +58,8 @@ Note that the for loop processes the characters in a string or items in a sequen
    :feedback_c: Check the result of s[3:8].  It does not include the item at index 8.
    :feedback_d: Slice returns a sequence.
    :correct: b
+   :practice: T
+   :topics: Iteration/Stringsandforloops
 
    How many times is the word HELLO printed by the following statements?
    

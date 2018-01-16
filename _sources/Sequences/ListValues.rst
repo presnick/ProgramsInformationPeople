@@ -33,6 +33,7 @@ As you would expect, we can also assign list values to variables and pass lists 
    :feedback_b: Lists are heterogeneous, meaning they can have different types of data.
    :correct: a
    :practice: T
+   :topics: Sequences/ListValues
 
    A list can contain only integer items.
 

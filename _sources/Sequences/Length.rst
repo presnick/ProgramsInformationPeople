@@ -63,6 +63,7 @@ two lines of code from above.
    :feedback_b: Yes, there are 12 characters in the string.
    :correct: b
    :practice: T
+   :topics: Sequences/Length
 
    What is printed by the following statements?
    

@@ -49,6 +49,7 @@ Now we are free to make changes to ``b`` without worrying about ``a``.  Again, w
    :feedback_c: Yes, alist was unchanged by the assignment statement. blist was a copy of the references in alist.
    :correct: c
    :practice: T
+   :topics: Sequences/CloningLists
 
    What is printed by the following statements?
    

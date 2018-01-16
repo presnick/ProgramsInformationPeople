@@ -45,6 +45,8 @@ Note how this differs from mutating the original list, as you saw in a :ref:`pre
    :feedback_c: Yes, the for loop processes each item of the list.  5 is added before it is appended to blist.
    :feedback_d: 5 is added to each item before the append operation is performed.
    :correct: c
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
 
    What is printed by the following statements?
 
@@ -57,7 +59,7 @@ Note how this differs from mutating the original list, as you saw in a :ref:`pre
      print(blist)
 
 
-.. mchoice:: test_question_iter_accum_1
+.. mchoice:: test_question_iter_accum_2
    :answer_a: [8,5,14,9,6]
    :answer_b: [8,5,14,9,6,12]
    :answer_c: [3,0,9,4,1,7,5]
@@ -67,6 +69,8 @@ Note how this differs from mutating the original list, as you saw in a :ref:`pre
    :feedback_c: There are too many items in this list.  Only 5 append operations are performed.
    :feedback_d: 5 is added to each list[i] before the append operation is performed.
    :correct: b
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithLists
 
    What is printed by the following statements?
 

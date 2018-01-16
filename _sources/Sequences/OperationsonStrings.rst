@@ -72,6 +72,7 @@ done first, you will need to use parentheses.
    :feedback_d: The + operator has different meanings depending on the operands, in this case, two strings.
    :correct: c
    :practice: T
+   :topics: Sequences/OperationsonStrings
 
    What is printed by the following statements?
    
@@ -92,6 +93,7 @@ done first, you will need to use parentheses.
    :feedback_d: The + and * operator are defined for strings as well as numbers.
    :correct: a
    :practice: T
+   :topics: Sequences/OperationsonStrings
 
    What is printed by the following statements?
    

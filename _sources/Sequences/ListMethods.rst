@@ -107,6 +107,7 @@ analogous thing with these operations will lose the entire list contents (see li
    :feedback_c: append adds at the end, not the beginning.
    :correct: b
    :practice: T
+   :topics: Sequences/ListMethods
 
    What is printed by the following statements?
    

@@ -63,6 +63,7 @@ economize.
    :feedback_b: Yes, since alist and blist both reference the same list, changes to one also change the other.
    :correct: b
    :practice: T
+   :topics: Sequences/Aliasing
 
    What is printed by the following statements?
    

@@ -64,7 +64,7 @@ codelens, where the global variables and the local variables for the square
 function are in separate boxes.
 
 .. codelens:: ch04_clsquare
-   :python: py3
+    :python: py3
 
     def square(x):
         y = x * x

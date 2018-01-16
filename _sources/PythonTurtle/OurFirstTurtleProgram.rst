@@ -77,6 +77,7 @@ instructions that all turtles know how to respond to.
    :feedback_d: No, look at the first example with a turtle.  Which direction does the turtle move?
    :correct: c
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    Which direction does the Turtle face when it is created?
 
@@ -84,6 +85,7 @@ instructions that all turtles know how to respond to.
 
 .. parsonsprob:: 3_1
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    The following program uses a turtle to draw a capital L as shown in the picture to the left of this text, <img src="../_static/TurtleL4.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  Remember that the turtle starts off facing east when it is created.  The turtle should turn to face south and draw a line that is 150 pixels long and then turn to face east and draw a line that is 75 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.  <br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
    -----
@@ -99,6 +101,7 @@ instructions that all turtles know how to respond to.
 
 .. parsonsprob:: 3_2
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    The following program uses a turtle to draw a checkmark as shown to the left, <img src="../_static/TurtleCheckmark4.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should turn to face southeast, draw a line that is 75 pixels long, then turn to face northeast, and draw a line that is 150 pixels long.  We have added a compass to the picture to indicate the directions north, south, west, and east.  Northeast is between north and east. Southeast is between south and east. <br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
    -----
@@ -116,6 +119,7 @@ instructions that all turtles know how to respond to.
 
 .. parsonsprob:: 3_3
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    The following program uses a turtle to draw a single line to the west as shown to the left, <img src="../_static/TurtleLineToWest.png" width="150" align="left" hspace="10" vspace="5" /> but the program lines are mixed up.  The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle.  The turtle should then turn to face west and draw a line that is 75 pixels long.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>   
    -----
@@ -197,6 +201,7 @@ screen until we click on it.
    :feedback_d: If we leave it out, Python will give an error saying that it does not know about the name &quotturtle&quot when it reaches the line &quotwn = turtle.Screen()&quot
    :correct: b
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    Consider the following code:
 
@@ -220,6 +225,7 @@ screen until we click on it.
    :feedback_c: Yes, the Turtle type is defined in the module turtle.  Remember that Python is case sensitive and Turtle is different from turtle.
    :correct: c
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    Why do we type ``turtle.Turtle()`` to get a new Turtle object?
 
@@ -230,6 +236,7 @@ screen until we click on it.
    :feedback_b: A variable, including one referring to a Turtle object, can have whatever name you choose as long as it follows the naming conventions from Chapter 2.
    :correct: a
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    True or False: A Turtle object can have any name that follows the naming rules from Chapter 2.
 
@@ -246,6 +253,7 @@ screen until we click on it.
    :feedback_e: Yes, the turtle starts facing east, so to turn it north you can turn left 90 or right 270 degrees.
    :correct: e
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    Which of the following code would produce the following image? 
 
@@ -256,6 +264,7 @@ screen until we click on it.
 
 .. parsonsprob:: 3_4
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    The following program uses a turtle to draw a capital L in white on a blue background as shown to the left, <img src="../_static/BlueTurtleL.png" width="150" align="left" hspace="10" vspace="5" /> but the lines are mixed up.  The program should do all necessary set-up and create the turtle and set the pen size to 10.  The turtle should then turn to face south, draw a line that is 150 pixels long, turn to face east, and draw a line that is 75 pixels long.   Finally, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
    -----
@@ -277,6 +286,7 @@ screen until we click on it.
 
 .. parsonsprob:: 3_5
    :practice: T
+   :topics: PythonTurtle/OurFirstTurtleProgram
 
    The following program uses a turtle to draw a capital T in white on a green background as shown to the left, <img src="../_static/TurtleT.png" width="150" align="left" hspace="10" vspace="5"/> but the lines are mixed up.  The program should do all necessary set-up, create the turtle, and set the pen size to 10.  After that the turtle should turn to face north, draw a line that is 150 pixels long, turn to face west, and draw a line that is 50 pixels long.  Next, the turtle should turn 180 degrees and draw a line that is 100 pixels long.  Finally, set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>  
    -----

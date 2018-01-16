@@ -78,6 +78,7 @@ desired location.
    :feedback_c: Item assignment is allowed with lists.  Lists are mutable.
    :correct: b
    :practice: T
+   :topics: Sequences/ListsareMutable
 
    What is printed by the following statements?
    

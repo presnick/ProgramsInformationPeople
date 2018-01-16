@@ -63,6 +63,7 @@ It is just a string of length 1.
    :feedback_d: [ ] is the index operator.
    :correct: b
    :practice: T
+   :topics: Sequences/IndexOperatorWorkingwiththeCharactersofaString
 
    What is printed by the following statements?
       
@@ -84,6 +85,7 @@ It is just a string of length 1.
    :feedback_e: [ ] operator returns a string that can be concatenated with another string.
    :correct: b
    :practice: T
+   :topics: Sequences/IndexOperatorWorkingwiththeCharactersofaString
 
    What is printed by the following statements?
    
