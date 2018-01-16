@@ -119,14 +119,12 @@ Week 2 Discussion Section
    :practice: T
    :topics: SimplePythonData/StatementsandExpressions
 
-   4. Order the code fragments in the order in which the Python interpreter would evaluate them.
-
-   .. sourcecode:: python
-
-        x = 1
-        y = 2
-        square(x + square(y))
-
+   <b>4.</b> Order the code fragments in the order in which the Python interpreter would evaluate them.<br>
+   <code>
+       x = 1<br>
+       y = 2<br>
+       square(x + square(y))
+   </code>
 
    -----
    assign 1 to x
