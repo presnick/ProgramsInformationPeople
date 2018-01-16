@@ -431,3 +431,14 @@ Problem Set 4
             self.assertEqual(shortest_string(["", "X"*(10**4)]), "", "Testing for example input")
 
     myTests().main()
+
+.. activecode:: ps_04_13
+    :language: python
+
+    **13.** Write code and/or a python comment that demonstrates your understanding of the material in this problem set. Be sure to click "Run" even if it's just a comment, because that's what will save it so that we can grade it. This assignment requires effort and demonstration of true understanding and will be evaluated carefully (this does not mean it needs to be long, just clear and accurate. In fact, it should be brief; ideally just 2-3 sentences!).
+
+    Your submission must be your own work (i.e., don't collaborate with other students on this problem even if you've been collaborating with them on the rest of the problems), and you must credit any resources you reference (you do not need to reference any).
+
+    After grading, you will receive a response, in a comment, from an instructor, which will be visible on this assignment page. If you do not receive full credit for this problem, you may initiate a conversation with your GSI by adding a comment *on Canvas* on the graded assignment. If you want to update code here and refer to it in your Canvas comment, you can do that. There may be several rounds of comments and responses on Canvas before the GSI is satisfied that you have demonstrated a correct understanding. You must respond to the GSI within 48 hours in order for that conversation to remain "open". When the GSI is satisfied, they will update your grade accordingly.
+
+    ~~~~
