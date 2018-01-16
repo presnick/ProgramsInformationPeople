@@ -3,6 +3,7 @@
 Week 3 Discussion Section
 -------------------------
 
+
 .. activecode:: ds_03_01
     :language: python
     :autograde: unittest
@@ -93,7 +94,9 @@ Week 3 Discussion Section
     nums = [0, 3, 2, 5]
 
     # Write your code here!
-
+    # sum_nums = ???? what will you initialize the accumulator to?
+    # ???? What will you iterate through?
+    # ???? How will you update the accumulator variable?
 
     =====
 
@@ -114,11 +117,14 @@ Week 3 Discussion Section
     :practice: T
     :topics: Iteration/TheAccumulatorPatternwithLists
 
-    **5.** ``nums`` is a list of numbers. Write code that creates a new list, ``nums_squared``, that contains the square of every item in ``nums``. (Note: You can use either ``n*n`` or ``n**2`` to take the square of ``n``)
+    **5.** ``nums`` is a list of numbers. Write code that creates a new list, ``nums_squared``, that contains the square of every item in ``nums``. (Note: You can use either ``n*n`` or ``n**2`` to take the square of ``n``. The square function isn't defined for you here, so you can't use it.)
     ~~~~
     nums = [0, 3, 2, 5]
 
     # Write your code here!
+    nums_squared = # ???? what goes here?
+    # ???? What will you iterate through?
+    # ???? How will you update the accumulator variable?
 
 
     =====
@@ -146,6 +152,7 @@ Week 3 Discussion Section
 
     # Write your code here!
 
+    # Write down your plan as comments. How will you solve this problem?
 
     =====
 
@@ -172,6 +179,8 @@ Week 3 Discussion Section
     rainfall_mi = "1.65, 1.46, 2.05, 3.03, 3.35, 3.46, 2.83, 3.23, 3.5, 2.52, 2.8, 1.85"
 
     # Write your code here!
+    # First start by writing down your plan as comments
+
 
 
     =====

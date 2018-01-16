@@ -60,8 +60,6 @@ Week 2 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
-    :practice: T
-    :topics: SimplePythonData/Input
 
     **3.** Write code that asks the user to enter a temperature in Fahrenheit and prints that temperature in Celsius. The formula to convert Fahrenheit to Celsius is: C = (F-32)*5/9. For example, if the user enters 90, your program should output 32.222. If the user enters -20, your code should output -28.888.
     ~~~~
@@ -118,36 +116,36 @@ Week 2 Discussion Section
 
 
 .. parsonsprob:: ds_02_04
-    :practice: T
-    :topics: SimplePythonData/StatementsandExpressions
+   :practice: T
+   :topics: SimplePythonData/StatementsandExpressions
 
-    **4.** Arrange these sentences in the order they are executed in the following code.
-    .. sourcecode:: python
+   4. Order the code fragments in the order in which the Python interpreter would evaluate them.
+
+   .. sourcecode:: python
 
         x = 1
         y = 2
         square(x + square(y))
 
-    Order the code fragments in the order in which the Python interpreter would evaluate them.
 
-    -----
-    assign 1 to x
-    =====
-    assign 2 to y
-    =====
-    look up the variable square to get the function object
-    =====
-    look up the variable x to get 1
-    =====
-    look up square, again, to get the function object
-    =====
-    look up the variable y to get 2
-    =====
-    run the square function on input 2, returning the value 4
-    =====
-    add 1 and 4 to get 5
-    =====
-    run the square function, again, on input 5, returning the value 25
+   -----
+   assign 1 to x
+   =====
+   assign 2 to y
+   =====
+   look up the variable square to get the function object
+   =====
+   look up the variable x to get 1
+   =====
+   look up square, again, to get the function object
+   =====
+   look up the variable y to get 2
+   =====
+   run the square function on input 2, returning the value 4
+   =====
+   add 1 and 4 to get 5
+   =====
+   run the square function, again, on input 5, returning the value 25
 
 
 .. activecode:: ds_02_05
@@ -223,6 +221,22 @@ Week 2 Discussion Section
     myTests().main()
 
 
+
+.. activecode:: ds_02_08
+    :language: python
+    :hidecode:
+
+    **8.** Add comments to the following code. In particular, which line creates a turtle object, and which line or lines invoke methods on the turtle. For method invocations, what is the name of the method, what causes the method to be invoked, and what are the arguments passed to it.
+
+    ~~~~
+    import turtle             # allows us to use the turtles library
+    wn = turtle.Screen()      # creates a graphics window
+    alex = turtle.Turtle()
+    alex.forward(150)
+    alex.left(90)
+    alex.forward(75)
+
+
 .. activecode:: sqrt_fn
     :language: python
     :nopre:
@@ -234,3 +248,5 @@ Week 2 Discussion Section
 
     def sqrt(num):
         return num**0.5
+
+

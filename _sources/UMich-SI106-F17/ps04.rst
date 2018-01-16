@@ -5,6 +5,47 @@ Problem Set 4
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **Save & Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
 
+.. activecode:: ps_03_08
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **0.** The dictionary ``umSchools`` maps the names of schools at Michigan to the year they were founded.
+    Write code that determines which school is the oldest and store the name of the school into the variable ``oldest_school``.
+    Hard-coded answers will receive no credit.
+    ~~~~
+    umSchools = {
+      "A. Alfred Taubman College of Architecture & Urban Planning": 1906,
+      "College of Engineering": 1854,
+      "College of Literature, Science, and the Arts": 1841,
+      "Gerald R. Ford School of Public Policy": 1914,
+      "Horace H. Rackham School of Graduate Studies": 1912,
+      "Penny W. Stamps School of Art & Design": 1974,
+      "School of Dentistry": 1875,
+      "School of Education": 1921,
+      "School of Information": 1996,
+      "School of Kinesiology": 1984,
+      "School of Law": 1859,
+      "School of Medicine": 1850,
+      "School of Music, Theatre & Dance": 1880,
+      "School of Natural Resources & Environment": 1927,
+      "School of Nursing": 1893,
+      "School of Pharmacy": 1876,
+      "School of Public Health": 1941,
+      "School of Social Work": 1951,
+      "Stephen M. Ross School of Business": 1924
+    }
+    =====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+        def testOne(self):
+            a = sorted(umSchools, key=lambda x: umSchools[x])[0]
+            self.assertEqual(oldest_school, a, "Testing that oldest_school has been correctly set")
+
+    myTests().main()
+
+
 .. activecode:: ps_04_01
 	:language: python
 	:autograde: unittest
@@ -275,7 +316,7 @@ Problem Set 4
 
     ~~~~
     def subtract_five(inp):
-        print inp-5
+        print(inp-5)
 
     y = subtract_five(9) - 6
 
@@ -390,3 +431,14 @@ Problem Set 4
             self.assertEqual(shortest_string(["", "X"*(10**4)]), "", "Testing for example input")
 
     myTests().main()
+
+.. activecode:: ps_04_13
+    :language: python
+
+    **13.** Write code and/or a python comment that demonstrates your understanding of the material in this problem set. Be sure to click "Run" even if it's just a comment, because that's what will save it so that we can grade it. This assignment requires effort and demonstration of true understanding and will be evaluated carefully (this does not mean it needs to be long, just clear and accurate. In fact, it should be brief; ideally just 2-3 sentences!).
+
+    Your submission must be your own work (i.e., don't collaborate with other students on this problem even if you've been collaborating with them on the rest of the problems), and you must credit any resources you reference (you do not need to reference any).
+
+    After grading, you will receive a response, in a comment, from an instructor, which will be visible on this assignment page. If you do not receive full credit for this problem, you may initiate a conversation with your GSI by adding a comment *on Canvas* on the graded assignment. If you want to update code here and refer to it in your Canvas comment, you can do that. There may be several rounds of comments and responses on Canvas before the GSI is satisfied that you have demonstrated a correct understanding. You must respond to the GSI within 48 hours in order for that conversation to remain "open". When the GSI is satisfied, they will update your grade accordingly.
+
+    ~~~~
