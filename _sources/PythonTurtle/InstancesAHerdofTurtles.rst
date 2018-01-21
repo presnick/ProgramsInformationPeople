@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Instances --- A Herd of Turtles
--------------------------------
+Instances: A Herd of Turtles
+----------------------------
 
 Just like we can have many different integers in a program, we can have many
 turtles.  Each of them is an independent object and we call each one an **instance** of the Turtle type (class).  Each instance has its own
