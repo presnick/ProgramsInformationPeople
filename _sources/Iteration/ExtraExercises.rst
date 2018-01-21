@@ -2,7 +2,7 @@ Extra Exercises
 ===============
 
 
-1. (You'll work on on this one in class. Feel free to start thinking about it.) In Robert McCloskey's
+1. (You may work on on this one in class. Feel free to start thinking about it.) In Robert McCloskey's
    book *Make Way for Ducklings*, the names of the ducklings are Jack, Kack, Lack,
    Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.
 

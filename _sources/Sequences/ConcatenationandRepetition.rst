@@ -35,6 +35,7 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
 
 
 .. codelens:: chp09_concatid
+    :python: py3
 
     fruit = ["apple","orange","banana","cherry"]
     numlist = [6,7]
@@ -56,7 +57,9 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
    :feedback_c: Yes, a new list with all the items of the first list followed by all those from the second.
    :feedback_d: Concatenation does not add the individual items.
    :correct: c
-   
+   :practice: T
+   :topics: Sequences/ConcatenationandRepetition
+
    What is printed by the following statements?
    
    .. code-block:: python
@@ -77,7 +80,9 @@ Pay particular attention to the fact that when ``newlist`` is created by the sta
    :feedback_c: Yes, the items of the list are repeated 3 times, one after another.
    :feedback_d: Repetition does not multiply the individual items.
    :correct: c
-   
+   :practice: T
+   :topics: Sequences/ConcatenationandRepetition
+
    What is printed by the following statements?
    
    .. code-block:: python

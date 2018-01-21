@@ -69,6 +69,8 @@ quotes are removed.  However, if we print the type, we can see that it is defini
    :feedback_c: When converting to an integer, the int function does not round.
    :feedback_d: The int function removes the fractional part of 53.785 and returns an integer, which is then printed.
    :correct: b
+   :practice: T
+   :topics: SimplePythonData/Typeconversionfunctions
 
    What value is printed when the following statement executes?
 

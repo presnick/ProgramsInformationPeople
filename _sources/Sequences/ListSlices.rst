@@ -33,7 +33,9 @@ end of the sequence.
    :feedback_b: By leaving out the upper bound on the slice, we go up to and including the last item.
    :feedback_c: Index values start at 0.
    :correct: a
-   
+   :practice: T
+   :topics: Sequences/ListSlices
+
    What is printed by the following statements?
    
    .. code-block:: python

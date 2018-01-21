@@ -10,10 +10,14 @@
 Exercises
 =========
 
-1. Assign the value of the 34th element of ``lst`` to the variable ``output``.
-
 .. activecode:: ee_ch9_01
-   
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/AccessingElements
+
+   **1.** Assign the value of the 34th element of ``lst`` to the variable ``output``.
+   ~~~~
    lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
    
    =====
@@ -27,11 +31,15 @@ Exercises
 
    myTests().main()
 
-1.1 Assign the value of the 23rd element of ``lst`` to the variable ``checking``.
 
 .. activecode:: ee_ch9_011
-   :tags: Sequences/AccessingElements.rst
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/AccessingElements
    
+   **2.** Assign the value of the 23rd element of ``lst`` to the variable ``checking``.
+   ~~~~
    lst = ["hi", "goodbye", "python", "106", "506", 91, ['all', 'Paul', 'Jackie', "UMSI", 1, "Stephen", 4.5], 109, "chair", "pizza", "wolverine", 2017, 3.92, 1817, "account", "readings", "papers", 12, "facebook", "twitter", 193.2, "snapchat", "leaders and the best", "social", "1986", 9, 29, "holiday", ["women", "olympics", "gold", "rio", 21, "2016", "men"], "26trombones"]
 
    =====
@@ -45,10 +53,15 @@ Exercises
 
    myTests().main()
 
-2. Assign the number of elements in ``lst`` to the variable ``output``.
 
 .. activecode:: ee_ch9_02
-  
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/ListLength
+
+   **3.** Assign the number of elements in ``lst`` to the variable ``output``.
+   ~~~~
    lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
    
    =====
@@ -62,11 +75,15 @@ Exercises
 
    myTests().main()
 
-2.1 Assign the number of elements in ``lst`` to the variable ``num_lst``.
 
 .. activecode:: ee_ch9_021
-   :tags: Sequences/Length.rst
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/ListLength
    
+   **4.** Assign the number of elements in ``lst`` to the variable ``num_lst``.
+   ~~~~
    lst = ["hi", "goodbye", "python", "106", "506", 91, ['all', 'Paul', 'Jackie', "UMSI", 1, "Stephen", 4.5], 109, "chair", "pizza", "wolverine", 2017, 3.92, 1817, "account", "readings", "papers", 12, "facebook", "twitter", 193.2, "snapchat", "leaders and the best", "social", "1986", 9, 29, "holiday", ["women", "olympics", "gold", "rio", 21, "2016", "men"], "26trombones"]
 
    =====
@@ -80,10 +97,15 @@ Exercises
 
    myTests().main()
 
-3. Assign the value of the last element of ``lst`` to the variable the variable ``output``. Do this so that it doesn't matter the length of lst. 
 
 .. activecode:: ee_ch9_03
-   
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/AccessingElements
+
+   **5.** Assign the value of the last element of ``lst`` to the variable ``output``. Do this so that the length of lst doesn't matter.
+   ~~~~
    lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
    
    =====
@@ -97,11 +119,15 @@ Exercises
 
    myTests().main()
 
-3.1 Assign the last element of ``lst`` to the variable ``end_elem``. Do this so that it works no matter how long lst is.
 
 .. activecode:: ee_ch9_031
-   :tags: Sequences/AccessingElements.rst
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/AccessingElements
    
+   **6.** Assign the last element of ``lst`` to the variable ``end_elem``. Do this so that it works no matter how long lst is.
+   ~~~~
    lst = ["hi", "goodbye", "python", "106", "506", 91, ['all', 'Paul', 'Jackie', "UMSI", 1, "Stephen", 4.5], 109, "chair", "pizza", "wolverine", 2017, 3.92, 1817, "account", "readings", "papers", 12, "facebook", "twitter", 193.2, "snapchat", "leaders and the best", "social", "1986", 9, 29, "holiday", ["women", "olympics", "gold", "rio", 21, "2016", "men"], "26trombones"]
 
    =====
@@ -115,10 +141,15 @@ Exercises
 
    myTests().main()
 
-4. Create a new list of the 6th through 13th elements of ``lst`` (eight items in all) and assign it to the variable ``output``.
 
 .. activecode:: ee_ch9_04
-   
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/ListSlices
+
+   **7.** Create a new list of the 6th through 13th elements of ``lst`` (eight items in all) and assign it to the variable ``output``.
+   ~~~~
    lst = ["swimming", 2, "water bottle", 44, "lollipop", "shine", "marsh", "winter", "donkey", "rain", ["Rio", "Beijing", "London"], [1,2,3], "gold", "bronze", "silver", "mathematician", "scientist", "actor", "actress", "win", "cell phone", "leg", "running", "horse", "socket", "plug", ["Phelps", "le Clos", "Lochte"], "drink", 22, "happyfeet", "penguins"]
 
    =====
@@ -132,11 +163,15 @@ Exercises
 
    myTests().main()
 
-4.1 Create a new list using the 9th through 12th elements (four items in all) of ``new_lst`` and assign it to the variable``sub_lst``.
 
 .. activecode:: ee_ch9_041
-   :tags: Sequences/TheSliceOperator.rst
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/ListSlices
 
+   **8.** Create a new list using the 9th through 12th elements (four items in all) of ``new_lst`` and assign it to the variable``sub_lst``.
+   ~~~~
    new_lst = ["computer", "luxurious", "basket", "crime", 0, 2.49, "institution", "slice", "sun", ["water", "air", "fire", "earth"], "games", 2.7, "code", "java", ["birthday", "celebration", 1817, "party", "cake", 5], "rain", "thunderstorm", "top down"]
 
    =====
@@ -150,10 +185,15 @@ Exercises
 
    myTests().main()
 
-5. Create a new string from ``str1`` that is all lower case, and assign it to the variable ``output``. Do not hard code this: use a python string method to convert ``str1`` to lower case.
 
 .. activecode:: ee_ch9_05
-      
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/StringMethods
+
+   **9.** Create a new string from ``str1`` that is all lower case, and assign it to the variable ``output``. Do not hard code this: use a python string method to convert ``str1`` to lower case.
+   ~~~~
    str1 = "OH THE PLACES YOU WILL GO"
 
    =====
@@ -167,11 +207,15 @@ Exercises
 
    myTests().main()
 
-5.1 Create a variable called ``low_stri`` and assign it the value of stri, but lowercased. Do not hard code this: use a python string method to convert str1 to lower case.
 
 .. activecode:: ee_ch9_051
-   :tags: Sequences/StringMethods.rst
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/StringMethods
 
+   **10.** Create a variable called ``low_stri`` and assign it the value of stri, but lowercased. Do not hard code this: use a python string method to convert str1 to lower case.
+   ~~~~
    stri = "HELLO AND WELCOME TO THE ACTIVECODE WINDOW."
 
    =====
@@ -185,10 +229,15 @@ Exercises
 
    myTests().main()
 
-6. Create a variable ``output`` and assign it to a list whose elements are the words in the string ``str1``. 
 
 .. activecode:: ee_ch9_06
-      
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/SplitandJoin
+
+   **11.** Create a variable ``output`` and assign it to a list whose elements are the words in the string ``str1``.
+   ~~~~
    str1 = "OH THE PLACES YOU'LL GO"
 
    =====
@@ -202,11 +251,15 @@ Exercises
 
    myTests().main()
 
-6.1 Create a variable called ``wrds`` and assign to it a list whose elements are the words in the string ``sent``. Do not worry about punctuation.
 
 .. activecode:: ee_ch9_061
-   :tags: Sequences/SplitandJoin.rst
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/SplitandJoin
 
+   **12.** Create a variable called ``wrds`` and assign to it a list whose elements are the words in the string ``sent``. Do not worry about punctuation.
+   ~~~~
    sent = "The bicentennial for our university is in 2017!"
 
    =====
@@ -221,10 +274,14 @@ Exercises
    myTests().main()
 
 
-7. Add the pet "goldfish" to the end of the list of pets, ``pets``. Do this using a list method.
-
 .. activecode:: ee_ch9_07
-    
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/AppendversusConcatenate
+
+   **13.** Add the pet "goldfish" to the end of the list of pets, ``pets``. Do this using a list method.
+   ~~~~
    pets = ["cat", "dog", "lizard", "parrot", "hamster"]
 
    =====
@@ -239,11 +296,14 @@ Exercises
    myTests().main()
 
 
-7.1 Add the string "dogs" to the end of the list ``pets``. Do this using a list method.
-
 .. activecode:: ee_ch_071
-   :tags: Sequences/AppendversusConcatenate.rst
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/AppendversusConcatenate
 
+   **14.** Add the string "dogs" to the end of the list ``pets``. Do this using a list method.
+   ~~~~
    pets = ["cats", "birds", "pigs", "hampsters", "turtles", "snakes", "mice", "rats", "fish"]
 
    =====
@@ -257,10 +317,15 @@ Exercises
 
    myTests().main()
 
-8. Get rid of all values of 7 from the list, ``numbers``. 
 
 .. activecode:: ee_ch9_08
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/ListDeletion
 
+   **15.** Get rid of all values of 7 from the list, ``numbers``.
+   ~~~~
    numbers = [1, 1, 2, 2, 3, 3, 6, 6, 7, 7, 7, 7, 8, 8, 12, 15]
 
    =====
@@ -274,11 +339,15 @@ Exercises
 
    myTests().main()
 
-8.1 Please get rid of the e's from this list.
 
 .. activecode:: ee_ch_081
-   :tags: Sequences/ListDeletion.rst
+   :language: python
+   :autograde: unittest
+   :practice: T
+   :topics: Sequences/ListDeletion
 
+   **16.** Please get rid of the e's from this list.
+   ~~~~
    letts = ['a', 'b', 'b', 'c', 'd', 'e', 'e', 'e', 'f', 'f']
 
    =====
@@ -291,3 +360,4 @@ Exercises
          self.assertEqual(letts, ['a', 'b', 'b', 'c', 'd', 'f', 'f'], "Testing the list letts.") 
 
    myTests().main()
+

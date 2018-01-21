@@ -57,7 +57,8 @@ running changeit does change mylst. The explanation is above, about the sharing
 of mutable objects. Try stepping through it in codelens to see the difference.
 
 .. codelens:: function2_8
-   
+   :python: py3
+
    def double(n):
        n = 2 * n
    

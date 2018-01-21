@@ -133,7 +133,7 @@ Problem Set 3
     :hidecode:
 
     **6.** The dictionary ``umSchools`` maps the names of schools at Michigan to the year they were founded.
-    Write code that assigns the year that the School of Information was founded to the variable ``si_founded`` (so ``si_founded`` should end up with the value ``1969``).
+    Write code that assigns the year that the School of Information was founded to the variable ``si_founded`` (so ``si_founded`` should end up with the value ``1996``).
 
     Hard-coded answers will receive no credit.
     ~~~~
@@ -146,7 +146,7 @@ Problem Set 3
       "Penny W. Stamps School of Art & Design": 1974,
       "School of Dentistry": 1875,
       "School of Education": 1921,
-      "School of Information": 1969,
+      "School of Information": 1996,
       "School of Kinesiology": 1984,
       "School of Law": 1859,
       "School of Medicine": 1850,
@@ -163,7 +163,7 @@ Problem Set 3
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(si_founded, 1969, "Testing that si_founded has been set to the correct value")
+            self.assertEqual(si_founded, 1996, "Testing that si_founded has been set to the correct value")
 
     myTests().main()
 
@@ -187,7 +187,7 @@ Problem Set 3
       "Penny W. Stamps School of Art & Design": 1974,
       "School of Dentistry": 1875,
       "School of Education": 1921,
-      "School of Information": 1969,
+      "School of Information": 1996,
       "School of Kinesiology": 1984,
       "School of Law": 1859,
       "School of Medicine": 1850,
@@ -209,42 +209,33 @@ Problem Set 3
 
     myTests().main()
 
-.. activecode:: ps_03_08
+
+.. activecode:: ps_03_09
     :language: python
     :autograde: unittest
     :hidecode:
 
-    **8.** The dictionary ``umSchools`` maps the names of schools at Michigan to the year they were founded.
-    Write code that determines which school is the oldest and store the name of the school into the variable ``oldest_school``.
-    Hard-coded answers will receive no credit.
+    **8.** Write a program that requests inputs from the user, repeatedly, until the user enters the word "stop". At
+    the end it should print out a list containing all the words the user entered, in reverse order. So, if the user
+    enters, in succession, `You`, `are`, `smart`, and `stop`, it will print out `['smart', 'are', 'You']`
+
     ~~~~
-    umSchools = {
-      "A. Alfred Taubman College of Architecture & Urban Planning": 1906,
-      "College of Engineering": 1854,
-      "College of Literature, Science, and the Arts": 1841,
-      "Gerald R. Ford School of Public Policy": 1914,
-      "Horace H. Rackham School of Graduate Studies": 1912,
-      "Penny W. Stamps School of Art & Design": 1974,
-      "School of Dentistry": 1875,
-      "School of Education": 1921,
-      "School of Information": 1969,
-      "School of Kinesiology": 1984,
-      "School of Law": 1859,
-      "School of Medicine": 1850,
-      "School of Music, Theatre & Dance": 1880,
-      "School of Natural Resources & Environment": 1927,
-      "School of Nursing": 1893,
-      "School of Pharmacy": 1876,
-      "School of Public Health": 1941,
-      "School of Social Work": 1951,
-      "Stephen M. Ross School of Business": 1924
-    }
-    =====
-    from unittest.gui import TestCaseGui
 
-    class myTests(TestCaseGui):
-        def testOne(self):
-            a = sorted(umSchools, key=lambda x: umSchools[x])[0]
-            self.assertEqual(oldest_school, a, "Testing that oldest_school has been correctly set")
+    # Write your code here
 
-    myTests().main()
+    ====
+
+    print("===========")
+    print("\n\nThere are no tests for this problem")
+
+.. activecode:: ps_03_10
+    :language: python
+
+    **9.** Write code and/or a python comment that demonstrates your understanding of the material in this problem set. Be sure to click "Run" even if it's just a comment, because that's what will save it so that we can grade it. This assignment requires effort and demonstration of true understanding and will be evaluated carefully (this does not mean it needs to be long, just clear and accurate. In fact, it should be brief; ideally just 2-3 sentences!).
+
+    Your submission must be your own work (i.e., don't collaborate with other students on this problem even if you've been collaborating with them on the rest of the problems), and you must credit any resources you reference (you do not need to reference any).
+
+    After grading, you will receive a response, in a comment, from an instructor, which will be visible on this assignment page. If you do not receive full credit for this problem, you may initiate a conversation with your GSI by adding a comment *on Canvas* on the graded assignment. If you want to update code here and refer to it in your Canvas comment, you can do that. There may be several rounds of comments and responses on Canvas before the GSI is satisfied that you have demonstrated a correct understanding. You must respond to the GSI within 48 hours in order for that conversation to remain "open". When the GSI is satisfied, they will update your grade accordingly.
+
+    ~~~~
+

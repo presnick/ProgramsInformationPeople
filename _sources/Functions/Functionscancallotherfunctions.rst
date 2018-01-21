@@ -22,6 +22,7 @@ The second function called ``sum_of_squares`` makes use of square to compute
 the sum of three numbers that have been squared.
 
 .. codelens:: functions2_6
+    :python: py3
 
     def square(x):
         y = x * x

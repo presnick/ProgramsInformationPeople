@@ -36,6 +36,7 @@ Once inside the iteration, it is required that you update the accumulator.
 Here is the same program in codelens.  Step thru the function and watch the "running total" accumulate the result.
 
 .. codelens:: iter_accum2
+   :python: py3
 
    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
    accum = 0
@@ -59,6 +60,8 @@ Here is the same program in codelens.  Step thru the function and watch the "run
    :feedback_b: Assignment statements are perfectly legal inside loops and will not cause an error.
    :feedback_c: Good thought: the variable accum will be reset to 0 each time through the loop. But then it adds the current item.
    :correct: a
+   :practice: T
+   :topics: Iteration/TheAccumulatorPattern
 
    Consider the following code:
 
@@ -75,10 +78,12 @@ Here is the same program in codelens.  Step thru the function and watch the "run
 
 
 .. parsonsprob:: question5_4_1p
+   :practice: T
+   :topics: Iteration/TheAccumulatorPattern
 
    Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.
    -----
-   n = int(input('How many even numbers would you like to add together?'))
+   n = int(input('How many odd numbers would you like to add together?'))
    thesum = 0
    oddnumber = 1
    =====

@@ -31,7 +31,8 @@ assignment does not work for strings.  Recall that strings are immutable.
 Here is the same example in codelens so that you can step thru the statements and see the changes to the list elements.
 
 .. codelens:: item_assign
-    
+    :python: py3
+
     fruit = ["banana", "apple", "cherry"]
 
     fruit[0] = "pear"
@@ -76,7 +77,9 @@ desired location.
    :feedback_b: Yes, the value True is placed in the list at index 2.  It replaces 8.
    :feedback_c: Item assignment is allowed with lists.  Lists are mutable.
    :correct: b
-   
+   :practice: T
+   :topics: Sequences/ListsareMutable
+
    What is printed by the following statements?
    
    .. code-block:: python

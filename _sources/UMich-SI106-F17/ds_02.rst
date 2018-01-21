@@ -8,8 +8,9 @@ Week 2 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :topics: SimplePythonData/FunctionCalls
 
-    **1.** Suppose the ``sqrt()`` function returns the square root of its arguments. Write a statement that will assign a variable ``c`` to the square root of ``a`` squared plus the value of ``b`` squared (Pythagorean theorem).
+    **1.** Suppose the ``sqrt()`` function returns the square root of its arguments. Write a statement that will assign the square root of ``a`` squared plus the value of ``b`` squared (Pythagorean theorem) to a variable ``c``.
     ~~~~
     a = 3.0
     b = 4.0
@@ -34,6 +35,8 @@ Week 2 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Sequences/OperationsonStrings
 
     **2.** Write code that asks the user to enter their name and then prints out ``"Hello, <name>!"``.
     ~~~~
@@ -111,60 +114,46 @@ Week 2 Discussion Section
 ..        Call the method .move of the Turtle ella on its input integer
 ..
 
-**4.** Here's another complicated expression. Arrange these sentences in the order they are executed in the following code.
 
-    .. sourcecode:: python
+.. parsonsprob:: ds_02_04
+   :practice: T
+   :topics: SimplePythonData/StatementsandExpressions
 
-        x = 1
-        y = 2
-        square(x + square(y))
+   <b>4.</b> Order the code fragments in the order in which the Python interpreter would evaluate them.<br>
+   <code>
+       x = 1<br>
+       y = 2<br>
+       square(x + square(y))
+   </code>
 
-    .. parsonsprob:: ds_02_04
-
-       Order the code fragments in the order in which the Python interpreter would evaluate them.
-
-       -----
-       assign x to 1
-       =====
-       assign y to 2
-       =====
-       look up the variable square to get the function object
-       =====
-       look up the variable x to get 1
-       =====
-       look up square, again, to get the function object
-       =====
-       look up the variable y to get 2
-       =====
-       run the square function on input 2, returning the value 4
-       =====
-       add 1 and 4 to get 5
-       =====
-       run the square function, again, on input 5, returning the value 25
-
-
-
-.. activecode:: ds_02_08
-    :language: python
-    :hidecode:
-
-    Add comments to the following code. In particular, which line creates a turtle object, and which line or lines invoke methods on the turtle. For method invocations, what is the name of the method, what causes the method to be invoked, and what are the arguments passed to it.
-
-    ~~~~
-    import turtle             # allows us to use the turtles library
-    wn = turtle.Screen()      # creates a graphics window
-    alex = turtle.Turtle()
-    alex.forward(150)
-    alex.left(90)
-    alex.forward(75)
+   -----
+   assign 1 to x
+   =====
+   assign 2 to y
+   =====
+   look up the variable square to get the function object
+   =====
+   look up the variable x to get 1
+   =====
+   look up square, again, to get the function object
+   =====
+   look up the variable y to get 2
+   =====
+   run the square function on input 2, returning the value 4
+   =====
+   add 1 and 4 to get 5
+   =====
+   run the square function, again, on input 5, returning the value 25
 
 
 .. activecode:: ds_02_05
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Sequences/IndexOperatorWorkingwiththeCharactersofaString
 
-    **5.** Write code that assigns ``last_elem`` to the **last** element of the sequence ``S``. Don't hard-code your answer (in other words, if we changed ``S``, your answer should still be valid)
+    **5.** Write code that assigns the **last** element of the sequence ``S`` to ``last_elem``. Don't hard-code your answer (in other words, if we changed ``S``, your answer should still be valid)
     ~~~~
     S = ["ab", "cd", "ef", "gh"]
 
@@ -177,7 +166,7 @@ Week 2 Discussion Section
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(last_elem, "gh", "Testing that last_elem is assigned to 'gh'")
+            self.assertEqual(last_elem, "gh", "Testing that 'gh' is assigned to last_elem.")
 
     myTests().main()
 
@@ -185,8 +174,10 @@ Week 2 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Sequences/SplitandJoin
 
-    **6.** Write code that assigns ``last_letter_first_word`` to the *last letter of the first word* of the sentence ``S``. Do not hard-code your answer.
+    **6.** Write code that assigns the *last letter of the first word* of the sentence ``S`` to ``last_letter_first_word``. Do not hard-code your answer.
     ~~~~
     S = "this is a sentence"
 
@@ -199,7 +190,7 @@ Week 2 Discussion Section
 
     class myTests(TestCaseGui):
         def testOne(self):
-            self.assertEqual(last_letter_first_word, "s", "Testing that last_letter_first_word is assigned to 's'")
+            self.assertEqual(last_letter_first_word, "s", "Testing that 's' is assigned to last_letter_first_word.")
 
     myTests().main()
 
@@ -207,6 +198,8 @@ Week 2 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Sequences/SplitandJoin
 
     **7.** Write code that asks the user to enter a sentence and then prints out the *number of words in that sentence*.
     ~~~~
@@ -226,6 +219,20 @@ Week 2 Discussion Section
     myTests().main()
 
 
+
+.. activecode:: ds_02_08
+    :language: python
+    :hidecode:
+
+    **8.** Add comments to the following code. In particular, which line creates a turtle object, and which line or lines invoke methods on the turtle. For method invocations, what is the name of the method, what causes the method to be invoked, and what are the arguments passed to it.
+
+    ~~~~
+    import turtle             # allows us to use the turtles library
+    wn = turtle.Screen()      # creates a graphics window
+    alex = turtle.Turtle()
+    alex.forward(150)
+    alex.left(90)
+    alex.forward(75)
 
 
 .. activecode:: sqrt_fn

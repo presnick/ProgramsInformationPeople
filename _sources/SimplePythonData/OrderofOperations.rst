@@ -72,6 +72,8 @@ rules for its mathematical operators that mathematics does.
    :feedback_c: Remember that // has precedence over -.
    :feedback_d: Remember that // does integer division.
    :correct: a
+   :practice: T
+   :topics: SimplePythonData/OrderofOperations
 
    What is the value of the following expression:
 

@@ -46,6 +46,8 @@ The solution here is to concatenate a new first letter onto a slice of
    :feedback_b: Assignment is not allowed with strings.
    :feedback_c: Yes, strings are immutable.
    :correct: c
+   :practice: T
+   :topics: Sequences/StringsareImmutable
 
    What is printed by the following statements:
    

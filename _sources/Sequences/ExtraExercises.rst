@@ -9,7 +9,7 @@ Extra Exercises
         .. tab:: Question
 
             What is the result of each of the following:
-        
+
             a. 'Python'[1]
             #. "Strings are sequences of characters."[5]
             #. len("wonderful")
@@ -63,15 +63,15 @@ Extra Exercises
 
 
 
-#.  
+#.
    .. tabbed:: q4
 
       .. tab:: Question
-      
+
          .. actex:: ex_3_3
 
             Write code that transforms the list ``[3, 6, 9]`` into the list ``[3, 0, 9]`` and then prints it out
             ~~~~
             w = [3, 6, 9]
             # add code that changes w
-         
+

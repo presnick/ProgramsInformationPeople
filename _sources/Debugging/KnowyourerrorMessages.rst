@@ -160,28 +160,11 @@ Here are a couple examples of Parse errors in the example program we have been u
 
 Uncomment line 1 and you are back to the ParseError.  Another track is to eliminate a possible source of error.  Rather than commenting out the entire line you might just try to assign ``current_time_str`` to a constant value.  For example you might make line one look like this:  ``current_time_str = "10"  #input("what is the "current time" (in hours 0-23)?")``.  Now you have assigned ``current_time_str`` to the string 10, and commented out the input statement.  And now the program works!  So you conclude that the problem must have something to do with the input function.
 
-The color coding that happens automatically in ActiveCode windows can help with identifying some kinds of syntax errors.
-For example, in original code for the exercise above, notice that "What is the" is in one color, and current time is in another color. That's
-your clue that it thinks the string ends after the word the (because there's a closing double-quote). Also, notice that
-when you put your cursor to left of a ``)``, it changes the color of that parenthesis and its matching ``(``. And similarly if
-you put the cursor to the left of ``(``. But check what happens if the ``(`` has no matching ``)``.
-
-.. mchoice:: db_qex33
-   :answer_a: Nothing. The program has a syntax error and can't run.
-   :answer_b: The left parenthesis turns green.
-   :answer_c: The left parenthesis turns red.
-   :feedback_a: You may be reading too fast and not trying to test your understanding using an ActiveCode window.
-   :feedback_b: Sounds like you tried it on a left paren that did have a matching right paren.
-   :feedback_c: This color coding is your friend and can help you notice and fix parenthesis errors.
-   :correct: c
-
-   In an ActiveCode window, what happens when you put the cursor left of a left parenthesis ``(`` that has no matching right parenthesis ``)``?
-
 
 TypeError
 ^^^^^^^^^
 
-TypeErrors occur when you you try to combine two objects that are not compatible.  For example you try to add together an integer and a string.  Usually type errors can be isolated to lines that are using mathematical operators, and usually the line number given by the error message is an accurate indication of the line.
+TypeErrors occur when you try to combine two objects that are not compatible.  For example you try to add together an integer and a string.  Usually type errors can be isolated to lines that are using mathematical operators, and usually the line number given by the error message is an accurate indication of the line.
 
 Here's an example of a type error created by a Polish learner.  See if you can find and fix the error.
 
@@ -272,8 +255,8 @@ And one last bit of code to fix.
 
 .. activecode:: db_ex3_11
 
-    present_time = input("enter the present timein hours:")
-    set_alarm = input("set the hours for alarm:")
+    present_time = input("Enter the present time in hours:")
+    set_alarm = input("Set the hours for alarm:")
     int (present_time,set_time,alarm_time)
     alarm_time = present_time + set_alarm
     print(alarm_time)
@@ -315,7 +298,7 @@ Value errors occur when you pass a parameter to a function and the function is e
    current_time_int = int(current_time_str)
 
    wait_time_str = input("How many hours do you want to wait")
-   wait_time_int = int(wait_time_int)
+   wait_time_int = int(wait_time_str)
 
    final_time_int = current_time_int + wait_time_int
    print(final_time_int)

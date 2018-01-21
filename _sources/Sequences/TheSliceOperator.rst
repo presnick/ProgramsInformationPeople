@@ -50,6 +50,8 @@ What do you think ``fruit[:]`` means?
    :feedback_c: Yes, start with the character at index 3 and go up to but not include the character at index 8.
    :feedback_d: This is called slicing, not indexing.  It requires a start and an end.
    :correct: c
+   :practice: T
+   :topics: Sequences/TheSliceOperator
 
    What is printed by the following statements?
    
@@ -68,6 +70,8 @@ What do you think ``fruit[:]`` means?
    :feedback_c: Slicing will not include the character at index 11.  Just up to it (10 in this case).
    :feedback_d: The slice will happen first, then the repetition.  So it is ok.
    :correct: a
+   :practice: T
+   :topics: Sequences/TheSliceOperator
 
    What is printed by the following statements?
    

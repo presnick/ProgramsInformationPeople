@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Instances --- A Herd of Turtles
--------------------------------
+Instances: A Herd of Turtles
+----------------------------
 
 Just like we can have many different integers in a program, we can have many
 turtles.  Each of them is an independent object and we call each one an **instance** of the Turtle type (class).  Each instance has its own
@@ -87,12 +87,16 @@ Here are some *How to think like a computer scientist* observations:
    :feedback_a: You can create and use as many turtles as you like.  As long as they have different names, you can operate them independently, and make them move in any order you like.  To convince yourself this is true, try interleaving the instructions for alex and tess in ActiveCode box 3.
    :feedback_b: You can create and use as many turtles as you like.  As long as they have different names, you can operate them independently, and make them move in any order you like.  If you are not totally convinced, try interleaving the instructions for alex and tess in ActiveCode box 3.
    :correct: b
+   :practice: T
+   :topics: PythonTurtle/InstancesAHerdofTurtles
 
    True or False: You can only have one active turtle at a time.  If you create a second one, you will no longer be able to access or use the first.
 
 **Mixed up programs**
 
 .. parsonsprob:: 3_6
+   :practice: T
+   :topics: PythonTurtle/InstancesAHerdofTurtles
 
    The following program has one turtle, "jamal", draw a capital L in blue and then another, "tina", draw a line to the west in orange as shown to the left, <img src="../_static/TwoTurtles1.png" width="150" align="left" hspace="10" vspace="5" />.  The program should do all set-up, have "jamal" draw the L, and then have "tina" draw the line.   Finally, it should set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p>
    -----
@@ -117,6 +121,8 @@ Here are some *How to think like a computer scientist* observations:
    wn.exitonclick()
 
 .. parsonsprob:: 3_7
+   :practice: T
+   :topics: PythonTurtle/InstancesAHerdofTurtles
 
    The following program has one turtle, "jamal", draw a line to the north in blue and then another, "tina", draw a line to the east in orange as shown to the left, <img src="../_static/TwoTurtlesL.png" width="150" align="left" hspace="10" vspace="5" />.  The program should import the turtle module, get the window to draw on, create the turtle "jamal", have it draw a line to the north, then create the turtle "tina", and have it draw a line to the east.  Finally, it should set the window to close when the user clicks in it.<br /><br /><p>Drag the blocks of statements from the left column to the right column and put them in the right order.  Then click on <i>Check Me</i> to see if you are right. You will be told if any of the lines are in the wrong order.</p> 
    -----

@@ -93,6 +93,8 @@ change the original.  You can also consult the `Python documentation for strings
    :feedback_b: There are 2 o characters but what about p?
    :feedback_c: Yes, add the number of o characters and the number of p characters.
    :correct: c
+   :practice: T
+   :topics: Sequences/StringMethods
 
    What is printed by the following statements?
    
@@ -111,6 +113,8 @@ change the original.  You can also consult the `Python documentation for strings
    :feedback_c: This expression uses the index of n
    :feedback_d: This is fine, the repetition operator used the result of indexing and the index method.
    :correct: a
+   :practice: T
+   :topics: Sequences/StringMethods
 
    What is printed by the following statements?
    

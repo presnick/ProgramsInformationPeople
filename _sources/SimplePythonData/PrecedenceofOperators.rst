@@ -40,6 +40,8 @@ Level     Category        Operators
    :feedback_c: This grouping assumes Python simply evaluates from left to right, which is incorrect.  It follows the precedence listed in the table in this section.
    :feedback_d: This grouping assumes that &quot;and&quot; has a higher precedence than ==, which is not true.
    :correct: a
+   :practice: T
+   :topics: SimplePythonData/PrecedenceofOperators
 
    Which of the following properly expresses the  precedence of operators (using parentheses) in the following expression: 5*3 > 10 and 4+6==11
 

@@ -28,6 +28,8 @@ used them previously with strings and they also work here.
    :feedback_a: Yes, 'cat' is an item in the list alist.
    :feedback_b: There are 5 items in the list, 'cat' is one of them.
    :correct: a
+   :practice: T
+   :topics: Sequences/ListMembership
 
    What is printed by the following statements?
    
@@ -43,7 +45,9 @@ used them previously with strings and they also work here.
    :feedback_a: "at" is in "cat", but it is not in alist
    :feedback_b: Yes, "at" is not in the top level item, alist.  It is in one of the elements of alist.
    :correct: b
-   
+   :practice: T
+   :topics: Sequences/ListMembership
+
    What is printed by the following statements?
    
    .. code-block:: python

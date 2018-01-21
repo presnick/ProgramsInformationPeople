@@ -65,7 +65,8 @@ Note the structure of the classify() function. It checks each of the three rules
 Here's the same thing in codelens, so you can step through it one line at a time.
 
 .. codelens:: prediction_3a
-   
+   :python: py3
+
    def final_e(s):
       return s[-1] == 'e'
    def final_a(s):

@@ -42,6 +42,8 @@ everywhere in the above code).
    :feedback_b: Each character is converted to upper case but the order is wrong.
    :feedback_c: Yes, the order is reversed due to the order of the concatenation.
    :correct: c
+   :practice: T
+   :topics: Iteration/TheAccumulatorPatternwithStrings
 
    What is printed by the following statements:
    

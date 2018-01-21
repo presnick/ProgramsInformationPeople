@@ -40,6 +40,7 @@ with one element, 'i' (it a list with one element, it's not just the string 'i')
 Codelens gives a you a reference diagram, a visual display of the contents of nested1. 
 
 .. codelens:: nested_data_2
+    :python: py3
 
     nested1 = [['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h']]
     print(nested1[0])
@@ -89,6 +90,7 @@ write and debug your code. Often, you will start by writing code like lines 2-4,
 You can change values in such lists in the usual ways. You can even use complex expressions to change values. Consider the following
 
 .. codelens:: nested_data_4
+    :python: py3
 
     nested1 = [['a', 'b', 'c'],['d', 'e'],['f', 'g', 'h'], ['i']]
     nested1[1] = [1, 2, 3]
@@ -98,6 +100,7 @@ The complex items in a list do not have to be lists. They can be tuples or dicti
 some headaches and don't do that. Here's a list of dictionaries and some operations on them. Take a look at its visual representation in codelens.
 
 .. codelens:: nested_data_5
+   :python: py3
 
    nested2 = [{'a': 1, 'b': 3}, {'a': 5, 'c': 90, 5: 50}, {'b': 3, 'c': "yes"}]
    
@@ -153,6 +156,7 @@ The last two lines just emphasize that there's nothing special about lists of fu
 Step through it in Codelens if that's not all clear to you yet.
 
 .. codelens:: nested_data_8
+    :python: py3
 
     def square(x):
         return x*x

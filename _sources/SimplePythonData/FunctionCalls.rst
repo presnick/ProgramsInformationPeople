@@ -71,7 +71,7 @@ Let's take a look at how that last execution unfolds.
    print(sub({{square(3)}}{{9}}, square(1+1)))
    print(sub(9, square({{1+1}}{{2}})))
    print(sub(9, {{square(2)}}{{4}}))
-   print({{sub(9, 4)}}, 5)
+   print({{sub(9, 4)}}{{5}})
 
 
 Functions are objects; parentheses invoke functions
@@ -97,10 +97,15 @@ Remember the earlier mention that some kinds of python objects don't have a nice
       :feedback_c: The second is subtracted from the first
       :feedback_d: The print statement makes the results print
       :correct: b
+      :practice: T
+      :topics: SimplePythonData/FunctionCalls
 
       What will the output be from this code?
 
       .. code-block:: python
+
+         def sub(x, y):
+            return x - y
 
          print(sub(5, 8))
 
@@ -114,10 +119,15 @@ Remember the earlier mention that some kinds of python objects don't have a nice
       :feedback_c: The character sting is treated as a literal and printed out, without executing.
       :feedback_d: The character sting is treated as a literal and printed out, without executing.
       :correct: a
+      :practice: T
+      :topics: SimplePythonData/FunctionCalls
 
       What will the output be from this code?
 
       .. code-block:: python
+
+         def sub(x, y):
+            return x - y
 
          print("sub(5, 8)")
 
@@ -131,10 +141,15 @@ Remember the earlier mention that some kinds of python objects don't have a nice
       :feedback_c: There is no print statement
       :feedback_d: There is no print statement
       :correct: d
+      :practice: T
+      :topics: SimplePythonData/FunctionCalls
 
       What will the output be from this code?
 
       .. code-block:: python
+
+         def sub(x, y):
+            return x - y
 
          sub(5, 8)
 
@@ -148,9 +163,14 @@ Remember the earlier mention that some kinds of python objects don't have a nice
       :feedback_c: There is no print statement
       :feedback_d: There is no print statement
       :correct: d
+      :practice: T
+      :topics: SimplePythonData/FunctionCalls
 
       What will the output be from this code?
 
       .. code-block:: python
+
+         def sub(x, y):
+            return x - y
 
          "sub(5, 8)"

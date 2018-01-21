@@ -69,6 +69,7 @@ In the first statement `a = 5` the literal number 5 evaluates to 5, and is given
 You can step through the code and see how the variable assignments change below.
 
 .. codelens:: reassign
+    :python: py3
 
     a = 5
     b = a    # after executing this line, a and b are now equal
@@ -97,6 +98,8 @@ You can step through the code and see how the variable assignments change below.
    :feedback_c: Look at the last assignment statement, which reassigns x, and not y.
    :feedback_d: Yes, x has the value 22 and y the value 15.
    :correct: d
+   :practice: T
+   :topics: SimplePythonData/Reassignment
 
    After the following statements, what are the values of x and y?
 
