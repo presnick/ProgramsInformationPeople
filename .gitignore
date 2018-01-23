@@ -1,6 +1,5 @@
 *.pyc
 .idea/*
 build_info
-pavement.py
 
 # Please enter the commit message for your changes. Lines starting
