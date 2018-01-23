@@ -94,6 +94,8 @@ There is no limit on the number of statements that can appear under the two clau
    :feedback_c: Yes, a block must contain at least one statement and can have many statements.
    :feedback_d: The blocks may contain different numbers of statements.
    :correct: c
+   :practice: T
+   :topics: Selection/ConditionalExecutionBinarySelection
 
    How many statements can appear in each block (the if and the else) in a conditional statement?
 
@@ -107,6 +109,8 @@ There is no limit on the number of statements that can appear under the two clau
    :feedback_c: Python would never print both TRUE and FALSE because it will only execute one of the if-block or the else-block, but not both.
    :feedback_d: Python will always execute either the if-block (if the condition is true) or the else-block (if the condition is false).  It would never skip over both blocks.
    :correct: b
+   :practice: T
+   :topics: Selection/ConditionalExecutionBinarySelection
 
    What does the following code print (choose from output a, b, c or nothing).
 
@@ -128,6 +132,8 @@ There is no limit on the number of statements that can appear under the two clau
    :feedback_c: Python will print FALSE from within the else-block (because 5+4 does not equal 10), and then print TRUE after the if-else statement completes.
    :feedback_d: To print these three lines, Python would have to execute both blocks in the if-else statement, which it can never do.
    :correct: c
+   :practice: T
+   :topics: Selection/ConditionalExecutionBinarySelection
 
    What does the following code print?
 

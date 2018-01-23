@@ -73,6 +73,8 @@ Here is the same program using ``elif``.
    :feedback_d: No, Although II is correct III will not give the same result.  Try it.
    :feedback_e: No, in I you can not have a Boolean expression after an else.
    :correct: b
+   :practice: T
+   :topics: Selection/Chainedconditionals
 
    Which of I, II, and III below gives the same result as the following nested if?
 
@@ -132,6 +134,8 @@ Here is the same program using ``elif``.
    :feedback_b: The value in y is not less than the value in x (5 is not less than 3).
    :feedback_c: Since the first two Boolean expressions are false the else will be executed.
    :correct: c
+   :practice: T
+   :topics: Selection/Chainedconditionals
 
    What will the following code print if x = 3, y = 5, and z = 2?
 
