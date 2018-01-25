@@ -35,9 +35,6 @@ The program below solves part of the problem.  Notice that it reads the data and
 .. activecode:: files_write01
 
     infile = open("qbdata.txt","r")
-    # note: I have rewrittent the code to iterate using a for loop instead of a while loop; it's much simpler that way!
-    # aline = infile.readline()
-    # while aline:
     for aline in infile.readlines():
         items = aline.split()
         dataline = items[1] + ',' + items[0]
