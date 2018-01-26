@@ -27,8 +27,6 @@ If a line causes a run-time error, comment it out and see whether the rest of yo
    print(d.get('pears', 0))
    fruits = d.keys()
    print(fruits)
-   fruits.sort()
-   print(fruits)
    del d['apples']
    print('apples' in d)
 

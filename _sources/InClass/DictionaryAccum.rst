@@ -173,7 +173,7 @@ Dictionary Accumulation In Class Code Samples
             d[letter] = 1
 
     letters = d.keys()
-    best_letter_so_far = letters[0]
+    best_letter_so_far = list(letters)[0]
     for let in letters:
         if d[let] > d[best_letter_so_far]:
             best_letter_so_far = let

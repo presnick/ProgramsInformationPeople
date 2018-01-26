@@ -180,10 +180,10 @@ We can see below that guessing in alphabetic order yields an estimate of 4.85 bi
         # from frequencies, compute entropy
         acc = 0.0
         for i in range(len(guess_frequencies.keys())):
-            guess_count = guess_frequencies.keys()[i]
+            guess_count = list(guess_frequencies.keys())[i]
             probability = guess_frequencies[guess_count] / float(len(txt))
             if i < len(guess_frequencies.keys()) - 1:
-                next_guess_count = guess_frequencies.keys()[i+1]
+                next_guess_count = list(guess_frequencies.keys())[i+1]
                 next_probability = guess_frequencies[next_guess_count] / float(len(txt))
             else:
                 next_probability = 0

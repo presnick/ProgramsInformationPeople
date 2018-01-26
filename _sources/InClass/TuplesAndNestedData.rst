@@ -117,7 +117,7 @@ Tuples
 
     def highest_scoring(score_diction):
         keys = score_diction.keys() # could also use .items(), but that would lead to different code
-        max_key_so_far = keys[0]
+        max_key_so_far = list(keys)[0]
         for k in keys:
             if score_diction[k] > score_diction[max_key_so_far]:
                 max_key_so_far = k
