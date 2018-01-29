@@ -113,7 +113,7 @@ There's one other useful feature. The exception code can access a variable that 
 
 **Check your understanding**
 
-.. mchoice:: exceptions_1
+.. mchoice:: exceptions_mc1
    :answer_a: syntax
    :answer_b: run-time
    :answer_c: semantic
@@ -124,7 +124,7 @@ There's one other useful feature. The exception code can access a variable that 
    
    Which type of error can be noticed and handled using try/except?
    
-.. mchoice:: exceptions_2
+.. mchoice:: exceptions_mc2
    :answer_a: True
    :answer_b: False
    :feedback_a: If your code is only catching IndexError errors, then the exception will not be handled, and execution will terminate.
@@ -133,7 +133,7 @@ There's one other useful feature. The exception code can access a variable that 
 
    When a run-time exception of type ZeroDivisionError occurs, and you have a statement ``except IndexError``, the program will stop executing completely.
 
-.. mchoice:: exceptions_3
+.. mchoice:: exceptions_mc3
    :answer_a: True
    :answer_b: False
    :feedback_a: The rest of the code after the whole try/except statement will execute, but not the rest of the code in the try block.
@@ -143,7 +143,7 @@ There's one other useful feature. The exception code can access a variable that 
    After a run-time exception is handled by an except clause, the rest of the code in the try clause will be executed.
 
 
-.. mchoice:: exceptions_4
+.. mchoice:: exceptions_mc4
    :answer_a: 0
    :answer_b: 1
    :answer_c: 3

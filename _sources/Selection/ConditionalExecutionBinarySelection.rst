@@ -97,7 +97,7 @@ There is no limit on the number of statements that can appear under the two clau
    :practice: T
    :topics: Selection/ConditionalExecutionBinarySelection
 
-   How many statements can appear in each block (the if and the else) in a conditional statement?
+   How many lines of code can appear in the indented code block below the if and else lines in a conditional?
 
 .. mchoice:: test_question6_4_2
    :answer_a: TRUE

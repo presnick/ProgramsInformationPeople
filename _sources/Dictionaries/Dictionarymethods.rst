@@ -17,9 +17,9 @@ The following table provides a summary and more details can be found in the
 ==========  ==============      =======================================================
 Method      Parameters          Description
 ==========  ==============      =======================================================
-keys        none                Returns a list of the keys in the dictionary
-values      none                Returns a list of the values in the dictionary
-items       none                Returns a list of the key-value pairs in the dictionary
+keys        none                Returns the keys in the dictionary
+values      none                Returns the values in the dictionary
+items       none                Returns the key-value pairs in the dictionary
 get         key                 Returns the value associated with key; None otherwise
 get         key,alt             Returns the value associated with key; alt otherwise
 ==========  ==============      =======================================================
@@ -30,7 +30,7 @@ the object on which to apply the method immediately to the left of the dot. The 
 parentheses in the case of ``keys`` indicate that this method takes no parameters.
 If ``x`` is a variable whose value is a dictionary, ``x.keys`` is the method object, and ``x.keys()`` invokes the method, returning a value.
 
-The keys method returns a list of the keys, not necessarily in the same order they were added to the dictionary or any other particular order.
+The keys method returns the keys, not necessarily in the same order they were added to the dictionary or any other particular order.
 
 .. activecode:: chp12_dict6
     
@@ -55,7 +55,7 @@ a dictionary implicitly iterates over its keys.
         print("Got key", k)
 
  
-The ``values`` and ``items`` methods are similar to ``keys``. They return lists of objects which can be iterated over.  Note that the item objects are tuples containing the key and the associated value.
+The ``values`` and ``items`` methods are similar to ``keys``. They return the objects which can be iterated over.  Note that the item objects are tuples containing the key and the associated value.
 
 .. activecode:: chp12_dict8
     
@@ -69,7 +69,7 @@ The ``values`` and ``items`` methods are similar to ``keys``. They return lists 
 
 .. note::
 
-    Technically, .keys(), .values(), and .items() don't return actual lists. Like the range function described previously, in python 3 they return objects that produce the items one at a time, rather than producing and storing all of them in advance as a list. Unless the dictionary has a whole lot of keys, this won't make a difference for performance. In any case, as with the range function, it is safe for you to think of them as returning lists. For the python interpreter built into this textbook, they actually do produce lists. In a native python interpreter, if you print out ``type(inventory.keys())``, you will find that it is something other than an actual list.
+    Technically, .keys(), .values(), and .items() don't return actual lists. Like the range function described previously, in python 3 they return objects that produce the items one at a time, rather than producing and storing all of them in advance as a list. Unless the dictionary has a whole lot of keys, this won't make a difference for performance. In any case, as with the range function, it is safe for you to think of them as returning lists, for most purposes. For the python interpreter built into this textbook, they actually do produce lists. In a native python interpreter, if you print out ``type(inventory.keys())``, you will find that it is something other than an actual list. If you want to get the first key, `inventory.keys()[0]` works in the online textbook, but in a real python interpreter, you need to make the collection of keys into a real list before using `[0]` to index into it: `list(inventory.keys())[0]`.
     
 The ``in`` and ``not in`` operators can test if a key is in the dictionary:
 

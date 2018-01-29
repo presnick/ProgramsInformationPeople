@@ -14,7 +14,7 @@ Let's put this all together. You know the process of making requests to REST API
 
 **Check your understanding**
 
-.. mchoice:: test_question9_20_1
+.. mchoice:: test_question_functions_rest_apis_1
    :answer_a: Because that means you have to write less repeated code if you want to make a request to the same API more than once in the same program.
    :answer_b: Because writing functions to complete a complex process in your code makes it easier to read and easier to fix later.
    :answer_c: Because a lot of things stay the same among different requests to the same API.

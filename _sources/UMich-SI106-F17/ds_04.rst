@@ -110,6 +110,26 @@ Week 4 Discussion Section
     myTests().main()
 
 
+.. activecode:: ds_04_04a
+    :language: python
+    :autograde: unittest
+    :hidecode:
+
+    **Indefinite Iteration** Write code that asks the user for input repeatedly, as long as the user enters an odd number, and adds them all up. It should stop when the user first enters an even number, and not include that in the sum.
+    ~~~~
+    # Write your code here.
+
+    # Write your plan in English.
+
+    # Then write our code.
+
+
+
+    ====
+
+    print("There are no automated tests for this question.")
+
+
 .. activecode:: ds_04_05
     :language: python
     :autograde: unittest

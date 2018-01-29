@@ -18,7 +18,7 @@ Let's return to our idea of making Cats, Dogs, and other pets generate a string 
 
 Here's the original Pet class again.
 
-.. activecode:: inheritance_pet_class
+.. activecode:: inheritance_pet_class_1
     :nocanvas:
 
     from random import randrange

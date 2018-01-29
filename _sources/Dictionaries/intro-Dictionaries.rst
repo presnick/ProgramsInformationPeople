@@ -9,6 +9,10 @@
 
 .. _dictionaries_chap:
 
+.. qnum::
+   :prefix: dictionaries-
+   :start: 1
+
 Introduction: Dictionaries
 ==========================
 
