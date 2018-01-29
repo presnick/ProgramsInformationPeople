@@ -11,7 +11,7 @@ Dictionary Accumulation In Class Code Samples
 
 .. activecode:: session8_0
 
-    mystr = 'By a route obscure and lonely, haunted by ill angels only'
+    mystr = 'By a route obscure and lonely, haunted by ill angels only' # from Dream-Land by Edgar Allan Poe
     str2 = "a brain train"
 
     ######Count occurrences of letter i###########
@@ -69,33 +69,6 @@ Dictionary Accumulation In Class Code Samples
     for vowel in vowels:
         print(vowel + ": " + str(d[vowel]))
 
-.. activecode:: session8_3
-
-    mystr = 'By a route obscure and lonely, haunted by ill angels only'
-    str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'u']
-
-    ######Method 2: a dictionary of counters ########
-    # initialize the accumulators
-    d = {}
-    d['a'] = 0
-    d['e'] = 0
-    d['i'] = 0
-    d['o'] = 0
-    d['u'] = 0
-    # alternative way to initialize
-    d = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
-    # one more way to initialize
-    d = {}
-    for vowel in vowels:
-        d[vowel] = 0
-
-    for letter in str2:
-        if letter in vowels:
-            d[letter] += 1
-
-    for vowel in vowels:
-        print(vowel + ": " + str(d[vowel]))
 
 .. activecode:: session8_4
 
