@@ -34,7 +34,7 @@ Dictionary Accumulation In Class Code Samples
 
     ######Method 1: a list of counters ###########
     vcounts= [0,0,0,0,0]
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
     for letter in str2:
         if letter in vowels:
             vcounts[vowels.index(letter)] += 1
@@ -45,7 +45,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ######Method 2: a dictionary of counters ########
     # initialize the accumulators
@@ -73,7 +73,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ######Method 2: a dictionary of counters ########
     # initialize the accumulators
@@ -101,7 +101,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ######Method 3: create counters as needed######
     d = {}
@@ -120,7 +120,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     #######Accumulating from a dictionary: how many vowels?#######
     d = {}
@@ -140,7 +140,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ####### Scrabble values: combining two dictionaries######
     d = {}
@@ -162,7 +162,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ####### which letter occurs most frequently? ########
     d = {}

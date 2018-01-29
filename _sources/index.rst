@@ -578,15 +578,22 @@ Unix
 
    navhelp.rst
 
+In Class Exercises
+::::::::::::::::::
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    InClass/DictionaryAccum.rst
    InClass/FunctionsExamples.rst
    InClass/IndefiniteIteration.rst
    InClass/OptionalKeywordParams.rst
    InClass/TuplesAndNestedData.rst
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
    SectionResources/section4_106_f16.rst
    SectionResources/section5_106.rst
    ExtraExercises/session10_9486.rst
@@ -600,10 +607,9 @@ Unix
    ExtraExercises/session9_6473.rst
 
 
-Static Problem Set Files (Don't use these)
-::::::::::::::::::::::::::::::::::::::::::
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    assignments.rst
 
