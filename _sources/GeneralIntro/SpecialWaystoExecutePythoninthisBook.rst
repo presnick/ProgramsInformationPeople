@@ -49,7 +49,7 @@ arrow points to the line that was just executed. Click on the "Show in Codelens"
 Sometimes, we will present code examples explicitly in a codelens window, as below.
 When we do, think of it as an encouragement to use the codelens features to step through the execution of the program.
 
-.. codelens:: firstexample
+.. codelens:: firstexample_1
     :python: py3
     :showoutput:
 

@@ -276,7 +276,7 @@ Optional and Keyword Parameters
 
    OptionalAndKeywordParameters/OptionalParameters.rst
    OptionalAndKeywordParameters/KeywordParameters.rst
-   OptionalAndKeywordParameters/exercises.rst
+   OptionalAndKeywordParameters/Exercises.rst
    OptionalAndKeywordParameters/ExtraExercises.rst
 
 Tuples
@@ -376,7 +376,7 @@ Exceptions
 
    Exceptions/intro-exceptions.rst
    Exceptions/using-exceptions.rst
-   Exceptions/ExtraExercises.rst
+   Exceptions/Exercises.rst
 
 
 Using RESTAPIs

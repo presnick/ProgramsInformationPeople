@@ -128,7 +128,7 @@ Note here how important the order of the rules is. If the check for whether the 
 
 **Check your understanding**
 
-.. mchoice:: prediction_1
+.. mchoice:: prediction_mc1
    :answer_a: list
    :answer_b: tuple
    :answer_c: integer
@@ -143,7 +143,7 @@ Note here how important the order of the rules is. If the check for whether the 
 
    What is the type of rules[0]?
    
-.. mchoice:: prediction_2
+.. mchoice:: prediction_mc2
    :answer_a: list
    :answer_b: tuple
    :answer_c: integer
@@ -159,7 +159,7 @@ Note here how important the order of the rules is. If the check for whether the 
    What is the type of rules[0][0]?
 
    
-.. mchoice:: prediction_3
+.. mchoice:: prediction_mc3
    :answer_a: rules[1][1]
    :answer_b: rules[1][0]
    :answer_c: rules[0][1]

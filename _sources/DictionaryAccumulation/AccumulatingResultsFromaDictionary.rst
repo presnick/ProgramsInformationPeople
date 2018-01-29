@@ -23,7 +23,7 @@ punctuation, capital letters, etc.), we add to the total score.
 
 .. activecode:: dict_accum_8
 
-   f = open('scarlet.txt', 'r')
+   f = open('scarlet2.txt', 'r')
    txt = f.read()
    # now txt is one long string containing all the characters
    x = {} # start with an empty dictionary
@@ -47,7 +47,7 @@ punctuation, capital letters, etc.), we add to the total score.
 Line 18 is the tricky one. We are updating the variable tot to have its old number plus the score for the current letter times the number of occurrences of that letter.
 Try changing some of the letter values and see how it affects the total. Try changing txt to be just a single word that you might play in Scrabble.
 
-.. datafile::  scarlet.txt
+.. datafile::  scarlet2.txt
    :hide:
 
    The Project Gutenberg EBook of A Study In Scarlet, by Arthur Conan Doyle

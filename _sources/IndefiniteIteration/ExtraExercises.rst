@@ -12,7 +12,7 @@ Extra Exercises
 
 1. Using a while loop, create a list ``numbers`` that contains the numbers 0 through 35. Your while loop should initialize a counter variable to 0. On each iteration, the loop should append the current value of the counter to the list and the counter should increase by 1. The while loop should stop when the counter is greater than 35. 
 
-.. activecode:: ee_07_01
+.. activecode:: ee_07_010
    :tags: IndefiniteIteration/ThewhileStatement.rst
 
    =====
