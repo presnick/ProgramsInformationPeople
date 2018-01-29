@@ -49,7 +49,9 @@ If you want to modify a dictionary and keep a copy of the original, use the dict
    :feedback_c: Yes, since yourdict is an alias for mydict, the value for the key elephant has been changed.
    :feedback_d: There is only one dictionary with only one key named elephant.  The dictionary has two different names, mydict and yourdict.
    :correct: c
-   
+   :practice: T
+   :topics: Dictionaries/Aliasingandcopying
+
    What is printed by the following statements?
    
    .. sourcecode:: python

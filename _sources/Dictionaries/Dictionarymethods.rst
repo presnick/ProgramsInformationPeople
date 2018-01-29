@@ -115,7 +115,9 @@ in the case where the key is not present.  This can be seen in the final example
    :feedback_c: Take another look at the example for get above.  get returns the value associated with a given key.
    :feedback_d: The integer division operator is being used on the values returned from the get method, not on the dictionary.
    :correct: a
-   
+   :practice: T
+   :topics: Dictionaries/Dictionarymethods
+
    What is printed by the following statements?
    
    .. sourcecode:: python
@@ -131,7 +133,9 @@ in the case where the key is not present.  This can be seen in the final example
    :feedback_a: Yes, dog is a key in the dictionary.
    :feedback_b: The in operator returns True if a key is in the dictionary, False otherwise.
    :correct: a
-   
+   :practice: T
+   :topics: Dictionaries/Dictionarymethods
+
    What is printed by the following statements?
    
    .. sourcecode:: python
@@ -146,7 +150,9 @@ in the case where the key is not present.  This can be seen in the final example
    :feedback_a: 23 is a value in the dictionary, not a key.  
    :feedback_b: Yes, the in operator returns True if a key is in the dictionary, False otherwise.
    :correct: b
-   
+   :practice: T
+   :topics: Dictionaries/Dictionarymethods
+
    What is printed by the following statements?
    
    .. sourcecode:: python
@@ -165,7 +171,9 @@ in the case where the key is not present.  This can be seen in the final example
    :feedback_c: This is the accumulator pattern.  Total starts at 0 but then changes as the iteration proceeds.
    :feedback_d: Not all the values are added together.  The if statement only chooses some of them.
    :correct: b
-   
+   :practice: T
+   :topics: Dictionaries/Dictionarymethods
+
    What is printed by the following statements?
    
    .. sourcecode:: python

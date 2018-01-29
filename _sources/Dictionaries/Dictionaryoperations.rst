@@ -65,6 +65,8 @@ of key-value pairs.
    :feedback_c: Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.
    :feedback_d: Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.
    :correct: c
+   :practice: T
+   :topics: Dictionaries/Dictionaryoperations
 
    What is printed by the following statements?
    
