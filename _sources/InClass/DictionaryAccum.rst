@@ -79,10 +79,9 @@ Dictionary Accumulation In Class Code Samples
     ######Method 3: create counters as needed######
     d = {}
     for letter in str2:
-        if letter in d:
-            d[letter] += 1
-        else:
-            d[letter] = 1
+        if letter not in d:
+            d[letter] = 0
+        d[letter] += 1
 
     for vowel in vowels:
         if vowel in d:

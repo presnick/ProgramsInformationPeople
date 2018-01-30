@@ -21,11 +21,6 @@
 Table of Contents
 :::::::::::::::::
 
-.. raw:: html
-
-   <ul>
-   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
-   </ul>
 
 General Introduction
 ::::::::::::::::::::
