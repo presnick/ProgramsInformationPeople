@@ -14,13 +14,18 @@
     :hidecode:
     :chatcodes:
 
-    print("Hello, 106!")
+    print("Hello, WCC!")
 
 .. _t_o_c:
 
 Table of Contents
 :::::::::::::::::
 
+.. raw:: html
+
+   <ul>
+   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
+   </ul>
 
 General Introduction
 ::::::::::::::::::::
