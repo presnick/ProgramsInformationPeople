@@ -53,6 +53,8 @@ What would be printed if the value of ``x`` is negative?  Try it.
    :feedback_c: Python will also execute the statement that follows the if-block (because it is not enclosed in an else-block, but rather just a normal statement).
    :feedback_d: It is valid to have an if-block without a corresponding else-block (though you cannot have an else-block without a corresponding if-block).
    :correct: b
+   :practice: T
+   :topics: Selection/OmittingtheelseClauseUnarySelection
 
    What does the following code print?
 
@@ -82,6 +84,8 @@ What would be printed if the value of ``x`` is negative?  Try it.
    :feedback_a: Every else-block must have exactly one corresponding if-block.  If you want to chain if-else statements together, you must use the else if construct, described in the chained conditionals section.
    :feedback_b: This will cause an error because the second else-block is not attached to a corresponding if-block.
    :correct: b
+   :practice: T
+   :topics: Selection/OmittingtheelseClauseUnarySelection
 
    Will the following code cause an error?
 
