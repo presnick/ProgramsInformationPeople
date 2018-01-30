@@ -100,6 +100,8 @@ The key ``'two'`` yields the value ``'dos'``. The key ``one`` yields the value `
    :feedback_a: Dictionaries associate keys with values but there is no assumed order for the entries.
    :feedback_b: Yes, dictionaries are associative collections meaning that they store key-value pairs.
    :correct: b
+   :practice: T
+   :topics: Dictionaries/intro-Dictionaries
 
    A dictionary is an unordered collection of key-value pairs.
 
@@ -114,6 +116,8 @@ The key ``'two'`` yields the value ``'dos'``. The key ``one`` yields the value `
    :feedback_c: 23 is associated with the key elephant.
    :feedback_d: The [ ] operator, when used with a dictionary, will look up a value based on its key.
    :correct: b
+   :practice: T
+   :topics: Dictionaries/intro-Dictionaries
 
    What is printed by the following statements?
    

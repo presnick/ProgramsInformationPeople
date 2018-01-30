@@ -82,6 +82,8 @@ If you are still a bit unsure, here is the same selection as part of a codelens 
    :feedback_a: This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
    :feedback_b: This is a legal nested if-else statement.  The inner if-else statement is contained completely within the body of the outer else-block.
    :correct: a
+   :practice: T
+   :topics: Selection/Nestedconditionals
 
    Will the following code cause an error?
 
