@@ -261,7 +261,7 @@ While Loops
    IndefiniteIteration/intro-indefiniteiteration.rst
    IndefiniteIteration/ThewhileStatement.rst
    IndefiniteIteration/listenerLoop.rst
-   IndefiniteIteration/ExtraExercises.rst
+   IndefiniteIteration/Exercises.rst
 
 Optional and Keyword Parameters
 :::::::::::::::::::::::::::::::
