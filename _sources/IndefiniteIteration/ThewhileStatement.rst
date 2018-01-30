@@ -126,6 +126,8 @@ terminates. That also makes a while loop harder to read and understand than the 
    :feedback_a: Although the while loop uses a different syntax, it is just as powerful as a for-loop and often more flexible.
    :feedback_b: Often a for-loop is more natural and convenient for a task, but that same task can always be expressed using a while loop.
    :correct: a
+   :practice: T
+   :topics: IndefiniteIteration/ThewhileStatement
 
    True or False: You can rewrite any for-loop as a while-loop.
 
@@ -139,6 +141,8 @@ terminates. That also makes a while loop harder to read and understand than the 
    :feedback_c: It is perfectly valid to compare n to 0.  Though indirectly, this is what causes the infinite loop.
    :feedback_d: The loop condition must become False for the loop to terminate, but n by itself is not the condition in this case.
    :correct: a
+   :practice: T
+   :topics: IndefiniteIteration/ThewhileStatement
 
    The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?
 
@@ -159,6 +163,8 @@ terminates. That also makes a while loop harder to read and understand than the 
    :feedback_b: As you learned in section 7.2, a while-loop can always be used for anything a for-loop can be used for.
    :feedback_c: Although you do not know how many iterations you loop will run before the program starts running, once you have chosen your random integer, Python knows exactly how many iterations the loop will run, so this is an example of definite iteration.
    :correct: a
+   :practice: T
+   :topics: IndefiniteIteration/ThewhileStatement
 
    Which type of loop can be used to perform the following iteration: You choose a positive integer at random and then print the numbers from 1 up to and including the selected integer.
 

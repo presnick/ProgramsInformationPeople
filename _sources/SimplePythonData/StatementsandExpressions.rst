@@ -68,7 +68,7 @@ Notice that operator expressions (like ``+`` and ``*``) have sub-expressions bef
 
 Similarly, when calling a function, instead of putting a literal inside the parentheses, a complex expression can be placed inside the parentheses. (Again, we provide some hidden code that defines the functions ``square`` and ``sub``).
 
-.. activecode:: functionCalls_1
+.. activecode:: function_square_include
    :nocanvas:
    :hidecode:
 
@@ -80,7 +80,7 @@ Similarly, when calling a function, instead of putting a literal inside the pare
 
 .. activecode:: ch02_14b
    :nocanvas:
-   :include: functionCalls_1
+   :include: function_square_include
    
    x = 2
    y = 1

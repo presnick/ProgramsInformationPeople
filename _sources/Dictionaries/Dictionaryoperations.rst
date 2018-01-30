@@ -38,7 +38,9 @@ example, instead of deleting the entry for ``pears``, we could have set the inve
    Setting the value associated with ``pears`` to 0 has a different effect than removing the key-value pair entirely with ``del``. Try printout out the two dictionaries in the examples above.
 
 Similarily,
-a new shipment of 200 bananas arriving could be handled like this.
+a new shipment of 200 bananas arriving could be handled like this. Notice that there are now 512 bananas---the dictionary has been modified.  Note also that the ``len`` function also works on dictionaries.  It returns the number
+of key-value pairs.
+
 
 .. codelens:: ch12_dict5
     :python: py3
@@ -48,9 +50,6 @@ a new shipment of 200 bananas arriving could be handled like this.
 
 
     numItems = len(inventory)
-
-Notice that there are now 512 bananas---the dictionary has been modified.  Note also that the ``len`` function also works on dictionaries.  It returns the number
-of key-value pairs.
 
 
 **Check your understanding**
@@ -65,6 +64,8 @@ of key-value pairs.
    :feedback_c: Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.
    :feedback_d: Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.
    :correct: c
+   :practice: T
+   :topics: Dictionaries/Dictionaryoperations
 
    What is printed by the following statements?
    

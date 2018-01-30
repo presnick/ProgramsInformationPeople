@@ -11,7 +11,7 @@ Dictionary Accumulation In Class Code Samples
 
 .. activecode:: session8_0
 
-    mystr = 'By a route obscure and lonely, haunted by ill angels only'
+    mystr = 'By a route obscure and lonely, haunted by ill angels only' # from Dream-Land by Edgar Allan Poe
     str2 = "a brain train"
 
     ######Count occurrences of letter i###########
@@ -34,7 +34,7 @@ Dictionary Accumulation In Class Code Samples
 
     ######Method 1: a list of counters ###########
     vcounts= [0,0,0,0,0]
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
     for letter in str2:
         if letter in vowels:
             vcounts[vowels.index(letter)] += 1
@@ -45,7 +45,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ######Method 2: a dictionary of counters ########
     # initialize the accumulators
@@ -69,47 +69,19 @@ Dictionary Accumulation In Class Code Samples
     for vowel in vowels:
         print(vowel + ": " + str(d[vowel]))
 
-.. activecode:: session8_3
-
-    mystr = 'By a route obscure and lonely, haunted by ill angels only'
-    str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
-
-    ######Method 2: a dictionary of counters ########
-    # initialize the accumulators
-    d = {}
-    d['a'] = 0
-    d['e'] = 0
-    d['i'] = 0
-    d['o'] = 0
-    d['u'] = 0
-    # alternative way to initialize
-    d = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
-    # one more way to initialize
-    d = {}
-    for vowel in vowels:
-        d[vowel] = 0
-
-    for letter in str2:
-        if letter in vowels:
-            d[letter] += 1
-
-    for vowel in vowels:
-        print(vowel + ": " + str(d[vowel]))
 
 .. activecode:: session8_4
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ######Method 3: create counters as needed######
     d = {}
     for letter in str2:
-        if letter in d:
-            d[letter] += 1
-        else:
-            d[letter] = 1
+        if letter not in d:
+            d[letter] = 0
+        d[letter] += 1
 
     for vowel in vowels:
         if vowel in d:
@@ -120,7 +92,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     #######Accumulating from a dictionary: how many vowels?#######
     d = {}
@@ -140,7 +112,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ####### Scrabble values: combining two dictionaries######
     d = {}
@@ -162,7 +134,7 @@ Dictionary Accumulation In Class Code Samples
 
     mystr = 'By a route obscure and lonely, haunted by ill angels only'
     str2 = "a brain train"
-    vowels = ['a', 'e', 'i', 'o', 'uu']
+    vowels = ['a', 'e', 'i', 'o', 'u']
 
     ####### which letter occurs most frequently? ########
     d = {}
@@ -173,7 +145,7 @@ Dictionary Accumulation In Class Code Samples
             d[letter] = 1
 
     letters = d.keys()
-    best_letter_so_far = letters[0]
+    best_letter_so_far = list(letters)[0]
     for let in letters:
         if d[let] > d[best_letter_so_far]:
             best_letter_so_far = let

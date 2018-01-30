@@ -6,7 +6,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. _caching_responses:
+.. _more_caching_responses:
 
 More about Caching Response Content
 ===================================
@@ -86,7 +86,7 @@ When you use some more complicated processes for requesting data from APIs, ther
 
 **Check your understanding**
 
-.. mchoice:: restapis_1
+.. mchoice:: restapis_caching_1
    :answer_a: Because when requests.get encodes URL parameters, the params might be in any order, which would make it hard to compare one URL to another later on, and you could cache the same data multiple times.
    :answer_b: Because otherwise, it's too much data in the same function, and the program will not run.
    :answer_c: You don't, actually. This function is just a fancy way of calling requests.get.

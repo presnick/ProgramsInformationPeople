@@ -95,7 +95,7 @@ We can still use all the ``Pet`` methods in the ``Cat`` class, this way. You can
 
 In the original Tamagotchi game in the last chapter, you saw code that created instances of the ``Pet`` class. Now let's write a little bit of code that uses instances of the ``Pet`` class AND instances of the ``Cat`` class.
 
-.. activecode:: tamagotchi_2
+.. activecode:: tamagotchi_2a
     :nocanvas:
     :include: inheritance_cat_example
 
