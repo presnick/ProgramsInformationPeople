@@ -28,13 +28,13 @@ software development using REST APIs:
 
 There are some downsides to caching data -- for example, if you always want to find out when data has changed, and your default is to rely on already-cached data, then you have a problem. However, when you're working on developing code that will work, caching is worth the tradeoff.
 
-In this book, we are providing a pattern we're calling the "caching pattern" in order to perform this caching operation. 
+In this book, we are providing a pattern we're calling the "caching pattern" in order to perform this caching operation.
 
-This is not the only way to perform caching in a program. (In fact, if you go on to learn about web development, you'll find that you encounter caching all the time -- if you've ever had the experience of seeing old data when you go to a website and thinking, "Huh, that's weird, it should really be different now... why am I still seeing that?" that happens because your web browser is performing a kind of caching operation on data from the internet.) 
+This is not the only way to perform caching in a program. (In fact, if you go on to learn about web development, you'll find that you encounter caching all the time -- if you've ever had the experience of seeing old data when you go to a website and thinking, "Huh, that's weird, it should really be different now... why am I still seeing that?" that happens because your web browser is performing a kind of caching operation on data from the internet.)
 
-However, in this book, we'll treat this as the default caching pattern for now. 
+However, in this book, we'll treat this as the default caching pattern for now.
 
-We will use a python dictionary to store the results of expensive operations (the calls to ``requests.get()``). 
+We will use a python dictionary to store the results of expensive operations (the calls to ``requests.get()``).
 
 Each invocation of ``requests.get`` might have a different URL. Each different URL represents the data that is being requested. For example, you might have a URL that points to data about "all the words that rhyme with the word rain" or "all the words that rhyme with the word orange". You might have a URL that points to "20 photos tagged with the word 'river'", another that points to "50 photos tagged with the word 'river'", and yet another that points to "20 photos tagged with the words 'river' and 'mountains'". Etc.
 
@@ -49,20 +49,20 @@ In order to make this happen, we'll use a couple pieces of code:
 Below is an example of the caching pattern setup and a function that uses the caching pattern to get data from the Datamuse API. In the next section, we'll break down what this code is doing.
 
 .. sourcecode:: python
-    
+
     import requests
     import json
 
-    CACHE_FNAME = 'cache_file_name.json' 
+    CACHE_FNAME = 'cache_file_name.json'
     try:
-        cache_file = open(CACHE_FNAME, 'r') 
+        cache_file = open(CACHE_FNAME, 'r')
         cache_contents = cache_file.read()
-        CACHE_DICTION = json.loads(cache_contents) 
-        cache_file.close() 
+        _cache_diction = json.loads(cache_contents)
+        cache_file.close()
     except: # But if anything doesn't work,
-        CACHE_DICTION = {}
+        _cache_diction = {}
 
-    # A helper function that accepts 3 parameters, 2 required, and returns a string that uniquely represents the request that could be made with this info   
+    # A helper function that accepts 3 parameters, 2 required, and returns a string that uniquely represents the request that could be made with this info
     def params_unique_combination(baseurl, params_d, private_keys=["api_key"]):
         alphabetized_keys = sorted(params_d.keys())
         res = []
@@ -77,17 +77,16 @@ Below is an example of the caching pattern setup and a function that uses the ca
         params_diction = {}
         params_diction["rel_rhy"] = rhymes_with
         unique_ident = params_unique_combination(baseurl,params_diction)
-        if unique_ident in CACHE_DICTION:
+        if unique_ident in _cache_diction:
             print("Getting cached data...")
-            return CACHE_DICTION[unique_ident]
+            return _cache_diction[unique_ident]
         else:
             print("Making a request for new data...")
             # Make the request and cache the new data
             resp = requests.get(baseurl, params_diction)
-            CACHE_DICTION[unique_ident] = json.loads(resp.text)
-            dumped_json_cache = json.dumps(CACHE_DICTION)
+            _cache_diction[unique_ident] = json.loads(resp.text)
+            dumped_json_cache = json.dumps(_cache_diction)
             fw = open(CACHE_FNAME,"w")
             fw.write(dumped_json_cache)
             fw.close() # Close the open file
-            return CACHE_DICTION[unique_ident]
-
+            return _cache_diction[unique_ident]
