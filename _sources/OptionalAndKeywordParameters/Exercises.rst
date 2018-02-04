@@ -66,13 +66,17 @@ Exercises
 
    myTests().main()
 
-2. The following function, ``greeting``, does not work. Please fix the code so that it runs without error. This only requires one change in the definition of the function.
+2. The following function, ``greeting``, does not work. Please fix the code so that it runs without error. This only requires one change in the definition of the function. `greeting` and `excl` should still be optional parameters; `name` should be a required parameter.
 
 .. activecode:: ee_Opt_Params_02
    :tags: OptionalAndKeywordParameters/KeywordParameters.rst
 
-   def greeting(greeting = "Hello ", name, excl = "!"):
+   def greeting(greeting="Hello ", name, excl="!"):
        return greeting + name + excl
+
+   print(greeting("Bob"))
+   print(greeting(""))
+   print(greeting("Bob", excl="!!!")
    =====
 
    from unittest.gui import TestCaseGui
