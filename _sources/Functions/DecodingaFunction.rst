@@ -87,6 +87,8 @@ with any variable, including a function parameter. If you see...
    :feedback_d: x, y, and z.
    :feedback_e: You can tell by looking inside the parentheses on line 1. Each variable name is separated by a comma.
    :correct: d
+   :practice: T
+   :topics: Functions/DecodingaFunction
 
    How many parameters does function cyu3 take?
 
@@ -112,6 +114,8 @@ with any variable, including a function parameter. If you see...
    :feedback_d: x - y and y-2 can't be performed on strings.
    :feedback_e: You can tell from some of the operations that are performed on them.
    :correct: a,b
+   :practice: T
+   :topics: Functions/DecodingaFunction
 
    What are the possible types of variables x and y?
 
@@ -137,6 +141,8 @@ with any variable, including a function parameter. If you see...
    :feedback_d: append can't be performed on strings.
    :feedback_e: You can tell from some of the operations that are performed on it.
    :correct: c
+   :practice: T
+   :topics: Functions/DecodingaFunction
 
    What are the possible types of variable z?
 
@@ -162,6 +168,8 @@ with any variable, including a function parameter. If you see...
    :feedback_d: neither y-2 or  x+3 could produce a string.
    :feedback_e: You can tell from the expressions that follow the word return.
    :correct: a,b
+   :practice: T
+   :topics: Functions/DecodingaFunction
 
    What are the possible types of the return value from cyu3?
 

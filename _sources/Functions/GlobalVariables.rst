@@ -126,6 +126,8 @@ But this example demonstrates that that is clearly not how Python operates.
    :feedback_b:
    :feedback_c: The name of a variable is just an identifier or alias.  Scope concerns where the variable is &quot;known&quot;.
    :correct: b
+   :practice: T
+   :topics: Functions/GlobalVariables
 
    What is a variable's scope?
 
@@ -137,6 +139,8 @@ But this example demonstrates that that is clearly not how Python operates.
    :feedback_b: While parameters may be considered local variables, functions may also define and use additional local variables.
    :feedback_c: Variables that are used outside a function are not local, but rather global variables.
    :correct: a
+   :practice: T
+   :topics: Functions/GlobalVariables
 
    What is a local variable?
 
@@ -148,6 +152,8 @@ But this example demonstrates that that is clearly not how Python operates.
    :feedback_b: it is generally considered bad style because of the potential for the programmer to get confused.  If you must use global variables (also generally bad form) make sure they have unique names.
    :feedback_c: Python manages global and local scope separately and has clear rules for how to handle variables with the same name in different scopes, so this will not cause a Python error.
    :correct: b
+   :practice: T
+   :topics: Functions/GlobalVariables
 
    Can you use the same name for a local variable as a global variable?
 

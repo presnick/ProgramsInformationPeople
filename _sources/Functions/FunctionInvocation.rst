@@ -78,6 +78,8 @@ executed a second time.
    :feedback_c: While some functions do calculate values, the python idea of a function is slightly different from the mathematical idea of a function in that not all functions calculate values.  Consider, for example, the turtle functions in this section.   They made the turtle draw a specific shape, rather than calculating a value.
    :feedback_d: This statement is called an assignment statement.  It assigns the value on the right (9), to the name on the left (x).
    :correct: a
+   :practice: T
+   :topics: Functions/FunctionInvocation
 
    What is a function in Python?
 
@@ -92,6 +94,8 @@ executed a second time.
    :feedback_c: In the first several chapters, you have seen many examples of Python programs written without the use of functions.  While writing and using functions is desirable and essential for good programming style as your programs get longer, it is not required.
    :feedback_d: Not all functions calculate values.
    :correct: b
+   :practice: T
+   :topics: Functions/FunctionInvocation
 
    What is one main purpose of a function?
 
@@ -104,6 +108,8 @@ executed a second time.
    :feedback_b: Check again.
    :feedback_c: When the function is invoked, it will print two lines, but it has only been defined, not invoked.
    :correct: a
+   :practice: T
+   :topics: Functions/FunctionInvocation
 
    How many lines will be output by executing this code?
    
@@ -126,6 +132,8 @@ executed a second time.
    :feedback_d: Each time the function is invoked, it will print two lines, not one.
    :feedback_e: Three invocations generate two lines each, plus the line "It works"
    :correct: e
+   :practice: T
+   :topics: Functions/FunctionInvocation
 
    How many lines will be output by executing this code?
 

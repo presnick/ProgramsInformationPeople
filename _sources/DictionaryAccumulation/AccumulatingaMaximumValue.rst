@@ -65,6 +65,8 @@ max-so-far.
    :feedback_c: When the value associated with the current key c is bigger than the max so far, replace the max so far with that value.
    :feedback_d: That will set a to be the current key, a string like 'a', not a value like 194.
    :correct: c
+   :practice: T
+   :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
    Which is the right code block to use in place of line 5 if we want to print out the maximum value?
 
