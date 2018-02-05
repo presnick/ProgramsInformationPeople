@@ -21,11 +21,6 @@
 Table of Contents
 :::::::::::::::::
 
-.. raw:: html
-
-   <ul>
-   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
-   </ul>
 
 General Introduction
 ::::::::::::::::::::
@@ -254,7 +249,7 @@ Functions
    Functions/PassingMutableObjects.rst
    Functions/SideEffects.rst
    Functions/Glossary.rst
-   Functions/ExtraExercises.rst
+   Functions/Exercises.rst
 
 
 While Loops
@@ -266,7 +261,7 @@ While Loops
    IndefiniteIteration/intro-indefiniteiteration.rst
    IndefiniteIteration/ThewhileStatement.rst
    IndefiniteIteration/listenerLoop.rst
-   IndefiniteIteration/ExtraExercises.rst
+   IndefiniteIteration/Exercises.rst
 
 Optional and Keyword Parameters
 :::::::::::::::::::::::::::::::
@@ -305,7 +300,7 @@ Nested Data and Nested Iteration
    NestedData/NestedDictionaries.rst
    NestedData/NestedIteration.rst
    NestedData/DebuggingNestedData.rst
-   NestedData/ExtraExercises.rst
+   NestedData/Exercises.rst
 
 
 Sorting

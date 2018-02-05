@@ -11,7 +11,7 @@ Exercises
 =========
 
 
-.. activecode:: ee_07_01
+.. activecode:: ee_07_010
    :language: python
    :autograde: unittest
    :hidecode:
