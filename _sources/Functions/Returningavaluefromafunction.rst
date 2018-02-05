@@ -191,6 +191,8 @@ interpreter does these steps:
    :feedback_c: Python will automatically calculate the value x+y+z and then return it in the statement as it is written
    :feedback_d: Functions can return any legal data, including (but not limited to) numbers, strings, lists, dictionaries, etc.
    :correct: b
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
    What is wrong with the following function definition:
 
@@ -209,6 +211,8 @@ interpreter does these steps:
    :feedback_b: Careful!  This is a very common mistake.  Here we have printed the value x+y+z but we have not returned it.  To return a value we MUST use the return keyword.
    :feedback_c: x+y+z calculates a number (assuming x+y+z are numbers) which represents the sum of the values x, y and z.
    :correct: a
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
    What will the following function return?
 
@@ -225,7 +229,8 @@ interpreter does these steps:
    :feedback_b: The two return values are added together.
    :feedback_c: The two results are substituted into the expression and then it is evaluated. The returned values are integers in this case, not strings.
    :correct: b
-   
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
    What will the following code output?
    
@@ -245,6 +250,8 @@ interpreter does these steps:
    :feedback_b: It squares 2, yielding the value 4. 4 is then passed as a value to square again, yeilding 16.
    :feedback_c: This is a more complicated expression, but still valid. The expression square(2) is evaluated, and the return value 4 substitutes for square(2) in the expression.
    :correct: b
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
    What will the following code output?
    
@@ -268,7 +275,9 @@ interpreter does these steps:
    :feedback_d: cyu2 returns the value 1, which is assigned to z.
    :feedback_e: what do you think will cause an error.
    :correct: c
-   
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
    What will the following code output?
    
    .. code-block:: python 
@@ -292,6 +301,8 @@ interpreter does these steps:
    :feedback_b: g has to be executed and return a value in order to know what paramater value to provide to x.
    :feedback_c: square and g both have to execute before the number is printed.
    :correct: b  
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
    Which will print out first, square, g, or a number?
    
@@ -315,7 +326,9 @@ interpreter does these steps:
    :feedback_b: Yes! Two printed lines, and then the function body execution reaches a return statement.
    :feedback_c: The function returns an integer value! However, this code does not print out the result of the function invocation, so you can't see it (print is for people). The only lines you see printed are the ones that occur in the print statements before the return statement.
    :correct: b
-   
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
    How many lines will the following code print?
    
    .. code-block:: python

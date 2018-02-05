@@ -115,6 +115,8 @@ provided. The second parameter name is bound to the second value provided. And s
    :feedback_c: A function definition needs to include the keyword def.
    :feedback_d: A function definition header must end in a colon (:).
    :correct: a
+   :practice: T
+   :topics: Functions/FunctionParameters
 
    Which of the following is a valid function header (first line of a function definition)?
 
@@ -128,6 +130,8 @@ provided. The second parameter name is bound to the second value provided. And s
    :feedback_c: This includes the function name and its parameters
    :feedback_d: This is a comment stating what the function does.
    :correct: b
+   :practice: T
+   :topics: Functions/FunctionParameters
 
    What is the name of the following function?
 
@@ -149,6 +153,8 @@ provided. The second parameter name is bound to the second value provided. And s
    :feedback_c: Yes, the function specifies two parameters: x and y.
    :feedback_d: the parameters include only those variables whose values that the function expects to receive as input.  They are specified in the header of the function.
    :correct: c
+   :practice: T
+   :topics: Functions/FunctionParameters
 
    What are the parameters of the following function?
 
@@ -173,6 +179,8 @@ provided. The second parameter name is bound to the second value provided. And s
    :feedback_d: A colon is only required in a function definition.  It will cause an error with a function call.
    :feedback_e: Since z has the value 3, we have passed in two correct values for this function. "Greetings" will be printed 3 times.
    :correct: e
+   :practice: T
+   :topics: Functions/FunctionParameters
 
    Considering the function below, which of the following statements correctly invokes, or calls, this function (i.e., causes it to run)?
 
@@ -191,6 +199,8 @@ provided. The second parameter name is bound to the second value provided. And s
    :feedback_a: Yes, you can call a function multiple times by putting the call in a loop.
    :feedback_b: One of the purposes of a function is to allow you to call it more than once.   Placing it in a loop allows it to executed multiple times as the body of the loop runs multiple times.
    :correct: a
+   :practice: T
+   :topics: Functions/FunctionParameters
 
    True or false: A function can be called several times by placing a function call in the body of a for loop.
 
@@ -204,7 +214,9 @@ provided. The second parameter name is bound to the second value provided. And s
    :feedback_c: s1 is a variable name; its value would print out, not the variable name.
    :feedback_d: s2 is a variable name; its value would print out, not the variable name.
    :correct: b
-   
+   :practice: T
+   :topics: Functions/FunctionParameters
+
    What output will the following code produce?
    
    .. code-block:: python

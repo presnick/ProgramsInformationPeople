@@ -120,7 +120,7 @@ Problem Set 3
     :autograde: unittest
     :hidecode:
     :practice: T
-    :topics: intro-AccumulatingMultipleResultsInaDictionary
+    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
     **5.** The dictionary ``Junior`` shows a schedule for a junior year semester. The key is the course name and the value is the number of credits. Find the total number of credits taken this semester and assign it to the variable ``credits``. Do not hardcode this -- use the accumulation pattern!
     ~~~~

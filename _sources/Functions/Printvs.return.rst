@@ -88,20 +88,22 @@ until it makes sense to you!
    :feedback_d: 3 is added to the result of squaring 2
    :feedback_e: When square is called, x is bound to the parameter value that is passed in, 2.
    :correct: c
-   
+   :practice: T
+   :topics: Functions/Printvs.return
+
    What will the following code output?
-   
-   .. code-block:: python 
+
+   .. code-block:: python
 
        def square(x):
            return x*x
-           
+
        def g(y):
            return y + 3
-           
+
        def h(y):
            return square(y) + 3
-           
+
        print(h(2))
 
 
@@ -117,7 +119,9 @@ until it makes sense to you!
    :feedback_d: h(2) returns 7, so y is bound to 7 when g is invoked.
    :feedback_e: Ah, but you can nest function calls.
    :correct: d
-   
+   :practice: T
+   :topics: Functions/Printvs.return
+
    What will the following code output?
    
    .. code-block:: python 
