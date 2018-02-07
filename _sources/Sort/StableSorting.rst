@@ -21,6 +21,6 @@ Stable sorting can be useful. For example, suppose that we want to sort a list o
 
     L = [(3, 4), (5, 6), (3, 7)]
     sort1 = sorted(L, key = lambda x: x[1], reverse = True)
-    print (sort1)
+    print(sort1)
     sort2 = sorted(sort1, key = lambda x: x[0])
-    print (sort2)
+    print(sort2)
