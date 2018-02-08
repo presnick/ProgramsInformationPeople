@@ -10,11 +10,16 @@
 Extra Exercises
 ===============
 
-1. Write a function called ``int_return`` that takes an integer as input and returns the same integer.
 
 .. activecode:: ee_Functions_01
-   :tags: Functions/Returningavaluefromafunction.rst, Functions/FunctionDefinitions.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
+   **1.** Write a function called ``int_return`` that takes an integer as input and returns the same integer.
+   ~~~~
    =====
 
    from unittest.gui import TestCaseGui
@@ -26,11 +31,16 @@ Extra Exercises
 
    myTests().main()
 
-1.1 Write a function named ``same`` that takes a string as input, and simply returns that string. 
 
 .. activecode:: ee_functions_011
-   :tags: Functions/Returningavaluefromafunction.rst, Functions/FunctionDefinitions.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
+   **1.1** Write a function named ``same`` that takes a string as input, and simply returns that string.
+   ~~~~
    
    =====
 
@@ -43,10 +53,16 @@ Extra Exercises
 
    myTests().main()
 
-1.2 Write a function called ``same_thing`` that returns the parameter, unchanged.
 
 .. activecode:: ee_functions_012
-   :tags: Functions/FunctionDefinitions.rst, Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
+   **1.2** Write a function called ``same_thing`` that returns the parameter, unchanged.
+   ~~~~
 
    =====
 
@@ -61,11 +77,16 @@ Extra Exercises
    myTests().main()
 
 
-2. Write a function called ``add`` that takes any number as its input and returns that sum with 2 added. 
-
 .. activecode:: ee_Function_02
-   :tags: Functions/Returningavaluefromafunction.rst
-   
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
+   **2.** Write a function called ``add`` that takes any number as its input and returns that sum with 2 added.
+   ~~~~
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -80,11 +101,15 @@ Extra Exercises
    myTests().main()
 
 
-2.1 Write a function called ``subtract_three`` that takes an integer or any number as input, and returns that number minus three. 
-
 .. activecode:: ee_functions_021
-   :tags: Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
+   **2.1** Write a function called ``subtract_three`` that takes an integer or any number as input, and returns that number minus three.
+   ~~~~
    
    ===== 
 
@@ -98,10 +123,16 @@ Extra Exercises
 
    myTests().main()
 
-2.2 Write a function called ``change`` that takes one number as its input and returns that number, plus 7.
 
 .. activecode:: ee_functions_022
-   :tags: Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
+   **2.2** Write a function called ``change`` that takes one number as its input and returns that number, plus 7.
+   ~~~~
 
    =====
 
@@ -115,10 +146,16 @@ Extra Exercises
 
    myTests().main()
 
-3. Write a function called ``change`` that takes any string, adds "Nice to meet you!", and returns that new string.
 
 .. activecode:: ee_Function_03
-   :tags: Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
+   **3.** Write a function called ``change`` that takes any string, adds "Nice to meet you!", and returns that new string.
+   ~~~~
 
    
    =====
@@ -133,11 +170,16 @@ Extra Exercises
 
    myTests().main()
 
-3.1 Write a function named ``intro`` that takes a string as input. Given the string "Becky" as input, the function should return: "Hello, my name is Becky and I love SI 106."
 
 .. activecode:: ee_functions_031
-   :tags: Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
+   **3.1** Write a function named ``intro`` that takes a string as input. Given the string "Becky" as input, the function should return: "Hello, my name is Becky and I love SI 106."
+   ~~~~
 
    =====
 
@@ -150,10 +192,16 @@ Extra Exercises
 
    myTests().main()
 
-3.2 Write a function called ``s_change`` that takes one string as input and returns that string, concatenated with the string "for fun.".
 
 .. activecode:: ee_functions_032
-   :tags: Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
+   **3.2** Write a function called ``s_change`` that takes one string as input and returns that string, concatenated with the string "for fun.".
+   ~~~~
 
    =====
 
@@ -167,10 +215,16 @@ Extra Exercises
 
    myTests().main()
 
-4. Write a function, ``accum``, that takes a list of integers as input and returns the sum of those integers.
 
 .. activecode:: ee_Function_04
-   :tags: Functions/Afunctionthataccumulates.rst, Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Afunctionthataccumulates
+
+   **4.** Write a function, ``accum``, that takes a list of integers as input and returns the sum of those integers.
+   ~~~~
 
    =====
 
@@ -185,12 +239,16 @@ Extra Exercises
 
    myTests().main()
 
-4.1 Write a function named ``total`` that takes a list of integers as input, and returns the total value of all those integers added together. 
 
 .. activecode:: ee_functions_041
-   :tags: Functions/Returningavaluefromafunction.rst, Functions/Afunctionthataccumulates.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Afunctionthataccumulates
 
-
+   **4.1** Write a function named ``total`` that takes a list of integers as input, and returns the total value of all those integers added together.
+   ~~~~
 
    =====
 
@@ -206,10 +264,16 @@ Extra Exercises
 
    myTests().main() 
 
-4.2 Write a function called ``count`` that takes a list of numbers as input and returns all of the elements added togther.
 
 .. activecode:: ee_functions_042
-   :tags: Functions/Returningavaluefromafunction.rst, Functions/Afunctionthataccumulates.rst 
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Afunctionthataccumulates
+
+   **4.2** Write a function called ``count`` that takes a list of numbers as input and returns all of the elements added togther.
+   ~~~~
 
    =====
 
@@ -224,10 +288,15 @@ Extra Exercises
    myTests().main()
 
 
-5. Write a function, ``length``, that takes in a list as the input. If the length of the list is greater than or equal to 5, return "Longer than 5". If the length is less than 5, return "Less than 5".
-
 .. activecode:: ee_Function_05
-   :tags: Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
+   **5.** Write a function, ``length``, that takes in a list as the input. If the length of the list is greater than or equal to 5, return "Longer than 5". If the length is less than 5, return "Less than 5".
+   ~~~~
 
    =====
 
@@ -244,10 +313,15 @@ Extra Exercises
    myTests().main()
 
 
-5.1 Write a function named ``num_test`` that takes a number as input. If the number is greater than 10, the function should return "Greater than 10." If the number is less than 10, the function should return "Less than 10." If the number is equal to 10, the function should return "Equal to 10."
-
 .. activecode:: ee_functions_051 
-   :tags: Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
+
+   **5.1** Write a function named ``num_test`` that takes a number as input. If the number is greater than 10, the function should return "Greater than 10." If the number is less than 10, the function should return "Less than 10." If the number is equal to 10, the function should return "Equal to 10."
+   ~~~~
 
    =====
 
@@ -263,11 +337,16 @@ Extra Exercises
 
    myTests().main() 
 
-5.2 Write a function called ``decision`` that takes a string as input, and then checks the number of characters. If it has over 17 characters, return "This is a long string", if it is shorter or has 17 characters, return "This is a short string".
 
 .. activecode:: ee_functions_052
-   :tags: Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Returningavaluefromafunction
 
+   **5.2** Write a function called ``decision`` that takes a string as input, and then checks the number of characters. If it has over 17 characters, return "This is a long string", if it is shorter or has 17 characters, return "This is a short string".
+   ~~~~
 
    =====
 
@@ -282,11 +361,16 @@ Extra Exercises
 
    myTests().main()
 
-6. You will need to write two functions for this problem. The first function, ``divide`` that takes in any number and returns that same number divided by 2. The second function called ``sum`` should take any number, divide it by 2, and add 6. It should return this new number. You should call the ``divide`` function within the ``sum`` function. Do not worry about decimals.
 
 .. activecode:: ee_Function_06
-   :tags: Functions/Functionscancallotherfunctions.rst, Functions/Returningavaluefromafunction.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Functionscancallotherfunctions
 
+   **6.** You will need to write two functions for this problem. The first function, ``divide`` that takes in any number and returns that same number divided by 2. The second function called ``sum`` should take any number, divide it by 2, and add 6. It should return this new number. You should call the ``divide`` function within the ``sum`` function. Do not worry about decimals.
+   ~~~~
 
    =====
 
@@ -304,10 +388,16 @@ Extra Exercises
 
    myTests().main()
 
-6.1 Write two functions, one called ``addit`` and one called ``mult``. ``addit`` takes one number as an input and adds 5. ``mult`` takes one number as an input, and multiplies that input by whatever is returned by ``addit``, and then returns the result.
 
 .. activecode:: ee_functions_062
-   :tags: Functions/Returningavaluefromafunction.rst, Functions/Functionscancallotherfunctions.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Functions/Functionscancallotherfunctions
+
+   **6.1** Write two functions, one called ``addit`` and one called ``mult``. ``addit`` takes one number as an input and adds 5. ``mult`` takes one number as an input, and multiplies that input by whatever is returned by ``addit``, and then returns the result.
+   ~~~~
 
    =====
 

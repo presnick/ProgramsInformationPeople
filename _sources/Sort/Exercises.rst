@@ -10,13 +10,18 @@
 Exercises
 =========
 
-1. Sort the following string alphabetically, **from z to a**, and assign it to the variable ``sorted_letters``.
 
 .. activecode:: ee_sort_01
-   :tags: Sort/Optionalkeyparameter.rst, Sort/Optionalreverseparameter.rst, Sort/intro-SortingwithSortandSorted.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/Optionalkeyparameter
 
+
+   **1.** Sort the following string alphabetically, **from z to a**, and assign it to the variable ``sorted_letters``.
+   ~~~~
    letters = "alwnfiwaksuezlaeiajsdl"
-
    =====
 
    from unittest.gui import TestCaseGui
@@ -28,10 +33,16 @@ Exercises
 
    myTests().main()
 
-1.1 Sort the list, ``lst`` from largest to smallest. Save this new list to the variable ``lst_sorted``.
 
 .. activecode:: ee_sort_011
-   :tags: Sort/intro-SortingwithSortandSorted.rst, Sort/Optionalkeyparameter.rst, Sort/Optionalreverseparameter.rst, 
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/Optionalkeyparameter
+
+   **1.1** Sort the list, ``lst`` from largest to smallest. Save this new list to the variable ``lst_sorted``.
+   ~~~~
 
    lst = [3, 5, 1, 6, 7, 2, 9, -2, 5]
    
@@ -46,10 +57,16 @@ Exercises
 
    myTests().main()
 
-1.2 Sort the list below, ``animals``, into alphabetical order, a-z. Save the new list as ``animals_sorted``. 
 
 .. activecode:: ee_sort_012
-   :tags: Sort/intro-SortingwithSortandSorted.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/intro-SortingwithSortandSorted
+
+   **1.2** Sort the list below, ``animals``, into alphabetical order, a-z. Save the new list as ``animals_sorted``.
+   ~~~~
 
    animals = ['elephant', 'cat', 'moose', 'antelope', 'elk', 'rabbit', 'zebra', 'yak', 'salamander', 'deer', 'otter', 'minx', 'giraffe', 'goat', 'cow', 'tiger', 'bear']
 
@@ -64,11 +81,17 @@ Exercises
 
    myTests().main()
 
-2. The dictionary, ``medals``, shows the medal count for six countries during the Rio Olympics. Sort the country names so they appear alphabetically. Save this list to the variable ``alphabetical``.
 
 .. activecode:: ee_sort_02
-   :tags: Sort/SortingaDictionary.rst, Sort/intro-SortingwithSortandSorted.rst
-  
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **2.** The dictionary, ``medals``, shows the medal count for six countries during the Rio Olympics. Sort the country names so they appear alphabetically. Save this list to the variable ``alphabetical``.
+   ~~~~
+
    medals = {'Japan':41, 'Russia':56, 'South Korea':21, 'United States':121, 'Germany':42, 'China':70}
    
    =====
@@ -82,10 +105,16 @@ Exercises
 
    myTests().main()
 
-2.1 Sort the following dictionary based on the keys so that they are sorted a to z. Assign the resulting value to the variable ``sorted_keys``.
 
 .. activecode:: ee_sort_021
-   :tags: Sort/SortingaDictionary.rst, Sort/intro-SortingwithSortandSorted.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **2.1** Sort the following dictionary based on the keys so that they are sorted a to z. Assign the resulting value to the variable ``sorted_keys``.
+   ~~~~
 
    dictionary = {"Flowers": 10, 'Trees': 20, 'Chairs': 6, "Firepit": 1, 'Grill': 2, 'Lights': 14}
 
@@ -100,10 +129,16 @@ Exercises
 
    myTests().main()
 
-2.2 Below, we have provided the dictionary ``groceries``, whose keys are grocery items, and values are the number of each item that you need to buy at the store. Sort the dictionary's keys into alphabetical order, and save them as a list called ``grocery_keys_sorted``. 
 
 .. activecode:: ee_sort_022
-   :tags: Sort/intro-SortingwithSortandSorted.rst, Sort/SortingaDictionary.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **2.2** Below, we have provided the dictionary ``groceries``, whose keys are grocery items, and values are the number of each item that you need to buy at the store. Sort the dictionary's keys into alphabetical order, and save them as a list called ``grocery_keys_sorted``.
+   ~~~~
 
    groceries = {'apples': 5, 'pasta': 3, 'carrots': 12, 'orange juice': 2, 'bananas': 8, 'popcorn': 1, 'salsa': 3, 'cereal': 4, 'coffee': 5, 'granola bars': 15, 'onions': 7, 'rice': 1, 'peanut butter': 2, 'spinach': 9}
 
@@ -118,11 +153,17 @@ Exercises
 
    myTests().main()  
 
-3. Given the same dictionary, ``medals``, now sort by the medal count. Save the three countries with the highest medal count to the list, ``top_three``. 
 
 .. activecode:: ee_sort_03
-   :tags: Sort/Anonymousfunctionswithlambdaexpressions.rst, Sort/SortingaDictionary.rst, Sort/Optionalkeyparameter.rst, Sort/Optionalreverseparameter.rst, Sort/intro-SortingwithSortandSorted.rst
-   
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **3.** Given the same dictionary, ``medals``, now sort by the medal count. Save the three countries with the highest medal count to the list, ``top_three``.
+   ~~~~
+
    medals = {'Japan':41, 'Russia':56, 'South Korea':21, 'United States':121, 'Germany':42, 'China':70}
    
    =====
@@ -136,10 +177,16 @@ Exercises
 
    myTests().main()
 
-3.1 Sort the following dictionary based on the value from highest to lowest. Assign the resulting value to the variable ``sorted_values``.
 
 .. activecode:: ee_sort_031
-   :tags: Sort/SortingaDictionary.rst, Sort/Optionalkeyparameter.rst, Sort/Optionalreverseparameter.rst, Sort/intro-SortingwithSortandSorted.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **3.1** Sort the following dictionary based on the value from highest to lowest. Assign the resulting value to the variable ``sorted_values``.
+   ~~~~
 
    dictionary = {"Flowers": 10, 'Trees': 20, 'Chairs': 6, "Firepit": 1, 'Grill': 2, 'Lights': 14}
 
@@ -154,11 +201,17 @@ Exercises
 
    myTests().main()
 
-3.2 Once again, we have provided the dictionary ``groceries``. Once again, you should return a list of its keys, but this time they should be sorted by their values, from highest to lowest. Save the new list as ``most_needed``. 
 
 .. activecode:: ee_sort_032
-   :tags: Sort/intro-SortingwithSortandSorted.rst, Sort/SortingaDictionary.rst, Sort/Optionalreverseparameter.rst, Sort/Optionalkeyparameter.rst
- 
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **3.2** Once again, we have provided the dictionary ``groceries``. Once again, you should return a list of its keys, but this time they should be sorted by their values, from highest to lowest. Save the new list as ``most_needed``.
+   ~~~~
+
    groceries = {'apples': 5, 'pasta': 3, 'carrots': 12, 'orange juice': 2, 'bananas': 8, 'popcorn': 1, 'salsa': 3, 'cereal': 4, 'coffee': 5, 'granola bars': 15, 'onions': 7, 'rice': 1, 'peanut butter': 2, 'spinach': 9}
 
    =====
@@ -172,14 +225,18 @@ Exercises
 
    myTests().main() 
 
-4. Create a function called ``last_four`` that takes in an ID number and returns the last four digits. For example, the number 17573005 should return 3005. Then, use this function to sort the list of ids stored in the variable, ``ids``, from lowest to highest. Save this sorted list in the variable, ``sorted_ids``. Hint: Remember that only strings can be indexed, so conversions may be needed.
 
 .. activecode:: ee_sort_04
-   :tags:Sort/intro-SortingwithSortandSorted.rst
-   
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/intro-SortingwithSortandSorted
+
+   **4.** Create a function called ``last_four`` that takes in an ID number and returns the last four digits. For example, the number 17573005 should return 3005. Then, use this function to sort the list of ids stored in the variable, ``ids``, from lowest to highest. Save this sorted list in the variable, ``sorted_ids``. Hint: Remember that only strings can be indexed, so conversions may be needed.
+   ~~~~
+
    def last_four(x):
-
-
 
 
    ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
@@ -195,10 +252,16 @@ Exercises
 
    myTests().main()
 
-4.1 Sort the following list by each element's second letter a to z. Do so by creating a function called ``second_let`` for the key. Assign the resulting value to the variable ``func_sort``.
 
 .. activecode:: ee_sort_041
-   :tags: Sort/intro-SortingwithSortandSorted.rst, Sort/Optionalkeyparameter.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/Optionalkeyparameter
+
+   **4.1** Sort the following list by each element's second letter a to z. Do so by creating a function called ``second_let`` for the key. Assign the resulting value to the variable ``func_sort``.
+   ~~~~
 
    ex_lst = ['hi', 'how are you', 'bye', 'apple', 'zebra', 'dance']
 
@@ -213,10 +276,16 @@ Exercises
 
    myTests().main()
 
-4.2 Below, we have provided a list of strings called ``nums``. Write a function called ``last_char`` that takes a string as input, and returns only its last character. Use this function to sort the list ``nums`` by the last digit of each number, from highest to lowest, and save this as a new list called ``nums_sorted``. 
 
 .. activecode:: ee_sort_042
-   :tags: Sort/intro-SortingwithSortandSorted.rst, Sort/Optionalreverseparameter.rst, Sort/Optionalkeyparameter.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/Optionalkeyparameter
+
+   **4.2** Below, we have provided a list of strings called ``nums``. Write a function called ``last_char`` that takes a string as input, and returns only its last character. Use this function to sort the list ``nums`` by the last digit of each number, from highest to lowest, and save this as a new list called ``nums_sorted``.
+   ~~~~
 
    nums = ['1450', '33', '871', '19', '14378', '32', '1005', '44', '8907', '16']
 
@@ -238,11 +307,17 @@ Exercises
 
    myTests().main() 
 
-5. Sort the list ``ids`` by the last four digits of each id. Do this using lambda and not using a defined function. Save this sorted list in the variable ``sorted_id``.
 
 .. activecode:: ee_sort_05
-   :tags: Sort/Anonymousfunctionswithlambdaexpressions.rst, Sort/intro-SortingwithSortandSorted.rst
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/Anonymousfunctionswithlambdaexpressions
+
+   **5.** Sort the list ``ids`` by the last four digits of each id. Do this using lambda and not using a defined function. Save this sorted list in the variable ``sorted_id``.
+   ~~~~
+
    ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
 
    =====
@@ -256,10 +331,16 @@ Exercises
 
    myTests().main()
 
-5.1 Sort the following list by each element's second letter a to z. Do so by using lambda. Assign the resulting value to the variable ``lambda_sort``.
 
 .. activecode:: ee_sort_051
-   :tags: Sort/Anonymousfunctionswithlambdaexpressions.rst, Sort/intro-SortingwithSortandSorted.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/Anonymousfunctionswithlambdaexpressions
+
+   **5.1** Sort the following list by each element's second letter a to z. Do so by using lambda. Assign the resulting value to the variable ``lambda_sort``.
+   ~~~~
 
    ex_lst = ['hi', 'how are you', 'bye', 'apple', 'zebra', 'dance']
 
@@ -274,10 +355,16 @@ Exercises
 
    myTests().main()
 
-5.2 Once again, sort the list ``nums`` based on the last digit of each number from highest to lowest. However, now you should do so by writing a lambda function. Save the new list as ``nums_sorted_lambda``. 
 
 .. activecode:: ee_sort_052
-   :tags: Sort/intro-SortingwithSortandSorted.rst, Sort/Anonymousfunctionswithlambdaexpressions.rst, Sort/Optionalreverseparameter.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/Anonymousfunctionswithlambdaexpressions
+
+   **5.2** Once again, sort the list ``nums`` based on the last digit of each number from highest to lowest. However, now you should do so by writing a lambda function. Save the new list as ``nums_sorted_lambda``.
+   ~~~~
 
    nums = ['1450', '33', '871', '19', '14378', '32', '1005', '44', '8907', '16']
 
@@ -295,11 +382,17 @@ Exercises
 
    myTests().main() 
 
-6. **Challenge** Given is the nested dictionary, ``pokemon``, which shows the pokemon each trainer has caught in the early stages of Pokemon Go. Pool this data together in a dictionary assigned to the variable name, ``pooled``. The pooled dictionary should have the total number of rattatas, eevees, etc. Then, sort the compiled dictionary based on the number of pokemon from greatest number to least number to the variable ``sorted_pooled``. Assign the most common pokemon to the variable ``common``. 
 
 .. activecode:: ee_sort_06
-   :tags: Sort/SortingaDictionary.rst, Sort/Optionalkeyparameter.rst, Sort/Optionalreverseparameter.rst, Sort/Anonymousfunctionswithlambdaexpressions.rst, Sort/intro-SortingwithSortandSorted.rst
-      
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **6.** **Challenge** Given is the nested dictionary, ``pokemon``, which shows the pokemon each trainer has caught in the early stages of Pokemon Go. Pool this data together in a dictionary assigned to the variable name, ``pooled``. The pooled dictionary should have the total number of rattatas, eevees, etc. Then, sort the compiled dictionary based on the number of pokemon from greatest number to least number to the variable ``sorted_pooled``. Assign the most common pokemon to the variable ``common``.
+   ~~~~
+
    pokemon = {'Trainer1':
                     {'rattatas':15, 'eevees': 2, 'ditto':1, 'magikarps':3, 'zubats':8, 'pidgey': 12}, 
                'Trainer2':
@@ -323,10 +416,15 @@ Exercises
    myTests().main()
 
 
-6.1 **Challenge:** Below, we have provided the nested dictionary ``medals`` that describes how many medals the USA won in various sports at the Rio Olympics. Write code to sort the sports in ``medals`` based on the total number of medals that were won, from highest to lowest. Save the list of sorted sports as ``sorted_sports``. Save the sport with the most medals as ``most_medals`` and the sport with the least medals as ``least_medals``. 
-
 .. activecode:: ee_sort_061
-   :tags: Sort/intro-SortingwithSortandSorted.rst, Sort/Optionalreverseparameter.rst, Sort/Optionalkeyparameter.rst, Sort/Anonymousfunctionswithlambdaexpressions.rst, Sort/SortingaDictionary.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **6.1** **Challenge:** Below, we have provided the nested dictionary ``medals`` that describes how many medals the USA won in various sports at the Rio Olympics. Write code to sort the sports in ``medals`` based on the total number of medals that were won, from highest to lowest. Save the list of sorted sports as ``sorted_sports``. Save the sport with the most medals as ``most_medals`` and the sport with the least medals as ``least_medals``.
+   ~~~~
 
    medals = {'gymnastics': {'gold': 4, 'silver': 6, 'bronze': 2}, 'basketball': {'gold': 2, 'silver': 0, 'bronze': 0}, 'fencing': {'gold': 0, 'silver': 2, 'bronze': 2}, 'swimming': {'gold': 16, 'silver': 8, 'bronze': 9}, 'wrestling': {'gold': 2, 'silver': 0, 'bronze': 1}, 'volleyball': {'gold': 0, 'silver': 0, 'bronze': 2}, 'track & field': {'gold': 13, 'silver': 10, 'bronze': 9}, 'boxing': {'gold': 1, 'silver': 1, 'bronze': 1}, 'diving': {'gold': 0, 'silver': 2, 'bronze': 1}, 'water polo': {'gold': 1, 'silver': 0, 'bronze': 0}}
 
@@ -347,10 +445,15 @@ Exercises
    myTests().main()  
 
 
-6.2 **Challenge** Here is a dictionary called pokemon_go_data that contains 4 trainers and their data about which pokemon they have caught and how many candy they have for each one. Compress the data so that there is just one dictionary that has all of the information on how many candy each pokemon has overall. Sort this dictionary and assign to the variable ``popular_pokemon`` the top 5 pokemon (those who have the most amount of candy).
-
 .. activecode:: ee_sort_062
-   :tags: Sort/SortingaDictionary.rst, Sort/Optionalkeyparameter.rst, Sort/Optionalreverseparameter.rst, Sort/Anonymousfunctionswithlambdaexpressions.rst, Sort/intro-SortingwithSortandSorted.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: Sort/SortingaDictionary
+
+   **6.2** **Challenge** Here is a dictionary called pokemon_go_data that contains 4 trainers and their data about which pokemon they have caught and how many candy they have for each one. Compress the data so that there is just one dictionary that has all of the information on how many candy each pokemon has overall. Sort this dictionary and assign to the variable ``popular_pokemon`` the top 5 pokemon (those who have the most amount of candy).
+   ~~~~
 
    pokemon_go_data = {'bentspoon':
                       {'Rattata': 203, 'Pidgey': 120, 'Drowzee': 89, 'Squirtle': 35, 'Pikachu': 3, 'Eevee': 34, 'Magikarp': 300, 'Paras': 38},

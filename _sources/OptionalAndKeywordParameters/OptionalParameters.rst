@@ -135,6 +135,8 @@ appended is not present in the list that is printed on line 9.
    :feedback_c: The function does return a value.
    :feedback_d: Because both parameters have default values specified in the definition, they are both optional.
    :correct: a
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
 
    What will the following code print?
    
@@ -155,6 +157,8 @@ appended is not present in the list that is printed on line 9.
    :feedback_c: The function does return a value.
    :feedback_d: Because both parameters have default values specified in the definition, they are both optional.
    :correct: b
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
 
    What will the following code print?
    

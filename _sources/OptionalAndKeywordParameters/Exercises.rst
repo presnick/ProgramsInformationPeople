@@ -10,11 +10,16 @@
 Exercises
 =========
 
-1. Write a function called ``str_mult`` that takes in a required string parameter and an optional integer parameter. The default value for the integer parameter should be 3. The function should return the string multiplied by the integer parameter. 
 
 .. activecode:: ee_Opt_Params_01
-   :tags: OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
 
+   **1.** Write a function called ``str_mult`` that takes in a required string parameter and an optional integer parameter. The default value for the integer parameter should be 3. The function should return the string multiplied by the integer parameter.
+   ~~~~
    =====
 
    from unittest.gui import TestCaseGui
@@ -29,10 +34,15 @@ Exercises
    myTests().main()
 
 
-1.1 Define a function called ``multiply``. It should have one required parameter, a string. It should also have one optional parameter, an integer, named ``mult_int``, with a default value of 10. The function should return the string multiplied by the integer. (i.e.: Given inputs "Hello", mult_int=3, the function should return "HelloHelloHello")
-
 .. activecode:: ee_optparams_011
-   :tags: OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
+
+   **1.1** Define a function called ``multiply``. It should have one required parameter, a string. It should also have one optional parameter, an integer, named ``mult_int``, with a default value of 10. The function should return the string multiplied by the integer. (i.e.: Given inputs "Hello", mult_int=3, the function should return "HelloHelloHello")
+   ~~~~
 
    def multiply():
 
@@ -48,10 +58,16 @@ Exercises
 
    myTests().main()
 
-1.2 Create a function called ``mult`` that has two parameters, the first is required and should be an integer, the second is an optional parameter that can either be a number or a string but whose default is 6. The function should return the first parameter multiplied by the second.
 
 .. activecode:: ee_opt_params_012
-   :tags: OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
+
+   **1.2** Create a function called ``mult`` that has two parameters, the first is required and should be an integer, the second is an optional parameter that can either be a number or a string but whose default is 6. The function should return the first parameter multiplied by the second.
+   ~~~~
 
    =====
 
@@ -66,13 +82,23 @@ Exercises
 
    myTests().main()
 
-2. The following function, ``greeting``, does not work. Please fix the code so that it runs without error. This only requires one change in the definition of the function.
 
 .. activecode:: ee_Opt_Params_02
-   :tags: OptionalAndKeywordParameters/KeywordParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/KeywordParameters
 
-   def greeting(greeting = "Hello ", name, excl = "!"):
+   **2.** The following function, ``greeting``, does not work. Please fix the code so that it runs without error. This only requires one change in the definition of the function.
+   ~~~~
+
+   def greeting(greeting="Hello ", name, excl="!"):
        return greeting + name + excl
+
+   print(greeting("Bob"))
+   print(greeting(""))
+   print(greeting("Bob", excl="!!!")
    =====
 
    from unittest.gui import TestCaseGui
@@ -85,10 +111,16 @@ Exercises
 
    myTests().main()
 
-2.1 Below is a function, ``sum``, that does not work. Change the function definition so the code works. The function should still have a required parameter, intx, and an optional parameter, intz with a defualt value of 5. 
 
 .. activecode:: ee_optparams_021
-   :tags: OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
+
+   **2.1** Below is a function, ``sum``, that does not work. Change the function definition so the code works. The function should still have a required parameter, intx, and an optional parameter, intz with a defualt value of 5.
+   ~~~~
 
    def sum(intz=5, intx):
        return intz + intx
@@ -105,10 +137,16 @@ Exercises
 
    myTests().main()
 
-2.2 Currently the function is supposed to take 1 required parameter, and 2 optional parameters, however the code doesn't work. Fix the code so that it passes the test. This should only require changing one line of code.   
 
 .. activecode:: ee_opt_params_022
-   :tags: OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
+
+   **2.2** Currently the function is supposed to take 1 required parameter, and 2 optional parameters, however the code doesn't work. Fix the code so that it passes the test. This should only require changing one line of code.
+   ~~~~
 
    def waste(var = "Water", mar, marble = "type"):
        final_string = var + " " + marble + " " + mar
@@ -125,10 +163,16 @@ Exercises
 
    myTests().main()
 
-3. Write a function, ``test``, that takes in three parameters: a required integer, an optional boolean whose default value is ``True``, and an optional dictionary whose default value is ``{2:3, 4:5, 6:8}``. If the boolean parameter is True, the function should test to see if the integer is a key in the dictionary. The value of that key should then be returned. If the boolean parameter is False, return the boolean value "False". If the boolean parameter is False, the function should return "None".
 
 .. activecode:: ee_Opt_Params_03
-   :tags: OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
+
+   **3.** Write a function, ``test``, that takes in three parameters: a required integer, an optional boolean whose default value is ``True``, and an optional dictionary whose default value is ``{2:3, 4:5, 6:8}``. If the boolean parameter is True, the function should test to see if the integer is a key in the dictionary. The value of that key should then be returned. If the boolean parameter is False, return the boolean value "False".
+   ~~~~
       
    =====
 
@@ -143,10 +187,16 @@ Exercises
 
    myTests().main()
 
-3.1 Define a function called ``nums`` that has three parameters. The first parameter, an integer, should be required. A second parameter named ``mult_int`` should be optional with a default value of 5. The final parameter, ``switch``, should also be optional with a default value of False. The function should multiply the two integers together, and if switch is True, should change the sign of the product before returning it. 
 
 .. activecode:: ee_optparams_031
-   :tags: OptionalAndKeywordParameters/KeywordParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/KeywordParameters
+
+   **3.1** Define a function called ``nums`` that has three parameters. The first parameter, an integer, should be required. A second parameter named ``mult_int`` should be optional with a default value of 5. The final parameter, ``switch``, should also be optional with a default value of False. The function should multiply the two integers together, and if switch is True, should change the sign of the product before returning it.
+   ~~~~
 
    def nums():
 
@@ -165,12 +215,18 @@ Exercises
 
    myTests().main()  
 
-3.2 Write a function called ``checkingIfIn`` that takes three parameters. The first is a required parameter, which should be a string. The second is an optional parameter called ``direction`` with a default value of ``True``. The third is an optional parameter called ``d`` that has a default value of ``{'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}``. Write the function ``checkingIfIn`` so that when the second parameter is ``True``, it checks to see if the first parameter is a key in the third parameter; if it is, return ``True``, otherwise return ``False``. 
-
-But if the second paramter is ``False``, then the function should check to see if the first parameter is *not* a key of the third. If it's *not*, the function should return ``True`` in this case, and if it is, it should return ``False``.
 
 .. activecode:: ee_opt_params_032
-   :tags: OptionalAndKeywordParameters/KeywordParameters.rst, OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/KeywordParameters
+
+   **3.2** Write a function called ``checkingIfIn`` that takes three parameters. The first is a required parameter, which should be a string. The second is an optional parameter called ``direction`` with a default value of ``True``. The third is an optional parameter called ``d`` that has a default value of ``{'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}``. Write the function ``checkingIfIn`` so that when the second parameter is ``True``, it checks to see if the first parameter is a key in the third parameter; if it is, return ``True``, otherwise return ``False``.
+
+   But if the second paramter is ``False``, then the function should check to see if the first parameter is *not* a key of the third. If it's *not*, the function should return ``True`` in this case, and if it is, it should return ``False``.
+   ~~~~
 
    =====
 
@@ -190,10 +246,16 @@ But if the second paramter is ``False``, then the function should check to see i
 
    myTests().main()
 
-4. Write a function called ``together`` that takes three parameters, the first is a required parameter that is a number (integer or float), the second is a required parameter that is a string, and the third is an optional parameter whose default is " ". What is returned is the first parameter, concatenated with the second, using the third.
 
 .. activecode:: ee_opt_params_042
-   :tags: OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/OptionalParameters
+
+   **4.** Write a function called ``together`` that takes three parameters, the first is a required parameter that is a number (integer or float), the second is a required parameter that is a string, and the third is an optional parameter whose default is " ". What is returned is the first parameter, concatenated with the second, using the third.
+   ~~~~
 
    =====
 
@@ -209,10 +271,16 @@ But if the second paramter is ``False``, then the function should check to see i
 
    myTests().main()   
 
-5. We have provided the function ``checkingIfIn`` such that if the first input parameter is in the third, dictionary, input parameter, then the function returns that value, and otherwise, it returns ``False``. Follow the instructions in the active code window for specific variable assignmemts. 
 
 .. activecode:: ee_opt_params_052
-   :tags: OptionalAndKeywordParameters/KeywordParameters.rst, OptionalAndKeywordParameters/OptionalParameters.rst
+   :language: python
+   :autograde: unittest
+   :hidecode:
+   :practice: T
+   :topics: OptionalAndKeywordParameters/KeywordParameters
+
+   **5.** We have provided the function ``checkingIfIn`` such that if the first input parameter is in the third, dictionary, input parameter, then the function returns that value, and otherwise, it returns ``False``. Follow the instructions in the active code window for specific variable assignmemts.
+   ~~~~
 
    def checkingIfIn(a, direction = True, d = {'apple': 2, 'pear': 1, 'fruit': 19, 'orange': 5, 'banana': 3, 'grapes': 2, 'watermelon': 7}):
        if direction == True:

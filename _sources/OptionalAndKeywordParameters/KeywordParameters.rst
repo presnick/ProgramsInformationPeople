@@ -23,7 +23,7 @@ In the previous section, on :ref:`Optional Parameters <optional_params_chap>` yo
 
 In this chapter, you'll see one more way to invoke functions with optional parameters, with keyword-based parameter passing. This is particularly convenient when there are several optional parameters and you want to provide a value for one of the later parameters while not providing a value for the earlier ones.
 
-The online official python documentation includes a tutorial on optional parameters which covers the topic quite well. Please read the content there: * `Keyword arguments <http://docs.python.org/2/tutorial/controlflow.html#keyword-arguments>`_
+The online official python documentation includes a tutorial on optional parameters which covers the topic quite well. Please read the content there: * `Keyword arguments <http://docs.python.org/3/tutorial/controlflow.html#keyword-arguments>`_
 
 Don't worry about the ``def cheeseshop(kind, *arguments, **keywords):`` example. You should be able to get by without understanding ``*parameters`` and ``**parameters`` in this course. But do make sure you understand the stuff above that.
 
@@ -51,7 +51,7 @@ As you step through it, each time the function is invoked, make a prediction abo
 
 .. note::
 
-   Note that we have yet another, slightly different use of the = sign here. As a stand-alone, top-level statement, ``x=3``, the variable x is set to 3. Inside the parentheses that invoke a function, ``x=3`` says that 3 should be bound to the local variable x in the stack frame for the function invocation. Inside the parentheses the define a function, ``x=3`` says that 3 should be the value for x in every invocation of the function where no value is explicitly provided for x. 
+   Note that we have yet another, slightly different use of the = sign here. As a stand-alone, top-level statement, ``x=3``, the variable x is set to 3. Inside the parentheses that invoke a function, ``x=3`` says that 3 should be bound to the local variable x in the stack frame for the function invocation. Inside the parentheses of a function definition, ``x=3`` says that 3 should be the value for x in every invocation of the function where no value is explicitly provided for x.
 
 **Check your understanding**
 
@@ -67,6 +67,8 @@ As you step through it, each time the function is invoked, make a prediction abo
    :feedback_d: 2 is bound x, 5 to y, and z gets its default value, 7
    :feedback_e: z has a default value in the function definition, so it's optional to pass a value for it.
    :correct: d
+   :practice: T
+   :topics: OptionalAndKeywordParameters/KeywordParameters
 
    What value will be printed for z?
    
@@ -90,6 +92,8 @@ As you step through it, each time the function is invoked, make a prediction abo
    :feedback_d: 10 is the second value passed, but it is bound to z, not y.
    :feedback_e: That's the beauty of passing parameters with keywords; you can skip some parameters and they get their default values.
    :correct: b
+   :practice: T
+   :topics: OptionalAndKeywordParameters/KeywordParameters
 
    What value will be printed for y?
    
@@ -113,6 +117,8 @@ As you step through it, each time the function is invoked, make a prediction abo
    :feedback_d: 
    :feedback_e: 2 is bound to x since it's the first value, but so is 5, based on keyword.
    :correct: e
+   :practice: T
+   :topics: OptionalAndKeywordParameters/KeywordParameters
 
    What value will be printed for x?
    
@@ -134,6 +140,8 @@ As you step through it, each time the function is invoked, make a prediction abo
    :feedback_c: the default value for z is determined at the time the function is defined, not when it is invoked.
    :feedback_d: there's nothing wrong with reassigning the value of a variable at a later time.
    :correct: b
+   :practice: T
+   :topics: OptionalAndKeywordParameters/KeywordParameters
 
    What value will be printed for z?
    

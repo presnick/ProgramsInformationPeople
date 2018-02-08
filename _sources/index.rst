@@ -254,7 +254,7 @@ Functions
    Functions/PassingMutableObjects.rst
    Functions/SideEffects.rst
    Functions/Glossary.rst
-   Functions/ExtraExercises.rst
+   Functions/Exercises.rst
 
 
 While Loops
@@ -305,7 +305,7 @@ Nested Data and Nested Iteration
    NestedData/NestedDictionaries.rst
    NestedData/NestedIteration.rst
    NestedData/DebuggingNestedData.rst
-   NestedData/ExtraExercises.rst
+   NestedData/Exercises.rst
 
 
 Sorting
