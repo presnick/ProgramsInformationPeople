@@ -7,10 +7,10 @@ Problem Set 3
 
 
 .. activecode:: ps_03_01
-    :include: addl_functions
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
     :topics: Iteration/TheAccumulatorPattern
 
     **1.** ``rainfall_mi`` is a string that contains the average number of inches of rainfall in Michigan for every month (in inches) with every month separated by a comma.

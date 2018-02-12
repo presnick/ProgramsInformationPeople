@@ -11,6 +11,8 @@ Problem Set 5
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: OptionalAndKeywordParameters/OptionalParameters
 
     **1.** Define a function called ``mult_both`` whose input is two integers, whose default parameter values are the integers 3 and 4. The function's return value should be the two input integers multiplied together.
 
@@ -38,6 +40,8 @@ Problem Set 5
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Tuples/TuplesasReturnValues
 
     **2.** Define a function called ``max_and_min`` that returns a tuple containing the maximum and minimum numbers in a list. If the list is empty, your function should return ``(False, False)``
     ~~~~
@@ -62,6 +66,8 @@ Problem Set 5
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Sort/Optionalreverseparameter
 
     **3.** Write code to sort the list ``fall_list`` in reverse alphabetical order. Assign the result of the sorted list to the variable ``sorted_fall_list``.
 
@@ -81,6 +87,8 @@ Problem Set 5
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Sort/Anonymousfunctionswithlambdaexpressions
 
     **4.** First, write code to sort the list ``food_amounts`` by the key ``sugar_grams``, from lowest to highest. Assign that sorted list to the variable ``sorted_sugar``. Next, write code to sort the list ``food_amounts`` by the value of the key ``'carbohydrate'`` minus the value of the key ``'fiber'`` in each one, from lowest difference to highest. Assign this sorted list to a variable ``raw_carb_sort``.
 
@@ -102,6 +110,8 @@ Problem Set 5
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Sort/Optionalkeyparameter
 
     **5.** Write a function ``best_three_words`` that accepts a string and returns a list of the 3 highest-scoring words in a given sentence. You may assume there are no bonuses that double or triple letter values or entire words. The dictionary saved in ``letter_values`` in the body of ``computeScrabbleScore`` contains the Scrabble score information: its keys are letters, and its values are the scores associated with those letters.
 
@@ -135,6 +145,8 @@ Problem Set 5
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Sort/Optionalkeyparameter
 
     **6.** Define a function ``sort_nested_lists`` that accepts as input a list of lists of integers, e.g. ``[[2,3],[45,100,2],[536],[103,2,8]]``. It should return a sorted version of that list, sorted by the sum of the integers in each sub-list. For example, if that list were the function's input, the return value should be ``[[2,3],[103,2,8],[45,100,2],[536]]``.
 
@@ -160,6 +172,8 @@ Problem Set 5
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Sort/Anonymousfunctionswithlambdaexpressions
 
     **7.** Define a function ``nthMostCommon`` that accepts a string ``s`` and an integer ``n`` and returns the "nth" most common word. For example, to find the most common word, ``n==1``. To find the second most common word, ``n==2``. If ``n`` is greater than the number of unique words, your function should return ``False``.
 
