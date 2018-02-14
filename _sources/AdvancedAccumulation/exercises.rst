@@ -274,7 +274,8 @@ Use the zip function to take the lists below and turn them into a list of tuples
 
    myTests().main()
 
-Use zip and map or a list comprehension to make a list consisting the maximum value for each position.
+Use zip and map or a list comprehension to make a list consisting the maximum value for each position. For L1, L2, and
+L3, you would end up with a list [4, 5, 3, 5].
 
 .. activecode:: zip_exercise_2
 
