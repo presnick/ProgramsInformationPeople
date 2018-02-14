@@ -8,6 +8,8 @@ Week 6 Discussion Section
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Functions/Returningavaluefromafunction
 
     **1.** Define a function called `safe_double` that accepts a list and returns a list where every item is doubled.
 
@@ -35,6 +37,8 @@ Week 6 Discussion Section
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Functions/PassingMutableObjects
 
     **2.** Define a function called `mutating_double` that accepts a list, destructively modifies the list so that each item is doubled, and returns the value None.
 
@@ -64,6 +68,8 @@ Week 6 Discussion Section
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: OptionalAndKeywordParameters/OptionalParameters
 
     **3.** Define a function called add_values whose input is two integers, whose default parameter values are the integers 1 and 2. The function’s return value should be the two input integers added together.
 
@@ -93,6 +99,8 @@ Week 6 Discussion Section
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Sort/Optionalreverseparameter
 
     **4.** Define a function called topThree that accepts a list of integers (lst_of_ints) and returns the three largest integers in that list, largest one first
 
@@ -117,6 +125,8 @@ Week 6 Discussion Section
     :autograde: unittest
     :chatcodes:
     :hidecode:
+    :practice: T
+    :topics: Sort/Optionalkeyparameter
 
     **5.** Write a function called topThreeLen that accepts a list of strings (lst_of_strings) and returns the three longest strings, longest one first:
 
