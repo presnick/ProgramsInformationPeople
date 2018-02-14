@@ -57,49 +57,4 @@ If one or more columns contain text, and that text could contain commas, we need
        outfile.write('"{}", "{}", "{}"\n'.format(student))
    outfile.close()
 
-The python .csv module
-----------------------
-
 Python also includes a .csv module, which provides a cleaner, more abstract way to handle writing .csv files. It can generate slightly different CSV formats, and handles a few other aspects of more complicated outputs in a nice way. You are welcome to explore the `documentation for the csv module <https://docs.python.org/2/library/csv.html>`_ if you'd like to learn how to use it.
-
-In particular, there is a class called `csv.DictWriter`. It includes a method `.writeheader()` and a method `.writerow()`.
-
-To use it, you will follow this recipe:
-
-1. open the file for writing.
-    - Specify `newline=''` as you open the file because the csv writer will take care of adding '\n' between lines
-
-2. Create a new instance of the class csv.DictWriter
-    - pass in the file object
-    - specify a set of field names to be used as a header row and as the keys for the dictionaries representing each row
-
-3. Call the `.writeheader()` method to generate the first row of output
-
-4. Iterate through the rows of data to be output. For each:
-    - Call the `.writerow()` method, passing in a dictionary representing the row, with fieldnames as keys and cell contents as values
-
-5. Close the file
-
-Thus, the example above might look like:
-
-.. sourcecode:: python
-
-   import csv
-   students = [("Jones, Jamal J", 98, "A+"),
-               ("Ensted, Eloise E", 87, "B+"),
-               ("Morton, Madeline", 99, "A+")]
-
-   outfile = open("grades.csv","w", newline='')
-   writer = csv.DictWriter(outfile,
-                           fieldnames=["Name", "score", "grade"],
-                           delimiter=",",
-                           quotechar='"',
-                           quoting = csv.QUOTE_NONNUMERIC)
-   # output the header row
-   writer.writeheader()
-   # output each of the rows:
-   for student in students:
-       writer.writerow({"Name": student[0],
-                        "score": student[1],
-                        "grade": students[2]})
-   outfile.close()
