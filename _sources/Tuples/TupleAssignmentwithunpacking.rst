@@ -73,6 +73,7 @@ across some code that someone else has written that uses the * notation inside
 a parameter list, come back and look at this again.
 
 .. mchoice:: test_questiontuples_2
+   :topics: Tuples/TupleAssignmentwithunpacking
    :multiple_answers:
    :answer_a: Make the last two lines of the function be "return x" and "return y"  
    :answer_b: Include the statement "return [x, y]" 
@@ -89,6 +90,7 @@ a parameter list, come back and look at this again.
    If you want a function to return two values, contained in variables x and y, which of the following methods will work?
 
 .. mchoice:: test_questiontuples_3
+   :topics: Tuples/TupleAssignmentwithunpacking
    :answer_a: You can't use different variable names on the left and right side of an assignment statement.
    :answer_b: At the end, x still has it's original value instead of y's original value.
    :answer_c: Actually, it works just fine!

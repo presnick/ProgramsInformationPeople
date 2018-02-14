@@ -25,6 +25,7 @@ have omitted the parentheses when first assigning a tuple to the variable julia.
 
 .. mchoice:: test_questiontuples_1
    :multiple_answers:
+   :topics: Tuples/TuplePacking
    :answer_a: print(julia['city'])
    :answer_b: print(julia[-1])
    :answer_c: print(julia(-1))

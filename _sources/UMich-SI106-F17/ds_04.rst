@@ -7,6 +7,8 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Selection/Chainedconditionals
 
     **1.** The code below creates a random number between 1 and 10 and then asks the user to guess the number. Write code that will give the user feedback on their guess:
 
@@ -50,6 +52,8 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Selection/ConditionalExecutionBinarySelection
 
     **2.** Write code that counts the number of a's in ``word`` and store the result in the variable ``a_count``.
 
@@ -69,8 +73,10 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Selection/ConditionalExecutionBinarySelection
 
-    **3.** The variable ``sentence`` stores a string.Write code to determine the number of words that contain the letter "c". Store the result in ``num_words_with_c``.
+    **3.** The variable ``sentence`` stores a string. Write code to determine the number of words that contain the letter "c". Store the result in ``num_words_with_c``.
     ~~~~
     sentence = "students flock to the arb for a variety of outdoor activities such as jogging and picnicking"
 
@@ -92,6 +98,8 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Selection/ConditionalExecutionBinarySelection
 
     **4.** The variable ``sentence`` stores a string. Write code to determine the number of words that contain the letter "c" **or** are more than 5 characters long. Store the result in ``c_or_long``.
     ~~~~
@@ -114,6 +122,7 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :topics: IndefiniteIteration/ThewhileStatement
 
     **Indefinite Iteration** Write code that asks the user for input repeatedly, as long as the user enters an odd number, and adds them all up. It should stop when the user first enters an even number, and not include that in the sum.
     ~~~~
@@ -122,7 +131,6 @@ Week 4 Discussion Section
     # Write your plan in English.
 
     # Then write our code.
-
 
 
     ====
@@ -134,6 +142,8 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Dictionaries/intro-Dictionaries
 
     **5.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
 
@@ -157,6 +167,8 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Dictionaries/Dictionarymethods
 
     **6.** Here's a dictionary, ``d``.
 
@@ -202,6 +214,8 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
     **7.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
     ~~~~
@@ -230,6 +244,8 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Iteration/TheAccumulatorPatternwithLists
 
     **8.** Suppose the dictionary ``golds`` maps countries to the number of gold medals they won in the 2016 olympics. Write code to store the names of countries that won more than 20 gold medals into the variable ``gold20``.
     ~~~~
@@ -249,6 +265,8 @@ Week 4 Discussion Section
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
     **9.** Suppose the dictionary ``golds`` maps countries to the number of gold medals they won in the 2016 olympics. Write code to compute the name of the country that won the most gold medals. Store the result in the variable ``most_golds``
     ~~~~

@@ -9,6 +9,8 @@ Problem Set 4
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
     **0.** The dictionary ``umSchools`` maps the names of schools at Michigan to the year they were founded.
     Write code that determines which school is the oldest and store the name of the school into the variable ``oldest_school``.
@@ -47,9 +49,11 @@ Problem Set 4
 
 
 .. activecode:: ps_04_01
-	:language: python
-	:autograde: unittest
-	:hidecode:
+    :language: python
+    :autograde: unittest
+    :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
 	**1.** Given the string ``s`` in the code below, write code to figure out what the most common **letter** in the string is and assign that to the variable ``common_letter``. (Do not hard-code the right answer.) Hint: use dictionary accumulation and then max accumulation
 	~~~~
@@ -77,9 +81,11 @@ Problem Set 4
 	myTests().main()
 
 .. activecode:: ps_04_02
-	:language: python
-	:autograde: unittest
-	:hidecode:
+    :language: python
+    :autograde: unittest
+    :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
 	**2.** Given the string ``s`` in the code below, write code to figure out what the most common **word** in the string is and assign that to the variable ``common_word``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
 	~~~~
@@ -102,9 +108,11 @@ Problem Set 4
 
 
 .. activecode:: ps_04_03
-	:language: python
-	:autograde: unittest
-	:hidecode:
+    :language: python
+    :autograde: unittest
+    :hidecode:
+    :practice: T
+    :topics: Iteration/TheAccumulatorPattern
 
 	**3.** Write code that will count the number of vowels in the sentence ``s`` and assign the result to the variable ``num_vowels``. For this problem, vowels are only a, e, i, o, and u. Hint: use the ``in`` operator with ``vowels``.
 	~~~~
@@ -128,9 +136,11 @@ Problem Set 4
 	myTests().main()
 
 .. activecode:: ps_04_04
-	:language: python
-	:autograde: unittest
-	:hidecode:
+    :language: python
+    :autograde: unittest
+    :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
 	**4.** Write code that will create a dictionary ``vowel_frequencies`` where the keys are the five vowels and the values are how often the vowel appears in the string ``s``. Then, using ``vowel_frequencies``, determine the most common vowel in ``s`` and assign the result to the variable ``common_vowel``. Use dictionary accumulation and do not hard code the answer.
 	~~~~
@@ -156,9 +166,11 @@ Problem Set 4
 	myTests().main()
 
 .. activecode:: ps_04_05
-	:language: python
-	:autograde: unittest
-	:hidecode:
+    :language: python
+    :autograde: unittest
+    :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
 	**5.** The code below contains a specially formatted string named ``january_temp_data`` that contains January temperature information for Ann Arbor for the years 2016 to 2000. Every year is on a different line. There are three "columns", separated by commas. The first column specifies the year, the second column specifies the lowest temperature (in Fahrenheit), and the third column specifies the highest temperature (see the comment at the top of the code). Write code that will create two dictionaries: ``january_lows`` and ``january_highs`` that map years to low and high temperatures respectively. In both dictionaries, the keys should be **integers** (for each year) and the values should be **integers** for the temperatures. You will get zero credit if you hard code your answer.
 
@@ -208,9 +220,11 @@ Problem Set 4
 	myTests().main()
 
 .. activecode:: ps_04_06
-	:language: python
-	:autograde: unittest
-	:hidecode:
+    :language: python
+    :autograde: unittest
+    :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
 	**6.** The code below contains the same string ``january_temp_data`` as before. This time, write code that will determine which year had the largest *difference* between the lowest and highest temperature. Store the year as an integer in a variable named ``biggest_temp_diff_year``. You will get zero credit if you code your answer.
 	~~~~
@@ -257,6 +271,8 @@ Problem Set 4
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Functions/Returningavaluefromafunction
 
     **7.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
 
@@ -279,6 +295,8 @@ Problem Set 4
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Functions/Returningavaluefromafunction
 
     **8.** Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Why does it cause an error? Write a comment explaining why an error occurs. Then change line 5 to print out the result of an expression that invokes the function ``change_amounts`` and evaluates to ``7``. (So line 5 should be a print statement whose result is printing the integer ``7``.)
 
@@ -304,6 +322,8 @@ Problem Set 4
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Functions/Returningavaluefromafunction
 
     **9.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
 
@@ -328,6 +348,8 @@ Problem Set 4
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
     **10.** Write a function named ``words_starting_with`` that accepts a string ``sentence`` as an argument and returns a dictionary whose keys are letters that words in ``sentence`` start with and each value is a list of words starting with that letter. For example:
 
@@ -357,9 +379,11 @@ Problem Set 4
 
 
 .. activecode:: ps_04_07
-	:language: python
-	:autograde: unittest
-	:hidecode:
+    :language: python
+    :autograde: unittest
+    :hidecode:
+    :practice: T
+    :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
 	**Extra question 1.** The code below contains a string ``january_temp_data`` with the same format as before, but with more data (see the "COLUMNS" comment at the beginning of the code). This time, write code that will determine which year had most **precipitation + snowfall** and store that year as an integer in the variable ``most_water_year``. You will get zero credit if you hard code your answer. Note: use the ``float()`` function to cast a string to a float.
 	~~~~
@@ -416,6 +440,8 @@ Problem Set 4
     :language: python
     :autograde: unittest
     :hidecode:
+    :practice: T
+    :topics: Functions/Returningavaluefromafunction
 
     **Extra question 2.** Define a function called ``shortest_string`` that takes a list of strings as input and returns the string with the fewest characters in it. (You can assume that one string in any input list will be shorter than the rest.) If the list of strings is empty, your code should return ``False``
 
