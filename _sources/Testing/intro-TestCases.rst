@@ -70,6 +70,10 @@ Here's an example with test cases for the `blanked` function that you created
 in the Hangman problem set. Note that the tests will fail until you fill in a correct definition for the blanked function.
 
 .. activecode:: simple_test_2
+    :language: python
+    :autograde: unittest
+    :practice: T
+    :topics: Testing/intro-TestCases
 
     # define the function blanked().
     # It takes a word and a string of letters that have been revealed.
@@ -94,6 +98,8 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
 **Check your understanding**
 
 .. mchoice:: test_questionsimple_test_1
+   :practice: T
+   :topics: Testing/intro-TestCases
    :answer_a: True
    :answer_b: False
    :answer_c: It depends
@@ -105,6 +111,7 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
    When ``TestCase.assertEqual()`` is passed two values that are not the same, it generates an error and stops execution of the program.
  
 .. mchoice:: test_questionsimple_test_2
+   :topics: Testing/intro-TestCases
    :answer_a: True
    :answer_b: False
    :feedback_a: You might not notice the error, if the code just produces a wrong output rather generating an error. And it may be difficult to figure out the original cause of an error when you do get one.
