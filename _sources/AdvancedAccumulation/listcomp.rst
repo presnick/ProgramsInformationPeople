@@ -54,6 +54,7 @@ You can also combine map and filter operations by chaining them together, or wit
 **Check your understanding**
 
 .. mchoice:: test_question9_20_1
+   :topics: AdvancedAccumulation/listcomp
    :answer_a: [4,2,8,6,5]
    :answer_b: [8,4,16,12,10]
    :answer_c: 10
