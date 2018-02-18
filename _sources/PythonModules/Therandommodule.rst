@@ -93,6 +93,8 @@ likely get random behavior each time you execute.
 **Check your understanding**
 
 .. mchoice:: randmodule_1
+   :practice: T
+   :topics: PythonModules/Therandommodule
    :answer_a: prob = random.randrange(1, 101)
    :answer_b: prob = random.randrange(1, 100)
    :answer_c: prob = random.randrange(0, 101)
@@ -107,6 +109,8 @@ likely get random behavior each time you execute.
 
 
 .. mchoice:: question4_4_4
+   :practice: T
+   :topics: PythonModules/Therandommodule
    :answer_a: There is no computer on the stage for the drawing.
    :answer_b: Because computers don’t really generate random numbers, they generate pseudo-random numbers.
    :answer_c: They would just generate the same numbers over and over again.
