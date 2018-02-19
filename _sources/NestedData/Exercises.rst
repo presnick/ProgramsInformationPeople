@@ -7,13 +7,22 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Extra Exercises
-===============
+Exercises
+=========
 
-1. The variable ``nested`` contains a nested list. Assign 'snake' to the variable ``output`` using indexing. 
 
 .. activecode:: ee_nested_data_01
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/DebuggingNestedData
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
+
+   **1.** The variable ``nested`` contains a nested list. Assign 'snake' to the variable ``output`` using indexing.
+
+   ~~~~
 
    nested = [['dog', 'cat', 'horse'], ['frog', 'turtle', 'snake', 'gecko'], ['hamster', 'gerbil', 'rat', 'ferret']]
       
@@ -28,10 +37,19 @@ Extra Exercises
 
    myTests().main()
 
-1.1 Below, we have provided a list of lists. Use indexing to assign the element 'horse' to the variable name ``idx1``. 
 
 .. activecode:: ee_nested_data_011
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/DebuggingNestedData
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
+
+   **1.1** Below, we have provided a list of lists. Use indexing to assign the element 'horse' to the variable name ``idx1``.
+
+   ~~~~
 
    animals = [['cat', 'dog', 'mouse'], ['horse', 'cow', 'goat'], ['cheetah', 'giraffe', 'rhino']]
 
@@ -46,10 +64,19 @@ Extra Exercises
 
    myTests().main()
 
-1.2 Using indexing, retrieve the string 'willow' from the list and assign that to the variable ``plant``.
 
 .. activecode:: ee_nested_data_012
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/DebuggingNestedData
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
+
+   **1.2** Using indexing, retrieve the string 'willow' from the list and assign that to the variable ``plant``.
+
+   ~~~~
 
    data = ['bagel', 'cream cheese', 'breakfast', 'grits', 'eggs', 'bacon', [34, 9, 73, []], [['willow', 'birch', 'elm'], 'apple', 'peach', 'cherry']]
 
@@ -64,10 +91,19 @@ Extra Exercises
 
    myTests().main()
 
-2. Below, a list of lists is provided. Use in and not in tests to create variables with Boolean values. See comments for further instructions.
 
 .. activecode:: ee_nested_data_02
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst
+
+   **2.** Below, a list of lists is provided. Use in and not in tests to create variables with Boolean values. See comments for further instructions.
+
+   ~~~~
 
    lst = [['apple', 'orange', 'banana'], [5, 6, 7, 8, 9.9, 10], ['green', 'yellow', 'purple', 'red']]
 
@@ -94,10 +130,19 @@ Extra Exercises
 
    myTests().main()
 
-2.1 Below, we've provided a list of lists. Use in statements to create variables with Boolean values - see the ActiveCode window for further directions. 
 
 .. activecode:: ee_nested_data_021
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst
+
+   **2.1** Below, we've provided a list of lists. Use in statements to create variables with Boolean values - see the ActiveCode window for further directions.
+
+   ~~~~
 
    L = [[5, 8, 7], ['hello', 'hi', 'hola'], [6.6, 1.54, 3.99], ['small', 'large']]
 
@@ -122,10 +167,19 @@ Extra Exercises
 
    myTests().main()  
 
-2.2  Provided is a nested data structure. Follow the instructions in the comments below. Do not hard code.
 
 .. activecode:: ee_nested_data_022
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst
+
+   **2.2** Provided is a nested data structure. Follow the instructions in the comments below. Do not hard code.
+
+   ~~~~
 
    nested = {'data': ['finding', 23, ['exercises', 'hangout', 34]], 'window': ['part', 'whole', [], 'sum', ['math', 'calculus', 'algebra', 'geometry', 'statistics',['physics', 'chemistry', 'biology']]]}
 
@@ -155,10 +209,18 @@ Extra Exercises
    myTests().main()
 
 
-3. The variable ``nested_d`` contains a nested dictionary with the gold medal counts for the top four countries in the past three Olympics. Assign the value of Great Britain's gold medal count from the London Olympics to the variable ``london_gold``. Use indexing. Do not hardcode.
-
 .. activecode:: ee_nested_data_03
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst, NestedData/DebuggingNestedData.rst
+
+   **3.** The variable ``nested_d`` contains a nested dictionary with the gold medal counts for the top four countries in the past three Olympics. Assign the value of Great Britain's gold medal count from the London Olympics to the variable ``london_gold``. Use indexing. Do not hardcode.
+
+   ~~~~
 
    nested_d = {'Beijing':{'China':51, 'USA':36, 'Russia':22, 'Great Britain':19}, 'London':{'USA':46, 'China':38, 'Great Britain':29, 'Russia':22}, 'Rio':{'USA':35, 'Great Britain':22, 'China':20, 'Germany':13}}
       
@@ -173,10 +235,19 @@ Extra Exercises
 
    myTests().main()
 
-3.1 Below, we have provided a nested dictionary. Index into the dictionary to create variables that we have listed in the ActiveCode window. 
 
 .. activecode:: ee_nested_data_031
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst, NestedData/DebuggingNestedData.rst
+
+   **3.1** Below, we have provided a nested dictionary. Index into the dictionary to create variables that we have listed in the ActiveCode window.
+
+   ~~~~
 
    sports = {'swimming': ['butterfly', 'breaststroke', 'backstroke', 'freestyle'], 'diving': ['springboard', 'platform', 'synchronized'], 'track': ['sprint', 'distance', 'jumps', 'throws'], 'gymnastics': {'women':['vault', 'floor', 'uneven bars', 'balance beam'], 'men': ['vault', 'parallel bars', 'floor', 'rings']}}
 
@@ -205,10 +276,19 @@ Extra Exercises
 
    myTests().main() 
 
-3.2 Extract the value associated with the key color and assign it to the variable ``color``. Do not hard code this.
 
 .. activecode:: ee_nested_data_032
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst, NestedData/DebuggingNestedData.rst
+
+   **3.2** Extract the value associated with the key color and assign it to the variable ``color``. Do not hard code this.
+
+   ~~~~
 
    info = {'personal_data': 
             {'name': 'Lauren', 'age': 20, 'major': 'Information Science', 'physical_features': {'color': {'eye': 'blue', 'hair': 'brown'}, 'height': "5'8"}}, 'other': {'favorite_colors': ['purple', 'green', 'blue'], 'interested_in': ['social media', 'intellectual property', 'copyright', 'music', 'books']}}
@@ -224,11 +304,20 @@ Extra Exercises
 
    myTests().main()
 
-4. Given the list, ``nested_d``, save the medal count for the USA from all three Olympics in the dictionary to the list ``US_count``.  
 
 .. activecode:: ee_nested_data_04
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedIteration
    :tags: NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst, NestedData/NestedDictionaries.rst
-      
+
+   **4.** Given the list, ``nested_d``, save the medal count for the USA from all three Olympics in the dictionary to the list ``US_count``.
+
+   ~~~~
+
    nested_d = {'Beijing':{'China':51, 'USA':36, 'Russia':22, 'Great Britain':19}, 'London':{'USA':46, 'China':38, 'Great Britain':29, 'Russia':22}, 'Rio':{'USA':35, 'Great Britain':22, 'China':20, 'Germany':13}}
 
    US_count = []
@@ -245,10 +334,19 @@ Extra Exercises
 
    myTests().main()
 
-4.1 Below, we have provided a list of lists that contain information about people. Write code to create a new list that contains every person's last name, and save that list as ``last_names``. 
 
 .. activecode:: ee_nested_data_041
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
+
+   **4.1** Below, we have provided a list of lists that contain information about people. Write code to create a new list that contains every person's last name, and save that list as ``last_names``.
+
+   ~~~~
 
    info = [['Tina', 'Turner', 1939, 'singer'], ['Matt', 'Damon', 1970, 'actor'], ['Kristen', 'Wiig', 1973, 'comedian'], ['Michael', 'Phelps', 1985, 'swimmer'], ['Barack', 'Obama', 1961, 'president']]
 
@@ -263,10 +361,19 @@ Extra Exercises
 
    myTests().main()
 
-4.2 Iterate through the contents of ``l_of_l`` and assign the third element of sublist to a new list called ``third``.
 
 .. activecode:: ee_nested_data_042
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
+
+   **4.2** Iterate through the contents of ``l_of_l`` and assign the third element of sublist to a new list called ``third``.
+
+   ~~~~
 
    l_of_l = [['purple', 'mauve', 'blue'], ['red', 'maroon', 'blood orange', 'crimson'], ['sea green', 'cornflower', 'lavender', 'indigo'], ['yellow', 'amarillo', 'mac n cheese', 'golden rod']]
 
@@ -281,10 +388,19 @@ Extra Exercises
 
    myTests().main()
 
-5. Given below is a list of lists of athletes. Create a list, ``t``, that saves the only the athlete's name if it contains the letter "t". If it does not contain the letter "t", save the athlete name into lst ``other``. 
 
 .. activecode:: ee_nested_data_05
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
+
+   **5.** Given below is a list of lists of athletes. Create a list, ``t``, that saves only the athlete's name if it contains the letter "t". If it does not contain the letter "t", save the athlete name into list ``other``.
+
+   ~~~~
 
    athletes = [['Phelps', 'Lochte', 'Schooling', 'Ledecky', 'Franklin'], ['Felix', 'Bolt', 'Gardner', 'Eaton'], ['Biles', 'Douglas', 'Hamm', 'Raisman', 'Mikulak', 'Dalton']]
 
@@ -301,10 +417,19 @@ Extra Exercises
 
    myTests().main()
 
-5.1 Below, we have provided a list of lists named ``L``. Use nested iteration to save every string containing "b" into a new list named ``b_strings``. 
 
 .. activecode:: ee_nested_data_051
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedIteration
    :tags: NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst
+
+   **5.1** Below, we have provided a list of lists named ``L``. Use nested iteration to save every string containing "b" into a new list named ``b_strings``.
+
+   ~~~~
 
    L = [['apples', 'bananas', 'oranges', 'blueberries', 'lemons'], ['carrots', 'peas', 'cucumbers', 'green beans'], ['root beer', 'smoothies', 'cranberry juice']]
 
@@ -319,10 +444,18 @@ Extra Exercises
 
    myTests().main() 
 
-5.2 **Challenge:** Iterate through the list so that if the character 'm' is in the string, then it should be added to a new list called ``m_list``. Hint: Because this isn't just a list of lists, think about what type of object you want your data to be stored in. Conditionals may help you.
 
 .. activecode:: ee_nested_data_052
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :topics: NestedData/NestedIteration
    :tags: NestedData/ListswithComplexItems.rst, NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst
+
+   **5.2** **Challenge:** Iterate through the list so that if the character 'm' is in the string, then it should be added to a new list called ``m_list``. Hint: Because this isn't just a list of lists, think about what type of object you want your data to be stored in. Conditionals may help you.
+
+   ~~~~
 
    d = ['good morning', 'hello', 'chair', 'python', ['music', 'flowers', 'facebook', 'instagram', 'snapchat', ['On my Own', 'monster', 'Words dont come so easily', 'lead me right']], 'Stressed Out', 'Pauver Coeur', 'Reach for Tomorrow', 'mariners song', 'Wonder sleeps here']
 
@@ -337,11 +470,20 @@ Extra Exercises
 
    myTests().main()
 
-6. **Challenge** The nested dictionary, ``pokemon``, shows the number of various Pokemon that each person has caught while playing Pokemon Go. Find the total number of rattatas, dittos, and pidgeys caught and assign to the variables ``r``, ``d``, and ``p`` respectively. Do not hardcode. Note: Be aware that not every trainer has caught a ditto. 
 
 .. activecode:: ee_nested_data_06
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst, NestedData/DebuggingNestedData.rst
-      
+
+   **6.** **Challenge** The nested dictionary, ``pokemon``, shows the number of various Pokemon that each person has caught while playing Pokemon Go. Find the total number of rattatas, dittos, and pidgeys caught and assign to the variables ``r``, ``d``, and ``p`` respectively. Do not hardcode. Note: Be aware that not every trainer has caught a ditto.
+
+   ~~~~
+
    pokemon = {'Trainer1':
              {'normal': {'rattatas':15, 'eevees': 2, 'ditto':1}, 'water': {'magikarps':3}, 'flying': {'zubats':8, 'pidgey': 12}}, 
             'Trainer2':
@@ -367,10 +509,19 @@ Extra Exercises
      
    myTests().main()
 
-6.1 **Challenge:** Below, we have provided a nested list called ``big_list``. Use nested iteration to create a dictionary, ``word_counts``, that contains all the words in ``big_list`` as keys, and the number of times they occur as values. 
 
 .. activecode:: ee_nested_data_061
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedIteration
    :tags: NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst
+
+   **6.1** **Challenge:** Below, we have provided a nested list called ``big_list``. Use nested iteration to create a dictionary, ``word_counts``, that contains all the words in ``big_list`` as keys, and the number of times they occur as values.
+
+   ~~~~
 
    big_list = [[['one', 'two'], ['seven', 'eight']], [['nine', 'four'], ['three', 'one']], [['two', 'eight'], ['seven', 'four']], [['five', 'one'], ['four', 'two']], [['six', 'eight'], ['two', 'seven']], [['three', 'five'], ['one', 'six']], [['nine', 'eight'], ['five', 'four']], [['six', 'three'], ['four', 'seven']]]
 
@@ -385,10 +536,19 @@ Extra Exercises
 
    myTests().main() 
 
-6.2 **Challenge:** Provided is a dictionary that contains pokemon go player data, where each player reveals the amount of candy each of their pokemon have. If you pooled all the data together, which pokemon has the highest number of candy? Assign that pokemon to the variable ``most_common_pokemon``. 
 
 .. activecode:: ee_nested_data_062
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: NestedData/NestedIteration
    :tags: NestedData/NestedDictionaries.rst, NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst
+
+   **6.2** **Challenge:** Provided is a dictionary that contains pokemon go player data, where each player reveals the amount of candy each of their pokemon have. If you pooled all the data together, which pokemon has the highest number of candy? Assign that pokemon to the variable ``most_common_pokemon``.
+
+   ~~~~
 
    pokemon_go_data = {'bentspoon': 
                          {'Rattata': 203, 'Pidgey': 120, 'Drowzee': 89, 'Squirtle': 35, 'Pikachu': 3, 'Eevee': 34, 'Magikarp': 300, 'Paras': 38}, 
