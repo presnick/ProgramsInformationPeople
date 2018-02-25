@@ -35,6 +35,8 @@ line 5 executes once for each item in the sub-list. Try stepping through it in C
 
 
 .. parsonsprob:: nested_data_12
+   :practice: T
+   :topics: NestedData/NestedIteration
 
     Now try rearranging these code fragments to make a function that counts all the *leaf* items in a nested list like nested1 above, the items at the lowest level of nesting (8 of them in nested1).
     -----    

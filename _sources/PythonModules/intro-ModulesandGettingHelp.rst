@@ -98,6 +98,8 @@ When you see imported modules in a Python program, there are a few variations th
 **Check your understanding**
 
 .. mchoice:: question4_1_1
+   :practice: T
+   :topics: PythonModules/intro-ModulesandGettingHelp
    :answer_a: A file containing Python definitions and statements intended for use in other Python programs.
    :answer_b: A separate block of code within a program.
    :answer_c: One line of code in a program.
@@ -111,6 +113,8 @@ When you see imported modules in a Python program, there are a few variations th
    In Python a module is:
 
 .. mchoice:: question4_1_2
+   :practice: T
+   :topics: PythonModules/intro-ModulesandGettingHelp
    :answer_a: Go to the Python Documentation site.
    :answer_b: Look at the import statements of the program you are working with or writing.
    :answer_c: Ask the professor.
@@ -124,6 +128,7 @@ When you see imported modules in a Python program, there are a few variations th
    To find out information on the standard modules available with Python you should:
 
 .. mchoice:: question4_1_3
+   :topics: PythonModules/intro-ModulesandGettingHelp
    :answer_a: True
    :answer_b: False
    :feedback_a: Only turtle, math, and random have been ported to work in activecode at this time.

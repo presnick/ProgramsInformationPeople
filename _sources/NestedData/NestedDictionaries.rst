@@ -19,6 +19,8 @@ Only the values in dictionaries can be objects of arbitrary type. The keys in di
 immutable data types (numbers, strings, tuples).
 
 .. mchoice:: test_questionnested_9
+   :practice: T
+   :topics: NestedData/NestedDictionaries
    :multiple_answers:
    :answer_a: d[5] = {1: 2, 3: 4}
    :answer_b: d[{1:2, 3:4}] = 5

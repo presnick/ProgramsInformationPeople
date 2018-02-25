@@ -11,11 +11,17 @@ Extra Exercises
 ===============
 
 
-1. Using map, create a list assigned to the variable ``greeting_doubled`` that doubles each element in the list ``lst``. 
-
 .. activecode:: ee_listcomp_01
-   :tags: AdvancedAccumulation/map.rst
-  
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/map
+
+   **1.** Using map, create a list assigned to the variable ``greeting_doubled`` that doubles each element in the list ``lst``.
+   ~~~~
+
    lst = [["hi", "bye"], "hello", "goodbye", [9, 2], 4]
       
    =====
@@ -29,10 +35,17 @@ Extra Exercises
 
    myTests().main()
 
-1.1 Write code to assign to the variable ``map_testing`` all the elements in lst_check while adding the string "Fruit: " to the beginning of each element using mapping.
 
 .. activecode:: ee_listcomp_011
-   :tags: AdvancedAccumulation/map.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/map
+
+   **1.1** Write code to assign to the variable ``map_testing`` all the elements in lst_check while adding the string "Fruit: " to the beginning of each element using mapping.
+   ~~~~
 
    lst_check = ['plums', 'watermelon', 'kiwi', 'strawberries', 'blueberries', 'peaches', 'apples', 'mangos', 'papaya']
 
@@ -47,10 +60,17 @@ Extra Exercises
 
    myTests().main()
 
-1.2 Below, we have provided a list of strings called ``abbrevs``. Use map to produce a new list called ``abbrevs_upper`` that contains all the same strings in upper case. 
 
 .. activecode:: ee_listcomp_012
-   :tags: AdvancedAccumulation/map.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/map
+
+   **1.2** Below, we have provided a list of strings called ``abbrevs``. Use map to produce a new list called ``abbrevs_upper`` that contains all the same strings in upper case.
+   ~~~~
 
    abbrevs = ["usa", "esp", "chn", "jpn", "mex", "can", "rus", "rsa", "jam"]
 
@@ -65,10 +85,17 @@ Extra Exercises
 
    myTests().main()
 
-2. Using filter, filter ``lst`` so that it only contains words containing the letter "o". Assign to variable ``lst2``. Do not hardcode this.
 
 .. activecode:: ee_listcomp_02
-   :tags: AdvancedAccumulation/filter.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/filter
+
+   **2.** Using filter, filter ``lst`` so that it only contains words containing the letter "o". Assign to variable ``lst2``. Do not hardcode this.
+   ~~~~
 
    lst = ["witch", "halloween", "pumpkin", "cat", "candy", "wagon", "moon"]
       
@@ -83,10 +110,17 @@ Extra Exercises
 
    myTests().main()
 
-2.1 Write code to assign to the variable ``filter_testing`` all the elements in lst_check that have a w in them using filter.
 
 .. activecode:: ee_listcomp_021
-   :tags: AdvancedAccumulation/filter.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/filter
+
+   **2.1** Write code to assign to the variable ``filter_testing`` all the elements in lst_check that have a w in them using filter.
+   ~~~~
 
    lst_check = ['plums', 'watermelon', 'kiwi', 'strawberries', 'blueberries', 'peaches', 'apples', 'mangos', 'papaya']
 
@@ -101,10 +135,17 @@ Extra Exercises
 
    myTests().main()
 
-2.2 Below, we have provided a list of strings called ``countries``. Use filter to produce a list called ``b_countries`` that only contains the strings from ``countries`` that begin with B. 
 
 .. activecode:: ee_listcomp_022
-   :tags: AdvancedAccumulation/filter.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/filter
+
+   **2.2** Below, we have provided a list of strings called ``countries``. Use filter to produce a list called ``b_countries`` that only contains the strings from ``countries`` that begin with B.
+   ~~~~
 
    countries = ['Canada', 'Mexico', 'Brazil', 'Chile', 'Denmark', 'Botswana', 'Spain', 'Britain', 'Portugal', 'Russia', 'Thailand', 'Bangladesh', 'Nigeria', 'Argentina', 'Belarus', 'Laos', 'Australia', 'Panama', 'Egypt', 'Morocco', 'Switzerland', 'Belgium']
 
@@ -119,10 +160,16 @@ Extra Exercises
 
    myTests().main()  
 
-3. Using reduce, join the strings in the list, ``str_lst``, with the symbol "&" and assign the variable ``joined``. Then, combine ``joined`` with the string ``beg`` so that the final string reads "I like apples & peaches & oranges & grapes & pineapples". Save this final string in the variable ``final``. Do not hardcode.
 
 .. activecode:: ee_listcomp_03
-   :tags: AdvancedAccumulation/reduce.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :topics: AdvancedAccumulation/reduce
+
+   **3.** Using reduce, join the strings in the list, ``str_lst``, with the symbol "&" and assign the variable ``joined``. Then, combine ``joined`` with the string ``beg`` so that the final string reads "I like apples & peaches & oranges & grapes & pineapples". Save this final string in the variable ``final``. Do not hardcode.
+   ~~~~
 
    str_lst = ["apples ", " peaches ", " oranges ", " grapes ", " pineapples"]
    beg = "I like "
@@ -140,10 +187,16 @@ Extra Exercises
 
    myTests().main()
 
-3.1 Write code to assign to the variable ``reducing_testing`` all the elements in lst_check and compiling them in a string that begins with "Fruits: " and has a comma and a space between each element using reduce.
 
 .. activecode:: ee_listcomp_031
-   :tags: AdvancedAccumulation/reduce.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :topics: AdvancedAccumulation/reduce
+
+   **3.1** Write code to assign to the variable ``reducing_testing`` all the elements in lst_check and compiling them in a string that begins with "Fruits: " and has a comma and a space between each element using reduce.
+   ~~~~
 
    lst_check = ['plums', 'watermelon', 'kiwi', 'strawberries', 'blueberries', 'peaches', 'apples', 'mangos', 'papaya']
 
@@ -158,10 +211,16 @@ Extra Exercises
 
    myTests().main()
 
-3.2 Below, we have provided a list of integers called ``nums``. Use reduce to produce a variable, ``product``, that is all of the integers in ``nums`` multiplied together. 
 
 .. activecode:: ee_listcomp_032
-   :tags: AdvancedAccumulation/reduce.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :topics: AdvancedAccumulation/reduce
+
+   **3.2** Below, we have provided a list of integers called ``nums``. Use reduce to produce a variable, ``product``, that is all of the integers in ``nums`` multiplied together.
+   ~~~~
 
    nums = [5, 2, 3, 4, 8, 7, 6]
 
@@ -177,11 +236,17 @@ Extra Exercises
    myTests().main()  
 
 
-4. The for loop below produces a list of numbers greater than 10. Below the given code, use list comprehension to accomplish the same thing. Assign it the the variable ``lst2``. Only one line of code is needed.
-
 .. activecode:: ee_listcomp_04
-   :tags: AdvancedAccumulation/listcomp.rst
-   
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/listcomp
+
+   **4.** The for loop below produces a list of numbers greater than 10. Below the given code, use list comprehension to accomplish the same thing. Assign it the the variable ``lst2``. Only one line of code is needed.
+   ~~~~
+
    L = [12, 34, 21, 4, 6, 9, 42]
    lst = []
    for x in L:
@@ -201,10 +266,17 @@ Extra Exercises
 
    myTests().main()
 
-4.1 Write code to assign to the variable ``compri`` all the values of the key name in the dictionary ``tester``. Do this using list comprehension.
 
 .. activecode:: ee_listcomp_041
-   :tags: AdvancedAccumulation/listcomp.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/listcomp
+
+   **4.1** Write code to assign to the variable ``compri`` all the values of the key name in the dictionary ``tester``. Do this using list comprehension.
+   ~~~~
 
    tester = {'info': [{"name": "Lauren", 'class standing': 'Junior', 'major': "Information Science"},{'name': 'Ayo', 'class standing': "Bachelor's", 'major': 'Information Science'}, {'name': 'Kathryn', 'class standing': 'Senior', 'major': 'Sociology'}, {'name': 'Nick', 'class standing': 'Junior', 'major': 'Computer Science'}, {'name': 'Gladys', 'class standing': 'Sophomore', 'major': 'History'}, {'name': 'Adam', 'major': 'Violin Performance', 'class standing': 'Senior'}]}
 
@@ -220,10 +292,17 @@ Extra Exercises
 
    myTests().main()
 
-4.2 Below, we have provided a list of tuples that contain the names of Game of Thrones characters. Using list comprehension, create a list of strings called ``first_names`` that contains only the first names of everyone in the original list. 
 
 .. activecode:: ee_listcomp_042
-   :tags: AdvancedAccumulation/listcomp.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/listcomp
+
+   **4.2** Below, we have provided a list of tuples that contain the names of Game of Thrones characters. Using list comprehension, create a list of strings called ``first_names`` that contains only the first names of everyone in the original list.
+   ~~~~
 
    people = [('Snow', 'Jon'), ('Lannister', 'Cersei'), ('Stark', 'Arya'), ('Stark', 'Robb'), ('Lannister', 'Jamie'), ('Targaryen', 'Daenerys'), ('Stark', 'Sansa'), ('Tyrell', 'Margaery'), ('Stark', 'Eddard'), ('Lannister', 'Tyrion'), ('Baratheon', 'Joffrey'), ('Bolton', 'Ramsey'), ('Baelish', 'Peter')]
 
@@ -239,10 +318,16 @@ Extra Exercises
    myTests().main() 
 
 
-5. Use list comprehension to create a list called ``lst2`` that doubles each element in the list, ``lst``.
-
 .. activecode:: ee_listcomp_05
-   :tags: AdvancedAccumulation/listcomp.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/listcomp
+
+   **5.** Use list comprehension to create a list called ``lst2`` that doubles each element in the list, ``lst``.
+   ~~~~
 
    lst = [["hi", "bye"], "hello", "goodbye", [9, 2], 4]
 
@@ -257,10 +342,17 @@ Extra Exercises
       
    myTests().main()
 
-5.1 Write code to assign to the variable ``compri_sample`` all the values of the key name in the dictionary ``tester`` if they are Juniors. Do this using list comprehension.
 
 .. activecode:: ee_listcomp_051
-   :tags: AdvancedAccumulation/listcomp.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/listcomp
+
+   **5.1** Write code to assign to the variable ``compri_sample`` all the values of the key name in the dictionary ``tester`` if they are Juniors. Do this using list comprehension.
+   ~~~~
 
    tester = {'info': [{"name": "Lauren", 'class standing': 'Junior', 'major': "Information Science"},{'name': 'Ayo', 'class standing': "Bachelor's", 'major': 'Information Science'}, {'name': 'Kathryn', 'class standing': 'Senior', 'major': 'Sociology'}, {'name': 'Nick', 'class standing': 'Junior', 'major': 'Computer Science'}, {'name': 'Gladys', 'class standing': 'Sophomore', 'major': 'History'}, {'name': 'Adam', 'major': 'Violin Performance', 'class standing': 'Senior'}]}
 
@@ -276,10 +368,17 @@ Extra Exercises
 
    myTests().main()
 
-5.2 Below, we have provided a list of tuples that contain students' names and their final grades in PYTHON 101. Using list comprehension, create a new list ``passed`` that contains the names of students who passed the class (had a final grade of 70 or greater). 
 
 .. activecode:: ee_listcomp_052
-   :tags: AdvancedAccumulation/listcomp.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/listcomp
+
+   **5.2** Below, we have provided a list of tuples that contain students' names and their final grades in PYTHON 101. Using list comprehension, create a new list ``passed`` that contains the names of students who passed the class (had a final grade of 70 or greater).
+   ~~~~
 
    students = [('Tommy', 95), ('Linda', 63), ('Carl', 70), ('Bob', 100), ('Raymond', 50), ('Sue', 75)]
 
@@ -294,10 +393,17 @@ Extra Exercises
 
    myTests().main() 
 
-6. Below we have provided two lists of numbers, ``L1`` and ``L2``. Using zip and list comprehension, create a new list, ``L3``, that sums the two numbers if the number from ``L1`` is greater than 10 and the number from ``L2`` is less than 5. This can be accomplished in one line of code. 
 
 .. activecode:: ee_listcomp_06
-   :tags:AdvancedAccumulation/listcomp.rst,AdvancedAccumulation/zip.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/zip
+
+   **6.** Below we have provided two lists of numbers, ``L1`` and ``L2``. Using zip and list comprehension, create a new list, ``L3``, that sums the two numbers if the number from ``L1`` is greater than 10 and the number from ``L2`` is less than 5. This can be accomplished in one line of code.
+   ~~~~
 
    L1 = [1, 5, 2, 16, 32, 3, 54, 8, 100]
    L2 = [1, 3, 10, 2, 42, 2, 3, 4, 3]
@@ -313,10 +419,17 @@ Extra Exercises
       
    myTests().main()
 
-6.1 Write code using zip and filter so that these lists (l1 and l2) are combined into one big list and assigned to the variable ``opposites`` if they are both longer than 3 characters each.
 
 .. activecode:: ee_listcomp_061
-   :tags: AdvancedAccumulation/zip.rst, AdvancedAccumulation/filter.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/zip
+
+   **6.1** Write code using zip and filter so that these lists (l1 and l2) are combined into one big list and assigned to the variable ``opposites`` if they are both longer than 3 characters each.
+   ~~~~
    
    l1 = ['left', 'up', 'front']
    l2 = ['right', 'down', 'back']
@@ -332,10 +445,17 @@ Extra Exercises
 
    myTests().main()
 
-6.2 Below, we have provided a ``species`` list and a ``population`` list. Use zip to combine these lists into one list of tuples called ``pop_info``. From this list, create a new list called ``endangered`` that contains the names of species whose populations are below 2500. 
 
 .. activecode:: ee_listcomp_062
-   :tags: AdvancedAccumulation/zip.rst, AdvancedAccumulation/filter.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/zip
+
+   **6.2** Below, we have provided a ``species`` list and a ``population`` list. Use zip to combine these lists into one list of tuples called ``pop_info``. From this list, create a new list called ``endangered`` that contains the names of species whose populations are below 2500.
+   ~~~~
 
    species = ['golden retriever', 'white tailed deer', 'black rhino', 'brown squirrel', 'field mouse', 'orangutan', 'sumatran elephant', 'rainbow trout', 'black bear', 'blue whale', 'water moccasin', 'giant panda', 'green turtle', 'blue jay', 'japanese beetle']
 
@@ -355,10 +475,16 @@ Extra Exercises
    myTests().main()   
 
 
-7. **Challenge** The nested for loop given takes in a list of lists and combines the elements into a single list. Do the same thing using a list comprehension for the list ``L``. Assign it to the variable ``result2``. 
-
 .. activecode:: ee_listcomp_07
-   :tags: AdvancedAccumulation/listcomp.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/listcomp
+
+   **7.** **Challenge** The nested for loop given takes in a list of lists and combines the elements into a single list. Do the same thing using a list comprehension for the list ``L``. Assign it to the variable ``result2``.
+   ~~~~
 
    def onelist(lst):
        result = []
@@ -381,10 +507,17 @@ Extra Exercises
       
    myTests().main()
 
-7.1 **Challenge:** Write code to assign to the variable ``class_sched`` all the values of the key ``important classes``. Do this using list comprehension.
 
 .. activecode:: ee_listcomp_071
-   :tags: AdvancedAccumulation/listcomp.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/listcomp
+
+   **7.1** **Challenge:** Write code to assign to the variable ``class_sched`` all the values of the key ``important classes``. Do this using list comprehension.
+   ~~~~
 
    tester = {'info': [
             {"name": "Lauren", 'class standing': 'Junior', 'major': "Information Science", 'important classes': ['SI 106', 'ENGLISH 125', 'SI 110', 'AMCULT 202']},
@@ -406,10 +539,17 @@ Extra Exercises
 
    myTests().main()
 
-7.2 **Challenge:** Below, we have provided a list of lists that contain numbers. Using list comprehension, create a new list ``threes`` that contains all the numbers from the original list that are divisible by 3. This can be accomplished in one line of code. 
 
 .. activecode:: ee_listcomp_072
-   :tags: AdvancedAccumulation/listcomp.rst, AdvancedAccumulation/filter.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :hidecode:
+   :practice: T
+   :topics: AdvancedAccumulation/filter
+
+   **7.2** **Challenge:** Below, we have provided a list of lists that contain numbers. Using list comprehension, create a new list ``threes`` that contains all the numbers from the original list that are divisible by 3. This can be accomplished in one line of code.
+   ~~~~
 
    nums = [[4, 3, 12, 10], [8, 7, 6], [5, 18, 15, 7, 11], [9, 4], [24, 20, 17], [3, 5]]
 
