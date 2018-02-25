@@ -60,4 +60,33 @@ More importantly, you'll want to print out the contents. Sometimes the text that
 
 Now you try it. Use ``requests.get()`` and/or ``requestURL()`` to generate the following url, ``https://www.google.com/search?tbm=isch&q=%22violins+and+guitars%22``. (Don't look at the previous page of the textbook, at least not yet. If you can't figure it out after 15 minutes of trying the approaches on this page, then look back.)
 
-Note that we don't have the requests module in the browser environment, so you'll have to try this on your local computer, by creating a file and then executing it with your native python interpreter.
+Note that we don't have the requests module in the browser environment, so you'll have to try this on your local computer, by creating a file and then executing it with your native python interpreter, or by running it in a Jupyter notebook.
+
+**Check your understanding**
+
+.. mchoice:: restapis_debug_1
+   :answer_a: look at the .url attribute of the response object
+   :answer_b: look at the first few characters of the .text attribute of the response object
+   :answer_c: look at the .status attribute of the response object
+   :answer_d: look carefully at your code and compare it to the sample code here
+   :feedback_a: Checking the url that was generated may be helpful, but first check what the contents of the response are
+   :feedback_b: Checking the contents that were returned is a good first step
+   :feedback_c: Sometimes the status code will be informative, but it's worth starting with the actual contents first
+   :feedback_d: Try to understand the nature of the problem rather than just matching code to a template; you may not always have a template
+   :correct: b
+
+   If the results you are getting back from a call to ``requests.get()`` are not what you expected, what's the first thing you should do?
+
+.. mchoice:: restapis_debug_2
+   :answer_a: look at the .url attribute of the response object
+   :answer_b: look at the values you passed in to requests.get()
+   :answer_c: invoke the requestURL() function above with the same parameters you used to invoke requests.get()
+   :answer_d: look carefully at your code and compare it to the sample code on this page
+   :feedback_a: It's a good idea to examine the url that was generated, but you didn't get a response object so you can't get it this way
+   :feedback_b: This is a reasonable approach, but it may be easier to figure out what's wrong if you look at the URL that was generated
+   :feedback_c: It can be really helpful to see the URL that was generated; you may be able to spot what went wrong
+   :feedback_d: Try to understand the nature of the problem rather than just matching code to a template; you may not always have a template
+   :correct: c
+
+   If there is a runtime error and you don't get a response object back from the call to ``requests.get()``, what should you do?
+

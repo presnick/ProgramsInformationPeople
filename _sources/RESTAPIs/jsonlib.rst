@@ -16,46 +16,19 @@ Again, python provides a module for doing this. The module is called json. We wi
 
 ``json.loads()`` takes a string as input and produces a python object (a dictionary or a list) as output.
 
-Consider, for example, the FAA's REST API. If we request 
+Consider, for example, the iTunes REST API. If we request
 
 .. sourcecode:: python
 
-   result = requests.get("https://services.faa.gov/airport/status/DTW", params ={'format':'json'})
+   result = requests.get("https://itunes.apple.com/search",
+                          params={'term':'ann arbor',
+                                  'entity':'podcast'})
 
-result.text will be a string that looks like this (though not as nicely formatted with indentations and line breaks).
+result.text will be a string that begins with the following:
 
-.. sourcecode:: python
+``'\n\n\n{\n "resultCount":25,\n "results": [\n{"wrapperType":"track", "kind":"podcast", "collectionId":10892'``
 
-   {
-     "IATA": "DTW",
-     "ICAO": "KDTW",
-     "city": "Detroit",
-     "delay": "false",
-     "name": "Detroit Metropolitan Wayne County",
-     "state": "Michigan",
-     "status": {
-       "avgDelay": "",
-       "closureBegin": "",
-       "closureEnd": "",
-       "endTime": "",
-       "maxDelay": "",
-       "minDelay": "",
-       "reason": "No known delays for this airport.",
-       "trend": "",
-       "type": ""
-     },
-     "weather": {
-       "meta": {
-         "credit": "NOAA's National Weather Service",
-         "updated": "4:53 PM Local",
-         "url": "http://weather.gov/"
-       },
-       "temp": "39.0 F (3.9 C)",
-       "visibility": 10.0,
-       "weather": "Mostly Cloudy",
-       "wind": "North at 12.7mph"
-     }
-   }
+If you pass result.text into ``json.loads()`` you will get a python dictionary object. This is such a common operation to do with json-formatted results that the requests module provides a shortcut, the ``.json()`` method for response objects.
 
 Putting it all together, you can try putting this code into a file and executing it on your local computer.
 
@@ -63,21 +36,39 @@ Putting it all together, you can try putting this code into a file and executing
 
     import requests
     import json
-    result = requests.get("https://services.faa.gov/airport/status/DTW", params ={'format':'json'})
+    result = requests.get("https://itunes.apple.com/search",
+                          params={'term':'ann arbor',
+                                  'entity':'podcast'})
     d = json.loads(result.text)
-    print(d['city'])
-    print(d['weather']['temp'])
+    # alternative that does the same thing...
+    d = result.json()
+    # extract the name of the first podcast
+    print(d['results'][0]['trackName'])
 
-You should get a result like this (your temperature may vary!)
+You should get a result like this (the contents may vary over time!): ``'Ann Arbor Stories | Ann Arbor District Library'``
 
-.. sourcecode:: python
 
-   Detroit
-   39.0 F (3.9 C)
-   
-The other function we will use is ``dumps``. It does the inverse of ``loads``. It takes a python object, typically a dictionary or a list, and returns a string, in JSON format. It has a few other parameters. Two useful parameters are sort_keys and indent. When the value True is passed for the sort_keys parameter, the keys of dictionaries are output in alphabetic order with their values. The indent parameter expects an integer. When it is provided, dumps generates a string suitable for displaying to people, with newlines and indentation for nested lists or dictionaries. For example, the following function uses json.dumps to make a human-readable printout of a nested data structure. In fact, I used it to generate the printout above of the data about conditions at the Detroit airport.
+The other function we will use is ``dumps``. It does the inverse of ``loads``. It takes a python object, typically a dictionary or a list, and returns a string, in JSON format. It has a few other parameters. Two useful parameters are sort_keys and indent. When the value True is passed for the sort_keys parameter, the keys of dictionaries are output in alphabetic order with their values. The indent parameter expects an integer. When it is provided, dumps generates a string suitable for displaying to people, with newlines and indentation for nested lists or dictionaries. For example, the following function uses json.dumps to make a human-readable printout of a nested data structure.
 
 .. sourcecode:: python
 
    def pretty(obj):
        return json.dumps(obj, sort_keys=True, indent=2)
+
+
+.. mchoice:: restapis_json_1
+   :multiple_answers:
+   :answer_a: result.json()
+   :answer_b: resp.json()
+   :answer_c: resp.json
+   :answer_d: json.dumps(resp.text)
+   :answer_e: json.loads(resp.text)
+   :feedback_a: result was the name of the variable in the examples on this page, but not for this question.
+   :feedback_b: .json() invokes the json method
+   :feedback_c: .json refers to the method, but doesn't invoke it
+   :feedback_d: dumps turns a list or dictionary into a json-formatted string
+   :feedback_e: loads tunrs a json-formatted string into a list or dictionary
+   :correct: b,e
+
+   If ``resp`` is a response object returned by a call to ``requests.get()``, which of the following is a way to extract the contents into a python dictionary or list?
+
