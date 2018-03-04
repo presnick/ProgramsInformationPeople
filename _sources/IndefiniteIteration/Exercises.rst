@@ -14,7 +14,6 @@ Exercises
 .. activecode:: ee_07_010
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -36,7 +35,6 @@ Exercises
 .. activecode:: ee_ch7_011
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -58,7 +56,6 @@ Exercises
 .. activecode:: ee_ch07_012
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -80,7 +77,6 @@ Exercises
 .. activecode:: ee_ch07_02
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -102,7 +98,6 @@ Exercises
 .. activecode:: ee_ch7_021
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -124,7 +119,6 @@ Exercises
 .. activecode:: ee_ch07_022
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -146,7 +140,6 @@ Exercises
 .. activecode:: ee_ch07_03
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -170,7 +163,6 @@ Exercises
 .. activecode:: ee_ch7_031
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -198,7 +190,6 @@ Exercises
 .. activecode:: ee_ch07_032
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -222,7 +213,6 @@ Exercises
 .. activecode:: ee_ch07_04
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -246,7 +236,6 @@ Exercises
 .. activecode:: ee_ch7_041
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -272,7 +261,6 @@ Exercises
 .. activecode:: ee_ch07_05
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -301,7 +289,6 @@ Exercises
 .. activecode:: ee_ch7_051
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
@@ -329,7 +316,6 @@ Exercises
 .. activecode:: ee_ch07_061
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: IndefiniteIteration/ThewhileStatement
 
