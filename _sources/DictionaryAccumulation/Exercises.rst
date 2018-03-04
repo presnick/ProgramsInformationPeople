@@ -13,7 +13,6 @@ Exercises
 .. activecode:: ee_diction_accumu_01
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/AccumulatingResultsFromaDictionary
 
@@ -35,7 +34,6 @@ Exercises
 .. activecode:: ee_diction_accumu_011
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/AccumulatingResultsFromaDictionary
 
@@ -58,7 +56,6 @@ Exercises
 .. activecode:: ee_diction_accumu_012
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/AccumulatingResultsFromaDictionary
 
@@ -81,7 +78,6 @@ Exercises
 .. activecode:: ee_diction_accumu_02
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -103,7 +99,6 @@ Exercises
 .. activecode:: ee_diction_accumu_021
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -127,7 +122,6 @@ Exercises
 .. activecode:: ee_diction_accumu_022
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -151,7 +145,6 @@ Exercises
 .. activecode:: ee_diction_accumu_03
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -175,7 +168,6 @@ Exercises
 .. activecode:: ee_diction_accumu_031
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -199,7 +191,6 @@ Exercises
 .. activecode:: ee_diction_accumu_032
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -223,7 +214,6 @@ Exercises
 .. activecode:: ee_diction_accumu_04
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/AccumulatingtheBestKey
 
@@ -250,7 +240,6 @@ Exercises
 .. activecode:: ee_diction_accumu_041
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/AccumulatingtheBestKey
 
@@ -277,7 +266,6 @@ Exercises
 .. activecode:: ee_diction_accumu_05
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/AccumulatingtheBestKey
 
@@ -304,7 +292,6 @@ Exercises
 .. activecode:: ee_diction_accumu_052
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/AccumulatingtheBestKey
 
@@ -332,7 +319,6 @@ Exercises
 .. activecode:: ee_diction_accumu_061
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -367,7 +353,6 @@ Exercises
 .. activecode:: ee_diction_accumu_062
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
