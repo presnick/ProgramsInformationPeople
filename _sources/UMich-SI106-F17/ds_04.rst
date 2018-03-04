@@ -6,7 +6,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_01
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Selection/Chainedconditionals
 
@@ -51,7 +50,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_02
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Selection/ConditionalExecutionBinarySelection
 
@@ -72,7 +70,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_03
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Selection/ConditionalExecutionBinarySelection
 
@@ -97,7 +94,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_04
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Selection/ConditionalExecutionBinarySelection
 
@@ -121,7 +117,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_04a
     :language: python
     :autograde: unittest
-    :hidecode:
     :topics: IndefiniteIteration/ThewhileStatement
 
     **Indefinite Iteration** Write code that asks the user for input repeatedly, as long as the user enters an odd number, and adds them all up. It should stop when the user first enters an even number, and not include that in the sum.
@@ -141,7 +136,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_05
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Dictionaries/intro-Dictionaries
 
@@ -166,7 +160,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_06
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Dictionaries/Dictionarymethods
 
@@ -213,7 +206,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_07
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -243,7 +235,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_08
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -264,7 +255,6 @@ Week 4 Discussion Section
 .. activecode:: ds_04_09
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
