@@ -14,7 +14,6 @@ Exercises
 .. activecode:: ee_ch12_01
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/intro-Dictionaries
 
@@ -36,7 +35,6 @@ Exercises
 .. activecode:: ee_ch12_011
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/intro-Dictionaries
 
@@ -58,7 +56,6 @@ Exercises
 .. activecode:: ee_ch12_012
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/intro-Dictionaries
 
@@ -80,7 +77,6 @@ Exercises
 .. activecode:: ee_ch12_02
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/intro-Dictionaries
 
@@ -104,7 +100,6 @@ Exercises
 .. activecode:: ee_ch12_021
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/intro-Dictionaries
 
@@ -128,7 +123,6 @@ Exercises
 .. activecode:: ee_ch12_022
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/intro-Dictionaries
 
@@ -153,7 +147,6 @@ Exercises
 .. activecode:: ee_ch12_03
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/Dictionaryoperations
 
@@ -177,7 +170,6 @@ Exercises
 .. activecode:: ee_ch12_031
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/Dictionaryoperations
 
@@ -201,7 +193,6 @@ Exercises
 .. activecode:: ee_ch12_041
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/Dictionarymethods
 
@@ -225,7 +216,6 @@ Exercises
 .. activecode:: ee_ch12_042
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/Dictionarymethods
 
@@ -249,7 +239,6 @@ Exercises
 .. activecode:: ee_ch12_06
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/Dictionaryoperations
 
@@ -273,7 +262,6 @@ Exercises
 .. activecode:: ee_ch12_061
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/Dictionaryoperations
 
@@ -297,7 +285,6 @@ Exercises
 .. activecode:: ee_ch12_062
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Dictionaries/Dictionaryoperations
 
