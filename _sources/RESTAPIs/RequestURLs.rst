@@ -18,16 +18,17 @@ In this format, the URL has a standard structure:
 * a ``?`` character
 * one or more key-value pairs, formatted as ``key=value`` pairs and separated by the ``&`` character.
 
-For example, consider the URL ``http://services.faa.gov/airport/status/DTW?format=json``. Try copying that URL into a browser. It returns data about the current status of the Detroit airport. This web service is provided by the FAA, the Federal Aviation Administration.
+For example, consider the URL ``https://itunes.apple.com/search?term=Ann+Arbor&entity=podcast``. Try copying that URL into a browser. It data about podcasts posted from Ann Arbor, MI. Depending on your browser, it may put the contents into a file attachment that you have to open up to see the contents.
 
 Let's pull apart that URL. In this case, the FAA uses a slight variation on the basic structure described above.
 
-* the base URL is ``http://services.faa.gov/airport/status/``
-* after status/, there is a three letter code representing the airport, in this case ``DTW``
+* the base URL is ``https://itunes.apple.com/search``
 * a ``?`` character
-* key=value pairs. In this case, there is exactly one pair. The key is format and the value is json, yielding the text string ``format=json``.
+* key=value pairs. In this case, there are two pairs. The keys are ``term`` and ``entity``.
    
-All those parts are concatenated together to form the full URL. If you substitute LGA for DTW, you will get the current conditions at New York's LaGuardia airport instead.
+All those parts are concatenated together to form the full URL.
+
+Note that in the search term Ann Arbor, the space had to be "encoded" as ``+``. More on that below.
 
 Encoding URL Parameters
 -----------------------
