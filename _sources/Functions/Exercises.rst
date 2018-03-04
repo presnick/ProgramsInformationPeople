@@ -14,7 +14,6 @@ Extra Exercises
 .. activecode:: ee_Functions_01
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -35,7 +34,6 @@ Extra Exercises
 .. activecode:: ee_functions_011
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -57,7 +55,6 @@ Extra Exercises
 .. activecode:: ee_functions_012
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -80,7 +77,6 @@ Extra Exercises
 .. activecode:: ee_Function_02
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -104,7 +100,6 @@ Extra Exercises
 .. activecode:: ee_functions_021
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -127,7 +122,6 @@ Extra Exercises
 .. activecode:: ee_functions_022
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -150,7 +144,6 @@ Extra Exercises
 .. activecode:: ee_Function_03
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -174,7 +167,6 @@ Extra Exercises
 .. activecode:: ee_functions_031
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -196,7 +188,6 @@ Extra Exercises
 .. activecode:: ee_functions_032
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -219,7 +210,6 @@ Extra Exercises
 .. activecode:: ee_Function_04
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Afunctionthataccumulates
 
@@ -243,7 +233,6 @@ Extra Exercises
 .. activecode:: ee_functions_041
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Afunctionthataccumulates
 
@@ -268,7 +257,6 @@ Extra Exercises
 .. activecode:: ee_functions_042
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Afunctionthataccumulates
 
@@ -291,7 +279,6 @@ Extra Exercises
 .. activecode:: ee_Function_05
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -316,7 +303,6 @@ Extra Exercises
 .. activecode:: ee_functions_051 
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -341,7 +327,6 @@ Extra Exercises
 .. activecode:: ee_functions_052
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Returningavaluefromafunction
 
@@ -365,7 +350,6 @@ Extra Exercises
 .. activecode:: ee_Function_06
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Functionscancallotherfunctions
 
@@ -392,7 +376,6 @@ Extra Exercises
 .. activecode:: ee_functions_062
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Functions/Functionscancallotherfunctions
 
