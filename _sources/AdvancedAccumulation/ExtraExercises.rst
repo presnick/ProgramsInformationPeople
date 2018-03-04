@@ -15,7 +15,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/map
 
@@ -40,7 +39,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/map
 
@@ -65,7 +63,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/map
 
@@ -90,7 +87,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/filter
 
@@ -115,7 +111,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/filter
 
@@ -140,7 +135,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/filter
 
@@ -165,7 +159,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :topics: AdvancedAccumulation/reduce
 
    **3.** Using reduce, join the strings in the list, ``str_lst``, with the symbol "&" and assign the variable ``joined``. Then, combine ``joined`` with the string ``beg`` so that the final string reads "I like apples & peaches & oranges & grapes & pineapples". Save this final string in the variable ``final``. Do not hardcode.
@@ -192,7 +185,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :topics: AdvancedAccumulation/reduce
 
    **3.1** Write code to assign to the variable ``reducing_testing`` all the elements in lst_check and compiling them in a string that begins with "Fruits: " and has a comma and a space between each element using reduce.
@@ -216,7 +208,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :topics: AdvancedAccumulation/reduce
 
    **3.2** Below, we have provided a list of integers called ``nums``. Use reduce to produce a variable, ``product``, that is all of the integers in ``nums`` multiplied together.
@@ -240,7 +231,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -271,7 +261,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -297,7 +286,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -322,7 +310,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -347,7 +334,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -373,7 +359,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -398,7 +383,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/zip
 
@@ -424,7 +408,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/zip
 
@@ -450,7 +433,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/zip
 
@@ -479,7 +461,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -512,7 +493,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -544,7 +524,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/filter
 
@@ -563,19 +542,4 @@ Extra Exercises
          self.assertEqual(threes, [3, 12, 6, 18, 15, 9, 24, 3], "Testing that threes was created correctly.")
 
    myTests().main() 
-
-
-
-
-
-
-
-
-
-
-
-
-
-​
-
 
