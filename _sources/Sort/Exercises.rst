@@ -260,7 +260,7 @@ Exercises
    :practice: T
    :topics: Sort/Optionalkeyparameter
 
-   **4.1** Sort the following list by each element's second letter a to z. Do so by creating a function called ``second_let`` for the key. Assign the resulting value to the variable ``func_sort``.
+   **4.1** Sort the following list by each element's second letter a to z. Then create a variable called ``func_sort`` and assign the sorted list to it. In your sorted function invocation, you should assign the declaration of a function that you write, which takes a string and returns the second letter of it.
    ~~~~
 
    ex_lst = ['hi', 'how are you', 'bye', 'apple', 'zebra', 'dance']
