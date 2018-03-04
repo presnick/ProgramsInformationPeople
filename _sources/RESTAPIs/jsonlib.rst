@@ -57,6 +57,8 @@ The other function we will use is ``dumps``. It does the inverse of ``loads``. I
 
 
 .. mchoice:: restapis_json_1
+   :practice: T
+   :topics: RESTAPIs/jsonlib
    :multiple_answers:
    :answer_a: result.json()
    :answer_b: resp.json()
