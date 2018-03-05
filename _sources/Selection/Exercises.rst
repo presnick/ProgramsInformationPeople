@@ -13,7 +13,6 @@ Exercises
 .. activecode:: ee_ch11_01
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/ConditionalExecutionBinarySelection
 
@@ -36,7 +35,6 @@ Exercises
 .. activecode:: ee_ch11_011
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/ConditionalExecutionBinarySelection
 
@@ -59,7 +57,6 @@ Exercises
 .. activecode:: ee_ch11_02
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/ConditionalExecutionBinarySelection
 
@@ -85,7 +82,6 @@ Exercises
 .. activecode:: ee_ch11_022
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/ConditionalExecutionBinarySelection
 
@@ -110,7 +106,6 @@ Exercises
 .. activecode:: ee_ch11_03
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/Nestedconditionals
 
@@ -133,7 +128,6 @@ Exercises
 .. activecode:: ee_ch11_031
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/Nestedconditionals
 
@@ -156,7 +150,6 @@ Exercises
 .. activecode:: ee_ch11_041
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/Chainedconditionals
 
@@ -179,7 +172,6 @@ Exercises
 .. activecode:: ee_ch11_05
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/ConditionalExecutionBinarySelection
       
@@ -202,7 +194,6 @@ Exercises
 .. activecode:: ee_ch11_051
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/ConditionalExecutionBinarySelection
 
@@ -225,7 +216,6 @@ Exercises
 .. activecode:: ee_ch11_06
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/Chainedconditionals
 
@@ -264,7 +254,6 @@ Exercises
 .. activecode:: ee_ch11_061
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/Chainedconditionals
 
@@ -298,7 +287,6 @@ Exercises
 .. activecode:: ee_ch11_08
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/Chainedconditionals
       
@@ -323,7 +311,6 @@ Exercises
 .. activecode:: ee_ch11_09
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Selection/Nestedconditionals
 

@@ -13,7 +13,6 @@ Exercises
 .. activecode:: ee_ch10_01
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -35,7 +34,6 @@ Exercises
 .. activecode:: ee_ch10_011
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -59,7 +57,6 @@ Exercises
 .. activecode:: ee_ch10_02
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithStrings
 
@@ -83,7 +80,6 @@ Exercises
 .. activecode:: ee_ch10_022
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithStrings
 
@@ -108,7 +104,6 @@ Exercises
 .. activecode:: ee_ch10_03
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithStrings
 
@@ -130,7 +125,6 @@ Exercises
 .. activecode:: ee_ch10_031
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithStrings
 
@@ -154,7 +148,6 @@ Exercises
 .. activecode:: ee_ch10_04
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -177,7 +170,6 @@ Exercises
 .. activecode:: ee_ch10_041
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -200,7 +192,6 @@ Exercises
 .. activecode:: ee_ch10_05
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -220,11 +211,9 @@ Exercises
    myTests().main()
 
 
-
 .. activecode:: ee_ch10_06
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -248,7 +237,6 @@ Exercises
 .. activecode:: ee_ch10_07
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -271,7 +259,6 @@ Exercises
 .. activecode:: ee_ch10_061
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -294,7 +281,6 @@ Exercises
 .. activecode:: ee_ch10_08
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithStrings
 
@@ -317,7 +303,6 @@ Exercises
 .. activecode:: ee_ch10_09
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Iteration/Listsandforloops
 

@@ -15,7 +15,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -41,7 +40,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -68,7 +66,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -97,7 +94,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -126,7 +122,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -154,7 +149,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -184,7 +178,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -211,7 +204,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -239,7 +231,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -266,7 +257,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -293,7 +283,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -320,7 +309,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -347,7 +335,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst
@@ -374,7 +361,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: StringFormatting/Interpolation
    :tags: StringFormatting/Interpolation.rst

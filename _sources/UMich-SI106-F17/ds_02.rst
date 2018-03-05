@@ -7,7 +7,6 @@ Week 2 Discussion Section
     :include: sqrt_fn
     :language: python
     :autograde: unittest
-    :hidecode:
     :topics: SimplePythonData/FunctionCalls
 
     **1.** Suppose the ``sqrt()`` function returns the square root of its arguments. Write a statement that will assign the square root of ``a`` squared plus the value of ``b`` squared (Pythagorean theorem) to a variable ``c``.
@@ -34,7 +33,6 @@ Week 2 Discussion Section
 .. activecode:: ds_02_02
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Sequences/OperationsonStrings
 
@@ -59,7 +57,6 @@ Week 2 Discussion Section
 .. activecode:: ds_02_03
     :language: python
     :autograde: unittest
-    :hidecode:
 
     **3.** Write code that asks the user to enter a temperature in Fahrenheit and prints that temperature in Celsius. The formula to convert Fahrenheit to Celsius is: C = (F-32)*5/9. For example, if the user enters 90, your program should output 32.222. If the user enters -20, your code should output -28.888.
     ~~~~
@@ -149,7 +146,6 @@ Week 2 Discussion Section
 .. activecode:: ds_02_05
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Sequences/IndexOperatorWorkingwiththeCharactersofaString
 
@@ -173,7 +169,6 @@ Week 2 Discussion Section
 .. activecode:: ds_02_06
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Sequences/SplitandJoin
 
@@ -197,7 +192,6 @@ Week 2 Discussion Section
 .. activecode:: ds_02_07
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Sequences/SplitandJoin
 
@@ -222,7 +216,6 @@ Week 2 Discussion Section
 
 .. activecode:: ds_02_08
     :language: python
-    :hidecode:
 
     **8.** Add comments to the following code. In particular, which line creates a turtle object, and which line or lines invoke methods on the turtle. For method invocations, what is the name of the method, what causes the method to be invoked, and what are the arguments passed to it.
 

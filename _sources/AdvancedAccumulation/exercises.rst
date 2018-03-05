@@ -243,7 +243,6 @@ Now define lengths using a list comprehension instead.
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
@@ -268,7 +267,6 @@ Now define lengths using a list comprehension instead.
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/filter
 
@@ -294,7 +292,6 @@ Now define lengths using a list comprehension instead.
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Iteration/TheAccumulatorPatternwithLists
 
@@ -322,7 +319,6 @@ Now define lengths using a list comprehension instead.
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/map
 
@@ -350,7 +346,6 @@ Now define lengths using a list comprehension instead.
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :topics: AdvancedAccumulation/reduce
 
    Write a function that takes a list of numbers and returns the sum of the squares of all the numbers. Try it using reduce.
@@ -377,7 +372,6 @@ Now define lengths using a list comprehension instead.
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/zip
 
@@ -406,7 +400,6 @@ Now define lengths using a list comprehension instead.
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: AdvancedAccumulation/zip
 

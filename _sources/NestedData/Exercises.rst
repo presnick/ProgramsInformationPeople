@@ -15,7 +15,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/DebuggingNestedData
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
@@ -42,7 +41,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/DebuggingNestedData
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
@@ -69,7 +67,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/DebuggingNestedData
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
@@ -96,7 +93,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst
@@ -135,7 +131,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst
@@ -172,7 +167,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst
@@ -213,7 +207,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst, NestedData/DebuggingNestedData.rst
@@ -240,7 +233,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst, NestedData/DebuggingNestedData.rst
@@ -281,7 +273,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst, NestedData/DebuggingNestedData.rst
@@ -309,7 +300,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedIteration
    :tags: NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst, NestedData/NestedDictionaries.rst
@@ -339,7 +329,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
@@ -366,7 +355,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
@@ -393,7 +381,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/ListswithComplexItems
    :tags: NestedData/ListswithComplexItems.rst, NestedData/DebuggingNestedData.rst
@@ -422,7 +409,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedIteration
    :tags: NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst
@@ -449,7 +435,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :topics: NestedData/NestedIteration
    :tags: NestedData/ListswithComplexItems.rst, NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst
 
@@ -475,7 +460,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedDictionaries
    :tags: NestedData/NestedDictionaries.rst, NestedData/DebuggingNestedData.rst
@@ -514,7 +498,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedIteration
    :tags: NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst
@@ -541,7 +524,6 @@ Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: NestedData/NestedIteration
    :tags: NestedData/NestedDictionaries.rst, NestedData/NestedIteration.rst, NestedData/DebuggingNestedData.rst
@@ -569,20 +551,3 @@ Exercises
          self.assertEqual(most_common_pokemon, 'Rattata', "Testing that most_common_pokemon has the correct value.")
 
    myTests().main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-​
-
-

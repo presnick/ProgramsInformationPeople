@@ -15,7 +15,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/Tuples
       
@@ -38,7 +37,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/Tuples
 
@@ -61,7 +59,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/Tuples
 
@@ -84,7 +81,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/Tuples
 
@@ -109,7 +105,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/Tuples
 
@@ -134,7 +129,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/Tuples
 
@@ -159,7 +153,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/TupleAssignmentwithunpacking
 
@@ -186,7 +179,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/TupleAssignmentwithunpacking
 
@@ -212,7 +204,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/TupleAssignmentwithunpacking
 
@@ -238,7 +229,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/TuplesasReturnValues
 
@@ -261,7 +251,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/TuplesasReturnValues
 
@@ -284,7 +273,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/TuplesasReturnValues
 
@@ -309,7 +297,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/UnpackingDictionaryItems
 
@@ -334,7 +321,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/UnpackingDictionaryItems
 
@@ -361,7 +347,6 @@ Extra Exercises
    :language: python
    :autograde: unittest
    :chatcodes:
-   :hidecode:
    :practice: T
    :topics: Tuples/UnpackingDictionaryItems
 

@@ -33,8 +33,8 @@ The best approach is to look at the URL that is produced and eyeball it to see w
         prepped = req.prepare()
         return prepped.url
 
-    print params
-    print requestURL(some_base_url, some_params_dictionary)
+    print(params)
+    print(requestURL(some_base_url, some_params_dictionary))
 
 If you get a runtime error when you call `requestURL()`, that means that it can't create a URL at all. Usually, that means that you didn't pass in a string for the baseurl or didn't pass in a dictionary with keys that are strings for the params parameter.
 
@@ -55,8 +55,8 @@ More importantly, you'll want to print out the contents. Sometimes the text that
     dest_url = <some expr>
     d = <some dictionary>
     resp = requests.get(dest_url, params = d)
-    print resp.url
-    print resp.text[:200]
+    print(resp.url)
+    print(resp.text[:200])
 
 Now you try it. Use ``requests.get()`` and/or ``requestURL()`` to generate the following url, ``https://www.google.com/search?tbm=isch&q=%22violins+and+guitars%22``. (Don't look at the previous page of the textbook, at least not yet. If you can't figure it out after 15 minutes of trying the approaches on this page, then look back.)
 
@@ -65,6 +65,8 @@ Note that we don't have the requests module in the browser environment, so you'l
 **Check your understanding**
 
 .. mchoice:: restapis_debug_1
+   :practice: T
+   :topics: RESTAPIs/DebugURLs
    :answer_a: look at the .url attribute of the response object
    :answer_b: look at the first few characters of the .text attribute of the response object
    :answer_c: look at the .status attribute of the response object
@@ -78,6 +80,8 @@ Note that we don't have the requests module in the browser environment, so you'l
    If the results you are getting back from a call to ``requests.get()`` are not what you expected, what's the first thing you should do?
 
 .. mchoice:: restapis_debug_2
+   :practice: T
+   :topics: RESTAPIs/DebugURLs
    :answer_a: look at the .url attribute of the response object
    :answer_b: look at the values you passed in to requests.get()
    :answer_c: invoke the requestURL() function above with the same parameters you used to invoke requests.get()

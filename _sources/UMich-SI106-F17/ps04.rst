@@ -8,7 +8,6 @@ Problem Set 4
 .. activecode:: ps_03_08
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
@@ -51,7 +50,6 @@ Problem Set 4
 .. activecode:: ps_04_01
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
@@ -83,7 +81,6 @@ Problem Set 4
 .. activecode:: ps_04_02
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
@@ -110,7 +107,6 @@ Problem Set 4
 .. activecode:: ps_04_03
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Iteration/TheAccumulatorPattern
 
@@ -138,7 +134,6 @@ Problem Set 4
 .. activecode:: ps_04_04
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
@@ -168,7 +163,6 @@ Problem Set 4
 .. activecode:: ps_04_05
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -222,7 +216,6 @@ Problem Set 4
 .. activecode:: ps_04_06
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
@@ -270,7 +263,6 @@ Problem Set 4
 .. activecode:: ps_04_08
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Functions/Returningavaluefromafunction
 
@@ -294,7 +286,6 @@ Problem Set 4
 .. activecode:: ps_04_09
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Functions/Returningavaluefromafunction
 
@@ -321,7 +312,6 @@ Problem Set 4
 .. activecode:: ps_04_10
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Functions/Returningavaluefromafunction
 
@@ -347,7 +337,6 @@ Problem Set 4
 .. activecode:: ps_04_11
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
@@ -381,7 +370,6 @@ Problem Set 4
 .. activecode:: ps_04_07
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
@@ -439,7 +427,6 @@ Problem Set 4
 .. activecode:: ps_04_12
     :language: python
     :autograde: unittest
-    :hidecode:
     :practice: T
     :topics: Functions/Returningavaluefromafunction
 

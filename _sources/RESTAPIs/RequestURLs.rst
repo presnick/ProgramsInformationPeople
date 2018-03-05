@@ -65,6 +65,8 @@ For example, in the following, the base url is https://google.com/search. A dict
 **Check your understanding**
 
 .. mchoice:: restapis_1
+   :practice: T
+   :topics: RESTAPIs/RequestURLs
    :answer_a: requests.get("http://bar.com/goodstuff", '?", {'greet': 'hi there'}, '&', {'frosted':'no'})
    :answer_b: requests.get("http://bar.com/", params = {'goodstuff':'?', 'greet':'hi there', 'frosted':'no'})
    :answer_c: requests.get("http://bar.com/goodstuff", params = ['greet', 'hi', 'there', 'frosted', 'no'])

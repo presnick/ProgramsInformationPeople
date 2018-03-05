@@ -14,7 +14,6 @@ Exercises
 .. activecode:: ee_Opt_Params_01
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/OptionalParameters
 
@@ -37,7 +36,6 @@ Exercises
 .. activecode:: ee_optparams_011
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/OptionalParameters
 
@@ -62,7 +60,6 @@ Exercises
 .. activecode:: ee_opt_params_012
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/OptionalParameters
 
@@ -86,7 +83,6 @@ Exercises
 .. activecode:: ee_Opt_Params_02
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/KeywordParameters
 
@@ -115,7 +111,6 @@ Exercises
 .. activecode:: ee_optparams_021
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/OptionalParameters
 
@@ -141,7 +136,6 @@ Exercises
 .. activecode:: ee_opt_params_022
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/OptionalParameters
 
@@ -167,7 +161,6 @@ Exercises
 .. activecode:: ee_Opt_Params_03
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/OptionalParameters
 
@@ -191,7 +184,6 @@ Exercises
 .. activecode:: ee_optparams_031
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/KeywordParameters
 
@@ -219,7 +211,6 @@ Exercises
 .. activecode:: ee_opt_params_032
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/KeywordParameters
 
@@ -250,7 +241,6 @@ Exercises
 .. activecode:: ee_opt_params_042
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/OptionalParameters
 
@@ -275,7 +265,6 @@ Exercises
 .. activecode:: ee_opt_params_052
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: OptionalAndKeywordParameters/KeywordParameters
 

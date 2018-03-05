@@ -14,7 +14,6 @@ Exercises
 .. activecode:: ee_sort_01
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/Optionalkeyparameter
 
@@ -37,7 +36,6 @@ Exercises
 .. activecode:: ee_sort_011
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/Optionalkeyparameter
 
@@ -61,7 +59,6 @@ Exercises
 .. activecode:: ee_sort_012
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/intro-SortingwithSortandSorted
 
@@ -85,7 +82,6 @@ Exercises
 .. activecode:: ee_sort_02
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
@@ -109,7 +105,6 @@ Exercises
 .. activecode:: ee_sort_021
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
@@ -133,7 +128,6 @@ Exercises
 .. activecode:: ee_sort_022
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
@@ -157,7 +151,6 @@ Exercises
 .. activecode:: ee_sort_03
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
@@ -181,7 +174,6 @@ Exercises
 .. activecode:: ee_sort_031
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
@@ -205,7 +197,6 @@ Exercises
 .. activecode:: ee_sort_032
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
@@ -229,7 +220,6 @@ Exercises
 .. activecode:: ee_sort_04
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/intro-SortingwithSortandSorted
 
@@ -256,11 +246,10 @@ Exercises
 .. activecode:: ee_sort_041
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/Optionalkeyparameter
 
-   **4.1** Sort the following list by each element's second letter a to z. Do so by creating a function called ``second_let`` for the key. Assign the resulting value to the variable ``func_sort``.
+   **4.1** Sort the following list by each element's second letter a to z. Then create a variable called ``func_sort`` and assign the sorted list to it. In your sorted function invocation, you should assign the declaration of a function that you write, which takes a string and returns the second letter of it.
    ~~~~
 
    ex_lst = ['hi', 'how are you', 'bye', 'apple', 'zebra', 'dance']
@@ -280,7 +269,6 @@ Exercises
 .. activecode:: ee_sort_042
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/Optionalkeyparameter
 
@@ -311,7 +299,6 @@ Exercises
 .. activecode:: ee_sort_05
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/Anonymousfunctionswithlambdaexpressions
 
@@ -335,7 +322,6 @@ Exercises
 .. activecode:: ee_sort_051
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/Anonymousfunctionswithlambdaexpressions
 
@@ -359,7 +345,6 @@ Exercises
 .. activecode:: ee_sort_052
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/Anonymousfunctionswithlambdaexpressions
 
@@ -386,7 +371,6 @@ Exercises
 .. activecode:: ee_sort_06
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
@@ -419,7 +403,6 @@ Exercises
 .. activecode:: ee_sort_061
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
@@ -448,7 +431,6 @@ Exercises
 .. activecode:: ee_sort_062
    :language: python
    :autograde: unittest
-   :hidecode:
    :practice: T
    :topics: Sort/SortingaDictionary
 
