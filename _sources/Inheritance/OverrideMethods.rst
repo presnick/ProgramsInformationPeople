@@ -75,7 +75,7 @@ Now let's make two subclasses, Dog and Cat. Dogs are always happy unless they ar
 
 .. activecode:: inheritance_override
     :nocanvas:
-    :include: inheritance_pet_class
+    :include: inheritance_pet_class_1
 
     class Cat(Pet):
         sounds = ['Meow']
