@@ -53,30 +53,30 @@ Problem Set 4
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
-	**1.** Given the string ``s`` in the code below, write code to figure out what the most common **letter** in the string is and assign that to the variable ``common_letter``. (Do not hard-code the right answer.) Hint: use dictionary accumulation and then max accumulation
-	~~~~
-	s = """
-	peter piper picked a peck of pickled peppers;
-	a peck of pickled peppers peter picked;
-	if peter piper picked a peck of pickled peppers,
-	where's the peck of pickled peppers peter picked?
-	"""
+    **1.** Given the string ``s`` in the code below, write code to figure out what the most common **letter** in the string is and assign that to the variable ``common_letter``. (Do not hard-code the right answer.) Hint: use dictionary accumulation and then max accumulation
+    ~~~~
+    s = """
+    peter piper picked a peck of pickled peppers;
+    a peck of pickled peppers peter picked;
+    if peter piper picked a peck of pickled peppers,
+    where's the peck of pickled peppers peter picked?
+    """
 
-	# Write your code here.
+    # Write your code here.
 
-	=====
+    =====
 
-	from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-	class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-		def testOne(self):
-			self.assertEqual(common_letter, 'e', "testing whether common_letter is set correctly")
+        def testOne(self):
+            self.assertEqual(common_letter, 'e', "testing whether common_letter is set correctly")
 
-		def testOneA(self):
-			self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+        def testOneA(self):
+            self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-	myTests().main()
+    myTests().main()
 
 .. activecode:: ps_04_02
     :language: python
@@ -84,24 +84,24 @@ Problem Set 4
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
-	**2.** Given the string ``s`` in the code below, write code to figure out what the most common **word** in the string is and assign that to the variable ``common_word``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
-	~~~~
-	s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
+    **2.** Given the string ``s`` in the code below, write code to figure out what the most common **word** in the string is and assign that to the variable ``common_word``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
+    ~~~~
+    s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
 
-	# Write your code here.
+    # Write your code here.
 
-	=====
+    =====
 
-	from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-	class myTests(TestCaseGui):
-		def testOne(self):
-			self.assertEqual(common_word, 'depends', "testing whether common_word is set correctly")
+    class myTests(TestCaseGui):
+        def testOne(self):
+            self.assertEqual(common_word, 'depends', "testing whether common_word is set correctly")
 
-		def testOneA(self):
-			self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+        def testOneA(self):
+            self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-	myTests().main()
+    myTests().main()
 
 
 .. activecode:: ps_04_03
@@ -110,26 +110,26 @@ Problem Set 4
     :practice: T
     :topics: Iteration/TheAccumulatorPattern
 
-	**3.** Write code that will count the number of vowels in the sentence ``s`` and assign the result to the variable ``num_vowels``. For this problem, vowels are only a, e, i, o, and u. Hint: use the ``in`` operator with ``vowels``.
-	~~~~
-	s = "singing in the rain and playing in the rain are two entirely different situations but both can be fun"
-	vowels = ['a','e','i','o','u']
+    **3.** Write code that will count the number of vowels in the sentence ``s`` and assign the result to the variable ``num_vowels``. For this problem, vowels are only a, e, i, o, and u. Hint: use the ``in`` operator with ``vowels``.
+    ~~~~
+    s = "singing in the rain and playing in the rain are two entirely different situations but both can be fun"
+    vowels = ['a','e','i','o','u']
 
-	# Write your code here.
+    # Write your code here.
 
-	=====
+    =====
 
-	from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-	class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-		def testOne(self):
-		   self.assertEqual(num_vowels, 32, "testing whether num_vowels is set correctly")
+        def testOne(self):
+           self.assertEqual(num_vowels, 32, "testing whether num_vowels is set correctly")
 
-		def testOneA(self):
-		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+        def testOneA(self):
+           self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-	myTests().main()
+    myTests().main()
 
 .. activecode:: ps_04_04
     :language: python
@@ -137,28 +137,28 @@ Problem Set 4
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
-	**4.** Write code that will create a dictionary ``vowel_frequencies`` where the keys are the five vowels and the values are how often the vowel appears in the string ``s``. Then, using ``vowel_frequencies``, determine the most common vowel in ``s`` and assign the result to the variable ``common_vowel``. Use dictionary accumulation and do not hard code the answer.
-	~~~~
-	s = "singing in the rain and playing in the rain are two entirely different situations but both can be good fun"
-	vowels = ['a','e','i','o','u']
+    **4.** Write code that will create a dictionary ``vowel_frequencies`` where the keys are the five vowels and the values are how often the vowel appears in the string ``s``. Then, using ``vowel_frequencies``, determine the most common vowel in ``s`` and assign the result to the variable ``common_vowel``. Use dictionary accumulation and do not hard code the answer.
+    ~~~~
+    s = "singing in the rain and playing in the rain are two entirely different situations but both can be good fun"
+    vowels = ['a','e','i','o','u']
 
-	# Write your code here.
+    # Write your code here.
 
-	=====
+    =====
 
-	from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-	class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-		def testOne(self):
-		   self.assertEqual(sorted(vowel_frequencies), sorted({'e': 8, 'i': 11, 'a': 7, 'o': 5, 'u': 3}), "testing whether vowel_frequencies is set correctly")
-		   self.assertEqual(sorted(vowel_frequencies.values()), sorted({'e': 8, 'i': 11, 'a': 7, 'o': 5, 'u': 3}.values()), "testing whether vowel_frequencies is set correctly")
-		   self.assertEqual(common_vowel, 'i', "testing common_vowel")
+        def testOne(self):
+           self.assertEqual(sorted(vowel_frequencies), sorted({'e': 8, 'i': 11, 'a': 7, 'o': 5, 'u': 3}), "testing whether vowel_frequencies is set correctly")
+           self.assertEqual(sorted(vowel_frequencies.values()), sorted({'e': 8, 'i': 11, 'a': 7, 'o': 5, 'u': 3}.values()), "testing whether vowel_frequencies is set correctly")
+           self.assertEqual(common_vowel, 'i', "testing common_vowel")
 
-		def testOneA(self):
-		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+        def testOneA(self):
+           self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-	myTests().main()
+    myTests().main()
 
 .. activecode:: ps_04_05
     :language: python
@@ -166,52 +166,52 @@ Problem Set 4
     :practice: T
     :topics: DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary
 
-	**5.** The code below contains a specially formatted string named ``january_temp_data`` that contains January temperature information for Ann Arbor for the years 2016 to 2000. Every year is on a different line. There are three "columns", separated by commas. The first column specifies the year, the second column specifies the lowest temperature (in Fahrenheit), and the third column specifies the highest temperature (see the comment at the top of the code). Write code that will create two dictionaries: ``january_lows`` and ``january_highs`` that map years to low and high temperatures respectively. In both dictionaries, the keys should be **integers** (for each year) and the values should be **integers** for the temperatures. You will get zero credit if you hard code your answer.
+    **5.** The code below contains a specially formatted string named ``january_temp_data`` that contains January temperature information for Ann Arbor for the years 2016 to 2000. Every year is on a different line. There are three "columns", separated by commas. The first column specifies the year, the second column specifies the lowest temperature (in Fahrenheit), and the third column specifies the highest temperature (see the comment at the top of the code). Write code that will create two dictionaries: ``january_lows`` and ``january_highs`` that map years to low and high temperatures respectively. In both dictionaries, the keys should be **integers** (for each year) and the values should be **integers** for the temperatures. You will get zero credit if you hard code your answer.
 
-	Hint: use ``.split('\n')`` to split the lines of ``january_temp_data`` into a list. Use ``.split(',')`` to split a given line. Use ``int()`` to cast strings to integers.
-	~~~~
-	# COLUMNS:
-	# 0: year
-	# 1: lowest temperature  (F)
-	# 2: highest temperature (F)
-	january_temp_data = """2016,   6, 51
-		2015,  -3, 41
-		2014, -14, 43
-		2013,  -3, 60
-		2012,   2, 55
-		2011,   1, 52
-		2010,   3, 47
-		2009, -10, 39
-		2008,   3, 62
-		2007,   5, 50
-		2006,  18, 53
-		2005,  -3, 56
-		2004,  -6, 55
-		2003,  -5, 47
-		2002,  11, 55
-		2001,   1, 43
-		2000,  -2, 56"""
+    Hint: use ``.split('\n')`` to split the lines of ``january_temp_data`` into a list. Use ``.split(',')`` to split a given line. Use ``int()`` to cast strings to integers.
+    ~~~~
+    # COLUMNS:
+    # 0: year
+    # 1: lowest temperature  (F)
+    # 2: highest temperature (F)
+    january_temp_data = """2016,   6, 51
+        2015,  -3, 41
+        2014, -14, 43
+        2013,  -3, 60
+        2012,   2, 55
+        2011,   1, 52
+        2010,   3, 47
+        2009, -10, 39
+        2008,   3, 62
+        2007,   5, 50
+        2006,  18, 53
+        2005,  -3, 56
+        2004,  -6, 55
+        2003,  -5, 47
+        2002,  11, 55
+        2001,   1, 43
+        2000,  -2, 56"""
 
-	# Write your code here.
+    # Write your code here.
 
-	=====
+    =====
 
-	from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-	class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-		def testOne(self):
-			lows = {2000: -2, 2001: 1, 2002: 11, 2003: -5, 2004: -6, 2005: -3, 2006: 18, 2007: 5, 2008: 3, 2009: -10, 2010: 3, 2011: 1, 2012: 2, 2013: -3, 2014: -14, 2015: -3, 2016: 6}
-			highs = {2000: 56, 2001: 43, 2002: 55, 2003: 47, 2004: 55, 2005: 56, 2006: 53, 2007: 50, 2008: 62, 2009: 39, 2010: 47, 2011: 52, 2012: 55, 2013: 60, 2014: 43, 2015: 41, 2016: 51}
-			self.assertEqual(sorted(january_lows), sorted(lows), "testing whether lows is set correctly")
-			self.assertEqual(sorted(january_lows.values()), sorted(lows.values()), "testing whether lows is set correctly")
-			self.assertEqual(sorted(january_highs), sorted(highs), "testing whether highs is set correctly")
-			self.assertEqual(sorted(january_highs.values()), sorted(highs.values()), "testing whether highs is set correctly")
+        def testOne(self):
+            lows = {2000: -2, 2001: 1, 2002: 11, 2003: -5, 2004: -6, 2005: -3, 2006: 18, 2007: 5, 2008: 3, 2009: -10, 2010: 3, 2011: 1, 2012: 2, 2013: -3, 2014: -14, 2015: -3, 2016: 6}
+            highs = {2000: 56, 2001: 43, 2002: 55, 2003: 47, 2004: 55, 2005: 56, 2006: 53, 2007: 50, 2008: 62, 2009: 39, 2010: 47, 2011: 52, 2012: 55, 2013: 60, 2014: 43, 2015: 41, 2016: 51}
+            self.assertEqual(sorted(january_lows), sorted(lows), "testing whether lows is set correctly")
+            self.assertEqual(sorted(january_lows.values()), sorted(lows.values()), "testing whether lows is set correctly")
+            self.assertEqual(sorted(january_highs), sorted(highs), "testing whether highs is set correctly")
+            self.assertEqual(sorted(january_highs.values()), sorted(highs.values()), "testing whether highs is set correctly")
 
-		def testOneA(self):
-		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+        def testOneA(self):
+           self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-	myTests().main()
+    myTests().main()
 
 .. activecode:: ps_04_06
     :language: python
@@ -219,45 +219,45 @@ Problem Set 4
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
-	**6.** The code below contains the same string ``january_temp_data`` as before. This time, write code that will determine which year had the largest *difference* between the lowest and highest temperature. Store the year as an integer in a variable named ``biggest_temp_diff_year``. You will get zero credit if you code your answer.
-	~~~~
-	# COLUMNS:
-	# 0: year
-	# 1: lowest temperature  (F)
-	# 2: highest temperature (F)
-	january_temp_data = """2016,   6, 51
-		2015,  -3, 41
-		2014, -14, 43
-		2013,  -3, 60
-		2012,   2, 55
-		2011,   1, 52
-		2010,   3, 47
-		2009, -10, 39
-		2008,   3, 62
-		2007,   5, 50
-		2006,  18, 53
-		2005,  -3, 56
-		2004,  -6, 55
-		2003,  -5, 47
-		2002,  11, 55
-		2001,   1, 43
-		2000,  -2, 56"""
+    **6.** The code below contains the same string ``january_temp_data`` as before. This time, write code that will determine which year had the largest *difference* between the lowest and highest temperature. Store the year as an integer in a variable named ``biggest_temp_diff_year``. You will get zero credit if you code your answer.
+    ~~~~
+    # COLUMNS:
+    # 0: year
+    # 1: lowest temperature  (F)
+    # 2: highest temperature (F)
+    january_temp_data = """2016,   6, 51
+        2015,  -3, 41
+        2014, -14, 43
+        2013,  -3, 60
+        2012,   2, 55
+        2011,   1, 52
+        2010,   3, 47
+        2009, -10, 39
+        2008,   3, 62
+        2007,   5, 50
+        2006,  18, 53
+        2005,  -3, 56
+        2004,  -6, 55
+        2003,  -5, 47
+        2002,  11, 55
+        2001,   1, 43
+        2000,  -2, 56"""
 
-	# Write your code here.
+    # Write your code here.
 
-	=====
+    =====
 
-	from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-	class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-		def testOne(self):
-		   self.assertEqual(biggest_temp_diff_year, 2013, "testing whether biggest_temp_diff_year is set correctly")
+        def testOne(self):
+           self.assertEqual(biggest_temp_diff_year, 2013, "testing whether biggest_temp_diff_year is set correctly")
 
-		def testOneA(self):
-		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+        def testOneA(self):
+           self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-	myTests().main()
+    myTests().main()
 
 
 .. activecode:: ps_04_08
@@ -373,55 +373,55 @@ Problem Set 4
     :practice: T
     :topics: DictionaryAccumulation/AccumulatingaMaximumValue
 
-	**Extra question 1.** The code below contains a string ``january_temp_data`` with the same format as before, but with more data (see the "COLUMNS" comment at the beginning of the code). This time, write code that will determine which year had most **precipitation + snowfall** and store that year as an integer in the variable ``most_water_year``. You will get zero credit if you hard code your answer. Note: use the ``float()`` function to cast a string to a float.
-	~~~~
-	# COLUMNS:
-	#  0: year
-	#  1: lowest temperature (F)
-	#  2: highest temperature (F)
-	#  3: warmest minimum temperature (F)
-	#  4: coldest maximum temperature (F)
-	#  5: average minimum temperature (F)
-	#  6: average maximum temperature (F)
-	#  7: mean temperature (F)
-	#  8: total precipitation (in)
-	#  9: total snowfall (in)
-	# 10: max 24hr precipitation
-	# 11: max 24hr snowfall
+    **Extra question 1.** The code below contains a string ``january_temp_data`` with the same format as before, but with more data (see the "COLUMNS" comment at the beginning of the code). This time, write code that will determine which year had most **precipitation + snowfall** and store that year as an integer in the variable ``most_water_year``. You will get zero credit if you hard code your answer. Note: use the ``float()`` function to cast a string to a float.
+    ~~~~
+    # COLUMNS:
+    #  0: year
+    #  1: lowest temperature (F)
+    #  2: highest temperature (F)
+    #  3: warmest minimum temperature (F)
+    #  4: coldest maximum temperature (F)
+    #  5: average minimum temperature (F)
+    #  6: average maximum temperature (F)
+    #  7: mean temperature (F)
+    #  8: total precipitation (in)
+    #  9: total snowfall (in)
+    # 10: max 24hr precipitation
+    # 11: max 24hr snowfall
 
-	january_temp_data = """2016,   6, 51, 36, 15, 19.8, 33.6, 26.7, 1.80, 12.20, 0.51,  3.20
-		2015,  -3, 41, 33,  6, 14.6, 28.2, 21.4, 1.81, 15.60, 0.52,  2.90
-		2014, -14, 43, 34,  4,  9.3, 24.7, 17.0, 3.48, 37.80, 0.56,  5.60
-		2013,  -3, 60, 49, 11, 21.1, 36.3, 28.7, 3.81, 15.60, 0.73,  4.50
-		2012,   2, 55, 36, 16, 23.3, 37.1, 30.2, 3.06, 13.90, 0.91,  2.20
-		2011,   1, 52, 49, 16, 16.1, 28.2, 22.1, 2.07, 19.80, 0.41,  4.00
-		2010,   3, 47, 33, 19, 18.9, 30.3, 24.6, 1.10, 10.50, 0.26,  2.80
-		2009, -10, 39, 26,  9, 10.8, 24.9, 17.9, 2.16, 27.00, 0.50,  6.60
-		2008,   3, 62, 51, 14, 21.3, 34.7, 28.0, 4.26, 22.70, 1.20, 11.40
-		2007,   5, 50, 43, 22, 23.3, 35.0, 29.1, 4.31, 10.30, 1.00,  2.00
-		2006,  18, 53, 41, 30, 29.4, 40.5, 34.9, 4.32,  8.40, 0.87,  4.70
-		2005,  -3, 56, 33, 14, 16.0, 31.4, 23.7, 4.46, 29.10, 0.72,  9.30
-		2004,  -6, 55, 41, 13, 11.6, 26.3, 19.0, 2.22, 23.40, 0.45,  4.50
-		2003,  -5, 47, 36, 17, 13.9, 26.5, 20.2, 0.93, 13.80, 0.17,  2.10
-		2002,  11, 55, 38, 27, 25.5, 39.3, 32.4, 3.41, 25.40, 1.57,  7.60
-		2001,   1, 43, 33, 22, 20.3, 32.0, 26.1, 1.32,  6.70, 0.43,  2.20
-		2000,  -2, 56, 37, 14, 16.1, 32.2, 24.1, 1.96, 16.10, 0.33,  4.90 """
+    january_temp_data = """2016,   6, 51, 36, 15, 19.8, 33.6, 26.7, 1.80, 12.20, 0.51,  3.20
+        2015,  -3, 41, 33,  6, 14.6, 28.2, 21.4, 1.81, 15.60, 0.52,  2.90
+        2014, -14, 43, 34,  4,  9.3, 24.7, 17.0, 3.48, 37.80, 0.56,  5.60
+        2013,  -3, 60, 49, 11, 21.1, 36.3, 28.7, 3.81, 15.60, 0.73,  4.50
+        2012,   2, 55, 36, 16, 23.3, 37.1, 30.2, 3.06, 13.90, 0.91,  2.20
+        2011,   1, 52, 49, 16, 16.1, 28.2, 22.1, 2.07, 19.80, 0.41,  4.00
+        2010,   3, 47, 33, 19, 18.9, 30.3, 24.6, 1.10, 10.50, 0.26,  2.80
+        2009, -10, 39, 26,  9, 10.8, 24.9, 17.9, 2.16, 27.00, 0.50,  6.60
+        2008,   3, 62, 51, 14, 21.3, 34.7, 28.0, 4.26, 22.70, 1.20, 11.40
+        2007,   5, 50, 43, 22, 23.3, 35.0, 29.1, 4.31, 10.30, 1.00,  2.00
+        2006,  18, 53, 41, 30, 29.4, 40.5, 34.9, 4.32,  8.40, 0.87,  4.70
+        2005,  -3, 56, 33, 14, 16.0, 31.4, 23.7, 4.46, 29.10, 0.72,  9.30
+        2004,  -6, 55, 41, 13, 11.6, 26.3, 19.0, 2.22, 23.40, 0.45,  4.50
+        2003,  -5, 47, 36, 17, 13.9, 26.5, 20.2, 0.93, 13.80, 0.17,  2.10
+        2002,  11, 55, 38, 27, 25.5, 39.3, 32.4, 3.41, 25.40, 1.57,  7.60
+        2001,   1, 43, 33, 22, 20.3, 32.0, 26.1, 1.32,  6.70, 0.43,  2.20
+        2000,  -2, 56, 37, 14, 16.1, 32.2, 24.1, 1.96, 16.10, 0.33,  4.90 """
 
-	# Write your code here.
+    # Write your code here.
 
-	=====
+    =====
 
-	from unittest.gui import TestCaseGui
+    from unittest.gui import TestCaseGui
 
-	class myTests(TestCaseGui):
+    class myTests(TestCaseGui):
 
-		def testOne(self):
-		   self.assertEqual(most_water_year, 2014, "testing whether most_water_year is set correctly")
+        def testOne(self):
+           self.assertEqual(most_water_year, 2014, "testing whether most_water_year is set correctly")
 
-		def testOneA(self):
-		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+        def testOneA(self):
+           self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
-	myTests().main()
+    myTests().main()
 
 
 .. activecode:: ps_04_12
