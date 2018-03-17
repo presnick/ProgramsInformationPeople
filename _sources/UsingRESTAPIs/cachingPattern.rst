@@ -47,13 +47,13 @@ This code does that:
 
 .. note::
 
-	The reason you see the variable CACHE_FNAME in all caps is because it's convention to use all caps for variable names that are intended to be constants -- variables whose values will not change throughout the program, and will only be referred to.
+    The reason you see the variable CACHE_FNAME in all caps is because it's convention to use all caps for variable names that are intended to be constants -- variables whose values will not change throughout the program, and will only be referred to.
 
     The reason you see the variable _cache_diction with a single underscore at its beginning is because it is conventional in Python to use single underscores at the start of variables that are intended to be private -- which means they are not used in any other file or accessible outside the places where it's used in the program. This is true for both variables that hold static values (integers, strings...) and for variables that are function names.
 
     In our case here, it's not truly necessary that the cache dictionary is private, but it is a good idea to make it special that way -- it is a special variable that shouldn't be changed without careful reason, since this whole pattern depends on it, and using this convention may indicate that to another programmer.
 
-	Paying attention to stylistic conventions in programming like this is helpful, not because it necessarily changes how the code works, but because it will make it easier for other programmers to read your code. And knowing these conventions will make it much easier for you to understand others' code!
+    Paying attention to stylistic conventions in programming like this is helpful, not because it necessarily changes how the code works, but because it will make it easier for other programmers to read your code. And knowing these conventions will make it much easier for you to understand others' code!
 
 It's important to understand your end goal with this pattern of caching responses.
 
@@ -71,13 +71,13 @@ We've provided such a function you can use, called ``params_unique_combination``
 
 .. sourcecode:: python
 
-	def params_unique_combination(baseurl, params_d, private_keys=["api_key"]):
-	    alphabetized_keys = sorted(params_d.keys())
-	    res = []
-	    for k in alphabetized_keys:
-	        if k not in private_keys:
-	            res.append("{}-{}".format(k, params_d[k]))
-	    return baseurl + "_".join(res)
+    def params_unique_combination(baseurl, params_d, private_keys=["api_key"]):
+        alphabetized_keys = sorted(params_d.keys())
+        res = []
+        for k in alphabetized_keys:
+            if k not in private_keys:
+                res.append("{}-{}".format(k, params_d[k]))
+        return baseurl + "_".join(res)
 
 For example, with this base url: ``https://api.datamuse.com/words``
 And this parameters dictionary: ``{"rel_rhy":"rain"}``
