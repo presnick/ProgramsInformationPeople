@@ -199,6 +199,8 @@ The Python interpreter looks for an instance variable or method called ``chasing
 **Check your understanding**
 
 .. mchoice:: question_inheritance_1
+   :practice: T
+   :topics: Inheritance/inheritVarsAndMethods
    :answer_a: 1
    :answer_b: 2
    :answer_c: 3
@@ -211,7 +213,35 @@ The Python interpreter looks for an instance variable or method called ``chasing
    
    After you run the code, ``new_cat = Cheshire("Pumpkin")``, how many instance variables exist for the new_cat instance of Cheshire?
 
+   .. code-block:: python
+
+     class Pet():
+        boredom_decrement = 4
+        hunger_decrement = 6
+        boredom_threshold = 5
+        hunger_threshold = 10
+        sounds = ['Mrrp']
+        def __init__(self, name = "Kitty"):
+            self.name = name
+            self.hunger = randrange(self.hunger_threshold)
+            self.boredom = randrange(self.boredom_threshold)
+            self.sounds = self.sounds[:]  # copy the class attribute, so that when we make changes to it, we won't affect the other Pets in the class
+
+     class Cat(Pet): # the class name that the new class inherits from goes in the parentheses, like so.
+        sounds = ['Meow']
+
+        def chasing_rats(self):
+            return "What are you doing, Pinky? Taking over the world?!"
+
+     class Cheshire(Cat): # this inherits from Cat, which inherits from Pet
+
+        def smile(self): # this method is specific to instances of Cheshire
+            print(":D :D :D")
+
+
 .. mchoice:: question_inheritance_2
+   :practice: T
+   :topics: Inheritance/inheritVarsAndMethods
    :answer_a: We are Siamese if you please. We are Siamese if you don’t please.
    :answer_b: Error
    :answer_c: Pumpkin
@@ -226,6 +256,29 @@ The Python interpreter looks for an instance variable or method called ``chasing
 
    .. code-block:: python
 
+     class Pet():
+        boredom_decrement = 4
+        hunger_decrement = 6
+        boredom_threshold = 5
+        hunger_threshold = 10
+        sounds = ['Mrrp']
+        def __init__(self, name = "Kitty"):
+            self.name = name
+            self.hunger = randrange(self.hunger_threshold)
+            self.boredom = randrange(self.boredom_threshold)
+            self.sounds = self.sounds[:]  # copy the class attribute, so that when we make changes to it, we won't affect the other Pets in the class
+
+     class Cat(Pet): # the class name that the new class inherits from goes in the parentheses, like so.
+        sounds = ['Meow']
+
+        def chasing_rats(self):
+            return "What are you doing, Pinky? Taking over the world?!"
+
+     class Cheshire(Cat): # this inherits from Cat, which inherits from Pet
+
+        def smile(self): # this method is specific to instances of Cheshire
+            print(":D :D :D")
+
      new_cat = Cheshire("Pumpkin”)
      class Siamese(Cat):
        def song(self):
@@ -235,6 +288,8 @@ The Python interpreter looks for an instance variable or method called ``chasing
 
 
 .. mchoice:: question_inheritance_3
+   :practice: T
+   :topics: Inheritance/inheritVarsAndMethods
    :answer_a: We are Siamese if you please. We are Siamese if you don’t please.
    :answer_b: Error
    :answer_c: Pumpkin
@@ -248,6 +303,29 @@ The Python interpreter looks for an instance variable or method called ``chasing
    What would print after running the following code:
 
    .. code-block:: python
+
+     class Pet():
+        boredom_decrement = 4
+        hunger_decrement = 6
+        boredom_threshold = 5
+        hunger_threshold = 10
+        sounds = ['Mrrp']
+        def __init__(self, name = "Kitty"):
+            self.name = name
+            self.hunger = randrange(self.hunger_threshold)
+            self.boredom = randrange(self.boredom_threshold)
+            self.sounds = self.sounds[:]  # copy the class attribute, so that when we make changes to it, we won't affect the other Pets in the class
+
+     class Cat(Pet): # the class name that the new class inherits from goes in the parentheses, like so.
+        sounds = ['Meow']
+
+        def chasing_rats(self):
+            return "What are you doing, Pinky? Taking over the world?!"
+
+     class Cheshire(Cat): # this inherits from Cat, which inherits from Pet
+
+        def smile(self): # this method is specific to instances of Cheshire
+            print(":D :D :D")
 
      new_cat = Cheshire("Pumpkin”)
      class Siamese(Cat):

@@ -10,10 +10,17 @@
 Extra Exercises
 ===============
 
-1. The class, ``Pokemon``, is provided below and describes a Pokemon and its leveling and evolving characteristics. An instance of the class is one pokemon that you create. ``Grass_Pokemon`` is a subclass that inherits from ``Pokemon`` but changes some aspects, for instance, the boost values are different. For the subclass ``Grass_Pokemon``, add another method called ``action`` that returns the string "[name of pokemon] knows a lot of different moves!". Create an instance of this class with the name as "Belle". Assign this instance to the variable ``p1``.
 
 .. activecode:: ee_inheritance_01
-   :tags:Inheritance/inheritVarsAndMethods.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Inheritance/inheritVarsAndMethods
+   :tags: Inheritance/inheritVarsAndMethods.rst
+
+   **1.** The class, ``Pokemon``, is provided below and describes a Pokemon and its leveling and evolving characteristics. An instance of the class is one pokemon that you create. ``Grass_Pokemon`` is a subclass that inherits from ``Pokemon`` but changes some aspects, for instance, the boost values are different. For the subclass ``Grass_Pokemon``, add another method called ``action`` that returns the string "[name of pokemon] knows a lot of different moves!". Create an instance of this class with the name as "Belle". Assign this instance to the variable ``p1``.
+   ~~~~
 
    class Pokemon(object):
        attack = 12
@@ -85,10 +92,16 @@ Extra Exercises
    myTests().main()
 
 
-2. The attack strength for grass Pokemon does not change until they reach level 10. At level 10 and up, their attack strength increases by the attack_boost amount when they level. Modify the ``Grass_Pokemon`` subclass of ``Pokemon`` to reflect this change. To test, create an instance of the class with the name as "Bulby". Assign the instance to the variable ``p2``. Then, use ``Grass_Pokemon`` methods to train a the ``p2`` Grass_Pokemon instance until it reaches at least level 10.
-
 .. activecode:: ee_inheritance_02
-   :tags:Inheritance/inheritVarsAndMethods.rst,Inheritance/OverrideMethods.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Inheritance/OverrideMethods
+   :tags: Inheritance/inheritVarsAndMethods.rst,Inheritance/OverrideMethods.rst
+
+   **2.** The attack strength for grass Pokemon does not change until they reach level 10. At level 10 and up, their attack strength increases by the attack_boost amount when they level. Modify the ``Grass_Pokemon`` subclass of ``Pokemon`` to reflect this change. To test, create an instance of the class with the name as "Bulby". Assign the instance to the variable ``p2``. Then, use ``Grass_Pokemon`` methods to train a the ``p2`` Grass_Pokemon instance until it reaches level 10.
+   ~~~~
 
    class Pokemon(object):
        attack = 12
@@ -155,18 +168,23 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOneA(self):
-         self.assertEqual(p2.__str__(), "Pokemon name: Bulby, Type: Grass, Level: 5", "Testing that p2 is assigned to correct value.")
+         self.assertEqual(p2.__str__(), "Pokemon name: Bulby, Type: Grass, Level: 10", "Testing that p2 is assigned to correct value.")
       def testOneB(self):
          self.assertTrue(p2.attack_up() >= 17, "Testing that attack value is assigned to correct value at level 10.")
       
    myTests().main()
 
 
-
-3. Along with the Pokemon parent class, we have also provided several subclasses. Write another method in the parent class that will be inherited by the subclasses called ``opponent`` that will show which type of pokemon the current type is weak against and strong against. For instance, if the p_type of the subclass is grass, fire will be assigned to the variable ``weak`` and water will be assigned to the variable ``strong``. Grass is weak against fire, but strong against water. Ghost is weak against dark but strong against psychic. Fire is weak against water but strong against grass. Finally, flying is weak against electric but strong against fighting.
-
 .. activecode:: ee_inheritance_05
-   :tags:Inheritance/inheritVarsAndMethods.rst
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Inheritance/inheritVarsAndMethods
+   :tags: Inheritance/inheritVarsAndMethods.rst
+
+   **3.** Along with the Pokemon parent class, we have also provided several subclasses. Write another method in the parent class that will be inherited by the subclasses called ``opponent`` that will show which type of pokemon the current type is weak against and strong against. It should return a tuple whose first item will be the value of weak and its second item will be the value of strong. For instance, if the p_type of the subclass is grass, fire will be assigned to the variable ``weak`` and water will be assigned to the variable ``strong``. Grass is weak against fire, but strong against water. Ghost is weak against dark but strong against psychic. Fire is weak against water but strong against grass. Finally, flying is weak against electric but strong against fighting.
+   ~~~~
 
    class Pokemon():
        attack = 12
@@ -253,13 +271,13 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testOneA(self):
-         self.assertEqual(Grass_Pokemon("Buggy").opponent(), ("fire", "water"), "Testing that Grass weak and strong are assigned to correct values.")
+         self.assertEqual(Grass_Pokemon("Buggy").opponent(), ("Fire", "Water"), "Testing that Grass weak and strong are assigned to correct values.")
       def testOneB(self):
-         self.assertEqual(Fire_Pokemon("Buggy").opponent(), ("water", "grass"), "Testing that Fire weak and strong are assigned to correct values.")
+         self.assertEqual(Fire_Pokemon("Buggy").opponent(), ("Water", "Grass"), "Testing that Fire weak and strong are assigned to correct values.")
       def testOneC(self):
-         self.assertEqual(Ghost_Pokemon("Buggy").opponent(), ("dark", "psychic"), "Testing that Ghost weak and strong are assigned to correct values.")
+         self.assertEqual(Ghost_Pokemon("Buggy").opponent(), ("Dark", "Psychic"), "Testing that Ghost weak and strong are assigned to correct values.")
       def testOneD(self):
-         self.assertEqual(Flying_Pokemon("Buggy").opponent(), ("electric", "fighting"), "Testing that Flying weak and strong are assigned to correct values.")
+         self.assertEqual(Flying_Pokemon("Buggy").opponent(), ("Electric", "Fighting"), "Testing that Flying weak and strong are assigned to correct values.")
 
    myTests().main()
 
