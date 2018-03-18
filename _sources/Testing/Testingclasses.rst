@@ -12,9 +12,11 @@ Testing classes
 
 To test a user-defined class, you will create test cases that check whether instances are created properly, and you will create test cases for each of the methods as functions, by invoking them on particular instances and seeing whether they produce the correct return values and side effects, especially side effects that change data stored in the instance variables. To illustrate, we will use the Point class that was used in the :ref:`introduction to classes <classes_chap>`.
 
-To test whether the class constructor (the ``__init__``) method is working correctly, create an instance and then make assertions to see whether its instance variables are set correctly.
+To test whether the class constructor (the ``__init__``) method is working correctly, create an instance and then make assertions to see whether its instance variables are set correctly. Note that this is a side effect test: the constructor method's job is to set instance variables, which is a side effect. Its return value doesn't matter.
 
 A method like ``distanceFromOrigin`` in the ``Point`` class you saw does its work by computing a return value, so it needs to be tested with a return value test. A method like ``move`` in the ``Turtle`` class does its work by changing the contents of a mutable object (the point instance has its instance variable changed) so it needs to be tested with a side effect test.
+
+Try adding some more tests in the code below, once you understand what's there.
 
 .. activecode:: python
 
@@ -59,6 +61,8 @@ A method like ``distanceFromOrigin`` in the ``Point`` class you saw does its wor
 **Check your understanding**
 
 .. mchoice:: test_questionmore_testing_1
+   :topics: Testing/intro-TestCases
+   :practice: T
    :answer_a: True
    :answer_b: False
    :feedback_a: Each test case checks whether the function works correctly on one input. It's a good idea to check several different inputs, including some extreme cases.
@@ -68,6 +72,8 @@ A method like ``distanceFromOrigin`` in the ``Point`` class you saw does its wor
    For each function, you should create exactly one test case.
  
 .. mchoice:: test_questionmore_testing_2
+   :topics: Testing/Testingclasses
+   :practice: T
    :answer_a: return value test
    :answer_b: side effect test
    :feedback_a: The method may return the correct value but not properly change the values of instance variables. See the move method of the Point class above. 
@@ -77,6 +83,8 @@ A method like ``distanceFromOrigin`` in the ``Point`` class you saw does its wor
    To test a method that changes the value of an instance variable, which kind of test case should you write?
 
 .. mchoice:: test_questionmore_testing_3
+   :topics: Testing/Testingclasses
+   :practice: T
    :answer_a: return value test
    :answer_b: side effect test
    :feedback_a: You want to check if maxabs returns the correct value for some input. 
@@ -92,6 +100,8 @@ A method like ``distanceFromOrigin`` in the ``Point`` class you saw does its wor
          return max(L, key = abs)
 
 .. mchoice:: test_questionmore_testing_4
+   :topics: Testing/Testingclasses
+   :practice: T
    :answer_a: return value test
    :answer_b: side effect test
    :feedback_a: The sort method always returns None, so there's nothing to check about whether it is returning the right value. 
@@ -100,4 +110,3 @@ A method like ``distanceFromOrigin`` in the ``Point`` class you saw does its wor
       
    We have usually used the ``sorted`` function, which takes a list as input and returns a new list containing the same items, possibly in a different order. There is also a method called ``sort`` for lists (e.g. ``[1,6,2,4].sort()``). It changes the order of the items in the list itself, and it returns the value ``None``. Which kind of test case would you use on the sort method?    
    
-
