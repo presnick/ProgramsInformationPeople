@@ -66,8 +66,7 @@ For example, the code snippet below, illustrates a set of tests for string metho
 
 In the online textbook, we use a special module that is built on top of the unittest module. This one, however, handles making a nice tabular display of the results of the tests, and putting them into HTML form to display on the web page. To use it, we import the module ``unittest.gui`` rather than just unittest, and then we work with the ``TestCaseGui`` class rather than the ``TestCase`` class. TestCaseGui includes a main() method that does pretty much what the unittest.main function does. In your own code files, you will use the ``TestCase`` class, and get output in your console that does not look quite as neat as the tables you've seen in this textbook.
 
-Here's an example with test cases for the `blanked` function that you created
-in the Hangman problem set. Note that the tests will fail until you fill in a correct definition for the blanked function.
+Here's an example with test cases for the `blanked` function that would be useful for a Hangman game. Note that the tests will fail until you fill in a correct definition for the blanked function.
 
 .. activecode:: simple_test_2
     :language: python
@@ -119,8 +118,8 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
    :feedback_b: Test cases let you test some pieces of code as you write them, rather than waiting for problems to show themselves later.
    :correct: b
 
-   Test cases are a waste of time, because python interpreter will give an error
-   message when the program runs incorrectly.
+   Test cases are a waste of time, because the python interpreter will give an error
+   message when the program runs incorrectly, and that's all you need for debugging.
 
    .. code-block:: python
 
@@ -139,3 +138,15 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
 
         myTests().main()
 
+.. mchoice:: test_questionsimple_test_3
+    :practice: T
+    :topics: Testing/intro-TestCases
+    :answer_a: self.assertEqual(blanked('under', 'du', 'u_d__'))
+    :answer_b: self.assertEqual(blanked('under', 'u_d__'), 'du')
+    :answer_c: self.assertEqual(blanked('under', 'du'), 'u_d__')
+    :feedback_a: blanked only takes two inputs; this provides three inputs to the blanked function
+    :feedback_b: The second argument to the blanked function should be the letters that have been guessed, not the blanked version of the word
+    :feedback_c: This checks whether the value returned from the blanked function is 'u_d__'.
+    :correct: c
+
+    Which of the following is the correct way to write a test to check that 'under' will be blanked as 'u_d__' when the user has guessed letters d and u so far?

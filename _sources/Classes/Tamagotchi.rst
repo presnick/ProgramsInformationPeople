@@ -119,16 +119,58 @@ No matter what the user does, with each command entered, the clock ticks for all
     import sys
     sys.setExecutionLimit(60000)
 
-    def whichone(petlist, name):
-        for pet in petlist:
-            if pet.name == name:
-                return pet
-        return None # no pet matched
+    def process_command(command, pets):
+        words = command.split()
+        if len(words) > 0:
+            command = words[0]
+        else:
+            command = None
+        if command == "Quit":
+            print("Exiting...")
+            return None
+        elif command == "Adopt" and len(words) > 1:
+            name = words[1]
+            if name in pets:
+                return "You already have a pet with that name"
+            else:
+                pets[name] = (Pet(name))
+                return "Adoption complete"
+        elif command == "Greet" and len(words) > 1:
+            name = words[1]
+            try:
+                pets[name].hi()
+                return "Greeted {}.".format(name)
+            except:
+                return "I didn't recognize that pet name. Please try again."
+        elif command == "Teach" and len(words) > 2:
+            name = words[1]
+            word = words[2]
+            if name not in pets:
+                return "I didn't recognize that pet name. Please try again."
+            else:
+                pet = pets[name]
+                pet.teach(word)
+                return "Taught {} to {}.".format(word, name)
+        elif command == "Feed" and len(words) > 1:
+            name = words[1]
+            try:
+                pets[name].feed()
+                return "Fed {}.".format(name)
+            except:
+                return "I didn't recognize that pet name. Please try again."
+        else:
+            return "I didn't understand that. Please try again."
+
+    def advance_clock(pets):
+        for pet in pets.values():
+            pet.clock_tick()
+
+    def status_string(pets):
+        return "\n".join([p.__str__() for p in pets.values()])
+
 
     def play():
-        animals = []
-
-        option = ""
+        animals = {}
         base_prompt = """
             Quit
             Adopt <petname_with_no_spaces_please>
@@ -136,50 +178,17 @@ No matter what the user does, with each command entered, the clock ticks for all
             Teach <petname> <word>
             Feed <petname>
 
-            Choice: """
+        Command: """
         feedback = ""
-        while True:
-            action = input(feedback + "\n" + base_prompt)
-            feedback = ""
-            words = action.split()
-            if len(words) > 0:
-                command = words[0]
-            else:
-                command = None
-            if command == "Quit":
-                print("Exiting...")
-                return
-            elif command == "Adopt" and len(words) > 1:
-                if whichone(animals, words[1]):
-                    feedback += "You already have a pet with that name\n"
-                else:
-                    animals.append(Pet(words[1]))
-            elif command == "Greet" and len(words) > 1:
-                pet = whichone(animals, words[1])
-                if not pet:
-                    feedback += "I didn't recognize that pet name. Please try again.\n"
-                    print()
-                else:
-                    pet.hi()
-            elif command == "Teach" and len(words) > 2:
-                pet = whichone(animals, words[1])
-                if not pet:
-                    feedback += "I didn't recognize that pet name. Please try again."
-                else:
-                    pet.teach(words[2])
-            elif command == "Feed" and len(words) > 1:
-                pet = whichone(animals, words[1])
-                if not pet:
-                    feedback += "I didn't recognize that pet name. Please try again."
-                else:
-                    pet.feed()
-            else:
-                feedback+= "I didn't understand that. Please try again."
-
-            for pet in animals:
-                pet.clock_tick()
-                feedback += "\n" + pet.__str__()
-
-
+        done = False
+        while not done:
+            advance_clock(animals)
+            prompt = '{}\n{}\n{}'.format(feedback,
+                                         status_string(animals),
+                                         base_prompt)
+            cmd = input(prompt)
+            feedback = process_command(cmd, animals)
+            if not feedback:
+                done = True
 
     play()
