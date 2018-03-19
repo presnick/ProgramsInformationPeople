@@ -72,14 +72,14 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
 .. activecode:: simple_test_2
     :language: python
     :autograde: unittest
+    :chatcodes:
     :practice: T
     :topics: Testing/intro-TestCases
+    :tags: Testing/intro-TestCases.rst
 
-    # define the function blanked().
-    # It takes a word and a string of letters that have been revealed.
-    # It should return a string with the same number of characters as
-    # the original word, but with the unrevealed characters replaced by _
+    Define the function blanked(). It takes a word and a string of letters that have been revealed. It should return a string with the same number of characters as the original word, but with the unrevealed characters replaced by _
 
+    ~~~~
     def blanked(word, revealed_letters):
         return word
 
@@ -111,6 +111,7 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
    When ``TestCase.assertEqual()`` is passed two values that are not the same, it generates an error and stops execution of the program.
  
 .. mchoice:: test_questionsimple_test_2
+   :practice: T
    :topics: Testing/intro-TestCases
    :answer_a: True
    :answer_b: False
@@ -120,4 +121,21 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
 
    Test cases are a waste of time, because python interpreter will give an error
    message when the program runs incorrectly.
+
+   .. code-block:: python
+
+        def blanked(word, revealed_letters):
+            return word
+
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+
+            def testOne(self):
+                self.assertEqual(blanked('hello', 'elj'), "_ell_", "testing blanking of hello when e,l, and j have been guessed.")
+                self.assertEqual(blanked('hello', ''), '_____', "testing blanking of hello when nothing has been guessed.")
+                self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
+                self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
+
+        myTests().main()
 
