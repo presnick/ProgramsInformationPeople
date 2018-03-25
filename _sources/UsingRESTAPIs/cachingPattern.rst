@@ -80,9 +80,7 @@ We've provided such a function you can use, called ``params_unique_combination``
         return baseurl + "_".join(res)
 
 For example, with this base url: ``https://api.datamuse.com/words``
-And this parameters dictionary: ``{"rel_rhy":"rain"}``
-
-An invocation of ``params_unique_combination`` like so: ``params_unique_combination("https://api.datamuse.com/words",{"rel_rhy":"rain"})`` would return a string that looks like this:
+And this parameters dictionary: ``{"rel_rhy":"rain"}``, an invocation of ``params_unique_combination`` like so: ``params_unique_combination("https://api.datamuse.com/words",{"rel_rhy":"rain"})`` would return a string that looks like this:
 
 ``https://api.datamuse.com/wordsrel_rhy-rain``
 
@@ -93,6 +91,7 @@ When you use some more complicated processes for requesting data from APIs, ther
 **Check your understanding**
 
 .. mchoice:: restapis_caching_1
+   :topics: UsingRESTAPIs/cachingPattern
    :answer_a: Because when requests.get encodes URL parameters, the params might be in any order, which would make it hard to compare one URL to another later on, and you could cache the same data multiple times.
    :answer_b: Because otherwise, it's too much data in the same function, and the program will not run.
    :answer_c: You don't, actually. This function is just a fancy way of calling requests.get.

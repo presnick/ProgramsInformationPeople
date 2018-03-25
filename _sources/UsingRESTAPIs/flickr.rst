@@ -53,7 +53,7 @@ Below is some code that queries the flickr API for images that have a particular
         params_diction["per_page"] = 3
         params_diction["media"] = "photos"
         params_diction["format"] = "json"
-        flickr_resp = requests.get(baseurl, params = d)
+        flickr_resp = requests.get(baseurl, params = params_diction)
         # Useful for debugging: print the url! Uncomment the below line to do so.
         #print(flickr_resp.url) # Paste the result into the browser to check it out...
         flickr_text = flickr_resp.text # Access the text attribute of the response object

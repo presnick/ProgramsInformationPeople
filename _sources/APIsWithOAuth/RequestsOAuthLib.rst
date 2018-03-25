@@ -20,9 +20,9 @@ You've already seen one way of using the OAuth Protocol in programs that run on 
 
 However, for some other sites that don't provide such a tool, you may need to have your code act out one of the parts in the oauth protocol in order to get an authorization token. For that, we will use a module that helps shield you from some of the complexities of the oauth protocol. It's called ``requests_oauthlib``.
 
-In order to use it, you'll need to ``pip install requests_oauthlib`` (using whatever method of ``pip`` installation works for you -- the full path, for Windows users, or ``sudo``, for Mac users).
+.. In order to use it, you'll need to ``pip install requests_oauthlib`` (using whatever method of ``pip`` installation works for you -- the full path, for Windows users, or ``sudo``, for Mac users).
 
-This installs an external module (library) that is a lot like the ``requests`` module you've seen before, except that it handles OAuth neatly. Indeed, this module uses the requests module but provides some extra functionality.
+.. This installs an external module (library) that is a lot like the ``requests`` module you've seen before, except that it handles OAuth neatly. Indeed, this module uses the requests module but provides some extra functionality.
 
 When you make requests that require an OAuth token, you'll need to provide a little bit more information than you provide when you make a request to an API like the FAA API or like Flickr. Instead of using the **get** method in the ``requests`` library, you'll be making an instance of a class in the ``requests_oauthlib`` library called an **OAuth1Session**.
 
@@ -30,7 +30,7 @@ When you make requests that require an OAuth token, you'll need to provide a lit
 
    There are actually 2 versions of the OAuth Protocol: OAuth 1.0 and 2.0. We will not be discussing the difference in depth in this course, but that's the reason you see "OAuth1", for example -- it refers to the version of the set of security rules we're using to ensure that users' accounts are safe! These protocols (sets of rules) are not perfect, but how they are risky is also outside the bounds of this course.
 
-We've written a little bit of code to help you manage the OAuth token exchange so you can get data back from a service that uses the OAuth protocol. The program will open up a web browser. The person who runs your program (the user) will use that browser window to log in to their account on the external service, in order to authenticate, and essentially say *"it's okay if you, consumer application, use <this specific data being asked for> from my account on your service".* In an online environment, the external service would redirect the user's browser to visit a URL where your code was running. But your program is not running behind a web server. Some services, like Twitter, provide a workaround for this, but displaying a code in the browser that the user can copy and paste into the terminal window where your program is running.
+We've written a little bit of code to help you manage the OAuth token exchange so you can get data back from a service that uses the OAuth protocol. The program will open up a web browser. The person who runs your program (the user) will use that browser window to log in to their account on the external service, in order to authenticate, and essentially say *"it's okay if you, consumer application, use <this specific data being asked for> from my account on your service".* In an online environment, the external service would redirect the user's browser to visit a URL where your code was running. But your program is not running behind a web server. Some services, like Twitter, provide a workaround for this by displaying a code in the browser that the user can copy and paste into the terminal window where your program is running.
 
 The overall process of making a request using ``requests_oauthlib`` is as follows (we'll provide code that does this, to show you how it works):
 
@@ -49,3 +49,18 @@ The overall process of making a request using ``requests_oauthlib`` is as follow
 7. The user pastes some kind of code they get from the OAuth provider (e.g., Twitter) into the terminal window for your program; your program saves it so you can use it later to make secure requests for protected data (like tweets or images).
 
 8. Make a request, and access protected resources. Get back a bunch of nested data to play with and parse as usual.
+
+.. mchoice:: RequestsOAuthLib_json_Required_Modules
+   :practice: T
+   :topics: APIsWithOAuth/RequestsOAuthLib
+   :answer_a: requests
+   :answer_b: requests, json
+   :answer_c: requests_oauthlib
+   :answer_d: requests_oauthlib, json
+   :feedback_a: First, we need to import `json` module to be able to invoke `json.loads()`. Second, because the API requires authentication, we need to use `requests_oauthlib`.
+   :feedback_b: Because the API requires authentication, we need to use `requests_oauthlib` in addition to `json`.
+   :feedback_c: We also need to import `json` module to be able to invoke `json.loads()`.
+   :feedback_d: Yes. Good job!
+   :correct: d
+
+   We want to get json data from an API that requires authentication. Which of the following modules should we import for this purpose?
