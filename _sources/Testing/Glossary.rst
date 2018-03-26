@@ -20,4 +20,4 @@ Glossary
     
     test case
         An assertion about the state of the program at particular point in its
-        execution, such as the type of a variable or of a value returned by a
+        execution, such as the type of a variable or of a value returned by a function.
