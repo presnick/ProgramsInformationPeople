@@ -1,0 +1,22 @@
+.. _Final_Exam_W15/q_14_D:
+
+Final Exam Winter 2015 - Question 14 Part D
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_14_D
+   :answer_a: Yes
+   :answer_b: No
+   :feedback_a: Correct!
+   :feedback_b: Incorrect!
+   :correct: a
+   :practice: T
+   :topics: Final_Exam_W15/q_14_D
+
+   Does the code snippet below result in an infinite loop (meaning that the while loop never stops running once it begins)?
+
+   .. sourcecode:: python
+
+      c = [13]
+      while len(c) < 30:
+         print ('C')

@@ -1,0 +1,33 @@
+.. _Final_Exam_W15/q_21:
+
+Final Exam Winter 2015 - Question 21
+------------------------------------
+
+
+.. activecode:: Final_Exam_W15_q_21
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_W15/q_21
+
+   Given a list of tuples containing a TV show and the number of seasons they have had, write
+   code that **sorts the shows by the number of seasons in decreasing order**. Any ordering
+   on ties is OK.
+
+   ~~~~
+   shows = [('Lost', 6), ('Stranger Things', 2), ('Game of Thrones', 8), ('Scandal', 7), ('Riverdale', 1)]
+
+   sortedShows =
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(sortedShows, [('Game of Thrones', 8), ('Scandal', 7),
+            ('Lost', 6), ('Stranger Things', 2), ('Riverdale', 1)], "Testing the value in sortedShows.")
+
+   myTests().main()

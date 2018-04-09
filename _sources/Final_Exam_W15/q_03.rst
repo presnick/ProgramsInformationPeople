@@ -1,0 +1,21 @@
+.. _Final_Exam_W15/q_03:
+
+Final Exam Winter 2015 - Question 03
+------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_03
+   :answer_a: SherlockHolmes.txt would be shorter when compressed
+   :answer_b: Rand.txt would be shorter when compressed
+   :answer_c: Both would be equally sized when compressed
+   :answer_d: We cannot say which would be shorter when compressed
+   :feedback_a: Correct!
+   :feedback_b: Incorrect!
+   :feedback_c: Incorrect!
+   :feedback_d: Incorrect!
+   :correct: a
+   :practice: T
+   :topics: Final_Exam_W15/q_03
+
+   Assume you are given two files. **SherlockHolmes.txt** contains the first 1000 letters (omitting spaces and punctuation) of “Sherlock Holmes”, all converted to lower case. **Rand.txt** also contains 1000 letters but each letter is randomly selected from lower case letters. If you run a text compression on both files, which compressed file should we expect to be **shorter** and why?
+

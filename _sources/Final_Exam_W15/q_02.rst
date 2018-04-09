@@ -1,0 +1,21 @@
+.. _Final_Exam_W15/q_02:
+
+Final Exam Winter 2015 - Question 02
+------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_02
+   :answer_a: The fair coin
+   :answer_b: The biased coin
+   :answer_c: Both coins provide the same amount of information
+   :answer_d: We cannot say which provides more information
+   :feedback_a: Correct!
+   :feedback_b: Incorrect!
+   :feedback_c: Incorrect!
+   :feedback_d: Incorrect!
+   :correct: a
+   :practice: T
+   :topics: Final_Exam_W15/q_02
+
+   Assume you have two coins: a **fair coin** and a **biased coin**. The **fair coin** lands on heads 50% of the time and lands on tails the other 50% of the time. The **biased coin** and lands on heads 75% of the time and tails 25% of the time. Which coin provides more information when you learn the outcome of a flip?
+

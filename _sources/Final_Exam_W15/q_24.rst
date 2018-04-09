@@ -1,0 +1,37 @@
+.. _Final_Exam_W15/q_24:
+
+Final Exam Winter 2015 - Question 24
+------------------------------------
+
+
+.. activecode:: Final_Exam_W15_q_24
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_W15/q_24
+
+   Given the following code, write additional code to determine the element that appears **least often** in the
+   list `lst` and save that element in the variable `least_often`. You may assume that there will always be only one
+   element that appears the fewest number of times in the list `lst`, (no ties).
+
+   ~~~~
+   lst = ["hi", "hey", "bye", "hi", "bye", "bye", "hi", "hi"]
+
+
+
+
+
+
+   least_often =
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(least_often, "hey", "Testing the value of least_often.")
+
+   myTests().main()

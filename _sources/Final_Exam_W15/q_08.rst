@@ -1,0 +1,46 @@
+.. _Final_Exam_W15/q_08:
+
+Final Exam Winter 2015 - Question 08
+------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_08
+    :practice: T
+    :topics: Final_Exam_W15/q_08
+
+    What is **printed** when the code below is run?
+
+    .. sourcecode:: python
+
+         def mul(x, y):
+            result = x * y
+            return result
+
+         mul(2, 4)
+
+    ..
+
+    -   8
+
+        -    Incorrect!
+
+    -   24
+
+        -   Incorrect!
+
+    -   44
+
+        -   Incorrect!
+
+    -   2222
+
+        -   Incorrect!
+
+    -   There is an error
+
+        -   Incorrect!
+
+    -   Nothing is printed
+
+        +   Correct!
+

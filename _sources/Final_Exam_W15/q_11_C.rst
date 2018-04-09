@@ -1,0 +1,29 @@
+.. _Final_Exam_W15/q_11_C:
+
+Final Exam Winter 2015 - Question 11 Part C
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_11_C
+   :answer_a: 16
+   :answer_b: 10
+   :answer_c: 12
+   :answer_d: There is an error
+   :answer_e: None
+   :feedback_a: Incorrect!
+   :feedback_b: Incorrect!
+   :feedback_c: Correct!
+   :feedback_d: Incorrect!
+   :feedback_e: Incorrect!
+   :correct: c
+   :practice: T
+   :topics: Final_Exam_W15/q_11_C
+
+   What is the **value** of `doAThing(andAdd=10, f=lambda:2)` when the code below is run?
+
+   .. sourcecode:: python
+
+      def doAThing(f, andAdd = 6):
+         return f() + andAdd
+
+      myThing = lambda: 10

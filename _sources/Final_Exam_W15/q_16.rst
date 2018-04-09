@@ -1,0 +1,59 @@
+.. _Final_Exam_W15/q_16:
+
+Final Exam Winter 2015 - Question 16
+------------------------------------
+
+
+.. activecode:: Final_Exam_W15_q_16
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_W15/q_16
+
+   `instructors_d` has information on instructors at U of M, including the number of instructors and information on each
+   instructor. For each instructor, there is information on the instructor's name, uniqname, and department(s) they
+   teach in. Only information for the first three instructors are shown.
+
+   Write one line of code that uses `instructors_d` to store the (3-item) list of instructor dictionaries into the
+   variable `instructors_lst`.
+
+   ~~~~
+   instructors_d = {
+    "university": "University of Michigan",
+    "num_instructors": 3,
+    "instructors": [
+    {
+    "first_name": "Steve",
+    "last_name": "Oney",
+    "uniqname": "soney",
+    "dept": ["SI"]
+    },
+    {
+    "first_name": "Claudia",
+    "last_name": "Shannon",
+    "uniqname": "shclaude",
+    "dept": ["ASIAN"]
+    },
+    {
+    "first_name": "Alexandra",
+    "last_name": "Turning",
+    "uniqname": "alexturn",
+    "dept": ["EECS", "SI"]
+    }
+    ]
+   }
+
+   # Write your code here
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(instructors_lst, instructors_d['instructors'], "Testing whether you've got the correct value.")
+
+
+   myTests().main()

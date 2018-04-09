@@ -1,0 +1,17 @@
+.. _Final_Exam_W15/q_05:
+
+Final Exam Winter 2015 - Question 05
+------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_05
+   :answer_a: True
+   :answer_b: False
+   :feedback_a: Incorrect!
+   :feedback_b: Correct!
+   :correct: b
+   :practice: T
+   :topics: Final_Exam_W15/q_05
+
+   All software is distributed with both an executable and source code.
+

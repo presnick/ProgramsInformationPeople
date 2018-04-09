@@ -621,6 +621,65 @@ Discussion Section Exercises
    UMich-SI106-F17/ds_05.rst
    UMich-SI106-F17/ds_06.rst
 
+
+Final Exams
+::::::::::::::::::::::::::::
+.. toctree::
+   :maxdepth: 2
+
+
+   Final_Exam_W15/q_01.rst
+   Final_Exam_W15/q_02.rst
+   Final_Exam_W15/q_03.rst
+   Final_Exam_W15/q_04.rst
+   Final_Exam_W15/q_05.rst
+   Final_Exam_W15/q_06.rst
+   Final_Exam_W15/q_07.rst
+   Final_Exam_W15/q_08.rst
+   Final_Exam_W15/q_09.rst
+   Final_Exam_W15/q_10_A.rst
+   Final_Exam_W15/q_10_B.rst
+   Final_Exam_W15/q_10_C.rst
+   Final_Exam_W15/q_10_D.rst
+   Final_Exam_W15/q_10_E.rst
+   Final_Exam_W15/q_10_F.rst
+   Final_Exam_W15/q_10_G.rst
+   Final_Exam_W15/q_10_H.rst
+   Final_Exam_W15/q_10_I.rst
+   Final_Exam_W15/q_10_J.rst
+   Final_Exam_W15/q_10_K.rst
+   Final_Exam_W15/q_10_L.rst
+   Final_Exam_W15/q_10_M.rst
+   Final_Exam_W15/q_10_N.rst
+   Final_Exam_W15/q_10_O.rst
+   Final_Exam_W15/q_10_P.rst
+   Final_Exam_W15/q_11_A.rst
+   Final_Exam_W15/q_11_B.rst
+   Final_Exam_W15/q_11_C.rst
+   Final_Exam_W15/q_13.rst
+   Final_Exam_W15/q_14_A.rst
+   Final_Exam_W15/q_14_B.rst
+   Final_Exam_W15/q_14_C.rst
+   Final_Exam_W15/q_14_D.rst
+   Final_Exam_W15/q_14_E.rst
+   Final_Exam_W15/q_16.rst
+   Final_Exam_W15/q_17.rst
+   Final_Exam_W15/q_19.rst
+   Final_Exam_W15/q_20.rst
+   Final_Exam_W15/q_21.rst
+   Final_Exam_W15/q_22.rst
+   Final_Exam_W15/q_23.rst
+   Final_Exam_W15/q_23_A.rst
+   Final_Exam_W15/q_23_B.rst
+   Final_Exam_W15/q_23_C.rst
+   Final_Exam_W15/q_23_D.rst
+   Final_Exam_W15/q_23_E.rst
+   Final_Exam_W15/q_23_F.rst
+   Final_Exam_W15/q_24.rst
+   Final_Exam_W15/q_25.rst
+   Final_Exam_W15/q_26.rst
+
+
 Indices and tables
 ::::::::::::::::::
 

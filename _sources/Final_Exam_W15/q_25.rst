@@ -1,0 +1,35 @@
+.. _Final_Exam_W15/q_25:
+
+Final Exam Winter 2015 - Question 25
+------------------------------------
+
+
+.. activecode:: Final_Exam_W15_q_25
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_W15/q_25
+
+   Write code that repeatedly asks the user to input numbers, until the user enters “stop”.
+   Create a list of all the numbers the user enters and save in variable `average_value` the **average value** *after*
+   the user enters “stop”.
+
+   After saving and running your code, please enter the following values, in order: 10, 20, stop.
+   After entering “stop”, you should not be asked for any more numbers. The value of `average_value` (which
+   only appears after the user has entered the numbers) should be 15. You do not need to
+   define a function in your solution. Your solution should use input.
+
+   ~~~~
+   # Write your code here.
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(average_value, 15, "Testing the value of average_value.")
+
+   myTests().main()

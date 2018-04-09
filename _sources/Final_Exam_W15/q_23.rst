@@ -1,0 +1,52 @@
+.. _Final_Exam_W15/q_23:
+
+Final Exam Winter 2015 - Question 23
+------------------------------------
+
+
+.. activecode:: Final_Exam_W15_q_23
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_W15/q_23
+
+   Fill in the blank box below to define isFasterThan.
+
+   ~~~~
+   class Car():
+      is_car = True
+      def __init__(self, color, maxSpeed):
+         self.color = color
+         self.maxSpeed = maxSpeed
+
+      def isFasterThan(self, otherCar):
+         # Should return True if this car's maximum speed
+         # is greater than the maximum speed of otherCar.
+
+
+   class Truck(Car):
+      is_truck = True
+
+      def __init__(self, color, capacity):
+         Car.__init__(self, color, 90)
+         self.capacity = capacity
+
+      def canHold(self, weight):
+         return self.capacity>=weight
+
+   red_car = Car('red', 70)
+   blue_car = Truck('blue', 120)
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(red_car.maxSpeed, 70, "Testing the value of red_car.maxSpeed.")
+         self.assertEqual(blue_car.canHold(20), True, "Testing the value of blue_car.canHold(20).")
+         self.assertEqual(blue_car.isFasterThan(red_car), True, "Testing the value of blue_car.isFasterThan(red_car).")
+
+   myTests().main()
