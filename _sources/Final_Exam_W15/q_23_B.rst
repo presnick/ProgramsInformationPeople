@@ -1,0 +1,52 @@
+.. _Final_Exam_W15/q_23_B:
+
+Final Exam Winter 2015 - Question 23 Part B
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_23_B
+   :answer_a: 'red'
+   :answer_b: True
+   :answer_c: False
+   :answer_d: There is an error
+   :answer_e: None
+   :feedback_a: Incorrect!
+   :feedback_b: Incorrect!
+   :feedback_c: Incorrect!
+   :feedback_d: Correct!
+   :feedback_e: Incorrect!
+   :correct: d
+   :practice: T
+   :topics: Final_Exam_W15/q_23_B
+
+   After running the code below, what will be the value of `red_car.canHold(10)`?
+
+   .. sourcecode:: python
+
+      class Car():
+         is_car = True
+         def __init__(self, color, maxSpeed):
+            self.color = color
+            self.maxSpeed = maxSpeed
+
+         def isFasterThan(self, otherCar):
+            if self.maxSpeed > otherCar.maxSpeed:
+               return True
+            else:
+               return False
+
+
+      class Truck(Car):
+         is_truck = True
+
+         def __init__(self, color, capacity):
+            Car.__init__(self, color, 90)
+            self.capacity = capacity
+
+         def canHold(self, weight):
+            return self.capacity>=weight
+
+
+      red_car = Car('red', 70)
+      blue_car = Truck('blue', 120)
+

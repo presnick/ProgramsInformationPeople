@@ -1,0 +1,28 @@
+.. _Final_Exam_W15/q_10_G:
+
+Final Exam Winter 2015 - Question 10 Part G
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_10_G
+   :answer_a: "third"
+   :answer_b: 2
+   :answer_c: "first"
+   :answer_d: None
+   :answer_e: There is an error
+   :feedback_a: Correct!
+   :feedback_b: Incorrect!
+   :feedback_c: Incorrect!
+   :feedback_d: Incorrect!
+   :feedback_e: Incorrect!
+   :correct: a
+   :practice: T
+   :topics: Final_Exam_W15/q_10_G
+
+   What is the **value** of `z[z[1]]` when the code below is run?
+
+   .. sourcecode:: python
+
+      x = "THE TEAM" * 3
+      y = { "name": "Bo", "message": x }
+      z = ["first", 2, "third"]

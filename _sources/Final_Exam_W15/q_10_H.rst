@@ -1,0 +1,28 @@
+.. _Final_Exam_W15/q_10_H:
+
+Final Exam Winter 2015 - Question 10 Part H
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_10_H
+   :answer_a: "third"
+   :answer_b: 1
+   :answer_c: "first"
+   :answer_d: None
+   :answer_e: There is an error
+   :feedback_a: Incorrect!
+   :feedback_b: Correct!
+   :feedback_c: Incorrect!
+   :feedback_d: Incorrect!
+   :feedback_e: Incorrect!
+   :correct: b
+   :practice: T
+   :topics: Final_Exam_W15/q_10_H
+
+   What is the **value** of `[1,2,3][0]` when the code below is run?
+
+   .. sourcecode:: python
+
+      x = "THE TEAM" * 3
+      y = { "name": "Bo", "message": x }
+      z = ["first", 2, "third"]

@@ -1,0 +1,22 @@
+.. _Final_Exam_W15/q_09:
+
+Final Exam Winter 2015 - Question 09
+------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_09
+   :multiple_answers:
+   :answer_a: Google Maps’ API for looking up latitude and longitude
+   :answer_b: Weather Underground’s API for getting up-to-date weather data
+   :answer_c: Facebook’s API for getting a list of users’ posts
+   :answer_d: Twitter’s API for downloading the tweets of every person a user is following
+   :feedback_a: Incorrect!
+   :feedback_b: Incorrect!
+   :feedback_c: Correct!
+   :feedback_d: Correct!
+   :correct: c,d
+   :practice: T
+   :topics: Final_Exam_W15/q_09
+
+   Which of the following APIs are **likely** to require OAuth (select all that apply).
+

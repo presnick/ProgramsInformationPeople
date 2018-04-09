@@ -1,0 +1,24 @@
+.. _Final_Exam_W15/q_14_C:
+
+Final Exam Winter 2015 - Question 14 Part C
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_14_C
+   :answer_a: Yes
+   :answer_b: No
+   :feedback_a: Correct!
+   :feedback_b: Incorrect!
+   :correct: a
+   :practice: T
+   :topics: Final_Exam_W15/q_14_C
+
+   Does the code snippet below result in an infinite loop (meaning that the while loop never stops running once it begins)?
+
+   .. sourcecode:: python
+
+      e = 14
+      while e < 40:
+         e = 1
+         print ('E')
+         e = e+1

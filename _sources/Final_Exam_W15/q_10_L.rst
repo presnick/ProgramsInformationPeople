@@ -1,0 +1,28 @@
+.. _Final_Exam_W15/q_10_L:
+
+Final Exam Winter 2015 - Question 10 Part L
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_10_L
+   :answer_a: String
+   :answer_b: Integer
+   :answer_c: Boolean
+   :answer_d: There is an error
+   :answer_e: None
+   :feedback_a: Incorrect!
+   :feedback_b: Incorrect!
+   :feedback_c: Incorrect!
+   :feedback_d: Correct!
+   :feedback_e: Incorrect!
+   :correct: d
+   :practice: T
+   :topics: Final_Exam_W15/q_10_L
+
+   What is the **type** of `len(z["name"])` when the code below is run?
+
+   .. sourcecode:: python
+
+      x = "THE TEAM" * 3
+      y = { "name": "Bo", "message": x }
+      z = ["first", 2, "third"]

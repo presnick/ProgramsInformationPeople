@@ -1,0 +1,23 @@
+.. _Final_Exam_W15/q_14_B:
+
+Final Exam Winter 2015 - Question 14 Part B
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_14_B
+   :answer_a: Yes
+   :answer_b: No
+   :feedback_a: Incorrect!
+   :feedback_b: Correct!
+   :correct: b
+   :practice: T
+   :topics: Final_Exam_W15/q_14_B
+
+   Does the code snippet below result in an infinite loop (meaning that the while loop never stops running once it begins)?
+
+   .. sourcecode:: python
+
+      d = 0
+      while d > -10:
+         print ('D')
+         d = d-1

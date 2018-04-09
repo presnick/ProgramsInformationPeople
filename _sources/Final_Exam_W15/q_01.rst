@@ -1,0 +1,21 @@
+.. _Final_Exam_W15/q_01:
+
+Final Exam Winter 2015 - Question 01
+------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_01
+   :answer_a: To answer the question, ‘can humans outthink machines?’
+   :answer_b: To find out if a person can figure out if they’re chatting with a bot or a human.
+   :answer_c: To figure out if a person can trick others into thinking that they are a chatbot.
+   :answer_d: To answer the question, ‘can machines think?’
+   :feedback_a: Incorrect!
+   :feedback_b: Incorrect!
+   :feedback_c: Incorrect!
+   :feedback_d: Correct!
+   :correct: d
+   :practice: T
+   :topics: Final_Exam_W15/q_01
+
+   What is the ultimate point of the Turing Test?
+

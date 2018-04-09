@@ -1,0 +1,80 @@
+.. _Final_Exam_W15/q_19:
+
+Final Exam Winter 2015 - Question 19
+------------------------------------
+
+
+.. activecode:: Final_Exam_W15_q_19
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_W15/q_19
+
+   Provided is a specification for a class called `Building`. The class `Building` accepts four arguments in its constructor (in this order):
+
+   - The address (string), example: "105 S State St"
+   - The city (string), example: "Ann Arbor"
+   - The state (string), example: "MI"
+   - The zip code (string), example: "48105"
+
+   Every instance of `Building` should have five instance variables:
+
+   - `.address` initialized to whatever was passed into the constructor.
+   - `.city` initialized to whatever was passed into the constructor.
+   - `.state` initialized to whatever was passed into the constructor.
+   - `.zip` initialized to whatever was passed into the constructor.
+   - `.rennovations` initialized to an empty list.
+
+   There are three methods for the Building class:
+
+   - `doRennovation()`:
+      accepts a string and appends the string to that instance’s rennovations.
+   - `hasDoneRennovation()`:
+      accepts a string and returns True if that string is in the list of
+      rennovations for that house and False otherwise.
+   - getMailingAddress():
+      accepts no arguments and returns the full mailing address of the instance
+      as a string in the format: {address} {city}, {state} {zip}
+
+   Based on the specification for Building, define the class below:
+
+   ~~~~
+   class Building():
+      def __init__(self, a, c, s, z):
+         # Initialize the instance variables.
+
+
+      def doRennovation(self, r):
+         # Append to the list of rennovations.
+
+
+      def hasDoneRennovation(self, r):
+         # True if r is in the list of rennovations,
+         # False otherwise.
+
+      def getMailingAddress(self):
+         # Retruns a string with the format:
+         # {address} {city}, {state} {zip}
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         nq = Building("105 S State St.","Ann Arbor","MI","48105")
+         self.assertEqual(nq.address, "105 S State St.", "Testing nq.address.")
+         self.assertEqual(nq.city, "Ann Arbor", "Testing nq.city.")
+         self.assertEqual(nq.state, "MI", "Testing nq.state.")
+         self.assertEqual(nq.zip, "48105", "Testing nq.zip.")
+         self.assertEqual(nq.rennovations, [], "Testing nq.rennovations.")
+         self.assertEqual(nq.hasDoneRennovation("new roof"), False, "Testing nq.hasDoneRennovation('new roof').")
+         nq.doRennovation("new roof")
+         self.assertEqual(nq.hasDoneRennovation("new roof"), True, "Testing nq.hasDoneRennovation('new roof') after nq.doRennovation('new roof').")
+         self.assertEqual(nq.rennovations, ["new roof"], "Testing nq.rennovations.")
+         self.assertEqual(nq.getMailingAddress(), "105 S State St. Ann Arbor, MI 48105", "Testing nq.getMailingAddress().")
+
+   myTests().main()

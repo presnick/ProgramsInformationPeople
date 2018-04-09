@@ -1,0 +1,28 @@
+.. _Final_Exam_W15/q_10_I:
+
+Final Exam Winter 2015 - Question 10 Part I
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_10_I
+   :answer_a: String
+   :answer_b: Integer
+   :answer_c: Boolean
+   :answer_d: There is an error
+   :answer_e: None
+   :feedback_a: Correct!
+   :feedback_b: Incorrect!
+   :feedback_c: Incorrect!
+   :feedback_d: Incorrect!
+   :feedback_e: Incorrect!
+   :correct: a
+   :practice: T
+   :topics: Final_Exam_W15/q_10_I
+
+   What is the **type** of `x[-1]` when the code below is run?
+
+   .. sourcecode:: python
+
+      x = "THE TEAM" * 3
+      y = { "name": "Bo", "message": x }
+      z = ["first", 2, "third"]

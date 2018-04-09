@@ -1,0 +1,44 @@
+.. _Final_Exam_W15/q_07:
+
+Final Exam Winter 2015 - Question 07
+------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_07
+    :practice: T
+    :topics: Final_Exam_W15/q_07
+
+    What is **printed** when the code below is run?
+
+    .. sourcecode:: python
+
+         s = '4 8 1 0 3'
+         nums = s.split()
+         print( nums[-3] + s[2] )
+
+    ..
+
+    -   1
+
+        -    Incorrect!
+
+    -   01
+
+        -   Incorrect!
+
+    -   08
+
+        -   Incorrect!
+
+    -   18
+
+        +   Correct!
+
+    -   There is an error
+
+        -   Incorrect!
+
+    -   Nothing is printed
+
+        -   Incorrect!
+

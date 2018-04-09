@@ -1,0 +1,51 @@
+.. _Final_Exam_W15/q_06:
+
+Final Exam Winter 2015 - Question 06
+------------------------------------
+
+
+.. mchoice:: Final_Exam_W15_q_06
+    :practice: T
+    :topics: Final_Exam_W15/q_06
+
+    What is **printed** when the code below is run?
+
+    .. sourcecode:: python
+
+        def add1(n):
+            n = n + 1
+            if n == 7:
+                return 'bingo'
+        print( add1(5) )
+
+    ..
+
+    -   5
+
+        -    Incorrect!
+
+    -   6
+
+        -   Incorrect!
+
+    -   7
+
+        -   Incorrect!
+
+    -   bingo
+
+        -   Incorrect!
+
+    -   None
+
+        +   Correct!
+
+    -   There is an error
+
+        -   Incorrect!
+
+    -   Nothing is printed
+
+        -   Incorrect!
+
+
