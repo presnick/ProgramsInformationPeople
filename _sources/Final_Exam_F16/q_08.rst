@@ -1,0 +1,58 @@
+.. _Final_Exam_F16/q_08:
+
+Final Exam Fall 2016 - Question 08
+----------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_08
+    :practice: T
+    :topics: Final_Exam_F16/q_08
+
+    What will print when the following code runs?
+
+    .. sourcecode:: python
+
+        print (type(lambda x: 1.06))
+
+    ..
+
+    -   <type 'int'>
+
+        -   Incorrect!
+
+    -   <type 'float'>
+
+        -   Incorrect!
+
+    -   <type 'bool'>
+
+        -   Incorrect!
+
+    -   <type 'function'>
+
+        +   Correct!
+
+    -   <type 'tuple'>
+
+        -   Incorrect!
+
+    -   True
+
+        -   Incorrect!
+
+    -   False
+
+        -   Incorrect!
+
+    -   1
+
+        -   Incorrect!
+
+    -   1.06
+
+        -   Incorrect!
+
+    -   No output; there is an error
+
+        -   Incorrect!
+
