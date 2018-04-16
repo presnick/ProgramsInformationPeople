@@ -1,7 +1,7 @@
 .. _Final_Exam_F16/q_22:
 
 Final Exam Fall 2016 - Questions 22
-----------------------------------
+-----------------------------------
 
 
 .. activecode:: Final_Exam_F16_q_22

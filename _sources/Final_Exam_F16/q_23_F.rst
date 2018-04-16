@@ -4,10 +4,7 @@ Final Exam Fall 2016 - Question 23 Part F
 -----------------------------------------
 
 
-.. activecode:: Final_Exam_F16_q_23_F
-   :language: python
-   :autograde: unittest
-   :chatcodes:
+.. mchoice:: Final_Exam_F16_q_23_F
    :practice: T
    :topics: Final_Exam_F16/q_23_F
 
