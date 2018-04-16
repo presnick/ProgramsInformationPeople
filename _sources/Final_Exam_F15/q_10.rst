@@ -1,0 +1,35 @@
+.. _Final_Exam_F15/q_10:
+
+Final Exam Fall 2015 - Question 10
+------------------------------------
+
+
+.. activecode:: Final_Exam_F15_q_10
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F15/q_10
+
+   Define a function join_strings that takes two inputs, a list of strings and a
+   separator string. It returns a single string that contains all of the original strings
+   concatenated together, separated by the separator string.
+
+   ~~~~
+   def join_strings(L, sep):
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         joined = join_strings(['a', 'b', 'c'], "|")
+         self.assertEqual(joined, "a|b|c", "Testing the value of join_strings(['a', 'b', 'c'], '|').")
+         joined2 = join_strings(['a', 'b', 'c'], "")
+         self.assertEqual(joined2, "abc", "Testing the value of join_strings(['a', 'b', 'c'], '').")
+
+   myTests().main()

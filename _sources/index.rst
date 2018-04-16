@@ -677,7 +677,27 @@ Final Exams
    Final_Exam_W15/q_23_F.rst
    Final_Exam_W15/q_24.rst
    Final_Exam_W15/q_25.rst
-   Final_Exam_W15/q_26.rst
+
+   Final_Exam_F15/q_01.rst
+   Final_Exam_F15/q_02.rst
+   Final_Exam_F15/q_03.rst
+   Final_Exam_F15/q_04.rst
+   Final_Exam_F15/q_05.rst
+   Final_Exam_F15/q_06.rst
+   Final_Exam_F15/q_07.rst
+   Final_Exam_F15/q_08.rst
+   Final_Exam_F15/q_09.rst
+   Final_Exam_F15/q_10.rst
+   Final_Exam_F15/q_11.rst
+   Final_Exam_F15/q_12.rst
+   Final_Exam_F15/q_13.rst
+   Final_Exam_F15/q_14.rst
+   Final_Exam_F15/q_15.rst
+   Final_Exam_F15/q_17.rst
+   Final_Exam_F15/q_19.rst
+   Final_Exam_F15/q_20.rst
+   Final_Exam_F15/q_21.rst
+   Final_Exam_F15/q_22.rst
 
 
 Indices and tables

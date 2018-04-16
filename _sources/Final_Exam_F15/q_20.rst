@@ -1,0 +1,37 @@
+.. _Final_Exam_F15/q_20:
+
+Final Exam Fall 2015 - Question 20
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F15_q_20
+    :practice: T
+    :topics: Final_Exam_F15/q_20
+
+    You have been part of an open source project from its founding. A new
+    leader has emerged and, well, let’s just say you don’t get along. The leader has
+    convinced the rest of the core group to kick you out. The project is still
+    remaining an open source project. Which of the following things will you still be
+    able to do? Check all that apply.
+
+    ..
+
+    -   Download the latest version of the code
+
+        +   Correct!
+
+    -   Run the code
+
+        +   Correct!
+
+    -   Modify the code
+
+        +   Correct!
+
+    -   Get your modifications incorporated into the project’s github repository
+
+        -   Incorrect!
+
+    -   Distribute a modified version, including much of the original code but with some of your modifications, through a different github repository
+
+        +   Correct!
