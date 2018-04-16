@@ -1,0 +1,42 @@
+.. _Final_Exam_F15/q_21:
+
+Final Exam Fall 2015 - Question 21
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F15_q_21
+    :practice: T
+    :topics: Final_Exam_F15/q_21
+
+    Which of the following are motivators that Weber describes for people
+    participating in open source projects? Check all that apply.
+
+    ..
+
+    -   An artistic desire to write code that elegantly solves challenging problems;
+
+        +   Correct!
+
+    -   Getting assigned to participate in the project as part of their paid employment;
+
+        +   Correct!
+
+    -   Getting a free education by having their code critiqued and seeing how other people write good code;
+
+        +   Correct!
+
+    -   A belief that no else can write code as well as they can, so their participation is essential;
+
+        -   Incorrect!
+
+    -   A belief that socialism is a better economic system than capitalism;
+
+        -   Incorrect!
+
+    -   An ideological commitment to open rather proprietary software;
+
+        +   Correct!
+
+    -   Building a reputation in order to get other benefits outside the project such as consulting gigs or job offers;
+
+        +   Correct!

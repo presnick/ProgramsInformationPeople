@@ -1,0 +1,49 @@
+.. _Final_Exam_F15/q_08:
+
+Final Exam Fall 2015 - Question 08
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F15_q_08
+    :practice: T
+    :topics: Final_Exam_F15/q_08
+
+    Choose all the options that will be printed after running this code:
+
+    .. sourcecode:: python
+
+        def hmm(L):
+            start_nums = range(len(L))
+            print(start_nums)
+            nums = [x + 1 for x in start_nums]
+            print(nums)
+            return zip(L, nums)
+
+        print(hmm(['a', 'b', 'c']))
+
+    ..
+
+    -   [0, 1, 2]
+
+        +   Correct!
+
+    -   [1, 2, 3]
+
+        +   Correct!
+
+    -   [('a', 0), ('b', 1), ('c', 2)]
+
+        -   Incorrect!
+
+    -   [('a', 1), ('b', 2), ('c', 3)]
+
+        +   Correct!
+
+    -   There is an error
+
+        -   Incorrect!
+
+    -   Nothing is printed
+
+        -   Incorrect!
+
