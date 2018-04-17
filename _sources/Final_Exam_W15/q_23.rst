@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_23:
 
-Final Exam Winter 2015 - Question 23
-------------------------------------
+Final Exam Fall 2017 - Question 23
+----------------------------------
 
 
 .. activecode:: Final_Exam_W15_q_23

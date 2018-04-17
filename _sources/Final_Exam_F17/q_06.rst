@@ -1,0 +1,62 @@
+.. _Final_Exam_F17/q_06:
+
+Final Exam Winter 2015 - Question 06
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_06
+   :practice: T
+   :topics: Final_Exam_F17/q_06
+
+   What will the following code print out?
+
+   .. sourcecode:: python
+
+      x = -1
+      y = -2
+      z = -3
+
+      def h(x, y = 2, z = 3):
+         print (x, y, z)
+
+      h(z=5)
+
+   ..
+
+   -   -1, 2, 3
+
+       -   Incorrect!
+
+   -   5
+
+       -   Incorrect!
+
+   -   -1, -2, 5
+
+       -   Incorrect!
+
+   -   -1, 2, -3
+
+       -   Incorrect!
+
+   -   -1, -2, 3
+
+       -   Incorrect!
+
+   -   -1, -2, -3
+
+       -   Incorrect!
+
+   -   -1, 2, 5
+
+       -   Incorrect!
+
+   -   None
+
+       -   Incorrect!
+
+   -   There is an error.
+
+       +   Correct!
+
+

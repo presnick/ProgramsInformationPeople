@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_23_A:
 
-Final Exam Winter 2015 - Question 23 Part A
--------------------------------------------
+Final Exam Fall 2017 - Question 23 Part A
+-----------------------------------------
 
 
 .. mchoice:: Final_Exam_W15_q_23_A

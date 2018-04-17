@@ -1,0 +1,56 @@
+.. _Final_Exam_F17/q_05:
+
+Final Exam Winter 2015 - Question 05
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_05
+   :practice: T
+   :topics: Final_Exam_F17/q_05
+
+   What will the following code print out?
+
+   .. sourcecode:: python
+
+      s = "<published>2009-01-23T20:04:53Z</published>"
+      print(s.split('Z')[1])
+
+   ..
+
+   -   <published>2009-01-23T20:04:53
+
+       -   Incorrect!
+
+   -   Z
+
+       -   Incorrect!
+
+   -   </published>
+
+       +   Correct!
+
+   -   <published>2009-01-23T20:04:53Z</published>
+
+       -   Incorrect!
+
+   -   <published>
+
+       -   Incorrect!
+
+   -   2009-01-23T20:04:53
+
+       -   Incorrect!
+
+   -   published
+
+       -   Incorrect!
+
+   -   None
+
+       -   Incorrect!
+
+   -   There is an error.
+
+       -   Incorrect!
+
+

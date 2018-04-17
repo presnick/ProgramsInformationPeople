@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_20:
 
-Final Exam Winter 2015 - Question 20
-------------------------------------
+Final Exam Fall 2017 - Question 20
+----------------------------------
 
 
 .. activecode:: Final_Exam_W15_q_20

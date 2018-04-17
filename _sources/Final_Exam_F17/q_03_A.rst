@@ -1,0 +1,23 @@
+.. _Final_Exam_F17/q_03_A:
+
+Final Exam Winter 2015 - Question 03 Part A
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_03_A
+   :practice: T
+   :topics: Final_Exam_F17/q_03_A
+
+   Your friends like your 106 final project so much that they encourage you to start a company to commercialize it. The code for your project includes a file that you found on the Internet. (Fortunately, you credited the original source, and were not accused of plagiarism when we graded the project). The file has a GPL license.
+   Does that prevent you from selling a license to your project code (including that GPL’ed file) with a requirement that your customers not share the code you wrote with other (non-paying) customers?
+
+   ..
+
+   -   Yes
+
+       +   Correct! That does prevent you licensing your code with that restriction. The viral clause of the GPL says that if you license your code, you have to license it under GPL, which permits recipients to share.
+
+   -   No
+
+       -   Incorrect! GPL does prevent you licensing your code with that restriction. The viral clause of the GPL says that if you license your code, you have to license it under GPL, which permits recipients to share.
+
