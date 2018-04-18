@@ -197,28 +197,28 @@ The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier t
    :practice: T
    :topics: APIsWithOAuth/TwitterAPI
    :answer_a: None of them will work.
-   :answer_b: `json.loads()` will work but `json.dumps()` will not work.
-   :answer_c: `json.loads()` will not work but `json.dumps()` will work.
-   :answer_d: Both `json.loads()` and `json.dumps()` will work.
+   :answer_b: ``json.loads()`` will work but ``json.dumps()`` will not work.
+   :answer_c: ``json.loads()`` will not work but ``json.dumps()`` will work.
+   :answer_d: Both ``json.loads()`` and ``json.dumps()`` will work.
    :feedback_a: I don't think so. Why don't you test it?
    :feedback_b: I don't think so. Why don't you test it?
    :feedback_c: I don't think so. Why don't you test it?
    :feedback_d: Yes. Good job!
    :correct: d
 
-   We've always saved `json`-formatted string in a file with `".json"` suffix. In the previous code we're saving the `json`-formatted string in `"creds.txt"`. Do you think `json.loads()` and `json.dumps()` will work?
+   We've always saved ``json``-formatted string in a file with ``".json"`` suffix. In the previous code we're saving the ``json``-formatted string in ``"creds.txt"``. Do you think ``json.loads()`` and ``json.dumps()`` will work?
 
 
 .. mchoice:: Obtaining_Saving_Credentials_First_Time
    :practice: T
    :topics: APIsWithOAuth/TwitterAPI
-   :answer_a: It runs `get_tokens()` and obtains the tokens.
-   :answer_b: It retrieves the tokens from `"creds.txt"`.
-   :answer_c: It runs `get_tokens()` and retrieves the tokens from `"creds.txt"`.
-   :answer_d: It runs `get_tokens()`, obtains the tokens, and saves them in `"creds.txt"`.
-   :feedback_a: It also saves the tokens in `"creds.txt"`.
-   :feedback_b: The first time running this code, `"creds.txt"` does not exist!
-   :feedback_c: If we can retrieve the tokens from `"creds.txt"`, we don't need to call `get_tokens()` again.
+   :answer_a: It runs ``get_tokens()`` and obtains the tokens.
+   :answer_b: It retrieves the tokens from ``"creds.txt"``.
+   :answer_c: It runs ``get_tokens()`` and retrieves the tokens from ``"creds.txt"``.
+   :answer_d: It runs ``get_tokens()``, obtains the tokens, and saves them in ``"creds.txt"``.
+   :feedback_a: It also saves the tokens in ``"creds.txt"``.
+   :feedback_b: The first time running this code, ``"creds.txt"`` does not exist!
+   :feedback_c: If we can retrieve the tokens from ``"creds.txt"``, we don't need to call ``get_tokens()`` again.
    :feedback_d: Yes. Good job!
    :correct: d
 
@@ -249,14 +249,14 @@ The ``oauth_with_twitter.py`` code is below. It's lengthy, so it may be easier t
 .. mchoice:: Obtaining_Saving_Credentials_Second_Time
    :practice: T
    :topics: APIsWithOAuth/TwitterAPI
-   :answer_a: It runs `get_tokens()` and obtains the tokens.
-   :answer_b: It retrieves the tokens from `"creds.txt"`.
-   :answer_c: It runs `get_tokens()` and retrieves the tokens from `"creds.txt"`.
-   :answer_d: It runs `get_tokens()`, obtains the tokens, and saves them in `"creds.txt"`.
-   :feedback_a: When the tokens are saved in `"creds.txt"`, we don't need to run `get_tokens()` again.
+   :answer_a: It runs ``get_tokens()`` and obtains the tokens.
+   :answer_b: It retrieves the tokens from ``"creds.txt"``.
+   :answer_c: It runs ``get_tokens()`` and retrieves the tokens from ``"creds.txt"``.
+   :answer_d: It runs ``get_tokens()``, obtains the tokens, and saves them in ``"creds.txt"``.
+   :feedback_a: When the tokens are saved in ``"creds.txt"``, we don't need to run ``get_tokens()`` again.
    :feedback_b: Yes. Good job!
-   :feedback_c: When we can retrieve the tokens from `"creds.txt"`, we don't need to call `get_tokens()` again.
-   :feedback_d: When we can retrieve the tokens from `"creds.txt"`, we don't need to call `get_tokens()` again.
+   :feedback_c: When we can retrieve the tokens from ``"creds.txt"``, we don't need to call ``get_tokens()`` again.
+   :feedback_d: When we can retrieve the tokens from ``"creds.txt"``, we don't need to call ``get_tokens()`` again.
    :correct: b
 
    What happens if we run the following code for the second time?

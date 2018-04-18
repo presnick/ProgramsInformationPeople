@@ -10,7 +10,7 @@ Week 6 Discussion Section
     :practice: T
     :topics: Functions/Returningavaluefromafunction
 
-    **1.** Define a function called `safe_double` that accepts a list and returns a list where every item is doubled.
+    **1.** Define a function called ``safe_double`` that accepts a list and returns a list where every item is doubled.
 
     ~~~~
 
@@ -38,7 +38,7 @@ Week 6 Discussion Section
     :practice: T
     :topics: Functions/PassingMutableObjects
 
-    **2.** Define a function called `mutating_double` that accepts a list, destructively modifies the list so that each item is doubled, and returns the value None.
+    **2.** Define a function called ``mutating_double`` that accepts a list, destructively modifies the list so that each item is doubled, and returns the value None.
 
     ~~~~
 

@@ -1,0 +1,37 @@
+.. _Final_Exam_F16/q_21:
+
+Final Exam Fall 2016 - Questions 21
+-----------------------------------
+
+
+.. activecode:: Final_Exam_F16_q_21
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F16/q_21
+
+   Define a function called **shortest_string** that takes a list of strings as input and returns
+   the string with the fewest characters in it. (You can assume that one string in any input list will
+   be shorter than the rest.) The code at the bottom of the page illustrates what the output should
+   be for one possible input.
+
+   ~~~~
+
+
+
+
+   L = ["ABCDE", "ABC", "ABCDEFGH"]
+   print (shortest_string(L)) # prints ABC
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         L = ["ABCDE", "ABC", "ABCDEFGH"]
+         self.assertEqual(shortest_string(L), "ABC", "Testing whether ``shortest_string(L)`` returns the right value.")
+
+   myTests().main()

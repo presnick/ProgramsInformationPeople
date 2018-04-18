@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_11_B:
 
-Final Exam Winter 2015 - Question 11 Part B
--------------------------------------------
+Final Exam Fall 2017 - Question 11 Part B
+-----------------------------------------
 
 
 .. mchoice:: Final_Exam_W15_q_11_B
@@ -19,7 +19,7 @@ Final Exam Winter 2015 - Question 11 Part B
    :practice: T
    :topics: Final_Exam_W15/q_11_B
 
-   What is the **value** of `doAThing(myThing, 1)` when the code below is run?
+   What is the **value** of ``doAThing(myThing, 1)`` when the code below is run?
 
    .. sourcecode:: python
 

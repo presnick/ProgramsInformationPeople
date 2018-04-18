@@ -89,12 +89,12 @@ to a variable, and later assign a different value to the same variable.
 
 .. note::
 
-    This is different from math. In algebra, if you give `x` the value 3, it
+    This is different from math. In algebra, if you give ``x`` the value 3, it
     cannot change to refer to a different value half-way through your
     calculations!
 
 To see this, read and then run the following program.
-You'll notice we change the value of `day` three times, and on the third
+You'll notice we change the value of ``day`` three times, and on the third
 assignment we even give it a value that is of a different type.
 
 .. codelens:: ch02_11

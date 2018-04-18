@@ -1,0 +1,29 @@
+.. _Final_Exam_F16/q_11_A:
+
+Final Exam Fall 2016 - Question 11 Part A
+-----------------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_11_A
+   :practice: T
+   :topics: Final_Exam_F16/q_11_A
+
+   Does the following code snippet result in an infinite loop (meaning that the while loop never stops running)?
+
+   .. sourcecode:: python
+
+     a = 1
+     while a != 10:
+        print ('A')
+        a = a + 10
+
+   ..
+
+   -   Yes
+
+       +   Correct! At first, a = 1. In the first iteration, it becomes 11. So, it will never be equal to 10.
+
+   -   No
+
+       -   Incorrect! At first, a = 1. In the first iteration, it becomes 11. So, it will never be equal to 10.
+

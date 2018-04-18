@@ -1,0 +1,53 @@
+.. _Final_Exam_F17/q_07:
+
+Final Exam Winter 2015 - Question 07
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_07
+    :practice: T
+    :topics: Final_Exam_F17/q_07
+
+    What will the following code print out?
+
+    .. sourcecode:: python
+
+        def enum(L):
+            return zip(range(len(L)), L)
+
+        print (enum(['a', 'b', 'c']))
+
+    ..
+
+    -   [(1, 'a'), (2, 'b'), (3, 'c')]
+
+        -   Incorrect!
+
+    -   <type 'float'>
+
+        -   Incorrect!
+
+    -   [(0, 'a'), (1, 'b'), (2, 'c')]
+
+        +   Correct!
+
+    -   [(3, 'a'), (3, 'b'), (3, 'c')]
+
+        -   Incorrect!
+
+    -   [('a', 'a'), ('b', 'b'), ('c', 'c')]
+
+        -   Incorrect!
+
+    -   [('a'), ('b'), ('c')]
+
+        -   Incorrect!
+
+    -   None
+
+        -   Incorrect!
+
+    -   No output; there is an error
+
+        -   Incorrect!
+

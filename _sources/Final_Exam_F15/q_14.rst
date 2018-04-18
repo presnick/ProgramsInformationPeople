@@ -128,6 +128,6 @@ Final Exam Fall 2015 - Question 14
    class myTests(TestCaseGui):
 
      def testOne(self):
-         self.assertEqual(bored_pets, [p for p in animals if p.boredom > p.boredom_threshold], "Testing whether `bored_pets` has the correct value.")
+         self.assertEqual(bored_pets, [p for p in animals if p.boredom > p.boredom_threshold], "Testing whether ``bored_pets`` has the correct value.")
 
    myTests().main()

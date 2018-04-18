@@ -1,0 +1,30 @@
+.. _Final_Exam_F17/q_10:
+
+Final Exam Winter 2015 - Question 10
+------------------------------------
+
+
+.. activecode:: Final_Exam_F17_q_10
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F17/q_10
+
+   Define a function called **sorted_by_keys** that takes a dictionary as input and returns a list of its values, sorted in alphabetic order based on the keys that have those values.
+
+   ~~~~
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         d2 = { 'alpha': 10, 'bravo': 30, 'delta': 20, 'charlie': 10 }
+         self.assertEqual(sorted_by_keys(d2), [10, 30, 10, 20], "Testing whether ``sorted_by_keys({ 'alpha': 10, 'bravo': 30, 'delta': 20, 'charlie': 10 })`` returns the correct value.")
+
+   myTests().main()

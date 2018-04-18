@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_17:
 
-Final Exam Winter 2015 - Question 17
-------------------------------------
+Final Exam Fall 2017 - Question 17
+----------------------------------
 
 
 .. activecode:: Final_Exam_W15_q_17
@@ -11,16 +11,16 @@ Final Exam Winter 2015 - Question 17
    :practice: T
    :topics: Final_Exam_W15/q_17
 
-   `instructors_d` has information on instructors at U of M, including the number of instructors and information on each
+   ``instructors_d`` has information on instructors at U of M, including the number of instructors and information on each
    instructor. For each instructor, there is information on the instructor's name, uniqname, and department(s) they
    teach in. Only information for the first three instructors are shown.
 
-   Write one line of code that uses `instructors_d` to store the (3-item) list of instructor dictionaries into the
-   variable `instructors_lst`.
+   Write one line of code that uses ``instructors_d`` to store the (3-item) list of instructor dictionaries into the
+   variable ``instructors_lst``.
 
    Afterwards, write code to create a list of uniqnames for instructors that teach in SI. (If they teach in SI,
-   one of the strings in the instructor’s `dept` list is the string `"SI"`). Save this list into the variable `SI_lst`,
-   which should be: `['soney', 'alexturn']`.
+   one of the strings in the instructor’s ``dept`` list is the string ``"SI"``). Save this list into the variable ``SI_lst``,
+   which should be: ``['soney', 'alexturn']``.
 
    ~~~~
    instructors_d = {

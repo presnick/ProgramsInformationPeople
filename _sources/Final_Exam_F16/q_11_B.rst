@@ -1,0 +1,28 @@
+.. _Final_Exam_F16/q_11_B:
+
+Final Exam Fall 2016 - Question 11 Part B
+-----------------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_11_B
+   :practice: T
+   :topics: Final_Exam_F16/q_11_B
+
+   Does the following code snippet result in an infinite loop (meaning that the while loop never stops running)?
+
+   .. sourcecode:: python
+
+      b = 20
+         while b < 2:
+         print ('B')
+
+   ..
+
+   -   Yes
+
+       -   Incorrect!
+
+   -   No
+
+       +   Correct!
+

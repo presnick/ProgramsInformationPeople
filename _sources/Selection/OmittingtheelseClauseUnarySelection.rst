@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Omitting the `else` Clause: Unary Selection
--------------------------------------------
+Omitting the ``else`` Clause: Unary Selection
+---------------------------------------------
 
 .. video:: unaryselection
    :controls:

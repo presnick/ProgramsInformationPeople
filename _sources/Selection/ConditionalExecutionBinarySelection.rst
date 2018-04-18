@@ -57,7 +57,7 @@ The syntax for an ``if`` statement looks like this:
 
 The boolean expression after the ``if`` statement is called the **condition**.
 If it is true, then the indented statements get executed. If not, then the statements
-indented under the `else` clause get executed.
+indented under the ``else`` clause get executed.
 
 .. sidebar::  Flowchart of a **if** statement with an **else**
 

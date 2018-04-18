@@ -139,7 +139,7 @@ Exercises
    class myTests(TestCaseGui):
 
       def testOne(self):
-         self.assertEqual(t1.__str__(), "Your account, Bob, has 100.0 dollars.", "Testing that t1 is assigned to correct value")
+         self.assertEqual(t1.__str__(), "Your account, Bob, has 100 dollars.", "Testing that t1 is assigned to correct value")
 
    myTests().main()
 

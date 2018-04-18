@@ -1,0 +1,31 @@
+.. _Final_Exam_F16/q_11_C:
+
+Final Exam Fall 2016 - Question 11 Part C
+-----------------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_11_C
+   :practice: T
+   :topics: Final_Exam_F16/q_11_C
+
+   Does the following code snippet result in an infinite loop (meaning that the while loop never stops running)?
+
+   .. sourcecode:: python
+
+      c = 3
+      while True:
+         print ('C')
+         c += 3
+         if c > 30:
+            break
+
+   ..
+
+   -   Yes
+
+       -   Incorrect!
+
+   -   No
+
+       +   Correct!
+

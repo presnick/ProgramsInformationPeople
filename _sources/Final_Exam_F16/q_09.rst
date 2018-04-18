@@ -1,0 +1,55 @@
+.. _Final_Exam_F16/q_09:
+
+Final Exam Fall 2016 - Question 09
+----------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_09
+   :practice: T
+   :topics: Final_Exam_F16/q_09
+
+   What is the type of ``s.split()`` after the following code executes?
+
+   .. sourcecode:: python
+
+      s = 'A B C D E F G'
+
+   ..
+
+   -   String
+
+       -   Incorrect!
+
+   -   Boolean
+
+       -   Incorrect!
+
+   -   List
+
+       +   Correct!
+
+   -   Dictionary
+
+       -   Incorrect!
+
+   -   Tuple
+
+       -   Incorrect!
+
+   -   Float
+
+       -   Incorrect!
+
+   -   Function
+
+       -   Incorrect!
+
+   -   None
+
+       -   Incorrect!
+
+   -   Integer
+
+       -   Incorrect!
+
+

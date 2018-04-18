@@ -62,21 +62,21 @@ The python .csv module
 
 Python also includes a .csv module, which provides a cleaner, more abstract way to handle writing .csv files. It can generate slightly different CSV formats, and handles a few other aspects of more complicated outputs in a nice way. You are welcome to explore the `documentation for the csv module <https://docs.python.org/2/library/csv.html>`_ if you'd like to learn how to use it.
 
-In particular, there is a class called `csv.DictWriter`. It includes a method `.writeheader()` and a method `.writerow()`.
+In particular, there is a class called ``csv.DictWriter``. It includes a method ``.writeheader()`` and a method ``.writerow()``.
 
 To use it, you will follow this recipe:
 
 1. open the file for writing.
-    - Specify `newline=''` as you open the file because the csv writer will take care of adding '\n' between lines
+    - Specify ``newline=''`` as you open the file because the csv writer will take care of adding '\n' between lines
 
 2. Create a new instance of the class csv.DictWriter
     - pass in the file object
     - specify a set of field names to be used as a header row and as the keys for the dictionaries representing each row
 
-3. Call the `.writeheader()` method to generate the first row of output
+3. Call the ``.writeheader()`` method to generate the first row of output
 
 4. Iterate through the rows of data to be output. For each:
-    - Call the `.writerow()` method, passing in a dictionary representing the row, with fieldnames as keys and cell contents as values
+    - Call the ``.writerow()`` method, passing in a dictionary representing the row, with fieldnames as keys and cell contents as values
 
 5. Close the file
 

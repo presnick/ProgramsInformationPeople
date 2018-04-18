@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_10_O:
 
-Final Exam Winter 2015 - Question 10 Part O
--------------------------------------------
+Final Exam Fall 2017 - Question 10 Part O
+-----------------------------------------
 
 
 .. mchoice:: Final_Exam_W15_q_10_O
@@ -19,7 +19,7 @@ Final Exam Winter 2015 - Question 10 Part O
    :practice: T
    :topics: Final_Exam_W15/q_10_O
 
-   What is the **type** of `z[z[1]]` when the code below is run?
+   What is the **type** of ``z[z[1]]`` when the code below is run?
 
    .. sourcecode:: python
 

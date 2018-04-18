@@ -1,0 +1,86 @@
+.. _Final_Exam_F16/q_23_F:
+
+Final Exam Fall 2016 - Question 23 Part F
+-----------------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_23_F
+   :practice: T
+   :topics: Final_Exam_F16/q_23_F
+
+   What will be the value of **cheshire.is_pet** after running the following code?
+
+   .. sourcecode:: python
+
+      class Pet():
+         is_pet = True
+
+         def __init__(self, name, pet_type):
+            self.name = name
+            self.pet_type = pet_type
+
+
+      class Cat(Pet):
+         is_cat = True
+
+         def __init__(self, name, has_claws):
+            Pet.__init__(self, name, 'cat')
+            self.clawed = has_claws
+
+         def canScratch(self):
+            return self.clawed
+
+      garfield = Cat('Garfield', False)
+      cheshire = Pet('Cheshire', 'cat')
+
+   ..
+
+   -   String
+
+       -   Incorrect!
+
+   -   Boolean
+
+       -   Incorrect!
+
+   -   List
+
+       -   Incorrect!
+
+   -   Dictionary
+
+       -   Incorrect!
+
+   -   True
+
+       +   Correct!
+
+   -   False
+
+       -   Incorrect!
+
+   -   Tuple
+
+       -   Incorrect!
+
+   -   Float
+
+       -   Incorrect!
+
+   -   Function
+
+       -   Incorrect!
+
+   -   None
+
+       -   Incorrect!
+
+   -   Integer
+
+       -   Incorrect!
+
+   -   Error
+
+       -   Incorrect!
+
+

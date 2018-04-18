@@ -1,0 +1,30 @@
+.. _Final_Exam_F17/q_11:
+
+Final Exam Winter 2015 - Question 11
+------------------------------------
+
+
+.. activecode:: Final_Exam_F17_q_11
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F17/q_11
+
+   Define a function called **sleepiest** that takes as input a list of strings and returns as output the string that has the most 'z's in it.
+
+   ~~~~
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         some_strings = ['zany', 'pizza', 'zzzzz', 'longest']
+         self.assertEqual(sleepiest(some_strings), 'zzzzz', "Testing whether ``sleepiest(['zany', 'pizza', 'zzzzz', 'longest'])`` returns the correct value.")
+
+   myTests().main()

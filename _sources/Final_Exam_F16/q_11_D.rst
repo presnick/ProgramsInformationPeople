@@ -1,0 +1,30 @@
+.. _Final_Exam_F16/q_11_D:
+
+Final Exam Fall 2016 - Question 11 Part D
+-----------------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_11_D
+   :practice: T
+   :topics: Final_Exam_F16/q_11_D
+
+   Does the following code snippet result in an infinite loop (meaning that the while loop never stops running)?
+
+   .. sourcecode:: python
+
+      d = 14
+      while d < 40:
+         d = 4
+         print ('D')
+         d = d + 4
+
+   ..
+
+   -   Yes
+
+       +   Correct! At first, d = 14. However, in each iteration, d = 4 at the beginning of the iteration and then increases to 8 at the end. So, it will never be greater than or equal to 40.
+
+   -   No
+
+       -   Incorrect! At first, d = 14. However, in each iteration, d = 4 at the beginning of the iteration and then increases to 8 at the end. So, it will never be greater than or equal to 40.
+

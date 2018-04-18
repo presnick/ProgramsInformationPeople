@@ -47,8 +47,8 @@ Glossary
 
     recursive call
         The statement that calls an already executing function.  Recursion can
-        even be indirect --- function `f` can call `g` which calls `h`, 
-        and `h` could make a call back to `f`.
+        even be indirect --- function ``f`` can call ``g`` which calls ``h``,
+        and ``h`` could make a call back to ``f``.
 
     recursive definition
         A definition which defines something in terms of itself. To be useful

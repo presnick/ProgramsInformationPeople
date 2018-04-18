@@ -7,8 +7,8 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-The `random` module
--------------------
+The ``random`` module
+---------------------
 
 
 .. video:: randmodvid

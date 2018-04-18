@@ -57,9 +57,9 @@ The overall process of making a request using ``requests_oauthlib`` is as follow
    :answer_b: requests, json
    :answer_c: requests_oauthlib
    :answer_d: requests_oauthlib, json
-   :feedback_a: First, we need to import `json` module to be able to invoke `json.loads()`. Second, because the API requires authentication, we need to use `requests_oauthlib`.
-   :feedback_b: Because the API requires authentication, we need to use `requests_oauthlib` in addition to `json`.
-   :feedback_c: We also need to import `json` module to be able to invoke `json.loads()`.
+   :feedback_a: First, we need to import ``json`` module to be able to invoke ``json.loads()``. Second, because the API requires authentication, we need to use ``requests_oauthlib``.
+   :feedback_b: Because the API requires authentication, we need to use ``requests_oauthlib`` in addition to ``json``.
+   :feedback_c: We also need to import ``json`` module to be able to invoke ``json.loads()``.
    :feedback_d: Yes. Good job!
    :correct: d
 

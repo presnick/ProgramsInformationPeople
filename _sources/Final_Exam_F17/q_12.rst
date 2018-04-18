@@ -1,0 +1,43 @@
+.. _Final_Exam_F17/q_12:
+
+Final Exam Winter 2015 - Question 12
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_12
+   :practice: T
+   :topics: Final_Exam_F17/q_12
+
+   What will the following code print out?
+
+   .. sourcecode:: python
+
+      x = 6
+      print (lambda x: x-2, 5)
+
+   ..
+
+   -   6
+
+       -   Incorrect!
+
+   -   <function <lambda> at 0x00000000027CBD68> 5
+
+       +   Correct!
+
+   -   4
+
+       -   Incorrect!
+
+   -   3
+
+       -   Incorrect!
+
+   -   None
+
+       -   Incorrect!
+
+   -   Error
+
+       -   Incorrect!
+

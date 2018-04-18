@@ -66,7 +66,7 @@ For example, the code snippet below, illustrates a set of tests for string metho
 
 In the online textbook, we use a special module that is built on top of the unittest module. This one, however, handles making a nice tabular display of the results of the tests, and putting them into HTML form to display on the web page. To use it, we import the module ``unittest.gui`` rather than just unittest, and then we work with the ``TestCaseGui`` class rather than the ``TestCase`` class. TestCaseGui includes a main() method that does pretty much what the unittest.main function does. In your own code files, you will use the ``TestCase`` class, and get output in your console that does not look quite as neat as the tables you've seen in this textbook.
 
-Here's an example with test cases for the `blanked` function that would be useful for a Hangman game. Note that the tests will fail until you fill in a correct definition for the blanked function.
+Here's an example with test cases for the ``blanked`` function that would be useful for a Hangman game. Note that the tests will fail until you fill in a correct definition for the blanked function.
 
 .. activecode:: simple_test_2
     :language: python

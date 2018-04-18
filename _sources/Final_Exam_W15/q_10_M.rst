@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_10_M:
 
-Final Exam Winter 2015 - Question 10 Part M
--------------------------------------------
+Final Exam Fall 2017 - Question 10 Part M
+-----------------------------------------
 
 
 .. mchoice:: Final_Exam_W15_q_10_M
@@ -19,7 +19,7 @@ Final Exam Winter 2015 - Question 10 Part M
    :practice: T
    :topics: Final_Exam_W15/q_10_M
 
-   What is the **type** of `"{}!".format(y["name"])` when the code below is run?
+   What is the **type** of ``"{}!".format(y["name"])`` when the code below is run?
 
    .. sourcecode:: python
 

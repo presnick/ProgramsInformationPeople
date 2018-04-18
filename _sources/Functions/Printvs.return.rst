@@ -49,10 +49,10 @@ three possibilities.
     In that case, think of the return value as 
     replacing the entire text of the function invocation. For example, if there is a line
     of code ``w = square(square(3) + 7) - 5``, think of the return value 9 replacing the
-    text square(3) in that invocation, so it becomes `square(9 + 7) -5`.
+    text square(3) in that invocation, so it becomes ``square(9 + 7) -5``.
 
 #. Print it for human consumption. 
-    For example, `print(square(3))` outputs 9 to the
+    For example, ``print(square(3))`` outputs 9 to the
     output area. Note that, unless the return value is first  saved as in possibility 1, it will be available
     only to the humans watching the output area, not to the program as it continues executing.
 

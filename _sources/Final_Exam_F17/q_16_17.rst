@@ -1,0 +1,116 @@
+.. _Final_Exam_F17/q_16_17:
+
+Final Exam Winter 2015 - Questions 16 and 17
+--------------------------------------------
+
+
+.. activecode:: Final_Exam_F17_q_16_17
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F17/q_16_17
+
+   This question is based on PS11. Below is a simplified data structure representing a post, as it might be returned
+   from Facebook. In the PS11 solution set, you had the following class definition. We have added a couple of additional
+   methods that you may find useful, likers and commenters.
+
+   Define a method ``enthusiast_count`` for the ``Post`` class. It will return a count of the number of people who both
+   liked and commented on a post. For example, for the sample post, it would return 1, since only id '58763' both liked
+   and commented on it.
+
+   Then write a unittest that checks whether the ``enthusiast_count`` method is defined correctly.
+
+   ~~~~
+
+   sample_post = {
+      "from": {
+         "id": "2220453",
+         "name": "Paul Resnick"
+      },
+      "likes": {
+         "data": [
+            {
+               "id": "6912",
+               "name": "LB"
+            },
+            {
+               "id": "58763",
+               "name": "JO"
+            },
+            {
+               "id": "123948",
+               "name": "???"
+            },
+            {
+               "id": "848",
+               "name": "KR"
+            }
+         ]
+      },
+      "comments": {
+         "data": [
+            {
+               "from": {
+                  "id": "8237",
+                  "name": "MB"
+               }
+            },
+            {
+               "from": {
+                  "id": "58763",
+                  "name": "JO"
+               }
+            }
+         ]
+      }
+   }
+
+   class Post():
+      """object representing status update"""
+      def __init__(self, post_dict):
+         if 'message' in post_dict:
+            self.message = post_dict['message']
+         else:
+            self.message = ""
+         if 'comments' in post_dict:
+            self.comments = post_dict['comments']['data']
+         else:
+            self.comments = []
+         if 'likes' in post_dict:
+            self.likes = post_dict['likes']['data']
+         else:
+            self.likes = []
+
+      def positive(self):
+         return len([w for w in self.message.split() if w in pos_ws])
+
+      def negative(self):
+         return len([w for w in self.message.split() if w in neg_ws])
+
+      def emo_score(self):
+         return self.positive() - self.negative()
+
+      def likers(self):
+         return [d['id'] for d in self.likes]
+
+      def commenters(self):
+         return [d['from']['id'] for d in self.comments]
+
+
+   p1 = Post(sample_post)
+   print(p1.likers())
+   print(p1.commenters())
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         correct_results = 1
+         results = p1.enthusiast_count()
+         self.assertEqual(results, correct_results, "Testing whether ``p1.enthusiast_count()`` returns the correct value.")
+
+   myTests().main()

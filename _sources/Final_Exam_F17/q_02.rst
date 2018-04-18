@@ -1,0 +1,26 @@
+.. _Final_Exam_F17/q_02:
+
+Final Exam Winter 2015 - Question 02
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_02
+   :practice: T
+   :topics: Final_Exam_F17/q_02
+
+   Which of the following behaviors will be viewed **unfavorably** by most people who are active participants in open source projects? (Check all that apply).
+
+   ..
+
+   -   Criticizing the quality of code in the released version of the project and proposing a “patch” to replace some of it with code that you have written.
+
+       -   Incorrect!
+
+   -   Offering to take “ownership” of a project that has had no new code released for more than a year and which needs new code in order to make it keep working with other software that has changed during that year.
+
+       -   Incorrect!
+
+   -   After a public disagreement with the project “owner” on an email list about a technical issue (which of several similar python modules to use), making a fork of the project and inviting other project members to join your version of the project and abandon the original.
+
+       +   Correct!
+

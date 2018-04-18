@@ -1,0 +1,39 @@
+.. _Final_Exam_F16/q_25:
+
+Final Exam Fall 2016 - Questions 25
+-----------------------------------
+
+
+.. activecode:: Final_Exam_F16_q_25
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F16/q_25
+
+   The function **sortedItems** is supposed to sort a list of tuples by **the third item in each tuple**.
+   Fill in the two blanks below to define it. Example calls and results are shown below. Note that **sorted()**
+   sorts integers from smallest to largest by default.
+
+   ~~~~
+
+   def sortedItems(tuples):
+      return sorted(           , key = lambda x:              ,
+                                 reverse = False)
+
+   tupleList = [('a',True,1), ('b',False,4), ('c',False,2)]
+
+   print (sortedItems(tupleList))
+   # Should print [('a',True,1), ('c',False,2), ('b',False,4)]
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         tupleList = [('a',True,1), ('b',False,4), ('c',False,2)]
+         self.assertEqual(sortedItems(tupleList), [('a',True,1), ('c',False,2), ('b',False,4)], "Testing whether ``sortedItems(tupleList)`` returns the right value.")
+
+   myTests().main()

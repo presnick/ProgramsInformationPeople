@@ -127,6 +127,6 @@ Final Exam Fall 2015 - Question 15
    class myTests(TestCaseGui):
 
      def testOne(self):
-         self.assertEqual(bhlist, [(p.boredom, p.hunger) for p in animals], "Testing whether `bhlist` has the correct value.")
+         self.assertEqual(bhlist, [(p.boredom, p.hunger) for p in animals], "Testing whether ``bhlist`` has the correct value.")
 
    myTests().main()

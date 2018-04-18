@@ -1,0 +1,33 @@
+.. _Final_Exam_F17/q_04:
+
+Final Exam Winter 2015 - Question 04
+------------------------------------
+
+
+.. activecode:: Final_Exam_F17_q_04
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F17/q_04
+
+   Fill in the missing code after the **vals =** on the first line, so that it assigns the value shown in bold to a
+   variable called **output**.
+   **"v1, v2 are the 2 items in the list"**
+
+   ~~~~
+
+   vals =
+   templ = "{}, {} are the {} items in the list"
+   output = templ.format(vals[0], vals[1], len(vals))
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(output, "v1, v2 are the 2 items in the list", "Testing whether ``output`` has the right value.")
+
+   myTests().main()

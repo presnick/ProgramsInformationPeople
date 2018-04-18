@@ -1,0 +1,39 @@
+.. _Final_Exam_F17/q_15:
+
+Final Exam Winter 2015 - Question 15
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_15
+   :practice: T
+   :topics: Final_Exam_F17/q_15
+
+   You are using a new API, offered by runestone.org. It follows the standard format of a base URL plus key-value parameters. It also provides a website that helps you construct URLs. Using that, you have assembled the following URL: http://runestone.org/API/get_score?assignment_id=24&student_id=374
+   Assuming the ``requests`` module has already been imported, choose all the options that correctly generate this URL.
+
+   ..
+
+   -   requests.get("http://runestone.org/API/get_score", params = {'student_id':374, 'assignment_id':24})
+
+       -   Incorrect!
+
+   -   (requests.get("http://runestone.org/API/get_score", params = {'student_id':374, 'assignment_id':24})).url
+
+       +   Correct!
+
+   -   (requests.get("http://runestone.org/API/get_score", params = {'student_id':'374', 'assignment_id':'24'})).url
+
+       +   Correct!
+
+   -   requests.get("http://runestone.org/API/get_score", params = {'student_id':374, 'assignment_id':24}).url
+
+       +   Correct!
+
+   -   (requests.get("http://runestone.org/API/get_score", {'student_id':'374', 'assignment_id':'24'})).url
+
+       +   Correct!
+
+   -   (requests.get("http://runestone.org/API/get_score?assignment_id=24&student_id=374")).url
+
+       +   Correct!
+
