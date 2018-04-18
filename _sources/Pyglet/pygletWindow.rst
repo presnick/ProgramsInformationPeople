@@ -35,7 +35,7 @@ So let's break this down line-by-line:
     import pyglet
 
 
-This line imports the pyglet package that we installed earlier. It gives our program full access to all the functionality contained in the package. Basically that module is a directory named `pyglet` that consists of a set of .py files (or possibly subdirectories that also contain .py files). The python interpreter executes the code in all those .py files. In particular there is a file called ``window.py``. In window.py there is a definition of a class called ``Window``.
+This line imports the pyglet package that we installed earlier. It gives our program full access to all the functionality contained in the package. Basically that module is a directory named ``pyglet`` that consists of a set of .py files (or possibly subdirectories that also contain .py files). The python interpreter executes the code in all those .py files. In particular there is a file called ``window.py``. In window.py there is a definition of a class called ``Window``.
 
 .. code:: python
 

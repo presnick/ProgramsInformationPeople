@@ -28,6 +28,6 @@ Final Exam Winter 2015 - Question 04
    class myTests(TestCaseGui):
 
      def testOne(self):
-         self.assertEqual(output, "v1, v2 are the 2 items in the list", "Testing whether `output` has the right value.")
+         self.assertEqual(output, "v1, v2 are the 2 items in the list", "Testing whether ``output`` has the right value.")
 
    myTests().main()

@@ -16,7 +16,7 @@ depend on the values associated with each of the keys.
 
 For example, suppose that we wanted to compute a Scrabble score for the Study in Scarlet
 text. Each occurrence of the letter 'e' earns one point, but 'q' earns 10. We have
-a second dictionary, stored in the variable `letter_values`. Now, to compute the
+a second dictionary, stored in the variable ``letter_values``. Now, to compute the
 total score, we start an accumulator at 0 and go through each of the letters in the 
 counts dictionary. For each of those letters that has a letter value (no points for spaces,
 punctuation, capital letters, etc.), we add to the total score.

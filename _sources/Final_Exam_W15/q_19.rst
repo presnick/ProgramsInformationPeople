@@ -11,29 +11,29 @@ Final Exam Fall 2017 - Question 19
    :practice: T
    :topics: Final_Exam_W15/q_19
 
-   Provided is a specification for a class called `Building`. The class `Building` accepts four arguments in its constructor (in this order):
+   Provided is a specification for a class called ``Building``. The class ``Building`` accepts four arguments in its constructor (in this order):
 
    - The address (string), example: "105 S State St"
    - The city (string), example: "Ann Arbor"
    - The state (string), example: "MI"
    - The zip code (string), example: "48105"
 
-   Every instance of `Building` should have five instance variables:
+   Every instance of ``Building`` should have five instance variables:
 
-   - `.address` initialized to whatever was passed into the constructor.
-   - `.city` initialized to whatever was passed into the constructor.
-   - `.state` initialized to whatever was passed into the constructor.
-   - `.zip` initialized to whatever was passed into the constructor.
-   - `.rennovations` initialized to an empty list.
+   - ``.address`` initialized to whatever was passed into the constructor.
+   - ``.city`` initialized to whatever was passed into the constructor.
+   - ``.state`` initialized to whatever was passed into the constructor.
+   - ``.zip`` initialized to whatever was passed into the constructor.
+   - ``.rennovations`` initialized to an empty list.
 
    There are three methods for the Building class:
 
-   - `doRennovation()`:
+   - ``doRennovation()``:
       accepts a string and appends the string to that instance’s rennovations.
-   - `hasDoneRennovation()`:
+   - ``hasDoneRennovation()``:
       accepts a string and returns True if that string is in the list of
       rennovations for that house and False otherwise.
-   - getMailingAddress():
+   - ``getMailingAddress()``:
       accepts no arguments and returns the full mailing address of the instance
       as a string in the format: {address} {city}, {state} {zip}
 

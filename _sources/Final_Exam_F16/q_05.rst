@@ -8,7 +8,7 @@ Final Exam Fall 2016 - Question 05
    :practice: T
    :topics: Final_Exam_F16/q_05
 
-   What is the type of `mylst[1]` after the following code executes??
+   What is the type of ``mylst[1]`` after the following code executes??
 
    .. sourcecode:: python
 

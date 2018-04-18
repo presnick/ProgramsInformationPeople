@@ -91,12 +91,12 @@ Final Exam Fall 2016 - Questions 17 and 18
    class myTests(TestCaseGui):
 
      def testOne(self):
-         self.assertEqual(tweet_instances[0].status, "Anyone else headed to NQ?", "Testing whether `tweet_instances[0].status` has the right value.")
-         self.assertEqual(tweet_instances[1].handle, "jackiec", "Testing whether `tweet_instances[1].handle` has the right value.")
-         self.assertEqual(tweet_instances[2].followers, 821, "Testing whether `tweet_instances[2].followers` has the right value.")
-         self.assertEqual(tweet_instances[2].hasMoreThan500Followers(), True, "Testing whether `tweet_instances[2].hasMoreThan500Followers()` has the right value.")
-         self.assertEqual(popular_tweeters(tweet_instances)[0].handle, "jackiec", "Testing whether `popular_tweeters(tweet_instances)[0].handle` returns the right value.")
-         self.assertEqual(popular_tweeters(tweet_instances)[1].handle, "tsuyoshi_13", "Testing whether `popular_tweeters(tweet_instances)[1].handle` returns the right value.")
-         self.assertEqual(popular_tweeters(tweet_instances)[2].handle, "samc_99", "Testing whether `popular_tweeters(tweet_instances)[2].handle` returns the right value.")
+         self.assertEqual(tweet_instances[0].status, "Anyone else headed to NQ?", "Testing whether ``tweet_instances[0].status`` has the right value.")
+         self.assertEqual(tweet_instances[1].handle, "jackiec", "Testing whether ``tweet_instances[1].handle`` has the right value.")
+         self.assertEqual(tweet_instances[2].followers, 821, "Testing whether ``tweet_instances[2].followers`` has the right value.")
+         self.assertEqual(tweet_instances[2].hasMoreThan500Followers(), True, "Testing whether ``tweet_instances[2].hasMoreThan500Followers()`` has the right value.")
+         self.assertEqual(popular_tweeters(tweet_instances)[0].handle, "jackiec", "Testing whether ``popular_tweeters(tweet_instances)[0].handle`` returns the right value.")
+         self.assertEqual(popular_tweeters(tweet_instances)[1].handle, "tsuyoshi_13", "Testing whether ``popular_tweeters(tweet_instances)[1].handle`` returns the right value.")
+         self.assertEqual(popular_tweeters(tweet_instances)[2].handle, "samc_99", "Testing whether ``popular_tweeters(tweet_instances)[2].handle`` returns the right value.")
 
    myTests().main()

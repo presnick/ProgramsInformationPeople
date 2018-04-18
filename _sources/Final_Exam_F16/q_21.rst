@@ -32,6 +32,6 @@ Final Exam Fall 2016 - Questions 21
 
      def testOne(self):
          L = ["ABCDE", "ABC", "ABCDEFGH"]
-         self.assertEqual(shortest_string(L), "ABC", "Testing whether `shortest_string(L)` returns the right value.")
+         self.assertEqual(shortest_string(L), "ABC", "Testing whether ``shortest_string(L)`` returns the right value.")
 
    myTests().main()

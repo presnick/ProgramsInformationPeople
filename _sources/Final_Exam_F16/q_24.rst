@@ -42,8 +42,8 @@ Final Exam Fall 2016 - Questions 24
    class myTests(TestCaseGui):
 
      def testOne(self):
-         self.assertEqual(shortestWords('this is a a a sentence', 2), ['a', 'is'], "Testing whether `shortestWords('this is a a a sentence', 2)` returns the right value.")
-         self.assertEqual(shortestWords ('this is an edge case test', 0), [], "Testing whether `shortestWords ('this is an edge case test', 0)` returns the right value.")
-         self.assertEqual(shortestWords('word word word word', 10), ['word'], "Testing whether `shortestWords('word word word word', 10)` returns the right value.")
+         self.assertEqual(shortestWords('this is a a a sentence', 2), ['a', 'is'], "Testing whether ``shortestWords('this is a a a sentence', 2)`` returns the right value.")
+         self.assertEqual(shortestWords ('this is an edge case test', 0), [], "Testing whether ``shortestWords ('this is an edge case test', 0)`` returns the right value.")
+         self.assertEqual(shortestWords('word word word word', 10), ['word'], "Testing whether ``shortestWords('word word word word', 10)`` returns the right value.")
 
    myTests().main()

@@ -15,7 +15,7 @@ Final Exam Fall 2015 - Question 12
    The function should include the following:
 
    - First use map or a list comprehension to generate a list of the results of running rotate_char on each letter in the string.
-   - Then use the string method `join` to turn the list of characters into a string.
+   - Then use the string method ``join`` to turn the list of characters into a string.
    - Return that string.
    - Your function should pass the tests at the bottom of the page. Note the parameters that are passed in the calls to encrypt.
 

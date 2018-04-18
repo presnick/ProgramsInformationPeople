@@ -36,7 +36,7 @@ The best approach is to look at the URL that is produced and eyeball it to see w
     print(params)
     print(requestURL(some_base_url, some_params_dictionary))
 
-If you get a runtime error when you call `requestURL()`, that means that it can't create a URL at all. Usually, that means that you didn't pass in a string for the baseurl or didn't pass in a dictionary with keys that are strings for the params parameter.
+If you get a runtime error when you call ``requestURL()``, that means that it can't create a URL at all. Usually, that means that you didn't pass in a string for the baseurl or didn't pass in a dictionary with keys that are strings for the params parameter.
 
 Assuming ``requestURL()`` does return a URL, match up what you see from the printout of the params dictionary to what you see in the URL that was printed out. If you have a sample of a URL from the API documentation, see if the structure of your URL matches what's there. Perhaps you have misspelled one of the API parameter names or you misspelled the base url.
 

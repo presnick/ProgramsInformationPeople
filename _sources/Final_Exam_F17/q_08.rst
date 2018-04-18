@@ -24,6 +24,6 @@ Final Exam Winter 2015 - Question 08
 
      def testOne(self):
          flattened = flatten([['a', 'b', 'c'], ['d'], ['e', 'f']])
-         self.assertEqual(flattened, ['a', 'b', 'c', 'd', 'e', 'f'], "Testing whether `flatten([['a', 'b', 'c'], ['d'], ['e', 'f']])` returns the right value.")
+         self.assertEqual(flattened, ['a', 'b', 'c', 'd', 'e', 'f'], "Testing whether ``flatten([['a', 'b', 'c'], ['d'], ['e', 'f']])`` returns the right value.")
 
    myTests().main()

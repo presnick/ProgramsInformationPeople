@@ -8,7 +8,7 @@ Final Exam Fall 2016 - Question 10
    :practice: T
    :topics: Final_Exam_F16/q_10
 
-   What is the type of `s.split` after the following code executes?
+   What is the type of ``s.split`` after the following code executes?
 
    .. sourcecode:: python
 

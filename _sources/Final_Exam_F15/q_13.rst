@@ -131,6 +131,6 @@ Final Exam Fall 2015 - Question 13
    class myTests(TestCaseGui):
 
      def testOne(self):
-         self.assertEqual(animals, sorted(animals, key=lambda a:a.hunger, reverse = True), "Testing whether `animals` is sorted.")
+         self.assertEqual(animals, sorted(animals, key=lambda a:a.hunger, reverse = True), "Testing whether ``animals`` is sorted.")
 
    myTests().main()

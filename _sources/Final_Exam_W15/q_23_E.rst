@@ -19,7 +19,7 @@ Final Exam Fall 2017 - Question 23 Part E
    :practice: T
    :topics: Final_Exam_W15/q_23_E
 
-   After running the code below, what will be the value of `blue_car.cap`?
+   After running the code below, what will be the value of ``blue_car.cap``?
 
    .. sourcecode:: python
 

@@ -70,7 +70,7 @@ The reference diagram for this example looks like this:
 
 There is one other important thing to notice about this reference diagram.  The variable ``a`` is a reference to a **collection of references**.  Those references actually refer to the integer values in the list.  In other words, a list is a collection of references to objects.  Interestingly, even though ``a`` and ``b`` are two different lists (two different collections of references), the integer object ``81`` is shared by both.  Like strings, integers are also immutable so Python optimizes and lets everyone share the same object.
 
-Here is the example in codelens.  Pay particular attention to the `id` values.
+Here is the example in codelens.  Pay particular attention to the ``id`` values.
 
 .. codelens:: chp09_istrace
     :python: py3

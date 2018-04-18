@@ -19,7 +19,7 @@ Final Exam Fall 2017 - Question 10 Part G
    :practice: T
    :topics: Final_Exam_W15/q_10_G
 
-   What is the **value** of `z[z[1]]` when the code below is run?
+   What is the **value** of ``z[z[1]]`` when the code below is run?
 
    .. sourcecode:: python
 

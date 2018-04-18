@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_10_C:
 
 Final Exam Fall 2017 - Question 10 Part C
------------------------------------------s
+-----------------------------------------
 
 
 .. mchoice:: Final_Exam_W15_q_10_C
@@ -19,7 +19,7 @@ Final Exam Fall 2017 - Question 10 Part C
    :practice: T
    :topics: Final_Exam_W15/q_10_C
 
-   What is the **value** of `len(z[0])` when the code below is run?
+   What is the **value** of ``len(z[0])`` when the code below is run?
 
    .. sourcecode:: python
 

@@ -49,10 +49,10 @@ Final Exam Fall 2016 - Questions 22
 
      def testOne(self):
          garfield = Cat('Garfield', False)
-         self.assertEqual(garfield.canFly(), False, "Testing whether `garfield.canFly()` returns the right value.")
+         self.assertEqual(garfield.canFly(), False, "Testing whether ``garfield.canFly()`` returns the right value.")
          cheshire = Pet('Cheshire', 'cat')
-         self.assertEqual(cheshire.canFly(), False, "Testing whether `cheshire.canFly()` returns the right value.")
-         self.assertEqual(Pet('sparrow', 'bird').canFly(), True, "Testing whether `Pet('sparrow', 'bird').canFly()` returns the right value.")
-         self.assertEqual(Pet('housefly', 'fly').canFly(), True, "Testing whether `Pet('housefly', 'fly').canFly()` returns the right value.")
+         self.assertEqual(cheshire.canFly(), False, "Testing whether ``cheshire.canFly()`` returns the right value.")
+         self.assertEqual(Pet('sparrow', 'bird').canFly(), True, "Testing whether ``Pet('sparrow', 'bird').canFly()`` returns the right value.")
+         self.assertEqual(Pet('housefly', 'fly').canFly(), True, "Testing whether ``Pet('housefly', 'fly').canFly()`` returns the right value.")
 
    myTests().main()

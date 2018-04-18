@@ -19,7 +19,7 @@ Final Exam Fall 2017 - Question 23 Part B
    :practice: T
    :topics: Final_Exam_W15/q_23_B
 
-   After running the code below, what will be the value of `red_car.canHold(10)`?
+   After running the code below, what will be the value of ``red_car.canHold(10)``?
 
    .. sourcecode:: python
 

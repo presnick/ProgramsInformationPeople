@@ -12,7 +12,7 @@ Final Exam Fall 2017 - Question 22
    :topics: Final_Exam_W15/q_22
 
    Write code that sorts the dictionary below in ascending order by value and assign the sorted **keys** to the
-   variable `d_sorted`.
+   variable ``d_sorted``.
 
    ~~~~
    d = {'Scandal': 7, 'Lost': 6, 'Riverdale': 1, 'Game of Thrones': 8, 'Stranger Things': 2}

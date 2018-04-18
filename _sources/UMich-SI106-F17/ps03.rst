@@ -223,7 +223,7 @@ Problem Set 3
 
     **8.** Write a program that requests inputs from the user, repeatedly, until the user enters the word "stop". At
     the end it should print out a list containing all the words the user entered, in reverse order. So, if the user
-    enters, in succession, `You`, `are`, `smart`, and `stop`, it will print out `['smart', 'are', 'You']`
+    enters, in succession, ``You``, ``are``, ``smart``, and ``stop``, it will print out ``['smart', 'are', 'You']``
 
     ~~~~
 

@@ -19,7 +19,7 @@ Final Exam Fall 2017 - Question 11 Part C
    :practice: T
    :topics: Final_Exam_W15/q_11_C
 
-   What is the **value** of `doAThing(andAdd=10, f=lambda:2)` when the code below is run?
+   What is the **value** of ``doAThing(andAdd=10, f=lambda:2)`` when the code below is run?
 
    .. sourcecode:: python
 

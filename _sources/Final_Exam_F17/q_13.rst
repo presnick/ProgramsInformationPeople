@@ -34,6 +34,6 @@ Final Exam Winter 2015 - Question 13
      def testOne(self):
          correct_results = {'a': 3, 'man': 1, 'plan': 1, "canal,":1, "Panama":1}
          results = word_counts("a man a plan a canal, Panama")
-         self.assertEqual(results, correct_results, "Testing whether `word_counts("a man a plan a canal, Panama")` returns the correct value.")
+         self.assertEqual(results, correct_results, "Testing whether ``word_counts('a man a plan a canal, Panama')`` returns the correct value.")
 
    myTests().main()

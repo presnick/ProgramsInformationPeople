@@ -34,6 +34,6 @@ Final Exam Fall 2016 - Questions 25
 
      def testOne(self):
          tupleList = [('a',True,1), ('b',False,4), ('c',False,2)]
-         self.assertEqual(sortedItems(tupleList), [('a',True,1), ('c',False,2), ('b',False,4)], "Testing whether `sortedItems(tupleList)` returns the right value.")
+         self.assertEqual(sortedItems(tupleList), [('a',True,1), ('c',False,2), ('b',False,4)], "Testing whether ``sortedItems(tupleList)`` returns the right value.")
 
    myTests().main()

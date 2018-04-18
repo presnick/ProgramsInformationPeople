@@ -25,6 +25,6 @@ Final Exam Winter 2015 - Question 11
 
      def testOne(self):
          some_strings = ['zany', 'pizza', 'zzzzz', 'longest']
-         self.assertEqual(sleepiest(some_strings), 'zzzzz', "Testing whether `sleepiest(['zany', 'pizza', 'zzzzz', 'longest'])` returns the correct value.")
+         self.assertEqual(sleepiest(some_strings), 'zzzzz', "Testing whether ``sleepiest(['zany', 'pizza', 'zzzzz', 'longest'])`` returns the correct value.")
 
    myTests().main()

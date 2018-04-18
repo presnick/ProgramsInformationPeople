@@ -44,7 +44,7 @@ rules for its mathematical operators that mathematics does.
 .. note::
 
     Due to some historical quirk, an exception to the left-to-right
-    left-associative rule is the exponentiation operator `**`. A useful hint
+    left-associative rule is the exponentiation operator ``**``. A useful hint
     is to always use parentheses to force exactly the order you want when
     exponentiation is involved:
 

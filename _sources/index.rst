@@ -760,7 +760,7 @@ Final Exam Winter 2015
    Final_Exam_F17/q_01.rst
    Final_Exam_F17/q_02.rst
    Final_Exam_F17/q_03_A.rst
-   Final_Exam_F17/q_03_A.rst
+   Final_Exam_F17/q_03_B.rst
    Final_Exam_F17/q_04.rst
    Final_Exam_F17/q_05.rst
    Final_Exam_F17/q_06.rst
@@ -771,7 +771,8 @@ Final Exam Winter 2015
    Final_Exam_F17/q_11.rst
    Final_Exam_F17/q_12.rst
    Final_Exam_F17/q_13.rst
-   Final_Exam_F17/q_14.rst
+   Final_Exam_F17/q_14_A.rst
+   Final_Exam_F17/q_14_B.rst
    Final_Exam_F17/q_15.rst
    Final_Exam_F17/q_16_17.rst
 

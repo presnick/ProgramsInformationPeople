@@ -1,7 +1,7 @@
 .. _Final_Exam_F17/q_16_17:
 
 Final Exam Winter 2015 - Questions 16 and 17
-------------------------------------
+--------------------------------------------
 
 
 .. activecode:: Final_Exam_F17_q_16_17
@@ -110,7 +110,7 @@ Final Exam Winter 2015 - Questions 16 and 17
 
      def testOne(self):
          correct_results = 1
-         results = enthusiast_count(self)
-         self.assertEqual(results, correct_results, "Testing whether ``enthusiast_count(self)`` returns the correct value.")
+         results = p1.enthusiast_count()
+         self.assertEqual(results, correct_results, "Testing whether ``p1.enthusiast_count()`` returns the correct value.")
 
    myTests().main()

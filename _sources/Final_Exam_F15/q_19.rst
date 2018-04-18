@@ -134,8 +134,8 @@ Final Exam Fall 2015 - Question 19
          cy.boredom = cy.boredom_threshold - 1
          cy.hunger = 0
          cy.clock_tick()
-         self.assertEqual(cy.hunger, 0, "Testing whether `cy.hunger` is not incremented when boredom <= boredom_threshold.")
+         self.assertEqual(cy.hunger, 0, "Testing whether ``cy.hunger`` is not incremented when boredom <= boredom_threshold.")
          cy.clock_tick()
-         self.assertEqual(cy.hunger, 1, "Testing whether `cy.hunger` is incremented when boredom > boredom_threshold.")
+         self.assertEqual(cy.hunger, 1, "Testing whether ``cy.hunger`` is incremented when boredom > boredom_threshold.")
 
    myTests().main()

@@ -21,9 +21,9 @@ Final Exam Fall 2016 - Question 11 Part A
 
    -   Yes
 
-       +   Correct!
+       +   Correct! At first, a = 1. In the first iteration, it becomes 11. So, it will never be equal to 10.
 
    -   No
 
-       -   Incorrect!
+       -   Incorrect! At first, a = 1. In the first iteration, it becomes 11. So, it will never be equal to 10.
 

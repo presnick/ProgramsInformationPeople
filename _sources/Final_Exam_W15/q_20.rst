@@ -11,16 +11,16 @@ Final Exam Fall 2017 - Question 20
    :practice: T
    :topics: Final_Exam_W15/q_20
 
-   Define a function `longestXWords(s, x=5)` that accepts two arguments: a string and an int.
-   It returns a list of the `x` longest words in that string. These words should be **unique**, meaning
-   that if a word appears more than once in `s`, it should only appear once in the return value of
-   `longestXWords`. The list it returns must not be longer than `x` elements. You may ignore
-   capitalization and punctuation in `s`. You may also use any strategy for resolving words of
+   Define a function ``longestXWords(s, x=5)`` that accepts two arguments: a string and an int.
+   It returns a list of the ``x`` longest words in that string. These words should be **unique**, meaning
+   that if a word appears more than once in ``s``, it should only appear once in the return value of
+   ``longestXWords``. The list it returns must not be longer than ``x`` elements. You may ignore
+   capitalization and punctuation in ``s``. You may also use any strategy for resolving words of
    equal length.
 
    Hint: To find a list of unique words, one strategy is to iterate over every word and add it to a
    list of unique words if that word is **not already in** that list of unique words. You can check if
-   an element is not in a list with the `not in` operator: `2 not in [1,3,5]` is `True`.
+   an element is not in a list with the ``not in`` operator: ``2 not in [1,3,5]`` is ``True``.
 
    ~~~~
    def longestXWords(s, x=5):

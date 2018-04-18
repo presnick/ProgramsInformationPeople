@@ -19,7 +19,7 @@ Final Exam Fall 2017 - Question 23 Part D
    :practice: T
    :topics: Final_Exam_W15/q_23_D
 
-   After running the code below, what will be the value of `blue_car.canHold(20)`?
+   After running the code below, what will be the value of ``blue_car.canHold(20)``?
 
    .. sourcecode:: python
 
