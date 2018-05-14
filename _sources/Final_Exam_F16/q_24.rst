@@ -1,0 +1,49 @@
+.. _Final_Exam_F16/q_24:
+
+Final Exam Fall 2016 - Questions 24
+-----------------------------------
+
+
+.. activecode:: Final_Exam_F16_q_24
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F16/q_24
+
+   Define a function **shortestWords(s, n=5)** that accepts two arguments: a **string** and an **integer**, n, and
+   returns a list of the n shortest words in that string. These words should be unique, meaning
+   that if a word appears more than once in s, it should only appear once in the return value of
+   **shortestWords**. The list it returns must not be longer than n elements. You may ignore
+   capitalization and punctuation in s. You may also use any strategy for resolving words of
+   equal length. See example calls on the bottom of the page.
+
+   Hint: To find a list of unique words, one strategy is to iterate over every word and add it to a
+   list of unique words if that word is not already in that list of unique words. You can check if
+   an element is not in a list with the **not in** operator: **2 not in [1,3,5]** is **True**.
+
+   ~~~~
+
+   def shortestWords(s, n=5):
+
+
+
+   print (shortestWords('this is a a a sentence', 2))
+   # prints ['a', 'is']
+   print (shortestWords ('this is an edge case test', 0))
+   # prints []
+   print (shortestWords('word word word word', 10))
+   # prints ['word']
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(shortestWords('this is a a a sentence', 2), ['a', 'is'], "Testing whether ``shortestWords('this is a a a sentence', 2)`` returns the right value.")
+         self.assertEqual(shortestWords ('this is an edge case test', 0), [], "Testing whether ``shortestWords ('this is an edge case test', 0)`` returns the right value.")
+         self.assertEqual(shortestWords('word word word word', 10), ['word'], "Testing whether ``shortestWords('word word word word', 10)`` returns the right value.")
+
+   myTests().main()

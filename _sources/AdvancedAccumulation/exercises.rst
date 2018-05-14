@@ -246,7 +246,7 @@ Now define lengths using a list comprehension instead.
    :practice: T
    :topics: AdvancedAccumulation/listcomp
 
-   Write a function called `longlengths` that returns the lengths of those strings that have at least 4 characters. Try it with a list comprehension.
+   Write a function called ``longlengths`` that returns the lengths of those strings that have at least 4 characters. Try it with a list comprehension.
    ~~~~
    def longlengths(strings):
        return None
@@ -270,7 +270,7 @@ Now define lengths using a list comprehension instead.
    :practice: T
    :topics: AdvancedAccumulation/filter
 
-   Write a function called `longlengths` that returns the lengths of those strings that have at least 4 characters. Try it using map and filter.
+   Write a function called ``longlengths`` that returns the lengths of those strings that have at least 4 characters. Try it using map and filter.
    ~~~~
 
    def longlengths(strings):

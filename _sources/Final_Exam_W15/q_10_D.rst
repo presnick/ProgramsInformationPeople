@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_10_D:
 
-Final Exam Winter 2015 - Question 10 Part D
--------------------------------------------
+Final Exam Fall 2017 - Question 10 Part D
+-----------------------------------------
 
 
 .. mchoice:: Final_Exam_W15_q_10_D
@@ -19,7 +19,7 @@ Final Exam Winter 2015 - Question 10 Part D
    :practice: T
    :topics: Final_Exam_W15/q_10_D
 
-   What is the **value** of `len(z["name"])` when the code below is run?
+   What is the **value** of ``len(z["name"])`` when the code below is run?
 
    .. sourcecode:: python
 

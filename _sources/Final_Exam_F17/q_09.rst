@@ -1,0 +1,29 @@
+.. _Final_Exam_F17/q_09:
+
+Final Exam Winter 2015 - Question 09
+------------------------------------
+
+
+.. activecode:: Final_Exam_F17_q_09
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F17/q_09
+
+   Write code to sort L in order based on the last two characters in each string, so that 253 is first and 356 is last.
+
+   ~~~~
+
+   L = ['154', '253', '356', '455']
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(L, sorted(L, key=lambda x: x[-2:]), "Testing whether ``L`` is correctly sorted.")
+
+   myTests().main()

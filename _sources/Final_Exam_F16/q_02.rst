@@ -1,0 +1,16 @@
+.. _Final_Exam_F16/q_02:
+
+Final Exam Fall 2016 - Question 02
+----------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_02
+   :answer_a: True
+   :answer_b: False
+   :feedback_a: Incorrect!
+   :feedback_b: Correct!
+   :correct: b
+   :practice: T
+   :topics: Final_Exam_F16/q_02
+
+   True or False? Python automatically caches any network requests.

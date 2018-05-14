@@ -64,7 +64,7 @@ Its important to start to develop a good mental model of the steps Python takes 
     a = {{5}}{{5}}
     b = {{a}}{{5}}
 
-In the first statement `a = 5` the literal number 5 evaluates to 5, and is given the name `a`.  In the second statement, the variable `a` evaluates to 5 and so 5 now ends up with a second name `b`.
+In the first statement ``a = 5`` the literal number 5 evaluates to 5, and is given the name ``a``.  In the second statement, the variable ``a`` evaluates to 5 and so 5 now ends up with a second name ``b``.
 
 You can step through the code and see how the variable assignments change below.
 

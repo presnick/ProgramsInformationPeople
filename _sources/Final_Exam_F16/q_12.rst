@@ -1,0 +1,47 @@
+.. _Final_Exam_F16/q_12:
+
+Final Exam Fall 2016 - Question 12
+----------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_12
+   :practice: T
+   :topics: Final_Exam_F16/q_12
+
+   What is the output of the following code snippet?
+
+   .. sourcecode:: python
+
+      myDictionary = {'a': 1, 'b': 2}
+      bvr = 'b'
+      myDictionary['a'] = 10
+      myDictionary['c'] = 30
+      myDictionary[bvr] = 20
+      print (len(myDictionary.keys()))
+
+   ..
+
+   -   2
+
+       -   Incorrect! ``bvr`` will be replaced by its value, 'b', then the value corresponding to key 'b' in the dictionary will be updated to 20.
+
+   -   3
+
+       +   Correct! ``bvr`` will be replaced by its value, 'b', then the value corresponding to key 'b' in the dictionary will be updated to 20.
+
+   -   4
+
+       -   Incorrect! ``bvr`` will be replaced by its value, 'b', then the value corresponding to key 'b' in the dictionary will be updated to 20.
+
+   -   1
+
+       -   Incorrect! ``bvr`` will be replaced by its value, 'b', then the value corresponding to key 'b' in the dictionary will be updated to 20.
+
+   -   None
+
+       -   Incorrect! ``bvr`` will be replaced by its value, 'b', then the value corresponding to key 'b' in the dictionary will be updated to 20.
+
+   -   Error
+
+       -   Incorrect! ``bvr`` will be replaced by its value, 'b', then the value corresponding to key 'b' in the dictionary will be updated to 20.
+

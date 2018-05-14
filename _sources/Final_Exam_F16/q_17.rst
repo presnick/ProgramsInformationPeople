@@ -1,0 +1,102 @@
+.. _Final_Exam_F16/q_17_18:
+
+Final Exam Fall 2016 - Questions 17 and 18
+------------------------------------------
+
+
+.. activecode:: Final_Exam_F16_q_17_18
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F16/q_17_18
+
+   We have converted a much simplified set of data returned from a Twitter query to a python interpretable object using
+   **tweet_data = json.loads(s)**. We have provided you with the value that **json.loads(s)** has returned.
+   Using the variable **tweet_data**, we are going to create a class to represent an individual tweet. Complete the
+   code below (to define two methods in the Tweet class and two expressions that create three instances). Read the
+   complete code before writing the class methods.
+
+   Then write a function called **popular_tweeters** that will take a list of Tweet instances and returns a list of the
+   users in order based on their **followers_count**, from largest to smallest. It should pass the test at the bottom.
+   Assume that there are no duplicate users.
+
+   ~~~~
+
+   tweet_data = {
+     "numResults": 3,
+     "tweets": [
+        {
+           "text": "Anyone else headed to NQ?",
+           "user": {
+           "followers_count": 489,
+           "screen_name": "samc_99"
+        }
+        },
+        {
+           "text": "it's snowing!",
+           "user": {
+              "followers_count": 1204,
+              "screen_name": "jackiec"
+           }
+        },
+        {
+           "text": "excited for winter break!",
+           "user": {
+              "followers_count": 821,
+              "screen_name": "tsuyoshi_13"
+           }
+        }
+     ]
+   }
+
+   class Tweet():
+     def __init__(self, tweet_dict):
+
+
+
+
+     # returns True if the instance has more than 500
+     # followers and False otherwise
+     def hasMoreThan500Followers(self):
+
+
+
+   tweet_instances = []
+
+   # Complete the following three lines of code:
+   for tweet_d in :
+     #create a new Tweet instance
+     tweet_instances.append(Tweet( ))
+
+   print (tweet_instances[0].status)
+   # prints "Anyone else headed to NQ?"
+   print (tweet_instances[1].handle)
+   # prints "jackiec"
+   print (tweet_instances[2].followers)
+   # prints 821
+   print (tweet_instances[2].hasMoreThan500Followers())
+   # prints True
+
+
+   def popular_tweeters(tweets):
+
+   print (popular_tweeters(tweet_instances))
+   # prints [<Tweet instance for jackiec>, <Tweet instance for tsuyoshi_13>, <Tweet instance for samc_99>])
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(tweet_instances[0].status, "Anyone else headed to NQ?", "Testing whether ``tweet_instances[0].status`` has the right value.")
+         self.assertEqual(tweet_instances[1].handle, "jackiec", "Testing whether ``tweet_instances[1].handle`` has the right value.")
+         self.assertEqual(tweet_instances[2].followers, 821, "Testing whether ``tweet_instances[2].followers`` has the right value.")
+         self.assertEqual(tweet_instances[2].hasMoreThan500Followers(), True, "Testing whether ``tweet_instances[2].hasMoreThan500Followers()`` has the right value.")
+         self.assertEqual(popular_tweeters(tweet_instances)[0].handle, "jackiec", "Testing whether ``popular_tweeters(tweet_instances)[0].handle`` returns the right value.")
+         self.assertEqual(popular_tweeters(tweet_instances)[1].handle, "tsuyoshi_13", "Testing whether ``popular_tweeters(tweet_instances)[1].handle`` returns the right value.")
+         self.assertEqual(popular_tweeters(tweet_instances)[2].handle, "samc_99", "Testing whether ``popular_tweeters(tweet_instances)[2].handle`` returns the right value.")
+
+   myTests().main()

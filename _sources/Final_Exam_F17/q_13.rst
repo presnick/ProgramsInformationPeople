@@ -1,0 +1,39 @@
+.. _Final_Exam_F17/q_13:
+
+Final Exam Winter 2015 - Question 13
+------------------------------------
+
+
+.. activecode:: Final_Exam_F17_q_13
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F17/q_13
+
+   Something is not working correctly with the **word_counts** function defined below. It takes a string as input. It is supposed to produce a dictionary containing the words in the string as keys, and their counts as values. Fix the definition of **word_counts** so that it will pass the test, changing as little of the code as you can.
+
+   ~~~~
+
+   def word_counts(s):
+      d = {}
+      words = s.split()
+      for w in words:
+         if w in d:
+            d[w] = d[w] + 1
+         else:
+            d[w] = 1
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         correct_results = {'a': 3, 'man': 1, 'plan': 1, "canal,":1, "Panama":1}
+         results = word_counts("a man a plan a canal, Panama")
+         self.assertEqual(results, correct_results, "Testing whether ``word_counts('a man a plan a canal, Panama')`` returns the correct value.")
+
+   myTests().main()

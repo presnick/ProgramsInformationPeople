@@ -1,0 +1,50 @@
+.. _Final_Exam_F16/q_07:
+
+Final Exam Fall 2016 - Question 07
+----------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_07
+    :practice: T
+    :topics: Final_Exam_F16/q_07
+
+    What is the output of the following expression?
+
+    .. sourcecode:: python
+
+        print (type(1.0 == 6))
+
+    ..
+
+    -   <type 'int'>
+
+        -   Incorrect!
+
+    -   <type 'float'>
+
+        -   Incorrect!
+
+    -   <type 'bool'>
+
+        +   Correct!
+
+    -   True
+
+        -   Incorrect!
+
+    -   False
+
+        -   Incorrect!
+
+    -   6
+
+        -   Incorrect!
+
+    -   1.0
+
+        -   Incorrect!
+
+    -   No output; there is an error
+
+        -   Incorrect!
+

@@ -1,0 +1,28 @@
+.. _Final_Exam_F16/q_11_E:
+
+Final Exam Fall 2016 - Question 11 Part E
+-----------------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_11_E
+   :practice: T
+   :topics: Final_Exam_F16/q_11_E
+
+   Does the following code snippet result in an infinite loop (meaning that the while loop never stops running)?
+
+   .. sourcecode:: python
+
+      e = 15
+      while e < 50:
+         print ('E')
+
+   ..
+
+   -   Yes
+
+       +   Correct! At first, e = 15. However, in each iteration, e is never updated. So, it will never be greater than or equal to 50.
+
+   -   No
+
+       -   Incorrect! At first, e = 15. However, in each iteration, e is never updated. So, it will never be greater than or equal to 50.
+

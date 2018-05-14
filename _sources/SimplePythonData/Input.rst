@@ -19,9 +19,9 @@ there is a built-in function to accomplish this task.  It is called ``input``.
 
 The input function allows the programmer to provide a **prompt string**. In the example above, it is "Please enter your name: ".  When the function is evaluated, the prompt is
 shown (in the browser, look for a popup window).
-The user of the program can type some text and press `return`. When this
-happens the text that has been entered is returned from the `input` function,
-and in this case assigned to the variable `n`.  Run this example a few times and try some different names in the input box that appears.
+The user of the program can type some text and press ``return``. When this
+happens the text that has been entered is returned from the ``input`` function,
+and in this case assigned to the variable ``n``.  Run this example a few times and try some different names in the input box that appears.
 
 .. activecode:: inputfun
 

@@ -1,0 +1,31 @@
+.. _Final_Exam_F17/q_14_B:
+
+Final Exam Winter 2015 - Question 14 Part B
+-------------------------------------------
+
+
+.. activecode:: Final_Exam_F17_q_14_B
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F17/q_14_B
+
+   Define a function f that takes a list of strings and returns a list containing the first letter of every word that contains the letter z. Your function **must use** some combination of map, filter, reduce, zip, and list comprehensions (i.e., without using manual accumulation.)
+
+   ~~~~
+
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         correct_results = ['w','i','n']
+         results = f(['whiz', 'success', 'in the zone', 'yep', 'not another pizza!'])
+         self.assertEqual(results, correct_results, "Testing whether ``f(['whiz', 'success', 'in the zone', 'yep', 'not another pizza!'])`` returns the correct value.")
+
+   myTests().main()

@@ -1,0 +1,86 @@
+.. _Final_Exam_F16/q_23_A:
+
+Final Exam Fall 2016 - Question 23 Part A
+-----------------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_23_A
+   :practice: T
+   :topics: Final_Exam_F16/q_23_A
+
+   What will be the value of **garfield.is_cat** after running the following code?
+
+   .. sourcecode:: python
+
+      class Pet():
+         is_pet = True
+
+         def __init__(self, name, pet_type):
+            self.name = name
+            self.pet_type = pet_type
+
+
+      class Cat(Pet):
+         is_cat = True
+
+         def __init__(self, name, has_claws):
+            Pet.__init__(self, name, 'cat')
+            self.clawed = has_claws
+
+         def canScratch(self):
+            return self.clawed
+
+      garfield = Cat('Garfield', False)
+      cheshire = Pet('Cheshire', 'cat')
+
+   ..
+
+   -   String
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   Boolean
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   List
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   Dictionary
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   True
+
+       +   Correct! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   False
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   Tuple
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   Float
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   Function
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   None
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   Integer
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+   -   Error
+
+       -   Incorrect! "is_cat" is a "Class Variable" defined specifically for objects of the "Cat" class. So, objects of the "Pet" class do not have such a property. On the other hand, "clawed" is an "Instance Variable", and again, objects of the "Pet" class do not have such a property. When you invoke the constructor of the parent class ``pet.__init__(self, name, ‘cat’)`` in the child class's constructor, you're basically saying: In overriding the constructor of the child class, do all the things defined in the constructor of the parent class and then do a little more thing ``self.clawed = has_claws``.
+
+

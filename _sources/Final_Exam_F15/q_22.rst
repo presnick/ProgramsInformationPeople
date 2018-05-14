@@ -1,0 +1,28 @@
+.. _Final_Exam_F15/q_22:
+
+Final Exam Fall 2015 - Question 22
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F15_q_22
+    :practice: T
+    :topics: Final_Exam_F15/q_22
+
+    You have written a small UNIX utility program (analogous to cat or grep)
+    for your own purposes. It’s been very useful for you and you start to get requests
+    from other people to share it. You don’t mind sharing it freely, but you decide
+    that it would bother you very much if somebody else started selling your code
+    and keeping the money for themselves. What kind of license should you put on
+    your code when you distribute it: GPL or BSD? Justify your answer in 2‐3
+    sentences.
+
+    ..
+
+    -   GPL
+
+        +   Correct!
+
+    -   BSD
+
+        -   Incorrect!
+

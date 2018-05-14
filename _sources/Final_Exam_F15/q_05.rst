@@ -1,0 +1,69 @@
+.. _Final_Exam_F15/q_05:
+
+Final Exam Fall 2015 - Question 05
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F15_q_05
+   :practice: T
+   :topics: Final_Exam_F15/q_05
+
+   What is the type of ``json.loads(s)``?
+
+   .. sourcecode:: python
+
+      s = """
+      [
+         {
+            "id": 672149962780749800,
+            "user": {
+               "followers_count": 823,
+               "screen_name": "alimahrer",
+               "id": 156844181
+            }
+         },
+         {
+            "id": 672149247811313700,
+            "user": {
+               "followers_count": 1569,
+               "screen_name": "CatchaJob_us",
+               "id": 2348426863
+            }
+         },
+         {
+            "id": 672148783413731300,
+            "user": {
+               "followers_count": 15575,
+               "screen_name": "GymCastic",
+               "id": 812521788
+            }
+         }
+      ]"""
+
+   ..
+
+   -   Integer
+
+       -   Incorrect!
+
+   -   String
+
+       -   Incorrect!
+
+   -   List
+
+       +   Correct!
+
+   -   Dictionary
+
+       -   Incorrect!
+
+   -   Instance of class Tweet
+
+       -   Incorrect!
+
+   -   None of the above; that expression will generate an error
+
+       -   Incorrect!
+
+

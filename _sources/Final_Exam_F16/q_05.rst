@@ -1,0 +1,55 @@
+.. _Final_Exam_F16/q_05:
+
+Final Exam Fall 2016 - Question 05
+----------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_05
+   :practice: T
+   :topics: Final_Exam_F16/q_05
+
+   What is the type of ``mylst[1]`` after the following code executes??
+
+   .. sourcecode:: python
+
+      mylst = [1, [0], 6]
+
+   ..
+
+   -   String
+
+       -   Incorrect!
+
+   -   Boolean
+
+       -   Incorrect!
+
+   -   List
+
+       +   Correct!
+
+   -   Dictionary
+
+       -   Incorrect!
+
+   -   Tuple
+
+       -   Incorrect!
+
+   -   Float
+
+       -   Incorrect!
+
+   -   Function
+
+       -   Incorrect!
+
+   -   None
+
+       -   Incorrect!
+
+   -   Integer
+
+       -   Incorrect!
+
+

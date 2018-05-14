@@ -94,7 +94,7 @@ So let's use our new Point class now. This next part should look a little famili
     
    
 During the initialization of the objects, we created two
-attributes called `x` and `y` for each object, and gave them both the value 0.  You will note that when you run the
+attributes called ``x`` and ``y`` for each object, and gave them both the value 0.  You will note that when you run the
 program, nothing happens.  It turns out that this is not quite the case.  In fact, two ``Points`` have been created, each
 having an x and y coordinate with value 0.  However, because we have not asked the program to do anything with the points, we don't see any other result.
 

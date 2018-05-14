@@ -1,0 +1,29 @@
+.. _Final_Exam_F17/q_08:
+
+Final Exam Winter 2015 - Question 08
+------------------------------------
+
+
+.. activecode:: Final_Exam_F17_q_08
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F17/q_08
+
+   Define a function flatten that takes a list of sub-lists and returns a list that contains all of the elements of the sub-lists.
+
+   ~~~~
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         flattened = flatten([['a', 'b', 'c'], ['d'], ['e', 'f']])
+         self.assertEqual(flattened, ['a', 'b', 'c', 'd', 'e', 'f'], "Testing whether ``flatten([['a', 'b', 'c'], ['d'], ['e', 'f']])`` returns the right value.")
+
+   myTests().main()

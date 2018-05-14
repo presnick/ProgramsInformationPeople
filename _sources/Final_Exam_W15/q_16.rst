@@ -1,7 +1,7 @@
 .. _Final_Exam_W15/q_16:
 
-Final Exam Winter 2015 - Question 16
-------------------------------------
+Final Exam Fall 2017 - Question 16
+----------------------------------
 
 
 .. activecode:: Final_Exam_W15_q_16
@@ -11,12 +11,12 @@ Final Exam Winter 2015 - Question 16
    :practice: T
    :topics: Final_Exam_W15/q_16
 
-   `instructors_d` has information on instructors at U of M, including the number of instructors and information on each
+   ``instructors_d`` has information on instructors at U of M, including the number of instructors and information on each
    instructor. For each instructor, there is information on the instructor's name, uniqname, and department(s) they
    teach in. Only information for the first three instructors are shown.
 
-   Write one line of code that uses `instructors_d` to store the (3-item) list of instructor dictionaries into the
-   variable `instructors_lst`.
+   Write one line of code that uses ``instructors_d`` to store the (3-item) list of instructor dictionaries into the
+   variable ``instructors_lst``.
 
    ~~~~
    instructors_d = {

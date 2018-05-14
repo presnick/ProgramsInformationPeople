@@ -1,0 +1,34 @@
+.. _Final_Exam_F17/q_01:
+
+Final Exam Winter 2015 - Question 01
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_01
+   :practice: T
+   :topics: Final_Exam_F17/q_01
+
+   Which of the following are reasons to use a version control system like git and github? (Check all that apply).
+
+   ..
+
+   -   You want to be able to allow some people but not others to make changes to the version of the source code that gets distributed.
+
+       +   Correct!
+
+   -   You want to be able to allow some people but not others to make private modifications of the source code.
+
+       -   Incorrect!
+
+   -   You want to prevent other people from taking your code and incorporating it into a commercial product that they charge money for.
+
+       -   Incorrect!
+
+   -   You want to hold yourself accountable as an open source project team leader by making it possible for anyone, at any time, to fork the code and start a competing project that excludes you from leadership.
+
+       +   Correct!
+
+   -   You would like to be able to see or revert to any past version of any of the files in your project.
+
+       +   Correct!
+

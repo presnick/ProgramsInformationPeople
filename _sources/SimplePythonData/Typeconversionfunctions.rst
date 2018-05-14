@@ -12,7 +12,7 @@ Type conversion functions
 
 Sometimes it is necessary to convert values from one type to another.  Python provides
 a few simple functions that will allow us to do that.  The functions ``int``, ``float`` and ``str``
-will (attempt to) convert their arguments into types `int`, `float` and `str`
+will (attempt to) convert their arguments into types ``int``, ``float`` and ``str``
 respectively.  We call these **type conversion** functions.
 
 The ``int`` function can take a floating point number or a string, and turn it
@@ -48,7 +48,7 @@ legal string into a float.
 
 
 The type converter ``str`` turns its argument into a string.  Remember that when we print a string, the
-quotes are removed.  However, if we print the type, we can see that it is definitely `str`.
+quotes are removed.  However, if we print the type, we can see that it is definitely ``str``.
 
 .. activecode:: ch02_22
     :nocanvas:

@@ -1,0 +1,28 @@
+.. _Final_Exam_F15/q_01:
+
+Final Exam Fall 2015 - Question 01
+------------------------------------
+
+
+.. mchoice:: Final_Exam_F15_q_01
+   :answer_a: genius is at idx 3 in a list with 4 items
+   :answer_b: a is at idx 3 in a list with 4 items
+   :answer_c: a is at idx 2 in a list with 3 items
+   :answer_d: genius is at idx 2 in a list with 4 items
+   :feedback_a: Correct!
+   :feedback_b: Incorrect!
+   :feedback_c: Incorrect!
+   :feedback_d: Incorrect!
+   :correct: a
+   :practice: T
+   :topics: Final_Exam_F15/q_01
+
+   What will print out?
+
+   .. sourcecode:: python
+
+        def interp(L, i):
+            templ = "{} is at idx {} in a list with {} items"
+            return templ.format(L[i], i, len(L))
+        print(interp(['you', 'are', 'a', 'genius'], 3))
+

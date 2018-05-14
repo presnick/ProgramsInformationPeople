@@ -1,0 +1,29 @@
+.. _Final_Exam_F16/q_11_F:
+
+Final Exam Fall 2016 - Question 11 Part F
+-----------------------------------------
+
+
+.. mchoice:: Final_Exam_F16_q_11_F
+   :practice: T
+   :topics: Final_Exam_F16/q_11_F
+
+   Does the following code snippet result in an infinite loop (meaning that the while loop never stops running)?
+
+   .. sourcecode:: python
+
+      f = 16
+      while f > -60:
+         print ('F')
+         f = f - 6
+
+   ..
+
+   -   Yes
+
+       -   Incorrect!
+
+   -   No
+
+       +   Correct!
+

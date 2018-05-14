@@ -21,11 +21,11 @@ Glossary
             for ix in 'Example':
                 ...
 
-        executes the body of the loop 7 times with different values of `ix` each time.
+        executes the body of the loop 7 times with different values of ``ix`` each time.
         
     range
-        A function that produces a list of numbers. For example, `range(5)`, produces a list of five 
-        numbers, starting with 0, `[0, 1, 2, 3, 4]`. 
+        A function that produces a list of numbers. For example, ``range(5)``, produces a list of five
+        numbers, starting with 0, ``[0, 1, 2, 3, 4]``.
 
     pattern
         A sequence of statements, or a style of coding something that has

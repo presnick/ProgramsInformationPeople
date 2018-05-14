@@ -1,0 +1,23 @@
+.. _Final_Exam_F17/q_03_B:
+
+Final Exam Winter 2015 - Question 03 Part B
+-------------------------------------------
+
+
+.. mchoice:: Final_Exam_F17_q_03_B
+   :practice: T
+   :topics: Final_Exam_F17/q_03_B
+
+   Your friends like your 106 final project so much that they encourage you to start a company to commercialize it. The code for your project includes a file that you found on the Internet. (Fortunately, you credited the original source, and were not accused of plagiarism when we graded the project). The file has a GPL license.
+   Does that prevent you from offering a service where you run your code for them and share the program outputs with them, but never let them see the project code at all (including the GPL’ed file)?
+
+   ..
+
+   -   Yes
+
+       -   Incorrect! No problem here. This is permitted, because you wouldn’t be licensing or distributing your code at all.
+
+   -   No
+
+       +   Correct! No problem here. This is permitted, because you wouldn’t be licensing or distributing your code at all.
+

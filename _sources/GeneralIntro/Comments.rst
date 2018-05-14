@@ -18,7 +18,7 @@ natural language what the program is doing.  These notes are called comments.
 
 A **comment** in a computer program is text that is intended only for the human
 reader - it is completely ignored by the interpreter.
-In Python, the `#` token starts a comment.  The rest of the line is ignored.
+In Python, the ``#`` token starts a comment.  The rest of the line is ignored.
 Here is a new version of *Hello, World!*.
 
 .. activecode:: ch01_3

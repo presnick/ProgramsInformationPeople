@@ -1,0 +1,52 @@
+.. _Final_Exam_F15/q_09:
+
+Final Exam Fall 2015 - Question 09
+------------------------------------
+
+
+.. activecode:: Final_Exam_F15_q_09
+   :language: python
+   :autograde: unittest
+   :chatcodes:
+   :practice: T
+   :topics: Final_Exam_F15/q_09
+
+   The code below is supposed to output the most common word in the file
+   test.txt. When run, it gives an error message, shown below. Edit the code so that
+   it will correctly print out the most common word.
+
+   The contents of the file are as follows is already loaded in variable **contents**.
+
+   ~~~~
+
+   contents =    """
+   This file has four lines.
+   This is the second line.
+   Line three has five words.
+   The last line has no period
+   """
+
+   d = {}
+
+   for w in contents.split():
+      d[w] += 1
+
+   dkeys = d.keys()
+   most_used = dkeys[0]
+   for k in dkeys:
+      if d[k] > d[most_used]:
+         most_used = k
+
+   print("The mot used word is '" + most_used + "', which is used " + str(d[most_used]) + " times")
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertEqual(most_used, 'has', "Testing the value of most_used.")
+         self.assertEqual(d[most_used], 3, "Testing the value of d[most_used].")
+
+   myTests().main()
