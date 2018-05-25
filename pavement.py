@@ -31,7 +31,8 @@ options(
             'course_url':master_url,
             'use_services': 'true',
             'python3': 'true',
-            'basecourse':'pip2'
+            'basecourse':'pip2',
+            # 'enable_chatcodes': 'true'
         }
     )
 )
